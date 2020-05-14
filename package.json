@@ -1,0 +1,31 @@
+{
+  "name": "mortar.works",
+  "version": "1.0.0",
+  "description": "Mortar",
+  "scripts": {
+    "dev": "webpack --watch & eleventy --serve",
+    "build": "webpack && eleventy",
+    "serve": "npm run build && eleventy --serve",
+    "clean": "rm -Rf public"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mortar-works/mortar-website"
+  },
+  "author": "Mehmet Duran",
+  "license": "ISC",
+  "devDependencies": {
+    "@11ty/eleventy": "^0.11.0",
+    "@babel/core": "^7.9.6",
+    "babel-loader": "^8.1.0",
+    "babel-preset-env": "^1.7.0",
+    "css-loader": "^3.5.3",
+    "extract-text-webpack-plugin": "^4.0.0-beta.0",
+    "node-sass": "^4.14.1",
+    "optimize-css-assets-webpack-plugin": "^5.0.3",
+    "sass-loader": "^8.0.2",
+    "style-loader": "^1.2.1",
+    "webpack": "^4.43.0",
+    "webpack-cli": "^3.3.11"
+  }
+}
