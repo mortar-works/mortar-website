@@ -1,0 +1,116 @@
+---
+title: Welcome to mortar
+name: homepage
+---
+
+{% extends 'layouts/base.njk' %}
+
+{% block pageTitle %}{{ title }} - {{ super() }}}{% endblock %}
+
+{% block bodyId %}{{ name }}{% endblock %}
+
+{% block content %}
+  <section id="topline">
+    <div class="wrapper">
+      <h1>Redefining relationships between people and property</h1>
+
+      <p>
+        Mortar is an AI engine for the real estate sector, transforming traditional processes with real-time data analysis, automation, intelligent decision making, and financial integrity.
+      </p>
+
+      <a class="cta light" href="#use-cases">Learn about our use cases</a>
+    </div>
+  </section>
+
+  <section id="features">
+    <div class="wrapper">
+      <div class="section-head">
+        <h2>Features</h2>
+        <p class="section-tagline">Start making AI assisted decisions</p>
+      </div>
+
+      <div id="feature-list">
+        <ul>
+        {% for feature in features  %}
+          <li>
+            <h3>{{ feature.title }}</h3>
+            <p class="feature-tagline">{{ feature.tagline }}</p>
+            {{ feature.subfeatures | markdown | safe }}
+          </li>
+        {% endfor %}
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section id="partners">
+    <div class="wrapper">
+      <h2>Our partners</h2>
+      <ul>
+        <li><a href="https://www.pwc.com" rel="noopener" target="_blank"><img src="{{ '/static/images/partners/pwc-logo.svg' | url }}" alt="PwC" /></a></li>
+        <li><a href="https://www.londonandpartners.com" rel="noopener" target="_blank"><img src="{{ '/static/images/partners/london-and-partners-logo.png' | url }}" alt="London & Partners" /></a></li>
+        <li><a href="https://learningandwork.org.uk" rel="noopener" target="_blank"><img src="{{ '/static/images/partners/learning-and-work-institue.png' | url }}" alt="Learning and Work Institute" /></a></li>
+        <li><a href="https://www.optivo.org.uk" rel="noopener" target="_blank"><img src="{{ '/static/images/partners/optivo-logo.png' | url }}" alt="Optivo" /></a></li>
+        <li><a href="https://financeinnovationlab.org" rel="noopener" target="_blank"><img src="{{ '/static/images/partners/finance-innovation-lab-logo.jpg' | url }}" alt="Finance Innovation Lab " /></a></li>
+        <li><a href="https://www.onemanchester.co.uk" rel="noopener" target="_blank"><img src="{{ '/static/images/partners/one-manchester-logo.png' | url }}" alt="One Manchester" /></a></li>
+        <li><a href="https://www.metropolitan.org.uk" rel="noopener" target="_blank"><img src="{{ '/static/images/partners/metropolitan-logo.png' | url }}" alt="Metropolitan Housing Trust" /></a></li>
+        <li><a href="https://www.youngfoundation.org" rel="noopener" target="_blank"><img src="{{ '/static/images/partners/the-young-foundation-logo.png' | url }}" alt="Young Foundation" /></a></li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="use-cases">
+    <div class="wrapper">
+      <div class="section-head">
+        <h2>Use cases</h2>
+        <div class="section-tagline">
+          <p>Companies are using Mortar to drive income generation through automation and machine learning. Our interfaces remove time-consuming processes so teams can enhance income and build deeper customer engagement.</p>
+          <p>Find out how companies are using Mortar to access real-time financial information, improve service provision, and build new tools and products:</p>
+        </div>
+      </div>
+
+      <ol>
+      {% for useCase in usecases %}
+        <li>
+          <h3>{{ loop.index }}. {{ useCase.title }}</h3>
+
+          {% if useCase.image %}
+            <figure>
+              <img src="{{ '/static/images/homepage/' + useCase.image | url }}" alt="" />
+            </figure>
+          {% endif %}
+
+          <div>
+            {{ useCase.description | markdown | safe }}
+
+            {% if useCase.page %}
+              <a href="{{ useCase.page | url }}" class="cta">Learn more<span class="visually-hidden"> about {{ useCase.title }}<span></a>
+            {% endif %}
+          </div>
+        </li>
+      {% endfor %}
+      </ol>
+    </div>
+  </section>
+
+  <section id="insights">
+    <div class="wrapper">
+      <div class="section-head">
+        <h2>Insights</h2>
+        <p class="section-tagline">Learn more about how Mortar is revolutionising finance and transforming the real estate sector.</p>
+      </div>
+
+      <ul>
+      {% for post in collections.insights %}
+        <li>
+          <div class="insight-image" style="background-image: url('{{ '/static/images/insights/' + post.data.image | url }}')"></div>
+          <div class="insight-details">
+            <time datetime="{{ post.data.date | w3date }}">{{ post.data.date | date }}</time>
+            <a class="insight-title" href="{{ post.url }}">{{ post.data.title }}</a>
+          </div>
+        </li>
+      {% endfor %}
+      </ul>
+    </div>
+  </section>
+{% endblock %}

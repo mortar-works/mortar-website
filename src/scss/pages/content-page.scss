@@ -1,0 +1,83 @@
+.content-page {
+  background: $white;
+  color: $copy-black;
+
+  font-size: 1.3em;
+  @include reading-optimised;
+
+  @include respond-to('small') {
+    font-size: 1.5em;
+  }
+
+  article {
+    background: $white;
+    overflow: hidden;
+    margin: auto;
+    padding-bottom: 2em;
+
+    @include respond-to('small') {
+      padding: 3em;
+      max-width: 40em;
+      margin-top: -10em;
+    }
+  }
+
+  h1, h2 {
+    color: $black;
+  }
+
+  h1 {
+    @include rajdhani-bold-type;
+    margin: 1em 0 0.8em 0;
+    line-height: 1em;
+
+    @include respond-to('small') {
+      margin: 1em 0 2em 0;
+    }
+  }
+
+  h2 {
+    @include rajdhani-bold-type;
+    line-height: 1.2em;
+    margin-top: 2.1em;
+  }
+
+  p {
+    margin: 1.5em 0;
+    line-height: 3.2ex;
+  }
+
+  .hero-image {
+    height: 15em;
+    background: transparent no-repeat scroll 50% 50%;
+    background-size: cover;
+
+    @include respond-to('small') {
+      height: 20em;
+    }
+  }
+
+  blockquote {
+    margin-left: 0.7em;
+    padding-left: 1.2em;
+    border-left: 4px solid $mortar-pink;
+    position: relative;
+    font-style: italic;
+
+    &:before {
+      content: '&';
+      color: $mortar-pink;
+      font-style: italic;
+      background: $white;
+      display: block;
+      position: absolute;
+      top: 25%;
+      left: -10px;
+      padding: 6px 0 6px 0;
+    }
+  }
+
+  a {
+    color: $black;
+  }
+}

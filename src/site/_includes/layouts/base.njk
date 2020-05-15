@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>
+      {% block pageTitle %}Mortar: Driving the future of real estate{% endblock %}
+    </title>
+    <meta charset="utf-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Mortar is an AI engine for the real estate sector, transforming traditional processes with real-time data analysis, automation, intelligent decision making, and financial integrity.">
+
+    <link rel="stylesheet" href="{{ '/static/css/styles.css' | url }}">
+    <script async="async" defer="defer" src="{{ '/static/js/main.js' | url }}"></script>
+  </head>
+  <body id="{% block bodyId %}{% endblock %}">
+    <header>
+      <div class="wrapper">
+        <a href="/" id="mortar-logo">
+          <img src="{{ '/static/images/mortar-logo-black.png' | url }}" alt="Mortar" width="165" />
+        </a>
+
+        <button class="hamburger hamburger--squeeze" type="button">
+          <span class="visually-hidden">Toggle menu</span>
+          <span class="hamburger-box">
+            <span class="hamburger-inner"></span>
+          </span>
+        </button>
+
+        <nav aria-label="Main navigation">
+          <ul>
+            <li><a href="{{ '/#features' | url }}">Features</a></li>
+            <li><a href="{{ '/#use-cases' | url }}">Use cases</a></li>
+            <li><a href="{{ '/#insights' | url }}">Insights</a></li>
+            <li><a href="{{ '/#contact' | url }}">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main class="{% block mainClass %}{% endblock %}">
+      {% block content %}{% endblock %}
+    </main>
+
+    <footer>
+      <div class="wrapper">
+        <div id="footer-link-bar">
+          <nav aria-label="Footer navigation">
+            <ul>
+              <li><a href="{{ '/#features' | url }}">Features</a></li>
+              <li><a href="{{ '/#use-cases' | url }}">Use cases</a></li>
+              <li><a href="{{ '/#articles' | url }}">Articles</a></li>
+              <li><a href="{{ '/#contact' | url }}">Contact</a></li>
+            </ul>
+          </nav>
+
+          <div>
+            <h3>Use cases</h3>
+            <ul>
+            {% for useCase in usecases %}
+              <li>
+                <a href="">{{ useCase.title }}</a>
+              </li>
+            {% endfor %}
+            </ul>
+          </div>
+
+          <div>
+            <h3>Features</h3>
+            <ul>
+            {% for feature in features %}
+              <li>
+                {{ feature.title }}
+              </li>
+            {% endfor %}
+            </ul>
+          </div>
+
+        </div>
+
+        <div class="footer-disclaimer">
+          <p>
+            &copy; 2020 Mortar
+          </p>
+          <p>
+            Mortar Works Limited is a company registered in England and Wales (Co. No. 12169493).
+          </p>
+        </div>
+      </div>
+    </footer>
+
+  </body>
+</html>

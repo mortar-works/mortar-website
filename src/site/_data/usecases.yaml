@@ -1,0 +1,22 @@
+---
+    - title: Financial processes
+      description: |-
+        Bring AI assisted decision making to your treasury team. Our intelligent business and banking interfaces increase productivity and drive efficiencies across the whole financial pipeline.
+      page: /use-cases/financial-processes
+      image: iphone_mortar_laptop_dashmockup01.png
+
+    - title: Income Generation
+      description: |-
+        Provide your collections teams and your users with synchronised customer accounts. Use Mortar to build intelligent caseworker interfaces that drive income with AI driven predictive and behavioural technology.
+      page: /use-cases/income-generation
+
+    - title: Data Analysis / Blending
+      description: |-
+        Integrate legacy software and unify different data sources in one simple step. Mortar establishes a financial environment for building API connections that drive growth across the whole company.
+      page: /use-cases/data-analysis
+      image: blended_insights01.png
+
+    - title: Bespoke products and services
+      description: |-
+        Our data audits provide unique insights into your business needs, and create completely new services for your customers. Connect with new customer segments, establish seamless consumer touchpoints and start building trust in your products and services.
+      page: /use-cases/bespoke-products-services

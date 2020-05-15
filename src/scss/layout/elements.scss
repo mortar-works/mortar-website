@@ -1,0 +1,53 @@
+html {
+  scroll-behavior: smooth;
+}
+
+h2, h3 {
+  text-transform: capitalize;
+}
+
+a {
+  color: $white;
+  text-decoration: none;
+  padding: 0.3em 0;
+
+  &:active, &:focus {
+    outline: 3px solid transparent;
+    color: $black;
+    background-color: $mortar-yellow;
+    box-shadow: 0 -2px $mortar-yellow, 0 4px $black;
+    text-decoration: none;
+  }
+}
+
+.cta {
+  display: inline-block;
+  color: $black;
+  padding: 0.7em 2em;
+  border: 1px solid $mortar-purple;
+  transition: all 0.3s ease-in-out;
+  margin: 1em 0;
+
+  &:hover {
+    background: $mortar-purple;
+    color: $mortar-yellow;
+  }
+
+  &.light {
+    border-color: $white;
+    color: $white;
+
+    &:hover {
+      background: $mortar-yellow;
+      color: $black;
+    }
+  }
+}
+
+img {
+  border: 0;
+}
+
+strong {
+  @include bold-type;
+}

@@ -3,10 +3,13 @@
   "version": "1.0.0",
   "description": "Mortar",
   "scripts": {
-    "dev": "webpack --watch & eleventy --serve",
-    "build": "webpack && eleventy",
-    "serve": "npm run build && eleventy --serve",
-    "clean": "rm -Rf public"
+    "dev:webpack": "webpack --mode development --watch",
+    "dev:eleventy": "ELEVENTY_ENV=development eleventy --serve",
+    "dev": "npm run clean && run-p dev:*",
+    "build:webpack": "webpack --mode production",
+    "build:eleventy": "ELEVENTY_ENV=production eleventy",
+    "build": "run-s clean build:*",
+    "clean": "rimraf public src/site/static/css src/site/static/js"
   },
   "repository": {
     "type": "git",
@@ -16,13 +19,17 @@
   "license": "ISC",
   "devDependencies": {
     "@11ty/eleventy": "^0.11.0",
-    "@babel/core": "^7.9.6",
+    "@babel/core": "^7.10.2",
     "babel-loader": "^8.1.0",
     "babel-preset-env": "^1.7.0",
     "css-loader": "^3.5.3",
     "extract-text-webpack-plugin": "^4.0.0-beta.0",
+    "js-yaml": "^3.14.0",
     "node-sass": "^4.14.1",
+    "normalize.css": "^8.0.1",
+    "npm-run-all": "^4.1.5",
     "optimize-css-assets-webpack-plugin": "^5.0.3",
+    "rimraf": "^3.0.2",
     "sass-loader": "^8.0.2",
     "style-loader": "^1.2.1",
     "webpack": "^4.43.0",

@@ -1,0 +1,7 @@
+html {
+  font-size: 1em;
+  line-height: 1.4em;
+  @include regular-type;
+  color: $black;
+  background: $white;
+}

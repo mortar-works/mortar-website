@@ -1,0 +1,158 @@
+body {
+  background-color: $mortar-purple;
+  color: $white;
+}
+
+header, footer, main > section {
+  overflow: hidden;
+
+  & .wrapper {
+    max-width: map-get($breakpoints, 'large');
+    margin: auto;
+    padding: 1em 2em;
+
+    @include respond-to('small') {
+    }
+  }
+}
+
+header {
+  min-height: 7em;
+  position: sticky;
+  left: 0;
+  right: 0;
+  top: 0;
+  z-index: 100;
+  background: $mortar-pink;
+
+  .wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+
+  #mortar-logo {
+    margin: 0;
+    padding: 0;
+  }
+
+  .hamburger {
+    @include respond-to('small'){
+      display: none;
+    }
+  }
+
+  nav {
+    display: none;
+    align-items: center;
+    flex-basis: 100%;
+
+    &.active {
+      display: flex;
+    }
+
+    @include respond-to('small'){
+      display: flex;
+      flex-basis: auto;
+    }
+  }
+
+  ul {
+    list-style: none;
+    padding: 1em 0 0 0;
+
+    li {
+      a {
+        @include rajdhani-regular-type;
+        color: $black;
+        font-size: 1.8em;
+        line-height: 2em;
+      }
+    }
+
+    @include respond-to('small'){
+      display: flex;
+      flex-wrap: wrap;
+      font-size: 1.5em;
+
+      li {
+        a {
+          font-size: 1em;
+          line-height: 1em;
+          padding: 0 0.6em;
+        }
+
+        &:last-of-type a {
+        padding: 0 0.6em;
+          padding-right: inherit;
+        }
+      }
+    }
+  }
+}
+
+footer {
+  padding: 2em 0 6em 0;
+
+  ul {
+    list-style: none;
+    padding-left: 0;
+  }
+
+  li {
+    font-size: 1.2em;
+    line-height: 1.5em;
+  }
+
+  nav ul, h3 {
+    padding-top: 0.6em;
+    margin-bottom: 0.6em;
+    border-top: 2px solid $mortar-orange;
+  }
+
+  #footer-link-bar {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    grid-gap: 1em;
+
+    @include respond-to('small') {
+      grid-gap: 2em;
+    }
+
+    @include respond-to('medium'){
+      grid-gap: 3em;
+    }
+
+    @include respond-to('large'){
+      grid-gap: 4em;
+    }
+  }
+
+  .footer-disclaimer {
+    margin-top: 3em;
+    padding-top: 1.2em;
+    position: relative;
+
+    @include respond-to('small') {
+      margin-top: 5em;
+    }
+
+
+    &:before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 64px;
+      height: 1px;
+      background-color: $white;
+    }
+
+    p {
+      font-size: 0.9em;
+      margin: 0;
+    }
+  }
+}

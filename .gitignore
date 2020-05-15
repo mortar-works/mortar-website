@@ -35,3 +35,5 @@ __pycache__
 
 # === Site build ===
 /public
+/src/site/static/css
+/src/site/static/js
