@@ -58,7 +58,7 @@
             <ul>
             {% for useCase in usecases %}
               <li>
-                <a href="">{{ useCase.title }}</a>
+                <a href="{{ useCase.page | url }}">{{ useCase.title }}</a>
               </li>
             {% endfor %}
             </ul>
