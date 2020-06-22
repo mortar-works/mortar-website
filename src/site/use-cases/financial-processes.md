@@ -1,5 +1,5 @@
 ---
-title: Financial processes
+title: Financial processes | Payment allocation
 image: financial-processes.jpg
 ---
 
