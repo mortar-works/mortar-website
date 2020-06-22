@@ -20,5 +20,9 @@ window.addEventListener('load', (event) => {
 
   const burger = document.querySelector('header .hamburger');
   burger.addEventListener('click', toggleBurger);
-  burger.addEventListener('keypress', toggleBurger);
+
+  // close menu when link clicked on mobile
+  document.querySelectorAll('header nav li a').forEach( a => {
+    a.addEventListener('click', toggleBurger);
+  })
 });
