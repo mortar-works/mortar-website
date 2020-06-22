@@ -10,6 +10,9 @@ Mortar transforms the whole of the financial pipeline; including treasury, incom
 
 Mortar simplifies complex financial systems, creating a unified layer of financial information. Mortar's universal data adaptor obtains and organises information using our AI engine to establish **end-to-end billing**, **account and balance reconciliation**, and **enhanced payment allocation**.
 
+![Screenshot showing AI assisted decision making for financial processes]({{ '/static/images/homepage/iphone_mortar_desktop_dashmockup01.png' | url }})
+
+
 Eliminate financial uncertainty with accurate, real-time financial information
 ------------------------------------------------------------------------------
 
