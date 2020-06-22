@@ -1,16 +1,16 @@
 ---
-    - title: Financial processes
+    - title: AI driven payment allocation | pallo 
       description: |-
-        Start working with accurate, real-time financial information. Mortar's intelligent user-interfaces transform traditional financial processes. Get started with intelligent payment allocation. 
+        Start working with accurate, real-time financial information. Mortar's intelligent user-interfaces transform traditional financial processes. Get your treasury team started with intelligent payment allocation. 
       page: /use-cases/financial-processes
       image: iphone_mortar_laptop_dashmockup01.png
 
-    - title: Income Generation
+    - title: Intelligent collections | collar 
       description: |-
         Provide your collections teams and your users with synchronised accounts. Use Mortar to build intelligent caseworker interfaces that drive income with AI driven predictive and behavioural technology.
       page: /use-cases/income-generation
 
-    - title: Data Analysis / Blending
+    - title: Blended Data Analysis | fusion 
       description: |-
         Integrate legacy software and unify different data sources in one simple step. Mortar establishes the environment for building API connections that drive growth across the whole company.
       page: /use-cases/data-analysis
