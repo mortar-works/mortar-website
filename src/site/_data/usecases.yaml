@@ -12,11 +12,11 @@
 
     - title: Blended Data Analysis
       description: |-
-        Integrate legacy software and unify different data sources into one simple screen. Mortar establishes the environment for building API connections that drive growth across the whole company.
+        Integrate legacy software and unify different data sources in one simple interface. Mortar establishes the environment for acquiring and sharing data to drive insights and performance across the whole company.
       page: /use-cases/data-analysis
       image: blended_insights01.png
 
     - title: Bespoke products and services
       description: |-
-        We partner with corporate clients to deliver AI solutions alongside resolving data issues concerning consent, security, KYC and AML needs. 
+        We partner with corporate clients to deliver AI solutions alongside resolving data issues concerning fraud, risk, consent, security and identity. 
       page: /use-cases/bespoke-products-services
