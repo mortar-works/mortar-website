@@ -1,14 +1,25 @@
 ---
-title: Data Analysis / Blending
+title: Data Analysis / Data Blending
 image: data-analysis-2.jpg
 ---
 
-Transform traditional financial processes with easy-to-use interfaces and AI assisted decision making
+Supporting the movement in data sharing and advancing the decision making process
 -----------------------------------------------------------------------------------------------------
 
-Mortar transforms the whole of the financial pipeline; including treasury, income generation and collections processes. The shared use of intelligent interfaces transforms team members into AI assisted decision makers, freeing up thousands of hours of time to concentrate on higher value tasks and responsibilities.
+Data sharing is fast becoming absolutely integral to the process of decision making; informing operations, strategy and investment. The transfer, adaptability and organisation of data is therefore increasingly significant, whilst at the same time becoming increasingly complex, as data sets get larger and more data sources are made available. 
+
+Some of the most important sources of data, our customer, client and user data, also requires the correct protocols in how it is obtained and utilised. Acquiring such data, and making it available to all stakeholders, is a delicate balance of the trust, purpose and understanding each party has, and of the role that data plays in driving the many different benefits that each party shares. 
 
 ![Screenshot showing AI assisted decision making for financial processes]({{ '/static/images/homepage/blended_insights01.png' | url }})
+
+Building cohesive data environments, a unified source of accurate information
+-----------------------------------------------------------------------------------------------------
+
+Mortar's AI engine simplifies the complex process of organising and interpreting large data sets. 
+
+Our universal data adaptor makes it possible for varying formats and types of data to be acquired, 
+
+
 
 ![Screenshot showing AI assisted decision making for financial processes]({{ 'https://github.com/mortar-works/mortar-website/blob/draft/src/site/static/images/homepage/blended_insights01.png' | url }})
 
