@@ -8,6 +8,8 @@ Transform traditional financial processes with easy-to-use interfaces and AI ass
 
 Mortar transforms the whole of the financial pipeline; including treasury, income generation and collections processes. The shared use of intelligent interfaces transforms team members into AI assisted decision makers, freeing up thousands of hours of time to concentrate on higher value tasks and responsibilities.
 
+![Screenshot showing AI assisted decision making for financial processes]({{ '/static/images/homepage/blendedinsights01.png' | url }})
+
 Mortar simplifies complex financial systems, creating a unified layer of financial information. Mortar's universal data adaptor obtains and organises information using our AI engine to establish **end-to-end billing**, **account and balance reconciliation**, and **enhanced payment allocation**.
 
 Eliminate financial uncertainty with accurate, real-time financial information
