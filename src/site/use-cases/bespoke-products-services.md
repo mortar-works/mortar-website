@@ -3,14 +3,22 @@ title: Bespoke Products and Services
 image: bespoke-products.jpg
 ---
 
-Transform traditional financial processes with easy-to-use interfaces and AI assisted decision making
+Collaborate and Co-create using an advanced AI engine and suite of development tools 
 -----------------------------------------------------------------------------------------------------
 
-Mortar transforms the whole of the financial pipeline; including treasury, income generation and collections processes. The shared use of intelligent interfaces transforms team members into AI assisted decision makers, freeing up thousands of hours of time to concentrate on higher value tasks and responsibilities.
+Mortar works in partnership to deliver AI solutions for multiple sectors with a strong emphasis on consumer products, real estate, and financial services. We are especially committed to resolving issues for companies concerning financial integrity and data sharing, and we are motivated by companies that share our aspirations for a future consumer-led economy. 
 
-Mortar simplifies complex financial systems, creating a unified layer of financial information. Mortar's universal data adaptor obtains and organises information using our AI engine to establish **end-to-end billing**, **account and balance reconciliation**, and **enhanced payment allocation**.
+Consumer-led services and products require a strong committment to digital transformation. They are based upon the sharing of data and in many cases require the adoption of automation and machine learning. The delivery of a new product or application is therefore secondary to the development of a company's working practices and data sharing infrastructure. To engage the consumer and drive consumer metrics and feedback you need to be utilising accurate, real-time information, often starting with a shared and synchronised financial balance.
 
-Eliminate financial uncertainty with accurate, real-time financial information
-------------------------------------------------------------------------------
+![Screenshot showing a synchronised user interface]({{ '/static/images/homepage/iphone_mortar_app_mockup01' | url }})
 
-Core financial processes are often neglected when it comes to digital transformation. The work of your treasury, finance and income teams however is fundamental to improving engagement with clients, end-users and customers. Mortar provides the access to accurate, real-time information that need to evolve digitally.
+Digital engagement and the application of AI
+-----------------------------------------------------------------------------------------------------
+
+The movement to real-time data analysis and the transformation of traditional business and financial processes happens in stages. In bespoke product and service development Mortar works with existing digital teams to tackle difficult problems, so as to start working towards the desired solution. Many barriers are encountered and the process of applying AI often throws up unexpected areas to explore and whole new case studies for potential development. 
+
+![Screenshot showing AI assisted blended data analysis]({{ '/static/images/homepage/blended_insights01.png' | url }})
+
+If you are interested in the application of AI and are looking for partners in the development of innovative products or solutions then please get in touch and tell us what you are working on.
+
+
