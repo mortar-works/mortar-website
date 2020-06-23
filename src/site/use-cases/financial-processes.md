@@ -6,9 +6,9 @@ image: financial-processes.jpg
 Transform traditional financial processes with easy-to-use interfaces and AI assisted decision making
 -----------------------------------------------------------------------------------------------------
 
-Financial integrity is at the heart of Mortar, it is why we are so committed to delivering AI powered interfaces for companies and businesses. Financial integrity means team members being able to access and act upon accurate, real-time information on accounts, invoices and bills at any moment in time, across any part of the financial pipeline. 
+*Financial integrity* is at the heart of Mortar, it is why we are so committed to delivering AI powered interfaces for companies and businesses. Financial integrity means team members being able to access and act upon *accurate, real-time information* on accounts, invoices and bills at any moment in time, *across any part of the financial pipeline*. 
 
-This access is integral to being able to improve supplier, client and consumer relationships; as well as increasing employee productivity and team morale. Real-time account positions are the essential starting point for a company seeking to undertake successful digital transformation projects and evolve the delivery of their cloud and web based services, products and applications for their consumers and clients. 
+This access is integral to improving supplier, client and consumer relationships, as well as increasing employee productivity and team morale. Real-time account positions are the essential starting point in undertaking successful *digital transformation* projects, evolving the delivery of *cloud and web based services*, and enabling the introduction of *new products and applications* to consumers and clients. 
 
 For these reasons Mortar has made it easy and simple for treasury and finance teams to start implementing AI and benefit from real-time, accurate financial information.  
 
@@ -25,7 +25,7 @@ A simplified financial system
 
 It is common for treasury teams to be responsible for handling and organising multiple sources of information. Team members have to refer to both billing and invoicing; accounts receivable and accounts payable; bank account data as well as customer relationship management tools; to be able to ascertain the correct allocation of a payment.  
 
-Mortar simplifies this complex financial system, creating a unified layer of financial information. Mortar's universal data adaptor obtains and organises information using our AI engine to establish **end-to-end billing**, **account and balance reconciliation**, and inform the process of **intelligent payment allocation**.
+Mortar simplifies this complex financial system, creating a unified layer of financial information and *combining data sources* into a single user interface. Mortar's universal data adaptor obtains and organises information using our AI engine to establish **end-to-end billing**, **account and balance reconciliation**, and inform the process of **intelligent payment allocation**.
 
 Applied automation and machine learning
 ------------------------------------------------------------------------------
