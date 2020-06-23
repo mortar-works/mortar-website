@@ -8,16 +8,14 @@ Supporting the movement in data sharing and advancing the decision making proces
 
 **Data sharing** is absolutely integral to the process of decision making; informing operations, reporting, strategy and investment. The transfer, adaptability and organisation of data is growing in importance, whilst at the same time becoming increasingly complex, as data sets get larger and more data sources are made available. 
 
-Some of the most important sources of data, our customer, client and user data, also requires the **correct protocols** in how it is obtained and utilised. Acquiring **data consent**, and making data available to all stakeholders, is a delicate balance of the **trust, purpose and understanding** each party has of the role that data plays in driving its many different benefits. 
+Some of the most important sources of data, our customer, client and user data, also requires the **correct protocols** in how it is obtained and utilised. Acquiring **data consent** and making data available to all stakeholders is a delicate balance of **trust, purpose and understanding**. The way in which data is acquired and presented reflects the quality of these relationships as well as the significance of the benefits that data can offer to each party. 
 
 ![Screenshot showing AI assisted decision making for financial processes]({{ '/static/images/homepage/blended_insights01.png' | url }})
 
 Building cohesive data environments, a unified source of accurate information
 -----------------------------------------------------------------------------------------------------
 
-Mortar's AI engine simplifies the complex process of organising and interpreting large data sets. 
-
-Our universal data adaptor makes it possible for varying formats and types of data to be acquired and organised into a single, unified and Cohesive Data Environment (CDE). A Mortar CDE provides the connectivity necessary for data to be obtained using web services, automatically capturing data to be **analysed in real-time**. 
+Mortar's AI engine simplifies the complex process of organising and interpreting large data sets. Our universal data adaptor makes it possible for varying formats and types of data to be acquired and organised into a single, unified and Cohesive Data Environment (CDE). A Mortar CDE provides the connectivity necessary for data to be obtained using web services, automatically capturing data to be **analysed in real-time**. 
 
 Mortar's AI engine uses this environment to process and compare large data sets, searching for distinct patterns and behaviours, but also searching for the outliers and anomolies that can present a broader range of **scenario and stress testing**, more **accurate forecasting** and alternative forms of **predictive analysis**.  
 
