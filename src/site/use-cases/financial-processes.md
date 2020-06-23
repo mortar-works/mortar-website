@@ -10,7 +10,7 @@ Transform traditional financial processes with easy-to-use interfaces and AI ass
 
 This access is integral to improving supplier, client and consumer relationships, as well as increasing employee productivity and team morale. Real-time account positions are the essential starting point in undertaking successful **digital transformation** projects, evolving the delivery of **cloud and web based services**, and enabling the introduction of **new products and applications** to consumers and clients. 
 
-For these reasons Mortar has made it easy and simple for treasury and finance teams to start implementing AI and benefit from real-time, accurate financial information.  
+For these reasons Mortar has made it easy and simple for treasury and finance teams to start implementing AI, to benefit from real-time, accurate financial information.  
 
 Intelligent interfaces for the treasury team
 -----------------------------------------------------------------------------------------------------
