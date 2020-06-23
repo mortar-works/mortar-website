@@ -3,14 +3,14 @@ title: Data Analysis / Data Blending
 image: data-analysis-2.jpg
 ---
 
-Supporting the movement in data sharing and advancing the decision making process
+Supporting the movement in data sharing, acquisition and consent
 -----------------------------------------------------------------------------------------------------
 
 **Data sharing** is absolutely integral to the process of decision making; informing operations, reporting, strategy and investment. The transfer, adaptability and organisation of data is growing in importance, whilst at the same time becoming increasingly complex, as data sets get larger and more data sources are made available. 
 
 Some of the most important sources of data, our customer, client and user data, also requires the **correct protocols** in how it is obtained and utilised. Acquiring **data consent** and making data available to all stakeholders is a delicate balance of **trust, purpose and understanding**. The way in which data is acquired and presented reflects the quality of these relationships as well as the significance of the benefits that data can offer to each party. 
 
-![Screenshot showing AI assisted decision making for financial processes]({{ '/static/images/homepage/blended_insights01.png' | url }})
+![Screenshot showing AI assisted blended data analysis]({{ '/static/images/homepage/blended_insights01.png' | url }})
 
 Building cohesive data environments, a unified source of accurate information
 -----------------------------------------------------------------------------------------------------
@@ -19,9 +19,10 @@ Mortar's AI engine simplifies the complex process of organising and interpreting
 
 Mortar's AI engine uses this environment to process and compare large data sets, searching for distinct patterns and behaviours, but also searching for the outliers and anomolies that can present a broader range of **scenario and stress testing**, more **accurate forecasting** and alternative forms of **predictive analysis**.  
 
-![Screenshot showing AI assisted decision making for financial processes]({{ 'https://github.com/mortar-works/mortar-website/blob/draft/src/site/static/images/homepage/blended_insights01.png' | url }})
+![Screenshot showing AI turnover acquisition data for commercial real estate]({{ '/static/images/homepage/blended_insights01.png' | url }})
 
-Multiple interfaces, for multiple users, sharing real-time data
+
+Multiple interfaces for multiple users to share real-time data
 ------------------------------------------------------------------------------
 
 The movement in data acquisition is changing the way whole sectors are able to engage with their customers, stakeholders and users. Mortar enables the provision of multiple interfaces that have different outputs depending on the privelages of the user. Data can be presented in different ways so that the benefits of data acquisition can be shared across all stakeholders. 
