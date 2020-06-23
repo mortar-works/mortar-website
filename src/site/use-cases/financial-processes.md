@@ -25,7 +25,7 @@ A simplified financial system
 
 It is common for treasury teams to be responsible for handling and organising multiple sources of information. Team members have to refer to both billing and invoicing; accounts receivable and accounts payable; bank account data as well as customer relationship management tools; to be able to ascertain the correct allocation of a payment.  
 
-Mortar simplifies this complex financial system, creating a unified layer of financial information and **combining data sources** into a **single user interface**. Mortar's universal data adaptor obtains and organises information using our AI engine to establish **end-to-end billing**, **account and balance reconciliation**, and inform the process of **intelligent payment allocation**.
+Mortar simplifies this complex financial system, creating a unified layer of financial information and **combining data sources** into a **single user interface**. Mortar's universal data adaptor obtains and organises information using our AI engine to enable companies to establish **end-to-end billing**, **account and balance reconciliation**, and inform the process of **intelligent payment allocation**.
 
 Applied automation and machine learning
 ------------------------------------------------------------------------------
