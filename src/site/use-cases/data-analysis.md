@@ -6,9 +6,9 @@ image: data-analysis-2.jpg
 Supporting the movement in data sharing and advancing the decision making process
 -----------------------------------------------------------------------------------------------------
 
-Data sharing is fast becoming absolutely integral to the process of decision making; informing operations, strategy and investment. The transfer, adaptability and organisation of data is therefore increasingly significant, whilst at the same time becoming increasingly complex, as data sets get larger and more data sources are made available. 
+Data sharing is absolutely integral to the process of decision making; informing operations, strategy and investment. The transfer, adaptability and organisation of data is growing in importance, whilst at the same time becoming increasingly complex, as data sets get larger and more data sources are made available. 
 
-Some of the most important sources of data, our customer, client and user data, also requires the correct protocols in how it is obtained and utilised. Acquiring such data, and making it available to all stakeholders, is a delicate balance of the trust, purpose and understanding each party has, and of the role that data plays in driving the many different benefits that each party shares. 
+Some of the most important sources of data, our customer, client and user data, also requires the correct protocols in how it is obtained and utilised. Acquiring such data, and making it available to all stakeholders, is a delicate balance of the trust, purpose and understanding each party has, and of the role that data plays in driving its many different benefits. 
 
 ![Screenshot showing AI assisted decision making for financial processes]({{ '/static/images/homepage/blended_insights01.png' | url }})
 
