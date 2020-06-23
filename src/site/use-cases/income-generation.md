@@ -1,13 +1,12 @@
 ---
-title: Income generation
+title: Income generation | Intelligent Collections
 image: income-generation.jpg
 ---
 
 Build revenue more efficiently with AI enhanced services. Unify your team to pursue shared goals and monitor customer engagement.
 ---------------------------------------------------------------------------------------------------------------------------------
 
-At Mortar we have analysed hundreds of financial systems. The average income officer involved in income generation is spending the majority of their time battling with inaccurate information, pursuing and waiting for acknowledgments and ineffectively monitoring the success of payment schedules. Mortar creates a single source of unified financial information that allows our AI engine to start powering your teams with automated, predictive and proactive collection methods.
-
+At Mortar we have analysed hundreds of financial systems. The average income officer involved in income generation is spending the majority of their time battling with **inaccurate information**, pursuing and **waiting for acknowledgments** and **ineffectively monitoring** the success of payment schedules. Mortar creates a single source of unified financial information that allows our AI engine to start powering your teams with automated, predictive and proactive collection methods.
 ![Screenshot showing AI assisted decision making for financial processes]({{ '/static/images/homepage/iphone_mortar_laptop_dashmockup02.png' | url }})
 Creating Positive Cultures of Forbearance
 -----------------------------------------------------------------------------------------------------------------------------
