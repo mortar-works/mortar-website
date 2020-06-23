@@ -1,5 +1,5 @@
 ---
-title: Income generation | Intelligent Collections
+title: Income generation
 image: income-generation.jpg
 ---
 
