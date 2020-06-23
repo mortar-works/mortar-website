@@ -12,7 +12,7 @@
 
     - title: Data analysis | data blending
       description: |-
-        Integrate legacy software and unify different data sources in one simple interface. Mortar establishes the environment for acquiring and sharing data to drive insights and performance across the whole company.
+        Integrate legacy software and unify different data sources in one simple interface. Mortar establishes the environment for acquiring and sharing data to drive insights, decision making and performance for multiple stakeholders.
       page: /use-cases/data-analysis
       image: blended_insights01.png
 
