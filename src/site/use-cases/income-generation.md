@@ -7,6 +7,7 @@ Build revenue more efficiently with AI enhanced services. Unify your team to pur
 ---------------------------------------------------------------------------------------------------------------------------------
 
 At Mortar we have analysed hundreds of financial systems. The average income officer involved in income generation is spending the majority of their time battling with **inaccurate information**, pursuing and **waiting for acknowledgments** and **ineffectively monitoring** the success of payment schedules. Mortar creates a single source of unified financial information that allows our AI engine to start powering your teams with automated, predictive and proactive collection methods.
+
 ![Screenshot showing AI assisted decision making for financial processes]({{ '/static/images/homepage/iphone_mortar_laptop_dashmockup02.png' | url }})
 Creating Positive Cultures of Forbearance
 -----------------------------------------------------------------------------------------------------------------------------
@@ -16,6 +17,7 @@ The way in which arrears are recognised and responded to represents a company's 
 Whilst restricting the development of customer relationships, it also generates an enormous excess workload for the income and collections team. Mortar's systems are therefore based around an **advanced knowledge and understanding of forbearance**, using digital customer engagement strategies to monitor successful methods and patterns of behaviour and replicating sequences of success. 
 
 In corporate service provision we are used to hearing how our outliers and edge customers consume operational resources, time and energy. As a result service quality and frequency of engagement drops for all. Digital investment, the implemention of **automation and machine learning** is crucial to ensuring workloads are manageable, and that we can start making the **transition to more consumer-led methods of acknowledgement and resolution**. 
+
 ![Screenshot showing AI assisted decision making for financial processes]({{ '/static/images/homepage/iphone_mortar_laptop_dashmockup02.png' | url }})
 A New Generation of User Engagement and Success
 -----------------------------------------------------------------------------------------------------------------------------
