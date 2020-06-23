@@ -10,7 +10,7 @@ Mortar works in partnership to deliver AI solutions for multiple sectors with a 
 
 Consumer-led services and products require a strong committment to digital transformation. They are based upon the sharing of data and in many cases require the adoption of automation and machine learning. The delivery of a new product or application is therefore secondary to the development of a company's working practices and data sharing infrastructure. To engage the consumer and efficiencies and savings, accurate, real-time information is required, often starting with the quality of financial systems and processes.
 
-![Screenshot showing a synchronised user interface]({{ '/static/images/homepage/iphone_mortar_app_mockup01' | url }})
+![Screenshot showing a synchronised user interface]({{ '/static/images/homepage/iphonemockup_01a.png' | url }})
 
 Digital engagement and the application of AI
 -----------------------------------------------------------------------------------------------------
