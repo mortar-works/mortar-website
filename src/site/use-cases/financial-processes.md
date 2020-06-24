@@ -1,5 +1,5 @@
 ---
-title: Financial processes
+title: Transforming traditional financial processes
 image: financial-processes.jpg
 ---
 
