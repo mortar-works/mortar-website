@@ -23,7 +23,7 @@ Payment allocation is the first point at which automation and machine learning a
 
 > Automation and artificial intelligence are poised to reshape the finance function. Knowing what to automate and managing the disruption can lead to a new era of productivity and performance.   - Frank Plaschke, Ishaan Seth, and Rob Whiteman; partners at McKinsey & Company 
 
-![Screenshot showing decision making for financial processes]({{ '/static/images/use-cases/christina-wocintechchat-com-PviMD8jDeYE-unsplash.jpg' | width=100 }})
+![Screenshot showing decision making for financial processes]({{ '/static/images/use-cases/christina-wocintechchat-com-PviMD8jDeYE-unsplash.jpg' | url | width=100 }})
 
 ![Screenshot showing AI assisted decision making for financial processes]({{ '/static/images/homepage/iphone_mortar_laptop_dashmockup02.png' | url }})
 A simplified financial system 
