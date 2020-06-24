@@ -6,7 +6,7 @@ image: financial-processes.jpg
 Transform traditional financial processes with easy-to-use interfaces and AI assisted decision making
 -----------------------------------------------------------------------------------------------------
 
-**Financial integrity** is at the heart of Mortar, it is why we are so committed to delivering AI powered interfaces for companies and businesses. Financial integrity means team members being able to access and act upon **accurate, real-time information** on accounts, invoices and bills at any moment in time, **across any part of the financial pipeline**. 
+**Financial integrity** is at the heart of Mortar. It is why we are so committed to making AI more accessible for companies and businesses. Financial integrity means team members and stakeholders having trust and confidence in their actions and decisions, through all having access to the same **accurate, real-time information** on accounts, invoices and bills at any moment in time, **across any part of the financial pipeline**. 
 
 - - -
 
@@ -14,17 +14,18 @@ Transform traditional financial processes with easy-to-use interfaces and AI ass
 
 - - -
 
-The access Mortar provides to real-time financial information is integral to improving supplier, client and consumer relationships, as well as increasing employee productivity and team morale. Real-time account positions are the essential starting point in undertaking successful **digital transformation** projects, evolving the delivery of **cloud and web based services**, and enabling the introduction of **new products and applications** to consumers and clients. 
+The access Mortar provides to real-time financial information is integral to improving supplier, client and consumer relationships, as well as increasing employee productivity and team morale. Real-time account positions are the essential starting point in undertaking successful **digital transformation** projects, evolving the delivery of **cloud and web based services**, and enabling the introduction of **intelligent products and applications** to consumers and clients. 
 
 For these reasons Mortar has made it easy and simple for treasury and finance teams to start implementing AI, to benefit from real-time, accurate financial information.  
 
-Intelligent interfaces for the treasury team
+Intelligent interfaces for the finance team
 -----------------------------------------------------------------------------------------------------
 
 ![Screenshot showing AI assisted decision making for financial processes]({{ '/static/images/homepage/iphone_mortar_desktop_dashmockup01.png' | url }})
 
 Payment allocation is the first point at which automation and machine learning augments employee roles and decision making, aiding the drive towards financial integrity. Mortar's intelligent payment allocation system provides a connected set of user interfaces for treasury team members, to turn them into AI assisted decision makers, freeing up thousands of hours of time to concentrate on higher value tasks and responsibilities.
 
+<img src="/static/images/use-cases/christina-wocintechchat-com-PviMD8jDeYE-unsplash.jpg" width="48">
 ![Screenshot showing decision making for financial processes]({{ '/static/images/use-cases/christina-wocintechchat-com-PviMD8jDeYE-unsplash.jpg' | url }})
 
 ![Screenshot showing AI assisted decision making for financial processes]({{ '/static/images/homepage/iphone_mortar_laptop_dashmockup02.png' | url }})
