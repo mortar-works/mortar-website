@@ -52,6 +52,4 @@ Core financial processes are often neglected when it comes to digital transforma
 
 Get in touch to learn more about our intelligent treasury systems and how Mortar can provide the access to accurate, real-time information your company needs to evolve.
 
-Button - get in touch
-
 
