@@ -33,7 +33,9 @@ A simplified financial system
 
 It is common for treasury teams to be required to handle and organise multiple sources of information. Team members have to refer to both billing and invoicing; accounts receivable and accounts payable; bank account data as well as customer relationship management tools; to be able to ascertain the correct allocation of a payment.
 
-![Screenshot showing AI assisted decision making for financial processes]({{ '/static/images/homepage/mortar_laptop_dashmockup05.png' | url }})
+
+<img src="/static/images/homepage/mortar_laptop_dashmockup05.png" width="100%">
+
 
 Mortar simplifies this complex financial system, creating a unified layer of financial information and **combining data sources** into a **single user interface**. Mortar's universal data adaptor obtains and organises information, for our AI engine to provide companies with **end-to-end billing**, **account and balance reconciliation**, and **intelligent payment allocation**.
 
