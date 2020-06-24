@@ -7,6 +7,7 @@ Transform traditional financial processes with easy-to-use interfaces and AI ass
 -----------------------------------------------------------------------------------------------------
 
 **Financial integrity** is at the heart of Mortar. It is why we are so committed to making AI more accessible for companies and businesses. Financial integrity means team members and stakeholders having trust and confidence in their actions and decisions, through all having access to the same **accurate, real-time information** on accounts, invoices and bills at any moment in time, **across any part of the financial pipeline**. 
+
 <br/>
 - - -
 
@@ -14,6 +15,7 @@ Transform traditional financial processes with easy-to-use interfaces and AI ass
 
 - - -
 <br/>
+
 Mortar provides access to real-time financial information and uses its AI enging to improve supplier, client and consumer relationships, as well as increase employee productivity and team morale. Real-time financial information is essential for undertaking successful **digital transformation** projects, evolving the delivery of **cloud and web based services**, and enabling the introduction of **intelligent products and applications** to consumers and clients. 
 
 For these reasons Mortar has made it easy and simple for treasury and finance teams to start implementing AI, to benefit from real-time, accurate financial information.  
@@ -45,6 +47,7 @@ Applied automation and machine learning
 ------------------------------------------------------------------------------
 
 <br/>
+
 - - -
 
 > 54% of executives say that AI solutions have already increased productivity in their businesses. These leaders are using AI to automate processes too complex for older technologies; to identify trends in historical data; and to provide forward-looking intelligence to strengthen human decisions.   - PwC, How can organisations reshape business strategy with AI?
