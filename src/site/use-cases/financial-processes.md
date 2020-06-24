@@ -25,16 +25,15 @@ Intelligent interfaces for the finance team
 
 Payment allocation is the first point at which automation and machine learning augments employee roles and decision making, aiding the drive towards financial integrity. Mortar's intelligent payment allocation system provides a connected set of user interfaces for treasury team members, turning them into AI assisted decision makers, freeing up thousands of hours of time to concentrate on higher value tasks and responsibilities.  
 
-<img src="/static/images/use-cases/christina-wocintechchat-com-PviMD8jDeYE-unsplash.jpg" width="100%">. 
+<img src="/static/images/use-cases/christina-wocintechchat-com-PviMD8jDeYE-unsplash.jpg" width="100%">With automation team time can be spent creating additional value for the company. 
 
 
 A simplified financial system 
 -----------------------------------------------------------------------------------------------------
 
-![Screenshot showing AI assisted decision making for financial processes]({{ '/static/images/homepage/iphone_mortar_laptop_dashmockup02.png' | url }})
+It is common for treasury teams to be required to handle and organise multiple sources of information. Team members have to refer to both billing and invoicing; accounts receivable and accounts payable; bank account data as well as customer relationship management tools; to be able to ascertain the correct allocation of a payment.
 
-  
-It is common for treasury teams to be required to handle and organise multiple sources of information. Team members have to refer to both billing and invoicing; accounts receivable and accounts payable; bank account data as well as customer relationship management tools; to be able to ascertain the correct allocation of a payment.  
+![Screenshot showing AI assisted decision making for financial processes]({{ '/static/images/homepage/iphone_mortar_laptop_dashmockup02.png' | url }})
 
 Mortar simplifies this complex financial system, creating a unified layer of financial information and **combining data sources** into a **single user interface**. Mortar's universal data adaptor obtains and organises information, for our AI engine to provide companies with **end-to-end billing**, **account and balance reconciliation**, and **intelligent payment allocation**.
 
