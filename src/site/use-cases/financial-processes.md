@@ -9,6 +9,7 @@ Transform traditional financial processes with easy-to-use interfaces and AI ass
 **Financial integrity** is at the heart of Mortar. It is why we are so committed to making AI more accessible for companies and businesses. Financial integrity means team members and stakeholders having trust and confidence in their actions and decisions, through all having access to the same **accurate, real-time information** on accounts, invoices and bills at any moment in time, **across any part of the financial pipeline**. 
 
 <br/>
+
 - - -
 
 > Automation and artificial intelligence are poised to reshape the finance function. Knowing what to automate and managing the disruption can lead to a new era of productivity and performance.   - Frank Plaschke, Ishaan Seth, and Rob Whiteman; partners at McKinsey & Company 
