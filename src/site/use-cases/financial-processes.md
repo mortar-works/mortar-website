@@ -8,7 +8,9 @@ Transform traditional financial processes with easy-to-use interfaces and AI ass
 
 **Financial integrity** is at the heart of Mortar, it is why we are so committed to delivering AI powered interfaces for companies and businesses. Financial integrity means team members being able to access and act upon **accurate, real-time information** on accounts, invoices and bills at any moment in time, **across any part of the financial pipeline**. 
 
-This access is integral to improving supplier, client and consumer relationships, as well as increasing employee productivity and team morale. Real-time account positions are the essential starting point in undertaking successful **digital transformation** projects, evolving the delivery of **cloud and web based services**, and enabling the introduction of **new products and applications** to consumers and clients. 
+> Automation and artificial intelligence are poised to reshape the finance function. Knowing what to automate and managing the disruption can lead to a new era of productivity and performance.   - Frank Plaschke, Ishaan Seth, and Rob Whiteman; partners at McKinsey & Company 
+
+The access Mortar provides to real-time financial information is integral to improving supplier, client and consumer relationships, as well as increasing employee productivity and team morale. Real-time account positions are the essential starting point in undertaking successful **digital transformation** projects, evolving the delivery of **cloud and web based services**, and enabling the introduction of **new products and applications** to consumers and clients. 
 
 For these reasons Mortar has made it easy and simple for treasury and finance teams to start implementing AI, to benefit from real-time, accurate financial information.  
 
@@ -20,6 +22,8 @@ Intelligent interfaces for the treasury team
 Payment allocation is the first point at which automation and machine learning augments employee roles and decision making, aiding the drive towards financial integrity. Mortar's intelligent payment allocation system provides a connected set of user interfaces for treasury team members, to turn them into AI assisted decision makers, freeing up thousands of hours of time to concentrate on higher value tasks and responsibilities.
 
 > Automation and artificial intelligence are poised to reshape the finance function. Knowing what to automate and managing the disruption can lead to a new era of productivity and performance.   - Frank Plaschke, Ishaan Seth, and Rob Whiteman; partners at McKinsey & Company 
+
+![Screenshot showing decision making for financial processes]({{ '/static/images/use-cases/christina-wocintechchat-com-PviMD8jDeYE-unsplash.jpg' | url }})
 
 ![Screenshot showing AI assisted decision making for financial processes]({{ '/static/images/homepage/iphone_mortar_laptop_dashmockup02.png' | url }})
 A simplified financial system 
