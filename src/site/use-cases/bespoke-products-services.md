@@ -6,11 +6,22 @@ image: bespoke-products.jpg
 Collaborate and Co-create using an advanced AI engine and suite of development tools 
 -----------------------------------------------------------------------------------------------------
 
+<br/>
+
+- - -
+
+> achieving digital transformation at speed requires more than technology. Two other things are just as critical. First, agility: delivering change through quick steps, learning as you go. Second, adoption: taking your people with you.   - PwC, Accelerating Digital Transformation  
+
+- - -
+<br/>
+
 Mortar works in partnership to deliver AI solutions for multiple sectors with a strong emphasis on **consumer products**, **real estate**, and **financial services**. We are especially committed to resolving issues for companies concerning financial integrity and data sharing, and we are motivated by companies that share our aspirations for a future **consumer-led economy**. 
 
 Consumer-led services and products require a strong committment to digital transformation. They are based upon the sharing of data and in many cases require the adoption of automation and machine learning. The delivery of a new product or application is therefore secondary to the development of a company's **working practices and data sharing infrastructure**. To engage the consumer and efficiencies and savings, accurate, real-time information is required, often starting with the quality of financial systems and processes.
 
-![Screenshot showing a synchronised user interface]({{ '/static/images/homepage/iphonemockup_01a.png' | url }})
+<p align="center">
+  <img src="/static/images/homepage/iphonemockup_01a.png" />
+</p>
 
 Digital engagement and the application of AI
 -----------------------------------------------------------------------------------------------------
