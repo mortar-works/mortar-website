@@ -28,5 +28,4 @@ A New Generation of User Engagement and Success
 Mortar is committed to the advance of consistent, proactive customer engagement and user-led arrears management.  
 
 The application of machine learning and automation is essential to begin communicating effectively with customers. It is also the basis on which to start effectively sharing information, creating user-led feedback to enhance service provision and drive success. Mortar's AI engine powers this transition, providing the intelligent caseworker interfaces for analysing income, introducing predictive and behavioural tools, and highlighting the opportunities for **targeted consumer engagement**.
-
-Get in touch to learn more
+ 
