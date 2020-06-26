@@ -59,5 +59,5 @@ Applied automation and machine learning
 Core financial processes are often neglected when it comes to digital transformation. The work of your treasury, finance and income teams however is fundamental to improving engagement and service provision, and offers the ideal environment to augment roles and drive productivity with automation and machine learning. 
 
 Get in touch to learn more about our intelligent treasury systems and how Mortar can provide the access to accurate, real-time information your company needs to evolve.
-
+ 
 
