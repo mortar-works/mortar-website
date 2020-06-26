@@ -19,7 +19,7 @@
     }
 
     @include respond-to('small'){
-      background: linear-gradient(90deg, $mortar-purple 30%, rgba(255,255,255,0)), url('../images/topline-bg/2.jpg') scroll no-repeat 270px -18px;
+      background: linear-gradient(90deg, $mortar-purple 30%, rgba(255,255,255,0)), url('../images/topline-bg/2.jpg') scroll no-repeat 270px 0;
       background-size: cover;
     }
 

@@ -58,23 +58,24 @@
   }
 
   blockquote {
-    margin-left: 0.7em;
+    // margin: 3em 0 3em 0.7em;
+    margin: 1em 0 1em 0.7em;
     padding-left: 1.2em;
     border-left: 4px solid $mortar-pink;
     position: relative;
     font-style: italic;
+    border-left: 5px solid $mortar-pink;
 
-    &:before {
-      content: '&';
-      color: $mortar-pink;
-      font-style: italic;
-      background: $white;
-      display: block;
-      position: absolute;
-      top: 25%;
-      left: -10px;
-      padding: 6px 0 6px 0;
-    }
+    // &:before {
+    //   content: '';
+    //   color: $black;
+    //   display: block;
+    //   position: absolute;
+    //   top: 25%;
+    //   left: -10px;
+    //   padding: 6px 0 6px 0;
+    // }
+
   }
 
   a {
