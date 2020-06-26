@@ -24,7 +24,7 @@ For these reasons Mortar has made it easy and simple for treasury and finance te
 Intelligent interfaces for the finance team
 -----------------------------------------------------------------------------------------------------
 
-![Screenshot showing AI assisted decision making for financial processes]({{ '/static/images/homepage/iphone_mortar_desktop_dashmockup01.png' | url }})
+![Screenshot showing AI assisted decision making for financial processes]({{ '/static/images/homepage/mortar_desktop_dashmockup01.png' | url }})
 
 Payment allocation is the first point at which automation and machine learning augments employee roles and decision making, aiding the drive towards financial integrity. Mortar's intelligent payment allocation system provides a connected set of user interfaces for treasury team members, turning them into AI assisted decision makers, freeing up thousands of hours of time to concentrate on higher value tasks and responsibilities.  
 
