@@ -8,7 +8,10 @@ Build revenue more efficiently with AI enhanced services. Unify your team to pur
 
 At Mortar we have analysed hundreds of financial systems. The average income officer involved in income generation is spending the majority of their time battling with **inaccurate information**, pursuing and **waiting for acknowledgments** and **ineffectively monitoring** the success of payment schedules. Mortar creates a single source of unified financial information that allows our AI engine to start powering your teams with automated, predictive and proactive collection methods.
 
-![Screenshot showing AI assisted decision making for financial processes]({{ '/static/images/homepage/mortar_laptop_dashmockup03_arrears.png' | url }})
+<br/><br/>
+<img src="/static/images/homepage/mortar_laptop_dashmockup03_arrears.png" width="100%">
+<br/><br/>
+
 Creating Positive Cultures of Forbearance
 -----------------------------------------------------------------------------------------------------------------------------
 
