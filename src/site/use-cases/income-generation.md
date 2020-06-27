@@ -10,9 +10,9 @@ At Mortar we have analysed hundreds of financial systems. From the Chief Financi
 
 > 67% of CFOs cannot focus on strategic priorities because of increasing operational responsibilities and time spent on compliance, controls and costs. - EY, The DNA of the CFO
 
-Wasted resources and staff member frustrations are difficult to resolve in a company's income generation and collections team. The average income officer involved in income generation is spending the majority of their time battling with **inaccurate information**, pursuing and **waiting for acknowledgments** and **ineffectively monitoring** accounts and schedules. 
+Wasted resources and staff member frustrations are common within a company's income generation and collections team. The average income officer is spending the majority of their time battling with **inaccurate information**, pursuing and **waiting for acknowledgments** and **ineffectively monitoring** accounts and schedules. 
 
-Mortar however offers **a single source of unified financial information**, enabling our AI engine to start powering your teams with automated, predictive and proactive **account management** and **collections tools**.
+Mortar however offers **a single source of unified financial information**, enabling our AI engine to start powering your teams with automated, predictive and proactive **account management** and **collection tools**.
 
 <br/><br/>
 <img src="/static/images/homepage/mortar_laptop_dashmockup03_arrears.png" width="100%">
@@ -21,9 +21,9 @@ Mortar however offers **a single source of unified financial information**, enab
 Creating Positive Cultures of Forbearance
 -----------------------------------------------------------------------------------------------------------------------------
 
-Recognising and responded to invoices and arrears represents a company's **culture of forbearance** and often undermines and enters into conflict with the customer relationship. For many companies the starting point for customer engagement is too often in response to either a problem or a debt. This reactive relationship is not a good place from which to achieve positive results. As a consequence cases can easily build up, and customers are either waiting for their problems to be dealt with, or are yet to be informed that they have outstanding owings. Everyone in the pipeline ends up in **compromised and negative positiosn**.
+A company's **culture of forbearance**, how it recognises and responds to invoices and arrears, will often undermine and create conflict with the customer relationship. For many companies the starting point for customer engagement is too often in response to either a problem or a debt. This reactive relationship is not a good place from which to achieve positive results. Being on the backfoot generates an enormous excess workload for the income and collections team and restricts the development of customer relationships. Cases that need resolving can easily build up, and customers are either waiting for their problems to be dealt with, or are yet to be informed that they have outstanding owings. Everyone in the pipeline ends up in **compromised and negative positions**.
 
-Whilst restricting the development of customer relationships, being on the backfoot also generates an enormous excess workload for the income and collections team. Mortar's systems are therefore based around an **advanced knowledge and understanding of forbearance**, using digital customer engagement strategies to monitor successful methods and patterns of behaviour, helping your teams to replicate and improve sequences of success. At Mortar we focus on establishing bespoke services and sequencing to help **drive your key performance indicators (KPIs)**. We also provide access to a new suite of analytics and tooling to help you drive new KPIs, such as **mean time to arrears acknowledgement (MTTAA)** and **mean time to arrears resolution (MTTAR)**.
+Mortar's systems are based around an **advanced knowledge and understanding of forbearance**, our AI engine monitors customer engagement strategies, detecting successful methods and patterns of behaviour, helping your teams to replicate and improve sequences of success. At Mortar we focus on establishing bespoke services and sequencing to help **drive your key performance indicators (KPIs)**. We also provide access to a new suite of analytics and tooling to help you drive new KPIs, such as **mean time to arrears acknowledgement (MTTAA)** and **mean time to arrears resolution (MTTAR)**.
 
 <br/><br/>
 <img src="/static/images/use-cases/mortar_laptop_dashmockup03_query.png" width="100%">
