@@ -8,7 +8,7 @@ Build revenue more efficiently with AI enhanced services. Unify your finance tea
 
 At Mortar we have analysed hundreds of financial systems. From the CFO down, throughout the organisation, time prioritisation represents the greatest barrier to strategic decision making and the actions that drive corporate value and revenue. 
 
-CFOs around the world are increasingly stretched as operational responsibilities take up an increasing amount of time that should be spent on strategic priorities. 67% of CFOs cannot focus on strategic priorities because of increasing operational responsibilities and time spent on compliance, controls and costs.
+> CFOs around the world are increasingly stretched as operational responsibilities take up an increasing amount of time that should be spent on strategic priorities. 67% of CFOs cannot focus on strategic priorities because of increasing operational responsibilities and time spent on compliance, controls and costs.   - EY, The DNA of the CFO
 
 Wasted resources, and staff member frustrations, are no better represented than in a company's income generation and collections team. The average income officer involved in income generation is spending the majority of their time battling with **inaccurate information**, pursuing and **waiting for acknowledgments** and **ineffectively monitoring** accounts and schedules. Mortar creates a single source of unified financial information that allows our AI engine to start powering your teams with automated, predictive and proactive account management and collection methods.
 
@@ -18,6 +18,8 @@ Wasted resources, and staff member frustrations, are no better represented than 
 
 Creating Positive Cultures of Forbearance
 -----------------------------------------------------------------------------------------------------------------------------
+
+> CFOs around the world are increasingly stretched as operational responsibilities take up an increasing amount of time that should be spent on strategic priorities. 67% of CFOs cannot focus on strategic priorities because of increasing operational responsibilities and time spent on compliance, controls and costs.   - EY, The DNA of the CFO
 
 The way in which arrears are recognised and responded to represents a company's entire approach and attitude to forbearance. In many cases this **culture of forbearance** undermines or enters into conflict with the customer relationship. The starting point for customer engagement is often in response to either a problem or a debt. We are waiting for problems to arise and for our customers to become debtors, putting the finance team in **compromised and negative positions**. Not the best place from which to achieve positive results.  
 
