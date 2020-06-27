@@ -10,8 +10,11 @@ At Mortar we have analysed hundreds of financial systems. From the Chief Financi
 
 ---
 <br/>
+
 > 67% of CFOs cannot focus on strategic priorities because of increasing operational responsibilities and time spent on compliance, controls and costs. - EY, The DNA of the CFO
+
 <br/>
+
 ---
 
 Wasted resources and staff member frustrations are common within a company's income generation and collections team. The average income officer is spending the majority of their time battling with **inaccurate information**, pursuing and **waiting for acknowledgments** and **ineffectively monitoring** accounts and schedules. 
