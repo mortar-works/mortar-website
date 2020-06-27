@@ -20,7 +20,7 @@ The way in which arrears are recognised and responded to represents a company's 
 Whilst restricting the development of customer relationships, being on the backfoot also generates an enormous excess workload for the income and collections team. Mortar's systems are therefore based around an **advanced knowledge and understanding of forbearance**, using digital customer engagement strategies to monitor successful methods and patterns of behaviour, helping your teams to replicate and improve sequences of success. At Mortar we focus on establishing bespoke services and sequencing to help drive your key performance indicators (KPIs). We also provide access to a new suite of analytics and tooling to help you drive new KPIs, such as mean time to arrears acknowledgement (MTTAA) and mean time to arrears resolution (MTTAR).
 
 <br/><br/>
-<img src="/static/images/homepage/mortar_laptop_dashmockup03_query.png" width="100%">
+<img src="/static/images/use-cases/mortar_laptop_dashmockup03_query.png" width="100%">
 <br/><br/>
 
 A New Generation of User Engagement and Success
