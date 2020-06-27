@@ -3,7 +3,7 @@ title: Data Analysis / Data Blending
 image: data-analysis-2.jpg
 ---
 
-Supporting the movement in data sharing, acquisition and consent
+Drive productivity and expand insights and reporting with advanced solutions for data sharing, acquisition and consent
 -----------------------------------------------------------------------------------------------------
 
 **Data sharing** is absolutely integral to the process of decision making; informing operations, reporting, strategy and investment. The transfer, adaptability and organisation of data is growing in importance, whilst at the same time becoming increasingly complex, as data sets get larger and more data sources are made available. 
