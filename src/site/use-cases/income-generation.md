@@ -8,7 +8,7 @@ Build revenue more efficiently with AI enhanced services. Unify your finance tea
 
 At Mortar we have analysed hundreds of financial systems. From the CFO down, throughout the organisation, time prioritisation represents the greatest barrier to strategic decision making and the actions that drive corporate value and revenue. 
 
-> CFOs around the world are increasingly stretched as operational responsibilities take up an increasing amount of time that should be spent on strategic priorities. 67% of CFOs cannot focus on strategic priorities because of increasing operational responsibilities and time spent on compliance, controls and costs.   - EY, The DNA of the CFO
+> 67% of CFOs cannot focus on strategic priorities because of increasing operational responsibilities and time spent on compliance, controls and costs. - EY, The DNA of the CFO
 
 Wasted resources, and staff member frustrations, are no better represented than in a company's income generation and collections team. The average income officer involved in income generation is spending the majority of their time battling with **inaccurate information**, pursuing and **waiting for acknowledgments** and **ineffectively monitoring** accounts and schedules. Mortar creates a single source of unified financial information that allows our AI engine to start powering your teams with automated, predictive and proactive account management and collection methods.
 
@@ -33,6 +33,8 @@ A New Generation of User Engagement and Success
 -----------------------------------------------------------------------------------------------------------------------------
 
 Mortar is committed to the advance of consistent, proactive customer engagement and user-led tools for financial and account management. 
+
+> The CFO agenda goes beyond traditional finance; it should involve an innovation and growth imperative, change and transformation, and responding to and making decisions under the headings of uncertainty, performance and efficiency.  - EY, The New Face of Finance
 
 In corporate service provision we are used to hearing how our outliers and edge customers consume operational resources, time and energy. As a result service quality and frequency of engagement drops for all customers. Digital investment, the implemention of **automation and machine learning**, is crucial to ensuring workloads are manageable, and enables the **transition to more consumer-led methods of acknowledgement and resolution**. Environments in which we can utilise technology to learn from our most compromising events and users, so they can be more quickly and succesfully identified, supported and resolved in the future.
 
