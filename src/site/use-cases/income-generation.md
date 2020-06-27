@@ -41,7 +41,7 @@ A New Generation of User Engagement and Success
 
 Mortar is committed to the advance of consistent, proactive customer engagement and user-led tools for financial and account management. 
 
-> The CFO agenda goes beyond traditional finance; it should involve an innovation and growth imperative, change and transformation, and responding to and making decisions under the headings of uncertainty, performance and efficiency.  - EY, The New Face of Finance
+> The CFO agenda goes beyond traditional finance; it involves an innovation and growth imperative, change and transformation, and responding to and making decisions under the headings of uncertainty, performance and efficiency.  - EY, The New Face of Finance
 
 In corporate service provision we are used to hearing how our outliers and edge customers consume operational resources, time and energy. As a result service quality and frequency of engagement drops for all customers. Digital investment, the implemention of **automation and machine learning**, is crucial to ensuring workloads are manageable, and enables the **transition to more consumer-led methods of acknowledgement and resolution**. Environments in which we can utilise technology to learn from our most compromising events and users, so they can be more quickly and succesfully identified, supported and resolved in the future.
 
