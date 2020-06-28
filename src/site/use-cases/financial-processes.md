@@ -6,7 +6,7 @@ image: financial-processes.jpg
 Transform traditional financial processes with easy-to-use interfaces and AI assisted decision making
 -----------------------------------------------------------------------------------------------------
 
-**Financial integrity** is at the heart of Mortar. It is why we are so committed to making AI more accessible for your company and business. Financial integrity means your team members and stakeholders having trust and confidence in their actions and decisions, through all having access to the same **accurate, real-time information** on accounts, invoices and bills at any moment in time, **across any part of the financial pipeline**.
+**Financial integrity** is at the heart of Mortar. It is why we are so committed to making AI more accessible and easy to adopt. Financial integrity means your team members and stakeholders having trust and confidence in their actions and decisions, through all having access to the same **accurate, real-time information** on accounts, invoices and bills at any moment in time, **across any part of the financial pipeline**.
 
 ---
 
