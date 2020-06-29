@@ -47,6 +47,12 @@
     line-height: 3.2ex;
   }
 
+  p img {
+    display: inline-block;
+    margin: 3em auto;
+    max-width: 100%;
+  }
+
   .hero-image {
     height: 15em;
     background: transparent no-repeat scroll 50% 50%;
@@ -58,23 +64,27 @@
   }
 
   blockquote {
-    // margin: 3em 0 3em 0.7em;
-    margin: 1em 0 1em 0.7em;
+    margin: 4em 0 4em 0.7em;
     padding-left: 1.2em;
     border-left: 4px solid $mortar-pink;
     position: relative;
     font-style: italic;
     border-left: 5px solid $mortar-pink;
 
-    // &:before {
-    //   content: '';
-    //   color: $black;
-    //   display: block;
-    //   position: absolute;
-    //   top: 25%;
-    //   left: -10px;
-    //   padding: 6px 0 6px 0;
-    // }
+    &::before, &::after {
+      content: ' ';
+      position: absolute;
+      top: -2em;
+      left: -1em;
+      height: 2px;
+      width: calc(100% + 1em);
+      background-color: lighten($black, 60%);
+    }
+
+    &::after {
+      top: inherit;
+      bottom: -2em;
+    }
 
   }
 
