@@ -15,6 +15,14 @@ It is well documented how brutal the process of establishing a company can be. S
 
 Our founding co-incided with time spent with PwC, culminating with presentations and conversations with PwC's real estate client base. A big thank you to [Oliver Daniel](https://www.linkedin.com/in/oabdaniel/) and [Stephen Meager](https://www.linkedin.com/in/stephen-meager-57600768/) from [PwC's Scale-Up programme](https://www.pwc.co.uk/ux23/products-and-services/pwc-scale-up-programmes.html), as well as to those in the PwC community that contributed to an enormously beneficial and demanding period for us as founders.
 
+<figure>
+  <img src="/static/images/insights/pwc_proptech01.png" width="100%">
+  <figcaption>
+    Mortar was selected to participate in PwC's first ever PropTech programme.
+  </figcaption>
+</figure>
+
+
 Creating technology and having a vision for its function and purpose is not enough to establish traction as a start-up. The amount that we learnt through exposure to PwC's corporate client base and the preparation that was provided to us from PwC's teams has been invaluable in establishing Mortar's use-cases and in understanding how our clients can build an effective business case for the adoption and implementation of our products. Just how difficult it is to do this was demonstrated perfectly by our floundering attempts to respond to David Maloney's consistent, repeated retorts of 'So what?'; asked in preparation for our engagement with a potential client. I ask this question of myself and our products now on an almost daily basis. 'So what?', repeated, is a wonderfully cruel way in which to break the confidence of any wannabe tech founder trying to sell a vision before having a good product. Please be gentle if you put such questioning to use.
 
 David's remarkable workshop on Market Positioning was matched by [Paul Fifield](https://www.linkedin.com/in/paulfifield75/)'s passion in delivering his own Sales and Marketing masterclass. Whilst chastising us for not knowing what an SDR was (Sales Development Representative) Paul did well in selling to us the need to establish a source of predicatable revenue as a start-up and highlighted the required methods needed to obtain it - a blended pipeline for lead generation.
