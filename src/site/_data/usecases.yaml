@@ -1,13 +1,13 @@
 ---
     - title: Transform traditional financial processes 
       description: |-
-         Enhance your treasury team with automation and machine learning; and start benefiting from accurate, real-time financial information. Mortar's intelligent user-interfaces transform traditional financial processes.
+         Enhance your treasury team with automation and machine learning; start benefiting from accurate, real-time financial information. Mortar's intelligent user-interfaces transform traditional financial processes.
       page: /use-cases/financial-processes
       image: iphone_mortar_laptop_dashmockup01.png 
 
     - title: Build better income generation and collections
       description: |-
-        Power income generation with predictive and proactive touchpoints for your collections team. Our intelligent caseworker interfaces drive productivity, engagement and customer success in collections.
+        Power income generation with predictive and proactive touchpoints for your collections team. Use Mortar's intelligent caseworker interfaces to drive productivity, engagement and customer success in collections.
       page: /use-cases/income-generation
 
     - title: Drive applied data analysis and data sharing
