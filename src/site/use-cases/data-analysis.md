@@ -16,8 +16,7 @@ Some of the most important sources of data, our customer, client and user data, 
 <br/><br/>
 
 Mortar's turnover acquisition interface for commercial landlords and occupiers to share data
- 
-<br/>
+
 
 Building cohesive data environments; a unified source of accurate information
 -----------------------------------------------------------------------------------------------------
