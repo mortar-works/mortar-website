@@ -20,7 +20,7 @@ Mortar's AI engine simplifies the complex process of organising and interpreting
 
 Mortar's AI engine uses this environment to process and compare large data sets, searching for distinct patterns and behaviours, but also searching for the outliers and anomolies that can present a broader range of **scenario and stress testing**, more **accurate forecasting** and alternative forms of **predictive analysis**.  
 
-![Screenshot showing AI turnover acquisition data for commercial real estate]({{ '/static/images/homepage/blended_insights01.png' | url }})
+![Screenshot showing AI turnover acquisition data for commercial real estate]({{ '/static/images/homepage/blended_insights02.png' | url }})
 
 
 Multiple interfaces for multiple users to share real-time data
