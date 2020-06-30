@@ -10,7 +10,7 @@ Drive productivity, expand insights and streamline reporting with advanced solut
 
 Some of the most important sources of data, our customer, client and user data, also requires the **correct protocols** in how it is obtained and utilised. Acquiring **data consent** and making data available to all stakeholders is a delicate balance of **trust, purpose and understanding**. The way in which data is acquired and presented reflects the quality of these relationships as well as the significance of the benefits that data can offer to each party. 
 
-![Screenshot showing AI assisted blended data analysis]({{ '/static/images/homepage/blended_insights01.png' | url }})
+![Screenshot showing AI assisted blended data analysis]({{ '/static/images/usecases/mortar_laptop_dashmockup_missingturnover01.png' | url }})
 
 Building cohesive data environments; a unified source of accurate information
 -----------------------------------------------------------------------------------------------------
