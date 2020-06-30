@@ -17,6 +17,8 @@ tags:
   - landlords
 ---
 
+> Start by doing what’s necessary; then do what’s possible; and suddenly you are doing the impossible. —Francis of Assisi
+
 As the COVID-19 pandemic grips the world, causing indescribable grief and damage, the solutions that help to save companies and businesses will be surprisingly simple.
 
 These solutions are emerging from the relationships we have with those that provide our homes and our places of work, relationships that right now are under tremendous strain.
@@ -43,4 +45,3 @@ What will be the most significant change in real estate as a result of the COVID
 
 Truly innovative new models of property occupation and ownership will emerge based on the most simple, affordable and accessible solution of all, collaboration.
 
-> Start by doing what’s necessary; then do what’s possible; and suddenly you are doing the impossible. —Francis of Assisi
