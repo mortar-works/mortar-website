@@ -9,7 +9,7 @@ tags:
   - realestatetech
 ---
 
-"Education can be understood as growth and, furthermore, growth is the marker of a truly educational experience."
+> "Education can be understood as growth and, furthermore, growth is the marker of a truly educational experience."
 
 I had been lining up a post about Mortar's acceptance onto the London & Partners business growth programme for a little while. As ever I was struggling with striking the right tone between honest, self-congratulatory achievement and apostolic techno-babble eulogising. Then COVID-19 began making the news, and soon after the headlines; it is difficult to offer any kind of quirky corporate summation in the shadow it now casts.
 
