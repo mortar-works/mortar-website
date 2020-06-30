@@ -31,8 +31,8 @@ Mortar's AI engine uses this environment to process and compare large data sets,
 Multiple interfaces for multiple users to share real-time data
 ------------------------------------------------------------------------------
 
-This movement in data acquisition is changing the way whole sectors are able to engage with their customers, stakeholders and users. Mortar enables the provision of **multiple interfaces** that have different outputs depending on the privelages of the user. Data can be presented in different ways so that the benefits of data acquisition can be shared with all stakeholders. 
+This movement in data acquisition is changing the way whole sectors are able to engage with their customers, stakeholders and users. Mortar enables the provision of **multiple interfaces** that have different outputs depending on the privelages of the user; presenting data in different ways so that the benefits of data acquisition can be shared with all stakeholders. 
 
-Data analysis is not just about how data is captured and interpreted. It is a method of engaging customers and stakeholders. Effective **user on-boarding** is vital to obtaining the necessary data consent from the user, and Mortar co-creates products that are advancing methods in fulfilling user **identity verification**, know your customer **(KYC)** protocols, and anti money laundering **(AML)** services. 
+Data analysis is not just about how data is captured and interpreted. It is a method of engaging customers and stakeholders. Effective **user on-boarding** is vital to obtaining the necessary data consent from the user, and Mortar co-creates products that are advancing methods in fulfilling user **identity verification**, Know Your Customer **(KYC)** protocols, and Anti Money Laundering **(AML)** services. 
 
 Get in touch to find out more and learn how we can develop your data capture, organisation and analysis
