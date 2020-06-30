@@ -10,7 +10,7 @@ Collaborate and Co-create using an advanced AI engine and suite of development t
 
 Mortar works in partnership to deliver AI solutions for multiple sectors with a strong emphasis on **consumer products**, **real estate**, and **financial services**. We are especially committed to resolving issues for companies concerning financial integrity and data sharing, and we are motivated by companies that share our aspirations for a future **consumer-led economy**.
 
-![A screenshot of a bespoke mobile application built on Mortar, within a phone]({{ 'https://github.com/mortar-works/mortar-website/blob/draft/src/site/static/images/use-cases/rent-flex_case_study01.png' | url }})
+![rent-flex product allowing tenants to change their rent schedule]({{ '/static/images/use-cases/rent-flex_case_study01.png' | url }})
 
 Consumer-led services and products require a strong committment to digital transformation. They are based upon the sharing of data and in many cases require the adoption of automation and machine learning. The delivery of a new product or application is therefore secondary to the development of a company's **working practices and data sharing infrastructure**. To engage the consumer and efficiencies and savings, accurate, real-time information is required, often starting with the quality of financial systems and processes.
 
