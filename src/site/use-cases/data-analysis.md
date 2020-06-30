@@ -13,6 +13,7 @@ Some of the most important sources of data, our customer, client and user data, 
 <br/>
 
 <img src="/static/images/use-cases/mortar_laptop_dashmockup_missingturnover01.png" width="100%">
+<br/>
 Mortar's turnover acquisition interface for commercial landlords and occupiers to share data
  
 <br/>
