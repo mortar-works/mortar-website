@@ -19,7 +19,7 @@ Digital engagement and the application of AI
 
 The movement to real-time data analysis and the transformation of traditional business and financial processes happens in stages. In bespoke product and service development Mortar works with existing digital teams to tackle difficult problems, so as to start working towards the desired solution. Many barriers are encountered and the process of applying AI often throws up unexpected areas to explore and whole new case studies for potential development.
 
-![Screenshot showing AI assisted blended data analysis]({{ '/static/images/homepage/blended_insights01.png' | url }})
+![Screenshot showing AI assisted blended data analysis]({{ '/static/images/use-cases/Bespoke_case_study02.png' | url }})
 
 If you are interested in the application of AI and are looking for partners in the development of innovative products or solutions then please get in touch and tell us what you are working on.
 
