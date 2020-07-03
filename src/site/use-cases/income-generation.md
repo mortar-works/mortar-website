@@ -11,7 +11,8 @@ Build revenue more efficiently with AI enhanced services. Unify your finance tea
 
 At Mortar we have analysed hundreds of financial systems. From the Chief Financial Officer (CFO) and throughout the whole organisation, time prioritisation represents the greatest barrier to strategic decision making and the actions that drive corporate value and revenue.
 
-> 67% of CFOs cannot focus on strategic priorities because of increasing operational responsibilities and time spent on compliance, controls and costs. - EY, The DNA of the CFO
+> 67% of CFOs cannot focus on strategic priorities because of increasing operational responsibilities and time spent on compliance, controls and costs.
+> **EY, The DNA of the CFO**
 
 Wasted resources and staff member frustrations are common within a company's income generation and collections team. The average income officer is spending the majority of their time battling with **inaccurate information**, pursuing and **waiting for acknowledgments** and **ineffectively monitoring** accounts and schedules.
 
@@ -35,7 +36,8 @@ A New Generation of User Engagement and Success
 
 Mortar is committed to the advance of consistent, proactive customer engagement and user-led tools for financial and account management.
 
-> The CFO agenda goes beyond traditional finance; it involves an innovation and growth imperative, change and transformation, and responding to and making decisions under the headings of uncertainty, performance and efficiency.  - EY, The New Face of Finance
+> The CFO agenda goes beyond traditional finance; it involves an innovation and growth imperative, change and transformation, and responding to and making decisions under the headings of uncertainty, performance and efficiency.
+> **EY, The New Face of Finance**
 
 In corporate service provision we are used to hearing how our outliers and edge customers consume operational resources, energy and time. As a result service quality and frequency of engagement drops for all customers. Digital investment, the implemention of **automation and machine learning**, is crucial to ensure workloads are manageable, and enables your company's **transition to more consumer-led methods of acknowledgement and resolution**.
 

@@ -14,12 +14,13 @@ Drive productivity, expand insights and streamline reporting with advanced solut
 
 Some of the most important sources of data, our customer, client and user data, also requires the **correct protocols** in how it is obtained and utilised. Acquiring **data consent** and making data available to all stakeholders is a delicate balance of **trust, purpose and understanding**. The way in which data is acquired and presented reflects the quality of these relationships as well as the significance of the benefits that data can offer to each party.
 
-<br/>
 
-<img src="/static/images/use-cases/mortar_laptop_dashmockup_missingturnover01.png" width="100%">
-<br/><br/>
-
-Mortar's turnover acquisition interface for commercial landlords and occupiers to share data
+<figure>
+  <img src="{{ '/static/images/use-cases/mortar_laptop_dashmockup03_query.png' | url }}" />
+  <figcaption>
+    Mortar's turnover acquisition interface for commercial landlords and occupiers to share data
+  </figcaption>
+</figure>
 
 
 Building cohesive data environments; a unified source of accurate information

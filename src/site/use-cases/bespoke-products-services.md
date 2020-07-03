@@ -9,7 +9,8 @@ order: 4
 Collaborate and Co-create using an advanced AI engine and suite of development tools
 -----------------------------------------------------------------------------------------------------
 
-> achieving digital transformation at speed requires more than technology. Two other things are just as critical. First, agility: delivering change through quick steps, learning as you go. Second, adoption: taking your people with you.   - PwC, Accelerating Digital Transformation
+> Achieving digital transformation at speed requires more than technology. Two other things are just as critical. First, agility: delivering change through quick steps, learning as you go. Second, adoption: taking your people with you.
+> **PwC, Accelerating Digital Transformation**
 
 Mortar works in partnership to deliver AI solutions for multiple sectors with a strong emphasis on **consumer products**, **real estate**, and **financial services**. We are especially committed to resolving issues for companies concerning financial integrity and data sharing, and we are motivated by companies that share our aspirations for a future **consumer-led economy**.
 
