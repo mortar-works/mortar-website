@@ -85,11 +85,13 @@
           list-style: none;
           display: grid;
           grid-template-columns: repeat(auto-fill, minmax(18em, 1fr));
-          grid-gap: 3em 1.2em;
+          grid-gap: 3em 1.875em;
 
           > li {
             border-top: 3px solid $mortar-orange;
-            padding: 0.4em;
+            padding: 2.4em;
+            box-shadow: 2px 3px 6px 1px rgba(29,40,40,.3);
+            background: #ededed;
           }
         }
 
@@ -104,6 +106,7 @@
 
         h3 {
           font-size: 1.3em;
+          margin: 0;
           @include rajdhani-bold-type;
         }
 
