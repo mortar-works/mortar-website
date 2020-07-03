@@ -1,6 +1,9 @@
 ---
 title: Income generation
-image: income-generation.jpg
+pageImage: income-generation.jpg
+description: |-
+  Power income generation with predictive and proactive touchpoints for your collections team. Use Mortar's intelligent caseworker interfaces to drive productivity, engagement and customer success in collections.
+order: 2
 ---
 
 Build revenue more efficiently with AI enhanced services. Unify your finance team to pursue shared goals and monitor customer engagement.

@@ -6,7 +6,7 @@
 
 {% block content %}
 <section>
-  <div class="hero-image" style="background-image: url('{{ '/static/images/use-cases/' + image | url }}')"></div>
+  <div class="hero-image" style="background-image: url('{{ '/static/images/use-cases/' + pageImage | url }}')"></div>
   <div class="wrapper">
     <article>
       <h1>{{ title }}</h1>
@@ -14,5 +14,4 @@
     </article>
   </div>
 </section>
-
 {% endblock %}

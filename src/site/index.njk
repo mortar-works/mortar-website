@@ -72,7 +72,7 @@ name: homepage
       <ol>
       {% for useCase in usecases %}
         <li>
-          <h3>{{ loop.index }}. {{ useCase.title }}</h3>
+          <h3>{{ useCase.title }}</h3>
 
           {% if useCase.image %}
             <figure>
@@ -103,11 +103,13 @@ name: homepage
       <ul>
       {% for post in collections.insights %}
         <li>
-          <div class="insight-image" style="background-image: url('{{ '/static/images/insights/' + post.data.image | url }}')"></div>
-          <div class="insight-details">
-            <time datetime="{{ post.data.date | w3date }}">{{ post.data.date | date }}</time>
-            <a class="insight-title" href="{{ post.url }}">{{ post.data.title }}</a>
-          </div>
+          <a class="insight-title" href="{{ post.url }}" aria-label="Insight: {{ post.data.title }}">
+            <div class="insight-image" style="background-image: url('{{ '/static/images/insights/' + post.data.image | url }}')"></div>
+            <div class="insight-details">
+              <time datetime="{{ post.data.date | w3date }}">{{ post.data.date | date }}</time>
+              {{ post.data.title }}
+            </div>
+          </a>
         </li>
       {% endfor %}
       </ul>

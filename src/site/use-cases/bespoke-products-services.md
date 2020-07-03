@@ -1,6 +1,9 @@
 ---
 title: Bespoke Products and Services
-image: bespoke-products.jpg
+pageImage: bespoke-products.jpg
+description: |-
+  Mortar partners with corporate clients to deliver AI solutions and innovative user engagement alongside resolving data issues concerning compliance, security and identity.
+order: 4
 ---
 
 Collaborate and Co-create using an advanced AI engine and suite of development tools
