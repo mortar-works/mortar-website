@@ -85,7 +85,15 @@
       top: inherit;
       bottom: -2em;
     }
+  }
 
+  figure {
+    figcaption {
+      margin-top: 1em;
+      font-size: 0.8em;
+      text-align: center;
+      color: lighten($black, 20%);
+    }
   }
 
   a {

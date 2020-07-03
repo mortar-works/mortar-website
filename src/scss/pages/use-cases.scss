@@ -9,3 +9,29 @@
     background-image: url('/static/images/use-cases/income-generation.jpg');
   }
 }
+
+.other-use-cases {
+  background: lighten($mortar-yellow, 15%);
+
+  ul {
+    list-style: none;
+    padding-left: 0;
+
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    grid-gap: 1em;
+
+    @include respond-to('small') {
+      grid-gap: 2em;
+    }
+
+    @include respond-to('medium'){
+      grid-gap: 3em;
+    }
+
+    @include respond-to('large'){
+      grid-gap: 4em;
+    }
+  }
+
+}
