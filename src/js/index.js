@@ -2,15 +2,11 @@ import '../scss/main.scss';
 
 function toggleBurger(){
   const burger = document.querySelector('header .hamburger');
-  const nav = document.querySelector('header nav');
+  const header = document.querySelector('header');
 
-  if( burger.classList.contains('is-active') ){
-    burger.classList.remove('is-active');
-    nav.classList.remove('active');
-  } else {
-    burger.classList.add('is-active');
-    nav.classList.add('active');
-  }
+  const method = burger.classList.contains('is-active') ? "remove" : "add";
+  burger.classList[method]('is-active');
+  header.classList[method]('nav-active');
 }
 
 window.addEventListener('load', (event) => {

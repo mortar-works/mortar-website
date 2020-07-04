@@ -17,7 +17,7 @@ header, footer, main > section {
 }
 
 header {
-  min-height: 7em;
+  height: 7em;
   position: absolute;
   left: 0;
   right: 0;
@@ -25,6 +25,18 @@ header {
   z-index: 100;
   background: rgba(255,255,255,0.65);
   color: $black;
+  transition: all 0.3s ease-out;
+
+  &.nav-active {
+    height: 100%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: $mortar-orange !important;
+    z-index: 10000;
+  }
 
   #homepage & {
     background: transparent;
@@ -33,8 +45,8 @@ header {
       color: $white;
     }
 
-    #mortar-logo img {
-      filter: invert(1);
+    #mortar-logo {
+      background-image: url('../images/mortar-logo-white.png');
     }
   }
 
@@ -49,26 +61,41 @@ header {
   #mortar-logo {
     margin: 0;
     padding: 0;
-
-    img {
-      height: 75px;
-    }
+    height: 75px;
+    width: 165px;
+    display: block;
+    background: transparent scroll no-repeat 0 0;
+    background-image: url('../images/mortar-logo-black.png');
+    background-size: cover;
+    text-indent: -9999px;
   }
 
   .hamburger {
     @include respond-to('small'){
       display: none;
     }
+
+    .hamburger-inner,
+    .hamburger-inner:after,
+    .hamburger-inner:before {
+      background-color: $black;
+
+      #homepage & {
+        background-color: $white;
+      }
+    }
+  }
+
+  &.nav-active nav {
+    display: flex;
+    margin-top: 3em;
+    font-size: 1.4em;
   }
 
   nav {
     display: none;
     align-items: center;
     flex-basis: 100%;
-
-    &.active {
-      display: flex;
-    }
 
     @include respond-to('small'){
       display: flex;

@@ -1,6 +1,8 @@
 #homepage {
   #topline {
 
+    padding-top: 5.6em;
+
     @include respond-to('small'){
       height: 80vh;
 
