@@ -57,9 +57,9 @@
           <div>
             <h3>Use cases</h3>
             <ul>
-            {% for useCase in usecases %}
+            {% for useCase in collections.useCases %}
               <li>
-                <a href="{{ useCase.page | url }}">{{ useCase.title }}</a>
+                <a href="{{ useCase.url }}">{{ useCase.data.title }}</a>
               </li>
             {% endfor %}
             </ul>

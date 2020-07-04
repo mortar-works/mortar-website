@@ -4,6 +4,7 @@ const yaml = require("js-yaml");
 const dateFilter = require('./src/filters/date-filter.js');
 const markdownFilter = require('./src/filters/markdown-filter.js');
 const w3DateFilter = require('./src/filters/w3-date-filter.js');
+const { MultiWatching } = require("webpack");
 
 const env = process.env.ELEVENTY_ENV;
 
@@ -35,6 +36,13 @@ module.exports = function(eleventyConfig) {
             .reverse();
   });
 
+  eleventyConfig.addCollection("useCases", function(collection) {
+    return collection.getFilteredByGlob("src/site/use-cases/*.md")
+            .sort((a,b) => Math.sign(a.data.order - b.data.order));
+  });
+
+
+  // This bit required for the dev command
   eleventyConfig.setUseGitIgnore(false);
   eleventyConfig.addWatchTarget('src/site/static/js');
   eleventyConfig.addWatchTarget('src/site/static/css');

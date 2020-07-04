@@ -70,22 +70,21 @@ name: homepage
       </div>
 
       <ol>
-      {% for useCase in usecases %}
+      {% for useCase in collections.useCases %}
+      {{ useCase.data.order | log }}
         <li>
-          <h3>{{ useCase.title }}</h3>
+          <h3>{{ useCase.data.title }}</h3>
 
-          {% if useCase.image %}
+          {% if useCase.data.homepageImage %}
             <figure>
-              <img src="{{ '/static/images/homepage/' + useCase.image | url }}" alt="" />
+              <img src="{{ '/static/images/homepage/' + useCase.data.homepageImage | url }}" alt="" />
             </figure>
           {% endif %}
 
           <div>
-            {{ useCase.description | markdown | safe }}
+            {{ useCase.data.description | markdown | safe }}
 
-            {% if useCase.page %}
-              <a href="{{ useCase.page | url }}" class="cta">Learn more<span class="visually-hidden"> about {{ useCase.title }}<span></a>
-            {% endif %}
+            <a href="{{ useCase.url }}" class="cta">Learn more<span class="visually-hidden"> about {{ useCase.data.title }}<span></a>
           </div>
         </li>
       {% endfor %}
