@@ -159,6 +159,10 @@ footer {
     border-top: 2px solid $mortar-orange;
   }
 
+  nav ul {
+    margin-top: 1.4em;
+  }
+
   #footer-link-bar {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
