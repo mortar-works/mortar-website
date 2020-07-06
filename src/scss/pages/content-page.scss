@@ -112,5 +112,86 @@
     }
   }
 
+  .other-content {
+    display: block;
 
+    @include respond-to('small'){
+      display: grid;
+      grid-template-columns: 50% 50%;
+    }
+
+    margin: 2em 0;
+
+    > div {
+      padding: 1em;
+
+    }
+
+    .previous-post, .next-post {
+      position: relative;
+
+      &:before {
+        border-style: solid;
+        border-width: 0.25em 0.25em 0 0;
+        content: '';
+        height: 1em;
+        width: 1em;
+        position: absolute;
+        top: 50%;
+        margin-top: -0.5em;
+        transform: rotate(-45deg);
+        vertical-align: top;
+        transform: rotate(-135deg);
+      }
+
+      &:hover, &:focus, &:active {
+        &:before {
+          border-color: $mortar-orange;
+        }
+      }
+    }
+
+    .previous-post {
+      grid-column-start: 1;
+      text-align: right;
+      border-bottom: 1px solid $mortar-purple;
+
+      @include respond-to('small'){
+        border-right: 1px solid $mortar-purple;
+        border-bottom: none;
+      }
+
+      &:before {
+        left: 0;
+      }
+    }
+
+    .next-post {
+      grid-column-start: 2;
+
+      @include respond-to('small'){
+        border-left: 1px solid $mortar-purple;
+      }
+
+      &:before {
+        right: 0;
+        transform: rotate(45deg);
+      }
+    }
+
+    a {
+      font-weight: 700;
+    }
+
+    a, a span {
+      display: block;
+      color: black;
+    }
+
+    a span {
+      font-weight: normal;
+      font-size: 0.9em;
+      margin-bottom: 0.8em;
+    }
+  }
 }

@@ -5,6 +5,9 @@
 
 {% block mainClass %}insight-page content-page{% endblock %}
 
+{% set previousPost = collections.insights | getPreviousCollectionItem(page) %}
+{% set nextPost = collections.insights | getNextCollectionItem(page) %}
+
 {% block content %}
 <section>
   <div class="hero-image" style="background-image: url('{{ '/static/images/insights/' + image | url }}')"></div>
@@ -14,6 +17,25 @@
 
       {{ content | safe }}
     </article>
+
+    <div class="other-content">
+      {% if previousPost %}
+        <div class="previous-post">
+          <a href="{{ previousPost.url }}">
+            <span>Previous insight</span>
+            {{ previousPost.data.title }}
+          </a>
+        </div>
+      {% endif %}
+      {% if nextPost %}
+        <div class="next-post">
+          <a href="{{ nextPost.url }}">
+            <span>Next insight</span>
+            {{ nextPost.data.title }}
+          </a>
+        </div>
+      {% endif %}
+    </div>
   </div>
 </section>
 {% endblock %}

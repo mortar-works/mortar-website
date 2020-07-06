@@ -4,6 +4,9 @@
 {% block bodyId %}{{ title | slug }}{% endblock %}
 {% block mainClass %}use-case content-page{% endblock %}
 
+{% set previousPost = collections.useCases | getPreviousCollectionItem(page) %}
+{% set nextPost = collections.useCases | getNextCollectionItem(page) %}
+
 {% block content %}
 <section>
   <div class="hero-image" style="background-image: url('{{ '/static/images/use-cases/' + pageImage | url }}')"></div>
@@ -16,6 +19,25 @@
     <p class="use-case-get-in-touch">
       <a class="cta" href="https://mehmet531303.typeform.com/to/HrCsUkRQ" target="_blank" rel="noopener">Get in touch</a>
     </p>
+
+    <div class="other-content">
+      {% if previousPost %}
+        <div class="previous-post">
+          <a href="{{ previousPost.url }}">
+            <span>Previous use case</span>
+            {{ previousPost.data.title }}
+          </a>
+        </div>
+      {% endif %}
+      {% if nextPost %}
+        <div class="next-post">
+          <a href="{{ nextPost.url }}">
+            <span>Next use case</span>
+            {{ nextPost.data.title }}
+          </a>
+        </div>
+      {% endif %}
+    </div>
   </div>
 </section>
 {% endblock %}
