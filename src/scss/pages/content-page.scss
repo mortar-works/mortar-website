@@ -97,7 +97,20 @@
     }
   }
 
-  a {
-    color: $black;
+  li {
+    margin: 1.6em 0;
+    line-height: 3.2ex;
   }
+
+  article a {
+    color: $black;
+    text-decoration: underline;
+
+    &:active, &:focus {
+      text-decoration: none;
+      box-shadow: none;
+    }
+  }
+
+
 }
