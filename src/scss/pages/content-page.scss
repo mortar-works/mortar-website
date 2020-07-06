@@ -11,6 +11,7 @@
 
   article {
     background: $white;
+    // background: transparentize($white, 0.25);
     overflow: hidden;
     margin: auto;
     padding-bottom: 2em;

@@ -19,6 +19,10 @@ window.addEventListener('load', (event) => {
 
   // close menu when link clicked on mobile
   document.querySelectorAll('header nav li a').forEach( a => {
-    a.addEventListener('click', toggleBurger);
-  })
+    a.addEventListener('click', e => {
+      if( document.querySelector('header').classList.contains('nav-active') ){
+        toggleBurger();
+      }
+    });
+  });
 });
