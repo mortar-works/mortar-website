@@ -1,5 +1,5 @@
 ---
-title: Data Analysis / Data Blending
+title: Drive applied data analysis and data sharing
 pageImage: data-analysis-2.jpg
 homepageImage: blended_insights01.png
 description: |-
