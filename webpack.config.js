@@ -1,5 +1,5 @@
 const path = require('path');
-const ExtractTextPlugin = require('extract-text-webpack-plugin');
+const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const OptimizeCssAssetsPlugin = require('optimize-css-assets-webpack-plugin');
 
 module.exports = {
@@ -19,30 +19,29 @@ module.exports = {
         }
       },
       {
-        test: /\.scss$/,
-        use: ExtractTextPlugin.extract(
+        test: /(.scss|.css)$/,
+        use: [
+          MiniCssExtractPlugin.loader,
           {
-            fallback: 'style-loader',
-            use: [
-              {loader: 'css-loader', options: { url: false }},
-              {loader: 'sass-loader', options: {}}
-            ]
-          })
-	  },
-	  {
-        test: /\.css$/,
-        use: ExtractTextPlugin.extract(
+            loader: 'css-loader', // translates CSS into CommonJS
+            options: {
+              url: false
+            },
+          },
           {
-            fallback: 'style-loader',
-			use: [
-				{loader: 'css-loader', options: { url: false }}
-			]
-          })
-      }
+            loader: 'sass-loader', // compiles Sass to CSS
+            options: {
+              sassOptions: {
+                outputStyle: 'compressed'
+              }
+            },
+          },
+        ],
+	  }
     ]
   },
   plugins: [
-    new ExtractTextPlugin({
+    new MiniCssExtractPlugin({
       filename: '../css/styles.css'
     }),
     new OptimizeCssAssetsPlugin({
