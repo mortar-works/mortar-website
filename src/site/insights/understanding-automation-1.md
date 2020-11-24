@@ -1,5 +1,5 @@
 ---
-title: Understanding Automation, Part 1
+title: Understanding Automation
 date: 2020-07-06
 image: understanding-automation-1.jpg
 author: George Unsworth
