@@ -1,7 +1,7 @@
 ---
 title: The Speed of Resilience 
 date: 2020-10-15
-image: evolvefinancefunction.jpg
+image: speedofres.png
 author: George Unsworth
 draft: false
 tags:
