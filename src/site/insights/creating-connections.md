@@ -16,7 +16,9 @@ tags:
 
 > Greater collaboration between the technology and property industries is essential for proptech to add value across the property lifecycle.
 
-Reposting this article from the RICS Property Journal. It is already a year old, but it seems like the conversations have really only just begun.
+In July 2020 Mortar was featured in the RICS Property Journal. The pandemic was in flow and property managers across the commercial and residential real estate sector were sourcing solutions for relieving the workloads associated with occupier and tenant liaison services. In the commercial sector, in particular retail, much of the conversation at that time centered around how to transition businesses from traditional lease arrangements to turnover linked rents. 
+
+It is already a year old, but it seems like the conversations have really only just begun.
 
 This time last year we had all been plunged into uncertainty. It is remarkable how much has changed, but there is still a tremendous need for more collaboration and co-creation across the sector.
 
@@ -27,7 +29,9 @@ There is still so much to do.
 Clearer lines of communication are still needed.
 
 More dynamic and more accurate methods of sharing and accessing information is still required.
+
 Occupiers and tenants still need more access to digital tools to interpret and engage more meaningfully with their rent accounts, service charge and estate information.
+
 Our product Balance is capable of transforming the relationship between property stakeholders, between owners and occupiers. However we have learnt that creating small, incremental successes in how teams work, and how technology can be applied, is capable of creating massively significant results for all parties.
 
 Property is right at the start of its entrance into a digital transformational marathon.
