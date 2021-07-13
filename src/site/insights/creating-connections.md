@@ -43,6 +43,6 @@ It is in the warm-up pen, doing a few stretches, not really sure or convinced ye
 
 But very soon we'll start seeing the massive, societal benefits that being in the race brings. Then soon we'll all be hooked. Happier and healthier. Wondering how on earth things used to work back then... 
 
-The article is available online here: [RICS Property Journal: July-August 2020](https://issuu.com/ricsmodus/docs/property_07_08.20_web_pdf_cc) 
+The article is available online here: [RICS Property Journal](https://issuu.com/ricsmodus/docs/property_07_08.20_web_pdf_cc) 
 
 Many thanks to Liz Carter and Mike Scott for putting it out there.
