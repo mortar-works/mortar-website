@@ -1,6 +1,6 @@
 ---
 title: Creating Connections
-date: 2021-30-06
+date: 2021-06-06
 image: powerofbalance.jpeg
 author: George Unsworth
 draft: false
