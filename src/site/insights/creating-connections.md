@@ -26,11 +26,11 @@ Our work has grown and evolved in maturity, as we have learnt how to support com
 
 There is still so much to do.
 
-Clearer lines of communication are still needed.
+- Clearer lines of communication are still needed.
 
-More dynamic and more accurate methods of sharing and accessing information is still required.
+- More dynamic and more accurate methods of sharing and accessing information is still required.
 
-Occupiers and tenants still need more access to digital tools to interpret and engage more meaningfully with their rent accounts, service charge and estate information.
+- Occupiers and tenants still need more access to digital tools to interpret and engage more meaningfully with their rent accounts, service charge and estate information.
 
 Our product Balance is capable of transforming the relationship between property stakeholders, between owners and occupiers. However we have learnt that creating small, incremental successes in how teams work, and how technology can be applied, is capable of creating massively significant results for all parties.
 
