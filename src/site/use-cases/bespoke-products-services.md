@@ -25,4 +25,4 @@ Digital engagement and the application of AI
 
 The movement to real-time data analysis and the transformation of traditional business and financial processes happens in stages. In bespoke product and service development Mortar works with existing digital teams to tackle difficult problems, so as to start working towards the desired solution. Many barriers are encountered and the process of applying AI often throws up unexpected areas to explore and whole new case studies for potential development.
 
-![Screenshot showing hoop'd geo-spatial local area engagement information]({{ '/static/images/use-cases/bespoke_case_study_detail_06.png' | url }})
+![Screenshot showing hoop'd geo-spatial local area engagement information]({{ '/static/images/use-cases/Bespoke_case_study04.png.png' | url }})
