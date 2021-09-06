@@ -13,7 +13,7 @@ Collaborate and Co-create using an advanced AI engine and suite of development t
 > **PwC, Accelerating Digital Transformation**
 
 Mortar works in partnership to deliver intelligent digital solutions for multiple sectors with a strong emphasis on **consumer products**, **real estate**, and **financial services**. We are especially committed to resolving issues for companies concerning geo-spatial data and information, financial integrity and data sharing, and we are motivated by companies that share our aspirations for a future **consumer-led economy**.
-
+ [Zero to One](https://en.wikipedia.org/wiki/Zero_to_One)
 ![Screenshot showing hoop'd geo-spatial local area engagement information]({{ '/static/images/use-cases/Bespoke_case_study_example01.png' | url }})
 <div align="center">
 [Read our case study](https://draft.mortar.works/use-cases/bespoke-products-services) working to improve service provision in partnership with a local authority 
