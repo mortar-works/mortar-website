@@ -14,7 +14,7 @@ Collaborate and Co-create using an advanced AI engine and suite of development t
 
 Mortar works in partnership to deliver intelligent digital solutions for multiple sectors with a strong emphasis on **consumer products**, **real estate**, and **financial services**. We are especially committed to resolving issues for companies concerning geo-spatial data and information, financial integrity and data sharing, and we are motivated by companies that share our aspirations for a future **consumer-led economy**.
 
-![Screenshot showing hoop'd geo-spatial local area engagement information]({{ '/static/images/use-cases/Bespoke_case_study_example01' | url }})
+![Screenshot showing hoop'd geo-spatial local area engagement information]({{ '/static/images/use-cases/Bespoke_case_study_example01.png' | url }})
 Read about our case study working to improve service provision in Hackney
 
 Consumer-led services and products require a strong committment to digital transformation. They are based upon the sharing of data and creating clear and understandable methods of organising and presenting accurate information. In many cases where lots of information is involved this requires the adoption of automation and machine learning. The delivery of a new product or application is therefore secondary to the development of a company's **working practices and data sharing infrastructure**. To engage the consumer and to achieve efficiencies and savings, accurate, real-time information is required, often starting with the quality of basic underlying systems and processes.
