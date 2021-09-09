@@ -1,7 +1,7 @@
 ---
 title: Launching Hoop'd
 date: 2021-09-01
-image: hoopd-frontpage01.jpg
+image: hoopd-frontpage01.png
 author: George Unsworth
 draft: false
 tags:
