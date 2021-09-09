@@ -1,4 +1,21 @@
-Happy to announce the launch of Hoop’d! 
+---
+title: Launching Hoop'd
+date: 2021-09-01
+image: hoopd-frontpage01.jpg
+author: George Unsworth
+draft: false
+tags:
+    - engagement platform 
+    - data
+    - built environment   
+    - housing
+    - housingassociations 
+    - community 
+    - community manager
+    
+---
+
+> Happy to announce the launch of Hoop’d! 
 
 Hoop’d is our platform for delivering digital transformation in local area engagement, communication and service provision.
 
