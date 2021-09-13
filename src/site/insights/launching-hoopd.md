@@ -20,14 +20,23 @@ tags:
 
 Whilst supporting tools for the development of collections during the pandemic it became increasingly clear across multiple sectors that new and alternative methods of communication and engagement were desperately needed. Despite the myriad of different ways in which we can all communicate with one another, our residents, citizens and communities are becoming increasingly divided, and increasingly difficult to identify and communicate with. 
 
-The biggest companies are investing tens, if not hundreds, of millions of pounds in an aggressive race to get every consumer's attention and to deliver to them a seamless consumer experience, employing sophisticated and powerful algorithms to ensure what we all see is personalised to our tastes and designed to be as aesthetically pleasing, accessible, convenient and easy to find and operate as possible. Whether that means watching a movie, ordering our groceries, taking a cab, or staying hooked on a scrolling timeline of images and videos on social media. That level of attention and convenience makes the job of a housing or health officer, a local authority project or programme, or the promotion of a local business or initiative, increasingly difficult. The space needed to convey and receive a meaningful message, an opportunity or an update, has become incredibly crowded. At the same time our behaviour is being constantly manipulated, nudged and evolved. This means current forms of communication are outdated, newsletters are no longer an appropriate format for engagement; any peice of information that is irrelevant or innappropriate to an individual is now a long-term, potentially permanent, barrier to successful engagement. Which means the barriers to engagement are increasing every day. 
+The biggest companies are investing tens, if not hundreds, of millions of pounds in an aggressive race to get every consumer's attention and to deliver to them a seamless consumer experience, employing sophisticated and powerful algorithms to ensure what we all see is personalised to our tastes and designed to be as aesthetically pleasing, accessible, convenient and easy to find and operate as possible. 
+
+Whether that means watching a movie, ordering our groceries, taking a cab, or staying hooked on a scrolling timeline of images and videos on social media. 
+
+That level of attention and convenience makes the job of a housing or health officer, a local authority project or programme, or the promotion of a local business or initiative, increasingly difficult. The space needed to convey and receive a meaningful message, an opportunity or an update, has become incredibly crowded. At the same time our behaviour is being constantly manipulated, nudged and evolved. 
+
+This means current forms of communication are outdated, newsletters are no longer an appropriate format for engagement; any peice of information that is irrelevant or innappropriate to an individual is now a long-term, potentially permanent, barrier to successful engagement. 
+
+Which means the barriers to engagement are increasing every day. 
 
 > “The art of conversation is the art of hearing as well as of being heard.”
 
 The workload for anyone managing and growing a community is massively compromised in two ways. 
 
-Firstly it is impossible for them to create and design personalised touchpoints and tailored correspondence for every community member.
-Secondly it is impossible for them to navigate all the many different types of offers, opportunities and messages to relay to each community member. 
+- Firstly it is impossible for them to create and design personalised touchpoints and tailored correspondence for every community member.
+
+- Secondly it is impossible for them to navigate all the many different types of offers, opportunities and messages to relay to each community member. 
 
 The first problem is a problem of data quality and relevance. 
 The second is a problem of data acquisition and organisation.
