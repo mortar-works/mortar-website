@@ -1,5 +1,5 @@
 ---
-title: Launching Hoop'd
+title: The art of conversation
 date: 2021-09-01
 image: hoopd-detail.png
 author: George Unsworth
