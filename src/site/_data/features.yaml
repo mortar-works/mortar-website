@@ -1,12 +1,12 @@
 ---
   - title: Data development
-    tagline: We analyse existing systems and data sources, improving processes and advancing the use and application of data.
+    tagline: We analyse existing systems and data sources, improving processes and advancing your use of data.
     description: |-
       Technology is enabling companies to generate and calculate revenue in a variety of exciting new ways.
     subfeatures: |-
       - Data acquisition, cleansing & analysis
       - Improving data integrity and security
-      - Interfaces for data sharing and visualisation
+      - Data sharing and visualisation
       - API and cloud based development
 
   - title: Intelligent technologies
@@ -14,17 +14,17 @@
     description: |-
       Mortar revolutionises the treasury team, introducing machine learning and automation to
     subfeatures: |-
-      - Applying automation and machine learning
+      - Automation and machine learning
       - Intelligent and shared team interfaces
       - Predictive and behavioural modelling
-      - Secure access to open banking and third-party services 
+      - Open banking and third-party services 
 
   - title: User-led design 
     tagline: We build products and platforms that enrich experiences across the built environment, home and workplace.
     description: |-
       Mortar's AI engine analyses patterns and behaviours in correspondence, streamlining caseworking and consumer responses.
     subfeatures: |-
-      - Branded and white labelled digital products
+      - Branded and white-labelled products
       - App based design and development
       - Targeted user services
       - Bespoke consumer products
