@@ -1,31 +1,31 @@
 ---
-  - title: Income generation
-    tagline: Improve revenue, collections and predictive forecasting through the application of automation and machine learning.
+  - title: Data development
+    tagline: We analyse existing systems and data sources, improving processes and advancing the use and application of data.
     description: |-
       Technology is enabling companies to generate and calculate revenue in a variety of exciting new ways.
     subfeatures: |-
-      - Intelligent collections
-      - Arrears detection
-      - Income and revenue analysis
-      - Real-time reporting
+      - Data acquisition, cleansing & analysis
+      - Improving data integrity and security
+      - Interfaces for data sharing and visualisation
+      - API and cloud based development
 
-  - title: Financial processes
-    tagline: Transform financial operations with real-time information, financial integrity and end-to-end billing.
+  - title: Intelligent technologies
+    tagline: Mortar has a suite of applications to apply AI and intelligent design to drive more efficient and effective solutions. 
     description: |-
       Mortar revolutionises the treasury team, introducing machine learning and automation to
     subfeatures: |-
-      - Intelligent payment allocation
-      - Automated account reconciliation
-      - End-to-end billing
-      - Shared team interfaces
+      - Applying automation and machine learning
+      - Intelligent and shared team interfaces
+      - Predictive and behavioural modelling
+      - Secure access to open banking and third-party services 
 
-  - title: Consumer-led services
-    tagline: Build consumer-focused tools and products, to drive data-sharing and proactive consumer engagement.
+  - title: User-led design 
+    tagline: We build products and platforms that enrich experiences across the built environment, home and workplace.
     description: |-
       Mortar's AI engine analyses patterns and behaviours in correspondence, streamlining caseworking and consumer responses.
     subfeatures: |-
-      - Synchronised user accounts
-      - Automated correspondence
+      - Branded and white labelled digital products
+      - App based design and development
       - Targeted user services
       - Bespoke consumer products
 
