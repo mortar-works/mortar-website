@@ -1,7 +1,7 @@
 ---
 title: Collaborate and co-create
 date: 2021-04-11
-image: bespoke-products.jpg
+image: collaborate_cocreate01.jpg
 author: George Unsworth
 draft: false
 tags:
