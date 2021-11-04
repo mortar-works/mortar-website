@@ -1,7 +1,7 @@
 ---
 title: Building better collections
 date: 2020-05-01
-image: income-generation.jpg
+image: collections_01.jpg
 author: George Unsworth
 draft: false
 tags:
