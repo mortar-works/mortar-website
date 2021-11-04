@@ -1,5 +1,5 @@
 ---
-title: Markers of Growth
+title: Markers of growth
 date: 2020-03-14
 image: markers-of-growth.jpg
 author: George Unsworth
