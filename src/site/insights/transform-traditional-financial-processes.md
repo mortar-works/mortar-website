@@ -1,7 +1,7 @@
 ---
 title: Transforming traditional financial processes
 date: 2020-02-08
-image: mortar_laptop_pinkbg02.png
+image: financial-processes.jpg
 author: George Unsworth
 draft: false
 tags:
