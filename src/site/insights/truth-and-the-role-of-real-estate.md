@@ -1,5 +1,5 @@
 ---
-title: Truth, digital transformation and real estate
+title: Truth, transformation and real estate
 date: 2021-08-15
 image: speedy-bike.jpg
 author: George Unsworth
