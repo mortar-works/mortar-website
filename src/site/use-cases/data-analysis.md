@@ -1,6 +1,6 @@
 ---
 title: Drive applied data analysis and data sharing
-pageImage: data-analysis-2.jpg
+pageImage: hoopd01.png
 homepageImage: blended_insights01.png
 description: |-
   Integrate and unify different data sources in one simple interface. Mortar establishes the environment for acquiring and sharing data to drive insights, decision making and performance for multiple stakeholders.
