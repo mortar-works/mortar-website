@@ -1,7 +1,7 @@
 ---
 title: Driving the role of data
 date: 2021-02-21
-image: blended_insights01.png
+image: data-analysis-2.jpg
 author: George Unsworth
 draft: false
 tags:
