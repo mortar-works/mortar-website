@@ -1,5 +1,5 @@
 ---
-title: How to evolve the finance function
+title: Evolving the finance function
 date: 2020-09-01
 image: evolvefinancefunction.jpg
 author: George Unsworth
