@@ -1,7 +1,7 @@
 ---
 title: Transform traditional finance
 date: 2020-02-08
-image: financial-illustration01.jpg
+image: transform_finance04.jpg
 author: George Unsworth
 draft: false
 tags:
