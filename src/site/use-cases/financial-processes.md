@@ -1,7 +1,7 @@
 ---
 title: Transforming traditional financial processes
 pageImage: financial-processes.jpg
-homepageImage: iphone_mortar_laptop_dashmockup01.png
+homepageImage: hackneycircle02.png
 description: |-
     Enhance your treasury team with automation and machine learning; start benefiting from accurate, real-time financial information. Mortar's intelligent user-interfaces transform traditional financial processes.
 order: 1
