@@ -1,5 +1,5 @@
 ---
-title: The Speed of Resilience 
+title: The speed of resilience 
 date: 2020-10-15
 image: speedofres.png
 author: George Unsworth
