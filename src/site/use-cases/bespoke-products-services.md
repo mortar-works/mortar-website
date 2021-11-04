@@ -1,6 +1,6 @@
 ---
 title: Co-create bespoke products and services
-pageImage: bespoke-products.jpg
+pageImage: balance02.png
 description: |-
   Mortar partners with clients to deliver AI solutions and innovative user engagement alongside resolving data issues concerning compliance, security and identity.
 order: 4
