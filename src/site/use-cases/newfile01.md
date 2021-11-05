@@ -4,7 +4,7 @@ pageImage: income-generation.jpg
 homepageImage: hoopd_serviceandevents01.png
 description: |-
   Power income generation with predictive and proactive touchpoints for your collections team. Use Mortar's intelligent caseworker interfaces to drive productivity, engagement and customer success in collections.
-order: 2
+order: 1
 ---
 
 Build revenue more efficiently with AI enhanced services. Unify your finance team to pursue shared goals and monitor customer engagement.
