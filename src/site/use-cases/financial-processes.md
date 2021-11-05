@@ -1,5 +1,5 @@
 ---
-title: Transforming traditional financial processes
+title: Introducing user-led collections
 pageImage: financial-processes.jpg
 homepageImage: balance_paymentallocation01.png
 description: |-
