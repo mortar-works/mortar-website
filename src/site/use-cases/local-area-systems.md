@@ -1,5 +1,5 @@
 ---
-title: Build better income generation and collections
+title: Enhancing local area information systems
 pageImage: income-generation.jpg
 homepageImage: hoopd_serviceandevents01.png
 description: |-
