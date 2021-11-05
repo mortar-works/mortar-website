@@ -2,7 +2,7 @@
 title: Transforming collections and Alternative Payment Arrangements 
 pageImage: financial-processes.jpg
 homepageImage: balance_paymentallocation01.png
-description: |- Our cloud based finance platform Balance supports companies in evolving their income, collections and escalations systems. We enable the movement to more tailored and personalised digital engagement and inclusion in collections; transforming how Alternative Payment Arrangements are created, agreed, monitored and updated. By enabling users to establish and alter their own payment schedules, and by applying automation and machine learning to the process of assessing risk, officer workloads can be dramatically reduced and more time spent on enhancing and improving relationships and service provision. 
+description: |- Our cloud based finance platform Balance supports companies in evolving their income, collections and escalations systems. We enable the movement to more tailored and personalised digital engagement; transforming how Alternative Payment Arrangements are created, agreed, monitored and updated.
 order: 1
 ---
 
