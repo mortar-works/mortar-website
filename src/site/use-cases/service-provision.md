@@ -4,10 +4,9 @@ pageImage: hoopd01.png
 homepageImage: hackneycircle_mapping_01.png
 description: |-
 Using our platform Hoop'd we are working with partners across the corporate and cultural sector to co-create new audience and engagement programmes, led by digital design and community collaboration. These tailored and targeted products are affordable, utilising our community management framework and tools, but can be completely white-labelled and branded for your audience or customers. With our advanced accessibility modules we are supporting projects that target inclusion for older residents and deliver educational outputs for school children. All with a system for helping stakeholders to capture local area insights, drive improvements in service provision, and establish business case for investment.    
-
-customised 
 order: 3
 ---
+
 
 Drive productivity, expand insights and streamline reporting with advanced solutions for data sharing, acquisition and consent
 -----------------------------------------------------------------------------------------------------
