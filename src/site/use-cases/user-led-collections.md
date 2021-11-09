@@ -1,5 +1,5 @@
 ---
-title: Transforming collections and Alternative Payment Arrangements
+title: Transforming alternative payment arrangements
 pageImage: financial-processes.jpg
 homepageImage: balance_paymentallocation01.png
 description: |-
