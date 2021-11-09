@@ -3,7 +3,7 @@ title: Tailoring and targeting service provision
 pageImage: hoopd01.png
 homepageImage: hackneycircle_mapping_01.png
 description: |-
-  Using our platform Hoop'd we work with partners across the corporate and public sector to co-create engagement programmes. We help support projects that target inclusion, sustainability and educational outputs whilst helping stakeholders to capture local area insights, drive new and alternative improvements in service provision.
+  Using our platform Hoop'd we work with partners to co-create projects and programmes. We support projects that target inclusion, sustainability, education and training whilst aquiring local area insights and data to drive improvements in service provision.
 order: 2
 ---
 
