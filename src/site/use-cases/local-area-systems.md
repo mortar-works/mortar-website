@@ -3,7 +3,7 @@ title: Enhancing local area information systems
 pageImage: income-generation.jpg
 homepageImage: hoopd_serviceandevents01.png
 description: |-
-  Power income generation with predictive and proactive touchpoints for your collections team. Use Mortar's intelligent caseworker interfaces to drive productivity, engagement and customer success in collections.
+  We help evolve local Information, Advice and Support Services (IASS) systems and initiatives.
 order: 3
 ---
 
