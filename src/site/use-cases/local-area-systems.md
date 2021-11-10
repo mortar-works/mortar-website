@@ -7,7 +7,7 @@ description: |-
 order: 3
 ---
 
-Build revenue more efficiently with AI enhanced services. Unify your finance team to pursue shared goals and monitor customer engagement.
+Designing new methods of communication 
 ---------------------------------------------------------------------------------------------------------------------------------
 
 At Mortar we have analysed hundreds of financial systems. From the Chief Financial Officer (CFO) and throughout the whole organisation, time prioritisation represents the greatest barrier to strategic decision making and the actions that drive corporate value and revenue.
