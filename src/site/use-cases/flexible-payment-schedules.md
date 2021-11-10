@@ -1,9 +1,9 @@
 ---
-title: Transforming alternative payment arrangements
+title: Powering flexible payments and schedules 
 pageImage: financial-processes.jpg
 homepageImage: balance_paymentallocation01.png
 description: |-
-  Our finance platform Balance supports companies in evolving their income, collections and escalations systems. We enable the movement to more personalised digital engagement; transforming how payment schedules are created, agreed, monitored and updated.
+  Our finance platform Balance supports companies in evolving their income, collections and escalations systems. We enable the movement to more personalised digital engagement; transforming how alternative payment schedules are created, agreed, monitored and updated.
 order: 1
 ---
 
