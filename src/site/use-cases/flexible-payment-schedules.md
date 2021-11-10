@@ -12,7 +12,7 @@ order: 1
 
 The movement in financial digital inclusion will continue to play an increasingly significant role in delivering debt and advice services. 
 
-Systems that deliver more personalised and tailored flexibility for overcoming both short and long-term incidences of debt and arrears improve collections metrics, whilst establishing unique new touchpoints for supporting the financial wellbeing of customers. 
+Systems that deliver more personalised and tailored flexibility for overcoming both short and long-term incidences of debt and arrears improve engagement metrics, whilst establishing unique new touchpoints for supporting the financial wellbeing of customers. 
 
 As of October 2021, 3.8m households in the UK are in arrears for their household bills, including rent; arrears that total approximately £5.2bn.
 
@@ -36,6 +36,8 @@ Intelligent design for creating and amending payment schedules
 > Balance accelerates the administrative processes involved in arrears acknowledgement and payment schedule approval by 64%, saving the average collections officer over 6 hours a week in time spent administering arrears. 
 
 ![Screenshot showing AI assisted decision making for financial processes]({{ '/static/images/use-cases/group_device_mockup.png' | url }})
+
+Some of the features and functionality that Balance provides include: 
 
 **View, change and adapt payment schedules**  
 For users Balance works by providing the digital tools to view, change and adapt their payment schedule. 
