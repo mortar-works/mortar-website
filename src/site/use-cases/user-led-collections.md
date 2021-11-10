@@ -7,42 +7,40 @@ description: |-
 order: 1
 ---
 
-Transform traditional financial processes with easy-to-use interfaces and AI assisted decision making
+Introducing user-led collections and flexible payments
 -----------------------------------------------------------------------------------------------------
 
-**Financial integrity** is at the heart of Mortar. It is why we are so committed to making AI more accessible and easy to adopt. Financial integrity means your team members and stakeholders having trust and confidence in their actions and decisions, through all having access to the same **accurate, real-time information** on accounts, invoices and bills at any moment in time, **across any part of the financial pipeline**.
+> “Triple the number of households are now in arrears, equivalent to a third of all low-income households.”
+> **Dragged Down by Debt. Published 21st October 2021**
 
-> Automation and artificial intelligence are poised to reshape the finance function. Knowing what to automate and managing the disruption can lead to a new era of productivity and performance.
-> **Frank Plaschke, Ishaan Seth, and Rob Whiteman; partners at McKinsey & Company**
+As of October 2021, 3.8m households in the UK are in arrears for their household bills, including rent; arrears that total approximately £5.2bn.
 
-Mortar provides access to real-time financial information and uses its AI engine to improve your supplier, client and consumer relationships, as well as increase employee productivity and team morale. Real-time financial information is essential for undertaking successful **digital transformation** projects, evolving the delivery of **cloud and web based services**, and enabling the introduction of **intelligent products and applications** to engage your consumers and clients.
+These numbers are set to increase as the UK’s furlough scheme comes to an end, removing the financial support for the employment of 11.6 million people. This is at the same time as households face the highest increase in the cost of living in the last three decades with soaring energy prices and inflation set to reach 5% in 2022. 
 
-For these reasons Mortar has made it easy and simple for your treasury and finance teams to start implementing AI, to benefit from real-time, accurate financial information.  
+At this time of intense and growing pressure our platform Balance brings support and assistance to income officers, collections teams and companies of all scales in:
 
-Intelligent interfaces for the finance team
+retaining and improving customer relations and 
+delivering a more efficient, digital customer-facing collections process. 
+
+Intelligent design for user creating and amending payment schedules
 -----------------------------------------------------------------------------------------------------
 
 ![Screenshot showing AI assisted decision making for financial processes]({{ '/static/images/use-cases/mortar_desktop_dashmockup04.png' | url }})
 
-**Payment allocation** is the first point at which automation and machine learning can start to **augment employee roles and decision making**, aiding the drive towards financial integrity. Mortar's intelligent payment allocation system provides a connected set of user interfaces for treasury team members, turning them into **AI assisted decision makers**, **freeing up thousands of hours** of time to concentrate on higher value tasks and responsibilities.
+> Balance accelerates arrears acknowledgement and payment schedule approval by 64%, saving the average collections officer over 6 hours a week in time spent administering arrears. 
 
-A simplified financial system
------------------------------------------------------------------------------------------------------
+**View, change and adapt payment schedules**
+For the customer Balance works by providing the digital tools to view, change and adapt their payment schedule. 
 
-It is common for treasury teams to be required to handle and organise multiple sources of information. Team members have to refer to both billing and invoicing; accounts receivable and accounts payable; bank account data as well as customer relationship management tools; to be able to ascertain the correct allocation of a payment.
+**Within acceptable risk parameters**
+Balance provides the customer with options and flexibility within their permissible limits of risk, enabling them to request alternative dates of payment and alternative payment figures. 
 
-![A screenshot showing a Mortar user interface for filtering financial information]({{ '/static/images/homepage/mortar_laptop_dashmockup05.png' | url }})
+**Automatic creation of new schedules and associated notifications**
+Balance presents automatically recalculated payment schedules in relation to customer requests, together with automated notifications of their request approval, subsequent payment reminders and missed payments.   
 
-Mortar simplifies this complex financial system, creating a unified layer of financial information and **combining data sources** into a **single user interface**. Mortar's universal data adaptor obtains and organises information, for our AI engine to provide companies with **end-to-end billing**, **account and balance reconciliation**, and **intelligent payment allocation**.
+**Intelligent officer dashboards**
+For the income officer, Balance provides an intelligent dashboard and single screen through which to respond to schedule requests, assess fringe cases, and see flagged cases. 
 
-Applied automation and machine learning
-------------------------------------------------------------------------------
-
-> 54% of executives say that AI solutions have already increased productivity in their businesses. These leaders are using AI to automate processes too complex for older technologies; to identify trends in historical data; and to provide forward-looking intelligence to strengthen human decisions.
-> **PwC, How can organisations reshape business strategy with AI?**
-
-Core financial processes are often neglected when it comes to digital transformation. The work of your treasury, finance and income teams however is fundamental to improving engagement and service provision, and offers the ideal environment to augment roles and drive productivity with automation and machine learning.
-
-Get in touch to learn more about our intelligent treasury systems and how Mortar can provide you with the access to accurate, real-time information your company needs to evolve.
-
+**Machine learning for assessing risk and optimising parameters**
+Balance uses machine learning to improve and adjust customer permissions, assess overall risk status and adjust organisational parameters.Using data to create improvements in collections scheduling and optimising payment success.   
 
