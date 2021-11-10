@@ -19,8 +19,8 @@ These numbers are set to increase as the UK’s furlough scheme comes to an end,
 
 At this time of intense and growing pressure our platform Balance brings support and assistance to income officers, collections teams and companies of all scales in:
 
-retaining and improving customer relations and 
-delivering a more efficient, digital customer-facing collections process. 
+* retaining and improving customer relations and 
+* delivering a more efficient, digital customer-facing collections process. 
 
 Intelligent design for user creating and amending payment schedules
 -----------------------------------------------------------------------------------------------------
