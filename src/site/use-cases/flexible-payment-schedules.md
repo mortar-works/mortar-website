@@ -10,18 +10,16 @@ order: 1
 > “Triple the number of households are now in arrears, equivalent to a third of all low-income households.”
 > **Dragged Down by Debt. Published 21st October 2021**
 
-Balance enables people to change and adapt their payment schedules, establishing unique touchpoints to improve and streamline collections whilst overcoming both short and long-term incidences of debt and arrears.  
+Balance progresses the next generation of digital financial inclusion in the field of collections and income generation, ensuring that people are more accurately informed and more effectively engaged in the processes of collections. Balance enables people to change and adapt their payment schedules, establishing unique touchpoints to improve and streamline collections whilst overcoming both short and long-term incidences of debt and arrears.  
 
-As of October 2021, 3.8m households in the UK are in arrears for their household bills, including rent; arrears that total approximately £5.2bn.
-
-These numbers are set to increase as the UK’s furlough scheme comes to an end, removing the financial support for the employment of 11.6 million people. This is at the same time as households face the highest increase in the cost of living in the last three decades with soaring energy prices and inflation set to reach 5% in 2022. 
+As of October 2021, 3.8m households in the UK are in arrears for their household bills, including rent; arrears that total approximately £5.2bn. These numbers are set to increase as the UK’s furlough scheme comes to an end, removing the financial support for the employment of 11.6 million people. This is at the same time as households face the highest increase in the cost of living in the last three decades with soaring energy prices and inflation set to reach 5% in 2022. 
 
 Introducing user-led collections and flexible payments
 -----------------------------------------------------------------------------------------------------
 
 New methods of digitalising and automating the collections process is essential if we are to alleviate the pressure and workloads on staff and employees involved in income generation and collections. 
 
-How to introduce new systems, intelligence and ways of working can be costly and time consuming. Balance is designed to be easy and simple to implement alongside existing escalations and collections services and software. Balance makes intelligence, specialised design and systems of automation available to enrich and enhance the roles of income officers, collections teams and companies of all scales. 
+How to introduce new systems, intelligence and ways of working can be costly and time consuming. Balance is designed to be easy and simple to implement alongside existing escalation and accounts receivable (AR) services and software. Balance brings intelligence, specialised design, and systems of automation to the housing and real estate sector, enriching and enhancing the roles of income officers, collections teams and companies of all scales. 
 
 Balance supports companies by:
 
