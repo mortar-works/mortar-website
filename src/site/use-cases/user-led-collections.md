@@ -19,9 +19,10 @@ These numbers are set to increase as the UK’s furlough scheme comes to an end,
 
 At this time of intense and growing pressure our platform Balance brings support and assistance to income officers, collections teams and companies of all scales in:
 
-* retaining and improving customer relations and * delivering a more efficient, digital customer-facing collections process. 
+* retaining and improving customer relations and 
+* delivering a more efficient, digital customer-facing collections process. 
 
-Intelligent design for user creating and amending payment schedules
+Intelligent design for creating and amending payment schedules
 -----------------------------------------------------------------------------------------------------
 
 > Balance accelerates arrears acknowledgement and payment schedule approval by 64%, saving the average collections officer over 6 hours a week in time spent administering arrears. 
@@ -29,11 +30,9 @@ Intelligent design for user creating and amending payment schedules
 ![Screenshot showing AI assisted decision making for financial processes]({{ '/static/images/use-cases/mortar_desktop_dashmockup04.png' | url }})
 
 **View, change and adapt payment schedules**
-
 For users Balance works by providing the digital tools to view, change and adapt their payment schedule. 
 
 **Within acceptable risk parameters**
-
 Balance provides the user with options and flexibility within their permissible limits of risk, enabling them to request alternative dates of payment and alternative payment figures. 
 
 **Automatic creation of new schedules and associated notifications**
