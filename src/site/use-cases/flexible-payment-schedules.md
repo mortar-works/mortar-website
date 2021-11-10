@@ -20,13 +20,13 @@ Introducing user-led collections and flexible payments
 At this time of intense and growing pressure our platform Balance brings support and assistance to income officers, collections teams and companies of all scales in:
 
 * retaining and improving customer relations and 
-* delivering a more efficient, digital customer-facing collections process. 
+* delivering more efficient, digital user-facing collections. 
 
 
 Intelligent design for creating and amending payment schedules
 -----------------------------------------------------------------------------------------------------
 
-> Balance accelerates arrears acknowledgement and payment schedule approval by 64%, saving the average collections officer over 6 hours a week in time spent administering arrears. 
+> Balance accelerates the administrative processes involved in arrears acknowledgement and payment schedule approval by 64%, saving the average collections officer over 6 hours a week in time spent administering arrears. 
 
 ![Screenshot showing AI assisted decision making for financial processes]({{ '/static/images/use-cases/group_device_mockup.png' | url }})
 
