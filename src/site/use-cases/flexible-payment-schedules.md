@@ -10,7 +10,9 @@ order: 1
 > “Triple the number of households are now in arrears, equivalent to a third of all low-income households.”
 > **Dragged Down by Debt. Published 21st October 2021**
 
-The movement in financial digital inclusion is playing a huge role in delivering more debt and advice service support, more signposting to trusted financial partners and initiatives and more payment flexibility for overcoming both short and long-term incidences of debt and arrears.
+The movement in financial digital inclusion will continue to play an increasingly significant role in delivering debt and advice services. 
+
+Systems that deliver more personalised and tailored flexibility for overcoming both short and long-term incidences of debt and arrears improve collections metrics, whilst establishing unique new touchpoints for supporting the financial wellbeing of customers. 
 
 As of October 2021, 3.8m households in the UK are in arrears for their household bills, including rent; arrears that total approximately £5.2bn.
 
@@ -21,7 +23,7 @@ Introducing user-led collections and flexible payments
 
 New methods of digitalising and automating the collections process is essential if we are to alleviate the pressure and workloads on staff and employees involved in income generation and collections. 
 
-How to introduce new systems, intelligence and ways of working however can be costly and time consuming. We've therefore designed Balance to be easier and simple to implement alongside existing escalations and collections services. Balance makes intelligence, specialised design and systems of automation available to enrich and enhance the roles of income officers, collections teams and companies of all scales. 
+How to introduce new systems, intelligence and ways of working can be costly and time consuming. Balance is designed to be easy and simple to implement alongside existing escalations and collections services and software. Balance makes intelligence, specialised design and systems of automation available to enrich and enhance the roles of income officers, collections teams and companies of all scales. 
 
 Balance supports companies by:
 
