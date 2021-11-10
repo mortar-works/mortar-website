@@ -3,7 +3,7 @@ title: Powering flexible payments and schedules
 pageImage: financial-processes.jpg
 homepageImage: balance_paymentallocation01.png
 description: |-
-  Our finance platform Balance supports companies in evolving their income, collections and escalations systems. We enable the movement to more personalised digital engagement; transforming how alternative payment schedules are created, agreed, monitored and updated.
+  Our finance platform Balance supports companies in evolving their income, collections and escalations systems. Transforming how alternative payment schedules are created, agreed, monitored and updated.
 order: 1
 ---
 
@@ -17,7 +17,9 @@ These numbers are set to increase as the UK’s furlough scheme comes to an end,
 Introducing user-led collections and flexible payments
 -----------------------------------------------------------------------------------------------------
 
-At this time of intense and growing pressure our platform Balance brings support and assistance to income officers, collections teams and companies of all scales in:
+Digital financial inclusion is going to play a huge role in creating more debt and advice service support, more signposting to trusted financial partners and initiatives and more payment flexibility for overcoming both short and long-term incidences of debt and arrears. New methods of digitalising and automating aspects of the collections process is essential in alleviating the pressure and workloads on staff and employees involved in the process of income generation and collections. During this time of intense and growing pressure our platform Balance brings intelligence, specialised design and systems of automation to enrich and enhance the roles of income officers, collections teams and companies of all scales. 
+
+Balance supports companies by:
 
 * retaining and improving customer relations and 
 * delivering more efficient, digital user-facing collections. 
@@ -30,18 +32,18 @@ Intelligent design for creating and amending payment schedules
 
 ![Screenshot showing AI assisted decision making for financial processes]({{ '/static/images/use-cases/group_device_mockup.png' | url }})
 
-**View, change and adapt payment schedules**
+**View, change and adapt payment schedules**  
 For users Balance works by providing the digital tools to view, change and adapt their payment schedule. 
 
-**Within acceptable risk parameters**
+**Within acceptable risk parameters**  
 Balance provides the user with options and flexibility within their permissible limits of risk, enabling them to request alternative dates of payment and alternative payment figures. 
 
-**Automatic creation of new schedules and associated notifications**
+**Automatic creation of new schedules and associated notifications**  
 Balance presents automatically recalculated payment schedules in relation to customer requests, together with automated notifications of their request approval, subsequent payment reminders and missed payments.   
 
-**Intelligent officer dashboards**
+**Intelligent officer dashboards**  
 For the income officer, Balance provides an intelligent dashboard and single screen through which to respond to schedule requests, assess fringe cases, and see flagged cases. 
 
-**Machine learning for assessing risk and optimising parameters**
+**Machine learning for assessing risk and optimising parameters**  
 Balance uses machine learning to improve and adjust customer permissions, assess overall risk status and adjust organisational parameters.Using data to create improvements in collections scheduling and optimising payment success.   
 
