@@ -10,9 +10,7 @@ order: 1
 > “Triple the number of households are now in arrears, equivalent to a third of all low-income households.”
 > **Dragged Down by Debt. Published 21st October 2021**
 
-The movement in financial digital inclusion will continue to play an increasingly significant role in delivering debt and advice services. 
-
-Systems that deliver more personalised and tailored flexibility for overcoming both short and long-term incidences of debt and arrears improve engagement metrics, whilst establishing unique new touchpoints for supporting the financial wellbeing of customers. 
+Balance enables people to change and adapt their payment schedules, establishing unique touchpoints to improve and streamline collections whilst overcoming both short and long-term incidences of debt and arrears.  
 
 As of October 2021, 3.8m households in the UK are in arrears for their household bills, including rent; arrears that total approximately £5.2bn.
 
