@@ -42,11 +42,11 @@ For users Balance works by providing the digital tools to view, change and adapt
 Balance provides the user with options and flexibility within their permissible limits of risk, enabling them to request alternative dates of payment and alternative payment figures. 
 
 **Automatic creation of new schedules and associated notifications**  
-Balance presents automatically recalculated payment schedules in relation to customer requests, together with automated notifications of their request approval, subsequent payment reminders and missed payments.   
+Balance presents automatically recalculated payment schedules in relation to user requests, together with automated notifications of their request approval, reminders for subsequent payments and alerts concerning missed payments.   
 
 **Intelligent officer dashboards**  
 For the income officer, Balance provides an intelligent dashboard and single screen through which to respond to schedule requests, assess fringe cases, and see flagged cases. 
 
 **Machine learning for assessing risk and optimising parameters**  
-Balance uses machine learning to improve and adjust customer permissions, assess overall risk status and adjust organisational parameters.Using data to create improvements in collections scheduling and optimising payment success.   
+Balance uses machine learning to improve and adjust user permissions, assess overall risk status and adjust organisational parameters. Using data to support teams in creating improvements in their collections scheduling and optimising their collections success.   
 
