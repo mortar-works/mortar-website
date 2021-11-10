@@ -10,6 +10,8 @@ order: 1
 > “Triple the number of households are now in arrears, equivalent to a third of all low-income households.”
 > **Dragged Down by Debt. Published 21st October 2021**
 
+The movement in financial digital inclusion is playing a huge role in delivering more debt and advice service support, more signposting to trusted financial partners and initiatives and more payment flexibility for overcoming both short and long-term incidences of debt and arrears.
+
 As of October 2021, 3.8m households in the UK are in arrears for their household bills, including rent; arrears that total approximately £5.2bn.
 
 These numbers are set to increase as the UK’s furlough scheme comes to an end, removing the financial support for the employment of 11.6 million people. This is at the same time as households face the highest increase in the cost of living in the last three decades with soaring energy prices and inflation set to reach 5% in 2022. 
@@ -17,13 +19,14 @@ These numbers are set to increase as the UK’s furlough scheme comes to an end,
 Introducing user-led collections and flexible payments
 -----------------------------------------------------------------------------------------------------
 
-Digital financial inclusion is going to play a huge role in creating more debt and advice service support, more signposting to trusted financial partners and initiatives and more payment flexibility for overcoming both short and long-term incidences of debt and arrears. New methods of digitalising and automating aspects of the collections process is essential in alleviating the pressure and workloads on staff and employees involved in the process of income generation and collections. During this time of intense and growing pressure our platform Balance brings intelligence, specialised design and systems of automation to enrich and enhance the roles of income officers, collections teams and companies of all scales. 
+New methods of digitalising and automating the collections process is essential if we are to alleviate the pressure and workloads on staff and employees involved in income generation and collections. 
+
+How to introduce new systems, intelligence and ways of working however can be costly and time consuming. We've therefore designed Balance to be easier and simple to implement alongside existing escalations and collections services. Balance makes intelligence, specialised design and systems of automation available to enrich and enhance the roles of income officers, collections teams and companies of all scales. 
 
 Balance supports companies by:
 
 * retaining and improving customer relations and 
 * delivering more efficient, digital user-facing collections. 
-
 
 Intelligent design for creating and amending payment schedules
 -----------------------------------------------------------------------------------------------------
