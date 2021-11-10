@@ -1,9 +1,9 @@
 ---
-title: Enhancing local area information systems
+title: Enhancing local area information
 pageImage: income-generation.jpg
 homepageImage: hoopd_serviceandevents01.png
 description: |-
-  We help evolve local Information, Advice and Support Services (IASS) systems and initiatives.
+  Our work supports the digitalisation of local Information, Advice and Support Services (IASS) systems and initiatives. In the London Borough of Hackney we are developing a system of signposting and referal to aid the delivery of services to older residents.
 order: 3
 ---
 
