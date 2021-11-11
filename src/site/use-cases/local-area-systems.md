@@ -1,6 +1,6 @@
 ---
 title: Enhancing local area information
-pageImage: income-generation.jpg
+pageImage: hoopd_serviceandevents01.png
 homepageImage: hoopd_serviceandevents01.png
 description: |-
   Our work supports the digitalisation of local Information, Advice and Support Services (IASS) systems and initiatives. In the London Borough of Hackney we are developing a system of signposting and referal to aid the delivery of services to older residents.
@@ -20,7 +20,7 @@ Covid-19 had accelerated the significance in providing additional support in the
 
 A platform for information and local area collaboration
 -----------------------------------------------------------------------------------------------------------------------------
-![A screenshot of a Mortar dashboard, showing AI enhanced data views and filtering]({{ '/IASS_hoopd_hackney_01.jpg' | url }})
+![A screenshot of a Mortar dashboard, showing AI enhanced data views and filtering]({{ 'IASS_hoopd_hackney_01.jpg' | url }})
 
 Through a period of consultancy and co-creation with council members and users our platform Hoop’d was implemented to streamline these processes through digitalisation and automation. Hoop’d community management tools are now enabling community managers to update, organise and share information more efficiently with members, community partners and across the borough’s cultural network.  
 
