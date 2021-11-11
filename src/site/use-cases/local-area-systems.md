@@ -1,6 +1,6 @@
 ---
 title: Enhancing local area information
-pageImage: hoopd_serviceandevents01.png
+pageImage: IASS_hoopd_hackney_02.jpg
 homepageImage: hoopd_serviceandevents01.png
 description: |-
   Our work supports the digitalisation of local Information, Advice and Support Services (IASS) systems and initiatives. In the London Borough of Hackney we are developing a system of signposting and referal to aid the delivery of services to older residents.
@@ -20,7 +20,7 @@ Covid-19 had accelerated the significance in providing additional support in the
 
 A platform for information and local area collaboration
 -----------------------------------------------------------------------------------------------------------------------------
-![A screenshot of a Mortar dashboard, showing AI enhanced data views and filtering]({{ 'IASS_hoopd_hackney_01.jpg' | url }})
+![A screenshot of a Mortar dashboard, showing AI enhanced data views and filtering]({{ '/static/images/use-cases/IASS_hoopd_hackney_01.jpg' | url }})
 
 Through a period of consultancy and co-creation with council members and users our platform Hoop’d was implemented to streamline these processes through digitalisation and automation. Hoop’d community management tools are now enabling community managers to update, organise and share information more efficiently with members, community partners and across the borough’s cultural network.  
 
@@ -28,13 +28,13 @@ As a result the platform is now coordinating the acquisition and sharing of info
 
 Combatting bias and asymmetry in systems of information and opportunity
 -----------------------------------------------------------------------------------------------------------------------------
-![A screenshot of a Mortar dashboard, showing AI enhanced data views and filtering]({{ '/IASS_hoopd_hackney_02.jpg' | url }})
+![A screenshot of a Mortar dashboard, showing AI enhanced data views and filtering]({{ '/static/images/use-cases/IASS_hoopd_hackney_02.jpg' | url }})
 
 The bespoke implementation of Hoop’d in Hackney is also enabling the development of features and functionalities specific to supporting communication with older residents. 
 
 This includes a focus on accessibility, and the provision of more equitable information, services and social opportunities for residents. The ability for community managers and users to specify their communication preferences, their support needs, and to personalise the filtering of content is driving the development of more tailored opportunities, campaigns and methods of information distribution. 
 
-![A screenshot of a Mortar dashboard, showing AI enhanced data views and filtering]({{ '/IASS_hoopd_hackney_03.jpg' | url }})
+![A screenshot of a Mortar dashboard, showing AI enhanced data views and filtering]({{ '/static/images/use-cases/IASS_hoopd_hackney_03.jpg' | url }})
 
 As our partnership with Hackney Council evolves our geospatial mapping of participation and engagement opportunities lends itself to a more informed analysis of service provision, and increased potential for enhancing service provision through more integrated projects to support local housing and health partners. 
 
