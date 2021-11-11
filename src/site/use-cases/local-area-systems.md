@@ -25,7 +25,7 @@ A platform for information and local area collaboration
 
 Through a period of consultancy and co-creation with council members and users our platform Hoop’d was implemented to streamline these processes through digitalisation and automation. Hoop’d community management tools are now enabling community managers to update, organise and share information more efficiently with members, community partners and across the borough’s cultural network.  
 
-As a result the platform is now coordinating the acquisition and sharing of information from a growing network of CVS and cultural organisations and local businesses. Further integrations are being designed to share information and resources with the borough’s Arts and Health Network, its Finding Support Services platform, and between hyperlocal community networks to aid the coordination of more targeted engagement and participation campaigns. 
+As a result the platform is now coordinating the acquisition and sharing of information from a growing network of CVS and cultural organisations and local businesses. Further integrations are being designed to share information and resources with the borough’s Arts and Health Network, its Finding Support Services platform, and between more localised community networks to aid the coordination of more targeted engagement and participation campaigns. 
 
 Combatting bias and asymmetry in systems of information and opportunity
 -----------------------------------------------------------------------------------------------------------------------------
