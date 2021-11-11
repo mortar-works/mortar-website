@@ -8,7 +8,7 @@ order: 3
 ---
 
 Our work with Hackney Council began in response to difficulties that had arisen in community and cultural signposting for older residents. The council’s capacity for administering their free membership and communication service for older residents, active since 2014, needed to be increased to ensure the quality of service could be maintained. 
-
+![A screenshot of a Mortar dashboard, showing AI enhanced data views and filtering]({{ '/static/images/use-cases/IASS_hoopd_hackney_01a.jpg' | url }})
 Designing new methods of communication 
 ---------------------------------------------------------------------------------------------------------------------------------
 A new system was required for two reasons: 
@@ -35,7 +35,7 @@ This includes a focus on accessibility, and the provision of more equitable info
 
 ![A screenshot of a Mortar dashboard, showing AI enhanced data views and filtering]({{ '/static/images/use-cases/IASS_hoopd_hackney_03.jpg' | url }})
 
-As our partnership with Hackney Council evolves our geospatial mapping of participation and engagement opportunities lends itself to a more informed analysis of service provision, and increased potential for enhancing service provision through more integrated projects to support local housing and health partners. 
+As our partnership with Hackney Council evolves our geospatial mapping of participation and engagement opportunities lends itself to a more informed analysis of service provision, and increased potential for enhancing service provision and supporting local housing and health partners. 
 
 > 67% of CFOs cannot focus on strategic priorities because of increasing operational responsibilities and time spent on compliance, controls and costs.
 > **EY, The DNA of the CFO**
