@@ -1,6 +1,6 @@
 ---
 title: Enhancing local area information
-pageImage: IASS_hoopd_hackney_01c.png
+pageImage: IASS_hoopd_hackney_01c.jpg
 homepageImage: hoopd_serviceandevents01.png
 description: |-
   Our work supports the digitalisation of local Information, Advice and Support Services (IASS) systems and initiatives. In the London Borough of Hackney we are developing a system of signposting and referal to aid the delivery of services to older residents.
