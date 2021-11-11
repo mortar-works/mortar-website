@@ -10,39 +10,31 @@ order: 3
 Designing new methods of communication 
 ---------------------------------------------------------------------------------------------------------------------------------
 
-At Mortar we have analysed hundreds of financial systems. From the Chief Financial Officer (CFO) and throughout the whole organisation, time prioritisation represents the greatest barrier to strategic decision making and the actions that drive corporate value and revenue.
+Our work with Hackney Council began in response to difficulties that had arisen in community and cultural signposting for older residents. The council’s capacity for administering their free membership and communication service for older residents, active since 2014, needed to be increased to ensure the quality of service could be maintained. 
 
-> 67% of CFOs cannot focus on strategic priorities because of increasing operational responsibilities and time spent on compliance, controls and costs.
-> **EY, The DNA of the CFO**
+A new system was required for two reasons, to reduce the administrative burden in managing and onboarding users, and to reduce the workload in obtaining and disseminating appropriate communication of participation events and engagement opportunities to the membership. 
 
-Wasted resources and staff member frustrations are common within a company's income generation and collections team. The average income officer is spending the majority of their time battling with **inaccurate information**, pursuing and **waiting for acknowledgments** and **ineffectively monitoring** accounts and schedules.
+Covid-19 had accelerated the significance in providing additional support in the communication of local health and wellbeing initiatives and a more integrated approach to signposting opportunities for older residents was identified as a strategic priority.
 
-Mortar however provides your company with **a single source of unified financial information**, enabling our AI engine to start powering your teams with automated, predictive and proactive **account management** and **collection tools**.
+A platform for information and local area collaboration
+-----------------------------------------------------------------------------------------------------------------------------
+![A screenshot of a Mortar dashboard, showing AI enhanced data views and filtering]({{ '/static/images/homepage/mortar_laptop_dashmockup03_arrears.png' | url }})
+
+Through a period of consultancy and systems design our platform Hoop’d was implemented to streamline these processes through digitalisation and automation. Hoop’d community management tools are now enabling community managers to update, organise and share information more efficiently with members, community partners and across the borough’s cultural network.  
+
+As a result the platform is now coordinating the acquisition and sharing of information from a growing network of CVS and cultural organisations and local businesses. Further integrations are being designed to share information and resources with the borough’s Arts and Health Network, its Finding Support Services platform, and between hyperlocal community networks to aid the coordination of more targeted engagement and participation campaigns. 
+
+Combatting bias and asymmetry in systems of information and opportunity
+-----------------------------------------------------------------------------------------------------------------------------
+![A screenshot of a Mortar dashboard, showing AI enhanced data views and filtering]({{ '/static/images/homepage/mortar_laptop_dashmockup03_arrears.png' | url }})
+
+The bespoke implementation of Hoop’d in Hackney is also enabling the development of features and functionalities specific to supporting communication with older residents. 
+
+This includes a focus on accessibility, and the provision of more equitable information, services and social opportunities for residents. The ability for community managers and users to specify their communication preferences, their support needs, and to personalise the filtering of content is driving the development of more tailored opportunities, campaigns and methods of information distribution. 
 
 ![A screenshot of a Mortar dashboard, showing AI enhanced data views and filtering]({{ '/static/images/homepage/mortar_laptop_dashmockup03_arrears.png' | url }})
 
-Creating Positive Cultures of Forbearance
------------------------------------------------------------------------------------------------------------------------------
+As our partnership with Hackney Council evolves our geospatial mapping of participation and engagement opportunities lends itself to a more informed analysis of service provision, and increased potential for enhancing service provision through more integrated projects to support local housing and health partners. 
 
-Your company's **culture of forbearance**, how it recognises and responds to invoices and arrears, will often undermine and create conflict with your customer relationship. For many companies the starting point for customer engagement is too often in response to either a problem or a debt. This reactive relationship is not a good place from which to achieve positive results.
-
-Being on the backfoot generates an enormous excess workload for your income and collections team and restricts the development of customer relationships. Cases that need resolving can easily build up, and customers are either waiting for their problems to be dealt with, or are yet to be informed that they have outstanding owings. Everyone in the pipeline ends up in **compromised and negative positions**.
-
-Mortar's systems are based around an **advanced knowledge and understanding of forbearance**, our AI engine monitors customer engagement strategies, detecting successful methods and patterns of behaviour, helping your teams to replicate and improve sequences of success. At Mortar we focus on establishing bespoke services and sequencing to help **drive your key performance indicators (KPIs)**. We also provide access to a suite of AI analytics and tooling to help you drive new KPIs, such as **mean time to arrears acknowledgement (MTTAA)** and **mean time to arrears resolution (MTTAR)**.
-
-![A screenshot of a Mortar dashboard, showing AI driven financial processes]({{ '/static/images/use-cases/mortar_laptop_dashmockup03_query.png' | url }})
-
-A New Generation of User Engagement and Success
------------------------------------------------------------------------------------------------------------------------------
-
-Mortar is committed to the advance of consistent, proactive customer engagement and user-led tools for financial and account management.
-
-> The CFO agenda goes beyond traditional finance; it involves an innovation and growth imperative, change and transformation, and responding to and making decisions under the headings of uncertainty, performance and efficiency.
-> **EY, The New Face of Finance**
-
-In corporate service provision we are used to hearing how our outliers and edge customers consume operational resources, energy and time. As a result service quality and frequency of engagement drops for all customers. Digital investment, the implemention of **automation and machine learning**, is crucial to ensure workloads are manageable, and enables your company's **transition to more consumer-led methods of acknowledgement and resolution**.
-
-Mortar creates a cohevise data environment (CDE) so you can learn from your business' most compromising events and users, so these events can be more quickly and succesfully identified, supported and resolved in the future. The application of machine learning and automation is essential to start effectively sharing information, creating user-led feedback to enhance service provision and drive success.
-
-Mortar's AI engine powers these transitions and environments, providing intelligent caseworker interfaces for analysing income, introducing predictive and behavioural tools, and highlighting the opportunities for your teams to pursue **targeted consumer engagement**.
-
+> 67% of CFOs cannot focus on strategic priorities because of increasing operational responsibilities and time spent on compliance, controls and costs.
+> **EY, The DNA of the CFO**
