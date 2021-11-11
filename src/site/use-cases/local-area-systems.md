@@ -8,7 +8,9 @@ order: 3
 ---
 
 Our work with Hackney Council began in response to difficulties that had arisen in community and cultural signposting for older residents. The council’s capacity for administering their free membership and communication service for older residents, active since 2014, needed to be increased to ensure the quality of service could be maintained. 
+
 ![A screenshot of a Mortar dashboard, showing AI enhanced data views and filtering]({{ '/static/images/use-cases/IASS_hoopd_hackney_01a.jpg' | url }})
+
 Designing new methods of communication 
 ---------------------------------------------------------------------------------------------------------------------------------
 A new system was required for two reasons: 
