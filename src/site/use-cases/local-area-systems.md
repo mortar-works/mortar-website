@@ -39,5 +39,5 @@ This includes a focus on accessibility, and the provision of more equitable info
 
 As our partnership with Hackney Council evolves our geospatial mapping of participation and engagement opportunities lends itself to a more informed analysis of service provision, and increased potential for enhancing service provision and supporting local housing and health partners. 
 
-> 67% of CFOs cannot focus on strategic priorities because of increasing operational responsibilities and time spent on compliance, controls and costs.
-> **EY, The DNA of the CFO**
+> There is a world of difference between being introduced human to human and being sent an email. It’s human to human contact that changes peoples’ lives. Not services. ”
+> **CEO, CoLab Exeter**
