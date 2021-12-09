@@ -3,7 +3,7 @@ title: Hoop'd
 pageImage: IASS_hoopd_hackney_01d.png
 homepageImage: hoopd_serviceandevents01.png
 description: |-
-  Hoop'd captures and transforms local Information, Advice and Support Services (IASS) systems. Combining geospatial interfaces with highly accessible user dashboards and powerful case-working and booking modules Hoop'd enables data to be effectively shared, communicated and analysed.
+  Hoop'd captures and transforms local Information, Advice and Support Services (IASS) systems. Combining geospatial interfaces with a suite of communication and referral modules Hoop'd tailors local area information, making it more accessible and dynamic.
 order: 2
 ---
 
