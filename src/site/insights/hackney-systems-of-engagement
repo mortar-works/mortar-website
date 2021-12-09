@@ -1,11 +1,21 @@
 ---
 title: Systems of connection: Geospatial information in East London
-pageImage: IASS_hoopd_hackney_01d.png
-homepageImage: hoopd_serviceandevents01.png
-description: |-
-  Our platform Hoop'd is helping to transform local Information, Advice and Support Services (IASS) systems in Hackney in East London. Read about how we are working with the London Borough of Hackney to deliver a data-sharing, signposting and referal system improving information and service provision for older residents.
-order: 2
+date: 2021-06-21
+image: IASS_hoopd_hackney_01d.png
+author: George Unsworth
+draft: false
+tags:
+  - IASS
+  - geospatial
+  - information services
+  - advice services
+  - support services
+  - local authority
+  - digital transformation
 ---
+
+Our platform Hoop'd is transforming local Information, Advice and Support Services (IASS) systems in East London. 
+-----------------------------------------------------------------------------------------------------
 
 Our work with Hackney Council began in response to difficulties that had arisen in community and cultural signposting for older residents. The council’s capacity for administering their free membership and communication service for older residents, active since 2014, needed to be increased to ensure the quality of service could be maintained. 
 
