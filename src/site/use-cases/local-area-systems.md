@@ -1,5 +1,5 @@
 ---
-title: Enhancing local area information
+title: Hoop'd
 pageImage: IASS_hoopd_hackney_01d.png
 homepageImage: hoopd_serviceandevents01.png
 description: |-
