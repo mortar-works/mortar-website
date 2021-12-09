@@ -3,7 +3,7 @@ title: Balance
 pageImage: financial-processes.jpg
 homepageImage: balance_paymentallocation01.png
 description: |-
-  Our finance platform Balance supports companies in evolving their income, collections and escalations systems. Transforming how alternative payment schedules are created, agreed, monitored and updated.
+  Balance supports companies in evolving their income, collections and escalations systems. Automating payment allocation and applying intelligence to transform how payment schedules are created, agreed, monitored and updated.
 order: 1
 ---
 
