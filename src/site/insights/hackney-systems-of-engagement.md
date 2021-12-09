@@ -1,5 +1,5 @@
 ---
-title: Geospatial information improving service provision in East London
+title: Geospatial service mapping 
 date: 2021-04-11
 image: hackneycircle_01.jpeg
 author: George Unsworth
