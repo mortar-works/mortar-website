@@ -3,7 +3,7 @@ title: Hoop'd
 pageImage: IASS_hoopd_hackney_01d.png
 homepageImage: hoopd_serviceandevents01.png
 description: |-
-  Our platform Hoop'd transforms local Information, Advice and Support Services (IASS) systems. Read about how we are working with the London Borough of Hackney to deliver a data-sharing, signposting and referal system improving information and service provision for older residents.
+  Hoop'd captures and transforms local Information, Advice and Support Services (IASS) systems. Combining geospatial interfaces with highly accessible user dashboards and powerful case-working and booking modules Hoop'd enables data to be effectively shared, communicated and analysed.
 order: 2
 ---
 
