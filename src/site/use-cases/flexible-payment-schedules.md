@@ -1,5 +1,5 @@
 ---
-title: Powering flexible payments and schedules 
+title: Balance 
 pageImage: financial-processes.jpg
 homepageImage: balance_paymentallocation01.png
 description: |-
