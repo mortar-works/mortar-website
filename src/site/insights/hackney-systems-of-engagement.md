@@ -1,18 +1,19 @@
 ---
-title: Systems of connection: Geospatial information in East London
-date: 2021-06-21
-image: IASS_hoopd_hackney_01d.png
+title: Collaborate and co-create
+date: 2021-04-11
+image: collaborate_cocreate01.jpg
 author: George Unsworth
 draft: false
 tags:
-  - IASS
-  - geospatial
-  - information services
-  - advice services
-  - support services
-  - local authority
   - digital transformation
+  - AI
+  - intelligence
+  - cre
+  - real estate
+  - property 
+  - proptech
 ---
+
 
 Our platform Hoop'd is transforming local Information, Advice and Support Services (IASS) systems in East London. 
 -----------------------------------------------------------------------------------------------------
