@@ -1,7 +1,7 @@
 ---
-title: Collaborate and co-create
+title: Geospatial information: improving service provision in East London
 date: 2021-04-11
-image: collaborate_cocreate01.jpg
+image: hackneycircle_01.jpeg
 author: George Unsworth
 draft: false
 tags:
