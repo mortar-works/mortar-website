@@ -3,7 +3,7 @@ title: Hoop'd
 pageImage: IASS_hoopd_hackney_01d.png
 homepageImage: hoopd_serviceandevents01.png
 description: |-
-  Hoop'd is a geospatial Information, Advice and Support Service (IASS) platform. Hoop'd creates dynamic and tailored maps and interfaces with a suite of communication, signposting and referral tools that make local area information more relevant and accessible. 
+  Hoop'd is a geospatial Information, Advice and Support Service (IASS) platform. Hoop'd creates dynamic maps and interfaces for making local area information more relevant, accessible and engaging. 
 order: 2
 ---
 
