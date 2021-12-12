@@ -3,7 +3,7 @@ title: Balance
 pageImage: financial-processes.jpg
 homepageImage: balance_paymentallocation01.png
 description: |-
-  Balance is an intelligent income, collections and escalations system. Automating payment allocation and applying machine learning to transform how payments and schedules are created, agreed, monitored and updated.
+  Balance is an intelligent income and collections system. Balance automates payment allocation and applies machine learning to transform how payments and schedules are created, agreed, monitored and updated.
 order: 1
 ---
 
