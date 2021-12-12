@@ -3,7 +3,7 @@ title: Huxley
 pageImage: IASS_hoopd_hackney_01d.png
 homepageImage: hoopd_serviceandevents01.png
 description: |-
-  Huxley is an asset management platform transforming the built environment. Huxley delivers consumer-centric, flexible, digital solutions for the management and operation of real estate, driving more efficient, intelligent, mixed-use and hybrid models of operation. 
+  Huxley is an asset management platform transforming the built environment. Huxley delivers consumer-centric and flex-based solutions for the management and operation of real estate, driving more efficient, intelligent, mixed-use and hybrid models of operation. 
 order: 3
 ---
 
