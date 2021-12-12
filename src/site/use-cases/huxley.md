@@ -3,7 +3,7 @@ title: Huxley
 pageImage: IASS_hoopd_hackney_01d.png
 homepageImage: hoopd_serviceandevents01.png
 description: |-
-  Our platform Hoop'd transforms local Information, Advice and Support Services (IASS) systems. Read about how we are working with the London Borough of Hackney to deliver a data-sharing, signposting and referal system improving information and service provision for older residents.
+  Huxley is an asset management platform transforming traditional real estate into flexible, sustainable and contemporary living and working environments. With a suite of financial management and payment tools, Huxley delivers consumer-centric, automated and intelligent digital experiences and operational analysis.   
 order: 3
 ---
 
