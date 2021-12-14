@@ -1,9 +1,9 @@
 ---
-title: Huxley
+title: Huxly
 pageImage: IASS_hoopd_hackney_01d.png
 homepageImage: hoopd_serviceandevents01.png
 description: |-
-  Huxley is an intelligent, flex-based asset management platform. Huxley delivers customised models of property operation for landlords together with bespoke tenant management solutions. 
+  Huxly is an intelligent, flex-based asset management platform. Huxly delivers customised models of property operation for landlords together with bespoke tenant management solutions. 
 order: 3
 ---
 
