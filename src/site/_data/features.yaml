@@ -1,32 +1,32 @@
 ---
-  - title: Data development
-    tagline: We analyse existing systems and data sources, improving processes and advancing the use of data.
+  - title: Universal data adaptor
+    tagline: Quickly analyse existing systems and data sources, and more easily create web-services and data sharing solutions.
     description: |-
-      Technology is enabling companies to generate and calculate revenue in a variety of exciting new ways.
+      Our technology is enables organisations to assess, share and improve the quality of their data in a variety of practical ways.
     subfeatures: |-
       - Data acquisition, cleansing & analysis
       - Improving data integrity and security
-      - Data sharing and visualisation
+      - Open banking and third-party implementations
       - API and cloud based development
 
-  - title: Intelligent technologies
-    tagline: Mortar has a suite of applications to apply AI and intelligent design to drive more efficient and effective solutions. 
+  - title: Intelligence framework
+    tagline: Mortar's AI core makes the application of AI easier and more affordable, improving efficiency, engagement and transforming digital systems.
     description: |-
-      Mortar revolutionises the treasury team, introducing machine learning and automation to
-    subfeatures: |-
-      - Automation and machine learning
-      - Intelligent and shared team interfaces
-      - Predictive and behavioural modelling
-      - Open banking and third-party services 
+      Mortar makes the application of AI easier and more affordable.
+      subfeatures: |-
+      - Automating systems and solutions
+      - Machine learning applications
+      - Dynamic environments and directories
+      - Predictive and behavioural modeling
 
-  - title: User-led design 
-    tagline: We build products and platforms that enrich experiences across the built environment, home and workplace.
+  - title: Developer toolkits 
+    tagline: We offer a growing suite of UX and UI tools to drive more inclusive design and deliver greater success and engagement with user and data led solutions
     description: |-
       Mortar's AI engine analyses patterns and behaviours in correspondence, streamlining caseworking and consumer responses.
     subfeatures: |-
-      - Branded and white-labelled products
-      - App based design and development
-      - Targeted user services
-      - Bespoke consumer products
+      - Flexible and dynamic user engagement tools
+      - Customisable onboarding and verification tools
+      - Geolocational tools and mapping services
+      - Intelligent caseworking and analysis interfaces
 
 
