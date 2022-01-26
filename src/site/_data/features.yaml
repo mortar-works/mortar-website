@@ -1,6 +1,6 @@
 ---
   - title: Universal data adaptor
-    tagline: Quickly analyse and integrate data, and more easily create web-services and data sharing solutions.
+    tagline: Quickly analyse and integrate data, and more easily create web-services and data sharing solutions
     description: |-
       Our technology is enables organisations to assess, share and improve the quality of their data in a variety of practical ways.
     subfeatures: |-
@@ -10,7 +10,7 @@
       - API and cloud based development
 
   - title: Intelligence framework
-    tagline: Enables the easier application of AI, improving efficiency and transforming digital systems and services.
+    tagline: Enables the easier application of AI, improving efficiency and transforming digital systems and services
     description: |-
       Mortar makes the application of AI easier and more affordable.
     subfeatures: |-
