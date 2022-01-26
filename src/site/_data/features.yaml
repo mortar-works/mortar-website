@@ -1,6 +1,6 @@
 ---
   - title: Universal data adaptor
-    tagline: Quickly analyse existing systems and data sources, and more easily create web-services and data sharing solutions.
+    tagline: Quickly analyse and integrate data, and more easily create web-services and data sharing solutions.
     description: |-
       Our technology is enables organisations to assess, share and improve the quality of their data in a variety of practical ways.
     subfeatures: |-
@@ -10,7 +10,7 @@
       - API and cloud based development
 
   - title: Intelligence framework
-    tagline: Mortar's AI core makes the application of AI easier and more affordable, improving efficiency, engagement and transforming digital systems.
+    tagline: Enables the easier application of AI, improving efficiency and transforming digital systems and services.
     description: |-
       Mortar makes the application of AI easier and more affordable.
     subfeatures: |-
@@ -20,13 +20,13 @@
       - Predictive and behavioural modeling
 
   - title: Developer toolkits 
-    tagline: We offer a growing suite of UX and UI tools to drive more inclusive design and deliver greater success and engagement with user and data led solutions
+    tagline: Our suite of UX and UI tools drive more inclusive design with user and data led solutions
     description: |-
       Mortar's AI engine analyses patterns and behaviours in correspondence, streamlining caseworking and consumer responses.
     subfeatures: |-
-      - Flexible and dynamic user engagement tools
-      - Customisable onboarding and verification tools
-      - Geolocational tools and mapping services
-      - Intelligent caseworking and analysis interfaces
+      - Flexible and dynamic user tools
+      - Customisable onboarding
+      - Geolocational mapping services
+      - Intelligent caseworking and analysis
 
 
