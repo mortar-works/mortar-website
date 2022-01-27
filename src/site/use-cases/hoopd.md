@@ -29,19 +29,14 @@ Hoop'd tackles these problems, making it easier and more affordable to apply new
 Creating dynamic service directories in Islington 
 ---------------------------------------------------------------------------------------------------------------------------------
 We are working with Clarion Housing and Holloway Neighbourhood Group to improve their signposting services. This involves streamlining their workload so that more time can be spent on engaging with new and hard to reach users. 
-
 ![Hoop'd logo]({{ '/static/images/use-cases/councillogo_clarion.png' | url }})
-
 Building digital inclusion triage tools in Havering
 ---------------------------------------------------------------------------------------------------------------------------------
 We are working with the London Borough of Havering to create and test a new interface and directory for identifying digital inclusion needs; establishing new referral pathways and providing services to support the borough's digital inclusion programme.
-
 ![Hoop'd logo]({{ '/static/images/use-cases/councillogo_havering.png' | url }})
-
 Designing signposting services for older residents and social prescribing in Hackney
 ---------------------------------------------------------------------------------------------------------------------------------
 We are providing bespoke onboarding and membership services for older residents in Hackney to gain access to a dynamic directory of engagement and participation activities. Supporting a network of over 30 cultural and CVSE organisations in improving the accessibility of their information.  
-
 ![Hoop'd logo]({{ '/static/images/use-cases/councillogo_hackney.png' | url }})
 
 To find out more about Hoop'd you can visit it's website: www.hoopd.co.uk
