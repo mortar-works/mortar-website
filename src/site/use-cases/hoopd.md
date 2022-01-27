@@ -3,14 +3,27 @@ title: Hoop'd
 pageImage: IASS_hoopd_hackney_01d.png
 homepageImage: hoopd_serviceandevents01.png
 description: |-
-  Hoop'd enables organisations to share vital data in real time, improving service delivery and user engagement with more accessible and accurate information. Hoop'd transforms systems of information, advice and support with dynamic service directories, intelligent digital triage and referal systems, and web-services. 
+  Hoop'd enables organisations to share vital data in real time, improving service delivery and user engagement with more accessible and accurate information.
  
 order: 2
 ---
 
-Our work with Hackney Council began in response to difficulties that had arisen in community and cultural signposting for older residents. The council’s capacity for administering their free membership and communication service for older residents, active since 2014, needed to be increased to ensure the quality of service could be maintained. 
+Despite the technology we have available today providing people with the right information and services at the right time remains a serious challenge. Information has become difficult to manage, time-consuming to organise and creates tremendous bias and asymettry in how it is designed and distributed. As a result it is difficult to know if services are reaching the right people, and it is becoming increasingly difficult to reach and engage with new users, especially those that are traditionally hard to reach or at risk of exclusion.
 
-![Hackney Circle microsite designed for Hackney Council]({{ '/static/images/use-cases/IASS_hoopd_hackney_01b.png' | url }})
+These are serious problems that are being experienced daily by frontline staff across a wide range of organisations and businesses. These are problems that stop people from receiving the care and support they require, that restrict access to financial services and opportunities, and that stop people from engaging and participating in their local communities. 
+
+Hoop'd tackles these problems by making it easier to apply new technology, transforming systems of information, advice and support.
+
+With Hoop'd static, inaccurate and overly complex directories become dynamic and intelligent resources for driving the provision of niche and hyperlocal services and products. With customised and bespoke interfaces focused on enhancing user experience Hoop'd improves digital triage and referal systems; and with Hoop'd web-services organisations can collaborate with confidence that people are being engaged with the most accurate information in the most accessible and relevant format.
+
+Creating dynamic service directories in Islington 
+---------------------------------------------------------------------------------------------------------------------------------
+Building digital inclusion triage tools and referral pathways in Havering
+---------------------------------------------------------------------------------------------------------------------------------
+Designing signposting services for older residents and social prescribing in Hackney
+---------------------------------------------------------------------------------------------------------------------------------
+
+
 
 Designing new methods of communication 
 ---------------------------------------------------------------------------------------------------------------------------------
