@@ -8,13 +8,21 @@ description: |-
 order: 2
 ---
 
-Despite the technology we have available today providing people with the right information and services at the right time remains a serious challenge. Information has become difficult to manage, time-consuming to organise and creates tremendous bias and asymettry in how it is designed and distributed. As a result it is difficult to know if services are reaching the right people, and it is becoming increasingly difficult to reach and engage with new users, especially those that are traditionally hard to reach or at risk of exclusion.
+Despite the technology we have available today providing people with the right information and services at the right time remains a serious challenge. 
+
+Information has become difficult to manage, time-consuming to organise and creates tremendous bias and asymettry in how it is designed and distributed. As a result it is difficult to know if services are reaching the right people, and it is becoming increasingly difficult to reach and engage with new users, especially those that are traditionally hard to reach or at risk of exclusion.
+
+Tackling the problem
+---------------------------------------------------------------------------------------------------------------------------------
 
 These are serious problems that are being experienced daily by frontline staff across a wide range of organisations and businesses. These are problems that stop people from receiving the care and support they require, that restrict access to financial services and opportunities, and that stop people from engaging and participating in their local communities. 
 
 Hoop'd tackles these problems by making it easier to apply new technology, transforming systems of information, advice and support.
 
-With Hoop'd static, inaccurate and overly complex directories become dynamic and intelligent resources for driving the provision of niche and hyperlocal services and products. With customised and bespoke interfaces focused on enhancing user experience Hoop'd improves digital triage and referal systems; and with Hoop'd web-services organisations can collaborate with confidence that people are being engaged with the most accurate information in the most accessible and relevant format.
+- Inaccurate and overly complex directories become dynamic and intelligent resources for driving the provision of niche and hyperlocal services and products. 
+- Customised and bespoke interfaces focus on enhancing user experience improving digital triage and referal systems; 
+- Web-services enable organisations to collaborate with confidence that people are being engaged with the most accurate information in the most accessible and relevant format.
+
 
 Creating dynamic service directories in Islington 
 ---------------------------------------------------------------------------------------------------------------------------------
