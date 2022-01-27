@@ -15,15 +15,15 @@ Information has become difficult to manage, time-consuming to organise and creat
 Tackling the problem
 ---------------------------------------------------------------------------------------------------------------------------------
 
-![Hoop'd logo]({{ '/static/images/use-cases/Hoopd_logo_banner2.png' | url }})
+![Hoop'd logo]({{ '/static/images/use-cases/Hoopd_logo_banner3.png' | url }})
 
 These are serious problems that are being experienced daily by frontline staff across a wide range of organisations and businesses. Problems that stop people from receiving the care and support they require, that restrict access to financial services and opportunities, and that stop people from engaging and participating in their local communities. 
 
 Hoop'd tackles these problems, making it easier and more affordable to apply new technology to systems of information, advice and support.
 
-- Inaccurate and overly complex directories become dynamic and intelligent resources for driving the provision of niche and hyperlocal services and products. 
-- Customised and bespoke interfaces focus on enhancing user experience improving digital triage and referal systems; 
-- Web-services enable organisations to collaborate with confidence that people are being engaged with the most accurate information in the most accessible and relevant format.
+- Turn inaccurate and overly complex directories into dynamic and intelligent resources for driving niche and hyperlocal services and products. 
+- Customise interfaces to create more tailored user experiences and increase the success of digital triage and referal systems; 
+- Create web-services to collaborate with partners in confidence users are receiving the most accurate information in the most accessible and relevant formats.
 
 
 Creating dynamic service directories in Islington 
