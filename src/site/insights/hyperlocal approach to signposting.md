@@ -33,12 +33,10 @@ front line local authority staff; as a stand alone service, as well as through i
 The case for investing in hyperlocal and niche signposting  
 ---------------------------------------------------------------------------------------------------------------------------------
 
-The digital development of Hackney Circle has therefore enabled the service to both improve and amplify its offer, whilst cementing its role in the delivery of key strategic priorities and initiatives for the borough.
+The digital development of Hackney Circle has therefore enabled the service to both improve and amplify its offer, whilst cementing its role in the delivery of key strategic priorities and initiatives for the borough. Web-services are now being developed for Hackney Circle to be able to share its data set with the council's existing Find Support Services and Better Conversations products. 
 
-Web-services are now being developed for Hackney Circle to be able to share its data set with the council's existing Find Support Services and Better Conversations products. 
-The return on investment into the digital transformation of niche and hyperlocal community services will be fascinating to calculate in due course.
+Calcultating the return on investment into the digital transformation of this niche, hyperlocal service will be a major step in transitioning Information, Advice and Support Systems (IASS) into more digitally sophisticated products.
 
-Recognising and supporting the role of these signposting organisations, and providing them with the right tools to represent their communities effectively and share information, 
-marks a distinct point in the evolution of Information, Advice and Support Systems (IASS). Digital investment into strategically important local organisations to deliver dynamic, signposting offers tremendous savings in digitally transforming the delivery of frontline services.
+Recognising the role of signposting organisations, and providing them with the right tools to represent their communities effectively and share information, 
+marks a distinct point in the evolution of shared systems and more dynamic directories, improving the quality and efficiency of service provision. Digital investment into strategically important local organisations is the first step towards transforming the delivery of frontline services.
 
-A major step in the transition to more intelligent and affordable ways in which to identify and connect those that are most in need with the most appropriate forms of support. 
