@@ -1,7 +1,7 @@
 ---
-title: Geospatial service mapping 
+title: Service mapping for Hackney 
 date: 2021-04-11
-image: annie-spratt-AFB6S2kibuk-unsplash.jpg
+image: IASS_hoopd_hackney_01b.png
 author: George Unsworth
 draft: false
 tags:
