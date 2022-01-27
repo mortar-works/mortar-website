@@ -3,9 +3,8 @@ title: Hoop'd
 pageImage: IASS_hoopd_hackney_01d.png
 homepageImage: hoopd_serviceandevents01.png
 description: |-
-  Hoop’d delivers accurate and accessible information, evolving systems of information, advice and support. Hoop'd interfaces and tools enable the development of dynamic directories, digital triage systems, geospatial mapping, and web-services for sharing data in real time.
-  
-  Information, Advice and Support Service (IASS) platform. Hoop'd creates dynamic maps and interfaces for making local area information more relevant, accessible and engaging. 
+  Hoop’d delivers accurate and accessible information, transforming systems of information, advice and support. Hoop'd creates more accessible, engaging and dynamic service directories, digital triage and referal systems, and web-services; enabling organisations to share vital data in real time.
+ 
 order: 2
 ---
 
