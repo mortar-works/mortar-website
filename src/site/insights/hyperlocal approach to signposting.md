@@ -1,6 +1,6 @@
 ---
 title: A hyperlocal approach to directory development 
-date: 2020-10-15
+date: 2022-01-20
 image: IASS_hoopd_hackney_01d.png
 author: George Unsworth
 draft: false
