@@ -25,6 +25,6 @@ Hoop'd tackles these problems, making it easier and more affordable to apply new
 - Customise interfaces to create more tailored user experiences and increase the success of digital triage and referal systems; 
 - Create web-services to collaborate with partners in confidence users are receiving the most accurate information in the most accessible and relevant formats.
 
-![Hoop'd logo]({{ '/static/images/use-cases/councillogo_group2.png' | url }})
+![Hoop'd logo]({{ '/static/images/use-cases/councillogo_clarion1.png' | url }})
 
 To find out more about Hoop'd you can visit it's website: www.hoopd.co.uk
