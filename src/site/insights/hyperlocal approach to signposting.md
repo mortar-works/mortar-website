@@ -1,5 +1,5 @@
 ---
-title: Hyperlocal and niche transformation 
+title: Hyperlocal transformation 
 date: 2022-01-20
 image: hackney-circle_iass.png
 author: George Unsworth
