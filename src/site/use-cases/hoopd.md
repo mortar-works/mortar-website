@@ -17,7 +17,7 @@ Tackling the problem
 
 These are serious problems that are being experienced daily by frontline staff across a wide range of organisations and businesses. These are problems that stop people from receiving the care and support they require, that restrict access to financial services and opportunities, and that stop people from engaging and participating in their local communities. 
 
-Hoop'd tackles these problems by making it easier to apply new technology, transforming systems of information, advice and support.
+Hoop'd tackles these problems, making it easier and more affordable to apply new technology and transform systems of information, advice and support.
 
 - Inaccurate and overly complex directories become dynamic and intelligent resources for driving the provision of niche and hyperlocal services and products. 
 - Customised and bespoke interfaces focus on enhancing user experience improving digital triage and referal systems; 
