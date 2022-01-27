@@ -26,5 +26,7 @@ Hoop'd tackles these problems, making it easier and more affordable to apply new
 - Create web-services to collaborate with partners in confidence users are receiving the most accurate information in the most accessible and relevant formats.
 
 ![Hoop'd logo]({{ '/static/images/use-cases/councillogo_clarion3.png' | url }})
+![Hoop'd logo]({{ '/static/images/use-cases/councillogo_hackney3.png' | url }})
+![Hoop'd logo]({{ '/static/images/use-cases/councillogo_havering3.png' | url }})
 
 To find out more about Hoop'd you can visit it's website: www.hoopd.co.uk
