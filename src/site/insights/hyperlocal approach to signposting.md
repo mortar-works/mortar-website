@@ -1,5 +1,5 @@
 ---
-title: A hyperlocal approach to directory development 
+title: Hyperlocal and niche transformation 
 date: 2022-01-20
 image: IASS_hoopd_hackney_01d.png
 author: George Unsworth
