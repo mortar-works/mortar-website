@@ -1,7 +1,7 @@
 ---
 title: Service mapping for Hackney 
 date: 2021-04-11
-image: IASS_hoopd_hackney_01b.png
+image: Hackney Circle intro.jpg
 author: George Unsworth
 draft: false
 tags:
