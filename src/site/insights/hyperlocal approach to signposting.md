@@ -30,7 +30,7 @@ core offer to its members. Overcoming several of the problems that had been rest
 front line local authority staff; as a stand alone service, as well as through integrating with the existing products being used.
 
 
-![Screenshot showing hoop'd geo-spatial local area engagement information]({{ '/static/images/use-cases/hackney-circle_iass.png' | url }})
+![Screenshot showing hoop'd geo-spatial local area engagement information]({{ '/static/images/insights/hackney-circle_iass.png' | url }})
 
 
 
