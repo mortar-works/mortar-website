@@ -3,7 +3,7 @@ title: Hoop'd
 pageImage: IASS_hoopd_hackney_01d.png
 homepageImage: hoopd_serviceandevents01.png
 description: |-
-  Hoop’d creates more accurate and accessible information, transforming systems of information, advice and support. Hoop'd enables organisations to share vital data in real time, improving service delivery and user engagement with dynamic service directories, intelligent digital triage and referal systems, and web-services. 
+  Hoop'd enables organisations to share vital data in real time, improving service delivery and user engagement with more accessible and accurate information. Hoop'd transforms systems of information, advice and support with dynamic service directories, intelligent digital triage and referal systems, and web-services. 
  
 order: 2
 ---
