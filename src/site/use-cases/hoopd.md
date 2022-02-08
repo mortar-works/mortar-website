@@ -15,12 +15,12 @@ Providing people with the right information at the right time presents a serious
 
 Hoop'd transforms large amounts of complex information, improving accessibility and enhancing the provision of local services. 
 
-Whether for individual businesses or for large-scale partnerships Hoop'd delivers more tailored environments for information and its communication. 
+Whether for individual businesses or for large-scale partnerships Hoop'd delivers more tailored environments for sharing information and more accessible and equitable formats for its communication. 
 
 It does this by:
 
 - Organising information and automating the creation of accessible content
-- Safely and securely sharing information and implementing user-referal and caseworking systems
+- Safely and securely sharing information, evolving user-referal and caseworking systems
 - Applying intelligence and data-analysis to support the improvement of service provision 
 - Developing bespoke products that support inclusion and engagement
 
