@@ -15,6 +15,8 @@ Providing people with the right information at the right time presents a serious
 
 Hoop'd transforms large amounts of complex information, improving accessibility and enhancing the provision of local services. 
 
+![Hoop'd logo]({{ '/static/images/use-cases/Hoopd_logo_banner3.png' | url }})
+
 Whether for individual businesses or for large-scale partnerships Hoop'd delivers more tailored environments for sharing information and creating more accessible and equitable methods of communication. 
 
 Hoop'd this by:
@@ -30,8 +32,6 @@ Using Hoop'd niche and hyperlocal products can be developed, these include:
 - user navigation, triage and map-based interfaces
 - targeted engagement campaigns and user management systems
 - bespoke case working and referal services
-
-![Hoop'd logo]({{ '/static/images/use-cases/Hoopd_logo_banner3.png' | url }})
 
 Too much information and the growing barriers to engagement
 ---------------------------------------------------------------------------------------------------------------------------------
