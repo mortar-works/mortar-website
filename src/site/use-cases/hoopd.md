@@ -15,16 +15,21 @@ Providing people with the right information at the right time presents a serious
 
 Hoop'd transforms large amounts of complex information, improving accessibility and enhancing the provision of local services. 
 
-Whether for individual businesses or for large-scale partnerships Hoop'd delivers more tailored environments for sharing information and more accessible and equitable formats for its communication. 
+Whether for individual businesses or for large-scale partnerships Hoop'd delivers more tailored environments for sharing information and creating more accessible and equitable methods of communication. 
 
-It does this by:
+Hoop'd this by:
 
 - Organising information and automating the creation of accessible content
-- Safely and securely sharing information, evolving user-referal and caseworking systems
-- Applying intelligence and data-analysis to support the improvement of service provision 
+- Providing environments for safely and securely sharing information
+- Applying intelligence and analysis to improve mapping and service provision 
 - Developing bespoke products that support inclusion and engagement
 
-Using Hoop'd niche and hyperlocal products can be developed including dynamic directories and triage tools, targeted engagement campaigns and user management systems.
+Using Hoop'd niche and hyperlocal products can be developed, these include:
+
+- dynamic information, opportunity and service directories 
+- user navigation, triage and map-based interfaces
+- targeted engagement campaigns and user management systems
+- bespoke case working and referal services
 
 ![Hoop'd logo]({{ '/static/images/use-cases/Hoopd_logo_banner3.png' | url }})
 
@@ -45,4 +50,4 @@ Hoop'd tackles these problems, making it easier and more affordable to apply new
 ![Hoop'd logo]({{ '/static/images/use-cases/councillogo_hackney3.png' | url }})
 ![Hoop'd logo]({{ '/static/images/use-cases/councillogo_havering3.png' | url }})
 
-To find out more about Hoop'd you can visit it's website: www.hoopd.co.uk
+To find out more about Hoop'd you can visit the platform's website: www.hoopd.co.uk
