@@ -17,9 +17,9 @@ Hoop'd transforms large amounts of complex information, improving accessibility 
 
 ![Hoop'd logo]({{ '/static/images/use-cases/Hoopd_logo_banner3.png' | url }})
 
-Whether for individual businesses or for large-scale partnerships Hoop'd delivers more tailored environments for sharing information and creating more accessible and equitable methods of communication. 
+Whether for individual businesses or for large-scale partnerships Hoop'd delivers more tailored environments for sharing information and tools for creating more accessible and equitable methods of communication. 
 
-Hoop'd this by:
+Hoop'd is an information and engagement platform and does this by:
 
 - Organising information and automating the creation of accessible content
 - Providing environments for safely and securely sharing information
