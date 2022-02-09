@@ -35,7 +35,7 @@ Using Hoop'd a wide variety of either large-scale systems or niche and hyperloca
 - dynamic information, opportunity and service directories 
 - user navigation, triage and map-based interfaces
 - targeted engagement campaigns and user management systems
-- bespoke case working and referal services
+- bespoke case working and referral services
 
 Why is Hoop'd needed
 ---------------------------------------------------------------------------------------------------------------------------------
