@@ -8,28 +8,21 @@ order: 1
 ---
 
 > “Triple the number of households are now in arrears, equivalent to a third of all low-income households.”
-> **Dragged Down by Debt. Published 21st October 2021**
+> **Dragged Down by Debt**
 
-Balance progresses the next generation of digital financial inclusion in the field of collections and income generation, ensuring that people are more accurately informed and more effectively engaged in the processes of collections. Balance enables people to change and adapt their payment schedules, establishing unique touchpoints to improve and streamline collections whilst overcoming both short and long-term incidences of debt and arrears.  
-
-As of October 2021, 3.8m households in the UK are in arrears for their household bills, including rent; arrears that total approximately £5.2bn. These numbers are set to increase as the UK’s furlough scheme comes to an end, removing the financial support for the employment of 11.6 million people. This is at the same time as households face the highest increase in the cost of living in the last three decades with soaring energy prices and inflation set to reach 5% in 2022. 
+Balance introduces a new generation of digital financial inclusion tools in the field of collections and income generation. Balance enables people to change and adapt their payment schedules, establishing unique touchpoints to improve and streamline collections whilst overcoming both short and long-term incidences of debt and arrears; ensuring that people are more effectively engaged in the process of collections.
 
 Introducing user-led collections and flexible payments
 -----------------------------------------------------------------------------------------------------
 
-New methods of digitalising and automating the collections process is essential if we are to alleviate the pressure and workloads on staff and employees involved in income generation and collections. 
+New methods of digitalising and automating the collections process is essential if we are to alleviate the pressure and workloads on staff and employees involved in income generation and collections. 3.8m households in the UK are in arrears for their household bills, including rent; arrears that total approximately £5.2bn. These numbers are set to increase as households face the highest increase in the cost of living in the last three decades with soaring energy prices and inflation. 
 
-How to introduce new systems, intelligence and ways of working can be costly and time consuming. Balance is designed to be easy and simple to implement alongside existing escalation and accounts receivable (AR) services and software. Balance brings intelligence, specialised design, and systems of automation to the housing and real estate sector, enriching and enhancing the roles of income officers, collections teams and companies of all scales. 
-
-Balance supports companies by:
-
-* retaining and improving customer relations and 
-* delivering more efficient, digital user-facing collections. 
+Balance is designed to be easy and simple to implement alongside existing escalation and accounts receivable (AR) services and software. Balance brings intelligence, specialised design, and systems of automation to the housing and real estate sector, enriching and enhancing the roles of income officers, collections teams and companies of all scales. 
 
 Intelligent design for creating and amending payment schedules
 -----------------------------------------------------------------------------------------------------
 
-> Balance accelerates the administrative processes involved in arrears acknowledgement and payment schedule approval by 64%, saving the average collections officer over 6 hours a week in time spent administering arrears. 
+> Balance accelerates the administrative processes involved in arrears acknowledgement and payment schedule approval, saving officers considerable time spent administering arrears. 
 
 ![Screenshot showing AI assisted decision making for financial processes]({{ '/static/images/use-cases/group_device_mockup.png' | url }})
 
