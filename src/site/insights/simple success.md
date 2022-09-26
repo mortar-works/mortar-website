@@ -1,17 +1,18 @@
-
-
 ---
-title: Exclusion and Overload
-date: 2022-05-01
+title: Simple Successes
+date: 2022-07-18
 image: haver01.png
 author: George Unsworth
 draft: false
 tags:
   - digital inclusion
+  - information design
+  - service design
+  - service pattern
 
 ---
 
-“Life is really simple, but we insist on making it complicated.” ~ Confucius
+> Life is really simple, but we insist on making it complicated. ― Confucius
 
 At Mortar our product Hoop'd makes it easier and quicker to organise information and apply intelligence to make it more accessible and appropriate for those that need it. We have begun working with organisations that have a shared interest in creating inclusive environments and reaching those at risk of exclusion.
 
