@@ -23,5 +23,5 @@ As a result we are now helping organisations and networks do a few really simple
 - Enabling single click automatic PDF creation and email sending to users.  
 - Create Service and Resource Cards using uniform templates. 
 
-If you are working in the field of digital or financial inclusion, public health or community navigation tackling one of these could help you reduce barriers in the accessiblity of your services and help you to reach significantly more users and those previously excluded.
+If you are working in the field of digital or financial inclusion, public health or community navigation tackling one of these will reduce barriers in the accessiblity of your services and help you and your front-line service staff reach and engage significantly more users.
 
