@@ -1,32 +1,32 @@
 ---
-  - title: Universal data adaptor
+  - title: Data adaption and transfer
     tagline: Quickly analyse and integrate data, and more easily create web-services and data sharing solutions
     description: |-
-      Our technology is enables organisations to assess, share and improve the quality of their data in a variety of practical ways.
+      Our universal data adapter helps assess, share and improve the quality of data, so it can be applied in a variety of practical ways.
     subfeatures: |-
       - Data acquisition, cleansing & analysis
       - Improving data integrity and security
-      - Open banking and third-party services
-      - API and cloud based development
+      - API development and implementation
+      - Cloud based development and webservices
 
-  - title: Intelligence framework
-    tagline: Enables the easier application of AI, improving efficiency and transforming digital systems and services
+  - title: Applying intelligence
+    tagline: Our framework makes it easier to apply intelligence, improving efficiency to transform systems and services
     description: |-
-      Mortar makes the application of AI easier and more affordable.
+      Mortar's framework makes it easier and more affordable to design and apply intelligent solutions.
     subfeatures: |-
-      - Automating systems and solutions
-      - Machine learning applications
+      - Algorithm design and implementation
+      - Machine learning applications 
       - Dynamic environments and directories
       - Predictive and behavioural modeling
 
-  - title: Developer toolkits 
-    tagline: Our suite of UX and UI tools drive more inclusive design with user and data led solutions
+  - title: Bespoke implementations 
+    tagline: Our growing suite of UX and UI tools drive more inclusive design to deliver bespoke user and data led solutions
     description: |-
       Mortar's AI engine analyses patterns and behaviours in correspondence, streamlining caseworking and consumer responses.
     subfeatures: |-
-      - Flexible and dynamic user tools
-      - Customisable onboarding
-      - Geolocational mapping services
-      - Intelligent caseworking and analysis
+      - Dynamic and responsive interfaces
+      - Customisable and tailored user engagement 
+      - Geolocational mapping tools and services
+      - Caseworking and analysis dashboards
 
 
