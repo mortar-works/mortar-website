@@ -1,7 +1,7 @@
 ---
 title: Simple Successes
 date: 2022-07-18
-image: haver01.png
+image: haver03.png
 author: George Unsworth
 draft: false
 tags:
@@ -25,3 +25,4 @@ As a result we are now helping organisations and networks do a few really simple
 
 If you are working in the field of digital or financial inclusion, public health or community navigation tackling one of these will reduce barriers in the accessiblity of your services and help you and your front-line service staff reach and engage significantly more users.
 
+![Screenshot showing Hoop'd triage interface]({{ '/static/images/insights/haver03.png' | url }})
