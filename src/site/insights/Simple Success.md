@@ -15,13 +15,16 @@ tags:
 
 > Life is really simple, but we insist on making it complicated. ― Confucius
 
-Sometimes services and systems don't need to be redesigned. At Mortar we want information to be more accessible and appropriate for those that need it. We built the platform Hoop'd to make it easier and quicker to organise, present and share local area information. Whilst working with local authorities and place based agencies, to design and develop better services, we began to discover that some of the best solutions, carrying the biggest impact, are remarkably simple. 
+Sometimes services and systems don't need to be redesigned. 
+Some of the best solutions, carrying the biggest impact, are remarkably simple. 
+
+At Mortar we want information to be more accessible and appropriate for those that need it. We built our platform Hoop'd to make it easier and quicker to organise, present and share local area information. Whilst working with local authorities and place based agencies to design and develop better services we began to discover that more success can be achieved with some of the most simple solutions. 
 
 As a result we are now helping organisations and networks do a few really simple things:
 
 - Ensure service information can be printed effectively on a single page.
-- Enabling single click automatic PDF creation and email sending to users.  
-- Create Service and Resource Cards using uniform templates. 
+- Enable PDFs to be created and emailed to users with a single click.  
+- Create uniform Service and Resource Cards using shared templates. 
 
 If you are working in the field of digital or financial inclusion, public health or community navigation tackling one of these will reduce barriers in the accessiblity of your services and help you and your front-line service staff reach and engage significantly more users.
 
