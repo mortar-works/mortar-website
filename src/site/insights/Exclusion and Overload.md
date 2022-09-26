@@ -25,6 +25,10 @@ This is not just about how an ageing society is able to adapt. Active consumers 
 
 Technology is creating remarkable opportunities to make content easier and quicker to produce and share. However making important information accessible, understandable and appropriate for the benefit of the audiences it is designed to reach is a challenging field of work. Where these two fields converge we at Mortar are designing the frameworks and tools that make information easier to find and more relevant and appropriate to the user's needs. 
 
+
+![Screenshot showing Hoop'd triage interface]({{ '/static/images/insights/haver02.png' | url }})
+
+
 Our work with the LGA (Local Government Association) is responding to these challenges. Our Digital Inclusion Triage Tool, built using our Hoop'd framework, assesses and analyses a user's needs referring them to the available services and resources in their local area, contributing valuable data to help improve investment in service provision and distribution. 
 
 It is only through embracing digital systems to inform and improve our understanding of services that promote and deliver inclusion, that we can learn how to more effectively and efficiently target reductions in the rates and incidences of exclusion for specific members and groups in our community.
