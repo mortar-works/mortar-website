@@ -1,7 +1,7 @@
 ---
 title: Hoop'd
 pageImage: IASS_hoopd_hackney_01d.png
-homepageImage: hoopd-detail3.png
+homepageImage: hoopd-detail4.png
 description: |-
   Hoop'd enables organisations to share vital data in real time, improving service delivery and user engagement with more accessible and accurate information.
  
