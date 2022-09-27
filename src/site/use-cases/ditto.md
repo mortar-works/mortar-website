@@ -3,7 +3,7 @@ title: Hoop'd
 pageImage: IASS_hoopd_hackney_01d.png
 homepageImage: ditto-detail02.png
 description: |-
-  Hoop'd enables organisations to share vital data in real time, improving service delivery and user engagement with more accessible and accurate information.
+  Ditto is a Digital Triage Tool, a system for dynamically assessing the needs of users and navigating to appropriate services and resources. 
  
 order: 2
 ---
