@@ -1,9 +1,9 @@
 ---
-title: Hoop'd
+title: Ditto
 pageImage: IASS_hoopd_hackney_01d.png
-homepageImage: ditto-detail02.png
+homepageImage: ditto-detail03.png
 description: |-
-  Ditto is a Digital Triage Tool, a system for dynamically assessing the needs of users and navigating to appropriate services and resources. 
+  Ditto is our Digital Triage Tool. Create dynamic and intelligent  assessing the needs of users and navigating to appropriate services and resources. 
  
 order: 2
 ---
