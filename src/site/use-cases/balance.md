@@ -1,7 +1,7 @@
 ---
 title: Balance 
 pageImage: financial-processes.jpg
-homepageImage: balance-03.png
+homepageImage: balance-04.png
 description: |-
   Balance is an intelligent income and collections system. Balance automates financial operations and applies machine learning to transform how payments and schedules are created and resolved.
 order: 1
