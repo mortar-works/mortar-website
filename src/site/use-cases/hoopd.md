@@ -3,58 +3,29 @@ title: Hoop'd
 pageImage: IASS_hoopd_hackney_01d.png
 homepageImage: hoopd-detail4.png
 description: |-
-  Hoop'd enables organisations to share vital data in real time, improving service delivery and user engagement with more accessible and accurate information.
+  Hoop'd builds more accessible and inclusive environments; making people, places and businesses more connected. Hoop'd delivers a range of tailored information environments for different communities, improving access to opportunities and increasing local area engagement. 
  
 order: 2
 ---
 
-Making information dynamic and accessible
+Information is difficult to manage and is becoming increasingly difficult for people to engage with. It is time-consuming for businesses to organise and promote services, activities and engagement opportunities. It is even more difficult to keep shared systems and directories accurate and up to date. 
+
+This ends up creating tremendous bias and asymettry in how information is being designed and distributed. People are not being reached with the right information, especially new users or those that are traditionally hard to reach or at risk of exclusion.
+
+These are serious problems, experienced daily by frontline staff across a wide range of organisations and businesses. Problems that stop people from receiving the care and support they require, that restrict access to financial services and opportunities, and that stop people from engaging and participating in their local communities. 
+
+Making information more dynamic and accessible
 ---------------------------------------------------------------------------------------------------------------------------------
 
-Providing people with the right information at the right time presents a serious challenge.
-
-Hoop'd transforms large amounts of complex information, improving accessibility and enhancing the provision of local services. 
+Hoop'd transforms large amounts of complex information, improving accessibility and enhancing the provision of specific services. 
 
 ![Hoop'd logo]({{ '/static/images/use-cases/Hoopd_logo_banner3.png' | url }})
 
 Whether for individual businesses or for large-scale partnerships Hoop'd delivers more tailored environments for sharing information and tools for creating more accessible and equitable methods of communication. 
 
-How does Hoop'd work
+Tailored environments to deliver your services more effectively
 ---------------------------------------------------------------------------------------------------------------------------------
-Hoop'd is an information and engagement platform and does this by:
-
-- Organising information and automating the creation of accessible content
-- Providing environments for safely and securely sharing information
-- Applying intelligence and analysis to improve mapping and service provision 
-- Developing bespoke products that support inclusion and engagement
-
-What type of products does Hoop'd support
----------------------------------------------------------------------------------------------------------------------------------
-Using Hoop'd a wide variety of either large-scale systems or niche and hyperlocal products can be developed, these include:
-
-- dynamic information, opportunity and service directories 
-- user navigation, triage and map-based interfaces
-- targeted engagement campaigns and user management systems
-- bespoke case working and referral services
-
-Why is Hoop'd needed
----------------------------------------------------------------------------------------------------------------------------------
-
-There is a huge amount of technology available today. However, information has become difficult to manage. It is time-consuming to organise and creates tremendous bias and asymettry in how it is designed and distributed. As a result it is difficult to know if services are reaching the right people, and it is becoming increasingly difficult to reach and engage with new users, especially those that are traditionally hard to reach or at risk of exclusion.
-
-These are serious problems, experienced daily by frontline staff across a wide range of organisations and businesses. Problems that stop people from receiving the care and support they require, that restrict access to financial services and opportunities, and that stop people from engaging and participating in their local communities. 
-
-What are some current Hoop'd case-studies
----------------------------------------------------------------------------------------------------------------------------------
-Hoop'd tackles these problems, making it easier and more affordable to apply new technology to systems of information, advice and support.
-
-- Turn inaccurate and overly complex directories into dynamic and intelligent resources for driving niche and hyperlocal services and products. 
-- Customise interfaces to create more tailored user experiences and increase the success of digital triage and referal systems; 
-- Create web-services to collaborate with partners in confidence users are receiving the most accurate information in the most accessible and relevant formats.
-
-![Hoop'd logo]({{ '/static/images/use-cases/councillogo_clarion3.png' | url }})
-![Hoop'd logo]({{ '/static/images/use-cases/councillogo_hackney3.png' | url }})
-![Hoop'd logo]({{ '/static/images/use-cases/councillogo_havering3.png' | url }})
+Hoop'd is an information and engagement platform, but we can tailor how it captures and presents information. This allows Hoop'd to capture and create new data sets, responding to your specific community or local area to provide you with a better, more informed, bespoke service. 
 
 Get in touch
 ---------------------------------------------------------------------------------------------------------------------------------
