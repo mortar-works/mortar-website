@@ -25,9 +25,14 @@ Whether for individual businesses or for large-scale partnerships Hoop'd deliver
 
 Tailored environments to deliver your services more effectively
 ---------------------------------------------------------------------------------------------------------------------------------
-Hoop'd is an information and engagement platform, but we can tailor how it captures and presents information. This allows Hoop'd to capture and create new data sets, responding to your specific community or local area to provide you with a better, more informed, bespoke service. 
+Hoop'd is an information and engagement platform, but we can tailor how it captures and presents information. This allows Hoop'd to capture and create new data sets, responding to your specific community or local area to provide you with a better, more informed, bespoke service. Some of our current projects include:
+
+- Delivering the Mayor of London's Dementia Friendly Venues Charter
+- Running Hackney's information and membership service for older residents
+- Designing the Cultural Referral Platform with public health and Queen Mary University 
+- Building Cheshire and Gloucestershire's directory for supporting young people at risk of exclusion
+- Delivering activity timetables and engagement information for Holloway Neighbourhood Group and Clarion Housing
 
 Get in touch
 ---------------------------------------------------------------------------------------------------------------------------------
-To find out more about Hoop'd you can get in touch with us by emailing: office@mortar.works
-or by visiting the platform's website: www.hoopd.co.uk
+To find out more visit the Hoop'd website: www.hoopd.co.uk
