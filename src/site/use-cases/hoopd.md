@@ -3,7 +3,7 @@ title: Hoop'd
 pageImage: IASS_hoopd_hackney_01d.png
 homepageImage: hoopd-detail4.png
 description: |-
-  Hoop'd builds more accessible and inclusive environments; making people, places and businesses more connected. Hoop'd delivers a range of tailored information environments for different communities, improving access to opportunities and increasing local area engagement. 
+  Hoop'd builds more accessible and inclusive environments; making people, places and businesses more connected. Hoop'd designs services for many different communities, improving access to accurate information and increasing user engagement. 
  
 order: 2
 ---
