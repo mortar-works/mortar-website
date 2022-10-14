@@ -16,8 +16,6 @@ Navigating large amounts of information has become daunting and time consuming, 
 Ditto makes it easier for people to find the information they want and need more quickly. This boosts engagement and referrals, but it also saves tremendous amounts of time for front line staff, businesses and companies. It also uses the process of triaging users to create rich, new datasets and insights associated with the needs and behaviours of targeted user groups. 
 
 ![Ditto interface examples]({{ '/static/images/use-cases/ditto_01.jpg' | url }})
-
-
 How does Ditto work
 ---------------------------------------------------------------------------------------------------------------------------------
 Ditto enables the creation of a customised triage environment allowing organisations to identify and assess their users needs in relation to their own specific services and resources. 
