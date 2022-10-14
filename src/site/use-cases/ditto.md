@@ -15,7 +15,7 @@ Navigating large amounts of information has become daunting and time consuming, 
 
 Ditto makes it easier for people to find the information they want and need more quickly. This boosts engagement and referrals, but it also saves tremendous amounts of time for front line staff, businesses and companies. It also uses the process of triaging users to create rich, new datasets and insights associated with the needs and behaviours of targeted user groups. 
 
-![Hoop'd logo]({{ '/static/images/use-cases/Hoopd_logo_banner3.png' | url }})
+![Ditto interface examples]({{ '/static/images/use-cases/ditto_01.jpg' | url }})
 
 
 How does Ditto work
