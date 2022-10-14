@@ -8,7 +8,8 @@ description: |-
 order: 2
 ---
 
-Building the next generation of digital services
+Digital Triage Tools
+The next generation of digital services
 ---------------------------------------------------------------------------------------------------------------------------------
 
 Navigating large amounts of information has become daunting and time consuming, with huge amounts of information becoming increasingly inaccessible.   
