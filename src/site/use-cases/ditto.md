@@ -8,11 +8,8 @@ description: |-
 order: 2
 ---
 
-Digital Triage Tools
+Digital Triage Tools - the next generation of digital services
 ---------------------------------------------------------------------------------------------------------------------------------
-The next generation of digital services
----------------------------------------------------------------------------------------------------------------------------------
-
 Navigating large amounts of information has become daunting and time consuming, with huge amounts of information becoming increasingly inaccessible.   
 
 Ditto makes it easier for people to find the information they want and need more quickly. This boosts engagement and referrals, but it also saves tremendous amounts of time for front line staff, businesses and companies. It also uses the process of triaging users to create rich, new datasets and insights associated with the needs and behaviours of targeted user groups. 
