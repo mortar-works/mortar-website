@@ -1,32 +1,23 @@
 ---
   - title: Data adaption and transfer
-    tagline: Quickly analyse and integrate data, and more easily create web-services and data sharing solutions
+    tagline: Better data, bigger impact. Our universal data adapter helps assess, share and improve the quality of data.
     description: |-
-      Our universal data adapter helps assess, share and improve the quality of data, so it can be applied in a variety of practical ways.
+      Better data, bigger impact. Our universal data adapter helps assess, share and improve the quality of data; making it easier to visualise, understand and act effectively.
     subfeatures: |-
-      - Data acquisition, cleansing & analysis
-      - Improving data integrity and security
-      - API development and implementation
-      - Cloud development and webservices
+ 
 
   - title: Applying intelligence
-    tagline: Our framework makes it easier to apply intelligence, improving efficiency to transform systems and services
+    tagline: Work smarter, not harder. Mortar's framework makes it easier to design and apply intelligent solutions.
     description: |-
-      Mortar's framework makes it easier and more affordable to design and apply intelligent solutions.
+      Work smarter, not harder. Mortar's framework makes it easier to design and apply intelligent solutions; transforming systems and services with predictive analytics, automation and machine learning. 
     subfeatures: |-
-      - Algorithm design and implementation
-      - Machine learning applications 
-      - Dynamic environments and directories
-      - Predictive and behavioural modeling
+ 
 
   - title: Bespoke implementations 
-    tagline: Our growing suite of UX and UI tools drive more inclusive design to deliver bespoke user and data led solutions
+    tagline: Designed for co-creation. Our growing suite of tools drives the delivery of bespoke solutions for you and your users.
     description: |-
-      Mortar's AI engine analyses patterns and behaviours in correspondence, streamlining caseworking and consumer responses.
+      Designed for co-creation. Mortar's AI engine analyses patterns and behaviours in correspondence, streamlining caseworking and consumer responses.
     subfeatures: |-
-      - Dynamic and responsive interfaces
-      - Tailored user engagement 
-      - Locational maps and tools
-      - Caseworking and analysis dashboards
+
 
 
