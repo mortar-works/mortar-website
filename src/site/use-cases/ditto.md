@@ -1,6 +1,6 @@
 ---
 title: Ditto
-pageImage: IASS_hoopd_hackney_01d.png
+pageImage: ditto-detail03.png
 homepageImage: ditto-detail03.png
 description: |-
   Ditto is a platform for creating dynamic and responsive information and advice services. Ditto stands for Digital Triage Tools. The platform assesses the needs of users and provides a suite of tools for customising how they access support and services. 
