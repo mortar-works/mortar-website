@@ -43,9 +43,13 @@ Ditto is being used to deliver the Local Government Association's Digital Inclus
 Why is Ditto needed
 ---------------------------------------------------------------------------------------------------------------------------------
 
-The digitalisation of many services has led to increasingly poor user experience. Many systems just weren't designed to hold so much information and traditional websites and directories do not offer effective methods for finding and displaying different types of information, or catering for different types of users. As a result many services have grown to become less accessible, and the information held in them has become out of date, inaccurate, or simply inappropriate. Confidence for users in using such systems is low and engagement levels fall, making the work of staff difficult and in many cases impossible. 
+The digitalisation of many services has led to increasingly poor user experience. 
 
-Building better designed information, and systems for how it is accessed is essential for services grow. It is also essential for developing methods to capture the user data needed for such services to improve in their quality and efficiency.
+Many systems just weren't designed to hold so much information and traditional websites and directories do not offer effective methods for finding and displaying different types of information, or catering for different types of users. 
+
+As a result many services have grown to become less accessible, and the information held in them has become out of date, inaccurate, or simply inappropriate. Confidence for users in using such systems is low and engagement levels fall, making the work of staff difficult and in many cases impossible. 
+
+Building better designed information, and systems for how it is accessed, is essential for services to grow, to evolve, and to become more equitable and accessible. This is essential in enabling services to more effectively capture and make use of reliable user data, a necessity for improving the quality and efficiency of service provision.
 
 Get in touch
 ---------------------------------------------------------------------------------------------------------------------------------
