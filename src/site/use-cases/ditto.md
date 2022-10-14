@@ -21,7 +21,9 @@ How does Ditto work
 ---------------------------------------------------------------------------------------------------------------------------------
 Ditto enables the creation of a customised triage environment allowing organisations to identify and assess their users needs in relation to their own specific services and resources. 
 
-The triage environment operates alongside a dynamic directory, with tailored information and service cards to deliver more effective and efficient user journeys and experiences; all made possible by Mortar's framework, providing bespoke algorithms and APIs that ensure users are being provided with the most appropriate information.  
+The triage environment operates alongside a dynamic directory, with tailored information and service cards to deliver more effective and efficient user journeys and experiences; all made possible by Mortar's framework, providing bespoke algorithms and APIs that ensure users are being provided with the most appropriate information. 
+
+![Ditto interface examples]({{ '/static/images/use-cases/ditto_02.jpg' | url }})
 
 What type of products does Ditto support
 ---------------------------------------------------------------------------------------------------------------------------------
