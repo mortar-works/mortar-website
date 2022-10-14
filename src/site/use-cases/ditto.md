@@ -16,7 +16,12 @@ Navigating large amounts of information has become daunting and time consuming, 
 
 Ditto makes it easier for people to find the information they want and need more quickly. This boosts engagement and referrals, but it also saves tremendous amounts of time for front line staff, businesses and companies. It also uses the process of triaging users to create rich, new datasets and insights associated with the needs and behaviours of targeted user groups. 
 
-![Ditto interface examples]({{ '/static/images/use-cases/ditto_01.jpg' | url }})
+<figure>
+  <img src="{{ '/static/images/use-cases/ditto_01.jpg' | url }}" />
+  <figcaption>
+   Examples of Ditto's user triage interfaces for capturing user data
+  </figcaption>
+</figure>
 
 How does Ditto work
 ---------------------------------------------------------------------------------------------------------------------------------
@@ -24,7 +29,12 @@ Ditto enables the creation of a customised triage environment allowing organisat
 
 The triage environment operates alongside a dynamic directory, with tailored information and service cards to deliver more effective and efficient user journeys and experiences; all made possible by Mortar's framework, providing bespoke algorithms and APIs that ensure users are being provided with the most appropriate information. 
 
-![Ditto interface examples]({{ '/static/images/use-cases/ditto_02.jpg' | url }})
+<figure>
+  <img src="{{ '/static/images/use-cases/ditto_02.jpg' | url }}" />
+  <figcaption>
+   Examples of Ditto's management interfaces for analysing data and building directories
+  </figcaption>
+</figure>
 
 What type of products does Ditto support
 ---------------------------------------------------------------------------------------------------------------------------------
