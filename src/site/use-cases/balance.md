@@ -3,7 +3,7 @@ title: Balance
 pageImage: financial-processes.jpg
 homepageImage: balance_04.png
 description: |-
-  Balance is a financial inclusion platform, improving financial assessment for users and applying predictive analytics to support the process of income generation and collections. Balance applies new technology to transform how payment schedules are created and resolved.
+  Balance is a financial inclusion platform, improving user assessment and applying predictive analytics to support the process of income generation and collections; transforming how payment schedules are created and resolved.
 order: 1
 ---
 
