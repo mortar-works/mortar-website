@@ -3,12 +3,12 @@ title: Ditto
 pageImage: ditto_hp.png
 homepageImage: ditto-detail03.png
 description: |-
-  Ditto is a platform for creating dynamic and responsive information and advice services. Ditto stands for Digital Triage Tools. The platform assesses the needs of users and provides a suite of tools for customising how they access support and services. 
+  Ditto is a platform for creating dynamic and responsive signposting, information and advice services. The platform uses Digital Triage Technology to assess the needs of users and a suite of tools for customising how they access support and services. 
  
 order: 2
 ---
 
-Digital Triage Tools - the next generation of digital services
+Digital Triage Technology - next generation digital services
 ---------------------------------------------------------------------------------------------------------------------------------
 Navigating large amounts of information has become daunting and time consuming, with huge amounts of information becoming increasingly inaccessible.   
 
