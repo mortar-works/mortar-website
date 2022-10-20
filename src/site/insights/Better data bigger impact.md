@@ -1,11 +1,15 @@
 ---
 title: Better data, bigger impact
 date: 2022-10-10
-image: haver01.png
+image: biggerdatabiggerimpact.jpg
 author: George Unsworth
 draft: false
 tags:
   - data services
+  - universal data adaptor
+  - data capture
+  - data blending
+  - data management
 
 ---
 
