@@ -27,5 +27,7 @@ Alongside our core system sits a growing suite of customisable modules and tools
 
 With all of our clients, regardless of how they engage with our existing products and platforms such as Hoop'd, Ditto and Balance, we collaborate in the co-design and delivery of the specific tools and interfaces that their users need, to drive as much impact as possible in transforming their legacy systems and improving the quality and efficiency of the services they deliver.  
 
+If you need to develop and improve your existing services or systems, and want to engage your team, officers and users in the process of its successful design and implementation, please get in touch; we are perfectly positioned to create the environment of collaboration and co-creation you're looking for. 
+
 
 ![Screenshot showing Hoop'd triage interface]({{ '/static/images/insights/haver01.png' | url }})
