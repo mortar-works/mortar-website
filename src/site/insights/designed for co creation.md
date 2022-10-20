@@ -1,6 +1,6 @@
 ---
 title: Designed for co-creation
-date: 2022-25-04
+date: 2022-01-04
 image: cocreate-bespoke.jpg
 author: George Unsworth
 draft: false
