@@ -13,7 +13,7 @@ tags:
 
 ---
 
-> Coming together is a beginning. Keeping together is progress. Working together is success. – Henry Ford.  
+> Coming together is a beginning. Keeping together is progress. Working together is success. – Henry Ford  
 
 The building of Mortar's framework and tools is a constant process and one that benefits tremendously from being able to support our customers and their users in collaborating and co-creating solutions to the real world problems they encounter. 
 
