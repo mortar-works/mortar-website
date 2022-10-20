@@ -1,11 +1,16 @@
 ---
 title: Working smarter, not harder
 date: 2022-09-01
-image: haver01.png
+image: worksmarternotharder.jpg
 author: George Unsworth
 draft: false
 tags:
-  - digital inclusion
+  - artificial intelligence
+  - machine learning
+  - automation
+  - applied intelligence
+  - AI engine
+  - intelligence tools
 
 ---
 
