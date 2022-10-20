@@ -1,13 +1,14 @@
 ---
 title: Designed for co-creation
-date: 2022-05-01
-image: haver01.png
+date: 2022-25-04
+image: cocreate-bespoke.jpg
 author: George Unsworth
 draft: false
 tags:
   - bespoke implementation
   - customisation
   - solutions
+  - digital transformation
   
 
 ---
