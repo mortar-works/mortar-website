@@ -15,7 +15,9 @@ tags:
 
 > Everything, absolutely everything, is in the process of becoming digital. We are witnessing a total mutation of knowledge, which affects at the same time embodied knowledge and life wisdom. Daily life is what is ﬁrst upended, in all its dimensions.  ― Bernard Steigler. The Digital, Education, and Cosmopolitanism
 
-It is easy to dismiss digital exclusion. Those that don't have the capability, capacity or the interest to participate in society's digital movement are easily overlooked and obscured from view. Our implicit belief in technology's social narrative is that everyone will eventually become included; everyone will soon acquire, through the technology itself, the capacity and the capability to participate.
+Between 60% and 73% of data produced by organisations goes unutilised; and a recent poll by Oracle suggests that 95% of people say they’re overwhelmed by the amount of data and information available to them. 
+
+An astonishing volume of data is being produced today. It is becoming increasingly difficult for companies to collect, structure, and analyze the data they create and capture. Delivering a successful service or product today relies on data intelligence and data integration solutions to provide access to valuable insights that feed critical decisions and experiences at all stages of the user journey. For employees, management as well as customers and end-users. 
 
 Exclusion, however, always persists. 
 
