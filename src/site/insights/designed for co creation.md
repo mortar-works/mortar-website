@@ -30,4 +30,4 @@ With all of our clients, regardless of how they engage with our existing product
 If you need to develop and improve your existing services or systems, and want to engage your team, officers and users in the process of its successful design and implementation, please get in touch; we are perfectly positioned to create the environment of collaboration and co-creation you're looking for. 
 
 
-![Screenshot showing Hoop'd triage interface]({{ '/static/images/insights/haver01.png' | url }})
+![Screenshot showing Hoop'd triage interface]({{ '/static/images/insights/co-creation-workshops.jpg' | url }})
