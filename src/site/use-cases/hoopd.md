@@ -35,4 +35,5 @@ Hoop'd is an information and engagement platform, but we can tailor how it captu
 
 Get in touch
 ---------------------------------------------------------------------------------------------------------------------------------
-To find out more visit the Hoop'd website: www.hoopd.co.uk
+To find out more about Hoop'd you can get in touch with us by emailing: office@mortar.works
+You can also visit the Hoop'd website: www.hoopd.co.uk
