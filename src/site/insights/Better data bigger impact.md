@@ -28,13 +28,13 @@ With only a fraction of the data potentially available being collected and acted
 
 One of the reasons we have ended up with so much bias and asymettry in the systems we use today is because the same bits of information have always been studied and collected, fulfilling the same metrics and scoring, delivering the same outcomes and fulfilling the same processes, all at the expense of larger more holistic approaches to understanding systems and interelations, risks and triggers. Better systems can now be designed, and better services delivered as a result. 
 
-Dynamic data environments
+Intelligent data environments
 -------------
-Mortar applies machine learning to create new, dynamic data environments. We have built improved methods of capturing and organising information, creating more functional directories for analysing and querying data, making it more practical and more understandable. Our products and tools benefit from these environments, making it easier and more affordable to apply intelligent data practices than ever before.  
+Mortar applies machine learning to create new, dynamic data environments. We have built improved methods for capturing and organising information, creating more functional directories for analysing and querying data. Making data easier to access, understand, and apply. Our products and tools benefit from these environments, making it more affordable to deploy intelligent data environments than ever before.  
 
 Everyone can benefit from more efficient and effective methods for working with and applying data. But everyone needs more support in asking the right questions and developing the right approach to begin improving, adapting and responding to the data they work with. 
 
-> The question is, is it worth doing that? Is it worth keeping that data and for how long? You can’t just store your data forever. It’s not free to do, and it’s a compounding problem.
-— Dave McCrory
+> The greatest value of a picture is when it forces us to notice what we never expected to see.
+— John Tukey
 
  
