@@ -23,9 +23,9 @@ Customised modules and interfaces
 ---------------------------------------------------------------------------------------------------------------------------------
 Alongside our core system sits a growing suite of customisable modules and tools that grow in their development and sophistication with each new project and custom implementation. Some of our recent work has involved the following types of co-created and customised solutions: 
 
-- more effective cloud based environments for the capture and analysis of user engagement data 
-- creating dynamic and responsive large-scale directories of local area information 
-- informing decision making with bespoke case-worker interfaces and the application of predictive and behavioural analytics 
+- More effective cloud based environments for the capture and analysis of user engagement data 
+- Creating dynamic and responsive large-scale directories of local area information 
+- Informing decision making with bespoke case-worker interfaces and the application of predictive and behavioural analytics 
 
 Improving services
 ---------------------------------------------------------------------------------------------------------------------------------
