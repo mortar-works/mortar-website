@@ -13,29 +13,24 @@ tags:
 
 ---
 
-> Everything, absolutely everything, is in the process of becoming digital. We are witnessing a total mutation of knowledge, which affects at the same time embodied knowledge and life wisdom. Daily life is what is ﬁrst upended, in all its dimensions.  ― Bernard Steigler. The Digital, Education, and Cosmopolitanism
+> I never guess. It is a capital mistake to theorize before one has data. Insensibly one begins to twist facts to suit theories, instead of theories to suit facts.
+— Arthur Conan Doyle (Sherlock Holmes)
 
-Between 60% and 73% of data produced by organisations goes unutilised; and a recent poll by Oracle suggests that 95% of people say they’re overwhelmed by the amount of data and information available to them. 
+About 70% of all data goes unutilised; and a recent poll by Oracle suggests that 95% of people say they’re overwhelmed by the amount of data and information available to them. 
 
-An astonishing volume of data is being produced today. It is becoming increasingly difficult for companies to collect, structure, and analyze the data they create and capture. Delivering a successful service or product today relies on data intelligence and data integration solutions to provide access to valuable insights that feed critical decisions and experiences at all stages of the user journey. For employees, management as well as customers and end-users. 
+An astonishing volume of data is being produced today. 
 
-Exclusion, however, always persists. 
+This makes it increasingly difficult to effectively collect and structure data as it is being created and captured; let alone analyse it effectively to understand how it can be best applied. Delivering a successful service or product today is therefore increasingly reliant on applying data intelligence and data integration solutions. More than ever we need access to the right information to make our decisions and to ensure the experiences and interactions for our employees and customers are productive and beneficial. 
 
+With only a fraction of the data potentially available being collected and acted upon there still exists so many alternative ways in which new information can shape the way our services and products are being designed and delivered, or our decisions influenced and made. 
 
-![Screenshot showing Hoop'd triage interface]({{ '/static/images/insights/haver01.png' | url }})
+One of the reasons we have ended up with so much bias and asymettry in the systems we use today is because the same bits of information have always been studied and collected, fulfilling the same metrics and scoring, delivering the same outcomes and fulfilling the same processes, all at the expense of larger more holistic approaches to understanding systems and interelations, risks and triggers. Better systems can now be designed, and better services delivered as a result. 
 
+Mortar applies machine learning to create new and alternative data environments. We have built improved methods of capturing and organising information, creating more dynamic directories and more functional methods for analysing and querying data, making it more practical and understandable. Our products and tools benefit from these environments, making it easier and more affordable to apply intelligent data practices than ever before.  
 
-The ways in which we are communicating, creating information and verifying its credibility are changing, and the rate at which these changes are taking place is increasing. Instead of technology making information clearer, more accurate and more relevant it is diversifying, with new channels and systems emerging, and new formats, methods and practices to understand and learn.
+Everyone can benefit from more efficient and effective methods for working with and applying data. But everyone needs more support in asking the right questions and developing the right approach to begin improving, adapting and responding to the data they work with. 
 
-This is not just about how an ageing society is able to adapt. Active consumers of all ages have different motivations to understand new interfaces and learn ways of being part of new communities. Far bigger concerns lie in the abilities of businesses to remain relevant, in how our public services can be delivered equitably and affordably, and how systems are able to adapt to changing consumer behaviours, attitudes and trends.
+> The question is, is it worth doing that? Is it worth keeping that data and for how long? You can’t just store your data forever. It’s not free to do, and it’s a compounding problem.
+— Dave McCrory
 
-Technology is creating remarkable opportunities to make content easier and quicker to produce and share. However making important information accessible, understandable and appropriate for the benefit of the audiences it is designed to reach is a challenging field of work. Where these two fields converge we at Mortar are designing the frameworks and tools that make information easier to find and more relevant and appropriate to the user's needs. 
-
-
-![Screenshot showing Hoop'd triage interface]({{ '/static/images/insights/haver02.png' | url }})
-
-
-Our work with the LGA (Local Government Association) is responding to these challenges. Our Digital Inclusion Triage Tool, built using our Hoop'd framework, assesses and analyses a user's needs referring them to the available services and resources in their local area, contributing valuable data to help improve investment in service provision and distribution. 
-
-It is only through embracing digital systems to inform and improve our understanding of services that promote and deliver inclusion, that we can learn how to more effectively and efficiently target reductions in the rates and incidences of exclusion for specific members and groups in our community.
-
+ 
