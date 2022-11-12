@@ -37,7 +37,7 @@ Designing intelligent tools
 ---
 This is why digitalising processes, and in particular applying intelligence to decision making, is so impactful. It is capable of driving incredible efficiencies in service provision, by making decision making more dynamic, transparent and equitable; raising completely different questions to be asked, and presenting totally new and alternative options in how services are best delivered. 
 
-At Mortar our approach to service design identifies new ways in which to capture and interpret data, always looking to add value through establishing new and alternative data sets. Our framework applies intelligence, machine learning and automation to ensure large volumes of data are best utilised, but it is in finding and defining new purposes for applying predictive technology that we are capable of providing both users and key decision makers with the right tools to aid them in their journeys.  
+At Mortar our framework applies intelligence, machine learning and automation to ensure large volumes of data are best utilised, but it is in finding and defining new purposes for applying predictive technology that we are capable of providing both users and key decision makers with the right tools to aid them in their journeys.  
 
 > It is not a move, even the best move, that you must seek, but a realizable plan. – Eugene Znosko-Borovsky
 
