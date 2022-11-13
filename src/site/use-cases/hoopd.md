@@ -14,7 +14,7 @@ As people and communities drift further apart, Hoop'd builds environments that b
 
 Hoop'd is a highly customisable Information, Advice and Service System (IASS) designed to support communities, networks and groups by reaching people more effectively with impactful information. 
 
-Existing systems for communication are poorly designed. They are riddled with bias and asymettry in how information is created, accessed and distributed. This makes services increasingly difficult and time-consuming to manage. As the quality, accuracy and relevance of our information has deteriorated so too have our relationships, making it increasingly difficult to build trust and confidence with our users. Worst of all, those most at risk of isolation and exclusion, are becoming more isolated and more excluded as a result, trapping services within a socially destructive downward spiral.  
+Existing systems for communication are poorly designed. They are riddled with bias and asymettry in how information is created, accessed and distributed. This makes services increasingly difficult and time-consuming to manage. As the quality, accuracy and relevance of our information has deteriorated so too have our relationships, making it increasingly difficult to build trust and confidence with our users. Worst of all, those most at risk of isolation and exclusion are becoming more isolated and more excluded as a result, trapping services within a socially destructive downward spiral.  
 
 Making information more dynamic and accessible
 ---------------------------------------------------------------------------------------------------------------------------------
