@@ -3,16 +3,16 @@ title: Ditto
 pageImage: ditto_hp.png
 homepageImage: ditto-detail03.png
 description: |-
-  Ditto is a platform for creating dynamic and responsive signposting, information and advice services. The platform uses Digital Triage Technology to assess the needs of users and a suite of tools for customising how they access support and services. 
+  Ditto is a platform for creating dynamic and intelligent triage tools. The platform combines the assessment of user needs with a suite of tools for customising and improving access to information and support; driving service provision with new data and insights.
  
 order: 2
 ---
 
-Digital Triage Technology - next generation digital services
+A user-triage and data environments for driving service provision
 ---------------------------------------------------------------------------------------------------------------------------------
-Navigating large amounts of information has become daunting and time consuming, with huge amounts of information becoming increasingly inaccessible.   
+Navigating large amounts of information has become daunting and time consuming, with huge amounts of information becoming increasingly inaccessible and irrelevant.   
 
-Ditto makes it easier for people to find the information they want and need more quickly. This boosts engagement and referrals, but it also saves tremendous amounts of time for front line staff, businesses and companies. It also uses the process of triaging users to create rich, new datasets and insights associated with the needs and behaviours of targeted user groups. 
+Ditto uses the process of triaging users to make it easier for people to find the information they want and need more quickly. This boosts engagement and improves referrals, but it also saves tremendous amounts of time for front line staff, businesses and companies whilst creating rich, new datasets and insights associated with the needs and behaviours of targeted user groups. 
 
 <figure>
   <img src="{{ '/static/images/use-cases/ditto_01.jpg' | url }}" />
