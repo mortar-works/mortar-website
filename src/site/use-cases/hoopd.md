@@ -36,7 +36,7 @@ Hoop'd is an information and engagement platform, but we can tailor how it captu
 - Delivering the Mayor of London's Dementia Friendly Venues Charter
 - Running Hackney's information and membership service for older residents
 - Designing the Cultural Referral Platform with public health and Queen Mary University 
-- Delivering activity timetables and engagement information for Holloway Neighbourhood Group and Clarion Housing
+- Delivering activity timetables and engagement information for Housing and CVS partnerships
 
 Get in touch
 ---------------------------------------------------------------------------------------------------------------------------------
