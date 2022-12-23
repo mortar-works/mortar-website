@@ -1,7 +1,7 @@
 ---
 title: Better data, bigger impact
 date: 2022-10-10
-image: biggerdatabiggerimpact1.jpg
+image: biggerdatabiggerimpact1.png
 author: George Unsworth
 draft: false
 tags:
