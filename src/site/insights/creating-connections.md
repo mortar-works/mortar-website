@@ -1,7 +1,7 @@
 ---
 title: Creating connections
 date: 2021-06-06
-image: connections.jpg
+image: connections2.png
 author: George Unsworth
 draft: false
 tags:
