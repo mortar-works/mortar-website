@@ -1,7 +1,7 @@
 ---
 title: Hyperlocal transformation 
 date: 2022-01-20
-image: priscilla-du-preez-acNPOikiDRw-unsplash.jpg
+image: hyperlocal1.png
 author: George Unsworth
 draft: false
 tags:
