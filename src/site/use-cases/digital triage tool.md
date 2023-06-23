@@ -1,9 +1,9 @@
 ---
-title: Ditto
+title: Digital Inclusion Triage Tool for the Local Government Association
 pageImage: ditto_hp.png
 homepageImage: ditto-detail03.png
 description: |-
-  Ditto is a platform for creating dynamic and intelligent triage tools. The platform combines the assessment of user needs with a suite of tools for customising and improving access to information and support; driving service provision with new data and insights.
+  Using our Hoop'd platform we are delivering a specialised triage tool supporting local authorities and place based partnerships in delivering digital inclusion programmes, campaigns and networks.
  
 order: 2
 ---
