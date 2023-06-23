@@ -4,7 +4,6 @@ pageImage: financial-processes.jpg
 homepageImage: balance_04.png
 description: |- 
   Mortar redesigned and digitalised the accreditation process for the Mayor of London’s Dementia Friendly Venues Charter. Our solution provides a self-service platform for venues to become accredited and a sustainable and secure environment for the Greater London Authority to administrate the charter.
-  
 order: 1
 ---
 
