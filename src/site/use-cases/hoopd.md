@@ -5,7 +5,7 @@ homepageImage: hoopd-detail4.png
 description: |-
   Hoop'd builds more accessible and inclusive environments; connecting people, places and businesses. Hoop'd creates tailored information environments for different communities, improving access to information and building engagement. 
  
-order: 2
+order: 3
 ---
 
 Bringing people together
