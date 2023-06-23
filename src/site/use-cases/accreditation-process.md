@@ -4,6 +4,7 @@ pageImage: financial-processes.jpg
 homepageImage: balance_04.png
 description: |-
   Mortar redesigned the accreditation process for the Mayor of London's Dementia Friendly Venues Charter. A tailored version of our platform Hoop'd provides venues with self-service accreditation and provides the Greater London Authority with a sustainable platform for administrating the charter. 
+  
 order: 1
 ---
 
