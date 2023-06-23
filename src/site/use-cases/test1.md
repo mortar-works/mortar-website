@@ -5,7 +5,7 @@ homepageImage: ditto-detail03.png
 description: |-
   Ditto is a platform for creating dynamic and intelligent triage tools. The platform combines the assessment of user needs with a suite of tools for customising and improving access to information and support; driving service provision with new data and insights.
  
-order: 2
+order: 4
 ---
 
 Digital Triage Tools
