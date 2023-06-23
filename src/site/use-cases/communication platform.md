@@ -1,5 +1,5 @@
 ---
-title: Communication platform for older residents in Hackney
+title: Reaching isolated older residents in Hackney
 pageImage: IASS_hoopd_hackney_01d.png
 homepageImage: hoopd-detail4.png
 description: |-
