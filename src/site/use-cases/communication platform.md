@@ -1,9 +1,9 @@
 ---
-title: Hoop'd
+title: Communication platform for older residents in Hackney
 pageImage: IASS_hoopd_hackney_01d.png
 homepageImage: hoopd-detail4.png
 description: |-
-  Hoop'd builds more accessible and inclusive environments; connecting people, places and businesses. Hoop'd creates tailored information environments for different communities, improving access to information and building engagement. 
+  Mortar designed and delivers Hackney Council's membership programme for older residents, delivering communication tools, outreach and network management for over 40 cultural partners. The tailored version of Hoop'd includes bespoke modules for delivering accessible information and relationship management tools  designed to support those with multiple access needs. 
  
 order: 3
 ---
