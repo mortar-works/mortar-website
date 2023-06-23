@@ -1,9 +1,9 @@
 ---
-title: Balance 
+title: Accreditation of venues for the Mayor of London 
 pageImage: financial-processes.jpg
 homepageImage: balance_04.png
 description: |-
-  Balance is a financial inclusion platform, improving user assessment and applying predictive analytics to support the process of income generation and collections; transforming how payment schedules are created and resolved.
+  Mortar redesigned and digitalised the accreditation process for the Mayor of London's Dementia Friendly Venues Charter. Our solution provides a self-service platform for venues to become accredited and a sustainable and secure environment for the Greater London Authority to administrate the charter. 
 order: 1
 ---
 
