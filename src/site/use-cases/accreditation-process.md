@@ -1,9 +1,9 @@
 ---
-title: Ditto
+title: Accreditation of venues for the Mayor of London
 pageImage: ditto_hp.png
 homepageImage: ditto-detail03.png
 description: |-
-  Ditto is a platform for creating dynamic and intelligent triage tools. The platform combines the assessment of user needs with a suite of tools for customising and improving access to information and support; driving service provision with new data and insights.
+  Mortar redesigned and digitalised the accreditation process for the Mayor of London’s Dementia Friendly Venues Charter. Our solution provides a self-service platform for venues to become accredited and a sustainable and secure environment for the Greater London Authority to administrate the charter.
  
 order: 1
 ---
