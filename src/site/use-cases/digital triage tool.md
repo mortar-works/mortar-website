@@ -1,5 +1,5 @@
 ---
-title: Digital Inclusion Triage Tool for the Local Government Association
+title: Triage Tools for the Local Government Association
 pageImage: ditto_hp.png
 homepageImage: ditto-detail03.png
 description: |-
