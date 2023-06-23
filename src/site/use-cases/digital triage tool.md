@@ -3,7 +3,7 @@ title: Triage Tools for the Local Government Association
 pageImage: ditto_hp.png
 homepageImage: ditto-detail03.png
 description: |-
-  Using a tailored version of our our Hoop'd platform Mortar is delivering specialised digital inclusion triage tools for local authorities and place based partnerships. The triage tool assesses user needs and utilises Mortar's Global API System to deliver personalised referral options improving the delivery of place based campaigns, networks and programmes. 
+  Using a tailored version of our our Hoop'd platform Mortar is delivering specialised digital inclusion triage tools for local authorities and place based partnerships. The triage tool assesses user needs and utilises Mortar's Global API System to deliver personalised referral options; improving the delivery of place based signposting, inclusion campaigns, and service provider networks. 
  
 order: 2
 ---
