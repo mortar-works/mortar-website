@@ -1,5 +1,5 @@
 ---
-title: Accreditation of dementia friendly venues
+title: Accreditation of cultural venues
 pageImage: dfvc_03.png
 homepageImage: dfvc_03.png
 description: |-
