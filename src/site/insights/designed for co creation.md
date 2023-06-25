@@ -1,7 +1,7 @@
 ---
 title: Designed for co-creation
 date: 2022-08-04
-image: cocreate-bespoke1.png
+image: mortar_web_03.jpg
 author: George Unsworth
 draft: false
 tags:
