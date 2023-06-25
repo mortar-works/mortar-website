@@ -5,7 +5,7 @@ homepageImage: maxed02.png
 description: |-
   The What Works directory assess the needs of young people at risk of exclusion and improves the quality and success of referral. The platform uses a tailored combination of both Hoop'd and our Triage Tool and is being trialled to support educational professionals in Cheshire and Gloucestershire. 
   
-order: 4
+order: 3
 ---
 
 
