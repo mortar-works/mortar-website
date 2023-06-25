@@ -3,7 +3,7 @@ title: Accreditation of dementia friendly venues
 pageImage: dfvc_03.png
 homepageImage: dfvc_03.png
 description: |-
-  Mortar redesigned and digitalised the accreditation process for the Mayor of London’s Dementia Friendly Venues Charter. Our solution provides a self-service platform for venues to become accredited and a sustainable and secure environment for the Greater London Authority to administrate the charter.
+  For the Mayor of London’s Dementia Friendly Venues Charter our platform Hoop'd delivers a self-service platform for venues and organisations to achieve accreditation and a secure environment for the Greater London Authority to administrate the charter.
  
 order: 3
 ---
