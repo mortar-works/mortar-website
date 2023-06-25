@@ -3,7 +3,7 @@ title: Supporting young people at risk of exclusion
 pageImage: maxed02.png
 homepageImage: maxed02.png
 description: |-
-  A tailored combination of both Hoop'd and our Triage Tool is being trialled to support educational professionals in Cheshire and Gloucestershire assess the needs of young people at risk of exclusion. The What Works directory produced for Social Finance helps identify the most suitable potential interventions for young people and aims to improve the quality and success of referral.
+  The What Works directory assess the needs of young people at risk of exclusion and improves the quality and success of referral. The platform uses a tailored combination of both Hoop'd and our Triage Tool and is being trialled to support educational professionals in Cheshire and Gloucestershire. 
   
 order: 4
 ---
