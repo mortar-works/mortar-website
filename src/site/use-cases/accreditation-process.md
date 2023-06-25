@@ -1,5 +1,5 @@
 ---
-title: Accreditation of venues for the Mayor of London
+title: Accreditation of dementia friendly venues
 pageImage: dfvc_03.png
 homepageImage: dfvc_03.png
 description: |-
