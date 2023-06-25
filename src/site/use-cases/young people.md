@@ -1,9 +1,9 @@
 ---
-title: Supporting young people at risk of exclusion with Social Finance
+title: Supporting young people at risk of exclusion
 pageImage: maxed02.png
 homepageImage: maxed02.png
 description: |-
-  A tailored version of Hoop'd utilising our Triage Tool is being trialled to support educational professionals in Cheshire and Gloucestershire assess the needs of young people at risk of exclusion and identify the most suitable potential interventions for referral. 
+  A tailored combination of both Hoop'd and our Triage Tool is being trialled to support educational professionals in Cheshire and Gloucestershire assess the needs of young people at risk of exclusion. The What Works directory produced for Social Finance helps identify the most suitable potential interventions for young people and aims to improve the quality and success of referral.
   
 order: 4
 ---
