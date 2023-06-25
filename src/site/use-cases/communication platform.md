@@ -1,9 +1,9 @@
 ---
-title: Reaching isolated older residents in Hackney
+title: Reaching isolated older residents
 pageImage: hc01.jpg
 homepageImage: hc01.jpg
 description: |-
-  Mortar designed and delivers Hackney Council's membership programme for older residents, delivering communication tools, outreach and network management for over 40 cultural partners. The tailored version of Hoop'd includes bespoke modules for delivering accessible information and relationship management tools  designed to support those with multiple access needs. 
+  Our platform Hoop'd provides bespoke local area implementations, delivering communication tools, outreach and community network management. We are boosting the capacity of over 40 cuture and health partners in London Borough of Hackney to ensure opportunities are reaching those that need them most. 
  
 order: 1
 ---
