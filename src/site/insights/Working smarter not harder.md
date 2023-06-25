@@ -1,7 +1,7 @@
 ---
 title: Working smarter, not harder
 date: 2022-09-01
-image: chesspiece6.png
+image: mortar_web_02.jpg
 author: George Unsworth
 draft: false
 tags:
