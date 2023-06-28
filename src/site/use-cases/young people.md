@@ -1,7 +1,7 @@
 ---
 title: Supporting young people at risk of exclusion
-pageImage: maxed03.png
-homepageImage: maxed03.png
+pageImage: maxed03.jpg
+homepageImage: maxed03.jpg
 description: |-
   The What Works directory assess the needs of young people at risk of exclusion and improves the quality and success of referral. The platform uses a tailored combination of both Hoop'd and our Triage Tool and is being trialled to support educational professionals in Cheshire and Gloucestershire. 
   
