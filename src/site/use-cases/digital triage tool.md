@@ -1,7 +1,7 @@
 ---
 title: Digital inclusion triage tool
-pageImage: triage02.png
-homepageImage: triage02.png
+pageImage: triage03.png
+homepageImage: triage03.png
 description: |-
   Mortar is delivering a specialised digital inclusion triage tool for local authorities and place based partnerships. The triage tool assesses user needs and utilises Mortar's Global API System to deliver digital inclusion signposting, campaigns, and service provider networks across the UK.
  
