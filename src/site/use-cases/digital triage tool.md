@@ -51,4 +51,4 @@ Building better designed information, and systems for how it is accessed, is ess
 
 Get in touch
 ---------------------------------------------------------------------------------------------------------------------------------
-To find out more about Ditto you can get in touch with us by emailing: office@mortar.works
+To find out more about Ditto you can get in touch with us by emailing: office@mortar.works 
