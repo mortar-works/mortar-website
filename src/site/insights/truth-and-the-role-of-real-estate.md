@@ -1,7 +1,7 @@
 ---
 title: Truth, transformation and real estate
 date: 2021-08-15
-image: speedy-bike2.png
+image: truthandrealestate01.jpg
 author: George Unsworth
 draft: false
 tags:
