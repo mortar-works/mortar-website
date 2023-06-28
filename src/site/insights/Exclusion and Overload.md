@@ -1,7 +1,7 @@
 ---
 title: Exclusion and Overload
 date: 2022-05-01
-image: haver02.png
+image: exclusion02.jpg
 author: George Unsworth
 draft: false
 tags:
