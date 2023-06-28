@@ -1,7 +1,7 @@
 ---
 title: Simple Successes
 date: 2022-07-18
-image: successsend03.png
+image: simplesuccess01.jpg
 author: George Unsworth
 draft: false
 tags:
