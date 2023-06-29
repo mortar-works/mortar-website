@@ -47,4 +47,3 @@ For the Dementia Friendly Venues Charter this involves the automatic creation of
 ![Screenshot showing the public Dementia Friendly Venues Charter map]({{ '/static/images/use-cases/dfvcart01.png' | url }})
 
 Our learning, assessment and accreditation environments are tailored versions of our platform Hoop’d. A modular, cloud-based environment making bespoke solutions more affordable and accessible for you and your users. If you have a service in need of digitalisation and want to transform how you engage and benefit your users please get in touch.  
-
