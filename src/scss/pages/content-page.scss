@@ -9,7 +9,7 @@
     font-size: 1.5em;
   }
 
-  article {
+  article {Fimg
     background: $white;
     // background: transparentize($white, 0.25);
     overflow: hidden;
@@ -52,6 +52,7 @@
     display: inline-block;
     margin: 3em auto;
     max-width: 100%;
+    box-shadow: 2px 3px 6px 1px rgba(29,40,40,.3);
   }
 
   .hero-image {
