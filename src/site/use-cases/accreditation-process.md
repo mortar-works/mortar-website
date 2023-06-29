@@ -10,15 +10,17 @@ order: 4
 
 
 
-> “Triple the number of households are now in arrears, equivalent to a third of all low-income households.”
-> **Dragged Down by Debt**
+> ““Tell me and I forget, teach me and I may remember, involve me and I learn.”
+> **Benjamin Franklin**
 
-Balance introduces a new generation of digital financial inclusion tools in the field of collections and income generation. Balance enables people to change and adapt their payment schedules, establishing unique touchpoints to improve and streamline collections whilst overcoming both short and long-term incidences of debt and arrears; ensuring that people are more effectively engaged in the process of collections.
+There is an exciting movement taking place in not just how we learn and gain experience, but in how we are able to work together and collaborate to achieve shared outcomes and societal benefit. Countless oportunities now exist to expand learning opportunities by developing more successful and impactful methods of engagement that enhance flexibility and accessibility, and transfer the learning experience into a more interactive, personalized, and collaborative process. 
 
-Introducing user-led collections and flexible payments
+The digitalisation of learning and information environments presents opportunities to massively increase the capacity of successful programmes and campaigns; to share the resources and patterns that deliver the most impact and benefit to significantly more people and organisations. What is crucial to enabling their scalability is that these environments are designed to fulfill specific user journeys and that the information they deliver is similarly designed and considered.  
+
+Learning, assessment and accreditation
 -----------------------------------------------------------------------------------------------------
 
-New methods of digitalising and automating the collections process is essential if we are to alleviate the pressure and workloads on staff and employees involved in income generation and collections. 3.8m households in the UK are in arrears for their household bills, including rent; arrears that total approximately £5.2bn. These numbers are set to increase as households face the highest increase in the cost of living in the last three decades with soaring energy prices and inflation. 
+We work with our partners to deliver tailored environments desinged specifcially to meet the needs of their target users. Our platform Hoop'd is being tailred to deliver New methods of digitalising and automating the collections process is essential if we are to alleviate the pressure and workloads on staff and employees involved in income generation and collections. 3.8m households in the UK are in arrears for their household bills, including rent; arrears that total approximately £5.2bn. These numbers are set to increase as households face the highest increase in the cost of living in the last three decades with soaring energy prices and inflation. 
 
 Balance is designed to be easy and simple to implement alongside existing escalation and accounts receivable (AR) services and software. Balance brings intelligence, specialised design, and systems of automation to the housing and real estate sector, enriching and enhancing the roles of income officers, collections teams and companies of all scales. 
 
