@@ -42,7 +42,7 @@ The translation of internal training and accreditation processes is amplified wi
 
 Our environments ensure that these different information formats, informing different users and beneficiaries, are automatically generated. 
 
-For the Dementia Friendly Venues Charter this involves the automatic creation of certification for public display, presentation on the public map of accredited venues, and a greater public awareness for those with dementia and their carers about accessible venues.  
+For the Dementia Friendly Venues Charter this involves the automatic creation of certification for public display, presentation on the public map of accredited venues, and a greater public awareness for those with dementia and their carers about accessible venues. You can visit the public map here: www.dfvc.hoopd.co.uk/venue-list
 
 ![Screenshot showing the public Dementia Friendly Venues Charter map]({{ '/static/images/use-cases/dfvcart01.png' | url }})
 
