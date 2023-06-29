@@ -15,7 +15,7 @@ order: 4
 
 There is an exciting movement taking place in not just how we learn and gain experience, but in how we are able to work together and collaborate to achieve shared outcomes and societal benefit. Countless oportunities now exist to expand learning opportunities by developing more successful and impactful methods of engagement that enhance flexibility and accessibility, and transfer the learning experience into a more interactive, personalized, and collaborative process. 
 
-The digitalisation of learning and information environments presents opportunities to massively increase the capacity of successful programmes and campaigns; to share the resources and patterns that deliver the most impact and benefit to significantly more people and organisations. What is crucial to enabling their scalability is that these environments are designed to fulfill specific user journeys and that the information they deliver is similarly designed and considered.  
+The digitalisation of learning and information environments presents opportunities to massively increase the capacity of successful programmes and campaigns; to share the resources and patterns that deliver the most impact and benefit to significantly more people and organisations. What is crucial to enabling their scalability is that these environments are designed to fulfill specific user journeys and that the information they deliver is similarly designed to be accessible and understandable.   
 
 Learning, assessment and accreditation
 -----------------------------------------------------------------------------------------------------
