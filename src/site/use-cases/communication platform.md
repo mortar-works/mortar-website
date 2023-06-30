@@ -10,33 +10,20 @@ order: 1
 
 Bringing people together
 ---------------------------------------------------------------------------------------------------------------------------------
-As people and communities drift further apart, Hoop'd builds environments that bring us closer together. 
+We are witnessing enormous increases in health inequality; a result of differences in health across the population, and between different groups within society. These conditions influence an individual's opportunities for good health, how they think, feel and act, and this shapes their mental health, physical health and wellbeing. The impact of these conditions on older residents, in particular those living alone, carries some of the most devastating diseases effecting our communities. One aspect of health inequality is that these conditions are avoidable.   
 
-Hoop'd is a highly customisable Information, Advice and Service System (IASS) designed to support communities, networks and groups by reaching people more effectively with impactful information. 
-
-Existing systems for communication are poorly designed. They are riddled with bias and asymettry in how information is created, accessed and distributed. This makes services increasingly difficult and time-consuming to manage. As the quality, accuracy and relevance of our information has deteriorated so too have our relationships, making it increasingly difficult to build trust and confidence with our users. Worst of all, those most at risk of isolation and exclusion are becoming more isolated and more excluded as a result, trapping services within a socially destructive downward spiral.  
+In the London Borough of Hackney Mortar has collaborated with the council to co-create a place based initiative that is dedicated to reducing the incidence of isolation and exclusion amongst older residents in the borough. Hackney Circle is a culture and health intitiative increasing the capacity of over forty local community organisations in reaching isolated older residents whilst delivering key partnerships and outcomes as part of the council's health and cultural strategies.  
 
 Making information more dynamic and accessible
 ---------------------------------------------------------------------------------------------------------------------------------
 
-Hoop'd transforms large amounts of complex information, improving accessibility and enhancing the provision of specific services. 
+Hackney Cricle is both an intiative and a service built using our platform Hoop'd. It offers a highly customisable Information, Advice and Service System (IASS) designed to support communities, networks and groups by reaching people more effectively with better designed and more accessible information formats, user journeys and communication touchpoints. Hackney Circle is a great example of how Hoop'd can be used to bring together local area networks of community and cultural organisations, filling a much needed gap in the process of effective signposting and referral. 
 
-![Hoop'd logo]({{ '/static/images/use-cases/Hoopd_logo_banner3.png' | url }})
+The service brings together specific activities and programmes of key strategic partners including the borough's lunch clubs, libraries and leisure centers alongside a network of community organisations to deliver information to older residents in uniform, accessible formats. These service cards are shared and made available to community navigators from the health service as well as housing estate managers and resident participation team officers.
 
-Whether for individual businesses or for large-scale partnerships Hoop'd delivers more tailored environments for sharing information and tools for creating more accessible and equitable methods of communication. 
-
-It is time-consuming for businesses to organise and promote services, activities and engagement opportunities. It is even more difficult to keep shared systems and directories accurate and up to date. 
-
-These are serious problems, experienced daily by frontline staff across a wide range of organisations and businesses. Problems that stop people from receiving the care and support they require, that restrict access to financial services and opportunities, and that stop people from engaging and participating in their local communities. 
-
-Tailored environments to deliver your services more effectively
+Tailored environments to deliver  services more effectively
 ---------------------------------------------------------------------------------------------------------------------------------
-Hoop'd is an information and engagement platform, but we can tailor how it captures and presents information. This allows Hoop'd to capture and create new data sets, responding to your specific community or local area to provide you with a better, more informed, bespoke service. Some of our current projects include:
-
-- Delivering the Mayor of London's Dementia Friendly Venues Charter
-- Running Hackney's information and membership service for older residents
-- Designing the Cultural Referral Platform with public health and Queen Mary University 
-- Delivering local area information for Housing and community partnerships
+Improving existing systems for communication makes services significantly easier and less time-consuming to manage. As the quality, accuracy and relevance of imporves it is easier to build trust and confidence with a wider range of users. In Hackney this means front line service staff have more time to support those with higher access and support needs and greater capacity to identify and engage with residents most at risk of isolation and exclusion.  
 
 Get in touch
 ---------------------------------------------------------------------------------------------------------------------------------
