@@ -1,7 +1,7 @@
 ---
 title: Understanding automation
 date: 2020-07-06
-image: understanding-automation-1.jpg
+image: understanding-automation-2.png
 author: George Unsworth
 draft: false
 tags:

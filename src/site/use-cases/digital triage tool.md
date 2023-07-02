@@ -1,9 +1,9 @@
 ---
-title: Ditto
-pageImage: ditto_hp.png
-homepageImage: ditto-detail03.png
+title: Digital inclusion triage tool
+pageImage: triage03.png
+homepageImage: triage03.png
 description: |-
-  Ditto is a platform for creating dynamic and intelligent triage tools. The platform combines the assessment of user needs with a suite of tools for customising and improving access to information and support; driving service provision with new data and insights.
+  Mortar is delivering a specialised digital inclusion triage tool for local authorities and place based partnerships. The triage tool assesses user needs and utilises Mortar's Global API System to deliver digital inclusion signposting, campaigns, and service provider networks across the UK.
  
 order: 2
 ---
@@ -51,4 +51,4 @@ Building better designed information, and systems for how it is accessed, is ess
 
 Get in touch
 ---------------------------------------------------------------------------------------------------------------------------------
-To find out more about Ditto you can get in touch with us by emailing: office@mortar.works
+To find out more about Ditto you can get in touch with us by emailing: office@mortar.works 

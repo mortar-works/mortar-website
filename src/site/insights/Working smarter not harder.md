@@ -1,7 +1,7 @@
 ---
 title: Working smarter, not harder
 date: 2022-09-01
-image: worksmarternotharder.jpg
+image: mortar_web_02.jpg
 author: George Unsworth
 draft: false
 tags:
@@ -41,3 +41,8 @@ At Mortar our framework applies intelligence, machine learning and automation to
 
 > It is not a move, even the best move, that you must seek, but a realizable plan. – Eugene Znosko-Borovsky
 
+<figure>
+  <img src="/static/images/insights/chesspiece5.png" />
+  <figcaption>
+  </figcaption>
+</figure>
