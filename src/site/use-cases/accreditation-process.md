@@ -8,42 +8,43 @@ description: |-
 order: 4
 ---
 
+Introduction
+-----------------------------------------------------------------------------------------------------
+The societal benefits of driving scalable services that help to train and increase the capacity and understanding of our community and cultural organisations is enormous.  
 
+The Dementia Friendly Venues Charter is an example of a shared learning environment and the range of impact good service design can bring. We've been working with the Mayor of London and the Greater London Authority, to help them deliver the charter, to reach a growing network of organisations with information, advice and support in becoming dementia friendly accredited. 
 
-> ““Tell me and I forget, teach me and I may remember, involve me and I learn.”
-> **Benjamin Franklin**
-
-Countless opportunities now exist to expand learning opportunities by developing more successful and impactful methods of engagement that enhance flexibility and accessibility, and transfer the learning experience into a more interactive, personalized, and collaborative process. 
-
-Learning, assessment and accreditation
+The problem
 -----------------------------------------------------------------------------------------------------
 
-Our design and delivery of the platform for the Dementia Friendly Venues Charter is a great example of how creating successful user journeys incorporates different aspects of learning, assessment and accreditation. 
-
-Working with the Mayor of London and the culture team at the Greater London Authority this has involved the digitalisation of a set of different processes to ensure that every user can easily access and navigate the different requirements involved in becoming a dementia friendly venue. 
+Many accreditation processes that involve training and shared resources have not been effectively digitalised. The cost of creating targeted and niche digital learning environments is high, so despite potentially high levels of impact the cost of designing and delivering such environments is regularly not undertaken. As a result, especially in the fields of accessibility, many organisations struggle to find appropriate information, training resources and friendly, collaborative environments to develop their staff and their ways of working. 
 
 ![Screenshot showing the categories of questions for becoming a dementia friendly accredited venue]({{ '/static/images/use-cases/dfvcart02.png' | url }})
 
-The result is an environment in which every user can build their understanding, and the capacity of their organisation, to implement the necessary training and services in order to achieve accreditation. 
+How can we affordably digitalise and streamline the accredition process for becoming a dementia friendly accredited organisation? How do we ensure that organisations can complete the accreditation process without assistance, to make the process highly scalable without impact on the workload of managing staff? 
 
-Management, automation and building organisational capacity 
+Our solution 
 -----------------------------------------------------------------------------------------------------
 
-Essential in the production of such learning environments is ensuring that engagement touchpoints are clear and easily manageable, reducing administration and workload as significantly as possible. 
-
-Designing for the end-user, for their specific journey in accessing, establishing and fulfilling their own accreditation, means designing a seamless end-to-end journey with as few requirements as possible in a governance, approval and security
+We digitalised the accreditation process, breaking a large set of questions into smaller, more manageable categories. Each question has its own unique page for holding specific shared resources and materials making the whole process clear and accessible to learn and apply what is necessary in becoming dementia friendly. Importantly users can complete any number of questions in any order, and can log in and out of the platform as they require, growing their organisations score as they work to reach the accreditation mark. 
 
 ![Screenshot showing one of the questions for a venue to become dementia friendly accredited]({{ '/static/images/use-cases/dfvcart03.png' | url }})
 
-Empowering end-users, public outcomes and improving access
+The new Dementia Friendly Venues Charter platform is a tailored instance of Hoop'd, our modular community engagement and development environment. A communication module enables invitations to be sent to venue organisations inviting them to create accounts, or any organisation can create an account and begin the process of becoming accredited subject to approval by the adminstrator.  
+
+How we worked with our partners
 -----------------------------------------------------------------------------------------------------
 
-The translation of internal training and accreditation processes is amplified with the creation of publicly beneficial outcomes (employability, skills and training, accessibility information and public listings). 
-
-Our environments ensure that these different information formats, informing different users and beneficiaries, are automatically generated. 
-
-For the Dementia Friendly Venues Charter this involves the automatic creation of certification for public display, presentation on the public map of accredited venues, and a greater public awareness for those with dementia and their carers about accessible venues. You can visit the public map [here](https://dfvc.hoopd.co.uk/venue-list/)
+We co-created the management dashboard with the Greater London Authority and the Mayor of London, refining the functionality as the service matured, implementing new features as they became required to make the service as streamlined and light-touch as possible. Alongside automated communication emails being sent to venues as they progress through the accreditation process this has also included the design and implementation of an approval system, an interface for monitoring the progress of organisations, and a public map of accredited venues. You can view the public map of accredited venues [here](https://dfvc.hoopd.co.uk/venue-list/)
 
 ![Screenshot showing the public Dementia Friendly Venues Charter map]({{ '/static/images/use-cases/dfvcart01.png' | url }})
 
-Our learning, assessment and accreditation environments are tailored versions of our platform Hoop’d. A modular, cloud-based environment making bespoke solutions more affordable and accessible for you and your users. If you have a service in need of digitalisation and want to transform how you engage and benefit your users please get in touch.  
+Built to scale
+-----------------------------------------------------------------------------------------------------
+The platform now has the potential to scale the number of organisations actively working to attain dementia friendly accreditation without creating an unmanageable workload for the managing officers. This enables the opportunity to assign officer time to supporting key cohorts of venues using the platform's new dataset to indicate where there are gaps in service provision for those with dementia and where audiences might be being poorly served, offering better targeting of officer time, funds and resources for increasing the accessibility and the capacity of the capital's venues. 
+
+What is next
+-----------------------------------------------------------------------------------------------------
+The next iterations of the platform will focus on fulfilling the needs of end-users, those with dementia and their carers. We will be designing more accessible venue information, capturing service and programme offers to promote the suitability of venues more accurately to end-users and those in the dementia community; transforming the platform into a valuable audience development resource and improving the accessibility of venues for this important and growing audience. 
+
+If you are interested in accreditation and learning environments for your networks and partnerships, or if you are interested in improving accessibility and accessibility awareness, then please get in touch.
