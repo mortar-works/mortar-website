@@ -26,11 +26,15 @@ A tailored combination of our Triage Tool together with a set of Hoop'd director
 
 The Directory of What Works provides teachers with an environment for conducting quick and simple assessments, so as to highlight to them the most appropriate services to refer. The Hoop'd directory provides the teachers with a method of selecting recommended services and referring them easily to young people, their families or carers via printed or emailed information. 
 
+![Screenshot of one of the Directory of What Works' comms pages]({{ '/static/images/use-cases/whatworks01.png' | url }})
+
 How we worked with our partners
 -----------------------------------------------------------------------------------------------------
 We worked with the Social Finance team to understand the needs and requirements of the educational professionals they were engaged with in Cheshire and Gloucestershire before creating the Scope of Work for the design and implementation of the Directory of What Works. The sensitivities around language concerning the needs of young people at risk of exclusion are high and very nuanced and great care was taken in order to make the triage process quick and simple but also respectful of the challenging nature of the questions being posed. The classifications and standardisations in some of these areas are very fluid so a dynamic and flexible system of categorising and tagging directory resources was required.
 
 The result is a tool that is currently being tested in educational environments in both Cheshire and Gloucestershire to ascertain the impact early identification and early preventative measures can have in positively reducing the incidence of young people being impacted by school exclusion. 
+
+![Screenshot of one of the Directory of What Works' directory pages]({{ '/static/images/use-cases/whatworks02.png' | url }})
 
 What is next
 -----------------------------------------------------------------------------------------------------
