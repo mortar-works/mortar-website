@@ -35,7 +35,7 @@ In the development of the Digital Inclusion Triage Tool we worked with the Local
 
 Salford City Council were selected as the Lead Partner for this phase of the development of the tool, bringing a huge amount of digital inclusion expertise to support the tool's implementation and accessibility. East Riding of Yorkshire, Worcestershire County Council and London Borough of Waltham Forest were selected as Associate Partners offering the opportunity for us to test the impact of the tool across a range of different socio-economic and geographic areas with significant variations in the prevalence of digital exclusion and in digital inclusion resource provision. 
 
-![Example of a directory management interface for managing partners and building resources and pathways]({{ '/static/images/use-cases/DigitalInclusion02.png' | url }})
+![Example of a directory management interface for managing partners and building resources and pathways]({{ '/static/images/use-cases/DigitalInclusion01.png' | url }})
    
 These partnerships have been influential in developing a scalable tool for use by any local authority to develop their own digital inclusion initiatives, campaigns and networks. 
 
@@ -45,7 +45,7 @@ The tool combines a specially designed directory with a targeted triage process 
 
 The triage tool provides this level of user experience maturity and sophistication to directory management, bringing with it the method and motivations for service providers to maintain up to date service information and contributing to the maintenance and management of information. With this comes a much better awareness of the target users, their access and support needs, and as a result the overall accessibility of the overall service of signposting and referral.
 
-![Example of a data management interface for analysing user triage data]({{ '/static/images/use-cases/DigitalInclusion03.png' | url }})
+![Example of a data management interface for analysing user triage data]({{ '/static/images/use-cases/DigitalInclusion02.png' | url }})
 
 What is next
 ---------------------------------------------------------------------------------------------------------------------------------
