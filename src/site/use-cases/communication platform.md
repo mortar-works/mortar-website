@@ -23,7 +23,8 @@ How do we communicate the local area offer in ways that engage older residents m
 Our solution
 ---------------------------------------------------------------------------------------------------------------------------------
 We have collaborated with Hackney Council to co-create a place based initiative dedicated to reducing the incidence of isolation and exclusion amongst older residents in the borough. Hackney Circle is a culture and health intitiative increasing the capacity of over forty local community organisations in reaching isolated older residents whilst delivering key partnerships and outcomes as part of the council's health and cultural strategies.  
-![Hackney Circle stand onboarding new members at St Mary's Secret Garden in Hackney]({{ '/static/images/use-cases/HackneyCircleatStmarySecretgarden01.jpg' | url }})
+![Hackney Circle stand onboarding new members at St Mary's Secret Garden in Hackney]({{ '/static/images/use-cases/hackneycircle03.jpg' | url }})
+![Hackney Circle stand onboarding new members at St Mary's Secret Garden in Hackney]({{ '/static/images/use-cases/HackneyCircle04.jpg' | url }})
 
 Hackney Cricle is both an intiative and a service built using our platform Hoop'd designed to reach more people more effectively with improved information formats, user journeys and communication touchpoints. Hackney Circle is a great example of how Hoop'd can be used to bring together local area networks of community and cultural organisations, filling a much needed gap in the process of effective signposting and referral. 
 
