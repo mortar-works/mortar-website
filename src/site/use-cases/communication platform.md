@@ -23,6 +23,8 @@ How do we communicate the local area offer in ways that engage older residents m
 Our solution
 ---------------------------------------------------------------------------------------------------------------------------------
 We have collaborated with Hackney Council to co-create a place based initiative dedicated to reducing the incidence of isolation and exclusion amongst older residents in the borough. Hackney Circle is a culture and health intitiative increasing the capacity of over forty local community organisations in reaching isolated older residents whilst delivering key partnerships and outcomes as part of the council's health and cultural strategies.  
+![Hackney Circle stand onboarding new members at St Mary's Secret Garden in Hackney]({{ '/static/images/use-cases/HackneyCircleatStmarySecretgarden01.jpg' | url }})
+
 Hackney Cricle is both an intiative and a service built using our platform Hoop'd designed to reach more people more effectively with improved information formats, user journeys and communication touchpoints. Hackney Circle is a great example of how Hoop'd can be used to bring together local area networks of community and cultural organisations, filling a much needed gap in the process of effective signposting and referral. 
 
 How we worked with our partners
@@ -30,6 +32,8 @@ How we worked with our partners
 Hackney Circle was redesigned using our Hoop'd platform. A tailored version of Hoop'd was created for Hackney Circle that utilised our modules for community and membership management, service mapping and campaign creation. The digital service was designed to complement the physical and human methods of engagement needed to build the membership and grow the confidence of new and existing Hackney Circle members. 
 
 The service brings together specific activities and programmes of key strategic partners including the borough's lunch clubs, libraries and leisure centers alongside a network of community organisations to deliver information to older residents in uniform, accessible formats. These service cards are shared and made available to community navigators from the health service as well as housing estate managers and resident participation team officers.
+
+![Hackney Circle platform showing upcoming activities and events]({{ '/static/images/use-cases/HackneyCircle02.png' | url }})
 
 The platform enables cultural and community partners to be able to promote their own activities and access the same community management tools, growing and increasing the reach and capacity of participating organisations.  As a result the service as a whole is generating new referral pathways between users and cultural partners.
 
