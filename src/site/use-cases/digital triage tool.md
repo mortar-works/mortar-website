@@ -8,11 +8,11 @@ description: |-
 order: 2
 ---
 
-Digital Triage Tools
+Introduction
 ---------------------------------------------------------------------------------------------------------------------------------
-Navigating large amounts of information has become daunting and time consuming, with huge amounts of information becoming increasingly inaccessible and irrelevant.   
+The rapid pace of change is just one reason why engagement methods need to change. Communication of information and opportunities requires a multi-model approach that has an understanding of people's needs and drives to participate. 
 
-Ditto uses the process of triaging users to make it easier for people to find the information they want and need more quickly. This boosts engagement and improves referrals, but it also saves tremendous amounts of time for front line staff, businesses and companies whilst creating rich, new datasets and insights associated with the needs and behaviours of targeted user groups. 
+As lead designers and developers of the Digital Inclusion Triage Tool we are working with local authorities across the UK to transform how services can be better delivered to reach those that need them most. 
 
 <figure>
   <img src="{{ '/static/images/use-cases/ditto_01.jpg' | url }}" />
@@ -21,11 +21,11 @@ Ditto uses the process of triaging users to make it easier for people to find th
   </figcaption>
 </figure>
 
-How does Ditto work
+The problem
 ---------------------------------------------------------------------------------------------------------------------------------
-Ditto enables the creation of a customised triage environment allowing organisations to identify and assess their users needs in relation to their own specific services and resources. 
+Digital transformation has brought with it a great number of different challenges. As services and behaviour has transitioned online digital exclusion has become increasingly difficult to tackle and has become an increasingly urgent issue. With over 10% of the population digitally excluded the societal and economic impact is huge. How to ensure everyone has the essential digital skills they need to remain connected, included and safe is a great challenge to how our services are designed and delivered.
 
-The triage environment operates alongside a dynamic directory, with tailored information and service cards to deliver more effective and efficient user journeys and experiences; all made possible by Mortar's framework, providing bespoke algorithms and APIs that ensure users are being provided with the most appropriate information. 
+How do we assess the needs of those that are digitally excluded, especially when they present several multiple barriers and needs? How do we promote digital inclusion effectively to those that are digitally excluded? 
 
 <figure>
   <img src="{{ '/static/images/use-cases/ditto_02.jpg' | url }}" />
@@ -34,21 +34,29 @@ The triage environment operates alongside a dynamic directory, with tailored inf
   </figcaption>
 </figure>
 
-What type of products does Ditto support
+Our solution
 ---------------------------------------------------------------------------------------------------------------------------------
-Ditto is being used to deliver the Local Government Association's Digital Inclusion Directory, trialled with the London Borough of Havering and soon to enter into its Beta phase of delivery. It is being used to provide accreditation services for cultural organisations for the Greater London Authority, and to support education professionals in Cheshire and Gloucestershire assess the needs of young people at risk of exclusion. 
+Our Triage Tool is a specially designed platform for creating tailored assessments to support a wide range of different types of users and use cases. In the case of the digital inclusion triage tool it has been designed for self-referral as well as for front-line service staff (such as library or hub officers and volunteers) to be able to support those visiting public venues as well as making telephone enquiries. Crucially the tool enables service staff to be able to deliver a triage process to users when they first present digital exclusion challenges, encouraging self-use where appropriate to help alleviate the workload pressure and increase the number of people they are able to serve. 
 
-Why is Ditto needed
+The tool provides a recommended list of services most appropriate to addressing the user's specific situation and needs, and also provides service staff with up-to-date local area resource directory for digital exclusion that they can search and query to be able to support the process of referral. 
+
+How we worked with our partners
 ---------------------------------------------------------------------------------------------------------------------------------
 
-The digitalisation of many services has led to increasingly poor user experience. 
+In the development of the Digital Inclusion Triage Tool we worked with the Local Government Association and the London Borough of Havering to create the first prototypes of the tool. As part of the Digital Pathfinders programme we established the service pattern for user assessment of digital inclusion needs and tested the basic functionality of the tool with front-line service staff. The success of this work led to the development of the full tool for live implementation. 
 
-Many systems just weren't designed to hold so much information and traditional websites and directories do not offer effective methods for finding and displaying different types of information, or catering for different types of users. 
+Salford City Council were selected as the Lead Partner for this phase of the development of the tool, bringing a huge amount of digital inclusion expertise to support the tool's implementation and accessibility. East Riding of Yorkshire, Worcestershire County Council and London Borough of Waltham Forest were selected as Associate Partners offering the opportunity for us to test the impact of the tool across a range of different socio-economic and geographic areas with significant variations in the prevalence of digital exclusion and in digital inclusion resource provision. 
 
-As a result many services have grown to become less accessible, and the information held in them has become out of date, inaccurate, or simply inappropriate. Confidence for users in using such systems is low and engagement levels fall, making the work of staff difficult and in many cases impossible. 
+These partnerships have been influential in developing a scalable tool for use by any local authority to develop their own digital inclusion initiatives, campaigns and networks. 
 
-Building better designed information, and systems for how it is accessed, is essential for services to grow, to evolve, and to become more equitable and accessible. This is essential in enabling services to more effectively capture and make use of reliable user data, a necessity for improving the quality and efficiency of service provision.
-
-Get in touch
+Transforming directories and access to local area information
 ---------------------------------------------------------------------------------------------------------------------------------
-To find out more about Ditto you can get in touch with us by emailing: office@mortar.works 
+The tool combines a specially designed directory with a targeted triage process representing a tremendous step forwards in how place based partnerships should be engaging with their users. Traditionally directories have failed because they have not been designed to represent the actual service offer. Instead they merely represent listings of public spaces or organisations and so don't reflect the actual user pathway to accessing the specific range of services being offered. 
+
+The triage tool provides this level of user experience maturity and sophistication to directory management, bringing with it the method and motivations for service providers to maintain up to date service information and contributing to the maintenance and management of information. With this comes a much better awareness of the target users, their access and support needs, and as a result the overall accessibility of the overall service of signposting and referral.
+
+What is next
+---------------------------------------------------------------------------------------------------------------------------------
+Alongside this functionality comes a new data set for digital inclusion and a new method of analysing the reach and engagement of services. This offers exciting new metrics for presenting the impact of the service, but also of digital inclusion as a whole. With our partners we are analysing the incidence rates around recommended and referred services. Combined with user post code data this will offer a completely new way of assessing the reach of the local area service offer in relation to the actual demands of the population. 
+
+If you are interested in transforming your existing local area services with tailored triage tools, or implementing a digital inclusion campaign or initiative, please get in touch to learn more. 
