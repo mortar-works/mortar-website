@@ -8,41 +8,32 @@ description: |-
 order: 3
 ---
 
-
-
-> “Triple the number of households are now in arrears, equivalent to a third of all low-income households.”
-> **Dragged Down by Debt**
-
-Balance introduces a new generation of digital financial inclusion tools in the field of collections and income generation. Balance enables people to change and adapt their payment schedules, establishing unique touchpoints to improve and streamline collections whilst overcoming both short and long-term incidences of debt and arrears; ensuring that people are more effectively engaged in the process of collections.
-
-Introducing user-led collections and flexible payments
+Introduction
 -----------------------------------------------------------------------------------------------------
+Assessing needs in educational environments is highly challenging. The impact the right form of engagement can have at the right time in a young person's life therefore carries with it tremendous long-term value. 
 
-New methods of digitalising and automating the collections process is essential if we are to alleviate the pressure and workloads on staff and employees involved in income generation and collections. 3.8m households in the UK are in arrears for their household bills, including rent; arrears that total approximately £5.2bn. These numbers are set to increase as households face the highest increase in the cost of living in the last three decades with soaring energy prices and inflation. 
+Our work supporting Social Finance has involved building the knowledge and capacity of educational professionals, giving them access to a tool capable of supporting them in their work, and addressing systemic problems in the identification, assessment and referral methods for young people most at risk of exclusion. 
 
-Balance is designed to be easy and simple to implement alongside existing escalation and accounts receivable (AR) services and software. Balance brings intelligence, specialised design, and systems of automation to the housing and real estate sector, enriching and enhancing the roles of income officers, collections teams and companies of all scales. 
-
-Intelligent design for creating and amending payment schedules
+The problem
 -----------------------------------------------------------------------------------------------------
+There are two very common problems associated with conducting needs assessments. Firstly it can take a long time to effectively ascertain an individuals needs. Educational proffesionals in particular are time poor. Secondly it is not always clear how and whom to make a referral to. The process of identifying a suitable resource, service or intervention is also a time consuming challenge, perhaps even more so than the original assessment. Interventions might not be known, and if they are methods of referral are often highly varied and again time consuming to pursue.  
 
-> Balance accelerates the administrative processes involved in arrears acknowledgement and payment schedule approval, saving officers considerable time spent administering arrears. 
+How do we deliver a quick and effective needs assessment of a young person at risk of exclusion? How do we make the process of responding to that assessment easier and more relevant to the needs of the young person in question?
 
-![Screenshot showing AI assisted decision making for financial processes]({{ '/static/images/use-cases/group_device_mockup.png' | url }})
+Our solution
+-----------------------------------------------------------------------------------------------------
+A tailored combination of our Triage Tool together with a set of Hoop'd directory management modules were created for Social Finance's Directory of What Works; a triage tool for assessing the needs of young people and referring them to the most appropriate local services. 
 
-Some of the features and functionality that Balance provides include: 
+The Directory of What Works provides teachers with an environment for conducting quick and simple assessments, so as to highlight to them the most appropriate services to refer. The Hoop'd directory provides the teachers with a method of selecting recommended services and referring them easily to young people, their families or carers via printed or emailed information. 
 
-**View, change and adapt payment schedules**  
-For users Balance works by providing the digital tools to view, change and adapt their payment schedule. 
+How we worked with our partners
+-----------------------------------------------------------------------------------------------------
+We worked with the Social Finance team to understand the needs and requirements of the educational professionals they were engaged with in Cheshire and Gloucestershire before creating the Scope of Work for the design and implementation of the Directory of What Works. The sensitivities around language concerning the needs of young people at risk of exclusion are high and very nuanced and great care was taken in order to make the triage process quick and simple but also respectful of the challenging nature of the questions being posed. The classifications and standardisations in some of these areas are very fluid so a dynamic and flexible system of categorising and tagging directory resources was required.
 
-**Within acceptable risk parameters**  
-Balance provides the user with options and flexibility within their permissible limits of risk, enabling them to request alternative dates of payment and alternative payment figures. 
+The result is a tool that is currently being tested in educational environments in both Cheshire and Gloucestershire to ascertain the impact early identification and early preventative measures can have in positively reducing the incidence of young people being impacted by school exclusion. 
 
-**Automatic creation of new schedules and associated notifications**  
-Balance presents automatically recalculated payment schedules in relation to user requests, together with automated notifications of their request approval, reminders for subsequent payments and alerts concerning missed payments.   
+What is next
+-----------------------------------------------------------------------------------------------------
+A new dataset generated by the directory is able to indicate the prevalence of different search and referral criteria being utilised by users of the tool and part of assessing the success of such a tool will be how this data can be meaningfully applied to help support local authorities and their service partners in refining referal pathways and in reaching young people at risk of exclusion.
 
-**Intelligent officer dashboards**  
-For the income officer, Balance provides an intelligent dashboard and single screen through which to respond to schedule requests, assess fringe cases, and see flagged cases. 
-
-**Machine learning for assessing risk and optimising parameters**  
-Balance uses machine learning to improve and adjust user permissions, assess overall risk status and adjust organisational parameters. Using data to support teams in creating improvements in their collections scheduling and optimising their collections success.   
-
+If you are interested in applying new methods to how you identify and assess members of your community, or want to learn more about the design and implementation of early identification and prevention services then please get in touch.
