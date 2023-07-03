@@ -14,12 +14,7 @@ The rapid pace of change is just one reason why engagement methods need to chang
 
 As lead designers and developers of the Digital Inclusion Triage Tool we are working with local authorities across the UK to transform how services can be better delivered to reach those that need them most. 
 
-<figure>
-  <img src="{{ '/static/images/use-cases/DigitalInclusion03.png' | url }}" />
-  <figcaption>
-   Examples of user triage interfaces for engaging users and capturing user data
-  </figcaption>
-</figure>
+![Examples of Digital Inclusion Triage Tool communication and splash pages]({{ '/static/images/use-cases/DigitalInclusion03.png' | url }})
 
 The problem
 ---------------------------------------------------------------------------------------------------------------------------------
@@ -40,13 +35,8 @@ In the development of the Digital Inclusion Triage Tool we worked with the Local
 
 Salford City Council were selected as the Lead Partner for this phase of the development of the tool, bringing a huge amount of digital inclusion expertise to support the tool's implementation and accessibility. East Riding of Yorkshire, Worcestershire County Council and London Borough of Waltham Forest were selected as Associate Partners offering the opportunity for us to test the impact of the tool across a range of different socio-economic and geographic areas with significant variations in the prevalence of digital exclusion and in digital inclusion resource provision. 
 
-<figure>
-  <img src="{{ '/static/images/use-cases/DigitalInclusion02.png' | url }}" />
-  <figcaption>
-   Example of a directory management interface for managing partners and building resources and pathways
-  </figcaption>
-</figure>
-
+![Example of a directory management interface for managing partners and building resources and pathways]({{ '/static/images/use-cases/DigitalInclusion02.png' | url }})
+   
 These partnerships have been influential in developing a scalable tool for use by any local authority to develop their own digital inclusion initiatives, campaigns and networks. 
 
 Transforming directories and access to local area information
@@ -55,12 +45,7 @@ The tool combines a specially designed directory with a targeted triage process 
 
 The triage tool provides this level of user experience maturity and sophistication to directory management, bringing with it the method and motivations for service providers to maintain up to date service information and contributing to the maintenance and management of information. With this comes a much better awareness of the target users, their access and support needs, and as a result the overall accessibility of the overall service of signposting and referral.
 
-<figure>
-  <img src="{{ '/static/images/use-cases/DigitalInclusion01.png' | url }}" />
-  <figcaption>
-   Example of a data management interface for analysing user triage data
-  </figcaption>
-</figure>
+![Example of a data management interface for analysing user triage data]({{ '/static/images/use-cases/DigitalInclusion03.png' | url }})
 
 What is next
 ---------------------------------------------------------------------------------------------------------------------------------
