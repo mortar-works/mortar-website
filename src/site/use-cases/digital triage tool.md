@@ -17,7 +17,7 @@ As lead designers and developers of the Digital Inclusion Triage Tool we are wor
 <figure>
   <img src="{{ '/static/images/use-cases/ditto_01.jpg' | url }}" />
   <figcaption>
-   Examples of Ditto's user triage interfaces for capturing user data
+   Examples of user triage interfaces for engaging users and capturing user data
   </figcaption>
 </figure>
 
@@ -30,7 +30,7 @@ How do we assess the needs of those that are digitally excluded, especially when
 <figure>
   <img src="{{ '/static/images/use-cases/ditto_02.jpg' | url }}" />
   <figcaption>
-   Examples of Ditto's management interfaces for analysing data and building directories
+   Examples of management interfaces for analysing data and building directories
   </figcaption>
 </figure>
 
