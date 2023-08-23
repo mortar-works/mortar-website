@@ -1,5 +1,5 @@
 ---
-title: Improving access to digital inclusion
+title: Improving local access to digital inclusion
 pageImage: triage03.png
 homepageImage: triage03.png
 description: |-
