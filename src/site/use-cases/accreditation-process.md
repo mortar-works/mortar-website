@@ -3,7 +3,7 @@ title: Improving the accessibility of cultural venues
 pageImage: dfvc_03.jpg
 homepageImage: dfvc_03.jpg
 description: |-
-  For the Mayor of London’s Dementia Friendly Venues Charter our platform Hoop'd delivers a self-service platform for venues and organisations to achieve accreditation and a safe and secure environment for welcoming those with dementia to their venues.
+  In partnership with the Mayor of London Mortar is delivering a self-service platform for organisations to achieve dementia friendly accreditation, ensuring that venues are safe and secure to welcome those with dementia to enjoy their programmes and performances.
  
 order: 4
 ---
