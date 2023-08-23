@@ -3,7 +3,7 @@ title: Supporting young people at risk of exclusion
 pageImage: maxed03.jpg
 homepageImage: maxed03.jpg
 description: |-
-  The What Works directory assess the needs of young people at risk of exclusion and improves the quality and success of referral. The platform uses a tailored combination of both Hoop'd and our Triage Tool and is being trialled to support educational professionals in Cheshire and Gloucestershire. 
+  Mortar is improving the quality and success of referral for young people at risk of exclusion in partnership with Social Finance. The platform utilises a tailored user-triage system to support educational professionals in their assessment of young people's needs. 
   
 order: 3
 ---
