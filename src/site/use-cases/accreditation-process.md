@@ -3,7 +3,7 @@ title: Improving the accessibility of cultural venues
 pageImage: dfvc_03.jpg
 homepageImage: dfvc_03.jpg
 description: |-
-  For the Mayor of London’s Dementia Friendly Venues Charter our platform Hoop'd delivers a self-service platform for venues and organisations to achieve accreditation and a secure environment for the Greater London Authority to administrate the charter.
+  For the Mayor of London’s Dementia Friendly Venues Charter our platform Hoop'd delivers a self-service platform for venues and organisations to achieve accreditation and a safe and secure environment for welcoming those with dementia to their venues.
  
 order: 4
 ---
