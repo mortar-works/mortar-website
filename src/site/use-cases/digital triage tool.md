@@ -1,5 +1,5 @@
 ---
-title: Digital inclusion triage tool
+title: Improving access to digital inclusion
 pageImage: triage03.png
 homepageImage: triage03.png
 description: |-
