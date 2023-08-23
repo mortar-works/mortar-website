@@ -1,5 +1,5 @@
 ---
-title: Accreditation of cultural venues
+title: Improving the accessibility of cultural venues
 pageImage: dfvc_03.jpg
 homepageImage: dfvc_03.jpg
 description: |-
