@@ -3,7 +3,7 @@ title: Improving the accessibility of cultural venues
 pageImage: dfvc_03.jpg
 homepageImage: dfvc_03.jpg
 description: |-
-  Reducing workload by creating a self-service environment is an essential part of our framework. Read about how Greater London Authority are able to reach so many organisations with dementia friendly accreditation, ensuring that venues are safe and secure to welcome those with dementia to enjoy their programmes and performances.
+  Reducing workload and driving self-service is an essential part of our framework. Read about how Greater London Authority are reaching so many organisations with dementia friendly accreditation, ensuring venues are safe to welcome those with dementia.
  
 order: 4
 ---
