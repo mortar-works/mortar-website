@@ -3,7 +3,7 @@ title: Improving the accessibility of cultural venues
 pageImage: dfvc_03.jpg
 homepageImage: dfvc_03.jpg
 description: |-
-  In partnership with the Mayor of London Mortar is delivering a self-service platform for organisations to achieve dementia friendly accreditation, ensuring that venues are safe and secure to welcome those with dementia to enjoy their programmes and performances.
+  Reducing workload by creating a self-service environment is an essential part of our framework. Read about how Greater London Authority are able to reach so many organisations with dementia friendly accreditation, ensuring that venues are safe and secure to welcome those with dementia to enjoy their programmes and performances.
  
 order: 4
 ---
