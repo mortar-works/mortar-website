@@ -3,7 +3,7 @@ title: Reaching isolated older residents
 pageImage: hc03.jpg
 homepageImage: hc03.jpg
 description: |-
-  Our platform Hoop'd is boosting the capacity of over 40 culture and health partners in London Borough of Hackney providing communication tools, outreach and community network management; ensuring opportunities are reaching those that need them most. 
+  It is difficult and demanding to identify and reach your target beneficiaries alone. Read about how our product Hoop'd establishes and supports networks of service providers, such as in London Borough of Hackney. A cohesive environment drives communication, outreach and community network management; ensuring opportunities reach those that need them most. 
  
 order: 1
 ---
