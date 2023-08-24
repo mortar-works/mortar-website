@@ -3,7 +3,7 @@ title: Supporting young people at risk of exclusion
 pageImage: maxed03.jpg
 homepageImage: maxed03.jpg
 description: |-
-  User needs are changing rapidly and becoming increasingly complex. Read about how our referral environment for young people at risk of exclusion is responding to these challenges with a tailored user-triage system that is supporting educational professionals in their assessment of young people's needs. 
+  User needs are changing rapidly and becoming increasingly complex. Read about how our referral environment for young people at risk of exclusion is responding to these challenges with a tailored user-triage system supporting educational professionals in assessing young people's needs. 
   
 order: 3
 ---
