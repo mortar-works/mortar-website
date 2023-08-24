@@ -3,7 +3,7 @@ title: Reaching isolated older residents
 pageImage: hc03.jpg
 homepageImage: hc03.jpg
 description: |-
-  It is difficult and demanding to identify and reach your target beneficiaries alone. Read about how our product Hoop'd establishes and supports networks of service providers, such as in London Borough of Hackney. A cohesive environment drives communication, outreach and community network management; ensuring opportunities reach those that need them most. 
+  It is difficult to identify and reach your target beneficiaries alone. Read about how our tailored information environment drives communication, outreach and community network management in London Borought of Hackney; ensuring opportunities reach those that need them most.
  
 order: 1
 ---
