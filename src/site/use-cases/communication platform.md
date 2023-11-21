@@ -3,7 +3,7 @@ title: Custom information environments
 pageImage: triage03_223.png
 homepageImage: triage03_223.png
 description: |-
-  It is difficult to identify and reach your target beneficiaries alone. Read about how our tailored information environment drives communication, outreach and community network management in London Borough of Hackney; ensuring opportunities reach those that need them most.
+  How we navigate and access information is changing rapidly. Mortar builds cohesive and dynamic information environments for the delivery of more targeted, accessible and effective communication and outreach. Ensuring that the right opportunities reach those that need them most. 
  
 order: 1
 ---
