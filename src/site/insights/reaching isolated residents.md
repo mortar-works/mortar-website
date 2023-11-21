@@ -1,7 +1,7 @@
 ---
 title: reaching isolated residents
 date: 2022-12-18
-image: hc03.jpg
+image: hc03_2.jpg
 author: George Unsworth
 draft: false
 tags:
