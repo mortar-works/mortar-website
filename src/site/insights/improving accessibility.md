@@ -1,40 +1,56 @@
 ---
-title: Better data, bigger impact
-date: 2022-10-10
-image: mortar_web_01.jpg
+title: Improving Accessibility
+date: 2023-06-21
+image: dfvc_03_2.jpg
 author: George Unsworth
 draft: false
 tags:
-  - data services
-  - universal data adaptor
-  - data capture
-  - data blending
+  - accessibility
+  - accreditation
+  - triage tool
   - data management
 
 ---
 
-> I never guess. It is a capital mistake to theorize before one has data. Insensibly one begins to twist facts to suit theories, instead of theories to suit facts.
-— Arthur Conan Doyle (Sherlock Holmes)
+Introduction
+-----------------------------------------------------------------------------------------------------
+The societal benefits of driving scalable services that help to train and increase the capacity and understanding of our community and cultural organisations is enormous.  
 
-About 70% of all data goes unutilised; and a recent poll by Oracle suggests that 95% of people say they’re overwhelmed by the amount of data and information available to them. 
+The Dementia Friendly Venues Charter is an example of a shared learning environment and the range of impact good service design can bring. We've been working with the Mayor of London and the Greater London Authority, to help them deliver the charter, to reach a growing network of organisations with information, advice and support in becoming dementia friendly accredited. 
 
-An astonishing volume of data is being produced today. 
+The problem
+-----------------------------------------------------------------------------------------------------
 
-This makes it increasingly difficult to effectively collect and structure data as it is being created and captured; let alone analyse it effectively to understand how it can be best applied. Delivering a successful service or product today is therefore increasingly reliant on applying data intelligence and data integration solutions. More than ever we need access to the right information to make our decisions and to ensure the experiences and interactions for our employees and customers are productive and beneficial. 
+Many accreditation processes that involve training and shared resources have not been effectively digitalised. The cost of creating targeted and niche digital learning environments is high, so despite potentially high levels of impact the cost of designing and delivering such environments is regularly not undertaken. As a result, especially in the fields of accessibility, many organisations struggle to find appropriate information, training resources and friendly, collaborative environments to develop their staff and their ways of working. 
 
-Different approaches to pursue better results
--------------
-With only a fraction of the data potentially available being collected and acted upon there still exists so many alternative ways in which new information can shape the way our services and products are being designed and delivered, or our decisions influenced and made. 
+![Screenshot showing the categories of questions for becoming a dementia friendly accredited venue]({{ '/static/images/use-cases/dfvcart02.png' | url }})
 
-One of the reasons we have ended up with so much bias and asymettry in the systems we use today is because the same bits of information have always been studied and collected, fulfilling the same metrics and scoring, delivering the same outcomes and fulfilling the same processes, all at the expense of larger more holistic approaches to understanding systems and interelations, risks and triggers. Better systems can now be designed, and better services delivered as a result. 
+How can we affordably digitalise and streamline the accredition process for becoming a dementia friendly accredited organisation? How do we ensure that organisations can complete the accreditation process without assistance, to make the process highly scalable without impact on the workload of managing staff? 
 
-Intelligent data environments
--------------
-Mortar applies machine learning to create new, dynamic data environments. We have built improved methods for capturing and organising information, creating more functional directories for analysing and querying data. Making data easier to access, understand, and apply. Our products and tools benefit from these environments, making it more affordable to deploy intelligent data environments than ever before.  
+Our solution 
+-----------------------------------------------------------------------------------------------------
 
-Everyone can benefit from more efficient and effective methods for working with and applying data. But everyone needs more support in asking the right questions and developing the right approach to begin improving, adapting and responding to the data they work with. 
+We digitalised the accreditation process, breaking a large set of questions into smaller, more manageable categories. Each question has its own unique page for holding specific shared resources and materials making the whole process clear and accessible to learn and apply what is necessary in becoming dementia friendly. Importantly users can complete any number of questions in any order, and can log in and out of the platform as they require, growing their organisations score as they work to reach the accreditation mark. 
 
-> The greatest value of a picture is when it forces us to notice what we never expected to see.
-— John Tukey
+![Screenshot showing one of the questions for a venue to become dementia friendly accredited]({{ '/static/images/use-cases/dfvcart03.png' | url }})
+
+The new Dementia Friendly Venues Charter platform is a tailored instance of Hoop'd, our modular community engagement and development environment. A communication module enables invitations to be sent to venue organisations inviting them to create accounts, or any organisation can create an account and begin the process of becoming accredited subject to approval by the adminstrator.  
+
+How we worked with our partners
+-----------------------------------------------------------------------------------------------------
+
+We co-created the management dashboard with the Greater London Authority and the Mayor of London, refining the functionality as the service matured, implementing new features as they became required to make the service as streamlined and light-touch as possible. Alongside automated communication emails being sent to venues as they progress through the accreditation process this has also included the design and implementation of an approval system, an interface for monitoring the progress of organisations, and a public map of accredited venues. You can view the public map of accredited venues [here](https://dfvc.hoopd.co.uk/venue-list/)
+
+![Screenshot showing the public Dementia Friendly Venues Charter map]({{ '/static/images/use-cases/dfvcart01.png' | url }})
+
+Built to scale
+-----------------------------------------------------------------------------------------------------
+The platform now has the potential to scale the number of organisations actively working to attain dementia friendly accreditation without creating an unmanageable workload for the managing officers. This enables the opportunity to assign officer time to supporting key cohorts of venues using the platform's new dataset to indicate where there are gaps in service provision for those with dementia and where audiences might be being poorly served, offering better targeting of officer time, funds and resources for increasing the accessibility and the capacity of the capital's venues. 
+
+What is next
+-----------------------------------------------------------------------------------------------------
+The next iterations of the platform will focus on fulfilling the needs of end-users, those with dementia and their carers. We will be designing more accessible venue information, capturing service and programme offers to promote the suitability of venues more accurately to end-users and those in the dementia community; transforming the platform into a valuable audience development resource and improving the accessibility of venues for this important and growing audience. 
+
+If you are interested in accreditation and learning environments for your networks and partnerships, or if you are interested in improving accessibility and accessibility awareness, then please get in touch.
 
  
