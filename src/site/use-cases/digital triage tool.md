@@ -3,7 +3,7 @@ title: Service and digital transformation
 pageImage: bell_023.png
 homepageImage: ticks_02.png
 description: |-
-  The transition of our services to digital and cloud-based platforms brings tremendous value to users. We help to redesign and deploy new services that are more accessible, user-led and affordable whilst enhancing the quality of data capture, security and safety. Supporting services as they scale their reach, capacity and impact.   
+  We are in a time of huge transition, as services look to evolve through their use of data and intelligence to scale their reach, capacity and impact. Our framework enables us to redesign and deploy new services that are more accessible, user-led and affordable whilst enhancing the quality of data capture, security and safety.    
  
 order: 2
 ---
