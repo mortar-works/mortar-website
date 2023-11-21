@@ -3,7 +3,7 @@ title: Data driven engagement
 pageImage: circle_033.png
 homepageImage: circle_020.png
 description: |-
-  There are incredible new opportunities to transform how your users engage with and experience your service. Our tools build better pathways, using dynamic triage and referral techniques to personlise experiences and monitor success. All whilst delivering better data management to drive service insights and create new early engagement touchpoints. 
+  There are incredible new opportunities to transform how your users engage with and experience your service. Our tools build better pathways, personalising experiences and monitoring success. Ensuring better data management and analysis to drive early engagement and new service touchpoints. 
   
 order: 3
 ---
