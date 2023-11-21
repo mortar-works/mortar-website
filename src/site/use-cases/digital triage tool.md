@@ -1,7 +1,7 @@
 ---
 title: Service and digital transformation
 pageImage: bell_023.png
-homepageImage: 
+homepageImage: ticks_01.png
 description: |-
   Our triage tool is a highly customisable environment for supporting local authorities and place based partnerships. Read about how we are assessing user needs and utilising our framework to deliver digital inclusion signposting, campaigns, and service provider networks across the country.
  
