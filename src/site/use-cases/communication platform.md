@@ -1,7 +1,7 @@
 ---
 title: Custom information environments
-pageImage: triage03_223.png
-homepageImage: triage03_223.png
+pageImage: t2_223.png
+homepageImage: t2_223.png
 description: |-
   It is difficult to identify and reach your target beneficiaries alone. Read about how our tailored information environment drives communication, outreach and community network management in London Borough of Hackney; ensuring opportunities reach those that need them most.
  
