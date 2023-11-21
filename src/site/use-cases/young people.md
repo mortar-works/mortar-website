@@ -3,7 +3,7 @@ title: Data driven engagement
 pageImage: circle_033.png
 homepageImage: circle_020.png
 description: |-
-  User needs are changing rapidly and becoming increasingly complex. Read about how our referral environment for young people at risk of exclusion is responding to these challenges with a tailored user-triage system supporting educational professionals in assessing young people's needs. 
+  There are incredible new opportunities to transform how your users engage with and experience your service. Our tools build better pathways, using dynamic triage and referral techniques to personlise experiences and monitor success. All whilst delivering better data management to drive service insights and create new early engagement touchpoints. 
   
 order: 3
 ---
