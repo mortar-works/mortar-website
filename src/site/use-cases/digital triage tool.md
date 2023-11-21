@@ -3,7 +3,7 @@ title: Service and digital transformation
 pageImage: bell_023.png
 homepageImage: ticks_02.png
 description: |-
-  Our services and systems must evolve their use of data and intelligence to scale their reach, capacity and impact. We redesign and deploy new services that are more accessible, user-led and affordable whilst enhancing the quality of how data is being captured and secured.    
+  Our services and systems must evolve their use of data and intelligence to scale their reach, capacity and impact. We redesign and deploy new services that are more accessible, user-led and affordable whilst enhancing  predictive insights and data-driven decision making.    
  
 order: 2
 ---
