@@ -1,11 +1,16 @@
 ---
-title: Improving local access to digital inclusion
-pageImage: triage03_2.png
-homepageImage: triage03_2.png
-description: |-
-  Our triage tool is a highly customisable environment for supporting local authorities and place based partnerships. Read about how we are assessing user needs and utilising our framework to deliver digital inclusion signposting, campaigns, and service provider networks across the country.
- 
-order: 2
+title:  Improving Digital Inclusion
+date: 2023-02-08
+image: triage03_2.png
+author: George Unsworth
+draft: false
+tags:
+  - digital inclusion
+  - triage tool
+  - directories
+  - datasets
+  - information environments
+
 ---
 
 Introduction
