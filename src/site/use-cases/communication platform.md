@@ -1,7 +1,7 @@
 ---
-title: Reaching isolated older residents
-pageImage: hc03.jpg
-homepageImage: hc03.jpg
+title: Custom information environments
+pageImage: hc03_2.jpg
+homepageImage: hc03_2.jpg
 description: |-
   It is difficult to identify and reach your target beneficiaries alone. Read about how our tailored information environment drives communication, outreach and community network management in London Borough of Hackney; ensuring opportunities reach those that need them most.
  
