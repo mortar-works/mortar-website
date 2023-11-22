@@ -3,7 +3,7 @@ title: Custom information environments
 pageImage: triage03_223.png
 homepageImage: triage03_223.png
 description: |-
-  How we navigate and access information is changing rapidly. Every service needs dynamic, up-to-date information to build trust and to power efficiencies in delivery. Mortar creates and maintains custom information environments, ensuring the right opportunities reach those that need them most. 
+  How we navigate and access information is changing rapidly. Every service needs dynamic, up-to-date information to build trust, establish networks and to power efficiencies across service delivery. Mortar creates and maintains custom information environments, ensuring your opportunities reach those that need them most. 
  
 order: 1
 ---
