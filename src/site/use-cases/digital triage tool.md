@@ -3,7 +3,7 @@ title: Service and digital transformation
 pageImage: bell_023.png
 homepageImage: ticks_02.png
 description: |-
-  To scale the reach, capacity and impact of your services you need to be able to evolve your use and application of data and intelligence. We enable the redesign and deployment of new services, improving accessibility and affordability, and supporting the delivery of your digital transformation and customer experience strategies.    
+  The use and application of data and intelligence are essential to scale the reach, capacity and impact of your services. We enable the redesign and deployment of new services, improving accessibility and affordability, and supporting the delivery of your digital transformation and customer experience strategies.    
  
 order: 2
 ---
