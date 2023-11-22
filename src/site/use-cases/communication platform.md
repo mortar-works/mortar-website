@@ -10,12 +10,22 @@ order: 1
 
 Introduction
 ---------------------------------------------------------------------------------------------------------------------------------
-We are witnessing enormous increases in health inequality; a result of differences in health across the population, and between different groups within society. These conditions influence an individual's opportunities for good health; their mental health, physical health and wellbeing. The impact on older residents, in particular those living alone, carries some of the most devastating diseases effecting our communities. However, one important aspect of health inequality is that these conditions are avoidable. 
+How we communicate is driven by improvements in our interfaces, in how we present and share information. Digital interfaces have been part of this evolution. At every stage, regardless of their scale, those providing services to their customers have had to respond; to the internet, to social media, to smart phones and touchscreens, and now to emergent technologies such as AI. Our services have often lagged behind in the development of user experience in response to each of these technologies, impacting on how they are perceived and impacting the trust and confidence residents and citizens have in their service providers. 
+
+We've been developing our framework and technology to enable services to respond more quickly to new challenges, to create better user experiences, and to evolve how information is navigated and presented. Cohesive information environments are essential today for engaging with new opportunities for dramatically improving service efficiency and accessibility using intelligence. Our work is committed to enabling our partners to develop the informatoin systems they need to present and share information with confidence, to improve the overall architecture for data involved in delivering and maintaining a high quality service. 
+
+
+
+
+
+a result of differences in health across the population, and between different groups within society. These conditions influence an individual's opportunities for good health; their mental health, physical health and wellbeing. The impact on older residents, in particular those living alone, carries some of the most devastating diseases effecting our communities. However, one important aspect of health inequality is that these conditions are avoidable. 
 
 Communication systems need to change, to become more user-led and more targeted to help identify and support the most vulnerable members of our communities. Together with the London Borough of Hackney we have been delivering a radically different system to connect older residents, combatting isolation and exclusion.
 
 The problem
 ---------------------------------------------------------------------------------------------------------------------------------
+This is because of the variety of major challenges our services face in maintaining up-to-date information, in fields that are consistently changing and for the needs of users which are often complex and  
+
 With rapid regeneration of the local area and digitalisation of services the confidence of older residents in the borough to engage in participation activities and events has been declining. At the same time more older residents have become isolated and disconnected making them harder to reach with traditional communication and engagement methods. The result has been growing pressure on primary care with greater numbers of residents presenting multiple access and support needs, especially with declining mobility and social capability. 
 
 How do we communicate the local area offer in ways that engage older residents more effectively across a range of different media? How do we increase the reach and engagement of our local area offer whilst not making the workload associated with managing and maintaining this information unmanageable?
