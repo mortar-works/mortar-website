@@ -3,7 +3,7 @@ title: Data driven engagement
 pageImage: circle_033.png
 homepageImage: circle_020.png
 description: |-
-  There are incredible new opportunities to transform how your users find, engage with and experience your service. Our tools build better pathways, personalising experiences and monitoring success. Ensuring officers have the best opportunities and touchpoints to engage, inform and inspire their users. 
+  Services need to transform how their users find, engage with and access the resources and opportunities they need. Our tools build better pathways into services, providing customised triage and referral tools, personalising experiences and monitoring success. Ensuring officers have the best data and touchpoints to engage, inform and inspire their users. 
   
 order: 3
 ---
