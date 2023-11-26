@@ -1,9 +1,9 @@
 ---
-title: Custom information environments
+title: Dynamic information environments
 pageImage: triage03_223.png
 homepageImage: triage03_223.png
 description: |-
-  In response to services needing dynamic, up-to-date information, Mortar creates and maintains custom information environments; enhancing community navigation and improving local area collaboration. Our modular framework, Hoop'd, delivers the tailored webservices needed to acquire, capture and share information, transforming the customer experience.
+  In response to services needing dynamic, up-to-date information, Mortar creates and maintains environments that enhance community navigation and multi-service collaboration. Our modular framework, Hoop'd, delivers the tailored webservices needed to acquire, capture and share information, transforming customer engagement and service experience.
  
 order: 1
 ---
