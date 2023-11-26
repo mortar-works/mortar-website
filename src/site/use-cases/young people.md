@@ -3,7 +3,7 @@ title: Data driven decisions and insights
 pageImage: circle_033.png
 homepageImage: circle_020.png
 description: |-
-  Services need to transform how their users find, engage with and access the resources and opportunities they need. Our tools build better pathways into services, providing customised triage and referral tools, personalising experiences and monitoring success. Ensuring officers have the best data and touchpoints to engage, inform and inspire their users. 
+  Services need to transform how their users find, engage with and access the resources and opportunities they need. We create more efficient pathways into services with customised triage and referral tools that personalise experiences and monitor success; giving officers the best data and touchpoints to engage, inform and inspire their users. 
   
 order: 3
 ---
