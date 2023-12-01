@@ -29,9 +29,9 @@ These modules enable services to combat different forms of exclusion, such as di
 
 Enhancing user experience and engagement
 ---------------------------------------------------------------------------------------------------------------------------------
-![Hackney Circle platform showing upcoming activities and events]({{ '/static/images/use-cases/HackneyCircle02.png' | url }})
-The greatest potential for increasing service capacity and efficiency is in the technical infrastructure at the heart of Hoop’d. Through its use of micro services Hoop’d delivers tailored web services, algorithms and APIs that offer a range of different methods for capturing, organizing and acting on information. 
 
+The greatest potential for increasing service capacity and efficiency is in the technical infrastructure at the heart of Hoop’d. Through its use of micro services Hoop’d delivers tailored web services, algorithms and APIs that offer a range of different methods for capturing, organizing and acting on information. 
+![Hackney Circle platform showing upcoming activities and events]({{ '/static/images/use-cases/HackneyCircle02.png' | url }})
 This management of data is what enables our design of more accessible and personalised user journeys and our application of intelligence to improve user outcomes and success. The Hoop’d infrastructure is focused on creating better systems for maintaining up to date information, increasing the trust and confidence that users have in service content, recommendations and requests. Whether that be across youth services, adult social care or in more targeted forms of provision within housing, financial and digital inclusion.
 
 In the case of our tool, Ditto, the Digital Inclusion Triage Tool, developed in partnership with the LGA, we use our global API system to provide local areas with a maintained and accredited directory of national digital inclusion resources, alongside facilitating their own digital inclusion network of service providers and maintaining their own local area directory of resources and interventions.   
