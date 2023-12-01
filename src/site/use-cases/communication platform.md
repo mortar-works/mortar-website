@@ -8,54 +8,46 @@ description: |-
 order: 1
 ---
 
-Introduction
+Information access and application
 ---------------------------------------------------------------------------------------------------------------------------------
-How we communicate is driven by improvements in our interfaces, in how we present and share information. Digital interfaces have been part of this evolution. At every stage, regardless of their scale, those providing services to their customers have had to respond; to the internet, to social media, to smart phones and touchscreens, and now to emergent technologies such as AI. Our services have often lagged behind in the development of user experience in response to each of these technologies, impacting on how they are perceived and impacting the trust and confidence residents and citizens have in their service providers. 
+People are struggling more than ever to find and access the information they need. At the same time services are failing to apply information and data effectively to reach and engage those in need of help and support. The result is growing pressure on service delivery, with increasing workloads and escalating costs.
 
-We've been developing our framework and technology to enable services to respond more quickly to new challenges, to create better user experiences, and to evolve how information is navigated and presented. Cohesive information environments are essential today for engaging with new opportunities for dramatically improving service efficiency and accessibility using intelligence. Our work is committed to enabling our partners to develop the informatoin systems they need to present and share information with confidence, to improve the overall architecture for data involved in delivering and maintaining a high quality service. 
+Mortar has been working with the Local Government Association and the Greater London Authority to find scalable solutions to the problems associated with addressing complex user needs and increasing the capacity and efficiency of service delivery. 
 
+Our framework Hoop’d is one of the outcomes of this work. 
 
+We are building Hoop’d to drive the next generation of intelligent services. The way in which Hoop’d captures, manages and acts upon information and data is essential to ensuring services can build effective datasets, adopt and apply AI, and deliver on the potential of our services to transform inclusion and accessibility. 
 
-
-
-a result of differences in health across the population, and between different groups within society. These conditions influence an individual's opportunities for good health; their mental health, physical health and wellbeing. The impact on older residents, in particular those living alone, carries some of the most devastating diseases effecting our communities. However, one important aspect of health inequality is that these conditions are avoidable. 
-
-Communication systems need to change, to become more user-led and more targeted to help identify and support the most vulnerable members of our communities. Together with the London Borough of Hackney we have been delivering a radically different system to connect older residents, combatting isolation and exclusion.
-
-The problem
+Hoop’d: a framework for intelligent services
 ---------------------------------------------------------------------------------------------------------------------------------
-This is because of the variety of major challenges our services face in maintaining up-to-date information, in fields that are consistently changing and for the needs of users which are often complex and  
 
-With rapid regeneration of the local area and digitalisation of services the confidence of older residents in the borough to engage in participation activities and events has been declining. At the same time more older residents have become isolated and disconnected making them harder to reach with traditional communication and engagement methods. The result has been growing pressure on primary care with greater numbers of residents presenting multiple access and support needs, especially with declining mobility and social capability. 
+Hoop’d is a flexible and modular framework, easy and affordable to customise for enhancing existing services, building service networks, and identifying target users. Our Hoop’d modules offer the tailored design of more accessible user interfaces for navigating information and prioritising methods of self referral and self assessment, improving service user experience, engagement and retention.
 
-How do we communicate the local area offer in ways that engage older residents more effectively across a range of different media? How do we increase the reach and engagement of our local area offer whilst not making the workload associated with managing and maintaining this information unmanageable?
+Other user facing modules enhance service communication strategies through delivering multi-modal, non-digital forms of communication, providing information environments capable of reaching people through curated channels such as text, WhatsApp, print and socials. 
 
-Our solution
+These modules enable services to combat different forms of exclusion, such as digital exclusion, as well as forming better pathways for those with literacy and language needs. Applying these user facing modules allows a service to immediately begin capturing and responding to user data, and begins the development of a better, more integrated information management system. 
+
+Enhancing user experience and engagement
 ---------------------------------------------------------------------------------------------------------------------------------
-We have collaborated with Hackney Council to co-create a place based initiative dedicated to reducing the incidence of isolation and exclusion amongst older residents in the borough. Hackney Circle is a culture and health intitiative increasing the capacity of over forty local community organisations in reaching isolated older residents whilst delivering key partnerships and outcomes as part of the council's health and cultural strategies.  
-![Hackney Circle stand onboarding new members at St Mary's Secret Garden in Hackney]({{ '/static/images/use-cases/hackneycircle03.jpg' | url }})
-![Hackney Circle stand onboarding new members at St Mary's Secret Garden in Hackney]({{ '/static/images/use-cases/HackneyCircle04.jpg' | url }})
-
-Hackney Cricle is both an intiative and a service built using our platform Hoop'd designed to reach more people more effectively with improved information formats, user journeys and communication touchpoints. Hackney Circle is a great example of how Hoop'd can be used to bring together local area networks of community and cultural organisations, filling a much needed gap in the process of effective signposting and referral. 
-
-How we worked with our partners
----------------------------------------------------------------------------------------------------------------------------------
-Hackney Circle was redesigned using our Hoop'd platform. A tailored version of Hoop'd was created for Hackney Circle that utilised our modules for community and membership management, service mapping and campaign creation. The digital service was designed to complement the physical and human methods of engagement needed to build the membership and grow the confidence of new and existing Hackney Circle members. 
-
-The service brings together specific activities and programmes of key strategic partners including the borough's lunch clubs, libraries and leisure centers alongside a network of community organisations to deliver information to older residents in uniform, accessible formats. These service cards are shared and made available to community navigators from the health service as well as housing estate managers and resident participation team officers.
-
 ![Hackney Circle platform showing upcoming activities and events]({{ '/static/images/use-cases/HackneyCircle02.png' | url }})
+The greatest potential for increasing service capacity and efficiency is in the technical infrastructure at the heart of Hoop’d. Through its use of micro services Hoop’d delivers tailored web services, algorithms and APIs that offer a range of different methods for capturing, organizing and acting on information. 
 
-The platform enables cultural and community partners to be able to promote their own activities and access the same community management tools, growing and increasing the reach and capacity of participating organisations.  As a result the service as a whole is generating new referral pathways between users and cultural partners.
+This management of data is what enables our design of more accessible and personalised user journeys and our application of intelligence to improve user outcomes and success. The Hoop’d infrastructure is focused on creating better systems for maintaining up to date information, increasing the trust and confidence that users have in service content, recommendations and requests. Whether that be across youth services, adult social care or in more targeted forms of provision within housing, financial and digital inclusion.
 
-Improving accessibility to reach those most in need
+In the case of our tool, Ditto, the Digital Inclusion Triage Tool, developed in partnership with the LGA, we use our global API system to provide local areas with a maintained and accredited directory of national digital inclusion resources, alongside facilitating their own digital inclusion network of service providers and maintaining their own local area directory of resources and interventions.   
+
+With the Mayor of London and the GLA the development of these shared national resources extends into the provision of Rent Response, our Tenancy Sustainment Tool, providing information for renters at risk of losing their home; and our Triage and Referral Tool, supporting officers with addressing all the needs of users at the front-door into local area services.
+
+Unleashing the potential of information with Hoop’d
 ---------------------------------------------------------------------------------------------------------------------------------
-Hoop'd brings new accessibility tools to those that need them most. Our uniform event cards are recognised by growing numbers in print and digital form, increasing the confidence of users and growing the reach of the service. The result has been a signposting service that adds value and capacity to the network of organisations that it promotes, building a better understanding of the target audience and developing a new data set to target outreach and engagement projects. 
 
-Improving existing systems for communication makes services significantly easier and less time-consuming to manage. As the quality, accuracy and relevance of imporves it is easier to build trust and confidence with a wider range of users. In Hackney this means front line service staff have more time to support those with higher access and support needs and greater capacity to identify and engage with residents most at risk of isolation and exclusion.  
+With our partners and clients we have created dynamic directories and information environments across multiple use-cases; combating digital exclusion, reducing school exclusions, preventing poverty and sustaining tenancies to name a few. 
 
-What is next
+In doing so we have been able to begin exploring the effective and responsible application of intelligence. Machine learning and AI has the potential to drive the early and preventative engagement that national and local services need, with the capability of providing personalised information, advice and guidance to every user on a continuous basis. 
+
+The Future of Engagement and the transformation of user interfaces
 ---------------------------------------------------------------------------------------------------------------------------------
-As the Hackney Circle service develops new referral pathways are being defined. Working with primary health partners and the community navigation team we are establishing the standards for a Cultural Referral Pathway to contribute to social prescribing ensuring that the service remains vital to decreasing the pressure of primary health and creating new health and wellbeing touchpoints within isolated communities and parts of the borough. 
- 
-If you are interested in creating local area initiatives such as Hackney Circle, and need support in designing services to improve their accessibility and increase the capacity of your partner organisations, please get in touch to learn more. 
+As we build Mortar’s framework and expand our application of Hoop’d we are increasing our efficacy for assessing user needs, understanding complex and multiple needs, informing decisions and actions of service providers, calculating risk and promoting early and preventative forms of service intervention. Building the new ways in which intelligence can benefit the long-term affordability and efficiency of our service sector. 
+
+With dynamic information environments, new datasets and the correct technical infrastructure, the interfaces for our services will be ready to change to adopt new more efficient and personalised behaviours, speech and gestures. The next generation of services will be able not just to respond to our citizens needs, but working alongside them to provide the early engagement and support 
+
