@@ -12,42 +12,25 @@ Information access and application
 ---------------------------------------------------------------------------------------------------------------------------------
 People are struggling more than ever to find and access the information they need. At the same time services are failing to apply information and data effectively to reach and engage those in need of help and support. The result is growing pressure on service delivery, with increasing workloads and escalating costs.
 
-Mortar has been working with the Local Government Association and the Greater London Authority to find scalable solutions to the problems associated with addressing complex user needs and how people can access the information, advice and guidance they need. At the same time we have been exploring ways to increase the capacity and efficiency of service delivery through the application of information in the development of intelligent systems for supporting service decisions and workload. 
+Mortar has been working with the Local Government Association and the Greater London Authority to find scalable solutions to the problems you are experiencing with how to address complex user needs and how to increase the capacity and efficiency of your service and its delivery.
 
-Our framework Hoop’d is one of the outcomes of this work. 
-
-Hoop’d is now at the heart of our efforts to help drive the next generation of intelligent services. The way in which Hoop’d captures, manages and acts upon information and data is essential to ensuring services can build effective datasets, adopt and apply AI, and deliver on the potential of our services to combat exclusion and inaccessibility. 
+Our framework Hoop’d is one of the outcomes of this work.    
 
 Hoop’d: a framework for intelligent services
 ---------------------------------------------------------------------------------------------------------------------------------
 
-Hoop’d is a flexible and modular framework, easy and affordable to customise for enhancing existing services, building service networks, and identifying target users. Our Hoop’d modules offer the tailored design of more accessible user interfaces for navigating information and prioritising methods of self referral and self assessment, improving service user experience, engagement and retention.
+Hoop’d is a flexible and modular framework, making it easier and more affordable for you to design accessible services by bring together your siloed departments, build your local area networks and identify your users. Through customised user interfaces Hoop'd empowers more seamless navigation, self-referral, and self-assessment, enhancing the user experience of your service and helping you to create more engaging and targeted campaigns.
 
-Other user facing modules enhance service communication strategies through delivering multi-modal, non-digital forms of communication, providing information environments capable of reaching people through curated channels such as text, WhatsApp, print and socials. 
-
-These modules enable services to combat different forms of exclusion, such as digital exclusion, as well as forming better pathways for those with literacy and language needs. Applying these user facing modules allows a service to immediately begin capturing and responding to user data, and begins the development of a better, more integrated information management system. 
-
-Enhancing user experience and engagement
----------------------------------------------------------------------------------------------------------------------------------
-
-The greatest potential for increasing service capacity and efficiency is in the technical infrastructure at the heart of Hoop’d. Through its use of micro services Hoop’d delivers tailored web services, algorithms and APIs that offer a range of different methods for capturing, organizing and acting on information. 
+At the core of Hoop’d is a technical infrastructure capable of providing you with the tailored web services, algorithms, and APIs needed to capture, organize, and act on information efficiently. This infrastructure supports your application of intelligence to improve user outcomes across a growing range of service domains, from youth services to adult social care, as well as specialised areas such as housing, financial, and digital inclusion.
+ 
 ![Hackney Circle platform showing upcoming activities and events]({{ '/static/images/use-cases/HackneyCircle02.png' | url }})
-This management of data is what enables our design of more accessible and personalised user journeys and our application of intelligence to improve user outcomes and success. The Hoop’d infrastructure is focused on creating better systems for maintaining up to date information, increasing the trust and confidence that users have in service content, recommendations and requests. Whether that be across youth services, adult social care or in more targeted forms of provision within housing, financial and digital inclusion.
 
-In the case of our tool, Ditto, the Digital Inclusion Triage Tool, developed in partnership with the LGA, we use our global API system to provide local areas with a maintained and accredited directory of national digital inclusion resources, alongside facilitating their own digital inclusion network of service providers and maintaining their own local area directory of resources and interventions.   
+Customised and scalable tools
 
-With the Mayor of London and the GLA the development of these shared national resources extends into the provision of Rent Response, our Tenancy Sustainment Tool, providing information for renters at risk of losing their home; and our Triage and Referral Tool, supporting officers with addressing all the needs of users at the front-door into local area services.
-
-Unleashing the potential of information with Hoop’d
----------------------------------------------------------------------------------------------------------------------------------
-
-With our partners and clients we have created dynamic directories and information environments across multiple use-cases; combating digital exclusion, reducing school exclusions, preventing poverty and sustaining tenancies to name a few. 
-
-In doing so we have been able to begin exploring the effective and responsible application of intelligence. Machine learning and AI has the potential to drive the early and preventative engagement that national and local services need, with the capability of providing personalised information, advice and guidance to every user on a continuous basis. 
+For example our Digital Inclusion Triage Tool developed in collaboration with the LGA, utilises our global API system to provide local areas across the UK with an accredited directory of national digital inclusion resources. This tool can foster a local digital inclusion network as well as ensure it has access to relevant resources and interventions. Similar collaborations with the Mayor of London and the GLA have resulted in our Tenancy Sustainment Tool and our Triage and Referral Tool, addressing the diverse needs of users at different local service levels, always aligned to, complimenting and evolving the quality of the existing 'front-door' for users. 
 
 The Future of Engagement and the transformation of user interfaces
 ---------------------------------------------------------------------------------------------------------------------------------
-As we build Mortar’s framework and expand our application of Hoop’d we are increasing our efficacy for assessing user needs, understanding complex and multiple needs, informing decisions and actions of service providers, calculating risk and promoting early and preventative forms of service intervention. Building the new ways in which intelligence can benefit the long-term affordability and efficiency of our service sector. 
+As we continue to refine the Hoop'd framework and expand its application we are elevating our ability to work with you to assess your user needs, understand your internal systems and requirements, and establish the environment necessary to inform you and your team's decisions and collaborations. Through a Service Design Package we tailor our framework to connect siloed service departments, applying intelligence for the long-term benefit of your organisation.
 
-With dynamic information environments, new datasets and the correct technical infrastructure, the interfaces for our services will be ready to change to adopt new more efficient and personalised behaviours, speech and gestures. The next generation of services will be able not just to respond to our citizens needs, but working alongside them to provide the early engagement and support 
-
+In these dynamic information environments, we can support your services in their evolution into more powerful, personalized relationships, attuned to specific support and access needs. The next generation of your service will need to go beyond addressing your own siloed needs; it should be targeting a more seamless collaboration between your team members and your users to create a holistic, consistent and supportive service environment.
