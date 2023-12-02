@@ -10,7 +10,7 @@ order: 1
 
 Information access and application
 ---------------------------------------------------------------------------------------------------------------------------------
-If you work in service delivery you will be more than aware of the fact that people are struggling to find and access the information they need. At the same time your own service and teams are probably struggling with workloads, unable to apply information and data effectively to reach and engage those most in need of help and support. The result is growing pressure on service delivery, with increasing workloads and escalating costs.
+If you work in service delivery you will be aware that huge amounts of time and resources are spent supporting people in finding and accessing the information they need. At the same time service and team workloads are growing, and many of those most in need of help and support are not being reached and engaged. The result is growing pressure on service delivery, increasing workloads and escalating costs.
 
 Mortar has been working with the Local Government Association and the Greater London Authority to find scalable solutions to the problems you are experiencing, exploring solutions for addressing complex user needs and increasing the capacity and efficiency of services and their delivery.
 
