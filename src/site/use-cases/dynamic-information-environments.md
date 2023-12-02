@@ -37,7 +37,9 @@ At the core of Hoop’d is a technical infrastructure capable of providing you w
 Customised and scalable local area directories
 ---------------------------------------------------------------------------------------------------------------------------------
 
-An example of a scalable solution utilising this framework is our Digital Inclusion Triage Tool developed in collaboration with the LGA. The triage tool utilises our global API system to provide different local areas across the UK with an accredited directory of national digital inclusion resources. This tool can also foster a local digital inclusion network as well as ensure their users have access to relevant resources and interventions. Similar collaborations with the Mayor of London and the GLA have resulted in our Tenancy Sustainment Tool and our Triage and Referral Tool, addressing the diverse needs of users at different local service levels, always aligned to, complimenting and evolving the quality of the existing 'front-door' for users. 
+An example of a scalable solution utilising this framework is our Digital Inclusion Triage Tool developed in collaboration with the LGA. The triage tool utilises our global API system to provide different local areas across the UK with an accredited directory of national digital inclusion resources. This tool can also foster a local digital inclusion network as well as ensure their users have access to relevant resources and interventions. 
+
+Similar collaborations with the Mayor of London and the GLA have resulted in our Tenancy Sustainment Tool and our Triage and Referral Tool, addressing the diverse needs of users at different local service levels, always aligned to, complimenting and evolving the quality of the existing 'front-door' for users. 
 
 The Future of Engagement and the transformation of user interfaces
 ---------------------------------------------------------------------------------------------------------------------------------
