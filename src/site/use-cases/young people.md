@@ -1,5 +1,5 @@
 ---
-title: Data driven decisions and insights
+title: Data driven triage and referral pathways
 pageImage: circle_033.png
 homepageImage: circle_020.png
 description: |-
