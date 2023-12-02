@@ -12,7 +12,7 @@ Information access and application
 ---------------------------------------------------------------------------------------------------------------------------------
 People are struggling more than ever to find and access the information they need. At the same time services are failing to apply information and data effectively to reach and engage those in need of help and support. The result is growing pressure on service delivery, with increasing workloads and escalating costs.
 
-Mortar has been working with the Local Government Association and the Greater London Authority to find scalable solutions to the problems associated with addressing complex user needs and increasing the capacity and efficiency of service delivery. 
+Mortar has been working with the Local Government Association and the Greater London Authority to find scalable solutions to the problems associated with addressing complex user needs; exploring ways to increase the capacity and efficiency of service delivery. 
 
 Our framework Hoop’d is one of the outcomes of this work. 
 
