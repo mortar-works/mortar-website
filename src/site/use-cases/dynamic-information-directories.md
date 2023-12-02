@@ -19,7 +19,7 @@ Our framework **Hoop’d** is one of the outcomes of this work.
 Hoop’d: a framework for intelligent services
 ---------------------------------------------------------------------------------------------------------------------------------
 
-Hoop’d is a flexible and modular framework, making it easier and more affordable to design and deploy accessible services by bringing together siloed departments, building local area networks and identifying users. Through customised user interfaces Hoop'd empowers more seamless directory navigation, with self-referral, and self-assessment tools that enhance user experience to create more engaging and targeted directories and campaigns.
+Hoop’d is a flexible and modular framework, making it easier and more affordable to design and deploy accessible services by bringing together siloed departments, building local area networks and identifying users. Through customised user interfaces Hoop'd empowers more seamless directory navigation. With self-referral and self-assessment modules Hoop'd provides a more efficient and personalised user experience around which more targeted local information and engagement campaigns can be deployed.
 
 At the core of Hoop’d is a technical infrastructure capable of providing you with the tailored **web services, algorithms, and APIs** needed to capture, organize, and serve information efficiently. This infrastructure supports the application of intelligence to improve outcomes for your users across a growing range of service domains, from youth services to adult social care, as well as specialised areas such as housing, financial, and digital inclusion.
 
