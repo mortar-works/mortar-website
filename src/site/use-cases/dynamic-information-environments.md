@@ -26,7 +26,7 @@ At the core of Hoop’d is a technical infrastructure capable of providing you w
  <figure>
   <img src="{{ '/static/images/use-cases/dynamicinfoenvironments_02.png' | url }}" />
   <figcaption>
-    An example user interface for managing geo-spatial event and activity listing information
+    An example user interface for managing geo-spatial activity listings from Hackney Council's engagement platform
   </figcaption>
    <img src="{{ '/static/images/use-cases/dynamicinfoenvironments_01.png' | url }}" />
   <figcaption>
