@@ -23,7 +23,7 @@ Hoop’d is a flexible and modular framework, making it easier and more affordab
 
 At the core of Hoop’d is a technical infrastructure capable of providing you with the tailored web services, algorithms, and APIs needed to capture, organize, and act on information efficiently. This infrastructure supports your application of intelligence to improve user outcomes across a growing range of service domains, from youth services to adult social care, as well as specialised areas such as housing, financial, and digital inclusion.
  
-![Hackney Circle platform showing upcoming activities and events]({{ '/static/images/use-cases/HackneyCircle02.png' | url }})
+![Hackney Circle platform showing upcoming activities and events]({{ '/static/images/use-cases/dynamicinfoenvironments_01.png' | url }})
 
 Customised and scalable tools
 
