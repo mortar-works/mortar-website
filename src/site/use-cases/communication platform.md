@@ -12,11 +12,11 @@ Information access and application
 ---------------------------------------------------------------------------------------------------------------------------------
 People are struggling more than ever to find and access the information they need. At the same time services are failing to apply information and data effectively to reach and engage those in need of help and support. The result is growing pressure on service delivery, with increasing workloads and escalating costs.
 
-Mortar has been working with the Local Government Association and the Greater London Authority to find scalable solutions to the problems associated with addressing complex user needs; exploring ways to increase the capacity and efficiency of service delivery. 
+Mortar has been working with the Local Government Association and the Greater London Authority to find scalable solutions to the problems associated with addressing complex user needs and how people can access the information, advice and guidance they need. At the same time we have been exploring ways to increase the capacity and efficiency of service delivery through the application of information in the development of intelligent systems for supporting service decisions and workload. 
 
 Our framework Hoop’d is one of the outcomes of this work. 
 
-We are building Hoop’d to drive the next generation of intelligent services. The way in which Hoop’d captures, manages and acts upon information and data is essential to ensuring services can build effective datasets, adopt and apply AI, and deliver on the potential of our services to transform inclusion and accessibility. 
+Hoop’d is now at the heart of our efforts to help drive the next generation of intelligent services. The way in which Hoop’d captures, manages and acts upon information and data is essential to ensuring services can build effective datasets, adopt and apply AI, and deliver on the potential of our services to combat exclusion and inaccessibility. 
 
 Hoop’d: a framework for intelligent services
 ---------------------------------------------------------------------------------------------------------------------------------
