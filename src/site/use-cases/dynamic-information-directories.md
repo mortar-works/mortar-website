@@ -1,9 +1,9 @@
 ---
-title: Dynamic information environments
+title: Dynamic information directories
 pageImage: usecase_bg01.jpg
 homepageImage: triage03_223.png
 description: |-
-  In response to services needing up-to-date information Mortar creates and maintains environments that enhance multi-service collaboration and the application of intelligence. Our modular framework, Hoop'd, delivers tailored webservices that acquire, capture and share information; transforming customer engagement and service efficiency.
+  In response to services needing up-to-date information Mortar creates and maintains directories that enhance multi-service collaboration and the application of intelligence. Our modular framework, Hoop'd, delivers tailored webservices that acquire, capture and share information; transforming customer engagement and service efficiency.
  
 order: 1
 ---
@@ -19,9 +19,9 @@ Our framework **Hoop’d** is one of the outcomes of this work.
 Hoop’d: a framework for intelligent services
 ---------------------------------------------------------------------------------------------------------------------------------
 
-Hoop’d is a flexible and modular framework, making it easier and more affordable for you to design accessible services by bringing together siloed departments, building local area networks and identifying users. Through customised user interfaces Hoop'd empowers more seamless navigation, self-referral, and self-assessment, enhancing the user experience of your service and helping you to create more engaging and targeted directories and campaigns.
+Hoop’d is a flexible and modular framework, making it easier and more affordable to design and deploy accessible services by bringing together siloed departments, building local area networks and identifying users. Through customised user interfaces Hoop'd empowers more seamless directory navigation, with self-referral, and self-assessment tools that enhance user experience to create more engaging and targeted directories and campaigns.
 
-At the core of Hoop’d is a technical infrastructure capable of providing you with the tailored **web services, algorithms, and APIs** needed to capture, organize, and act on information efficiently. This infrastructure supports the application of intelligence to improve outcomes for your users across a growing range of service domains, from youth services to adult social care, as well as specialised areas such as housing, financial, and digital inclusion.
+At the core of Hoop’d is a technical infrastructure capable of providing you with the tailored **web services, algorithms, and APIs** needed to capture, organize, and serve information efficiently. This infrastructure supports the application of intelligence to improve outcomes for your users across a growing range of service domains, from youth services to adult social care, as well as specialised areas such as housing, financial, and digital inclusion.
 
  <figure>
   <img src="{{ '/static/images/use-cases/dynamicinfoenvironments_02.png' | url }}" />
@@ -43,6 +43,6 @@ Similar collaborations with the Mayor of London and the GLA have resulted in our
 
 The Future of engagement and the transformation of user interfaces
 ---------------------------------------------------------------------------------------------------------------------------------
-As we continue to expand and refine the Hoop'd framework we are continually enhancing our ability to assess your user needs, integrate with internal systems and requirements, and establish the environment necessary to inform your team's decisions and collaborations. Through our **Service Design Packages** we tailor the Hoop'd framework to connect siloed service departments and apply intelligence for the long-term benefit of your organisation.
+As we continue to expand and refine the Hoop'd framework we are continually enhancing our ability to assess your user needs, integrate with internal systems and requirements, and establish the environments necessary to support your teams. Through our **Service Design Packages** we tailor the Hoop'd framework to connect siloed service departments and apply data and business intelligence for the long-term benefit of your organisation.
 
-With dynamic information environments you can transform your services to deliver more powerful, **personalized relationships** with your users, responding to their specific **support and access needs**. Your service will be in the position to go beyond addressing specific siloed needs to target more seamless collaborations between your team and your users and create a **holistic, consistent and supportive service experience**.
+With dynamic information environments you can transform your directories to deliver more powerful, **personalized relationships** with your users, responding to their specific **support and access needs**. Your service will be in the position to go beyond addressing specific siloed needs to target more seamless collaborations between your team, your local networks and your users to create a **holistic, consistent and supportive service experience**.
