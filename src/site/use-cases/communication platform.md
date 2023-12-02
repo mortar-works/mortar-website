@@ -10,16 +10,16 @@ order: 1
 
 Information access and application
 ---------------------------------------------------------------------------------------------------------------------------------
-People are struggling more than ever to find and access the information they need. At the same time services are failing to apply information and data effectively to reach and engage those in need of help and support. The result is growing pressure on service delivery, with increasing workloads and escalating costs.
+If you work in service delivery you will be more than aware of the fact that people are struggling to find and access the information they need. At the same time your own service and teams are probably struggling with workloads, unable to apply information and data effectively to reach and engage those most in need of help and support. The result is growing pressure on service delivery, with increasing workloads and escalating costs.
 
-Mortar has been working with the Local Government Association and the Greater London Authority to find scalable solutions to the problems you are experiencing with how to address complex user needs and how to increase the capacity and efficiency of your service and its delivery.
+Mortar has been working with the Local Government Association and the Greater London Authority to find scalable solutions to the problems you are experiencing, exploring solutions for addressing complex user needs and increasing the capacity and efficiency of services and their delivery.
 
 Our framework Hoop’d is one of the outcomes of this work.    
 
 Hoop’d: a framework for intelligent services
 ---------------------------------------------------------------------------------------------------------------------------------
 
-Hoop’d is a flexible and modular framework, making it easier and more affordable for you to design accessible services by bring together your siloed departments, build your local area networks and identify your users. Through customised user interfaces Hoop'd empowers more seamless navigation, self-referral, and self-assessment, enhancing the user experience of your service and helping you to create more engaging and targeted campaigns.
+Hoop’d is a flexible and modular framework, making it easier and more affordable for you to design accessible services by bringing together siloed departments, building local area networks and identifying users. Through customised user interfaces Hoop'd empowers more seamless navigation, self-referral, and self-assessment, enhancing the user experience of your service and helping you to create more engaging and targeted campaigns.
 
 At the core of Hoop’d is a technical infrastructure capable of providing you with the tailored web services, algorithms, and APIs needed to capture, organize, and act on information efficiently. This infrastructure supports your application of intelligence to improve user outcomes across a growing range of service domains, from youth services to adult social care, as well as specialised areas such as housing, financial, and digital inclusion.
  
