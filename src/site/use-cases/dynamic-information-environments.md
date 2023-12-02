@@ -26,11 +26,11 @@ At the core of Hoop’d is a technical infrastructure capable of providing you w
  <figure>
   <img src="{{ '/static/images/use-cases/dynamicinfoenvironments_02.png' | url }}" />
   <figcaption>
-    An example user interface for managing geo-spatial activity listings from Hackney Council's engagement platform
+    An example user interface for managing digital inclusion resources and interventions as part of the Digital Inclusion Triage Tool
   </figcaption>
    <img src="{{ '/static/images/use-cases/dynamicinfoenvironments_01.png' | url }}" />
   <figcaption>
-    An example information management screen from Hackney Council's engagement platform
+    One of the main communication pages of the Digital Inclusion Triage Tool inviting users to undertake assessment
   </figcaption>
 </figure>
 
