@@ -3,7 +3,7 @@ title: Dynamic information directories
 pageImage: usecase_bg01.jpg
 homepageImage: triage03_223.png
 description: |-
-  In response to services needing up-to-date information Mortar creates and maintains directories that enhance multi-service collaboration and the application of intelligence. Our modular framework, Hoop'd, delivers tailored webservices that acquire, capture and share information; transforming customer engagement and service efficiency.
+  In response to services needing up-to-date information Mortar can support you in creating and maintaining directories that enhance multi-service collaboration and your application of intelligence. Our modular framework, Hoop'd, delivers tailored webservices enabling you to acquire, capture and share information; transforming customer engagement and service efficiency.
  
 order: 1
 ---
