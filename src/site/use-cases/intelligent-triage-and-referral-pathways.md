@@ -16,11 +16,11 @@ Despite the benefits that 'moving online' and 'becoming digital' bring it requir
 
 Most significantly, the costs associated with the impact of growing exclusion and the continual effort to transform digital systems and architecture has inflated costs inordinately.
 
-Addressing 'front-door' operations
+The path to more intelligent services
 -----------------------------------------------------------------------------------------------------
 With lead partners across local government, housing and health, Mortar has been creating scalable solutions for the service sector to more affordably adopt digital solutions and adapt them to meet their specific needs. Built using our cloud-based data and information framework, our Triage and Referral Tools offer an affordable way to conduct service design, supporting you in transitioning into more cost-efficient methods of service delivery.
 
-We have focused our work on addressing the challenges faced by key 'front-door' operations, creating tools that support the delivery of user triage, assessment and referral. Enhancing the accessibility and quality of user experience at this stage drives the quality of the eventual outcome for your users; it also dictates the capacity of your service and its ability to reach those most at risk and in need of support. It is essential that your users experience an accessible engagement and onboarding process and that their data is captured in an efficient and organised manner. Success at this early stage, with the right architecture for organising your data, paves the way for effectively applying automation and intelligence, and sustainably monitoring its impact. 
+We have focused our work on addressing the challenges faced by key 'front-door' operations, creating tools that support the delivery of user triage, assessment and referral. Enhancing the accessibility and quality of user experience at this stage drives the quality of the eventual outcome for your users; it also dictates the capacity of your service and its ability to reach those most at risk and in need of support. It is essential that your users experience an accessible engagement and onboarding process and that their data is captured in an efficient and organised manner. Success at this early stage, with the right architecture for organising your data, paves the way for effectively applying automation and intelligence, and sustainably monitoring its impact.
 
 Triage and referral in practice
 -----------------------------------------------------------------------------------------------------
