@@ -47,4 +47,6 @@ As we continue to expand and refine the Hoop'd framework we are continually enha
 
 With dynamic information environments you can transform your directories to deliver more powerful, **personalized relationships** with your users, responding to their specific **support and access needs**. We want all services to go beyond addressing specific siloed needs, to target more seamless collaborations between team members, local networks and all service users. Creating a more **holistic, consistent and supportive service experience**.
 
+Talk to us
+---------------------------------------------------------------------------------------------------------------------------------
 If you found this use-case of interest please get in touch. We love having new conversations with people, whatever stage they are at, about how they can improve their services and better reach, engage and communicate with their users.
