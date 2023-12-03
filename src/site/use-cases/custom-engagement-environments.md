@@ -52,3 +52,5 @@ What is next
 Alongside this functionality comes a new data set for digital inclusion and a new method of analysing the reach and engagement of services. This offers exciting new metrics for presenting the impact of the service, but also of digital inclusion as a whole. With our partners we are analysing the incidence rates around recommended and referred services. Combined with user post code data this will offer a completely new way of assessing the reach of the local area service offer in relation to the actual demands of the population. 
 
 If you are interested in transforming your existing local area services with tailored triage tools, or implementing a digital inclusion campaign or initiative, please get in touch to learn more. 
+
+Get in touch for a conversation about developing better environments and solutions to help you reach, engage and communicate with your users.
