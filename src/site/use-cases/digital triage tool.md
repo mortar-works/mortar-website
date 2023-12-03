@@ -3,7 +3,7 @@ title: Custom engagement environments
 pageImage: bell_023.png
 homepageImage: ticks_02.png
 description: |-
-  The use and application of data and intelligence are essential to increase service reach and capacity. Mortar's API and microservices framework enables the redesign and deployment of new services, applying bespoke solutions to support the delivery of your digital transformation, front-door and customer experience needs.    
+  Your place and partnership needs tailored support in the design and delivery of your services and systems. Using our framework we create the solution your local networks, teams and users need. Delivering better front-door and customer service outcomes with customised network, membership, accreditation and training environments.  
  
 order: 2
 ---
