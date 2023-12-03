@@ -3,7 +3,7 @@ title: Intelligent triage and referral pathways
 pageImage: circle_033.png
 homepageImage: circle_020.png
 description: |-
-  For your services to deliver early and preventative forms of engagement your teams and officers need the best data and touchpoints to engage, inform and inspire their users. We co-create more efficient pathways into services with customised triage and referral tools that personalise experiences and support you in monitoring customer risk and success. 
+  For your services to deliver early and preventative forms of engagement your teams and officers need the best data and touchpoints to engage, inform and inspire their users. We co-create more efficient pathways into services with custom triage and referral tools that personalise experiences and support you in monitoring customer risk and success. 
   
 order: 3
 ---
