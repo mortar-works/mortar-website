@@ -8,36 +8,26 @@ description: |-
 order: 3
 ---
 
-Introduction
+Digitalisation and accessibility
 -----------------------------------------------------------------------------------------------------
-Assessing needs in educational environments is highly challenging. The impact the right form of engagement can have at the right time in a young person's life therefore carries with it tremendous long-term value. 
+Service change and transformation is incredibly difficult. 
 
-Our work supporting Social Finance has involved building the knowledge and capacity of educational professionals, giving them access to a tool capable of supporting them in their work, and addressing systemic problems in the identification, assessment and referral methods for young people most at risk of exclusion. 
+Despite the benefits that 'moving online' and 'becoming digital' bring it requires specific and dedicated service design to ensure your service does not inadvertently alienate or exclude segments of its target users. Simply digitalising functions and processes that were previously delivered alongside in-person support has led to many services becoming more inaccessible, increasing the siloed activity of team members and departments as well as overall workload. 
 
-The problem
+Most significantly, the costs associated with the impact of growing exclusion and the continual effort to transform digital systems and architecture has inflated costs inordinately.
+
+Addressing 'front-door' operations
 -----------------------------------------------------------------------------------------------------
-There are two very common problems associated with conducting needs assessments. Firstly it can take a long time to effectively ascertain an individuals needs. Educational proffesionals in particular are time poor. Secondly it is not always clear how and whom to make a referral to. The process of identifying a suitable resource, service or intervention is also a time consuming challenge, perhaps even more so than the original assessment. Interventions might not be known, and if they are methods of referral are often highly varied and again time consuming to pursue.  
+With lead partners across local government, housing and health, Mortar has been creating scalable solutions for the service sector to more affordably adopt digital solutions and adapt them to meet their specific needs. Built using our cloud-based data and information framework, our Triage and Referral Tools offer an affordable way to conduct service design, supporting you in transitioning into more cost-efficient methods of service delivery.
 
-How do we deliver a quick and effective needs assessment of a young person at risk of exclusion? How do we make the process of responding to that assessment easier and more relevant to the needs of the young person in question?
+We have focused our work on addressing the challenges faced by key 'front-door' operations, creating tools that support the delivery of user triage, assessment and referral. Enhancing the accessibility and quality of user experience at this stage drives the quality of the eventual outcome for your users; it also dictates the capacity of your service and its ability to reach those most at risk and in need of support. It is essential that your users experience an accessible engagement and onboarding process and that their data is captured in an efficient and organised manner. Success at this early stage, with the right architecture for organising your data, paves the way for effectively applying automation and intelligence, and sustainably monitoring its impact. 
 
-Our solution
+Triage and referral in practice
 -----------------------------------------------------------------------------------------------------
-A tailored combination of our Triage Tool together with a set of Hoop'd directory management modules were created for Social Finance's Directory of What Works; a triage tool for assessing the needs of young people and referring them to the most appropriate local services. 
+Our tools support your specific needs regardless of the maturity of your organisation or existing digital situation. Our experience delivering scalable solutions with the Local Government Association has seen us working across large rural geographies, such as in Humber and Yorkshire, as well as densely populated urban areas such as in the city of Salford and the inner city borough's of London. As a result of these experiences we built our tools to be easily customisable, enabling us to provide the tailored solution you, your users and your team need.
 
-The Directory of What Works provides teachers with an environment for conducting quick and simple assessments, so as to highlight to them the most appropriate services to refer. The Hoop'd directory provides the teachers with a method of selecting recommended services and referring them easily to young people, their families or carers via printed or emailed information. 
+In Cheshire and Gloucestershire this involves us supporting the identification of young people at risk of exclusion from school, whilst across the UK our triage tool is helping to reach those experiencing digital exclusion in finding appropriate support and resources. We have begun working on tools that target the delivery of support for those at risk of losing their home, and we are working with the Greater London Authority to create better pathways into local area services for those experiencing financial hardship. 
 
-![Screenshot of one of the Directory of What Works' comms pages]({{ '/static/images/use-cases/whatworks01.png' | url }})
-
-How we worked with our partners
+Get in touch
 -----------------------------------------------------------------------------------------------------
-We worked with the Social Finance team to understand the needs and requirements of the educational professionals they were engaged with in Cheshire and Gloucestershire before creating the Scope of Work for the design and implementation of the Directory of What Works. The sensitivities around language concerning the needs of young people at risk of exclusion are high and very nuanced and great care was taken in order to make the triage process quick and simple but also respectful of the challenging nature of the questions being posed. The classifications and standardisations in some of these areas are very fluid so a dynamic and flexible system of categorising and tagging directory resources was required.
-
-The result is a tool that is currently being tested in educational environments in both Cheshire and Gloucestershire to ascertain the impact early identification and early preventative measures can have in positively reducing the incidence of young people being impacted by school exclusion. 
-
-![Screenshot of one of the Directory of What Works' directory pages]({{ '/static/images/use-cases/whatworks02.png' | url }})
-
-What is next
------------------------------------------------------------------------------------------------------
-A new dataset generated by the directory is able to indicate the prevalence of different search and referral criteria being utilised by users of the tool and part of assessing the success of such a tool will be how this data can be meaningfully applied to help support local authorities and their service partners in refining referal pathways and in reaching young people at risk of exclusion.
-
-If you are interested in applying new methods to how you identify and assess members of your community, or want to learn more about the design and implementation of early identification and prevention services then please get in touch.
+If you are interested in applying new methods to how you can provide better access into your service through triage or referral tools, or if you want to learn more about the design and implementation of these types of solutions then please get in touch. We would love to support you in evolving and transforming your services, and working to improve the quality of experience and outcome for your users, and look forward to hearing from you. 
