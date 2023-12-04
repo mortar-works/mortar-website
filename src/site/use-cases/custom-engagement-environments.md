@@ -10,7 +10,7 @@ order: 2
 
 The challenges of communication and change
 ---------------------------------------------------------------------------------------------------------------------------------
-The rapid pace of change puts tremendous stress on services and systems to communicate effectively with their users. Many services rely on specific forms of information, the impact and reach of which can be greatly diminished simply by no longer having accessible pathways, or the right structure for managing communication and responding to user preferences. 
+The rapid pace of change puts tremendous stress on services and systems to communicate effectively with their users. Many services rely on specific forms of information, the impact and reach of which can be greatly diminished simply by no longer having accessible pathways, or the right structure for managing communication and responding to users. 
 
 The connection between how we communicate and the structure of our organisation is incredibly strong. As organisation's change and restructure often services become **disjointed, siloed, and focus is lost** on user experience and outcomes. 
 
