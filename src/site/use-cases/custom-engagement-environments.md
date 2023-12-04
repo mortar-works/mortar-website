@@ -37,7 +37,7 @@ In Cheshire and Gloucestershire we applied a customised version of our **triage 
   <figcaption>
     An example user interface for navigating recommended local area resources as part of Cheshire's Directory of What Works supporting young people at risk of exclusion
   </figcaption>
-   <img src="{{ '/static/images/use-cases/bg-customengagement.png' | url }}" />
+   <img src="{{ '/static/images/use-cases/customenvironment-01.png' | url }}" />
   <figcaption>
     A geospatial listings page for a membership network, supporting the coordination of participation opportunities for older residents in Hackney
   </figcaption>
