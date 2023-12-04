@@ -32,6 +32,16 @@ In the London Borough of Hackney we utilised our **membership and communication 
 
 In Cheshire and Gloucestershire we applied a customised version of our **triage and directory modules** to help teachers assess the needs of young people at risk of exclusion. 
 
+<figure>
+  <img src="{{ '/static/images/use-cases/bg-customengagement-01.png' | url }}" />
+  <figcaption>
+    An example user interface for navigating recommended local area resources as part of Cheshire's Directory of What Works supporting young people at risk of exclusion
+  </figcaption>
+   <img src="{{ '/static/images/use-cases/bg-customengagement.png' | url }}" />
+  <figcaption>
+    A geospatial listings page for a membership network, supporting the coordination of participation opportunities for older residents in Hackney
+  </figcaption>
+</figure>
 
 Reach out for support
 ---------------------------------------------------------------------------------------------------------------------------------
