@@ -24,6 +24,17 @@ We have focused our work on addressing the challenges faced by key **'front-door
 
 It is essential that your users experience an accessible engagement and onboarding process and that their data is captured in an efficient and organised manner. Success at this early stage, with the right architecture for organising your data, paves the way for effectively applying automation and intelligence, and sustainably monitoring its impact.
 
+ <figure>
+  <img src="{{ '/static/images/use-cases/triage-referral_01.png' | url }}" />
+  <figcaption>
+    An example user interface for managing and prioritising cases as part of the Referral Tool
+  </figcaption>
+   <img src="{{ '/static/images/use-cases/triage-referral_02.png' | url }}" />
+  <figcaption>
+    An example triage question as part of the triage tool for capturing user data
+  </figcaption>
+</figure>
+
 Triage and referral in practice
 -----------------------------------------------------------------------------------------------------
 Our tools support your specific needs regardless of the maturity of your organisation or existing digital situation. Our experience delivering scalable solutions with the Local Government Association has seen us working across large rural geographies, such as in Humber and Yorkshire, as well as densely populated urban areas such as in the city of Salford and the inner city borough's of London. 
@@ -34,4 +45,6 @@ In Cheshire and Gloucestershire this involves us supporting the identification o
 
 Get in touch
 -----------------------------------------------------------------------------------------------------
-If you are interested in applying new methods to how you can provide better access into your service through triage or referral tools, or if you want to learn more about the design and implementation of these types of solutions then please get in touch. We would love to support you in evolving and transforming your services, and working to improve the quality of experience and outcome for your users, and look forward to hearing from you. 
+If you are interested in applying new methods to how you can provide better access into your service through triage or referral tools, or if you want to learn more about the design and implementation of these types of solutions then please get in touch. 
+
+We would love to support you in evolving and transforming your services, and working to improve the quality of experience and outcome for your users, and look forward to hearing from you. 
