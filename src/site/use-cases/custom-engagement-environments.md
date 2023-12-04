@@ -1,6 +1,6 @@
 ---
 title: Custom engagement environments
-pageImage: bell_023.png
+pageImage: bg-customengagement.png
 homepageImage: ticks_02.png
 description: |-
   Places and partnerships need tailored support in the design and delivery of their services and systems. Using our framework we can help you create the solution that your local networks, teams and users need. Delivering better 'front-door' and customer service outcomes through custom network, membership, accreditation and training environments.
