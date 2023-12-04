@@ -45,6 +45,6 @@ In Cheshire and Gloucestershire this involves us supporting the identification o
 
 Get in touch
 -----------------------------------------------------------------------------------------------------
-If you are interested in applying new methods to how you can provide better access into your service through triage or referral tools, or if you want to learn more about the design and implementation of these types of solutions then please get in touch. 
+If you are interested in providing better access into your service through triage or referral tools please get in touch. Or, if you want to learn more about the design and implementation of these types of solutions, to reduce workload and create efficiencies within your team, let us know and we'd be happy to have a conversation about the best approach. 
 
 We would love to support you in evolving and transforming your services, and working to improve the quality of experience and outcome for your users, and look forward to hearing from you. 
