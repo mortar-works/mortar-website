@@ -1,9 +1,9 @@
 ---
-title: Dynamic information directories
-pageImage: usecase_bg01.jpg
-homepageImage: triage03_223.png
+title: 'Find Digital Help' in Salford
+pageImage: salford-01.png
+homepageImage: salford-01.png
 description: |-
-  In response to services needing up-to-date information Mortar can support you in creating and maintaining directories that enhance multi-service collaboration and your application of intelligence. Our modular framework, Hoop'd, enables you to acquire, capture and share information; transforming customer engagement and service efficiency.
+  Salford is our lead partner in the development of our Digital Inclusion Triage Tool. The tool is delivering Salford's 'Find Digital Help' service as part of their Digital Everyone campaign. It is enabling them to coordination network and local offer, whilst enabling their front-line service staff to access the needs of their customers and access appropriate local and national inclusion resources. 
  
 order: 1
 ---
