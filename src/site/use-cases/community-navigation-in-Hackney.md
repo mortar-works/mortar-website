@@ -1,5 +1,5 @@
 ---
-title: Community navigation in Hackney
+title: Community navigation for Hackney Circle
 pageImage: hc-01.png
 homepageImage: hc-01.png
 description: |-
