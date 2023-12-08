@@ -1,5 +1,5 @@
 ---
-title: 'Find Digital Help' in Salford
+title: Find Digital Help in Salford
 pageImage: salford-01.png
 homepageImage: salford-01.png
 description: |-
