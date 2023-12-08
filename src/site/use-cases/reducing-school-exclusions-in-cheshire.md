@@ -1,9 +1,9 @@
 ---
-title: Intelligent triage and referral pathways
-pageImage: bg-usecase-02.png
-homepageImage: circle_020.png
+title: Reducing school exclusions in Cheshire 
+pageImage: doww-01.png
+homepageImage: doww-01.png
 description: |-
-  For your services to deliver early and preventative forms of engagement your teams and officers need the best data and touchpoints to engage, inform and inspire their users. We co-create more efficient pathways into services with custom triage and referral tools that personalise experiences and support you in monitoring customer risk and success. 
+  We have delivered a customised version of our triage tool for Cheshire County Council supporting the work of Social Finance. The Directory of What Works is being piloted across schools in the area, supporting teachers in assessing the needs of young people at risk of exclusion and creating better signposting pathways into the most appropriate services.
   
 order: 3
 ---
