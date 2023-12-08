@@ -1,9 +1,9 @@
 ---
-title: Custom engagement environments
-pageImage: bg-customengagement.png
-homepageImage: ticks_02.png
+title: Community navigation in Hackney
+pageImage: hc-01.png
+homepageImage: hc-01.png
 description: |-
-  Places and partnerships need tailored support in the design and delivery of their services and systems. Using our framework we can help you create the solution that your local networks, teams and users need. Delivering better 'front-door' and customer service outcomes through custom network, membership, accreditation and training environments.
+  Our platform Hoop'd is behind the design and delivery of a custom community navigation and social prescribing service in Hackney. Hackney Circle is combatting health inequalities through creative health and wellbeing by reaching isolated older residents through the promotion of participation opportunities from a network of over forty community and cultural organisations. 
  
 order: 2
 ---
