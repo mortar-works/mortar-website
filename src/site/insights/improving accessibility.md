@@ -1,11 +1,15 @@
 ---
-title: Accreditation of cultural venues
-pageImage: dfvc_03.jpg
-homepageImage: dfvc_03.jpg
-description: |-
-  For the Mayor of London’s Dementia Friendly Venues Charter our platform Hoop'd delivers a self-service platform for venues and organisations to achieve accreditation and a secure environment for the Greater London Authority to administrate the charter.
- 
-order: 4
+title: Improving Accessibility
+date: 2023-06-21
+image: dfvc_03_2.jpg
+author: George Unsworth
+draft: false
+tags:
+  - accessibility
+  - accreditation
+  - triage tool
+  - data management
+
 ---
 
 Introduction
@@ -48,3 +52,5 @@ What is next
 The next iterations of the platform will focus on fulfilling the needs of end-users, those with dementia and their carers. We will be designing more accessible venue information, capturing service and programme offers to promote the suitability of venues more accurately to end-users and those in the dementia community; transforming the platform into a valuable audience development resource and improving the accessibility of venues for this important and growing audience. 
 
 If you are interested in accreditation and learning environments for your networks and partnerships, or if you are interested in improving accessibility and accessibility awareness, then please get in touch.
+
+ 

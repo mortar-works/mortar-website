@@ -1,12 +1,17 @@
 ---
-title: Reaching isolated older residents
-pageImage: hc03.jpg
-homepageImage: hc03.jpg
-description: |-
-  Our platform Hoop'd is boosting the capacity of over 40 cuture and health partners in London Borough of Hackney providing communication tools, outreach and community network management; ensuring opportunities are reaching those that need them most. 
- 
-order: 1
+title: Reaching Isolated Residents
+date: 2022-12-18
+image: hc03_2.jpg
+author: George Unsworth
+draft: false
+tags:
+  - exclusion
+  - data capture
+  - verification
+  - custom information
+
 ---
+
 
 Introduction
 ---------------------------------------------------------------------------------------------------------------------------------

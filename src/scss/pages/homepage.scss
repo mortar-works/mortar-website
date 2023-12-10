@@ -21,7 +21,7 @@
     }
 
     @include respond-to('small'){
-      background: linear-gradient(90deg, $mortar-purple 30%, rgba(255,255,255,0)), url('../images/topline-bg/newbg3.png') scroll no-repeat 270px 0;
+      background: linear-gradient(90deg, $mortar-purple 30%, rgba(255,255,255,0)), url('../images/topline-bg/newbg4.png') scroll no-repeat 270px 0;
       background-size: cover;
     }
 
@@ -70,7 +70,7 @@
 
     .section-head {
       h2 {
-        width: 7em;
+        width: 10em;
       }
     }
   }
@@ -92,8 +92,8 @@
           > li {
             border-top: 3px solid $mortar-orange;
             padding: 2.4em;
-            box-shadow: 2px 3px 6px 1px rgba(29,40,40,.3);
             background: #ededed;
+            box-shadow: 2px 3px 6px 1px rgba(29.3,40,40,0.3);
           }
         }
 
@@ -214,9 +214,8 @@
       img {
         max-width: 100%;
         max-height: 100%;
-        border-radius: 5%;
-        box-shadow: 2px 3px 6px 1px rgba(29.3,40,40,0.3);
         margin-left: 20px;
+        box-shadow: 2px 3px 6px 1px rgba(29,40,40,.3);
 
       }
     }
