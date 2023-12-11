@@ -7,8 +7,41 @@ description: |-
  
 order: 1
 ---
-Digital Inclusion Triage Tool
-A tailored instance of the tool for Salford City Council
+<section>
+  <h2>Modules</h2>
+  <table>
+    <thead>
+      <tr>
+<th>Find Digital Help</th>
+        <th>A tailored instance of the Digital Inclusion Triage Tool for Salford City Council</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Global API module</td>
+        <td>National digital inclusion resources</td>
+      </tr>
+      <tr>
+        <td>Local area directory management module</td>
+        <td></td><!-- Add description here if needed -->
+      </tr>
+      <tr>
+        <td>Partner account creation module</td>
+        <td></td><!-- Add description here if needed -->
+      </tr>
+      <tr>
+        <td>Data visualisation module and dashboard</td>
+        <td></td><!-- Add description here if needed -->
+      </tr>
+      <tr>
+        <td>Triage module and custom algorithm</td>
+        <td></td><!-- Add description here if needed -->
+      </tr>
+    </tbody>
+  </table>
+</section>
+
+
 Modules:  Global API module: national digital inclusion resources
           Local area directory management module
           Partner account creation module
