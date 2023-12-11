@@ -7,7 +7,14 @@ description: |-
  
 order: 1
 ---
-
+Digital Inclusion Triage Tool
+A tailored instance of the tool for Salford City Council
+Modules:  Global API module: national digital inclusion resources
+          Local area directory management module
+          Partner account creation module
+          Data visualisation module and dashboard
+          Triage module and custom algorithm
+          
 Information access and application
 ---------------------------------------------------------------------------------------------------------------------------------
 If you work in service delivery you will be aware that huge amounts of time and resources are spent supporting people in finding and accessing the information they need. At the same time service and team workloads are growing, and many of those most in need of help and support are not being reached and engaged. The result is increasing levels of exclusion, growing pressure on service delivery and escalating costs.
