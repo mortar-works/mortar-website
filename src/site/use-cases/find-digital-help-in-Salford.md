@@ -7,35 +7,39 @@ description: |-
  
 order: 1
 ---
+
+Find Digital Help<br>
+A tailored instance of the Digital Inclusion Triage Tool for Salford City Council<br><br>
+
 <section>
   <h2>Modules</h2>
   <table>
     <thead>
       <tr>
-<th>Find Digital Help</th>
-        <th>A tailored instance of the Digital Inclusion Triage Tool for Salford City Council</th>
+<th>Module</th>
+        <th>Description</th>
       </tr>
     </thead>
     <tbody>
       <tr>
         <td>Global API module</td>
-        <td>National digital inclusion resources</td>
+        <td>Provides the user with resources from our national digital inclusion directory as well as from their local area directory</td>
       </tr>
       <tr>
-        <td>Local area directory management module</td>
-        <td></td><!-- Add description here if needed -->
+        <td>Directory management module</td>
+        <td>Enables the administrator and service partners to add and manage their local offer resources and build a local area directory</td>
       </tr>
       <tr>
-        <td>Partner account creation module</td>
-        <td></td><!-- Add description here if needed -->
+        <td>Account creation module</td>
+        <td>Enables the operation and management of a service provider network and gives service providers the ability to create resources on the local area directory </td>
       </tr>
       <tr>
         <td>Data visualisation module and dashboard</td>
-        <td></td><!-- Add description here if needed -->
+        <td>Provides the product owner with access to the tool's dataset and a tailored view of selected subsets</td>
       </tr>
       <tr>
-        <td>Triage module and custom algorithm</td>
-        <td></td><!-- Add description here if needed -->
+        <td>User triage module</td>
+        <td>Assesses the needs of the user and applies our customised digital inclusion algorithm for delivering recommended resources</td>
       </tr>
     </tbody>
   </table>
