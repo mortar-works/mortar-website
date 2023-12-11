@@ -5,3 +5,12 @@ html {
   color: $black;
   background: $white;
 }
+
+ th, td {
+    margin-bottom: 12px; 
+    text-align: left;
+}
+
+  td:first-child {
+    padding-right: 20px;
+}
