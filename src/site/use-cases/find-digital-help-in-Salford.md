@@ -8,8 +8,7 @@ description: |-
 order: 1
 ---
 
-Find Digital Help<br>
-A tailored instance of the Digital Inclusion Triage Tool for Salford City Council
+Find Digital Help is a tailored instance of the Digital Inclusion Triage Tool for Salford City Council. Alongside tailored Comms pages the environment for Salford is comprised of a bespoke combination of product modules including making use of our Global API and national directory of digital inclusion resources alongside the functionality needed to run and expand their digital inclusion network. 
 
 <section>
   <h2>Modules</h2>
