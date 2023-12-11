@@ -51,9 +51,12 @@ Salford City Council are the lead partner in the development and implementation 
 Why does Salford City Council need support?
 ---------------------------------------------------------------------------------------------------------------------------------
 
-Hoop’d is a flexible and modular framework, making it easier and more affordable to design and deploy accessible services by bringing together siloed departments, building local area networks and identifying users. Through customised user interfaces Hoop'd empowers more seamless directory navigation. With self-referral and self-assessment modules Hoop'd provides a more efficient and personalised user experience around which more targeted local information and engagement campaigns can be deployed.
+The pandemic caused a seismic shift in highlighting the nation’s need for access to three main verticals - digital kit, digital connectivity and digital skills. In Salford, a clear target operating model was created, to harness opportunities and deliver a new phase of the city's digital inclusion journey. 
 
-At the core of Hoop’d is a technical infrastructure capable of providing you with the tailored **web services, algorithms, and APIs** needed to capture, organize, and serve information efficiently. This infrastructure supports the application of intelligence to improve outcomes for your users across a growing range of service domains, from youth services to adult social care, as well as specialised areas such as housing, financial, and digital inclusion.
+Salford achieved tremendous results in forging a 'social movement' around digital inclusion, establishing a Digital Providers Network consisting of 79 local organisations, all delivering different resources in response to the city's three main verticals. What was needed however was a way in which to address key design principles essential to combatting the barriers that over 10% of Salford residents were experiencing in relation to their digital inclusion such as poverty, unemployment, and homelessness:
+
+1. the creation of new pathways and partnerships and enhancing human interaction and strengthening relationships
+2. and to maximise the potential of their systems and networks using data and intelligence to ensure the right intervention is delivered at the right time
 
  <figure>
   <img src="{{ '/static/images/use-cases/dynamicinfoenvironments_02.png' | url }}" />
