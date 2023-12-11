@@ -3,11 +3,12 @@ title: Find Digital Help in Salford City Council
 pageImage: salford-01.png
 homepageImage: salford-01.png
 description: |-
-  Salford is our lead partner in the development of our Digital Inclusion Triage Tool. The tool is delivering Salford's 'Find Digital Help' service, enabling them to coordinate their network of service providers, promote their local offer, and access the needs of their customers.
+  Salford is our lead partner in the development of our Digital Inclusion Triage Tool. The tool is delivering Salford's 'Find Digital Help' service, enabling them to deliver the early interventions necessary to achieve the best outcomes for individuals, families and businesses. Read about how we are supporting Salford in adopting a more holistic, place-based approach to digital inclusion, and redefining how local services work together to tackle digital exclusion. 
+  
 order: 1
 
 ---
-'Find Digital Help' is a tailored version of the Digital Inclusion Triage Tool for Salford City Council. Alongside tailored communication pages the environment for Salford is comprised of a bespoke combination of product modules. This provides Salford with functionality needed to run and expand their local digital inclusion network and resources alongside access for users to our Global API and national directory of digital inclusion resources. 
+'Find Digital Help' is a tailored version of the Digital Inclusion Triage Tool for Salford City Council. The tool enforces Salford's committment to creating a better and fairer Salford, helping residents become better off by focusing on early intervention to achieve the right outcomes for individuals, families and businesses. Digital inclusion is central to this strategic aim and makes the 'Find Digital Help' tool a core part in the delivery of their offer to Salford's citizens.  
 
 <section>
   <h2>Modules</h2>
