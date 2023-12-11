@@ -36,14 +36,14 @@
     @include respond-to('large'){
       grid-gap: 4em;
     }
-    
+  }
+
   th, td {
-      margin-bottom: 12px; 
-     text-align: left;
-    }
+    margin-bottom: 12px; 
+    text-align: left;
+  }
 
-     td:first-child {
-      padding-right: 20px;
-    }
-
+  td:first-child {
+    padding-right: 20px;
+  }
 }
