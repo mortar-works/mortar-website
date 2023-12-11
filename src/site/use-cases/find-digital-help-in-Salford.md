@@ -9,7 +9,7 @@ order: 1
 ---
 
 Find Digital Help<br>
-A tailored instance of the Digital Inclusion Triage Tool for Salford City Council<br><br>
+A tailored instance of the Digital Inclusion Triage Tool for Salford City Council
 
 <section>
   <h2>Modules</h2>
