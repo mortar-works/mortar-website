@@ -3,11 +3,19 @@ title: Progress Online for the citizens of East Riding
 pageImage: hc-01.png
 homepageImage: hc-01.png
 description: |-
-  Our platform Hoop'd is behind the design and delivery of a custom community navigation and social prescribing service in Hackney. Hackney Circle is combatting health inequalities through creative health and wellbeing by reaching isolated older residents through the promotion of participation opportunities from a network of over forty community and cultural organisations. 
+   East Riding of Yorkshire and the Humber and Yorkshire Integrated Care Board are using the Digital Inclusion Triage Tool to deliver their digital inclusion campaign Progress Online. The tool enables them to coordination their service provider network and local offer across the region, giving their front-line service staff the ability to assess the needs of their customers and support them in accessing appropriate local and national inclusion resources. 
  
 order: 5
 ---
 
+Digital Inclusion Triage Tool
+A tailored instance of the tool for East Riding of Yorkshire
+Modules:  - Global API module: national digital inclusion resources
+          - Local area directory management module
+          - Partner account creation module
+          - Data visualisation module and dashboard
+          - Triage module and custom algorithm
+          
 The challenges of communication and change
 ---------------------------------------------------------------------------------------------------------------------------------
 The rapid pace of change puts tremendous stress on services and systems to communicate effectively with their users. Many services rely on specific forms of information, the impact and reach of which can be greatly diminished simply by no longer having accessible pathways, or the right structure for managing communication and responding to users. 
