@@ -36,6 +36,13 @@
     @include respond-to('large'){
       grid-gap: 4em;
     }
+    
+  th, td {
+      margin-bottom: 12px; 
+     text-align: left;
+    }
+
+    
   }
 
 }
