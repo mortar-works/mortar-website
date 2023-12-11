@@ -5,9 +5,9 @@ homepageImage: salford-01.png
 description: |-
   Salford is our lead partner in the development of our Digital Inclusion Triage Tool. The tool is delivering Salford's 'Find Digital Help' service, enabling them to coordinate their network of service providers, promote their local offer, and access the needs of their customers.
 order: 1
----
 
-Find Digital Help is a tailored instance of the Digital Inclusion Triage Tool for Salford City Council. Alongside tailored communication pages the environment for Salford is comprised of a bespoke combination of product modules. This provides Salford with functionality needed to run and expand their local digital inclusion network and resources alongside access for users to our Global API and national directory of digital inclusion resources. 
+---
+'Find Digital Help' is a tailored version of the Digital Inclusion Triage Tool for Salford City Council. Alongside tailored communication pages the environment for Salford is comprised of a bespoke combination of product modules. This provides Salford with functionality needed to run and expand their local digital inclusion network and resources alongside access for users to our Global API and national directory of digital inclusion resources. 
 
 <section>
   <h2>Modules</h2>
@@ -45,11 +45,9 @@ Find Digital Help is a tailored instance of the Digital Inclusion Triage Tool fo
           
 Leading digital inclusion partnerships
 ---------------------------------------------------------------------------------------------------------------------------------
-Our Digital Inclusion Triage Tool is a Local Government Association backed product and Salford City Council are our lead partner in its development and implementation. Together with a network of Associate Partners Salford are supporting the development of the tool's framework for supplying customised local area digital inclusion networks, alongside a triage component for helping front-line staff assess user needs and the growth of a national directory of accredited digital inclusion resources. 
+Salford City Council are the lead partner in the development and implementation of our Digital Inclusion Triage Tool. A Local Government Association backed product for creating customised digital inclusion programmes and networks. The tool offers a custom environment for assessing the needs of users and signposting them to recommended pathways and services for support. 
 
-Our framework **Hoop’d** is one of the outcomes of this work.    
-
-Hoop’d: a framework for intelligent services
+Why does Salford City Council need support?
 ---------------------------------------------------------------------------------------------------------------------------------
 
 Hoop’d is a flexible and modular framework, making it easier and more affordable to design and deploy accessible services by bringing together siloed departments, building local area networks and identifying users. Through customised user interfaces Hoop'd empowers more seamless directory navigation. With self-referral and self-assessment modules Hoop'd provides a more efficient and personalised user experience around which more targeted local information and engagement campaigns can be deployed.
