@@ -43,11 +43,9 @@ Find Digital Help is a tailored instance of the Digital Inclusion Triage Tool fo
   </table>
 </section>
           
-Information access and application
+Leading digital inclusion partnerships
 ---------------------------------------------------------------------------------------------------------------------------------
-If you work in service delivery you will be aware that huge amounts of time and resources are spent supporting people in finding and accessing the information they need. At the same time service and team workloads are growing, and many of those most in need of help and support are not being reached and engaged. The result is increasing levels of exclusion, growing pressure on service delivery and escalating costs.
-
-Mortar has been working with the **Local Government Association** (LGA) and the **Greater London Authority** (GLA) to find scalable solutions to these challenges, exploring ways in which we can help address complex user needs and increase the capacity and efficiency of services and their delivery.
+Our Digital Inclusion Triage Tool is a Local Government Association backed product and Salford City Council are our lead partner in its development and implementation. Together with a network of Associate Partners Salford are supporting the development of the tool's framework for supplying customised local area digital inclusion networks, alongside a triage component for helping front-line staff assess user needs and the growth of a national directory of accredited digital inclusion resources. 
 
 Our framework **Hoop’d** is one of the outcomes of this work.    
 
