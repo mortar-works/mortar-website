@@ -8,7 +8,7 @@ description: |-
 order: 1
 
 ---
-'Find Digital Help' is a tailored version of the Digital Inclusion Triage Tool for Salford City Council. The tool enforces Salford's committment to creating a better and fairer Salford, helping residents become better off by focusing on early intervention to achieve the right outcomes for individuals, families and businesses. Digital inclusion is central to this strategic aim and makes the 'Find Digital Help' tool a core part in the delivery of their offer to Salford's citizens.  
+'Find Digital Help' is a tailored version of the Digital Inclusion Triage Tool for Salford City Council. The tool enforces Salford's committment to creating a better and fairer Salford, helping residents become better off by focusing on early intervention to achieve the right outcomes for individuals, families and businesses. Digital inclusion is central to this strategic aim and makes 'Find Digital Help' a core element in the delivery of their offer to Salford's citizens.  
 
 <section>
   <h2>Modules</h2>
