@@ -8,7 +8,7 @@ description: |-
 order: 2
 ---
 
-In Hackney 42% of residents aged over 65 are living alone and are at risk of deteriorating health and wellbeing from social isolation. Our Circle Community Navigation Platform is delivering Hackney Circle, supporting a network of over 40 local community and cultural organisations in the promotion of their participation and engagement opportunities. Together with public health and the community navigation team, and the libraries housebound service, we are working to ensure that older residents living alone are identified and supported with appropriate early interventions.  
+Together with Hackney Council's culture and public health team, the community navigation team, and the libraries housebound service our Community Navigation Platform is working to ensure that the 42% of older residents living alone in Hackney are better identified and supported with appropriate early interventions.   
 
 <section>
   <h2>Modules</h2>
@@ -21,24 +21,28 @@ In Hackney 42% of residents aged over 65 are living alone and are at risk of det
     </thead>
     <tbody>
       <tr>
-        <td>Global API module</td>
-        <td>Provides the user with resources from our national digital inclusion directory as well as from their local area directory</td>
+        <td>Geospatial listing and mapping module</td>
+        <td>A dynamic map based interface for representing local directory, event and listing resources.</td>
       </tr>
       <tr>
         <td>Directory management module</td>
-        <td>Enables the administrator and service partners to add and manage their local offer resources and build a local area directory</td>
+        <td>Enables administrators and service partners to add and manage their local offer resources and build a local area directory</td>
+      </tr>
+       <tr>
+        <td>Accessible service cards module</td>
+        <td>Part of a suite of accessibility modules creating uniform, sharable and printable content for communication channels.</td>
+      </tr>
+      <tr>
+        <td>Events and recurring events listings module</td>
+        <td>Enables service partners to create and promote resources that have specific durations and recurring dates of delivery.</td>
       </tr>
       <tr>
         <td>Account creation module</td>
         <td>Enables the operation and management of a service provider network and gives service providers the ability to create resources on the local area directory </td>
       </tr>
       <tr>
-        <td>Data visualisation module and dashboard</td>
-        <td>Provides the product owner with access to the tool's dataset and a tailored view of selected subsets</td>
-      </tr>
-      <tr>
-        <td>User triage module</td>
-        <td>Assesses the needs of the user and applies our customised digital inclusion algorithm for delivering recommended resources</td>
+        <td>Community management module</td>
+        <td>A suite of modules for accessibly onboarding users, including capturing communication preferences and managing engagement.</td>
       </tr>
     </tbody>
   </table>
