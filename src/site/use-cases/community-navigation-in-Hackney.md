@@ -21,11 +21,11 @@ Our Community Navigation Platform enables Hackney Council's culture and public h
     </thead>
     <tbody>
       <tr>
-        <td>Geospatial mapping module</td>
+        <td>Geospatial mapping</td>
         <td>A dynamic map for representing local directory, event and listing resources</td>
       </tr>
       <tr>
-        <td>Directory management module</td>
+        <td>Directory management</td>
         <td>Enables administrators and service providers to add and manage resources and participation opportunities</td>
       </tr>
        <tr>
@@ -37,7 +37,7 @@ Our Community Navigation Platform enables Hackney Council's culture and public h
         <td>Enables service partners to create and manage resources that have specific durations and recurring dates of delivery</td>
       </tr>
       <tr>
-        <td>Account creation and accreditation module</td>
+        <td>Account creation and accreditation</td>
         <td>Allows service providers to create verified and accredited accounts for publishing resources</td>
       </tr>
       <tr>
