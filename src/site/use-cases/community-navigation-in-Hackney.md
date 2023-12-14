@@ -8,7 +8,7 @@ description: |-
 order: 2
 ---
 
-Together with Hackney Council's culture and public health team our Community Navigation Platform is working to ensure that older residents, and in particular those living alone, are reached with better engagement, more accessible information and more effective early interventions.   
+Our Community Navigation Platform enables Hackney Council's culture and public health team to work together to reach and connect with older residents, in particular those living alone. Residents are engaged with tailored community and cultural sector touchpoints, and consistent information in accessible formats; all monitored and powered by our circle platform to drive more effective early interventions.   
 
 <section>
   <h2>Modules</h2>
