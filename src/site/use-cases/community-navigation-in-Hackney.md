@@ -21,28 +21,28 @@ Together with Hackney Council's culture and public health team our Community Nav
     </thead>
     <tbody>
       <tr>
-        <td>Geospatial listing and mapping module</td>
-        <td>A dynamic map based interface for representing local directory, event and listing resources.</td>
+        <td>Geospatial mapping module</td>
+        <td>A dynamic map for representing local directory, event and listing resources</td>
       </tr>
       <tr>
         <td>Directory management module</td>
-        <td>Enables administrators and service partners to add and manage their local offer resources and build a local area directory</td>
+        <td>Enables administrators and service providers to add and manage resources and participation opportunities</td>
       </tr>
        <tr>
-        <td>Accessible service cards module</td>
-        <td>Part of a suite of accessibility modules creating uniform, sharable and printable content for communication channels.</td>
+        <td>Service cards</td>
+        <td>Part of a suite of accessibility modules creating uniform, sharable and printable content for communication channels</td>
       </tr>
       <tr>
-        <td>Events and recurring events listings module</td>
-        <td>Enables service partners to create and promote resources that have specific durations and recurring dates of delivery.</td>
+        <td>Event listings</td>
+        <td>Enables service partners to create and manage resources that have specific durations and recurring dates of delivery</td>
       </tr>
       <tr>
-        <td>Account creation module</td>
-        <td>Enables the operation and management of a service provider network and gives service providers the ability to create resources on the local area directory </td>
+        <td>Account creation and accreditation module</td>
+        <td>Allows service providers to create verified and accredited accounts for publishing resources</td>
       </tr>
       <tr>
-        <td>Community management module</td>
-        <td>A suite of modules for accessibly onboarding users, including capturing communication preferences and managing engagement.</td>
+        <td>Community management</td>
+        <td>A suite of modules for onboarding users, capturing communication preferences and managing engagement</td>
       </tr>
     </tbody>
   </table>
