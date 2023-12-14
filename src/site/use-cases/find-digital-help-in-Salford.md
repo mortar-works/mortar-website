@@ -21,23 +21,23 @@ order: 1
     </thead>
     <tbody>
       <tr>
-        <td>Global API module</td>
+        <td>Global API</td>
         <td>Provides the user with resources from our national digital inclusion directory as well as from their local area directory</td>
       </tr>
       <tr>
-        <td>Directory management module</td>
+        <td>Directory management</td>
         <td>Enables the administrator and service partners to add and manage their local offer resources and build a local area directory</td>
       </tr>
       <tr>
-        <td>Account creation module</td>
+        <td>Account creation</td>
         <td>Enables the operation and management of a service provider network and gives service providers the ability to create resources on the local area directory </td>
       </tr>
       <tr>
-        <td>Data visualisation module and dashboard</td>
+        <td>Data visualisation</td>
         <td>Provides the product owner with access to the tool's dataset and a tailored view of selected subsets</td>
       </tr>
       <tr>
-        <td>User triage module</td>
+        <td>User triage</td>
         <td>Assesses the needs of the user and applies our customised digital inclusion algorithm for delivering recommended resources</td>
       </tr>
     </tbody>
