@@ -3,7 +3,7 @@ title: Tenancy sustainment tool for the Mayor of London
 pageImage: hc-01.png
 homepageImage: hc-01.png
 description: |-
-  Our Tenancy Sustainment Tool has been developed with the Greater London Authority to support those most at risk of losing their home. The case management platform captures user data and supports officers in assessing needs, prioritising cases and creating more efficient pathways for referral.  
+  Our Tenancy Sustainment Tool, developed with the Greater London Authority, supports those most at risk of losing their home. The case management platform captures user data and supports officers in assessing needs, prioritising cases and creating more efficient pathways for referral.  
  
 order: 6
 ---
