@@ -3,7 +3,7 @@ title: Progress Online for the citizens of East Riding
 pageImage: hc-01.png
 homepageImage: hc-01.png
 description: |-
-   East Riding of Yorkshire and the Humber and Yorkshire Integrated Care Board are using the Digital Inclusion Triage Tool to deliver their digital inclusion campaign Progress Online. The tool enables them to coordination their service provider network and local offer across the region, giving their front-line service staff the ability to assess the needs of their customers and support them in accessing appropriate local and national inclusion resources. 
+   Progress Online is the digital inclusion initiative for Humber and Yorkshire. Using a customised version of our Digital Inclusion Triage Tool 168 Town & Parish Councils are building service provider networks, assessing the needs of residents and referring them to appropriate digital inclusion resources. 
  
 order: 5
 ---
