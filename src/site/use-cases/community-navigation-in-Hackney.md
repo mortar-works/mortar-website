@@ -8,7 +8,7 @@ description: |-
 order: 2
 ---
 
-Together with Hackney Council's culture and public health team, the community navigation team, and the libraries housebound service our Community Navigation Platform is working to ensure that the 42% of older residents living alone in Hackney are better identified and supported with appropriate early interventions.   
+Together with Hackney Council's culture and public health team our Community Navigation Platform is working to ensure that older residents, and in particular those living alone, are reached with better engagement, more accessible information and more effective early interventions.   
 
 <section>
   <h2>Modules</h2>
