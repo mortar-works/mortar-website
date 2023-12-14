@@ -1,6 +1,6 @@
 ---
 title: Circle Community Navigation in Hackney
-pageImage: hc-01.png
+pageImage: hc-01bg.png
 homepageImage: hc-01.png
 description: |-
   Our Circle Community Navigation Platform delivers a custom social prescribing service in Hackney. Hackney Circle combats health inequality through creative health and wellbeing interventions, reaching isolated older residents with participation opportunities. 
