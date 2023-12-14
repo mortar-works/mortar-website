@@ -51,7 +51,7 @@ Salford City Council are the lead partner in the development and implementation 
 Why does Salford City Council need support?
 ---------------------------------------------------------------------------------------------------------------------------------
 
-The pandemic caused a seismic shift in highlighting the nation’s need for digital devices, digital connectivity and digital skills. In Salford, a clear target operating model achieved tremendous results in forging a 'social movement' around digital inclusion, establishing a Digital Providers Network consisting of 79 local organisations, all delivering different resources in response to the city's needs. However, what was needed however was a way in which to address the key design principles essential to combatting the barriers that digitally excluded residents were experiencing such as poverty, unemployment, and homelessness. These design principles include:
+The pandemic caused a seismic shift in highlighting the nation’s need for digital devices, digital connectivity and digital skills. In Salford, a clear target operating model achieved tremendous results in forging a 'social movement' around digital inclusion, establishing a Digital Providers Network consisting of 79 local organisations, all delivering different resources in response to the city's needs. However, what was needed was a way in which to address the key design principles essential to combatting the barriers that digitally excluded residents were experiencing such as poverty, unemployment, and homelessness. These design principles include:
 
 1. The creation of new pathways and partnerships to enhance human interaction and strengthen relationships
 2. The use of data and intelligence to maximise the potential of systems and networks to deliver the right intervention at the right time
@@ -67,19 +67,19 @@ The pandemic caused a seismic shift in highlighting the nation’s need for digi
   </figcaption>
 </figure>
 
-Customised and scalable local area directories
+Creating and maintaining local area directories
 ---------------------------------------------------------------------------------------------------------------------------------
 
-An example of a scalable solution utilising this framework is our Digital Inclusion Triage Tool developed in collaboration with the LGA. The triage tool utilises our **global API system** to provide different local areas across the UK with an accredited directory of national digital inclusion resources. The tool also fosters a local digital inclusion network as well as ensures their users have access to relevant resources and interventions. 
+Find Digital Help, as part of our Digital Inclusion Triage Tool, utilises our **global API system** to provide national, accredited resources alongside Salford's own local area directory. The combination of different types of resources alleviates pressure on the development of local area directories, with a variety of pathways for supporting digital inclusion already present and effective before local area resources are even added. This is enabling us to support the development of digital inclusion service provider networks in Salford but also across all our associate partners. 
 
-Similar collaborations with the Mayor of London and the GLA have resulted in our **Tenancy Sustainment Tool** and our **Triage and Referral Tool**, addressing the diverse needs of users at different local service levels, always customised to compliment and evolve the quality of the existing 'front-door' for users. 
+For managing Salford's local area directory our framework offers a range of tools and automations to support network engagement, resource management and updates, consistently monitoring and maintaining the health of the directory overall. As a webservice the tool offers Salford access to transformative technology for sharing information and resources across departments, saving time and effort in the management of local area information. 
 
-The Future of engagement and the transformation of user interfaces
+Monitoring the impact
 ---------------------------------------------------------------------------------------------------------------------------------
-As we continue to expand and refine the Hoop'd framework we are continually enhancing our ability to assess your user needs, integrate with internal systems and requirements, and establish the environments necessary to support your teams. Through our **Service Design Packages** we tailor the Hoop'd framework to connect siloed service departments and apply data and business intelligence for the long-term benefit of your organisation.
+Already Find Digital Help has reduced front-line service pressure and workload in supporting the 10% of Salford's population that lack the essential digital skills needed to access services. The time savings using the tool amount to over 26 hours a week with a cost saving of over £19k per locality. In addition the tool is reducing staff stress levels by 40% and increasing confidence in signposting and referral by 22%.
 
-With dynamic information environments you can transform your directories to deliver more powerful, **personalized relationships** with your users, responding to their specific **support and access needs**. We want all services to go beyond addressing specific siloed needs, to target more seamless collaborations between team members, local networks and all service users. Creating a more **holistic, consistent and supportive service experience**.
+As we continue to monitor the impact of the tool in reaching excluded residents and improving digital skills we will also assess the value of the tool's dataset and explore ways in which it can complement and enrich Salford's use of the Digital Exclusion Risk Index (DERI) to better target digital inclusion interventions and make stronger business cases for local area investment into digital devices, connectivity and digital skills.  
 
 Talk to us
 ---------------------------------------------------------------------------------------------------------------------------------
-If you found this use-case of interest please get in touch. We love having new conversations with people, whatever stage they are at, about how they can improve their services and better reach, engage and communicate with their users.
+If you found this use-case of interest please get in touch. We love exploring new implementations of our Digital Inclusion Triage Tool. Whatever stage you are at in exploring digital inclusion please get in touch to see how we could help to improve your initiatives, networks, services and systems. 
