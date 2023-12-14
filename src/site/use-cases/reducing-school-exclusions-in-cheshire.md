@@ -3,7 +3,7 @@ title: Reducing school exclusions in Cheshire
 pageImage: doww-01.png
 homepageImage: doww-01.png
 description: |-
-  A customised version of our Triage Tool for Cheshire County Council supporting the work of Social Finance. The Directory of What Works supports teachers in assessing the needs of young people at risk of exclusion, creating better pathways into the most appropriate services.
+  A customised version of our Triage Tool for Cheshire County Council and Social Finance. The Directory of What Works supports teachers in assessing the needs of young people at risk of exclusion, creating better pathways into the most appropriate services.
   
 order: 3
 ---
