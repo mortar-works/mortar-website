@@ -80,6 +80,6 @@ Find Digital Help has reduced front-line service pressure and workload in suppor
 
 As we continue to monitor the impact of the tool in reaching excluded residents and improving digital skills we will also assess the value of the tool's dataset and explore ways in which it can complement and enrich Salford's use of the Digital Exclusion Risk Index (DERI) to better target digital inclusion interventions and make stronger business cases for local area investment into digital devices, connectivity and digital skills.  
 
-Talk to us
+Interested in digital inclusion initiatives?
 ---------------------------------------------------------------------------------------------------------------------------------
 If you found this use-case of interest please get in touch. We love exploring new implementations of our Digital Inclusion Triage Tool. Whatever stage you are at in exploring digital inclusion please get in touch to see how we could help to improve your initiatives, networks, services and systems. 
