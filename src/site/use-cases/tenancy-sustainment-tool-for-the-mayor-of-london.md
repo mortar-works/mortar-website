@@ -1,9 +1,9 @@
 ---
-title: Tenancy sustainment tool for the mayor of London
+title: Tenancy sustainment tool for the Mayor of London
 pageImage: hc-01.png
 homepageImage: hc-01.png
 description: |-
-  Our platform Hoop'd is behind the design and delivery of a custom community navigation and social prescribing service in Hackney. Hackney Circle is combatting health inequalities through creative health and wellbeing by reaching isolated older residents through the promotion of participation opportunities from a network of over forty community and cultural organisations. 
+  Our Tenancy Sustainment Tool has been developed with the Greater London Authority to support those most at risk of losing their home. The case management platform captures user data and supports officers in assessing needs, prioritising cases and creating more efficient pathways for referral.  
  
 order: 6
 ---
