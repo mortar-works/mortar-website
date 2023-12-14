@@ -1,5 +1,5 @@
 ---
-title: Progress Online for the citizens of East Riding
+title: Progress Online for Humber and Yorkshire
 pageImage: hc-01.png
 homepageImage: hc-01.png
 description: |-
