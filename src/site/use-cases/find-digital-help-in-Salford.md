@@ -8,7 +8,7 @@ description: |-
 order: 1
 
 ---
-'Find Digital Help' is a tailored version of the Digital Inclusion Triage Tool for Salford City Council. The tool enforces Salford's committment to creating a better and fairer Salford, helping residents become better off by focusing on early intervention to achieve the right outcomes for individuals, families and businesses. Digital inclusion is central to this strategic aim and makes 'Find Digital Help' a core element in the delivery of their offer to Salford's citizens.  
+'Find Digital Help' is a tailored version of our **Digital Inclusion Triage Tool** for Salford City Council. The tool enforces Salford's committment to creating a better and fairer Salford, helping residents become better off by focusing on early intervention to achieve the right outcomes for individuals, families and businesses. Digital inclusion is central to this strategic aim and makes 'Find Digital Help' a core element in the delivery of their offer to Salford's citizens.  
 
 <section>
   <h2>Modules</h2>
@@ -51,12 +51,10 @@ Salford City Council are the lead partner in the development and implementation 
 Why does Salford City Council need support?
 ---------------------------------------------------------------------------------------------------------------------------------
 
-The pandemic caused a seismic shift in highlighting the nation’s need for access to three main verticals - digital kit, digital connectivity and digital skills. In Salford, a clear target operating model was created, to harness opportunities and deliver a new phase of the city's digital inclusion journey. 
+The pandemic caused a seismic shift in highlighting the nation’s need for digital devices, digital connectivity and digital skills. In Salford, a clear target operating model achieved tremendous results in forging a 'social movement' around digital inclusion, establishing a Digital Providers Network consisting of 79 local organisations, all delivering different resources in response to the city's needs. However, what was needed however was a way in which to address the key design principles essential to combatting the barriers that digitally excluded residents were experiencing such as poverty, unemployment, and homelessness. These design principles include:
 
-Salford achieved tremendous results in forging a 'social movement' around digital inclusion, establishing a Digital Providers Network consisting of 79 local organisations, all delivering different resources in response to the city's three main verticals. What was needed however was a way in which to address key design principles essential to combatting the barriers that over 10% of Salford residents were experiencing in relation to their digital inclusion such as poverty, unemployment, and homelessness:
-
-1. the creation of new pathways and partnerships and enhancing human interaction and strengthening relationships
-2. and to maximise the potential of their systems and networks using data and intelligence to ensure the right intervention is delivered at the right time
+1. The creation of new pathways and partnerships to enhance human interaction and strengthen relationships
+2. The use of data and intelligence to maximise the potential of systems and networks to deliver the right intervention at the right time
 
  <figure>
   <img src="{{ '/static/images/use-cases/dynamicinfoenvironments_02.png' | url }}" />
