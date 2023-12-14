@@ -22,7 +22,7 @@ Our Community Navigation Platform enables Hackney Council's culture and public h
     <tbody>
       <tr>
         <td>Geospatial mapping</td>
-        <td>A dynamic map for representing local directory, event and listing resources</td>
+        <td>A dynamic map presenting live listings, events and resources</td>
       </tr>
       <tr>
         <td>Directory management</td>
