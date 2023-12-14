@@ -3,7 +3,7 @@ title: Dementia friendly venue accreditation for London
 pageImage: hc-01.png
 homepageImage: hc-01.png
 description: |-
-  Our platform Hoop'd is behind the design and delivery of a custom community navigation and social prescribing service in Hackney. Hackney Circle is combatting health inequalities through creative health and wellbeing by reaching isolated older residents through the promotion of participation opportunities from a network of over forty community and cultural organisations. 
+  Our framework Hoop'd is perfect for delivering bespoke, accessible accreditation and training environments. This platform for Alzheimers UK and the Greater London Authority makes the process of learning, training and becoming dementia friendly available to all venues across London.  
  
 order: 4
 ---
