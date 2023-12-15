@@ -8,76 +8,71 @@ description: |-
 order: 5
 ---
 
+Our Community Navigation Platform enables Hackney Council's culture and public health team to work together to reach and connect with older residents, in particular those living alone. Residents are engaged with tailored community and cultural sector touchpoints, and consistent information in accessible formats; all monitored and powered by our Hoop'd platform to drive more effective early interventions.   
+
 <section>
   <h2>Modules</h2>
   <table>
     <thead>
       <tr>
-        <th>Module Name</th>
+<th>Module</th>
         <th>Description</th>
       </tr>
     </thead>
     <tbody>
       <tr>
-        <td>Global API module</td>
-        <td>National digital inclusion resources</td>
+        <td>Geospatial mapping</td>
+        <td>A dynamic map presenting live listings, events and resources</td>
       </tr>
       <tr>
-        <td>Local area directory management module</td>
-        <td></td><!-- Add description here if needed -->
+        <td>Directory management</td>
+        <td>Enables administrators and service providers to add and manage resources and participation opportunities</td>
+      </tr>
+       <tr>
+        <td>Service cards</td>
+        <td>Part of a suite of accessibility modules creating uniform, sharable and printable content for communication channels</td>
       </tr>
       <tr>
-        <td>Partner account creation module</td>
-        <td></td><!-- Add description here if needed -->
+        <td>Event listings</td>
+        <td>Enables service partners to create and manage resources that have specific durations and recurring dates of delivery</td>
       </tr>
       <tr>
-        <td>Data visualisation module and dashboard</td>
-        <td></td><!-- Add description here if needed -->
+        <td>Account creation and accreditation</td>
+        <td>Allows service providers to create verified and accredited accounts for publishing resources</td>
       </tr>
       <tr>
-        <td>Triage module and custom algorithm</td>
-        <td></td><!-- Add description here if needed -->
+        <td>Community management</td>
+        <td>A suite of modules for onboarding users, capturing communication preferences and managing engagement</td>
       </tr>
     </tbody>
   </table>
 </section>
 
-Digital Inclusion Triage Tool
-A tailored instance of the tool for East Riding of Yorkshire
-Modules:  - Global API module: national digital inclusion resources
-          - Local area directory management module
-          - Partner account creation module
-          - Data visualisation module and dashboard
-          - Triage module and custom algorithm
-          
-The challenges of communication and change
+Tailored preventative and early engagement services
 ---------------------------------------------------------------------------------------------------------------------------------
-The rapid pace of change puts tremendous stress on services and systems to communicate effectively with their users. Many services rely on specific forms of information, the impact and reach of which can be greatly diminished simply by no longer having accessible pathways, or the right structure for managing communication and responding to users. 
+Hackney Circle is a specially designed service for reaching isolated older residents in the borough. It is designed around a free membership programme for older residents, supporting them in staying active, and becoming connected to the borough’s community and cultural offer. 
 
-The connection between how you communicate and the structure of your organisation is incredibly strong. As organisation's change and restructure often services become **disjointed, siloed, and focus is lost** on user experience and outcomes. 
+Hackney Circle uses our community navigation platform Hoop’d to manage a network of over 40 cultural partners, promoting current participation opportunities to older residents. As part of the service Hoop’d delivers a set of tools to make engagement easier and more accessible for older residents. This includes managing users, communications, bookings and feedback for all associated partners, including public health link workers and the community navigation team. 
 
-If this sounds familiar, you are not alone. 
+Hackney Circle increases the capacity of community and cultural collaboration in the prevention and reduction of health inequality. It’s aims are to: 
 
-We have encountered this scenario countless times and we have been building Mortar's framework to help support you and your team to cut through the noise and challenges to deliver the targeted and focused service your users need. 
+- Deliver a social prescribing pathway for the community and cultural sector 
+- Reduce loneliness and isolation in the older community
+- Target the engagement of excluded older residents living alone
 
-Our cloud-based and modular framework enables you to flexibly adopt the technology and design you need, whilst our expertise and experience can guide you in the Service Design Package necessary to ensure effective transition and integration within your organisation.
+In Hackney this has involved strategic partnerships with the libraries, lunch clubs and leisure centers. Our outcomes include a programme focused on supporting an integrated library housebound service, and providing assets to support more targeted outreach work with the resident participation team. 
 
-The building blocks of successful services
+
+The impact of effective community navigation
 ---------------------------------------------------------------------------------------------------------------------------------
-The right service environment can bring your users together in powerful ways, to create the network effects and the sharing of information needed to pursue meaningful and impactful change. 
+Hoop’d has established the evidence base for monitoring the effectiveness of the community and cultural sector in reducing and preventing health inequalities. Based on delivering 400 referrals a year for those experiencing moderate to severe loneliness resulting in social activity for the first time **the annual savings for the local authority associated with wellbeing, health and work productivity is £3.83m**.
 
-Using our modular framework we have created many different environments for connecting people and places. Our modules act as the building blocks upon which your service can begin to adopt the technology needed to increase capacity and reach more users.
-
-For the Mayor of London we redesigned their Dementia Friendly Venues Charter, utilising our **accreditation and training modules** to make it easier and more convenient for venues across the capital to access the information and guidance they needed to become an accredited organisation. 
-
-In the London Borough of Hackney we utilised our **membership and communication modules** to deliver an accessible engagement campaign for older residents, and a platform for managing a network of 40 community and cultural organisations. 
-
-In Cheshire and Gloucestershire we applied a customised version of our **triage and directory modules** to help teachers assess the needs of young people at risk of exclusion. 
+This represents a **3,093% Return on Investment** (ROI) so that for every £1 invested the model generates a return of £30.97 in terms of the reduction in health related costs associated with loneliness alone. The benefit from improved physical activity will also be measured by the service adding further ROI in the prevention of non-communicable disease and the long-term debilitative impact of complex health-related needs. 
 
 <figure>
-  <img src="{{ '/static/images/use-cases/bg-customengagement-01.png' | url }}" />
+  <img src="{{ '/static/images/use-cases/hackney-circle-uc-01.png' | url }}" />
   <figcaption>
-    An example user interface for navigating recommended local area resources as part of Cheshire's Directory of What Works supporting young people at risk of exclusion
+    Tailored Hackney Circle comms pages for promoting local area partnerships and engaging users in joining the membership
   </figcaption>
    <img src="{{ '/static/images/use-cases/customengagement-02.png' | url }}" />
   <figcaption>
@@ -87,5 +82,7 @@ In Cheshire and Gloucestershire we applied a customised version of our **triage 
 
 Reach out for support
 ---------------------------------------------------------------------------------------------------------------------------------
-If you are at a point where you need advice or support with either technology or service design then do reach out. Whatever type of service you are engaged in and whatever stage you are at in either delivery or re-organisation, we can support you in finding the best environment for you and your users. We are looking forward to hearing from you. 
+The cost of investing in health prevention is much lower than the cost of treatment after debilitation or disease occurs. Hoop'd delivers a powerful model for creating a tailored and trusted community navigation service for local residents, with the capacity to target specific groups and excluded users with more accessible touchpoints, signposting and referral. 
+
+If you are at a point where you need advice or support with developing a local community navigation service, and need help applying service design or technology to help reach your target users, please get in touch. Whatever type of service or local area partnership you are engaged in and whatever stage you are at in either delivery or planning, we can support you in designing and delivering the right service for you and your users. We are looking forward to hearing from you. 
 
