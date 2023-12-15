@@ -45,37 +45,24 @@ Dementia is one of the biggest health and social care challenges facing London t
 
 The charter transforms cultural venues for people living with dementia and their carers through a range of dementia-friendly resources, and guides them in understanding how they can develop inclusive programmes and performances, dedicated relaxed sessions, clear signage, designated chill out zones and staff training. Working alongside the Alzheimer’s Society and the Museum of London the charter gives London venues the opportunity to present dementia more effectively to its staff and volunteers, training them in how their venue offers support to those with dementia and improving their overall awareness in how to work with visitors that require specific access and support needs.
 
-
-Why does Salford City Council need support?
----------------------------------------------------------------------------------------------------------------------------------
-
-The pandemic caused a seismic shift in highlighting the nation’s need for digital devices, digital connectivity and digital skills. In Salford, a clear target operating model achieved tremendous results in forging a 'social movement' around digital inclusion, establishing a Digital Providers Network consisting of 79 local organisations, all delivering different resources in response to the city's needs. However, what was needed was a way in which to address the **key design principles** essential to combatting the barriers that digitally excluded residents experience such as poverty, unemployment, and homelessness. These design principles include:
-
-1. The creation of new pathways and partnerships to enhance human interaction and strengthen relationships
-2. The use of data and intelligence to maximise the potential of systems and networks to deliver the right intervention at the right time
-
  <figure>
-  <img src="{{ '/static/images/use-cases/dynamicinfoenvironments_01.png' | url }}" />
+  <img src="{{ '/static/images/use-cases/dfvcart03.png' | url }}" />
   <figcaption>
-    One of the main communication pages of the Digital Inclusion Triage Tool inviting users to undertake assessment
+    An example training page from one of the five categories of the accreditation process for becoming a Dementia Friendly Venue
   </figcaption>
-   <img src="{{ '/static/images/use-cases/dynamicinfoenvironments_02.png' | url }}" />
+   <img src="{{ '/static/images/use-cases/dfvc-dashboard02.png' | url }}" />
   <figcaption>
-    An example user interface for managing digital inclusion resources and interventions as part of the Digital Inclusion Triage Tool
+    An example of a venue's dashboard providing an overview of the accreditation process so far and the questions that remain outstanding
   </figcaption>
 </figure>
 
-Creating and maintaining local area directories
+Building better touchpoints and datasets
 ---------------------------------------------------------------------------------------------------------------------------------
 
-Find Digital Help utilises our **global API system** to provide national, accredited resources alongside Salford's own local area directory. This combination of different types of resources alleviates pressure on the development of local area directories, offering a variety of pathways for supporting digital inclusion already present and effective before local area resources are developed. This is enabling us to support the growth and sustainability of local area directories in Salford as well as across all our associate partners. 
+The tool designed for the Mayor of London creates an automated process for venues to register and become dementia friendly accredited. It also provides officers at the Greater London Authority with a range of data on audience numbers, and the reach and capacity of the cultural sector to serve London's dementia community. Supporting the business case for further investment into dementia related activities and highlighting areas where there is a need for more engagement opportunities geographically as well as in terms of the diversity of the offer. 
 
-For managing Salford's local area directory the Hoop'd framework on which the tool is built offers a range of modules and automations to consistently **monitor and maintain the health** of the directory overall. As a webservice the tool also offers Salford access to transformative technology for sharing information and resources across departments, saving time and effort in the management of local area information. 
+In addition the tool provides officers with a real-time view of how venues are progressing through the accreditation process. Offering them the ability to create touchpoints with individual organisations, or groups of orgnanisations as they progress through the sections of the accreditation process. With this overview officers can dictate their workload in delivering additional training and support to venues, as well as continually be able to report effectively on the progress of the charter and initiative as a whole. 
 
-Monitoring the impact
+Building tailored training and accreditation environments
 ---------------------------------------------------------------------------------------------------------------------------------
-Find Digital Help has reduced front-line service pressure and workload in supporting the 10% of Salford's population that lack the essential digital skills needed to access services. The time savings using the tool amount to over **26 hours a week** with a cost saving of over **£19k per locality**. In addition the tool is reducing **staff stress levels by 40%** and increasing **confidence in signposting and referral by 22%**.
-
-As we continue to monitor the impact of the tool in reaching excluded residents and improving digital skills we will also assess the value of the tool's dataset and explore ways in which it can complement and enrich Salford's use of the Digital Exclusion Risk Index (DERI) to better target digital inclusion interventions and make stronger business cases for local area investment into digital devices, connectivity and digital skills.  
-
-
+We are working on making these environments more available to support training and engagement in accessibility more available to all venues and in all geographic areas. If you are interested in bringing better training or accreditation environments to your users and networks then please do get in touch. We can tailor and customise the environment you need to create the best user experience and deliver the best outcomes for your users. 
