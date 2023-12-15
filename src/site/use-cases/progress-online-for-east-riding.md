@@ -8,7 +8,7 @@ description: |-
 order: 5
 ---
 
-Our Community Navigation Platform enables Hackney Council's culture and public health team to work together to reach and connect with older residents, in particular those living alone. Residents are engaged with tailored community and cultural sector touchpoints, and consistent information in accessible formats; all monitored and powered by our Hoop'd platform to drive more effective early interventions.   
+Progress Online is a tailored version of our Digital Inclusion Triage Tool for East Riding, developed in partnership with the Humber and Yorkshire Integrated Care Board. For East Riding the tool is establishing the area's baseline provision of digital inclusion upon which a new Digital Inclusion Network is being established. Progress Online is helping to engage residents across a huge, rural,  geographic area in early interventions; where there is tremendous inequality in access to digital, information, services and opportunities. 
 
 <section>
   <h2>Modules</h2>
