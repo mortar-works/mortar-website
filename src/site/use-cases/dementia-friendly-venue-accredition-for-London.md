@@ -43,7 +43,9 @@ Developing inclusive programmes and venues
 ---------------------------------------------------------------------------------------------------------------------------------
 Dementia is one of the biggest health and social care challenges facing London today. There are over 72,000 people with dementia living in London, and this number is set to more than triple within the coming decades. However, tremendous work is necessary to increase awareness of dementia and its impact, shift attitudes, tackle stigma, and convene and coordinate partners to act. 
 
-The charter transforms cultural venues for people living with dementia and their carers through a range of dementia-friendly resources, and guides them in understanding how they can develop inclusive programmes and performances, dedicated relaxed sessions, clear signage, designated chill out zones and staff training. Working alongside the Alzheimer’s Society and the Museum of London the charter gives London venues the opportunity to present dementia more effectively to its staff and volunteers, training them in how their venue offers support to those with dementia and improving their overall awareness in how to work with visitors that require specific access and support needs.
+The charter transforms cultural venues for people living with dementia and their carers through a range of dementia-friendly resources, and guides them in understanding how they can develop inclusive programmes and performances, dedicated relaxed sessions, clear signage, designated chill out zones and staff training. 
+
+Working alongside the Alzheimer’s Society and the Museum of London the charter gives London venues the opportunity to present dementia more effectively to its staff and volunteers, training them in how their venue offers support to those with dementia and improving their overall awareness in how to work with visitors that require specific access and support needs.
 
  <figure>
   <img src="{{ '/static/images/use-cases/dfvcart03.png' | url }}" />
