@@ -40,9 +40,11 @@ The Directory of What Works is a tool for schools and local authorities to promo
   </table>
 </section>
 
-Tailored preventative and early engagement services
+An early engagement service
 ---------------------------------------------------------------------------------------------------------------------------------
-The impact of a school exclusion is enormous. The increasing rates of exclusion and the inequality associated with exclusion rates amongst certain groups of young people is a national problem. Local areas need flexible support in the design and delivery of an effective evidence-led response. School exclusion is often badged as an educational issue, but it is broader than that and is often not ‘the problem’ in and of itself, but rather a symptom of complex issues that a young person is facing in a highly fragmented system. Early support in recommending potential services and alternative opportunities for young people displaying signs of distress and disruption is therefore essential. 
+The impact of a school exclusion is enormous. The increasing rates of exclusion and the inequality associated with exclusion rates amongst certain groups of young people is a national problem. Local areas need flexible support in the design and delivery of an effective evidence-led response. 
+
+School exclusion is often badged as an educational issue, but it is broader than that and is often not ‘the problem’ in and of itself, but rather a symptom of complex issues that a young person is facing in a highly fragmented system. Early support in recommending potential services and alternative opportunities for young people displaying signs of distress and disruption is therefore essential. 
 
 Our tool presents a tailored triage module, for helping teachers assess the needs of a young person, allowing them to specify what types of alternative support might be of interest or preferred. The tool then creates a recommended selection of accredited local area services and organisations, making the process of sharing information with young people, families and carers more personalised, quicker and easier. 
 
