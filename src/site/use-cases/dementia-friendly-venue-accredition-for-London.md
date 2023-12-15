@@ -7,7 +7,7 @@ description: |-
  
 order: 4
 ---
-Dementia is one of the biggest health and social care challenges facing London today. There are over 72,000 people with dementia living in London, and this number is set to more than triple within the coming decades. In response to the ‘postcode lottery’ of support on offer for people with dementia we worked with the GLA to design the Dementia Friendly Venues Charter, supporting hundreds more venues across the capital in becoming dementia friendly and ready to welcome those with dementia, their families and carers.
+In response to the ‘postcode lottery’ of support on offer for people with dementia we worked with the GLA to design the Dementia Friendly Venues Charter, supporting hundreds more venues across the capital in becoming dementia friendly and ready to welcome those with dementia, their families and carers.
 
 <section>
   <h2>Modules</h2>
@@ -39,9 +39,12 @@ Dementia is one of the biggest health and social care challenges facing London t
   </table>
 </section>
           
-Leading digital inclusion partnerships
+Developing inclusive programmes and venues
 ---------------------------------------------------------------------------------------------------------------------------------
-Salford City Council are the lead partner in the development and implementation of our Digital Inclusion Triage Tool. A Local Government Association backed product for creating customised digital inclusion programmes and networks. The tool offers a custom environment for assessing the needs of users and signposting them to recommended pathways and services for support. 
+Dementia is one of the biggest health and social care challenges facing London today. There are over 72,000 people with dementia living in London, and this number is set to more than triple within the coming decades. However, tremendous work is necessary to increase awareness of dementia and its impact, shift attitudes, tackle stigma, and convene and coordinate partners to act. 
+
+The charter transforms cultural venues for people living with dementia and their carers through a range of dementia-friendly resources, and guides them in understanding how they can develop inclusive programmes and performances, dedicated relaxed sessions, clear signage, designated chill out zones and staff training. Working alongside the Alzheimer’s Society and the Museum of London the charter gives London venues the opportunity to present dementia more effectively to its staff and volunteers, training them in how their venue offers support to those with dementia and improving their overall awareness in how to work with visitors that require specific access and support needs.
+
 
 Why does Salford City Council need support?
 ---------------------------------------------------------------------------------------------------------------------------------
