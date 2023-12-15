@@ -8,7 +8,7 @@ description: |-
 order: 3
 ---
 
-The impact of a school exclusion is enormous and  Community Navigation Platform enables Hackney Council's culture and public health team to work together to reach and connect with older residents, in particular those living alone. Residents are engaged with tailored community and cultural sector touchpoints, and consistent information in accessible formats; all monitored and powered by our Hoop'd platform to drive more effective early interventions.   
+The impact of a school exclusion is enormous. The increasing rates of exclusion and the inequality associated with exclusion rates amongst certain groups of young people is a national problem. Local areas need flexible support in the design and delivery of an effective evidence-led response. The Directory of What Works offers schools and local authorities a service and set of design principles for building better pathways for young people at risk of exclusion, combining the use of data with local knowledge and lived experience, and standardising data-sharing practices.
 
 <section>
   <h2>Modules</h2>
@@ -21,28 +21,20 @@ The impact of a school exclusion is enormous and  Community Navigation Platform 
     </thead>
     <tbody>
       <tr>
-        <td>Geospatial mapping</td>
-        <td>A dynamic map presenting live listings, events and resources</td>
-      </tr>
-      <tr>
         <td>Directory management</td>
-        <td>Enables administrators and service providers to add and manage resources and participation opportunities</td>
+        <td>Enables administrators to add and manage resources, local offers and opportunities</td>
       </tr>
        <tr>
         <td>Service cards</td>
-        <td>Part of a suite of accessibility modules creating uniform, sharable and printable content for communication channels</td>
+        <td>Part of a suite of accessibility modules creating uniform, sharable and printable content for signposting</td>
       </tr>
       <tr>
-        <td>Event listings</td>
-        <td>Enables service partners to create and manage resources that have specific durations and recurring dates of delivery</td>
+        <td>User triage</td>
+        <td>Assesses the needs of the user and applies our custom algorithms for delivering recommended resources</td>
       </tr>
       <tr>
-        <td>Account creation and accreditation</td>
-        <td>Allows service providers to create verified and accredited accounts for publishing resources</td>
-      </tr>
-      <tr>
-        <td>Community management</td>
-        <td>A suite of modules for onboarding users, capturing communication preferences and managing engagement</td>
+        <td>Data visualisation</td>
+        <td>Provides the product owner with access to the tool's dataset and a tailored view of selected subsets</td>
       </tr>
     </tbody>
   </table>
