@@ -61,7 +61,9 @@ Reach out for support
 ---------------------------------------------------------------------------------------------------------------------------------
 School exclusion is one of many broad social issues in which the defined problem is a symptom of complex issues people face in our highly fragmented systems. Early support in recommending potential services and alternative opportunities is therefore essential. 
 
-If you work in these complex fields, battling with fragmented systems, and you want to standardise your practices of user assessment, signposting and referrral, the please do get in touch. We can deliver a tailored implementation of our Triage Tool and Hoop'd framework, creating a single service or point of contact for your users. We want to find the scalable solution that saves you time and money in the deployment of your new service, your application of data and intelligence, and the improvement of your users' experience and outcomes. 
+If you work in these complex fields, battling with fragmented systems, and you want to standardise your practices of user assessment, signposting and referrral, then please do get in touch. 
 
-Whatever stage you are at in either delivery or planning, we can support you in delivering the right service for you and your users and look forward to hearing from you. 
+We can deliver a single service or point of contact for your users and deliver the scalable solution you need. Saving you time and money in the deployment of your service, your application of data and intelligence, and the improvement of your users' experience and outcomes. 
+
+Whatever stage you are at in either delivery or planning, we can support you with the right service for you and your users and look forward to hearing from you. 
 
