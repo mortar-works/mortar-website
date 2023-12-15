@@ -50,7 +50,7 @@ The charter transforms cultural venues for people living with dementia and their
   <figcaption>
     An example training page from one of the five categories of the accreditation process for becoming a Dementia Friendly Venue
   </figcaption>
-   <img src="{{ '/static/images/use-cases/dfvc-dashboard02.png' | url }}" />
+   <img src="{{ '/static/images/use-cases/dfvc-dashboard.png' | url }}" />
   <figcaption>
     An example of a venue's dashboard providing an overview of the accreditation process so far and the questions that remain outstanding
   </figcaption>
