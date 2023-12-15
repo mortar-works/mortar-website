@@ -8,7 +8,7 @@ description: |-
 order: 3
 ---
 
-The impact of a school exclusion is enormous. The increasing rates of exclusion and the inequality associated with exclusion rates amongst certain groups of young people is a national problem. Local areas need flexible support in the design and delivery of an effective evidence-led response. The Directory of What Works offers schools and local authorities a service and set of design principles for building better pathways for young people at risk of exclusion, combining the use of data with local knowledge and lived experience, and standardising data-sharing practices.
+The Directory of What Works is a tool for schools and local authorities to promote better pathways for young people into local area services. The tool combines the use of data with local knowledge and lived experience, and works towards standardising data-sharing practices to create better referral and signposting opportunities.
 
 <section>
   <h2>Modules</h2>
