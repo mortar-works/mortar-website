@@ -65,9 +65,9 @@ In Hackney this has involved strategic partnerships with the libraries, lunch cl
 
 The impact of effective community navigation
 ---------------------------------------------------------------------------------------------------------------------------------
-Hoop’d has established the evidence base for monitoring the effectiveness of the community and cultural sector in reducing and preventing health inequalities. Based on delivering 400 referrals a year for those experiencing moderate to severe loneliness resulting in social activity for the first time the annual savings for the local authority associated with wellbeing, health and work productivity is £3.83m.
+Hoop’d has established the evidence base for monitoring the effectiveness of the community and cultural sector in reducing and preventing health inequalities. Based on delivering 400 referrals a year for those experiencing moderate to severe loneliness resulting in social activity for the first time **the annual savings for the local authority associated with wellbeing, health and work productivity is £3.83m**.
 
-This represents a 3,093% Return on Investment (ROI) so that for every £1 invested the model generates a return of £30.97 in terms of the reduction in health related costs associated with loneliness alone. The benefit from improved physical activity will also be measured by the service adding further ROI in the prevention of non-communicable disease and the long-term debilitative impact of complex health-related needs. 
+This represents a **3,093% Return on Investment** (ROI) so that for every £1 invested the model generates a return of £30.97 in terms of the reduction in health related costs associated with loneliness alone. The benefit from improved physical activity will also be measured by the service adding further ROI in the prevention of non-communicable disease and the long-term debilitative impact of complex health-related needs. 
 
 <figure>
   <img src="{{ '/static/images/use-cases/hackney-circle-uc-01.png' | url }}" />
