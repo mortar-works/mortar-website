@@ -1,6 +1,6 @@
 ---
 title: Reducing school exclusions in Cheshire 
-pageImage: doww-01.png
+pageImage: doww-bg01.png
 homepageImage: doww-01.png
 description: |-
   The Directory of What Works supports teachers in assessing the needs of young people at risk of exclusion, creating better pathways into the most appropriate services. The directory is a customised version of our Triage Tool for Cheshire County Council and Social Finance. 
@@ -48,12 +48,6 @@ School exclusion is often badged as an educational issue, but it is broader than
 
 Our tool presents a tailored triage module, for helping teachers assess the needs of a young person, allowing them to specify what types of alternative support might be of interest or preferred. The tool then creates a recommended selection of accredited local area services and organisations, making the process of sharing information with young people, families and carers more personalised, quicker and easier. 
 
-The impact of effective community navigation
----------------------------------------------------------------------------------------------------------------------------------
-Hoop’d has established the evidence base for monitoring the effectiveness of the community and cultural sector in reducing and preventing health inequalities. Based on delivering 400 referrals a year for those experiencing moderate to severe loneliness resulting in social activity for the first time **the annual savings for the local authority associated with wellbeing, health and work productivity is £3.83m**.
-
-This represents a **3,093% Return on Investment** (ROI) so that for every £1 invested the model generates a return of £30.97 in terms of the reduction in health related costs associated with loneliness alone. The benefit from improved physical activity will also be measured by the service adding further ROI in the prevention of non-communicable disease and the long-term debilitative impact of complex health-related needs. 
-
 <figure>
   <img src="{{ '/static/images/use-cases/hackney-circle-uc-01.png' | url }}" />
   <figcaption>
@@ -67,7 +61,7 @@ This represents a **3,093% Return on Investment** (ROI) so that for every £1 in
 
 Reach out for support
 ---------------------------------------------------------------------------------------------------------------------------------
-The cost of investing in health prevention is much lower than the cost of treatment after debilitation or disease occurs. Hoop'd delivers a powerful model for creating a tailored and trusted community navigation service for local residents, with the capacity to target specific groups and excluded users with more accessible touchpoints, signposting and referral. 
+If you need to standardise your practices of assessment, signposting and referrral, and are looking at creating a single service or point of contact for your users, do get in touch. We deliver bespoke service design for creating tailored implementations of our Triage Tool and Hoop'd framework, saving time and money in the deployment of new services, the application of data sharing APIs, and the creation of algorithms for improving user experience and outcomes. 
 
-If you are at a point where you need advice or support with developing a local community navigation service, and need help applying service design or technology to help reach your target users, please get in touch. Whatever type of service or local area partnership you are engaged in and whatever stage you are at in either delivery or planning, we can support you in designing and delivering the right service for you and your users. We are looking forward to hearing from you. 
+Whatever stage you are at in either delivery or planning, we can support you in delivering the right service for you and your users and look forward to hearing from you. 
 
