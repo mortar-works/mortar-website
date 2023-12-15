@@ -42,17 +42,7 @@ The Directory of What Works is a tool for schools and local authorities to promo
 
 Tailored preventative and early engagement services
 ---------------------------------------------------------------------------------------------------------------------------------
-Hackney Circle is a specially designed service for reaching isolated older residents in the borough. It is designed around a free membership programme for older residents, supporting them in staying active, and becoming connected to the borough’s community and cultural offer. 
-
-Hackney Circle uses our community navigation platform Hoop’d to manage a network of over 40 cultural partners, promoting current participation opportunities to older residents. As part of the service Hoop’d delivers a set of tools to make engagement easier and more accessible for older residents. This includes managing users, communications, bookings and feedback for all associated partners, including public health link workers and the community navigation team. 
-
-Hackney Circle increases the capacity of community and cultural collaboration in the prevention and reduction of health inequality. It’s aims are to: 
-
-- Deliver a social prescribing pathway for the community and cultural sector 
-- Reduce loneliness and isolation in the older community
-- Target the engagement of excluded older residents living alone
-
-In Hackney this has involved strategic partnerships with the libraries, lunch clubs and leisure centers. Our outcomes include a programme focused on supporting an integrated library housebound service, and providing assets to support more targeted outreach work with the resident participation team. 
+The impact of a school exclusion is enormous. The increasing rates of exclusion and the inequality associated with exclusion rates amongst certain groups of young people is a national problem. Local areas need flexible support in the design and delivery of an effective evidence-led response. 
 
 
 The impact of effective community navigation
