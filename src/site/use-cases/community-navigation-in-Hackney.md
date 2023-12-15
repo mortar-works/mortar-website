@@ -70,9 +70,9 @@ Hoop’d has established the evidence base for monitoring the effectiveness of t
 This represents a 3,093% Return on Investment (ROI) so that for every £1 invested the model generates a return of £30.97 in terms of the reduction in health related costs associated with loneliness alone. The benefit from improved physical activity will also be measured by the service adding further ROI in the prevention of non-communicable disease and the long-term debilitative impact of complex health-related needs. 
 
 <figure>
-  <img src="{{ '/static/images/use-cases/bg-customengagement-01.png' | url }}" />
+  <img src="{{ '/static/images/use-cases/hackney-circle-uc-01.png' | url }}" />
   <figcaption>
-    An example user interface for navigating recommended local area resources as part of Cheshire's Directory of What Works supporting young people at risk of exclusion
+    Tailored Hackney Circle comms pages for promoting local area partnerships and engaging users in joining the membership
   </figcaption>
    <img src="{{ '/static/images/use-cases/customengagement-02.png' | url }}" />
   <figcaption>
