@@ -57,13 +57,13 @@ The pandemic caused a seismic shift in highlighting the nation’s need for digi
 2. The use of data and intelligence to maximise the potential of systems and networks to deliver the right intervention at the right time
 
  <figure>
-  <img src="{{ '/static/images/use-cases/dynamicinfoenvironments_02.png' | url }}" />
-  <figcaption>
-    An example user interface for managing digital inclusion resources and interventions as part of the Digital Inclusion Triage Tool
-  </figcaption>
-   <img src="{{ '/static/images/use-cases/dynamicinfoenvironments_01.png' | url }}" />
+  <img src="{{ '/static/images/use-cases/dynamicinfoenvironments_01.png' | url }}" />
   <figcaption>
     One of the main communication pages of the Digital Inclusion Triage Tool inviting users to undertake assessment
+  </figcaption>
+   <img src="{{ '/static/images/use-cases/dynamicinfoenvironments_02.png' | url }}" />
+  <figcaption>
+    An example user interface for managing digital inclusion resources and interventions as part of the Digital Inclusion Triage Tool
   </figcaption>
 </figure>
 
