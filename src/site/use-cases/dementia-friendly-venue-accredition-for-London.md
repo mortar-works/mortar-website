@@ -7,43 +7,72 @@ description: |-
  
 order: 4
 ---
+Dementia is one of the biggest health and social care challenges facing London today. There are over 72,000 people with dementia living in London, and this number is set to more than triple within the coming decades. In response to the ‘postcode lottery’ of support on offer for people with dementia we worked with the GLA to design the Dementia Friendly Venues Charter, supporting hundreds more venues across the capital in becoming dementia friendly and ready to welcome those with dementia, their families and carers.
 
-The challenges of communication and change
+<section>
+  <h2>Modules</h2>
+  <table>
+    <thead>
+      <tr>
+<th>Module</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Training and accreditation</td>
+        <td>Provides the user with an environment for navigating through multi-stage resources and undertaking assessments</td>
+      </tr>
+      <tr>
+        <td>Account management</td>
+        <td>Enables the administrator to invite and manage users on the system and monitor their progress through accrediation</td>
+      </tr>
+      <tr>
+        <td>Account creation</td>
+        <td>Enables users to create an account and join the network of users undertaking accreditation</td>
+      </tr>
+      <tr>
+        <td>Data visualisation</td>
+        <td>Provides the administrator with a dataset on service users and their performance in the accreditation process</td>
+      </tr>
+    </tbody>
+  </table>
+</section>
+          
+Leading digital inclusion partnerships
 ---------------------------------------------------------------------------------------------------------------------------------
-The rapid pace of change puts tremendous stress on services and systems to communicate effectively with their users. Many services rely on specific forms of information, the impact and reach of which can be greatly diminished simply by no longer having accessible pathways, or the right structure for managing communication and responding to users. 
+Salford City Council are the lead partner in the development and implementation of our Digital Inclusion Triage Tool. A Local Government Association backed product for creating customised digital inclusion programmes and networks. The tool offers a custom environment for assessing the needs of users and signposting them to recommended pathways and services for support. 
 
-The connection between how you communicate and the structure of your organisation is incredibly strong. As organisation's change and restructure often services become **disjointed, siloed, and focus is lost** on user experience and outcomes. 
-
-If this sounds familiar, you are not alone. 
-
-We have encountered this scenario countless times and we have been building Mortar's framework to help support you and your team to cut through the noise and challenges to deliver the targeted and focused service your users need. 
-
-Our cloud-based and modular framework enables you to flexibly adopt the technology and design you need, whilst our expertise and experience can guide you in the Service Design Package necessary to ensure effective transition and integration within your organisation.
-
-The building blocks of successful services
+Why does Salford City Council need support?
 ---------------------------------------------------------------------------------------------------------------------------------
-The right service environment can bring your users together in powerful ways, to create the network effects and the sharing of information needed to pursue meaningful and impactful change. 
 
-Using our modular framework we have created many different environments for connecting people and places. Our modules act as the building blocks upon which your service can begin to adopt the technology needed to increase capacity and reach more users.
+The pandemic caused a seismic shift in highlighting the nation’s need for digital devices, digital connectivity and digital skills. In Salford, a clear target operating model achieved tremendous results in forging a 'social movement' around digital inclusion, establishing a Digital Providers Network consisting of 79 local organisations, all delivering different resources in response to the city's needs. However, what was needed was a way in which to address the **key design principles** essential to combatting the barriers that digitally excluded residents experience such as poverty, unemployment, and homelessness. These design principles include:
 
-For the Mayor of London we redesigned their Dementia Friendly Venues Charter, utilising our **accreditation and training modules** to make it easier and more convenient for venues across the capital to access the information and guidance they needed to become an accredited organisation. 
+1. The creation of new pathways and partnerships to enhance human interaction and strengthen relationships
+2. The use of data and intelligence to maximise the potential of systems and networks to deliver the right intervention at the right time
 
-In the London Borough of Hackney we utilised our **membership and communication modules** to deliver an accessible engagement campaign for older residents, and a platform for managing a network of 40 community and cultural organisations. 
-
-In Cheshire and Gloucestershire we applied a customised version of our **triage and directory modules** to help teachers assess the needs of young people at risk of exclusion. 
-
-<figure>
-  <img src="{{ '/static/images/use-cases/bg-customengagement-01.png' | url }}" />
+ <figure>
+  <img src="{{ '/static/images/use-cases/dynamicinfoenvironments_01.png' | url }}" />
   <figcaption>
-    An example user interface for navigating recommended local area resources as part of Cheshire's Directory of What Works supporting young people at risk of exclusion
+    One of the main communication pages of the Digital Inclusion Triage Tool inviting users to undertake assessment
   </figcaption>
-   <img src="{{ '/static/images/use-cases/customengagement-02.png' | url }}" />
+   <img src="{{ '/static/images/use-cases/dynamicinfoenvironments_02.png' | url }}" />
   <figcaption>
-    A geospatial listings page for a membership network, supporting the coordination of participation opportunities for older residents in Hackney
+    An example user interface for managing digital inclusion resources and interventions as part of the Digital Inclusion Triage Tool
   </figcaption>
 </figure>
 
-Reach out for support
+Creating and maintaining local area directories
 ---------------------------------------------------------------------------------------------------------------------------------
-If you are at a point where you need advice or support with either technology or service design then do reach out. Whatever type of service you are engaged in and whatever stage you are at in either delivery or re-organisation, we can support you in finding the best environment for you and your users. We are looking forward to hearing from you. 
+
+Find Digital Help utilises our **global API system** to provide national, accredited resources alongside Salford's own local area directory. This combination of different types of resources alleviates pressure on the development of local area directories, offering a variety of pathways for supporting digital inclusion already present and effective before local area resources are developed. This is enabling us to support the growth and sustainability of local area directories in Salford as well as across all our associate partners. 
+
+For managing Salford's local area directory the Hoop'd framework on which the tool is built offers a range of modules and automations to consistently **monitor and maintain the health** of the directory overall. As a webservice the tool also offers Salford access to transformative technology for sharing information and resources across departments, saving time and effort in the management of local area information. 
+
+Monitoring the impact
+---------------------------------------------------------------------------------------------------------------------------------
+Find Digital Help has reduced front-line service pressure and workload in supporting the 10% of Salford's population that lack the essential digital skills needed to access services. The time savings using the tool amount to over **26 hours a week** with a cost saving of over **£19k per locality**. In addition the tool is reducing **staff stress levels by 40%** and increasing **confidence in signposting and referral by 22%**.
+
+As we continue to monitor the impact of the tool in reaching excluded residents and improving digital skills we will also assess the value of the tool's dataset and explore ways in which it can complement and enrich Salford's use of the Digital Exclusion Risk Index (DERI) to better target digital inclusion interventions and make stronger business cases for local area investment into digital devices, connectivity and digital skills.  
+
 
