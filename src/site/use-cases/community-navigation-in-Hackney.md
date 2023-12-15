@@ -63,7 +63,7 @@ Hackney Circle increases the capacity of community and cultural collaboration in
 In Hackney this has involved strategic partnerships with the libraries, lunch clubs and leisure centers. Our outcomes include a programme focused on supporting an integrated library housebound service, and providing assets to support more targeted outreach work with the resident participation team. 
 
 
-The impact of prevenatitive and early engagement in Hackney
+The impact of effective community navigation
 ---------------------------------------------------------------------------------------------------------------------------------
 Hoop’d has established the evidence base for monitoring the effectiveness of the community and cultural sector in reducing and preventing health inequalities. Based on delivering 400 referrals a year for those experiencing moderate to severe loneliness resulting in social activity for the first time the annual savings for the local authority associated with wellbeing, health and work productivity is £3.83m.
 
