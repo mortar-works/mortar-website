@@ -1,6 +1,6 @@
 ---
 title: Dementia friendly venue accreditation for London
-pageImage: dfvc-bg-20
+pageImage: dfvc-bg-20.png
 homepageImage: dfvc-dashboard.png
 description: |-
   Our framework Hoop'd delivers bespoke, accessible accreditation and training environments. This platform for Alzheimers UK and the Greater London Authority makes the process of learning, training and becoming dementia friendly available to all venues across London.  
