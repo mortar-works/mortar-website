@@ -44,24 +44,24 @@ An early engagement service
 ---------------------------------------------------------------------------------------------------------------------------------
 The impact of a school exclusion is enormous. The increasing rates of exclusion and the inequality associated with exclusion rates amongst certain groups of young people is a national problem. Local areas need flexible support in the design and delivery of an effective evidence-led response. 
 
-School exclusion is often badged as an educational issue, but it is broader than that and is often not ‘the problem’ in and of itself, but rather a symptom of complex issues that a young person is facing in a highly fragmented system. Early support in recommending potential services and alternative opportunities for young people displaying signs of distress and disruption is therefore essential. 
-
 Our tool presents a tailored triage module, for helping teachers assess the needs of a young person, allowing them to specify what types of alternative support might be of interest or preferred. The tool then creates a recommended selection of accredited local area services and organisations, making the process of sharing information with young people, families and carers more personalised, quicker and easier. 
 
 <figure>
-  <img src="{{ '/static/images/use-cases/hackney-circle-uc-01.png' | url }}" />
+  <img src="{{ '/static/images/use-cases/whatworks01.png' | url }}" />
   <figcaption>
-    Tailored Hackney Circle comms pages for promoting local area partnerships and engaging users in joining the membership
+    Tailored What Works comms pages for capturing information and engaging users in the triage process
   </figcaption>
-   <img src="{{ '/static/images/use-cases/customengagement-02.png' | url }}" />
+   <img src="{{ '/static/images/use-cases/whatworks02.png' | url }}" />
   <figcaption>
-    A geospatial listings page for a membership network, supporting the coordination of participation opportunities for older residents in Hackney
+    The directory listings interface presenting recommended services and opportunties for signposting and referral
   </figcaption>
 </figure>
 
 Reach out for support
 ---------------------------------------------------------------------------------------------------------------------------------
-If you need to standardise your practices of assessment, signposting and referrral, and are looking at creating a single service or point of contact for your users, do get in touch. We deliver bespoke service design for creating tailored implementations of our Triage Tool and Hoop'd framework, saving time and money in the deployment of new services, the application of data sharing APIs, and the creation of algorithms for improving user experience and outcomes. 
+School exclusion is one of many broad social issues in which the defined problem is a symptom of complex issues people face in our highly fragmented systems. Early support in recommending potential services and alternative opportunities is therefore essential. 
+
+If you work in these complex fields, battling with fragmented systems, and you want to standardise your practices of user assessment, signposting and referrral, the please do get in touch. We can deliver a tailored implementation of our Triage Tool and Hoop'd framework, creating a single service or point of contact for your users. We want to find the scalable solution that saves you time and money in the deployment of your new service, your application of data and intelligence, and the improvement of your users' experience and outcomes. 
 
 Whatever stage you are at in either delivery or planning, we can support you in delivering the right service for you and your users and look forward to hearing from you. 
 
