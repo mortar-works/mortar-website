@@ -50,15 +50,15 @@ Our Community Navigation Platform enables Hackney Council's culture and public h
 
 Tailored preventative and early engagement services
 ---------------------------------------------------------------------------------------------------------------------------------
-Hackney Circle is a specially designed service for reaching isolated older residents in the borough. It is designed around a free membership programme for older residents, supporting them in staying active, and becoming connected to the borough’s community and cultural offer. Hackney Circle uses our community navigation platform Hoop’d to manage a network of over 40 cultural partners, promoting current participation opportunities to older residents. As part of the service Hoop’d delivers a set of tools to make engagement easier and more accessible for older residents. This includes managing users, communications, bookings and feedback for all associated partners, including public health link workers and the community navigation team. 
+Hackney Circle is a specially designed service for reaching isolated older residents in the borough. It is designed around a free membership programme for older residents, supporting them in staying active, and becoming connected to the borough’s community and cultural offer. 
 
-Hackney Circle increases the capacity of community and cultural collaboration in the prevention and reduction of health inequality. 
+Hackney Circle uses our community navigation platform Hoop’d to manage a network of over 40 cultural partners, promoting current participation opportunities to older residents. As part of the service Hoop’d delivers a set of tools to make engagement easier and more accessible for older residents. This includes managing users, communications, bookings and feedback for all associated partners, including public health link workers and the community navigation team. 
 
-It’s aims are to: 
+Hackney Circle increases the capacity of community and cultural collaboration in the prevention and reduction of health inequality. It’s aims are to: 
 
-- deliver a social prescribing pathway for the community and cultural sector 
-- reduce loneliness and isolation in the older community
-- target the engagement of excluded older residents living alone
+- Deliver a social prescribing pathway for the community and cultural sector 
+- Reduce loneliness and isolation in the older community
+- Target the engagement of excluded older residents living alone
 
 In Hackney this has involved strategic partnerships with the libraries, lunch clubs and leisure centers. Our outcomes include a programme focused on supporting an integrated library housebound service, and providing assets to support more targeted outreach work with the resident participation team. 
 
@@ -67,10 +67,7 @@ The impact of prevenatitive and early engagement in Hackney
 ---------------------------------------------------------------------------------------------------------------------------------
 Hoop’d has established the evidence base for monitoring the effectiveness of the community and cultural sector in reducing and preventing health inequalities. Based on delivering 400 referrals a year for those experiencing moderate to severe loneliness resulting in social activity for the first time the annual savings for the local authority associated with wellbeing, health and work productivity is £3.83m.
 
-This represents a 3,093% Return on Investment (ROI) so that for every £1 invested the model generates a return of £30.97 in terms of the reduction in health related costs associated with loneliness alone. The benefit from improved physical activity will also be measured by the service adding further ROI in the prevention of 
-
-Based on an overall service cost which includes the salaries of one council staff member and the cultural apprentice (£58k), additional programme funding raised externally (£36k), network management cost (£12k) and the cost of the Hoop’d service and software (£18k). 
- 
+This represents a 3,093% Return on Investment (ROI) so that for every £1 invested the model generates a return of £30.97 in terms of the reduction in health related costs associated with loneliness alone. The benefit from improved physical activity will also be measured by the service adding further ROI in the prevention of non-communicable disease and the long-term debilitative impact of complex health-related needs. 
 
 <figure>
   <img src="{{ '/static/images/use-cases/bg-customengagement-01.png' | url }}" />
