@@ -8,7 +8,7 @@ description: |-
 order: 5
 ---
 
-Progress Online is a tailored version of our Digital Inclusion Triage Tool for East Riding, developed in partnership with the Humber and Yorkshire Integrated Care Board. For East Riding the tool is establishing the area's baseline provision of digital inclusion upon which a new Digital Inclusion Network is being established. Progress Online is helping to engage residents across a huge, rural,  geographic area in early interventions; where there is tremendous inequality in access to digital, information, services and opportunities. 
+Progress Online is a tailored implementation of our Digital Inclusion Triage Tool for East Riding, developed in partnership with the Humber and Yorkshire Integrated Care Board. For East Riding the tool is establishing a new Digital Inclusion Network, working to engage residents in early interventions across a huge, rural, geographic area. 
 
 <section>
   <h2>Modules</h2>
@@ -50,7 +50,7 @@ Progress Online is a tailored version of our Digital Inclusion Triage Tool for E
 
 Tailored preventative and early engagement services
 ---------------------------------------------------------------------------------------------------------------------------------
-Hackney Circle is a specially designed service for reaching isolated older residents in the borough. It is designed around a free membership programme for older residents, supporting them in staying active, and becoming connected to the borough’s community and cultural offer. 
+In Humber and Yorkshire there is tremendous inequality in access to information, services and opportunities. In East Riding three of their twenty six wards are in the top 10% most deprived and, with 93% of the area r  rural isolation is a serious issue. Digital inclusion is therefore a massive priority for ensuring  
 
 Hackney Circle uses our community navigation platform Hoop’d to manage a network of over 40 cultural partners, promoting current participation opportunities to older residents. As part of the service Hoop’d delivers a set of tools to make engagement easier and more accessible for older residents. This includes managing users, communications, bookings and feedback for all associated partners, including public health link workers and the community navigation team. 
 
