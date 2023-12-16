@@ -8,29 +8,51 @@ description: |-
 order: 6
 ---
 
-The challenges of communication and change
+Progress Online is a tailored implementation of our Digital Inclusion Triage Tool for East Riding, developed in partnership with the Humber and Yorkshire Integrated Care Board. For East Riding the tool is establishing a new Digital Inclusion Network, working to engage residents in early interventions across a huge, rural, geographic area. 
+
+<section>
+  <h2>Modules</h2>
+  <table>
+    <thead>
+      <tr>
+<th>Module</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Geospatial mapping</td>
+        <td>A dynamic map presenting live listings, events and resources</td>
+      </tr>
+      <tr>
+        <td>Directory management</td>
+        <td>Enables administrators and service providers to add and manage resources and participation opportunities</td>
+      </tr>
+       <tr>
+        <td>Service cards</td>
+        <td>Part of a suite of accessibility modules creating uniform, sharable and printable content for communication channels</td>
+      </tr>
+      <tr>
+        <td>Event listings</td>
+        <td>Enables service partners to create and manage resources that have specific durations and recurring dates of delivery</td>
+      </tr>
+      <tr>
+        <td>Account creation and accreditation</td>
+        <td>Allows service providers to create verified and accredited accounts for publishing resources</td>
+      </tr>
+      <tr>
+        <td>Community management</td>
+        <td>A suite of modules for onboarding users, capturing communication preferences and managing engagement</td>
+      </tr>
+    </tbody>
+  </table>
+</section>
+
+Understanding and responding to digital inclusion needs
 ---------------------------------------------------------------------------------------------------------------------------------
-The rapid pace of change puts tremendous stress on services and systems to communicate effectively with their users. Many services rely on specific forms of information, the impact and reach of which can be greatly diminished simply by no longer having accessible pathways, or the right structure for managing communication and responding to users. 
+In Humber and Yorkshire there is tremendous inequality in access to information, services and opportunities. In East Riding three of their twenty six wards are in the top 10% most deprived and, with a 93% rural area, isolation is a serious issue. Digital inclusion is therefore a massive strategic priority for ensuring people feel connected, engaged and safe.  
 
-The connection between how you communicate and the structure of your organisation is incredibly strong. As organisation's change and restructure often services become **disjointed, siloed, and focus is lost** on user experience and outcomes. 
-
-If this sounds familiar, you are not alone. 
-
-We have encountered this scenario countless times and we have been building Mortar's framework to help support you and your team to cut through the noise and challenges to deliver the targeted and focused service your users need. 
-
-Our cloud-based and modular framework enables you to flexibly adopt the technology and design you need, whilst our expertise and experience can guide you in the Service Design Package necessary to ensure effective transition and integration within your organisation.
-
-The building blocks of successful services
----------------------------------------------------------------------------------------------------------------------------------
-The right service environment can bring your users together in powerful ways, to create the network effects and the sharing of information needed to pursue meaningful and impactful change. 
-
-Using our modular framework we have created many different environments for connecting people and places. Our modules act as the building blocks upon which your service can begin to adopt the technology needed to increase capacity and reach more users.
-
-For the Mayor of London we redesigned their Dementia Friendly Venues Charter, utilising our **accreditation and training modules** to make it easier and more convenient for venues across the capital to access the information and guidance they needed to become an accredited organisation. 
-
-In the London Borough of Hackney we utilised our **membership and communication modules** to deliver an accessible engagement campaign for older residents, and a platform for managing a network of 40 community and cultural organisations. 
-
-In Cheshire and Gloucestershire we applied a customised version of our **triage and directory modules** to help teachers assess the needs of young people at risk of exclusion. 
+For East Riding the need for a tool to help begin creating these connections is essential. A digital solution was needed to identify people's needs, to match them with the services and resouces available, and where unavailable, to demonstrate the demand and represent the case for the services and resources people need.  
 
 <figure>
   <img src="{{ '/static/images/use-cases/tenancy-sustain03.jpg' | url }}" />
@@ -43,7 +65,15 @@ In Cheshire and Gloucestershire we applied a customised version of our **triage 
   </figcaption>
 </figure>
 
-Reach out for support
+Overcoming local digital inclusion challenges and barriers
 ---------------------------------------------------------------------------------------------------------------------------------
-If you are at a point where you need advice or support with either technology or service design then do reach out. Whatever type of service you are engaged in and whatever stage you are at in either delivery or re-organisation, we can support you in finding the best environment for you and your users. We are looking forward to hearing from you. 
+The challenges involved in connecting people, especially across large, rural geographic areas, are not going be solved quickly or easily. These challenges need dedicated programmes, local area collaborations and a coordinated distribution and monitoring of resources. 
 
+Our Digital Inclusion Triage Tool responds to these challenges by: 
+- promoting your local area digital inclusion programme
+- providing the tools to bring together your stakeholders and service providers
+- monitoring signpostings and referrals to your service offer
+- creates the datasets to make more informed digital inclusion decisions
+
+If you are at a point where you need advice or support with developing a local digital inclusion programme, and need tools to help engage your stakeholders and reach your target users, please get in touch. Whatever stage you are at in either delivery or planning, we can support you in designing and delivering the right service and tool for you and your users and look forward to hearing from you. 
+The challenges of communication and change
