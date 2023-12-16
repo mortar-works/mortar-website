@@ -50,24 +50,9 @@ Progress Online is a tailored implementation of our Digital Inclusion Triage Too
 
 Tailored preventative and early engagement services
 ---------------------------------------------------------------------------------------------------------------------------------
-In Humber and Yorkshire there is tremendous inequality in access to information, services and opportunities. In East Riding three of their twenty six wards are in the top 10% most deprived and, with 93% of the area r  rural isolation is a serious issue. Digital inclusion is therefore a massive priority for ensuring  
+In Humber and Yorkshire there is tremendous inequality in access to information, services and opportunities. In East Riding three of their twenty six wards are in the top 10% most deprived and, with a 93% rural area, isolation is a serious issue. Digital inclusion is therefore a massive strategic priority for ensuring people feel connected, engaged and safe.  
 
-Hackney Circle uses our community navigation platform Hoop’d to manage a network of over 40 cultural partners, promoting current participation opportunities to older residents. As part of the service Hoop’d delivers a set of tools to make engagement easier and more accessible for older residents. This includes managing users, communications, bookings and feedback for all associated partners, including public health link workers and the community navigation team. 
-
-Hackney Circle increases the capacity of community and cultural collaboration in the prevention and reduction of health inequality. It’s aims are to: 
-
-- Deliver a social prescribing pathway for the community and cultural sector 
-- Reduce loneliness and isolation in the older community
-- Target the engagement of excluded older residents living alone
-
-In Hackney this has involved strategic partnerships with the libraries, lunch clubs and leisure centers. Our outcomes include a programme focused on supporting an integrated library housebound service, and providing assets to support more targeted outreach work with the resident participation team. 
-
-
-The impact of effective community navigation
----------------------------------------------------------------------------------------------------------------------------------
-Hoop’d has established the evidence base for monitoring the effectiveness of the community and cultural sector in reducing and preventing health inequalities. Based on delivering 400 referrals a year for those experiencing moderate to severe loneliness resulting in social activity for the first time **the annual savings for the local authority associated with wellbeing, health and work productivity is £3.83m**.
-
-This represents a **3,093% Return on Investment** (ROI) so that for every £1 invested the model generates a return of £30.97 in terms of the reduction in health related costs associated with loneliness alone. The benefit from improved physical activity will also be measured by the service adding further ROI in the prevention of non-communicable disease and the long-term debilitative impact of complex health-related needs. 
+For East Riding the need for a tool to help begin creating these connections is essential. A digital solution was needed to identify people's needs, to match them with the services and resouces available, and where unavailable, to demonstrate the demand and represent the case for the services and resources people need.  
 
 <figure>
   <img src="{{ '/static/images/use-cases/hackney-circle-uc-01.png' | url }}" />
