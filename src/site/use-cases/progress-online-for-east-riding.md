@@ -67,7 +67,9 @@ For East Riding the need for a tool to help begin creating these connections is 
 
 Overcoming local digital inclusion challenges and barriers
 ---------------------------------------------------------------------------------------------------------------------------------
-The challenges involved in connecting people, especially across large, rural geographic areas, are not going be solved quickly or easily. These challenges need dedicated programmes, local area collaborations and a coordinated distribution and monitoring of resources. Our Digital Inclusion Triage Tool responds to these challenges by: 
+The challenges involved in connecting people, especially across large, rural geographic areas, are not going be solved quickly or easily. These challenges need dedicated programmes, local area collaborations and a coordinated distribution and monitoring of resources. 
+
+Our Digital Inclusion Triage Tool responds to these challenges by: 
 - promoting your local area digital inclusion programme
 - providing the tools to bring together your stakeholders and service providers
 - monitoring signpostings and referrals to your service offer
