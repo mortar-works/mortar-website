@@ -3,7 +3,7 @@ title: Tenancy sustainment tool for the Mayor of London
 pageImage: tenancy-sust-bg01.png
 homepageImage: tenancysust-01.jpg
 description: |-
-  The Tenancy Sustainment Tool supports the provision of advice, triage and referral for those most at risk of losing their home. The case management platform captures user data and supports officers in assessing needs, prioritising cases and creating more efficient pathways for referral.  
+  The Tenancy Sustainment Tool delivers advice, triage and referral for those at risk of losing their home. The case management platform delivers more efficient referral pathways by assessing the needs of users, recommending appropriate information and advice, and prioritising cases.  
  
 order: 6
 ---
