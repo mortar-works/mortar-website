@@ -3,7 +3,7 @@ title: Progress Online for Humber and Yorkshire
 pageImage: hc-01.png
 homepageImage: hc-01.png
 description: |-
-   Progress Online is the digital inclusion initiative for Humber and Yorkshire. Using a customised version of our Digital Inclusion Triage Tool 168 Town & Parish Councils are building service provider networks, assessing the needs of residents and referring them to appropriate digital inclusion resources. 
+   Progress Online is the digital inclusion initiative for Humber and Yorkshire. Using a customised version of our Digital Inclusion Triage Tool East Riding and Humber and Yorkshire are building service provider networks, assessing the needs of residents and referring them to appropriate digital inclusion resources. 
  
 order: 5
 ---
