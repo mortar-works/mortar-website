@@ -21,8 +21,8 @@ The impact and cost of losing a home continues to increase and inequalities arou
     </thead>
     <tbody>
       <tr>
-        <td>Geospatial mapping</td>
-        <td>A dynamic map presenting live listings, events and resources</td>
+        <td>User triage tool</td>
+        <td>Assesses the needs of the user and applies our custom algorithms for delivering recommended resources</td>
       </tr>
       <tr>
         <td>Directory management</td>
@@ -33,16 +33,16 @@ The impact and cost of losing a home continues to increase and inequalities arou
         <td>Part of a suite of accessibility modules creating uniform, sharable and printable content for communication channels</td>
       </tr>
       <tr>
-        <td>Event listings</td>
-        <td>Enables service partners to create and manage resources that have specific durations and recurring dates of delivery</td>
+        <td>Case management and training</td>
+        <td>Provides the user with an environment for navigating through multi-stage resources and undertaking assessments</td>
       </tr>
       <tr>
-        <td>Account creation and accreditation</td>
-        <td>Allows service providers to create verified and accredited accounts for publishing resources</td>
+        <td>Risk monitoring</td>
+        <td>Provides the administrator with a dataset on case progress and an analysis of case risk</td>
       </tr>
       <tr>
-        <td>Community management</td>
-        <td>A suite of modules for onboarding users, capturing communication preferences and managing engagement</td>
+        <td>Prioritisation and recommendation</td>
+        <td>Interfaces that help identify priority cases and recommend appropriate actions</td>
       </tr>
     </tbody>
   </table>
