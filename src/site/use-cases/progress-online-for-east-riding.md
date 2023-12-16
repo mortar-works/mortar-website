@@ -1,4 +1,4 @@
-![image](https://github.com/mortar-works/mortar-website/assets/56974814/92a5df24-b57a-43d5-b609-07c60d213c13)---
+---
 title: Progress Online for Humber and Yorkshire
 pageImage: progonline-bg01.jpg
 homepageImage: prog-online01.png
