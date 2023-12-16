@@ -8,7 +8,7 @@ description: |-
 order: 6
 ---
 
-Progress Online is a tailored implementation of our Digital Inclusion Triage Tool for East Riding, developed in partnership with the Humber and Yorkshire Integrated Care Board. For East Riding the tool is establishing a new Digital Inclusion Network, working to engage residents in early interventions across a huge, rural, geographic area. 
+The impact and cost of losing a home continues to increase and inequalities around access to information and opportunities make the problem incredibly challenging to address. There is an overwhelming change in attitude however towards working more closely with tenants and families to overcome these challenges and create more sustainability, ambition and opportunity to for the future. Early and accessible engagement is at the heart of these approaches, and our tenancy sustainment tool offers flexibility in how more households at risk of losing their home can make contact and receive support. 
 
 <section>
   <h2>Modules</h2>
