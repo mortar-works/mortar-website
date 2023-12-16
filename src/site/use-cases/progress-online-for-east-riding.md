@@ -57,7 +57,7 @@ For East Riding the need for a tool to help begin creating these connections is 
 <figure>
   <img src="{{ '/static/images/use-cases/prog-online01.png' | url }}" />
   <figcaption>
-    Recommended resources presented to users of Progress Online for signposting and referrals
+    Our algorithm and global API system work together to deliver recommended resources to users of Progress Online, improving the quality of signposting and referrals
   </figcaption>
    <img src="{{ '/static/images/use-cases/prog-online02.png' | url }}" />
   <figcaption>
