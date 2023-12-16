@@ -1,7 +1,7 @@
----
+![image](https://github.com/mortar-works/mortar-website/assets/56974814/92a5df24-b57a-43d5-b609-07c60d213c13)---
 title: Progress Online for Humber and Yorkshire
-pageImage: hc-01.png
-homepageImage: hc-01.png
+pageImage: progonline-bg01.jpg
+homepageImage: prog-online01.png
 description: |-
    Progress Online is the digital inclusion initiative for Humber and Yorkshire. Using a customised version of our Digital Inclusion Triage Tool East Riding and Humber and Yorkshire are building service provider networks, assessing the needs of residents and referring them to appropriate digital inclusion resources. 
  
@@ -55,19 +55,23 @@ In Humber and Yorkshire there is tremendous inequality in access to information,
 For East Riding the need for a tool to help begin creating these connections is essential. A digital solution was needed to identify people's needs, to match them with the services and resouces available, and where unavailable, to demonstrate the demand and represent the case for the services and resources people need.  
 
 <figure>
-  <img src="{{ '/static/images/use-cases/hackney-circle-uc-01.png' | url }}" />
+  <img src="{{ '/static/images/use-cases/prog-online01.png' | url }}" />
   <figcaption>
-    Tailored Hackney Circle comms pages for promoting local area partnerships and engaging users in joining the membership
+    Recommended resources presented to users of Progress Online for signposting and referrals
   </figcaption>
-   <img src="{{ '/static/images/use-cases/customengagement-02.png' | url }}" />
+   <img src="{{ '/static/images/use-cases/prog-online02.png' | url }}" />
   <figcaption>
-    A geospatial listings page for a membership network, supporting the coordination of participation opportunities for older residents in Hackney
+    The Digital Inclusion Triage Tool generates a dataset that can be presented and blended with other exclusion data sources 
   </figcaption>
 </figure>
 
 Reach out for support
 ---------------------------------------------------------------------------------------------------------------------------------
-The cost of investing in health prevention is much lower than the cost of treatment after debilitation or disease occurs. Hoop'd delivers a powerful model for creating a tailored and trusted community navigation service for local residents, with the capacity to target specific groups and excluded users with more accessible touchpoints, signposting and referral. 
+The challenges involved in connecting people, especially across large, rural geographic areas, are not going be solved quickly or easily. These challenges need dedicated programmes, local area collaborations and a coordinated distribution and monitoring of resources. Our Digital Inclusion Triage Tool responds to these challenges by: 
+- promoting your local area digital inclusion programme
+- providing the tools to bring together your stakeholders and service providers
+- monitoring signpostings and referrals to your service offer
+- creates the datasets to make more informed digital inclusion decisions
 
-If you are at a point where you need advice or support with developing a local community navigation service, and need help applying service design or technology to help reach your target users, please get in touch. Whatever type of service or local area partnership you are engaged in and whatever stage you are at in either delivery or planning, we can support you in designing and delivering the right service for you and your users. We are looking forward to hearing from you. 
+If you are at a point where you need advice or support with developing a local digital inclusion programme, and need tools to help engage your stakeholders and reach your target users, please get in touch. Whatever stage you are at in either delivery or planning, we can support you in designing and delivering the right service and tool for you and your users and look forward to hearing from you. 
 
