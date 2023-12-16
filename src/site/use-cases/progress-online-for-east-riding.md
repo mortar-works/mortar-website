@@ -48,7 +48,7 @@ Progress Online is a tailored implementation of our Digital Inclusion Triage Too
   </table>
 </section>
 
-Tailored preventative and early engagement services
+Understanding and responding to digital inclusion needs
 ---------------------------------------------------------------------------------------------------------------------------------
 In Humber and Yorkshire there is tremendous inequality in access to information, services and opportunities. In East Riding three of their twenty six wards are in the top 10% most deprived and, with a 93% rural area, isolation is a serious issue. Digital inclusion is therefore a massive strategic priority for ensuring people feel connected, engaged and safe.  
 
@@ -65,7 +65,7 @@ For East Riding the need for a tool to help begin creating these connections is 
   </figcaption>
 </figure>
 
-Reach out for support
+Overcoming local digital inclusion challenges and barriers
 ---------------------------------------------------------------------------------------------------------------------------------
 The challenges involved in connecting people, especially across large, rural geographic areas, are not going be solved quickly or easily. These challenges need dedicated programmes, local area collaborations and a coordinated distribution and monitoring of resources. Our Digital Inclusion Triage Tool responds to these challenges by: 
 - promoting your local area digital inclusion programme
