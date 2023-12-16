@@ -21,28 +21,24 @@ Progress Online is a tailored implementation of our Digital Inclusion Triage Too
     </thead>
     <tbody>
       <tr>
-        <td>Geospatial mapping</td>
-        <td>A dynamic map presenting live listings, events and resources</td>
+        <td>Global API</td>
+        <td>Provides the user with resources from our national digital inclusion directory as well as from their local area directory</td>
       </tr>
       <tr>
         <td>Directory management</td>
-        <td>Enables administrators and service providers to add and manage resources and participation opportunities</td>
-      </tr>
-       <tr>
-        <td>Service cards</td>
-        <td>Part of a suite of accessibility modules creating uniform, sharable and printable content for communication channels</td>
+        <td>Enables the administrator and service partners to add and manage their local offer resources and build a local area directory</td>
       </tr>
       <tr>
-        <td>Event listings</td>
-        <td>Enables service partners to create and manage resources that have specific durations and recurring dates of delivery</td>
+        <td>Account creation</td>
+        <td>Enables the operation and management of a service provider network and gives service providers the ability to create resources on the local area directory </td>
       </tr>
       <tr>
-        <td>Account creation and accreditation</td>
-        <td>Allows service providers to create verified and accredited accounts for publishing resources</td>
+        <td>Data visualisation</td>
+        <td>Provides the product owner with access to the tool's dataset and a tailored view of selected subsets</td>
       </tr>
       <tr>
-        <td>Community management</td>
-        <td>A suite of modules for onboarding users, capturing communication preferences and managing engagement</td>
+        <td>User triage</td>
+        <td>Assesses the needs of the user and applies our customised digital inclusion algorithm for delivering recommended resources</td>
       </tr>
     </tbody>
   </table>
