@@ -8,7 +8,9 @@ description: |-
 order: 6
 ---
 
-The impact and cost of losing a home continues to increase and inequalities around access to information and opportunities make the problem incredibly challenging to address. There is an overwhelming change in attitude however towards working more closely with tenants and families to overcome these challenges and create more sustainability, ambition and opportunity to for the future. Early and accessible engagement is at the heart of these approaches, and our tenancy sustainment tool offers flexibility in how more households at risk of losing their home can make contact and receive support. 
+The impact and cost of losing a home continues to increase and inequalities around access to information and opportunities make the problem incredibly challenging to address. There is an overwhelming change in attitude however towards working more closely with tenants and families to overcome these challenges and create more sustainability, ambition and opportunity to for the future. 
+
+Early and accessible engagement is at the heart of these approaches, and our tenancy sustainment tool offers flexibility in how more households at risk of losing their home can make contact and receive support. 
 
 <section>
   <h2>Modules</h2>
@@ -48,11 +50,11 @@ The impact and cost of losing a home continues to increase and inequalities arou
   </table>
 </section>
 
-Understanding and responding to digital inclusion needs
+Making engagement an accessible experience
 ---------------------------------------------------------------------------------------------------------------------------------
-In Humber and Yorkshire there is tremendous inequality in access to information, services and opportunities. In East Riding three of their twenty six wards are in the top 10% most deprived and, with a 93% rural area, isolation is a serious issue. Digital inclusion is therefore a massive strategic priority for ensuring people feel connected, engaged and safe.  
+The tool creates an accessible environment for capturing data and onboarding users in multiple languages and formats, simultaneously supporting the triaging of users and their onboarding into a tailored case management system. Applying our user-led design principles the tool generates recommended actions for both the user and the officers supporting their case, whilst our algorithms help to prioritise resources and actions so the best decisions are made for the user and their situation. 
 
-For East Riding the need for a tool to help begin creating these connections is essential. A digital solution was needed to identify people's needs, to match them with the services and resouces available, and where unavailable, to demonstrate the demand and represent the case for the services and resources people need.  
+Access to the right information at the right time is crucial in pressurised and stressful situations. Through a better management of communication preferences and recommended referral pathways the tool generates a range of new touchpoints for engagement, combining financial and digital inclusion resources to support engagement and signposting, as well as the data sharing technology required to improve the process and experience of referral. 
 
 <figure>
   <img src="{{ '/static/images/use-cases/tenancy-sustain03.jpg' | url }}" />
