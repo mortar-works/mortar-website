@@ -69,15 +69,8 @@ For priority cases our **triage and assessment forms** can be conducted by the t
   </figcaption>
 </figure>
 
-Overcoming local digital inclusion challenges and barriers
+Early intervention and building better human relationships
 ---------------------------------------------------------------------------------------------------------------------------------
-The challenges involved in connecting people, especially across large, rural geographic areas, are not going be solved quickly or easily. These challenges need dedicated programmes, local area collaborations and a coordinated distribution and monitoring of resources. 
+Although the advance of new technologies is exciting and offers many opportunities to help both residents and officers, these relationships are built on **trust and a consistent quality of engagement**. As interfaces change, and the ways in which we interact with one another evolve, we need to become more ambitious and creative with how we combat digital exclusion and respond to the needs of those most excluded, at risk and vulnerable. 
 
-Our Digital Inclusion Triage Tool responds to these challenges by: 
-- promoting your local area digital inclusion programme
-- providing the tools to bring together your stakeholders and service providers
-- monitoring signpostings and referrals to your service offer
-- creates the datasets to make more informed digital inclusion decisions
-
-If you are at a point where you need advice or support with developing a local digital inclusion programme, and need tools to help engage your stakeholders and reach your target users, please get in touch. Whatever stage you are at in either delivery or planning, we can support you in designing and delivering the right service and tool for you and your users and look forward to hearing from you. 
-The challenges of communication and change
+If you are interested in how our Tenancy Sustainment Tool works to support the **digital transformation of housing services**, whilst putting human relationships at the heart of our design principles and outcomes, please do get in touch. We are designing new systems with our partners that offer more holistic forms of continuous engagement, monitoring and referral, especially at the most difficult and stressful moments.
