@@ -59,11 +59,11 @@ For priority cases our triage and assessment forms can be conducted by the tenan
 <figure>
   <img src="{{ '/static/images/use-cases/tenancy-sustain03.jpg' | url }}" />
   <figcaption>
-    An example user interface for navigating recommended local area resources as part of Cheshire's Directory of What Works supporting young people at risk of exclusion
+    An example user triage screen for supporting residents in capturing language preferences and accessing appropriate resources
   </figcaption>
    <img src="{{ '/static/images/use-cases/tenancysust-02.jpg' | url }}" />
   <figcaption>
-    A geospatial listings page for a membership network, supporting the coordination of participation opportunities for older residents in Hackney
+    An example user assessment screen for updating the household situation and understanding requirements
   </figcaption>
 </figure>
 
