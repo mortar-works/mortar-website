@@ -50,11 +50,11 @@ Our tenancy sustainment tool, developed alongside Advice for Renters, presents s
   </table>
 </section>
 
-Making engagement an accessible experience
+Accessible and up-to-date information 
 ---------------------------------------------------------------------------------------------------------------------------------
-The tool creates an accessible environment for capturing data and onboarding users in multiple languages and formats, simultaneously supporting the triaging of users and their onboarding into a tailored case management system. Applying our user-led design principles the tool generates recommended actions for both the user and the officers supporting their case, whilst our algorithms help to prioritise resources and actions so the best decisions are made for the user and their situation. 
+Being able to provide information in the appropriate language, in accessible formats, and relevant to the residents situation and needs is tremendously challenging. The regulatory and legislative environment is changing constantly, new services and opportunities receive funding at different times, and the situations of residents can change suddenly and dramatically. Our Global API provides an accurate set of housing related resources across seven different domains of support tailored to offer information and guidance to both residents and officers in the format they need. 
 
-Access to the right information at the right time is crucial in pressurised and stressful situations. Through a better management of communication preferences and recommended referral pathways the tool generates a range of new touchpoints for engagement, combining financial and digital inclusion resources to support engagement and signposting, as well as the data sharing technology required to improve the process and experience of referral. 
+For priority cases our triage and assessment forms can be conducted by the tenant or through assisted capture on the phone or in person to establish a case at the point of first contact, automatically assessing needs during the process to deliver more effective recommendations, actions and decisions. As we continue building the tool with our partners from commmunity services, housing and local government we are developing the integrations and data portability necessary to deliver quicker, more effective and impactful referrals. 
 
 <figure>
   <img src="{{ '/static/images/use-cases/tenancy-sustain03.jpg' | url }}" />
