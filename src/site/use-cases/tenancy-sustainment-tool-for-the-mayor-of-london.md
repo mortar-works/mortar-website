@@ -23,7 +23,7 @@ Our tenancy sustainment tool, developed alongside Advice for Renters, presents s
     </thead>
     <tbody>
       <tr>
-        <td>User triage tool</td>
+        <td>User triage</td>
         <td>Assesses the needs of the user and applies our custom algorithms for delivering recommended resources</td>
       </tr>
       <tr>
@@ -31,11 +31,11 @@ Our tenancy sustainment tool, developed alongside Advice for Renters, presents s
         <td>Enables administrators and service providers to add and manage resources and participation opportunities</td>
       </tr>
        <tr>
-        <td>Service cards</td>
-        <td>Part of a suite of accessibility modules creating uniform, sharable and printable content for communication channels</td>
+        <td>Global API</td>
+        <td>Provides access to our national housing directory HARS (Housing Advice and Resources Service) providing resources across seven domains of advice and guidance</td>
       </tr>
       <tr>
-        <td>Case management and training</td>
+        <td>Case management</td>
         <td>Provides the user with an environment for navigating through multi-stage resources and undertaking assessments</td>
       </tr>
       <tr>
