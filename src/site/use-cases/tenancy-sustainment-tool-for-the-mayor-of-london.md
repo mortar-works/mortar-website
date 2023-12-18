@@ -28,7 +28,7 @@ Our tenancy sustainment tool presents solutions for improving early stage interv
       </tr>
       <tr>
         <td>Directory management</td>
-        <td>Enables administrators and service providers to add and manage resources and participation opportunities</td>
+        <td>Enables administrators and service providers to add and manage resources and  opportunities</td>
       </tr>
        <tr>
         <td>Global API</td>
@@ -36,11 +36,11 @@ Our tenancy sustainment tool presents solutions for improving early stage interv
       </tr>
       <tr>
         <td>Case management</td>
-        <td>Provides the user with an environment for navigating through multi-stage resources and undertaking assessments</td>
+        <td>A suite of tools for creating cases, monitoring user progress through resources and assessments, and applying actions based on risk and prioritisation.</td>
       </tr>
       <tr>
         <td>Risk monitoring</td>
-        <td>Provides the administrator with a dataset on case progress and an analysis of case risk</td>
+        <td>Provides the administrator with a real-time dataset on case progress and an analysis of case risk</td>
       </tr>
       <tr>
         <td>Prioritisation and recommendation</td>
