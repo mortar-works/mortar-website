@@ -10,7 +10,7 @@ order: 6
 
 Working with the Mayor of London's Challenge London team we have developed the Tenancy Sustainment Tool, aimed at reducing the vulnerability of those at risk of losing their home. Evictions and homelessness continues to increase and inequalities around access to information and opportunities is growing for residents in both the public and private housing sector. 
 
-Our tenancy sustainment tool, developed alongside Advice for Renters, presents solutions for improving early stage interventions and more preventative forms of engagement. The tool offers improved methods for delivering vital information in more accessible formats and at the same time gives landlords and housing managers an improved case management solutions at the point of first contact, driving more effective referral pathways and signposting solutions. 
+Our tenancy sustainment tool presents solutions for improving early stage interventions and more preventative forms of engagement. The tool offers improved methods for delivering vital information in more accessible formats and at the same time improves case management at the point of first contact for landlords and housing managers, creating more effective referral pathways and signposting actions. 
 
 <section>
   <h2>Modules</h2>
