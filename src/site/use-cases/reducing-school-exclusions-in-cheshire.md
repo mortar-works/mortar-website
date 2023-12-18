@@ -1,50 +1,69 @@
 ---
 title: Reducing school exclusions in Cheshire 
-pageImage: doww-01.png
+pageImage: doww-bg01.png
 homepageImage: doww-01.png
 description: |-
-  We have delivered a customised version of our triage tool for Cheshire County Council supporting the work of Social Finance. The Directory of What Works is being piloted across schools in the area, supporting teachers in assessing the needs of young people at risk of exclusion and creating better signposting pathways into the most appropriate services.
+  The Directory of What Works supports teachers in assessing the needs of young people at risk of exclusion, creating better pathways into the most appropriate services. The directory is a customised version of our Triage Tool for Cheshire County Council and Social Finance. 
   
-order: 3
+order: 6
 ---
 
-Digitalisation and accessibility
------------------------------------------------------------------------------------------------------
-Service change and transformation is incredibly difficult. 
+The Directory of What Works is a tool for schools and local authorities to promote better pathways for young people into local area services. The tool combines the use of data with local knowledge and lived experience, and works towards standardising data-sharing practices to create better referral and signposting opportunities.
 
-Despite the benefits that 'moving online' and 'becoming digital' bring it requires specific and dedicated service design to ensure your service does not inadvertently alienate or exclude segments of its target users. Simply digitalising functions and processes that were previously delivered alongside in-person support has led to many services becoming more **inaccessible**, increasing the **siloed activity** of team members and departments as well as overall workload. 
+<section>
+  <h2>Modules</h2>
+  <table>
+    <thead>
+      <tr>
+<th>Module</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Directory management</td>
+        <td>Enables administrators to add and manage resources, local offers and opportunities</td>
+      </tr>
+       <tr>
+        <td>Service cards</td>
+        <td>Part of a suite of accessibility modules creating uniform, sharable and printable content for signposting</td>
+      </tr>
+      <tr>
+        <td>User triage</td>
+        <td>Assesses the needs of the user and applies our custom algorithms for delivering recommended resources</td>
+      </tr>
+      <tr>
+        <td>Data visualisation</td>
+        <td>Provides the product owner with access to the tool's dataset and a tailored view of selected subsets</td>
+      </tr>
+    </tbody>
+  </table>
+</section>
 
-Most significantly, the costs associated with the impact of growing exclusion and the continual effort to transform digital systems and architecture has **inflated costs inordinately**.
+An early engagement service
+---------------------------------------------------------------------------------------------------------------------------------
+The impact of a school exclusion is enormous. The increasing rates of exclusion and the inequality associated with exclusion rates amongst certain groups of young people is a national problem. Local areas need flexible support in the design and delivery of an effective evidence-led response. 
 
-The path to more intelligent services
------------------------------------------------------------------------------------------------------
-With lead partners across local government, housing and health, Mortar has been creating scalable solutions for the service sector to more affordably adopt digital solutions and adapt them to meet their specific needs. Built using our cloud-based data and information framework, our Triage and Referral Tools offer an affordable way to conduct service design, supporting you in transitioning into more cost-efficient methods of service delivery.
+Our tool presents a tailored triage module, for helping teachers assess the needs of a young person, allowing them to specify what types of alternative support might be of interest or preferred. The tool then creates a recommended selection of accredited local area services and organisations, making the process of sharing information with young people, families and carers more personalised, quicker and easier. 
 
-We have focused our work on addressing the challenges faced by key **'front-door' operations**, creating tools that support the delivery of user triage, assessment and referral. Enhancing the accessibility and quality of user experience at this stage drives the quality of the eventual outcome for your users; it also dictates the capacity of your service and its ability to reach those most at risk and in need of support. 
-
-It is essential that your users experience an accessible engagement and onboarding process and that their data is captured in an efficient and organised manner. Success at this early stage, with the right architecture for organising your data, paves the way for effectively applying automation and intelligence, and sustainably monitoring its impact.
-
- <figure>
-  <img src="{{ '/static/images/use-cases/triage-referral_01.png' | url }}" />
+<figure>
+  <img src="{{ '/static/images/use-cases/whatworks01.png' | url }}" />
   <figcaption>
-    An example user interface for managing and prioritising cases as part of the Referral Tool
+    Tailored What Works comms pages for capturing information and engaging users in the triage process
   </figcaption>
-   <img src="{{ '/static/images/use-cases/triage-referral_02.png' | url }}" />
+   <img src="{{ '/static/images/use-cases/whatworks02.png' | url }}" />
   <figcaption>
-    An example triage question as part of the triage tool for capturing user data
+    The directory listings interface presenting recommended services and opportunties for signposting and referral
   </figcaption>
 </figure>
 
-Triage and referral in practice
------------------------------------------------------------------------------------------------------
-Our tools support your specific needs regardless of the maturity of your organisation or existing digital situation. Our experience delivering scalable solutions with the Local Government Association has seen us working across large rural geographies, such as in Humber and Yorkshire, as well as densely populated urban areas such as in the city of Salford and the inner city borough's of London. 
+Reach out for support
+---------------------------------------------------------------------------------------------------------------------------------
+School exclusion is one of many broad social issues in which the defined problem is a symptom of complex issues people face in our highly fragmented systems. Early support in recommending potential services and alternative opportunities is therefore essential. 
 
-As a result of these experiences we built our tools to be easily customisable, enabling us to provide the tailored solution you, your users and your team need.
+If you work in these complex fields, battling with fragmented systems, and you want to standardise your practices of user assessment, signposting and referrral, then please do get in touch. 
 
-In Cheshire and Gloucestershire this involves us supporting the identification of **young people at risk of exclusion** from school, whilst across the UK our triage tool is helping to reach those experiencing **digital exclusion** in finding appropriate support and resources. We have begun working on tools that target the delivery of support for those **at risk of losing their home**, and we are working with the Greater London Authority to create better pathways into local area services for those experiencing **financial hardship**. 
+We can deliver a single service or point of contact for your users and deliver the scalable solution you need. Saving you time and money in the deployment of your service, your application of data and intelligence, and the improvement of your users' experience and outcomes. 
 
-Get in touch
------------------------------------------------------------------------------------------------------
-If you are interested in providing better access into your service through triage or referral tools please get in touch. Or, if you want to learn more about the design and implementation of these types of solutions, to reduce workload and create efficiencies within your team, let us know and we'd be happy to have a conversation about the best approach. 
+Whatever stage you are at in either delivery or planning, we can support you with the right service for you and your users and look forward to hearing from you. 
 
-We would love to support you in evolving and transforming your services, and working to improve the quality of experience and outcome for your users, and look forward to hearing from you. 
