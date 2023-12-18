@@ -5,7 +5,7 @@ homepageImage: doww-01.png
 description: |-
   The Directory of What Works supports teachers in assessing the needs of young people at risk of exclusion, creating better pathways into the most appropriate services. The directory is a customised version of our Triage Tool for Cheshire County Council and Social Finance. 
   
-order: 3
+order: 6
 ---
 
 The Directory of What Works is a tool for schools and local authorities to promote better pathways for young people into local area services. The tool combines the use of data with local knowledge and lived experience, and works towards standardising data-sharing practices to create better referral and signposting opportunities.
