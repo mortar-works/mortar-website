@@ -56,7 +56,12 @@ Working alongside the Alzheimer’s Society and the Museum of London the charter
   <figcaption>
     An example of a venue's dashboard providing an overview of the accreditation process so far and the questions that remain outstanding
   </figcaption>
+      <img src="{{ '/static/images/use-cases/dfvc-map01.png' | url }}" />
+  <figcaption>
+    An example of the public facing map for finding and promoting dementia friendly venues and programmes
+  </figcaption>
 </figure>
+
 
 Building better touchpoints and datasets
 ---------------------------------------------------------------------------------------------------------------------------------
