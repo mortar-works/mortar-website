@@ -34,11 +34,14 @@ In response to the ‘postcode lottery’ of support on offer for people with de
       <tr>
         <td>Data visualisation</td>
         <td>Provides the administrator with a dataset on service users and their performance in the accreditation process</td>
+        <tr>
+        <td>Geospatial mapping</td>
+        <td>A dynamic map presenting live listings, events and resources</td>
       </tr>
     </tbody>
   </table>
 </section>
-          
+
 Developing inclusive programmes and venues
 ---------------------------------------------------------------------------------------------------------------------------------
 Dementia is one of the biggest health and social care challenges facing London today. There are over 72,000 people with dementia living in London, and this number is set to more than triple within the coming decades. However, tremendous work is necessary to increase awareness of dementia and its impact, shift attitudes, tackle stigma, and convene and coordinate partners to act. 
@@ -72,4 +75,4 @@ In addition the tool provides officers with a real-time view of how venues are p
 
 Building tailored training and accreditation environments
 ---------------------------------------------------------------------------------------------------------------------------------
-We are working on making these environments more available to support training and engagement in accessibility more available to all venues and in all geographic areas. If you are interested in bringing better training or accreditation environments to your users and networks then please do get in touch. We can tailor and customise the environment you need to create the best user experience and deliver the best outcomes for your users. 
+We are working on making these environments more available to support training and engagement in accessibility for all venues and in all geographic areas. If you are interested in bringing better training, accreditation or promotional environments to your users and networks then please do get in touch. We can tailor and customise the environment you need to deliver the best user experience and outcomes for your users. 
