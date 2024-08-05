@@ -1,7 +1,7 @@
 ---
 title: Intelligent product development
 date: 2024-08-05
-image: creatingconnections_04.jpg
+image: 0_Q3suCVQQyFsY6RNY.png
 author: George Unsworth
 draft: false
 tags:
