@@ -1,5 +1,5 @@
 ---
-title: Intelligent product development
+title: Driving product development
 date: 2024-08-05
 image: 0_Q3suCVQQyFsY6RNY.png
 author: George Unsworth
