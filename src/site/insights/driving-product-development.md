@@ -1,7 +1,7 @@
 ---
 title: Driving product development
 date: 2024-08-05
-image: 0_Q3suCVQQyFsY6RNY.png
+image: driving-product_01.png
 author: George Unsworth
 draft: false
 tags:
