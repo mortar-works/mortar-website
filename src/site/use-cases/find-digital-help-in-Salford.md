@@ -1,14 +1,14 @@
 ---
-title: Find Digital Help in Salford City Council
+title: Digital Help Finder for Salford City Council
 pageImage: bg-digitalinclusion-salford.jpg
 homepageImage: salford-01.png
 description: |-
-  Find Digital Help is a tailored version of our Digital Inclusion Triage Tool. The tool delivers early intervention for Salford's residents and is supporting the city in adopting a more holistic, place-based approach to digital inclusion, redefining how their local services work together. 
+  Digital Help Finder is a tailored version of our Digital Inclusion Triage Tool. The tool delivers early intervention for Salford's residents and is supporting the city in adopting a more holistic, place-based approach to digital inclusion, redefining how their local services work together. 
   
 order: 1
 
 ---
-'Find Digital Help' is a tailored version of our **Digital Inclusion Triage Tool** for Salford City Council. The tool enforces Salford's committment to creating a better and fairer Salford, helping residents become better off by focusing on early intervention to achieve the right outcomes for individuals, families and businesses. Digital inclusion is central to this strategic aim and makes 'Find Digital Help' a core element in the delivery of their offer to Salford's citizens.  
+'Digital Help Finder' is a tailored version of our **Digital Inclusion Triage Tool** for Salford City Council. The tool enforces Salford's committment to creating a better and fairer Salford, helping residents become better off by focusing on early intervention to achieve the right outcomes for individuals, families and businesses. Digital inclusion is central to this strategic aim and makes 'Digital Help Finder' a core element in the delivery of their offer to Salford's citizens.  
 
 <section>
   <h2>Modules</h2>
@@ -70,13 +70,13 @@ The pandemic caused a seismic shift in highlighting the nation’s need for digi
 Creating and maintaining local area directories
 ---------------------------------------------------------------------------------------------------------------------------------
 
-Find Digital Help utilises our **global API system** to provide national, accredited resources alongside Salford's own local area directory. This combination of different types of resources alleviates pressure on the development of local area directories, offering a variety of pathways for supporting digital inclusion already present and effective before local area resources are developed. This is enabling us to support the growth and sustainability of local area directories in Salford as well as across all our associate partners. 
+The Digital Help Finder utilises our **global API system** to provide national, accredited resources alongside Salford's own local area directory. This combination of different types of resources alleviates pressure on the development of local area directories, offering a variety of pathways for supporting digital inclusion already present and effective before local area resources are developed. This is enabling us to support the growth and sustainability of local area directories in Salford as well as across all our associate partners. 
 
 For managing Salford's local area directory the Hoop'd framework on which the tool is built offers a range of modules and automations to consistently **monitor and maintain the health** of the directory overall. As a webservice the tool also offers Salford access to transformative technology for sharing information and resources across departments, saving time and effort in the management of local area information. 
 
 Monitoring the impact
 ---------------------------------------------------------------------------------------------------------------------------------
-Find Digital Help has reduced front-line service pressure and workload in supporting the 10% of Salford's population that lack the essential digital skills needed to access services. The time savings using the tool amount to over **26 hours a week** with a cost saving of over **£19k per locality**. In addition the tool is reducing **staff stress levels by 40%** and increasing **confidence in signposting and referral by 22%**.
+The Digital Help Finder has reduced front-line service pressure and workload in supporting the 10% of Salford's population that lack the essential digital skills needed to access services. The time savings using the tool amount to over **26 hours a week** with a cost saving of over **£19k per locality**. In addition the tool is reducing **staff stress levels by 40%** and increasing **confidence in signposting and referral by 22%**.
 
 As we continue to monitor the impact of the tool in reaching excluded residents and improving digital skills we will also assess the value of the tool's dataset and explore ways in which it can complement and enrich Salford's use of the Digital Exclusion Risk Index (DERI) to better target digital inclusion interventions and make stronger business cases for local area investment into digital devices, connectivity and digital skills.  
 
