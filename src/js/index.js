@@ -10,6 +10,7 @@ function toggleBurger() {
 }
 
 window.addEventListener('load', (event) => {
+  // Scroll to section smoothly on nav click
   document.querySelectorAll('header nav a').forEach((el) => {
     el.addEventListener('click', (event) =>
       el.scrollIntoView({ behavior: 'smooth' })
@@ -36,11 +37,14 @@ window.addEventListener('load', (event) => {
 
   if (loadMoreButton && insightList) {
     loadMoreButton.addEventListener('click', () => {
-      // Show the preloader
-      preloader.classList.remove('hidden');
+      // Ensure preloader exists and show it
+      if (preloader) {
+        preloader.classList.remove('hidden');
+      }
 
       // Simulate loading delay with setTimeout
       setTimeout(() => {
+        // Load the next set of 6 insights
         for (let i = visibleInsights; i < visibleInsights + 6; i++) {
           if (insightList[i]) {
             insightList[i].classList.remove('hidden');
@@ -49,14 +53,7 @@ window.addEventListener('load', (event) => {
 
         visibleInsights += 6;
 
-        // Hide preloader after loading new items
-        preloader.classList.add('hidden');
-
-        // Hide the load more button if all items are shown
-        if (visibleInsights >= insightList.length) {
-          loadMoreButton.style.display = 'none';
-        }
-      }, 500); // 500ms delay to simulate loading
-    });
-  }
-});
+        // Hide the preloader after loading new items
+        if (preloader) {
+          preloader.classList.add('hidden');
+   
