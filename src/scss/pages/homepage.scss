@@ -20,7 +20,8 @@
     }
 
     @include respond-to('small') {
-      background: linear-gradient(90deg, $mortar-purple 30%, rgba(255, 255, 255, 0)), url('../images/topline-bg/newbg4.png') scroll no-repeat 270px 0;
+      background: linear-gradient(90deg, $mortar-purple 30%, rgba(255, 255, 255, 0)),
+        url('../images/topline-bg/newbg4.png') scroll no-repeat 270px 0;
       background-size: cover;
     }
 
@@ -233,7 +234,7 @@
       list-style: none;
       padding-left: 0;
       display: grid;
-      grid-template-columns: repeat(auto-fill, minmax(18em, 1fr)); // Improved grid layout
+      grid-template-columns: repeat(auto-fill, minmax(18em, 1fr));
       grid-gap: 3em 1.2em;
     }
 
@@ -271,15 +272,15 @@
       margin-top: 1em;
     }
 
-    // New Styles for Load More Insights
+    // New Styles for Load More Insights and Preloader
     .hidden {
-      display: none; // Hide the additional insights initially
+      display: none;
     }
 
     #load-more-btn {
       display: block;
-      margin: 2em auto; // Center the "Load More" button
-      padding: 0.7em 2em; // Style the button
+      margin: 2em auto;
+      padding: 0.7em 2em;
       background-color: $mortar-purple;
       color: $white;
       border: none;
@@ -291,50 +292,44 @@
         background-color: darken($mortar-purple, 10%);
       }
     }
-  }
 
-  // Preloader styles
-  #insights-preloader {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(43, 28, 90, 0.8); // Dark transparent purple overlay
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    z-index: 9999; // Ensure it stays on top
-    opacity: 0;
-    visibility: hidden;
-    transition: opacity 0.7s ease-in-out, visibility 0.7s ease-in-out; // Fade-in effect
-  
-    &.active {
-      opacity: 1;
-      visibility: visible; // Show with smooth fade-in
-    }
-  
-    .spinner {
-      border: 8px solid rgba(255, 255, 255, 0.3); // Semi-transparent white for outer border
-      border-top: 8px solid $mortar-orange; // Orange for the spinner
-      border-radius: 50%;
-      width: 60px;
-      height: 60px;
-      animation: spin 1.5s linear infinite; // Slower spin
-    }
-  
-    &.hidden {
+    #insights-preloader {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(43, 28, 90, 0.8);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      z-index: 9999;
       opacity: 0;
       visibility: hidden;
+      transition: opacity 0.7s ease-in-out, visibility 0.7s ease-in-out;
+
+      &.active {
+        opacity: 1;
+        visibility: visible;
+      }
+
+      .spinner {
+        border: 8px solid rgba(255, 255, 255, 0.3);
+        border-top: 8px solid $mortar-orange;
+        border-radius: 50%;
+        width: 60px;
+        height: 60px;
+        animation: spin 1.5s linear infinite;
+      }
+    }
+
+    @keyframes spin {
+      0% {
+        transform: rotate(0deg);
+      }
+      100% {
+        transform: rotate(360deg);
+      }
     }
   }
-  
-  @keyframes spin {
-    0% {
-      transform: rotate(0deg);
-    }
-    100% {
-      transform: rotate(360deg);
-    }
-  }
-  
+}
