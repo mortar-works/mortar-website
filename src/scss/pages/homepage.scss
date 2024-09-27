@@ -11,6 +11,34 @@
       align-items: center; // Vertically center the logo and navigation
     }
 
+    h1,
+    p {
+      margin-left: 20px; // Slightly indent the heading and paragraph from the left
+    }
+
+    .cta {
+      margin-left: 20px; // Align the button with the text
+    }
+
+    nav {
+      display: flex;
+      justify-content: flex-end; // Push the menu items to the right
+      gap: 20px; // Add space between the menu items
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 20px; // Add space between the links
+      margin: 0;
+    }
+
+    nav ul li a {
+      text-decoration: none;
+      color: $white; // Adjust color for the menu links
+      font-size: 1em;
+    }
+
     @include respond-to('small') {
       height: 80vh;
 
