@@ -1,9 +1,8 @@
 #homepage {
   #topline {
-
     padding-top: 5.6em;
 
-    @include respond-to('small'){
+    @include respond-to('small') {
       height: 80vh;
 
       .wrapper {
@@ -20,8 +19,8 @@
       }
     }
 
-    @include respond-to('small'){
-      background: linear-gradient(90deg, $mortar-purple 30%, rgba(255,255,255,0)), url('../images/topline-bg/newbg4.png') scroll no-repeat 270px 0;
+    @include respond-to('small') {
+      background: linear-gradient(90deg, $mortar-purple 30%, rgba(255, 255, 255, 0)), url('../images/topline-bg/newbg4.png') scroll no-repeat 270px 0;
       background-size: cover;
     }
 
@@ -55,6 +54,7 @@
     }
   }
 
+  // Sections for features, partners, use-cases, and insights
   #features, #partners, #use-cases, #insights {
     background: $white;
     color: $black;
@@ -75,54 +75,56 @@
     }
   }
 
+  // Features section with refined grid layout
   #features {
     background: lighten($mortar-purple, 75%);
+    
+    #feature-list {
+      ul {
+        padding: 0;
+      }
 
-      #feature-list {
-        ul {
-          padding: 0;
-        }
+      > ul {
+        list-style: none;
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(18em, 1fr)); // Improved grid layout
+        grid-gap: 3em 1.875em;
 
-        > ul {
-          list-style: none;
-          display: grid;
-          grid-template-columns: repeat(auto-fill, minmax(18em, 1fr));
-          grid-gap: 3em 1.875em;
-
-          > li {
-            border-top: 3px solid $mortar-orange;
-            padding: 2.4em;
-            background: #ededed;
-            box-shadow: 2px 3px 6px 1px rgba(29.3,40,40,0.3);
-          }
-        }
-
-        > ul ul {
-          list-style-type: disc;
-          padding-left: 1.2em;
-
-          li {
-            margin-top: 0.4em;
-          }
-        }
-
-        h3 {
-          font-size: 1.3em;
-          margin: 0;
-          @include rajdhani-bold-type;
-        }
-
-        .feature-tagline {
-          font-size: 1em;
-          @include off-white-type;
-        }
-
-        .feature-description {
-          margin-bottom: 1.3em;
+        > li {
+          border-top: 3px solid $mortar-orange;
+          padding: 2.4em;
+          background: #ededed;
+          box-shadow: 2px 3px 6px 1px rgba(29.3, 40, 40, 0.3);
         }
       }
+
+      > ul ul {
+        list-style-type: disc;
+        padding-left: 1.2em;
+
+        li {
+          margin-top: 0.4em;
+        }
+      }
+
+      h3 {
+        font-size: 1.3em;
+        margin: 0;
+        @include rajdhani-bold-type;
+      }
+
+      .feature-tagline {
+        font-size: 1em;
+        @include off-white-type;
+      }
+
+      .feature-description {
+        margin-bottom: 1.3em;
+      }
+    }
   }
 
+  // Partners section
   #partners {
     border-top: 1em solid $mortar-purple;
     border-bottom: 1em solid $mortar-purple;
@@ -155,6 +157,7 @@
     }
   }
 
+  // Use-cases section
   #use-cases {
     background: lighten($mortar-purple, 75%);
 
@@ -215,13 +218,13 @@
         max-width: 100%;
         max-height: 100%;
         margin-left: 20px;
-        box-shadow: 2px 3px 6px 1px rgba(29,40,40,.3);
+        box-shadow: 2px 3px 6px 1px rgba(29, 40, 40, 0.3);
         border-radius: 10px;
-
       }
     }
   }
 
+  // Insights section with improved grid layout
   #insights {
     padding: 0 0 8em 0;
     background: lighten($mortar-yellow, 15%);
@@ -231,7 +234,7 @@
       list-style: none;
       padding-left: 0;
       display: grid;
-      grid-template-columns: repeat(auto-fill, minmax(18em, 1fr));
+      grid-template-columns: repeat(auto-fill, minmax(18em, 1fr)); // Improved grid layout
       grid-gap: 3em 1.2em;
     }
 
@@ -247,7 +250,7 @@
       height: 200px;
       background: transparent no-repeat scroll 50% 0;
       background-size: cover;
-      box-shadow: 2px 3px 6px 1px rgba(29.3,40,40,0.3);
+      box-shadow: 2px 3px 6px 1px rgba(29.3, 40, 40, 0.3);
     }
 
     a {
