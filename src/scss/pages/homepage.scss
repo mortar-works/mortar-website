@@ -20,7 +20,8 @@
     }
 
     @include respond-to('small') {
-      background: linear-gradient(90deg, $mortar-purple 30%, rgba(255, 255, 255, 0)), url('../images/topline-bg/newbg4.png') scroll no-repeat 270px 0;
+      background: linear-gradient(90deg, $mortar-purple 30%, rgba(255, 255, 255, 0)),
+        url('../images/topline-bg/newbg4.png') scroll no-repeat 270px 0;
       background-size: cover;
     }
 
@@ -243,31 +244,29 @@
       display: flex;
       flex-direction: column;
       min-height: 8em;
-      position: relative; /* To contain the hover overlay */
-    }
 
-    .insight-image {
-      height: 200px;
-      background: transparent no-repeat scroll 50% 0;
-      background-size: cover;
-      box-shadow: 2px 3px 6px 1px rgba(29.3, 40, 40, 0.3);
-      position: relative;
-      transition: opacity 0.3s ease;
-    }
+      // Add hover effect for images
+      .insight-image {
+        position: relative;
+        height: 200px;
+        background: transparent no-repeat scroll 50% 0;
+        background-size: cover;
+        box-shadow: 2px 3px 6px 1px rgba(29, 40, 40, 0.3);
 
-    .hover-overlay {
-      background: rgba(43, 28, 90, 0.8); /* Transparent purple overlay */
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      opacity: 1;
-      transition: opacity 0.3s ease;
-    }
+        .hover-overlay {
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          background-color: rgba(255, 255, 255, 0.7);
+          transition: background-color 0.3s ease;
+        }
 
-    a:hover .hover-overlay {
-      opacity: 0; /* Remove the overlay on hover to reveal original image */
+        &:hover .hover-overlay {
+          background-color: transparent;
+        }
+      }
     }
 
     a {
@@ -289,15 +288,15 @@
       margin-top: 1em;
     }
 
-    // Load more button styles
+    // New Styles for Load More Insights
     .hidden {
-      display: none; /* Hide the additional insights initially */
+      display: none; // Hide the additional insights initially
     }
 
     #load-more-btn {
       display: block;
-      margin: 2em auto; /* Center the "Load More" button */
-      padding: 0.7em 2em;
+      margin: 2em auto; // Center the "Load More" button
+      padding: 0.7em 2em; // Style the button
       background-color: $mortar-purple;
       color: $white;
       border: none;
@@ -316,19 +315,19 @@
       left: 0;
       width: 100%;
       height: 100%;
-      background-color: rgba(43, 28, 90, 0.8); /* Dark transparent purple overlay */
+      background-color: rgba(43, 28, 90, 0.8); // Dark transparent purple overlay
       display: flex;
       justify-content: center;
       align-items: center;
-      z-index: 9999; /* Ensure it stays on top */
+      z-index: 9999; // Ensure it stays on top
 
       .spinner {
-        border: 8px solid rgba(255, 255, 255, 0.3); /* Semi-transparent white for outer border */
-        border-top: 8px solid $mortar-orange; /* Orange for the spinner */
+        border: 8px solid rgba(255, 255, 255, 0.3); // Semi-transparent white for outer border
+        border-top: 8px solid $mortar-orange; // Orange for the spinner
         border-radius: 50%;
         width: 60px;
         height: 60px;
-        animation: spin 1.5s linear infinite;
+        animation: spin 2s linear infinite; // Slower spinner
       }
 
       &.hidden {

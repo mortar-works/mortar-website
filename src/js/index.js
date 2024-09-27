@@ -36,14 +36,11 @@ window.addEventListener('load', (event) => {
 
   if (loadMoreButton && insightList) {
     loadMoreButton.addEventListener('click', () => {
-      // Show the preloader with fade-in effect
-      if (preloader) {
-        preloader.classList.add('active');
-      }
+      // Show the preloader
+      preloader.classList.remove('hidden');
 
       // Simulate loading delay with setTimeout
       setTimeout(() => {
-        // Load the next set of 6 insights
         for (let i = visibleInsights; i < visibleInsights + 6; i++) {
           if (insightList[i]) {
             insightList[i].classList.remove('hidden');
@@ -52,18 +49,14 @@ window.addEventListener('load', (event) => {
 
         visibleInsights += 6;
 
-        // Hide the preloader with fade-out effect
-        setTimeout(() => {
-          if (preloader) {
-            preloader.classList.remove('active');
-          }
-        }, 600); // Keep the spinner for an additional 600ms
+        // Hide preloader after loading new items
+        preloader.classList.add('hidden');
 
         // Hide the load more button if all items are shown
         if (visibleInsights >= insightList.length) {
           loadMoreButton.style.display = 'none';
         }
-      }, 1000); // 1000ms delay to simulate loading (spinner will last longer)
+      }, 800); // 800ms delay to simulate slower loading
     });
   }
 });
