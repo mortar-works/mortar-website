@@ -4,15 +4,75 @@ $breakpoints: (
   'large':  1200px
 ) !default;
 
-
 @mixin respond-to($breakpoint) {
   @if map-has-key($breakpoints, $breakpoint) {
     @media (min-width: map-get($breakpoints, $breakpoint)) {
       @content;
     }
   }
-
   @else {
     @warn "Breakpoint error. Breakpoints are: #{map-keys($breakpoints)}.";
   }
 }
+
+// Responsive adjustments for grid layout and elements
+
+// Mobile first approach, adjusting for screens below 'small' breakpoint (767px)
+@media (max-width: 767px) {
+  .grid-container {
+    grid-template-areas:
+      "header"
+      "main"
+      "footer"; // Stack grid areas vertically on mobile
+  }
+
+  .main-content {
+    padding: 10px; // Reduce padding for smaller screens
+  }
+
+  header .wrapper,
+  footer .footer-wrapper {
+    padding: 1em; // Reduce header/footer padding on small screens
+  }
+
+  nav ul {
+    flex-direction: column; // Stack navigation links vertically
+    align-items: flex-start;
+  }
+
+  .homepage-section {
+    grid-template-columns: 1fr; // Stack all homepage sections vertically
+  }
+
+  .homepage-feature {
+    padding: 15px; // Increase padding for easier reading
+  }
+}
+
+// Medium screens (between 'small' and 'large' breakpoints)
+@include respond-to('medium') {
+  .grid-container {
+    grid-template-columns: 1fr 2fr; // Example: Adjust grid to have a sidebar on medium screens
+  }
+
+  .main-content {
+    padding: 20px; // Add more padding for medium screens
+  }
+}
+
+// Larger screens (above 'large' breakpoint - 1200px)
+@include respond-to('large') {
+  .grid-container {
+    grid-template-columns: 1fr 3fr; // Example: Expand main area on large screens
+  }
+
+  .main-content {
+    max-width: 1200px; // Set max-width for main content
+    margin: 0 auto; // Center content on large screens
+  }
+
+  .homepage-section {
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); // Flexible grid for homepage
+  }
+}
+
