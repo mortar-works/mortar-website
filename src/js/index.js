@@ -37,7 +37,7 @@ window.addEventListener('DOMContentLoaded', () => {
   if (loadMoreButton) {
     loadMoreButton.addEventListener('click', () => {
       // Reveal the next batch of 9 insights
-      const nextBatch = insightListItems.slice(currentIndex, currentIndex + 9);
+      const nextBatch = insightListItems.slice(currentIndex, currentIndex + 6);
 
       nextBatch.forEach(insight => {
         insight.classList.remove('hidden');
