@@ -112,16 +112,19 @@ Alongside providing bespoke systems and service design our scalable solutions ad
   </section>
 
   <section id="insights">
-    <div class="wrapper">
-      <div class="section-head">
-        <h2>Insights</h2>
-        <p class="section-tagline">Mortar makes the application of intelligence, data and user-led design easier and more affordable; to inspire services, experiences and relationships to be more accessible and inclusive. Read our insights to find out how we are applying technology to build better services.</p>
-      </div>
+  <div class="wrapper">
+    <div class="section-head">
+      <h2>Insights</h2>
+      <p class="section-tagline">
+        Mortar makes the application of intelligence, data and user-led design easier and more affordable. Read our insights to find out how we are applying technology to build better services.
+      </p>
+    </div>
 
-      <ul>
-      {% for post in collections.insights %}
-        <li>
-          <a class="insight-title" href="{{ post.url }}" aria-label="Insight: {{ post.data.title }}">
+    <!-- First 6 insights (3 rows of 2 columns) -->
+    <ul>
+      {% for post in collections.insights | slice(0, 9) %}  {# Show first 6 insights #}
+        <li class="insight-item">
+          <a class="insight-title" href="{{ post.url }}">
             <div class="insight-image" style="background-image: url('{{ '/static/images/insights/' + post.data.image | url }}')"></div>
             <div class="insight-details">
               <time datetime="{{ post.data.date | w3date }}">{{ post.data.date | date }}</time>
@@ -130,7 +133,26 @@ Alongside providing bespoke systems and service design our scalable solutions ad
           </a>
         </li>
       {% endfor %}
-      </ul>
-    </div>
-  </section>
+    </ul>
+
+    <!-- Hidden section for remaining insights -->
+    <ul id="more-insights" class="hidden">
+      {% for post in collections.insights | slice(6) %}  {# Show the rest of the insights, hidden by default #}
+        <li class="insight-item">
+          <a class="insight-title" href="{{ post.url }}">
+            <div class="insight-image" style="background-image: url('{{ '/static/images/insights/' + post.data.image | url }}')"></div>
+            <div class="insight-details">
+              <time datetime="{{ post.data.date | w3date }}">{{ post.data.date | date }}</time>
+              {{ post.data.title }}
+            </div>
+          </a>
+        </li>
+      {% endfor %}
+    </ul>
+
+    <!-- Load More Button -->
+    <button id="load-more-btn" class="cta">Load More Insights</button>
+  </div>
+</section>
+
 {% endblock %}

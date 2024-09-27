@@ -25,4 +25,16 @@ window.addEventListener('load', (event) => {
       }
     });
   });
+
+  // New Code for Load More Insights
+  const loadMoreBtn = document.getElementById('load-more-btn');
+  const moreInsights = document.getElementById('more-insights');
+
+  // Check if the Load More button exists (in case there are fewer than 9 insights)
+  if (loadMoreBtn) {
+    loadMoreBtn.addEventListener('click', () => {
+      moreInsights.classList.remove('hidden');  // Show the hidden insights
+      loadMoreBtn.style.display = 'none';  // Hide the button once clicked
+    });
+  }
 });
