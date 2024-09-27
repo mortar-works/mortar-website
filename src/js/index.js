@@ -56,4 +56,13 @@ window.addEventListener('load', (event) => {
         // Hide the preloader after loading new items
         if (preloader) {
           preloader.classList.add('hidden');
-   
+        }
+
+        // Hide the load more button if all items are shown
+        if (visibleInsights >= insightList.length) {
+          loadMoreButton.style.display = 'none';
+        }
+      }, 500); // 500ms delay to simulate loading
+    });
+  }
+});
