@@ -2,6 +2,15 @@
   #topline {
     padding-top: 5.6em;
 
+    .wrapper {
+      max-width: 1200px; // Constrain the width for large screens
+      margin: 0 auto; // Center the content horizontally
+      padding: 0 20px; // Add padding on the left and right to prevent content from touching the edges
+      display: flex; // Flexbox to align the logo and navigation
+      justify-content: space-between; // Spread content (logo left, nav right)
+      align-items: center; // Vertically center the logo and navigation
+    }
+
     @include respond-to('small') {
       height: 80vh;
 
@@ -20,7 +29,7 @@
     }
 
     @include respond-to('small') {
-      background: linear-gradient(90deg, $mortar-purple 30%, rgba(255, 255, 255, 0)), url('../images/topline-bg/newbg4.png') scroll no-repeat 270px 0;
+      background: linear-gradient(90deg, $mortar-purple 30%, rgba(255,255,255,0)), url('../images/topline-bg/newbg4.png') scroll no-repeat 270px 0;
       background-size: cover;
     }
 
