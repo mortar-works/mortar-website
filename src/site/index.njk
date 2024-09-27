@@ -101,18 +101,20 @@ name: homepage
         <p class="section-tagline">Mortar makes the application of intelligence, data, and user-led design easier and more affordable; to inspire services, experiences, and relationships to be more accessible and inclusive. Read our insights to find out how we are applying technology to build better services.</p>
       </div>
 
-      <ul id="insight-list">
-      {% for post in collections.insights | slice(0, 9) %}
-        <li>
-          <a class="insight-title" href="{{ post.url }}" aria-label="Insight: {{ post.data.title }}">
-            <div class="insight-image" style="background-image: url('{{ '/static/images/insights/' + post.data.image | url }}')"></div>
-            <div class="insight-details">
-              <time datetime="{{ post.data.date | w3date }}">{{ post.data.date | date }}</time>
-              {{ post.data.title }}
-            </div>
-          </a>
-        </li>
-      {% endfor %}
+     <ul id="insight-list">
+  {% for post in collections.insights %}
+    <li>
+      <a class="insight-title" href="{{ post.url }}" aria-label="Insight: {{ post.data.title }}">
+        <div class="insight-image" style="background-image: url('{{ '/static/images/insights/' + post.data.image | url }}')"></div>
+        <div class="insight-details">
+          <time datetime="{{ post.data.date | w3date }}">{{ post.data.date | date }}</time>
+          {{ post.data.title }}
+        </div>
+      </a>
+    </li>
+  {% endfor %}
+</ul>
+
       </ul>
 
       <button id="load-more-insights" class="cta">Load More Insights</button>
