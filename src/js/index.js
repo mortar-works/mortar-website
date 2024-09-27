@@ -10,45 +10,53 @@ function toggleBurger() {
 }
 
 window.addEventListener('load', (event) => {
-  document.querySelectorAll('header nav a').forEach(el => {
-    el.addEventListener('click', event => el.scrollIntoView({ behavior: 'smooth' }));
+  document.querySelectorAll('header nav a').forEach((el) => {
+    el.addEventListener('click', (event) =>
+      el.scrollIntoView({ behavior: 'smooth' })
+    );
   });
 
   const burger = document.querySelector('header .hamburger');
   burger.addEventListener('click', toggleBurger);
 
-  // Close menu when link clicked on mobile
-  document.querySelectorAll('header nav li a').forEach(a => {
-    a.addEventListener('click', e => {
+  // Close menu when link is clicked on mobile
+  document.querySelectorAll('header nav li a').forEach((a) => {
+    a.addEventListener('click', (e) => {
       if (document.querySelector('header').classList.contains('nav-active')) {
         toggleBurger();
       }
     });
   });
-});
 
-// Load More Insights Functionality
-window.addEventListener('DOMContentLoaded', () => {
-  const loadMoreButton = document.getElementById('load-more-insights');
-  const insightListItems = Array.from(document.querySelectorAll('#insight-list li.hidden'));
+  // Load more insights functionality
+  const loadMoreButton = document.querySelector('#load-more-insights');
+  const insightList = document.querySelectorAll('#insight-list li');
+  const preloader = document.querySelector('#insights-preloader');
+  let visibleInsights = 6; // Initially show 6 insights
 
-  let currentIndex = 9; // We initially show 9 insights
-
-  if (loadMoreButton) {
+  if (loadMoreButton && insightList) {
     loadMoreButton.addEventListener('click', () => {
-      // Reveal the next batch of 9 insights
-      const nextBatch = insightListItems.slice(currentIndex, currentIndex + 6);
+      // Show the preloader
+      preloader.classList.remove('hidden');
 
-      nextBatch.forEach(insight => {
-        insight.classList.remove('hidden');
-      });
+      // Simulate loading delay with setTimeout
+      setTimeout(() => {
+        for (let i = visibleInsights; i < visibleInsights + 6; i++) {
+          if (insightList[i]) {
+            insightList[i].classList.remove('hidden');
+          }
+        }
 
-      currentIndex += 9;
+        visibleInsights += 6;
 
-      // Hide the button if no more insights are left to show
-      if (currentIndex >= insightListItems.length) {
-        loadMoreButton.style.display = 'none';
-      }
+        // Hide preloader after loading new items
+        preloader.classList.add('hidden');
+
+        // Hide the load more button if all items are shown
+        if (visibleInsights >= insightList.length) {
+          loadMoreButton.style.display = 'none';
+        }
+      }, 500); // 500ms delay to simulate loading
     });
   }
 });

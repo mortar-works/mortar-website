@@ -290,6 +290,28 @@
       &:hover {
         background-color: darken($mortar-purple, 10%);
       }
+      
+    }.preloader {
+      text-align: center;
+      margin-top: 20px;
+    
+      &.hidden {
+        display: none;
+      }
+    
+      .loader {
+        border: 5px solid rgba(255, 255, 255, 0.3); 
+        border-top: 5px solid $mortar-purple; 
+        border-radius: 50%;
+        width: 30px;
+        height: 30px;
+        animation: spin 1s linear infinite;
+      }
+    
+      @keyframes spin {
+        0% { transform: rotate(0deg); }
+        100% { transform: rotate(360deg); }
+      }
     }
   }
 }
