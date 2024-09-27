@@ -12,10 +12,11 @@ name: homepage
 {% block content %}
   <section id="topline">
     <div class="wrapper">
-      <h1>Redefining relationships between people, places and property</h1>
+      <h1>Redefining relationships between people, places, and property</h1>
 
       <p>
-       Mortar is a technology company building better services. Our products and solutions are driving the next generation of intelligent, accessible, user-led services. </p>
+        Mortar is a technology company building better services. Our products and solutions are driving the next generation of intelligent, accessible, user-led services.
+      </p>
 
       <a class="cta light" href="#use-cases">Learn about our work</a>
     </div>
@@ -25,22 +26,21 @@ name: homepage
     <div class="wrapper">
       <div class="section-head">
         <h2>Building Better Services</h2>
-       
- <h3>Mortar creates scalable solutions to real-world problems</h3>  
-<p class="section-tagline"> <p>We combine our technology and expertise in data, intelligence and user-led design to build scalable products and solutions. Our toolkit, platform and framework support the development of customisable solutions that enhance service quality, effiency and accessibility. Have a look at our use-cases to see how our partners are delivering solutions at scale and to learn how we can support you in the transformation of your services and the delivery of better outcomes for your users.  
-
-<br><br></p>
-     </p> </div>
+        <h3>Mortar creates scalable solutions to real-world problems</h3>
+        <p class="section-tagline">
+          We combine our technology and expertise in data, intelligence, and user-led design to build scalable products and solutions. Our toolkit, platform, and framework support the development of customisable solutions that enhance service quality, efficiency, and accessibility.
+        </p>
+      </div>
 
       <div id="feature-list">
         <ul>
-        {% for feature in features  %}
-          <li>
-            <h3>{{ feature.title }}</h3>
-            <p class="feature-tagline">{{ feature.tagline }}</p>
-            {{ feature.subfeatures | markdown | safe }}
-          </li>
-        {% endfor %}
+          {% for feature in features %}
+            <li>
+              <h3>{{ feature.title }}</h3>
+              <p class="feature-tagline">{{ feature.tagline }}</p>
+              {{ feature.subfeatures | markdown | safe }}
+            </li>
+          {% endfor %}
         </ul>
       </div>
     </div>
@@ -50,23 +50,18 @@ name: homepage
     <div class="wrapper">
       <h2>Our partners</h2>
       <ul>
-
-       <li><img src="{{ '/static/images/partners/lga_logo.png' | url }}" alt="Local Government Association logo" /></li> 
-           <li><img src="{{ '/static/images/partners/gla_logo2.jpeg' | url }}" alt="Greater London Authority logo" /></li>
-         <li><img src="{{ '/static/images/partners/havering-council.png' | url }}" alt="Havering Council logo" /></li 
-           <li><img src="{{ '/static/images/partners/Hackney-Logo.png' | url }}" alt="Hackney Council logo" /></li>
-            <li><img src="{{ '/static/images/partners/Clarion-Housing-Group-Logo.png' | url }}" alt="Clarion Housing Group logo" /></li>
-                  <li><img src="{{ '/static/images/partners/salford02.png' | url }}" alt="Salford City Council logo" /></li>
-                  <li><img src="{{ '/static/images/partners/eastriding1.png' | url }}" alt="East Riding of Yorkshire logo" /></li>
-                  <li><img src="{{ '/static/images/partners/humberandnorth.png' | url }}" alt="Humber and North Yorkshire Integrated Care Partnership logo" /></li>
-                  <li><img src="{{ '/static/images/partners/walthamforest01.png' | url }}" alt="Waltham Forest logo" /></li>
-                  <li><img src="{{ '/static/images/partners/Worcestershire-County-Council-logo.png' | url }}" alt="Worcestershire County Council logo" /></li>
-                  <li><img src="{{ '/static/images/partners/socialfinance01.png' | url }}" alt="Social Finance logo" /></li>
-                  <li><img src="{{ '/static/images/partners/mayoroflondonlogo01.png' | url }}" alt="Mayor of London logo" /></li>
-
-
-
-      
+        <li><img src="{{ '/static/images/partners/lga_logo.png' | url }}" alt="Local Government Association logo" /></li>
+        <li><img src="{{ '/static/images/partners/gla_logo2.jpeg' | url }}" alt="Greater London Authority logo" /></li>
+        <li><img src="{{ '/static/images/partners/havering-council.png' | url }}" alt="Havering Council logo" /></li>
+        <li><img src="{{ '/static/images/partners/Hackney-Logo.png' | url }}" alt="Hackney Council logo" /></li>
+        <li><img src="{{ '/static/images/partners/Clarion-Housing-Group-Logo.png' | url }}" alt="Clarion Housing Group logo" /></li>
+        <li><img src="{{ '/static/images/partners/salford02.png' | url }}" alt="Salford City Council logo" /></li>
+        <li><img src="{{ '/static/images/partners/eastriding1.png' | url }}" alt="East Riding of Yorkshire logo" /></li>
+        <li><img src="{{ '/static/images/partners/humberandnorth.png' | url }}" alt="Humber and North Yorkshire Integrated Care Partnership logo" /></li>
+        <li><img src="{{ '/static/images/partners/walthamforest01.png' | url }}" alt="Waltham Forest logo" /></li>
+        <li><img src="{{ '/static/images/partners/Worcestershire-County-Council-logo.png' | url }}" alt="Worcestershire County Council logo" /></li>
+        <li><img src="{{ '/static/images/partners/socialfinance01.png' | url }}" alt="Social Finance logo" /></li>
+        <li><img src="{{ '/static/images/partners/mayoroflondonlogo01.png' | url }}" alt="Mayor of London logo" /></li>
       </ul>
     </div>
   </section>
@@ -77,82 +72,59 @@ name: homepage
         <h2>Use Cases</h2>
         <div class="section-tagline">
           <p>
-
-Alongside providing bespoke systems and service design our scalable solutions address and solve complex societal issues, making your adoption of new technology easier and more affordable.
-
+            Alongside providing bespoke systems and service design, our scalable solutions address and solve complex societal issues, making your adoption of new technology easier and more affordable.
           </p>
-         
-          
-          
-          
-          <p></p>
         </div>
       </div>
 
       <ol>
-      {% for useCase in collections.useCases %}
-        <li>
-          <h3>{{ useCase.data.title }}</h3>
+        {% for useCase in collections.useCases %}
+          <li>
+            <h3>{{ useCase.data.title }}</h3>
 
-          {% if useCase.data.homepageImage %}
-            <figure>
-              <img src="{{ '/static/images/homepage/' + useCase.data.homepageImage | url }}" alt="" />
-            </figure>
-          {% endif %}
+            {% if useCase.data.homepageImage %}
+              <figure>
+                <img src="{{ '/static/images/homepage/' + useCase.data.homepageImage | url }}" alt="" />
+              </figure>
+            {% endif %}
 
-          <div>
-            {{ useCase.data.description | markdown | safe }}
+            <div>
+              {{ useCase.data.description | markdown | safe }}
 
-            <a href="{{ useCase.url }}" class="cta">Learn more<span class="visually-hidden"> about {{ useCase.data.title }}<span></a>
-          </div>
-        </li>
-      {% endfor %}
+              <a href="{{ useCase.url }}" class="cta">Learn more<span class="visually-hidden"> about {{ useCase.data.title }}</span></a>
+            </div>
+          </li>
+        {% endfor %}
       </ol>
     </div>
   </section>
 
   <section id="insights">
-  <div class="wrapper">
-    <div class="section-head">
-      <h2>Insights</h2>
-      <p class="section-tagline">
-        Mortar makes the application of intelligence, data and user-led design easier and more affordable. Read our insights to find out how we are applying technology to build better services.
-      </p>
+    <div class="wrapper">
+      <div class="section-head">
+        <h2>Insights</h2>
+        <p class="section-tagline">
+          Mortar makes the application of intelligence, data, and user-led design easier and more affordable. Read our insights to find out how we are applying technology to build better services.
+        </p>
+      </div>
+
+      <ul>
+        {% for post in collections.insights %}
+          <li>
+            <a class="insight-title" href="{{ post.url }}" aria-label="Insight: {{ post.data.title }}">
+              <div class="insight-image" style="background-image: url('{{ '/static/images/insights/' + post.data.image | url }}')"></div>
+              <div class="insight-details">
+                <time datetime="{{ post.data.date | w3date }}">{{ post.data.date ? post.data.date | date : "Unknown Date" }}</time>
+                {{ post.data.title }}
+              </div>
+            </a>
+          </li>
+        {% endfor %}
+      </ul>
+
+      {% if collections.insights | length > 9 %}
+        <button id="load-more-insights">Load More Insights</button>
+      {% endif %}
     </div>
-
-    <!-- First 6 insights (3 rows of 2 columns) -->
-    <ul>
-      {% for post in collections.insights | slice(0, 9) %}  {# Show first 6 insights #}
-        <li class="insight-item">
-          <a class="insight-title" href="{{ post.url }}">
-            <div class="insight-image" style="background-image: url('{{ '/static/images/insights/' + post.data.image | url }}')"></div>
-            <div class="insight-details">
-              <time datetime="{{ post.data.date | w3date }}">{{ post.data.date | date }}</time>
-              {{ post.data.title }}
-            </div>
-          </a>
-        </li>
-      {% endfor %}
-    </ul>
-
-    <!-- Hidden section for remaining insights -->
-    <ul id="more-insights" class="hidden">
-      {% for post in collections.insights | slice(6) %}  {# Show the rest of the insights, hidden by default #}
-        <li class="insight-item">
-          <a class="insight-title" href="{{ post.url }}">
-            <div class="insight-image" style="background-image: url('{{ '/static/images/insights/' + post.data.image | url }}')"></div>
-            <div class="insight-details">
-              <time datetime="{{ post.data.date | w3date }}">{{ post.data.date | date }}</time>
-              {{ post.data.title }}
-            </div>
-          </a>
-        </li>
-      {% endfor %}
-    </ul>
-
-    <!-- Load More Button -->
-    <button id="load-more-btn" class="cta">Load More Insights</button>
-  </div>
-</section>
-
+  </section>
 {% endblock %}
