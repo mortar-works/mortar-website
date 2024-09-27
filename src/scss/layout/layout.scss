@@ -3,26 +3,27 @@ body {
   color: $white;
 }
 
-// Grid container for the entire page layout
-.grid-container {
-  display: grid;
-  grid-template-areas: 
-    "header"
-    "main"
-    "footer";
-  grid-template-rows: auto 1fr auto; // Auto height for header and footer, flexible for main content
-  min-height: 100vh; // Full page height
+header, footer, main > section {
+  overflow: hidden;
+
+  & .wrapper {
+    max-width: map-get($breakpoints, 'large');
+    margin: auto;
+    padding: 1em 2em;
+
+    @include respond-to('small') {
+    }
+  }
 }
 
 header {
-  grid-area: header; // Grid area for header
   height: 7em;
   position: absolute;
   left: 0;
   right: 0;
   top: 0;
   z-index: 100;
-  background: rgba(255, 255, 255, 0.65);
+  background: rgba(255,255,255,0.65);
   color: $black;
   transition: all 0.3s ease-out;
 
@@ -129,7 +130,7 @@ header {
         }
 
         &:last-of-type a {
-          padding: 0 0.6em;
+        padding: 0 0.6em;
           padding-right: inherit;
         }
       }
@@ -137,18 +138,7 @@ header {
   }
 }
 
-// Main content area using grid
-.main-content {
-  grid-area: main; // Grid area for main content
-  padding: 20px;
-
-  @include respond-to('small') {
-    padding: 10px;
-  }
-}
-
 footer {
-  grid-area: footer; // Grid area for footer
   padding: 2em 0 6em 0;
 
   ul {
@@ -182,11 +172,11 @@ footer {
       grid-gap: 2em;
     }
 
-    @include respond-to('medium') {
+    @include respond-to('medium'){
       grid-gap: 3em;
     }
 
-    @include respond-to('large') {
+    @include respond-to('large'){
       grid-gap: 4em;
     }
   }
