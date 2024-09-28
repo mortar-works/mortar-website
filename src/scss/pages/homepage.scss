@@ -84,21 +84,27 @@
 
     #feature-list {
       ul {
-        padding: 0;
+        padding-top: 2em
       }
 
       > ul {
         list-style: none;
         display: grid;
         grid-template-columns: repeat(auto-fill, minmax(18em, 1fr));
-        grid-gap: 3em 1.875em;
+        grid-gap: 3em 2em;
 
         > li {
-          background: none;
-        border-top: none;
-        box-shadow: none;
-        padding: 0; /* Adjust the padding if needed */
-        }
+          display: flex;
+          flex-direction: column;
+          justify-content: space-between; /* Make sure the content stretches */
+          background: none; /* Keep background removed */
+          padding: 1em; /* Add padding inside each feature */
+          box-shadow: none;
+          border-top: none;
+  
+          h3, .feature-tagline, .feature-description {
+            margin-bottom: auto;
+          }
       }
 
       > ul ul {
@@ -128,7 +134,7 @@
       /* New styles for Learn More links */
       .learn-more {
         display: inline;
-        margin-top: 0;
+        margin-top: auto;
         padding: 0;
         background-color: transparent;
         color: $mortar-purple;
