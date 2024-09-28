@@ -94,10 +94,10 @@
         grid-gap: 3em 1.875em;
 
         > li {
-          border-top: 3px solid $mortar-orange;
-          padding: 2.4em;
-          background: #ededed;
-          box-shadow: 2px 3px 6px 1px rgba(29.3, 40, 40, 0.3); // Corrected syntax: Removed extra }
+          background: none;
+        border-top: none;
+        box-shadow: none;
+        padding: 0; /* Adjust the padding if needed */
         }
       }
 
@@ -127,19 +127,31 @@
 
       /* New styles for Learn More links */
       .learn-more {
-        display: inline-block;
-        margin-top: 1em;
-        padding: 0.5em 1em;
-        background-color: $mortar-orange;
+        display: inline;
+        margin-top: 0;
+        padding: 0;
+        background-color: transparent;
         color: $mortar-purple;
-        font-size: 1em;
+        font-weight: bold;
         text-decoration: none;
         border-radius: 5px;
-        transition: background-color 0.3s ease;
+        transition: color 0.3s ease;
 
         &:hover {
-          background-color: darken($mortar-orange, 10%);
+          color: darken($mortar-purple, 10%); /* Optional: darker purple on hover */
         }
+        /* Add an arrow after the Learn More link */
+.learn-more::after {
+  content: " →"; /* Right-pointing arrow */
+  font-size: 1em;
+  color: $mortar-purple;
+  transition: color 0.3s ease;
+
+  /* Optional: Change arrow color on hover */
+  .learn-more:hover & {
+    color: darken($mortar-purple, 10%);
+  }
+}
       }
     }
   }
