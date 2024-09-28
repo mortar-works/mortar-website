@@ -78,6 +78,7 @@
     }
   }
 
+  /* Updated features section */
   #features {
     background: lighten($mortar-purple, 75%);
 
@@ -93,10 +94,11 @@
         grid-gap: 3em 1.875em;
 
         > li {
-          border-top: 3px solid $mortar-orange;
           padding: 2.4em;
           background: #ededed;
           box-shadow: 2px 3px 6px 1px rgba(29.3, 40, 40, 0.3);
+          /* Removed borders for cleaner design */
+          border: none;
         }
       }
 
@@ -110,7 +112,7 @@
       }
 
       h3 {
-        font-size: 1.3em;
+        font-size: 1.8em; /* Increased feature heading size */
         margin: 0;
         @include rajdhani-bold-type;
       }
@@ -122,6 +124,17 @@
 
       .feature-description {
         margin-bottom: 1.3em;
+        color: #666; /* Simplified to light gray */
+      }
+
+      a {
+        color: #007bff; /* Distinct color for call-to-action links */
+        font-weight: bold;
+        text-decoration: none;
+
+        &:hover {
+          text-decoration: underline; /* Underline on hover */
+        }
       }
     }
   }
