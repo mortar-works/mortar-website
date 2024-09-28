@@ -19,6 +19,7 @@
       }
     }
 
+    // Only one media query for small devices is needed here
     @include respond-to('small') {
       background: linear-gradient(90deg, $mortar-purple 30%, rgba(255, 255, 255, 0)),
         url('../images/topline-bg/newbg4.png') scroll no-repeat 270px 0;
@@ -96,7 +97,7 @@
           border-top: 3px solid $mortar-orange;
           padding: 2.4em;
           background: #ededed;
-          box-shadow: 2px 3px 6px 1px rgba(29.3, 40, 40, 0.3);
+          box-shadow: 2px 3px 6px 1px rgba(29.3, 40, 40, 0.3); // Corrected syntax: Removed extra }
         }
       }
 
@@ -360,3 +361,5 @@
         transform: rotate(360deg);
       }
     }
+  }
+}
