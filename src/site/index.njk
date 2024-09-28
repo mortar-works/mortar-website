@@ -46,8 +46,12 @@ name: homepage
             <h3>{{ feature.title }}</h3>
             <p class="feature-tagline">{{ feature.tagline }}</p>
             {{ feature.subfeatures | markdown | safe }}
-          </li>
-          {% endfor %}
+           
+           <!-- Add the Learn More link -->
+  <a href="{{ feature.link }}" class="learn-more">Learn More</a>
+</li>
+{% endfor %}
+
         </ul>
       </div>
     </div>
