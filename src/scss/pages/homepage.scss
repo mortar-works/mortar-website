@@ -124,9 +124,22 @@
         margin-bottom: 1.3em;
       }
 
+      /* New styles for Learn More links */
+      .learn-more {
+        display: inline-block;
+        margin-top: 1em;
+        padding: 0.5em 1em;
+        background-color: $mortar-orange;
+        color: $mortar-purple;
+        font-size: 1em;
+        text-decoration: none;
+        border-radius: 5px;
+        transition: background-color 0.3s ease;
 
-
-      
+        &:hover {
+          background-color: darken($mortar-orange, 10%);
+        }
+      }
     }
   }
 
@@ -341,11 +354,3 @@
 
     @keyframes spin {
       0% {
-        transform: rotate(0deg);
-      }
-      100% {
-        transform: rotate(360deg);
-      }
-    }
-  }
-}
