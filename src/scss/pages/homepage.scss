@@ -26,9 +26,10 @@
     }
 
     h1 {
-      @include rajdhani-bold-type;
+      font-family: 'Basis Grotesque', sans-serif; /* Updated to Basis Grotesque Bold */
       font-size: 3em;
       line-height: 1em;
+      font-weight: bold;
 
       @include respond-to('small') {
         margin-top: 21vh;
@@ -61,15 +62,15 @@
   #insights {
     background: $white;
     color: $black;
-    font-family: 'Basis Grotesque', sans-serif;
 
     .wrapper {
       padding: 3em 2em;
     }
 
     h2 {
-      @include rajdhani-bold-type;
+      font-family: 'Basis Grotesque', sans-serif; /* Updated to Basis Grotesque Bold */
       font-size: 2.3em;
+      font-weight: bold;
     }
 
     .section-head {
@@ -79,9 +80,8 @@
     }
   }
 
-  /* Updated features section */
   #features {
-    background: lighten($mortar-purple, 75%);
+    background: lighten($mortar-purple, 75%); /* Original background restored */
 
     #feature-list {
       ul {
@@ -98,29 +98,15 @@
           padding: 2.4em;
           background: #ededed;
           box-shadow: 2px 3px 6px 1px rgba(29.3, 40, 40, 0.3);
-          /* Removed borders for cleaner design */
-          border: none;
-        }
-      }
-
-      > ul ul {
-        list-style-type: disc;
-        padding-left: 1.2em;
-
-        li {
-          margin-top: 0.4em;
+          border: none; /* Kept cleaner design without borders */
         }
       }
 
       h3 {
         font-size: 1.8em; /* Increased feature heading size */
+        font-family: 'Basis Grotesque', sans-serif; /* Updated to Basis Grotesque Bold */
+        font-weight: bold;
         margin: 0;
-        @include rajdhani-bold-type;
-      }
-
-      .feature-tagline {
-        font-size: 1em;
-        @include off-white-type;
       }
 
       .feature-description {
@@ -145,6 +131,7 @@
     border-bottom: 1em solid $mortar-purple;
 
     h2 {
+      font-family: 'Basis Grotesque', sans-serif; /* Updated to Basis Grotesque Bold */
       color: $mortar-purple;
       display: none;
     }
@@ -190,7 +177,9 @@
     }
 
     h3 {
+      font-family: 'Basis Grotesque', sans-serif; /* Updated to Basis Grotesque Bold */
       font-size: 1.5em;
+      font-weight: bold;
     }
 
     .cta {
@@ -294,6 +283,7 @@
     }
 
     .insight-title {
+      font-family: 'Basis Grotesque', sans-serif; /* Updated to Basis Grotesque Bold */
       font-size: 1.3em;
       font-weight: bold;
     }
@@ -345,17 +335,3 @@
       }
 
       &.hidden {
-        display: none;
-      }
-    }
-
-    @keyframes spin {
-      0% {
-        transform: rotate(0deg);
-      }
-      100% {
-        transform: rotate(360deg);
-      }
-    }
-  }
-}
