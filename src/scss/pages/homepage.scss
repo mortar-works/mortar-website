@@ -19,7 +19,6 @@
       }
     }
 
-    // Only one media query for small devices is needed here
     @include respond-to('small') {
       background: linear-gradient(90deg, $mortar-purple 30%, rgba(255, 255, 255, 0)),
         url('../images/topline-bg/newbg4.png') scroll no-repeat 270px 0;
@@ -81,30 +80,36 @@
 
   #features {
     background: lighten($mortar-purple, 75%);
+    padding-top: 2em; /* Add padding above the feature list */
 
     #feature-list {
       ul {
-        padding-top: 2em
+        padding: 0;
       }
 
       > ul {
         list-style: none;
         display: grid;
         grid-template-columns: repeat(auto-fill, minmax(18em, 1fr));
-        grid-gap: 3em 2em;
+        grid-gap: 3em 2em; /* Adjust gap between features */
 
         > li {
           display: flex;
           flex-direction: column;
-          justify-content: space-between; /* Make sure the content stretches */
-          background: none; /* Keep background removed */
-          padding: 1em; /* Add padding inside each feature */
-          box-shadow: none;
+          justify-content: space-between; /* Ensure "Learn More" stays at the bottom */
+          background: none; /* Remove background */
+          padding: 1em; /* Adjust padding */
+          box-shadow: none; /* Remove box shadow */
           border-top: none;
-  
+
           h3, .feature-tagline, .feature-description {
             margin-bottom: auto;
           }
+
+          .learn-more {
+            margin-top: auto; /* Ensure "Learn More" is aligned at the bottom */
+          }
+        }
       }
 
       > ul ul {
@@ -133,31 +138,29 @@
 
       /* New styles for Learn More links */
       .learn-more {
-        display: inline;
-        margin-top: auto;
-        padding: 0;
-        background-color: transparent;
-        color: $mortar-purple;
-        font-weight: bold;
+        display: inline; /* Make it appear like regular text */
+        margin-top: 0;   /* Remove top margin */
+        padding: 0;      /* Remove padding */
+        background-color: transparent; /* Remove background */
+        color: $mortar-purple; /* Make the text purple */
         text-decoration: none;
-        border-radius: 5px;
+        font-weight: bold; /* Optional: make the link bold */
         transition: color 0.3s ease;
 
         &:hover {
-          color: darken($mortar-purple, 10%); /* Optional: darker purple on hover */
+          color: darken($mortar-purple, 10%); /* Darken text color on hover */
         }
-        /* Add an arrow after the Learn More link */
-.learn-more::after {
-  content: " →"; /* Right-pointing arrow */
-  font-size: 1em;
-  color: $mortar-purple;
-  transition: color 0.3s ease;
 
-  /* Optional: Change arrow color on hover */
-  .learn-more:hover & {
-    color: darken($mortar-purple, 10%);
-  }
-}
+        &::after {
+          content: " →"; /* Add right-pointing arrow */
+          font-size: 1em;
+          color: $mortar-purple; /* Make arrow purple */
+          transition: color 0.3s ease;
+        }
+
+        &:hover::after {
+          color: darken($mortar-purple, 10%); /* Darken arrow color on hover */
+        }
       }
     }
   }
