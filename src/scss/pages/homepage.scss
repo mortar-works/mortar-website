@@ -139,7 +139,7 @@
       /* New styles for Learn More links */
       .learn-more {
         display: inline; /* Make it appear like regular text */
-        margin-top: 0;   /* Remove top margin */
+        margin-top: 1em;   /* Remove top margin */
         padding: 0;      /* Remove padding */
         background-color: transparent; /* Remove background */
         color: $mortar-purple; /* Make the text purple */
@@ -153,7 +153,7 @@
 
         &::after {
           content: " →"; /* Add right-pointing arrow */
-          font-size: 1em;
+          font-size: 1.4em;
           color: $mortar-purple; /* Make arrow purple */
           transition: color 0.3s ease;
         }
