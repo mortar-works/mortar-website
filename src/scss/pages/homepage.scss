@@ -93,7 +93,7 @@
       font-family: 'Basis Grotesque Pro Bold'; /* Ensure the same H1 style is applied */
       font-size: 3em;
       line-height: 1.2em;
-      margin-bottom: 1.2em;
+      margin-bottom: 0.4em;
     }
 
     #feature-list {
@@ -105,6 +105,16 @@
         grid-template-columns: repeat(4, 1fr); /* Row of four features */
         grid-gap: 3em 2em;
         justify-content: start;
+
+        /* Switch to 2x2 layout for medium screens */
+        @include respond-to('medium') {
+          grid-template-columns: repeat(2, 1fr); /* 2 columns for medium screens */
+        }
+  
+        /* Switch to 1 column layout for small screens (mobile) */
+        @include respond-to('small') {
+          grid-template-columns: repeat(1, 1fr); /* 1 column for small screens */
+        }
       }
 
       li {
