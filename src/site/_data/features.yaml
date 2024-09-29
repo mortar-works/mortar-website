@@ -1,9 +1,10 @@
 ---
-  - title: Engage your users
+  - title: Improve service experience
     tagline: Improve accessibility and engagement using our templates and toolkits to provide more accessible onboarding, dynamic self-assessment and triage environments.
     description: |-
       Better data, bigger impact. Our universal data adapter helps assess, share and improve the quality of data; making it easier to visualise, understand and act effectively.
     subfeatures: |-
+    icon: '/static/images/icons/cell-phone-svgrepo-com.svg' # Path to the icon file
     link: "/features/ux-ui-toolkit"
 
   - title: Work with your partners
@@ -11,6 +12,7 @@
     description: |-
       Work smarter, not harder. Mortar's framework makes it easier to apply intelligent solutions; transforming systems and services with predictive analytics, automation and machine learning.
     subfeatures: |-
+    icon: '/static/images/icons/pie-chart-svgrepo-com.svgvg' # Path to the icon file
     link: "/features/data-platform"
 
   - title: Understand your service
@@ -18,12 +20,14 @@
     description: |-
       Designed for co-creation. Mortar's AI engine analyses patterns and behaviours in correspondence, streamlining caseworking and consumer responses.
     subfeatures: |-
+    icon: '/static/images/icons/column-chart-svgrepo-com.svg' # Path to the icon file
     link: "/features/intelligence-framework"
 
-  - title: Apply intelligence
+  - title: Create intelligent solutions
     tagline: Drive efficiencies in service provision using our intelligence framework, personalising experiences for your users and prioritising cases, actions and decisions for your team.
     description: |-
       Designed for co-creation. Mortar's AI engine analyses patterns and behaviours in correspondence, streamlining caseworking and consumer responses.
     subfeatures: |-
+    icon: '/static/images/icons/network-svgrepo-com.svg' # Path to the icon file
     link: "/features/intelligence-framework"
 
