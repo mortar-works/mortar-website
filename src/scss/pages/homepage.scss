@@ -82,6 +82,7 @@
   #features {
     background: lighten($mortar-purple, 75%);
     padding-top: 2em;
+    padding-bottom: 1.2em;
 
     .wrapper {
       padding-left: 0;
@@ -92,7 +93,7 @@
       font-family: 'Basis Grotesque Pro Bold'; /* Ensure the same H1 style is applied */
       font-size: 3em;
       line-height: 1.2em;
-      margin-bottom: 1.5em;
+      margin-bottom: 1.2em;
     }
 
     #feature-list {
@@ -122,7 +123,7 @@
       .feature-icon {
         width: 40px; /* Adjust icon size */
         height: 40px; /* Adjust icon size */
-        margin-bottom: 1em; /* Space between the icon and heading */
+        margin-bottom: 1.2em; /* Space between the icon and heading */
       }
 
         h3 {
