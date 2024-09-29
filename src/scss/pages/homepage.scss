@@ -139,13 +139,15 @@
       /* New styles for Learn More links */
       .learn-more {
         display: inline; /* Make it appear like regular text */
-        margin-top: 1em;   /* Remove top margin */
+        margin-top: 2em;   /* Remove top margin */
         padding: 0;      /* Remove padding */
         background-color: transparent; /* Remove background */
         color: $mortar-purple; /* Make the text purple */
         text-decoration: none;
         font-weight: bold; /* Optional: make the link bold */
         transition: color 0.3s ease;
+        font-size: 1.4em;
+        font-family: 'Basis Grotesque Pro Bold'
 
         &:hover {
           color: darken($mortar-purple, 10%); /* Darken text color on hover */

@@ -1,20 +1,27 @@
 ---
-  - title: UX / UI Toolkit
-    tagline: Access our growing suite of interfaces and tools for building more accessible solutions; driving the development of pathways, touchpoints and journeys.
+  - title: Engage your users
+    tagline: Create custom front doors into your service using our UX/UI toolkits to provide more accessible onboarding, dynamic self-assessment and triage environments.
     description: |-
       Better data, bigger impact. Our universal data adapter helps assess, share and improve the quality of data; making it easier to visualise, understand and act effectively.
     subfeatures: |-
     link: "/features/ux-ui-toolkit"
 
-  - title: Data Platform
-    tagline: Transform service quality by capturing and blending diverse data sources, conducting analysis and creating new ways to visualise and interpret your data.
+  - title: Work with your partners
+    tagline: Build and grow your local networks and partnerships by using our platform to deliver accreditation programmes, referral pathways and tailored directories and resources.
     description: |-
       Work smarter, not harder. Mortar's framework makes it easier to apply intelligent solutions; transforming systems and services with predictive analytics, automation and machine learning.
     subfeatures: |-
     link: "/features/data-platform"
 
-  - title: Intelligence Framework
-    tagline: Add intelligence to enhance data analysis and decision making; apply personalisation, predictive analytics, automations and machine learning.
+  - title: Understand your service
+    tagline: Capture and analyse data continuously using our data platform, identifying gaps in provision, assessing needs and visualising impact across complex systems and services.
+    description: |-
+      Designed for co-creation. Mortar's AI engine analyses patterns and behaviours in correspondence, streamlining caseworking and consumer responses.
+    subfeatures: |-
+    link: "/features/intelligence-framework"
+
+  - title: Apply intelligence
+    tagline: Drive efficiencies in service provision using our intelligence framework, personalising experiences for your users and supporting decision-making for your team.
     description: |-
       Designed for co-creation. Mortar's AI engine analyses patterns and behaviours in correspondence, streamlining caseworking and consumer responses.
     subfeatures: |-
