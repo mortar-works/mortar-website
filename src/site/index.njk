@@ -22,32 +22,32 @@ name: homepage
     </div>
   </section>
 
-  <section id="features">
-    <div class="wrapper">
-      <div class="section-head">
-        <h1>How Mortar helps</h1>
-        <h1>to build better services</h1>
-        <p class="section-tagline">
-        </p>
-      </div>
-
-      <div id="feature-list">
-        <ul>
-          {% for feature in features %}
-          <li>
-            <h3>{{ feature.title }}</h3>
-            <p class="feature-tagline">{{ feature.tagline }}</p>
-            {{ feature.subfeatures | markdown | safe }}
-           
-           <!-- Add the Learn More link -->
-  <a href="{{ feature.link }}" class="learn-more">Learn More</a>
-</li>
-{% endfor %}
-
-        </ul>
-      </div>
+<section id="features">
+  <div class="wrapper">
+    <div class="section-head">
+      <h1>
+        How <span class="mortar-purple">Mortar</span> helps to<br>
+        <span class="mortar-orange">build better services</span>
+      </h1>
+      <p class="section-tagline"></p>
     </div>
-  </section>
+
+    <div id="feature-list">
+      <ul>
+        {% for feature in features %}
+        <li>
+          <h3>{{ feature.title }}</h3>
+          <p class="feature-tagline">{{ feature.tagline }}</p>
+          {{ feature.subfeatures | markdown | safe }}
+          
+          <!-- Add the Learn More link -->
+          <a href="{{ feature.link }}" class="learn-more">Learn More</a>
+        </li>
+        {% endfor %}
+      </ul>
+    </div>
+  </div>
+</section>
 
   <section id="partners">
     <div class="wrapper">
