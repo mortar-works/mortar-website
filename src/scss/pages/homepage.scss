@@ -90,7 +90,7 @@
       > ul {
         list-style: none;
         display: grid;
-        grid-template-columns: repeat(auto-fill, minmax(18em, 1fr));
+        grid-template-columns: repeat(4, 1fr); /* Force four equal-width columns */
         grid-gap: 3em 2em; /* Adjust gap between features */
 
         > li {
