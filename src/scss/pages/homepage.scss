@@ -96,20 +96,8 @@
       ul { // Removed '>' symbol
         list-style: none;
         display: grid;
-        grid-gap: 3em 2em;
-    
-        /* Default for large screens (4 features in one row) */
-        grid-template-columns: repeat(4, 1fr);
-    
-        /* For medium screens (2 features per row) */
-        @include respond-to('medium') {
-          grid-template-columns: repeat(2, 1fr); /* Two columns for medium screens */
-        }
-    
-        /* For small screens (1 feature per row) */
-        @include respond-to('small') {
-          grid-template-columns: repeat(1, 1fr); /* One column for small screens */
-        }
+        grid-template-columns: repeat(4, 1fr); /* Create a grid with 4 equal columns */
+        grid-gap: 3em 2em; /* Space between feature items */
     
         li { // Removed '>' symbol
           display: flex;
