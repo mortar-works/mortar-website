@@ -26,7 +26,7 @@
     }
 
     h1 {
-      @include rajdhani-bold-type;
+      @include Basis bold-type;
       font-size: 3em;
       line-height: 1em;
 
@@ -67,7 +67,7 @@
     }
 
     h2 {
-      @include rajdhani-bold-type;
+      @include bold-type;
       font-size: 2.3em;
     }
 
@@ -90,8 +90,20 @@
       > ul {
         list-style: none;
         display: grid;
-        grid-template-columns: repeat(4, 1fr); /* Force four equal-width columns */
-        grid-gap: 3em 2em; /* Adjust gap between features */
+        grid-gap: 3em 2em; /* Adjusts gap between features */
+
+        /* Default for large screens (4 features in one row) */
+        grid-template-columns: repeat(4, 1fr);
+  
+        /* For medium screens (2 features per row) */
+        @include respond-to('medium') {
+          grid-template-columns: repeat(2, 1fr); /* Two columns for medium screens */
+        }
+  
+        /* For small screens (1 feature per row) */
+        @include respond-to('small') {
+          grid-template-columns: repeat(1, 1fr); /* One column for small screens */
+        }
 
         > li {
           display: flex;
@@ -140,7 +152,7 @@
       .learn-more {
         display: inline; /* Make it appear like regular text */
         margin-top: 2em;   /* Remove top margin */
-        padding-top: 2em;      /* Remove padding */
+        padding-top: 1.2em;      /* Remove padding */
         background-color: transparent; /* Remove background */
         color: $mortar-purple; /* Make the text purple */
         text-decoration: none;
