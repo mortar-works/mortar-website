@@ -119,18 +119,25 @@
         padding-left: 0; /* Remove padding for the first feature */
       }
 
-      /* Style the feature icon */
-      .feature-icon {
-        width: 40px; /* Adjust icon size */
-        height: 40px; /* Adjust icon size */
-        margin-bottom: 1.2em; /* Space between the icon and heading */
-      }
+ /* Vertical line next to h3 */
+ h3 {
+  font-size: 1.5em;
+  margin: 0 0 1em;
+  font-family: 'Basis Grotesque Pro Bold';
+  position: relative;
+  padding-left: 1em; /* Space between the line and the text */
 
-        h3 {
-          font-size: 1.5em;
-          margin: 0 0 1em;
-          font-family: 'Basis Grotesque Pro Bold';
-        }
+  /* Add the vertical line using the before pseudo-element */
+  &::before {
+    content: '';
+    position: absolute;
+    left: 0; /* Position the line on the left of the text */
+    top: 0;
+    width: 4px; /* Line thickness */
+    height: 100%; /* Make the line match the height of the text */
+    background-color: $mortar-orange; /* Mortar-orange color */
+  }
+}
 
         p {
           margin: 0 0 1em;

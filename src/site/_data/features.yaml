@@ -4,7 +4,6 @@
     description: |-
       Better data, bigger impact. Our universal data adapter helps assess, share and improve the quality of data; making it easier to visualise, understand and act effectively.
     subfeatures: |-
-    icon: '/static/images/icons/mlog1.svg' # Path to the icon file
     link: "/features/ux-ui-toolkit"
 
   - title: Work with your partners
@@ -12,7 +11,6 @@
     description: |-
       Work smarter, not harder. Mortar's framework makes it easier to apply intelligent solutions; transforming systems and services with predictive analytics, automation and machine learning.
     subfeatures: |-
-    icon: '/static/images/icons/mlog1.svg' # Path to the icon file
     link: "/features/data-platform"
 
   - title: Understand your service
@@ -20,7 +18,6 @@
     description: |-
       Designed for co-creation. Mortar's AI engine analyses patterns and behaviours in correspondence, streamlining caseworking and consumer responses.
     subfeatures: |-
-    icon: '/static/images/icons/mlog1.svg' # Path to the icon file
     link: "/features/intelligence-framework"
 
   - title: Create intelligent solutions
@@ -28,6 +25,5 @@
     description: |-
       Designed for co-creation. Mortar's AI engine analyses patterns and behaviours in correspondence, streamlining caseworking and consumer responses.
     subfeatures: |-
-    icon: '/static/images/icons/mlog1.svg' # Path to the icon file
     link: "/features/intelligence-framework"
 
