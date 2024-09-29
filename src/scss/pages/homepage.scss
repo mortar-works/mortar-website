@@ -98,21 +98,22 @@
 
     #feature-list {
       ul {
-        padding: 0;
+        padding-left: 0;
+        padding-right: 0;
         margin: 0;
         list-style: none;
         display: grid;
-        grid-template-columns: repeat(4, 1fr); /* Row of four features */
+        grid-template-columns: repeat(4, 1fr); /* 4 columns for larger screens */
         grid-gap: 3em 2em;
         justify-content: start;
-
+  
         /* Switch to 2x2 layout for medium screens */
-        @include respond-to('medium') {
+        @media (max-width: 992px) {
           grid-template-columns: repeat(2, 1fr); /* 2 columns for medium screens */
         }
   
         /* Switch to 1 column layout for small screens (mobile) */
-        @include respond-to('small') {
+        @media (max-width: 768px) {
           grid-template-columns: repeat(1, 1fr); /* 1 column for small screens */
         }
       }
