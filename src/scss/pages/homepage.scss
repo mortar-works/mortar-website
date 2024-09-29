@@ -80,8 +80,15 @@
 
   #features {
     background: lighten($mortar-purple, 75%);
-    padding-top: 2em; /* Add padding above the feature list */
+    padding-top: 2em;
 
+    #features h1 {
+      font-family: 'Basis Grotesque Pro Bold';
+      font-size: 3em;
+      line-height: 1.2em;
+      color: $primary-color;
+    }
+    
     #feature-list {
       ul {
         padding: 0;
@@ -90,16 +97,16 @@
       > ul {
         list-style: none;
         display: grid;
-        grid-gap: 3em 2em; /* Adjusts gap between features */
+        grid-gap: 3em 2em;
 
         /* Default for large screens (4 features in one row) */
         grid-template-columns: repeat(4, 1fr);
-  
+
         /* For medium screens (2 features per row) */
         @include respond-to('medium') {
           grid-template-columns: repeat(2, 1fr); /* Two columns for medium screens */
         }
-  
+
         /* For small screens (1 feature per row) */
         @include respond-to('small') {
           grid-template-columns: repeat(1, 1fr); /* One column for small screens */
@@ -109,9 +116,9 @@
           display: flex;
           flex-direction: column;
           justify-content: space-between; /* Ensure "Learn More" stays at the bottom */
-          background: none; /* Remove background */
-          padding: 1em; /* Adjust padding */
-          box-shadow: none; /* Remove box shadow */
+          background: none;
+          padding: 1em;
+          box-shadow: none;
           border-top: none;
 
           h3, .feature-tagline, .feature-description {
@@ -120,6 +127,30 @@
 
           .learn-more {
             margin-top: auto; /* Ensure "Learn More" is aligned at the bottom */
+            display: inline;
+            padding: 0;
+            background-color: transparent;
+            color: $mortar-purple;
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s ease;
+            font-size: 1.2em;
+            font-family: 'Basis Grotesque Pro Bold';
+
+            &:hover {
+              color: darken($mortar-purple, 10%);
+            }
+
+            &::after {
+              content: " →"; /* Right-pointing arrow */
+              font-size: 1.4em; /* Larger arrow */
+              color: $mortar-purple;
+              transition: color 0.3s ease;
+            }
+
+            &:hover::after {
+              color: darken($mortar-purple, 10%);
+            }
           }
         }
       }
@@ -146,35 +177,6 @@
 
       .feature-description {
         margin-bottom: 1.3em;
-      }
-
-      /* New styles for Learn More links */
-      .learn-more {
-        display: inline; /* Make it appear like regular text */
-        margin-top: 2em;   /* Remove top margin */
-        padding-top: 1.2em;      /* Remove padding */
-        background-color: transparent; /* Remove background */
-        color: $mortar-purple; /* Make the text purple */
-        text-decoration: none;
-        font-weight: bold; /* Optional: make the link bold */
-        transition: color 0.3s ease;
-        font-size: 1.2em;
-        font-family: 'Basis Grotesque Pro Bold'
-
-        &:hover {
-          color: darken($mortar-purple, 10%); /* Darken text color on hover */
-        }
-
-        &::after {
-          content: " →"; /* Add right-pointing arrow */
-          font-size: 1.4em;
-          color: $mortar-purple; /* Make arrow purple */
-          transition: color 0.3s ease;
-        }
-
-        &:hover::after {
-          color: darken($mortar-purple, 10%); /* Darken arrow color on hover */
-        }
       }
     }
   }
