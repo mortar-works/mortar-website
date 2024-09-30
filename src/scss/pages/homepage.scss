@@ -276,34 +276,88 @@
   
 
   #partners {
-    border-top: 1em solid $mortar-purple;
-    border-bottom: 1em solid $mortar-purple;
-
-    h2 {
-      color: $mortar-purple;
-      display: none;
+    padding: 2em 0;
+    background-color: $mortar-purple; /* Assuming you have a purple variable set */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  
+    .partners-wrapper {
+      position: relative;
+      width: 80%; /* Adjust as needed */
+      overflow: hidden; /* Ensures the logos scroll within the visible area */
+      display: flex;
+      justify-content: center;
+      align-items: center;
     }
-
-    ul {
-      padding: 0;
+  
+    .partners-ticker {
+      display: flex;
+      align-items: center;
+      animation: ticker 20s linear infinite; /* Continuous scrolling */
+    }
+  
+    .partners-list {
+      display: flex;
+      gap: 2em; /* Space between logos */
       list-style: none;
-      display: flex;
-      flex-wrap: wrap;
-      align-items: center;
-      justify-content: center;
+      padding: 0;
+      margin: 0;
     }
-
-    li {
-      display: flex;
-      padding: 3em;
-      justify-content: center;
-      align-items: center;
+  
+    .partners-list li {
+      flex-shrink: 0;
+      width: 120px; /* Set size of logos (adjust as needed) */
     }
-
-    img {
-      max-width: 160px;
-      max-height: 120px;
-      border-radius: 5%;
+  
+    .partners-list img {
+      width: 100%;
+      height: auto;
+      filter: grayscale(100%); /* Optional grayscale effect */
+      transition: filter 0.3s ease;
+    }
+  
+    .partners-list img:hover {
+      filter: none; /* Remove grayscale on hover */
+    }
+  
+    /* Arrow button styles */
+    .arrow {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      background-color: rgba(0, 0, 0, 0.5);
+      color: white;
+      border: none;
+      padding: 0.5em 1em;
+      font-size: 2em;
+      cursor: pointer;
+      z-index: 1;
+    }
+  
+    .left-arrow {
+      left: 0;
+    }
+  
+    .right-arrow {
+      right: 0;
+    }
+  
+    /* Animation for continuous scrolling */
+    @keyframes ticker {
+      0% {
+        transform: translateX(100%);
+      }
+      100% {
+        transform: translateX(-100%);
+      }
+    }
+  
+    /* Hide the arrows on smaller screens */
+    @media (max-width: 768px) {
+      .arrow {
+        display: none;
+      }
     }
   }
 

@@ -10,6 +10,7 @@ function toggleBurger() {
 }
 
 window.addEventListener('load', (event) => {
+  // Burger Menu Navigation
   document.querySelectorAll('header nav a').forEach((el) => {
     el.addEventListener('click', (event) =>
       el.scrollIntoView({ behavior: 'smooth' })
@@ -57,6 +58,23 @@ window.addEventListener('load', (event) => {
           loadMoreButton.style.display = 'none';
         }
       }, 800); // 800ms delay to simulate slower loading
+    });
+  }
+
+  // Partners Ticker Scrolling
+  const ticker = document.querySelector('.partners-ticker'); // The ticker container
+  const leftArrow = document.querySelector('.left-arrow');   // Left arrow button
+  const rightArrow = document.querySelector('.right-arrow'); // Right arrow button
+
+  if (ticker && leftArrow && rightArrow) {
+    // Scroll left when the left arrow is clicked
+    leftArrow.addEventListener('click', () => {
+      ticker.scrollBy({ left: -200, behavior: 'smooth' });
+    });
+
+    // Scroll right when the right arrow is clicked
+    rightArrow.addEventListener('click', () => {
+      ticker.scrollBy({ left: 200, behavior: 'smooth' });
     });
   }
 });
