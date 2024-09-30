@@ -157,7 +157,7 @@
       justify-content: left;
   
       h1 {
-        font-family: 'Basis Grotesque Pro Bold';
+        font-family: 'Basis Grotesque Pro Light';
         font-size: 3em;
         line-height: 1em;
         width: 60%;
@@ -257,7 +257,7 @@
           margin-top: auto;
           color: $mortar-purple;
           text-decoration: none;
-          font-weight: bold;
+          font-weight: normal;
           font-size: 1.2em;
           transition: color 0.3s ease;
   
@@ -267,7 +267,7 @@
           }
   
           &:hover {
-            color: darken($mortar-purple, 10%);
+            color: darken($mortar-orange, 10%);
           }
         }
       }
