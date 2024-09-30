@@ -17,7 +17,7 @@
       padding-top: 4em;
       padding-bottom: 4em;
       background: linear-gradient(90deg, $mortar-purple 30%, rgba(255, 255, 255, 0)),
-        url('../images/topline-bg/newbg6.png') scroll no-repeat 270px 0;
+        url('../images/topline-bg/newbg6.jpg') scroll no-repeat 270px 0;
       background-size: cover;
       background-position: center;
     }
@@ -307,7 +307,7 @@
     .partners-list {
       display: flex;
       gap: 4em; /* Space between logos */
-      animation: scroll 40s linear infinite; /* Seamless scrolling */
+      animation: scroll 100s linear infinite; /* Seamless scrolling */
       list-style: none;
       padding: 0;
       margin: 0;
