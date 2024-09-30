@@ -161,7 +161,7 @@
         font-size: 3em;
         line-height: 1em;
         width: 60%;
-        margin-bottom: 0.5em;
+        margin-bottom: 0.7em;
   
         /* Medium screens: Apply the 1em padding */
         @media (min-width: 769px) and (max-width: 1024px) {
@@ -183,7 +183,7 @@
       ul {
         padding-left: 0;
         padding-right: 0;
-        margin: 0;
+        margin bottom: 0.5em;
         list-style: none;
         display: grid;
         grid-template-columns: repeat(4, 1fr); /* Default for large screens */
