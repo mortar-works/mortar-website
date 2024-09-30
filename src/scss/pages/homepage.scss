@@ -71,17 +71,19 @@
       max-width: 30em;
       font-size: 1.3em;
       line-height: 1.4em;
+      padding-left: 0; 
+      padding-right: 0;
   
       /* For small screens */
       @include respond-to('small') {
-        padding-left: 1em; /* Add left indent for small screens */
-        padding-right: 1em;
+        padding-left: 2em; /* Add left indent for small screens */
+        padding-right: 2em;
       }
   
       /* For medium screens (iPads) */
       @media (min-width: 769px) and (max-width: 1024px) {
-        padding-left: 1em; /* Add left indent for medium screens */
-        padding-right: 1em;
+        padding-left: 0em; /* Add left indent for medium screens */
+        padding-right: 0em;
       }
     }
   
