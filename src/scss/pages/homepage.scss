@@ -22,12 +22,23 @@
       font-size: 3em;
       line-height: 1em;
       margin: 0;
-
+      
+      /* Adjust for small screens */
       @include respond-to('small') {
-        margin-top: 21vh;
+        margin-top: 21vh; /* Only apply this large margin for small screens */
         max-width: 13em;
         line-height: 1.2em;
       }
+    
+      /* For medium and wide screens, reduce or remove margin-top */
+      @media (min-width: 769px) {
+        margin-top: 2em; /* Smaller margin for larger screens */
+      }
+    
+      @media (min-width: 1025px) {
+        margin-top: 1em; /* Even smaller margin for wide screens */
+      }
+    }
 
       span {
         display: block;
