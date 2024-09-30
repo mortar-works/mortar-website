@@ -277,9 +277,10 @@
 
   #partners {
     padding: 2em 0;
-    background-color: $white; /* Change background to white */
-    border-top: 6px solid $mortar-purple; /* Thick top border */
-    border-bottom: 6px solid $mortar-purple; /* Thick bottom border */
+    background-color: $white; /* White background */
+    border-top: 6px solid $mortar-purple; /* Thick purple top border */
+    border-bottom: 6px solid $mortar-purple; /* Thick purple bottom border */
+    position: relative; /* Needed for fade effect */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -287,7 +288,7 @@
     .partners-wrapper {
       position: relative;
       width: 80%; /* Adjust as needed */
-      overflow: hidden; /* Ensures the logos scroll within the visible area */
+      overflow: hidden; /* Hides the logos when they move out of view */
       display: flex;
       justify-content: center;
       align-items: center;
@@ -299,9 +300,10 @@
       animation: ticker 40s linear infinite; /* Slower scrolling (40s) */
     }
   
+    /* Duplicate the partners list for continuous scrolling */
     .partners-list {
       display: flex;
-      gap: 2em; /* Space between logos */
+      gap: 4em; /* Increased space between logos */
       list-style: none;
       padding: 0;
       margin: 0;
@@ -309,36 +311,19 @@
   
     .partners-list li {
       flex-shrink: 0;
-      width: 160px; /* Increased size of logos */
+      display: flex;
+      justify-content: center;
+      align-items: center; /* Vertically align logos */
+      width: 160px; /* Set a standard width for logos */
+      height: 120px; /* Set a uniform height */
     }
   
     .partners-list img {
-      width: 100%;
-      height: auto;
+      max-width: 100%; /* Ensure logos fit within the width */
+      max-height: 100%; /* Enforce uniform height */
+      min-height: 60px; /* Minimum height to prevent oversized logos */
+      object-fit: contain; /* Ensure logos scale correctly without distortion */
       border-radius: 5%; /* Optional: keep rounded corners */
-      /* No grayscale filter; logos in color */
-    }
-  
-    /* Arrow button styles */
-    .arrow {
-      position: absolute;
-      top: 50%;
-      transform: translateY(-50%);
-      background-color: rgba(0, 0, 0, 0.5);
-      color: white;
-      border: none;
-      padding: 0.5em 1em;
-      font-size: 2em;
-      cursor: pointer;
-      z-index: 1;
-    }
-  
-    .left-arrow {
-      left: 0;
-    }
-  
-    .right-arrow {
-      right: 0;
     }
   
     /* Animation for continuous scrolling */
@@ -347,15 +332,30 @@
         transform: translateX(0); /* Start logos from the left */
       }
       100% {
-        transform: translateX(-100%); /* Scroll across the whole ticker width */
+        transform: translateX(-50%); /* Scroll across the duplicated list */
       }
     }
   
-    /* Hide the arrows on smaller screens */
-    @media (max-width: 768px) {
-      .arrow {
-        display: none;
-      }
+    /* Fade effect on the left and right edges */
+    .partners-wrapper::before,
+    .partners-wrapper::after {
+      content: '';
+      position: absolute;
+      top: 0;
+      width: 10%; /* Width of the fade area */
+      height: 100%;
+      z-index: 2;
+      pointer-events: none; /* Allow interaction with the content underneath */
+    }
+  
+    .partners-wrapper::before {
+      left: 0;
+      background: linear-gradient(to right, rgba(255, 255, 255, 1), rgba(255, 255, 255, 0)); /* Left fade */
+    }
+  
+    .partners-wrapper::after {
+      right: 0;
+      background: linear-gradient(to left, rgba(255, 255, 255, 1), rgba(255, 255, 255, 0)); /* Right fade */
     }
   }
   
