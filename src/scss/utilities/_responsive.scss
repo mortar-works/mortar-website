@@ -5,13 +5,19 @@ $breakpoints: (
 ) !default;
 
 
-@mixin respond-to($breakpoint) {
+@mixin respond-to($breakpoint, $type: 'min') {
   @if map-has-key($breakpoints, $breakpoint) {
-    @media (min-width: map-get($breakpoints, $breakpoint)) {
-      @content;
+    @if $type == 'min' {
+      @media (min-width: map-get($breakpoints, $breakpoint)) {
+        @content;
+      }
+    }
+    @else if $type == 'max' {
+      @media (max-width: map-get($breakpoints, $breakpoint)) {
+        @content;
+      }
     }
   }
-
   @else {
     @warn "Breakpoint error. Breakpoints are: #{map-keys($breakpoints)}.";
   }
