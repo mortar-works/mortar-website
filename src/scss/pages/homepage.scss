@@ -85,8 +85,6 @@
     padding-bottom: 1.2em;
   
     .wrapper {
-      padding-left: 0;  /* Remove existing padding */
-      padding-right: 0;
       width: 100%;
       display: flex;
       flex-direction: column;
@@ -102,7 +100,7 @@
   
       /* Align the feature header with the topline on mobile */
       @media (max-width: 768px) {
-        padding-left: 0; /* Match the topline padding on mobile */
+        padding-left: 1em; /* Match the topline padding on mobile */
         padding-right: 0; /* Optional: Right padding to match as well */
       }
     }
@@ -114,15 +112,23 @@
         margin: 0;
         list-style: none;
         display: grid;
-        grid-template-columns: repeat(4, 1fr); /* 4 columns for larger screens */
+        grid-template-columns: repeat(4, 1fr); /* Default for large screens */
         grid-gap: 3em 2em;
         justify-content: start;
   
-        /* Align the feature items with the topline on mobile */
+        /* 1 column for small screens */
         @media (max-width: 768px) {
-          grid-template-columns: repeat(1, 1fr); /* 1 column for small screens */
-          padding-left: 2em; /* Match topline padding on mobile */
+          grid-template-columns: repeat(1, 1fr);
+          padding-left: 1em; /* Match topline padding on mobile */
           padding-right: 2em;
+        }
+  
+        /* 2x2 grid for medium screens */
+        @media (min-width: 769px) and (max-width: 1024px) {
+          grid-template-columns: repeat(2, 1fr); /* 2 columns for medium screens */
+          grid-gap: 2em; /* Adjust spacing as needed */
+          padding-left: 1em;
+          padding-right: 1em;
         }
       }
   
