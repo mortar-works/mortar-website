@@ -38,8 +38,8 @@
       @media (min-width: 1025px) {
         margin-top: 1em; /* Even smaller margin for wide screens */
       }
-    }
 
+      /* Nesting the span inside the h1 */
       span {
         display: block;
         font-size: 0.5em;
@@ -79,7 +79,7 @@
         font-size: 1.1em;
       }
     }
-  }
+  } // Closing #topline block
 
   #features,
   #partners,
