@@ -2,21 +2,13 @@
   #topline {
     padding-top: 5.6em;
 
-    @include respond-to('small') {
-      height: 80vh;
-
-      .wrapper {
-        height: 100%;
-        width: 100%;
-        display: flex;
-        flex-direction: column;
-        align-content: center;
-        justify-content: left;
-      }
-
-      .cta {
-        max-width: fit-content;
-      }
+    /* No height restrictions - content determines height naturally */
+    .wrapper {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-content: center;
+      justify-content: left;
     }
 
     @include respond-to('small') {
@@ -54,7 +46,30 @@
       font-size: 1.3em;
       line-height: 1.4em;
     }
+
+    .cta {
+      max-width: fit-content;
+      margin-top: 2em; /* Adjust spacing to fit nicely below the text */
+      padding: 0.5em 2em;
+      background-color: $mortar-purple;
+      color: $white;
+      text-align: center;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 1.2em;
+      transition: background-color 0.3s ease;
+
+      &:hover {
+        background-color: darken($mortar-purple, 10%);
+      }
+
+      @include respond-to('small') {
+        margin-top: 3em;
+        font-size: 1.1em;
+      }
+    }
   }
+}
 
   #features,
   #partners,
