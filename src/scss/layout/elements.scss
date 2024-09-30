@@ -1,5 +1,8 @@
 html {
   scroll-behavior: smooth;
+  -webkit-font-smoothing: antialiased; /* For Chrome, Safari, etc. */
+  -moz-osx-font-smoothing: grayscale;  /* For Firefox on Mac */
+  box-sizing: border-box;
 }
 
 a {
