@@ -1,6 +1,6 @@
 ---
   - title: Improve service experience
-    tagline: Improve accessibility and engagement using our templates and toolkits to provide more accessible onboarding, dynamic self-assessment and triage environments.
+    tagline: Enhance engagement and improve accessibility using our templates and toolkits to deliver user onboarding, self-assessment and triage solutions.
     description: |-
       Better data, bigger impact. Our universal data adapter helps assess, share and improve the quality of data; making it easier to visualise, understand and act effectively.
     subfeatures: |-
@@ -14,7 +14,7 @@
     link: "/features/data-platform"
 
   - title: Understand your service
-    tagline: Capture and analyse data continuously using our data platform, identifying gaps in provision, assessing needs and visualising impact across complex systems and services.
+    tagline: Continuously capture and analyse data using our data platform to identify gaps in provision, assess needs and visualise impact across complex systems and services.
     description: |-
       Designed for co-creation. Mortar's AI engine analyses patterns and behaviours in correspondence, streamlining caseworking and consumer responses.
     subfeatures: |-

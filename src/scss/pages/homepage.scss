@@ -94,6 +94,12 @@
       font-size: 3em;
       line-height: 1.2em;
       margin-bottom: 0.4em;
+
+       /* Add padding for both mobile and medium screens */
+    @media (max-width: 992px) {
+      padding-left: 1em; /* Padding for medium and mobile */
+      padding-right: 1em; /* Optional right padding */
+    }
     }
 
     #feature-list {
@@ -110,11 +116,15 @@
         /* Switch to 2x2 layout for medium screens */
         @media (max-width: 992px) {
           grid-template-columns: repeat(2, 1fr); /* 2 columns for medium screens */
+          padding-left: 1em; /* Add padding for medium screens */
+          padding-right: 1em;
         }
   
         /* Switch to 1 column layout for small screens (mobile) */
         @media (max-width: 768px) {
           grid-template-columns: repeat(1, 1fr); /* 1 column for small screens */
+          padding-left: 1em; /* Add padding for mobile screens */
+          padding-right: 1em;
         }
       }
 
