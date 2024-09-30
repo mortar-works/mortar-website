@@ -155,8 +155,9 @@
           font-family: 'Basis Grotesque Pro Bold';
           position: relative;
           padding-left: 1em;
-          width: 50%;  /* Adjust as needed for large screens */
-          word-wrap: break-word;
+          width: 80%;  /* Adjust as needed for large screens */
+          white-space: normal; /* Allow line breaks at spaces */
+          word-break: keep-all; /* Prevent words from breaking */
 
           &::before {
             content: '';
