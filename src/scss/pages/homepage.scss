@@ -1,95 +1,85 @@
-#topline {
-  /* Default settings for all screen sizes */
-  padding-top: 5.6em;
+#homepage {
+  #topline {
+    padding-top: 5.6em;
 
-  .wrapper {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-content: center;
-    justify-content: left;
-  }
+    /* No height restrictions - content determines height naturally */
+    .wrapper {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-content: center;
+      justify-content: left;
+    }
 
-  /* Apply 80vh for smaller and medium screens */
-  @include respond-to('small') {
-    height: 80vh; /* For small screens, height is set to 80vh */
-    background: linear-gradient(90deg, $mortar-purple 30%, rgba(255, 255, 255, 0)),
-      url('../images/topline-bg/newbg4.png') scroll no-repeat 270px 0;
-    background-size: cover;
-    background-position: center; /* Ensures cropping focuses on the center */
-  }
-
-  /* For larger screens, make the height more flexible */
-  @media (min-width: 1025px) {
-    min-height: 70vh; /* Use min-height to avoid excessive zooming on large screens */
-    background-size: cover; /* Keep the cropping behavior */
-    background-position: center center; /* Center the background image */
-  }
-
-  h1 {
-    @include bold-type;
-    font-size: 3em;
-    line-height: 1em;
-    margin: 0;
-
-    /* Adjust for small screens */
     @include respond-to('small') {
-      margin-top: 21vh; /* Only apply this large margin for small screens */
-      max-width: 13em;
-      line-height: 1.2em;
+      background: linear-gradient(90deg, $mortar-purple 30%, rgba(255, 255, 255, 0)),
+        url('../images/topline-bg/newbg4.png') scroll no-repeat 270px 0;
+      background-size: cover;
     }
 
-    /* For medium and wide screens, reduce or remove margin-top */
-    @media (min-width: 769px) {
-      margin-top: 2em; /* Smaller margin for larger screens */
-    }
+    h1 {
+      @include bold-type;
+      font-size: 3em;
+      line-height: 1em;
+      margin: 0;
 
-    @media (min-width: 1025px) {
-      margin-top: 1em; /* Even smaller margin for wide screens */
-    }
-
-    /* Nesting the span inside the h1 */
-    span {
-      display: block;
-      font-size: 0.5em;
-      line-height: 1.3em;
-      margin-top: 1em;
-
+      /* Adjust for small screens */
       @include respond-to('small') {
-        line-height: 3em;
+        margin-top: 21vh; /* Only apply this large margin for small screens */
+        max-width: 13em;
+        line-height: 1.2em;
+      }
+
+      /* For medium and wide screens, reduce or remove margin-top */
+      @media (min-width: 769px) {
+        margin-top: 2em; /* Smaller margin for larger screens */
+      }
+
+      @media (min-width: 1025px) {
+        margin-top: 1em; /* Even smaller margin for wide screens */
+      }
+
+      /* Nesting the span inside the h1 */
+      span {
+        display: block;
+        font-size: 0.5em;
+        line-height: 1.3em;
+        margin-top: 1em;
+
+        @include respond-to('small') {
+          line-height: 3em;
+        }
       }
     }
-  }
 
-  p {
-    max-width: 30em;
-    font-size: 1.3em;
-    line-height: 1.4em;
-  }
-
-  .cta {
-    max-width: fit-content;
-    margin-top: 2em; /* Adjust spacing to fit nicely below the text */
-    padding: 0.5em 2em;
-    background-color: $mortar-purple;
-    color: $white;
-    text-align: center;
-    text-decoration: none;
-    font-weight: bold;
-    font-size: 1.2em;
-    transition: background-color 0.3s ease;
-
-    &:hover {
-      background-color: darken($mortar-purple, 10%);
+    p {
+      max-width: 30em;
+      font-size: 1.3em;
+      line-height: 1.4em;
     }
 
-    @include respond-to('small') {
-      margin-top: 3em;
-      font-size: 1.1em;
-    }
-  }
-} // Closing #topline block
+    .cta {
+      max-width: fit-content;
+      margin-top: 2em; /* Adjust spacing to fit nicely below the text */
+      padding: 0.5em 2em;
+      background-color: $mortar-purple;
+      color: $white;
+      text-align: center;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 1.2em;
+      transition: background-color 0.3s ease;
 
+      &:hover {
+        background-color: darken($mortar-purple, 10%);
+      }
+
+      @include respond-to('small') {
+        margin-top: 3em;
+        font-size: 1.1em;
+      }
+    }
+  } 
   #features,
   #partners,
   #use-cases,
