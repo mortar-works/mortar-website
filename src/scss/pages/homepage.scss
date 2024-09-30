@@ -83,25 +83,30 @@
     background: lighten($mortar-purple, 75%);
     padding-top: 2em;
     padding-bottom: 1.2em;
-
+  
     .wrapper {
       padding-left: 0;
       padding-right: 0;
     }
-
+  
     h1 {
       font-family: 'Basis Grotesque Pro Bold'; /* Ensure the same H1 style is applied */
       font-size: 3em;
       line-height: 1.2em;
       margin-bottom: 0.4em;
-
-       /* Add padding for both mobile and medium screens */
-    @media (max-width: 992px) {
-      padding-left: 1em; /* Padding for medium and mobile */
-      padding-right: 1em; /* Optional right padding */
+  
+      /* Add padding for both medium and mobile screens */
+      @media (max-width: 992px) {
+        padding-left: 1.5em; /* Consistent padding for medium screens */
+        padding-right: 1.5em; /* Consistent right padding */
+      }
+  
+      @media (max-width: 768px) {
+        padding-left: 1.2em; /* Consistent padding for mobile screens */
+        padding-right: 1.2em;
+      }
     }
-    }
-
+  
     #feature-list {
       ul {
         padding-left: 0;
@@ -116,18 +121,18 @@
         /* Switch to 2x2 layout for medium screens */
         @media (max-width: 992px) {
           grid-template-columns: repeat(2, 1fr); /* 2 columns for medium screens */
-          padding-left: 1em; /* Add padding for medium screens */
-          padding-right: 1em;
+          padding-left: 1.5em; /* Align features with the heading */
+          padding-right: 1.5em;
         }
   
         /* Switch to 1 column layout for small screens (mobile) */
         @media (max-width: 768px) {
           grid-template-columns: repeat(1, 1fr); /* 1 column for small screens */
-          padding-left: 1em; /* Add padding for mobile screens */
-          padding-right: 1em;
+          padding-left: 1.2em; /* Consistent padding for mobile screens */
+          padding-right: 1.2em;
         }
       }
-
+  
       li {
         background: none;
         padding: 1.5em;
@@ -135,36 +140,32 @@
         display: flex;
         flex-direction: column;
         justify-content: space-between;
-
-      &:first-child {
-        padding-left: 0; /* Remove padding for the first feature */
-      }
-
- /* Vertical line next to h3 */
- h3 {
-  font-size: 1.5em;
-  margin: 0 0 1em;
-  font-family: 'Basis Grotesque Pro Bold';
-  position: relative;
-  padding-left: 1em; /* Space between the line and the text */
-
-  /* Add the vertical line using the before pseudo-element */
-  &::before {
-    content: '';
-    position: absolute;
-    left: 0; /* Position the line on the left of the text */
-    top: 0;
-    width: 4px; /* Line thickness */
-    height: 100%; /* Make the line match the height of the text */
-    background-color: $mortar-orange; /* Mortar-orange color */
-  }
-}
-
+  
+        /* Vertical line next to h3 */
+        h3 {
+          font-size: 1.5em;
+          margin: 0 0 1em;
+          font-family: 'Basis Grotesque Pro Bold';
+          position: relative;
+          padding-left: 1em; /* Space between the line and the text */
+  
+          /* Add the vertical line using the before pseudo-element */
+          &::before {
+            content: '';
+            position: absolute;
+            left: 0; /* Position the line on the left of the text */
+            top: 0;
+            width: 4px; /* Line thickness */
+            height: 100%; /* Make the line match the height of the text */
+            background-color: $mortar-orange; /* Mortar-orange color */
+          }
+        }
+  
         p {
           margin: 0 0 1em;
           font-size: 1em;
         }
-
+  
         .learn-more {
           margin-top: auto;
           color: $mortar-purple;
@@ -172,12 +173,12 @@
           font-weight: bold;
           font-size: 1.2em;
           transition: color 0.3s ease;
-
+  
           &::after {
             content: " →";
             font-size: 1.4em;
           }
-
+  
           &:hover {
             color: darken($mortar-purple, 10%);
           }
@@ -185,6 +186,7 @@
       }
     }
   }
+  
 
   #partners {
     border-top: 1em solid $mortar-purple;
