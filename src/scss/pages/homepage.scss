@@ -1,5 +1,6 @@
 #homepage {
   #topline {
+    /* Default settings for all screen sizes */
     padding-top: 5.6em;
   
     .wrapper {
@@ -10,27 +11,20 @@
       justify-content: left;
     }
   
-    /* Apply 80vh for small screens (below 767px) */
-    @include respond-to('small', 'max') {
-      height: 80vh;
+    /* Apply 80vh for smaller and medium screens */
+    @include respond-to('small') {
+      height: 80vh; /* For small screens, height is set to 80vh */
       background: linear-gradient(90deg, $mortar-purple 30%, rgba(255, 255, 255, 0)),
         url('../images/topline-bg/newbg4.png') scroll no-repeat 270px 0;
       background-size: cover;
-      background-position: center;
+      background-position: center; /* Ensures cropping focuses on the center */
     }
   
-    /* For medium screens (above 992px) */
-    @include respond-to('medium') {
-      min-height: 100vh; /* Allow more height on medium screens */
-      background-size: cover;
-      background-position: center center;
-    }
-  
-    /* For large screens (above 1200px) */
-    @include respond-to('large') {
-      min-height: 70vh; /* Flexible height for large screens */
-      background-size: cover;
-      background-position: center center;
+    /* For larger screens, make the height more flexible */
+    @media (min-width: 1025px) {
+      min-height: 70vh; /* Use min-height to avoid excessive zooming on large screens */
+      background-size: cover; /* Keep the cropping behavior */
+      background-position: center center; /* Center the background image */
     }
   
     h1 {
@@ -39,30 +33,30 @@
       line-height: 1em;
       margin: 0;
   
-      /* Adjust for small screens (below 767px) */
-      @include respond-to('small', 'max') {
-        margin-top: 21vh;
+      /* Adjust for small screens */
+      @include respond-to('small') {
+        margin-top: 21vh; /* Only apply this large margin for small screens */
         max-width: 13em;
         line-height: 1.2em;
       }
   
-      /* For medium and large screens (above 992px) */
-      @include respond-to('medium') {
-        margin-top: 2em;
+      /* For medium and wide screens, reduce or remove margin-top */
+      @media (min-width: 769px) {
+        margin-top: 2em; /* Smaller margin for larger screens */
       }
   
-      @include respond-to('large') {
-        margin-top: 1em;
+      @media (min-width: 1025px) {
+        margin-top: 1em; /* Even smaller margin for wide screens */
       }
   
-      /* Handle nested span inside h1 */
+      /* Nesting the span inside the h1 */
       span {
         display: block;
         font-size: 0.5em;
         line-height: 1.3em;
         margin-top: 1em;
   
-        @include respond-to('small', 'max') {
+        @include respond-to('small') {
           line-height: 3em;
         }
       }
