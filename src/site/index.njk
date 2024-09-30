@@ -26,8 +26,8 @@ name: homepage
   <div class="wrapper">
     <div class="section-head">
       <h1>
-      How <span class="mortar-purple">Mortar</span> can help to
-      <span class="mortar-purple">transform your services</span>
+        How <span class="mortar-purple">Mortar</span> can help to
+        <span class="mortar-purple">transform your services</span>
       </h1>
       <p class="section-tagline"></p>
     </div>
@@ -40,8 +40,8 @@ name: homepage
           <p class="feature-tagline">{{ feature.tagline }}</p>
           {{ feature.subfeatures | markdown | safe }}
           
-          <!-- Add the Learn More link -->
-          <a href="{{ feature.link }}" class="learn-more">Learn More</a>
+          <!-- Update the Learn More link to have dynamic text -->
+          <a href="{{ feature.link }}" class="learn-more">{{ feature.learnMoreText }}</a>
         </li>
         {% endfor %}
       </ul>
