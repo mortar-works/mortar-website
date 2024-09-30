@@ -155,9 +155,19 @@
           font-family: 'Basis Grotesque Pro Bold';
           position: relative;
           padding-left: 1em;
-          width: 80%;  /* Adjust as needed for large screens */
+          width: 100%;  /* Adjust as needed for large screens */
           white-space: normal; /* Allow line breaks at spaces */
           word-break: keep-all; /* Prevent words from breaking */
+
+           /* Medium screens: Adjust width to better fit 2x2 grid */
+      @media (min-width: 769px) and (max-width: 1024px) {
+        width: 80%; /* Adjust this value to control the line break and title width for medium screens */
+      }
+
+      /* Small screens: Reduce width for better readability on mobile */
+      @media (max-width: 768px) {
+        width: 80%; /* Adjust this value for small screens */
+      }
 
           &::before {
             content: '';
