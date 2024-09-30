@@ -56,13 +56,36 @@
     }
   }
 
-  #features {
-    background: lighten($mortar-purple, 75%);
-    padding-top: 1.5em;
-    padding-bottom: 1.2em;
+  #features,
+  #partners,
+  #use-cases,
+  #insights {
+    background: $white;
+    color: $black;
 
     .wrapper {
-      padding-left: 0;
+      padding: 3em 2em;
+    }
+
+    h2 {
+      @include bold-type;
+      font-size: 2.3em;
+    }
+
+    .section-head {
+      h2 {
+        width: 10em;
+      }
+    }
+  }
+
+  #features {
+    background: lighten($mortar-purple, 75%);
+    padding-top: 5.6em; /* Match topline padding */
+    padding-bottom: 1.2em;
+  
+    .wrapper {
+      padding-left: 0;  /* Remove existing padding */
       padding-right: 0;
       width: 100%;
       display: flex;
@@ -71,15 +94,14 @@
       justify-content: left;
 
       h1 {
-        font-family: 'Basis Grotesque Pro Bold';
+        font-family: 'Basis Grotesque Pro Bold'; 
         font-size: 3em;
-        line-height: 1em;
+        line-height: 1.2em;
         margin-bottom: 0.4em;
 
         @media (max-width: 768px) {
-          font-size: 2em; /* Smaller font for mobile */
-          padding-left: 1em;
-          padding-right: 1em;
+          padding-left: 1em; /* Symmetrical padding */
+          padding-right: 1em; /* Same on both sides */
         }
       }
     }
@@ -91,26 +113,33 @@
         margin: 0;
         list-style: none;
         display: grid;
-        grid-template-columns: repeat(4, 1fr);
+        grid-template-columns: repeat(4, 1fr); /* Default for large screens */
         grid-gap: 3em 2em;
+        justify-content: start;
 
+        /* 1 column for small screens */
         @media (max-width: 768px) {
           grid-template-columns: repeat(1, 1fr);
-          padding-left: 1em;
-          padding-right: 1em;
-          grid-gap: 1.5em; /* Reduce gap on mobile */
+          padding-left: 1em; /* Match topline padding on mobile */
+          padding-right: 1em; /* Symmetrical padding */
         }
 
+        /* 2x2 grid for medium screens */
         @media (min-width: 769px) and (max-width: 1024px) {
-          grid-template-columns: repeat(2, 1fr);
-          grid-gap: 1.5em; /* Reduce gap for 2x2 */
+          grid-template-columns: repeat(2, 1fr); /* 2 columns for medium screens */
+          grid-gap: 2em; /* Adjust spacing as needed */
           padding-left: 1em;
           padding-right: 1em;
         }
       }
 
       li {
-        margin-bottom: 1.5em; /* Reduced margin for stacked items */
+        background: none;
+        padding: 1.5em;
+        box-shadow: none;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
 
         h3 {
           font-size: 1.5em;
@@ -118,16 +147,6 @@
           font-family: 'Basis Grotesque Pro Bold';
           position: relative;
           padding-left: 1em;
-          width: 90%; /* Make titles wrap into two lines */
-          word-wrap: break-word;
-
-          @media (max-width: 768px) {
-            width: 80%; /* Shorter width for mobile */
-          }
-
-          @media (min-width: 769px) and (max-width: 1024px) {
-            width: 85%; /* Shorter width for medium screens */
-          }
 
           &::before {
             content: '';
