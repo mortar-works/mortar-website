@@ -8,21 +8,24 @@
       display: flex;
       flex-direction: column;
       align-content: center;
-      justify-content: left;
+      justify-content: center; /* Change to center content dynamically */
+      padding: 2em 0; /* Add padding to create spacing without vh */
     }
   
-    /* Apply 80vh for smaller and medium screens */
+    /* Remove the 80vh and use padding instead for small screens */
     @include respond-to('small') {
-      height: 80vh; /* For small screens, height is set to 80vh */
+      padding-top: 4em; /* Adjust the padding for small screens */
+      padding-bottom: 4em; /* Add space at the bottom as well */
       background: linear-gradient(90deg, $mortar-purple 30%, rgba(255, 255, 255, 0)),
         url('../images/topline-bg/newbg4.png') scroll no-repeat 270px 0;
       background-size: cover;
       background-position: center; /* Ensures cropping focuses on the center */
     }
   
-    /* For larger screens, make the height more flexible */
+    /* For larger screens, make the height more flexible and dynamic */
     @media (min-width: 1025px) {
-      min-height: 70vh; /* Use min-height to avoid excessive zooming on large screens */
+      padding-top: 6em; /* Increase padding for larger screens */
+      padding-bottom: 6em;
       background-size: cover; /* Keep the cropping behavior */
       background-position: center center; /* Center the background image */
     }
@@ -35,18 +38,18 @@
   
       /* Adjust for small screens */
       @include respond-to('small') {
-        margin-top: 21vh; /* Only apply this large margin for small screens */
+        margin-top: 0; /* Remove the large margin */
         max-width: 13em;
         line-height: 1.2em;
       }
   
       /* For medium and wide screens, reduce or remove margin-top */
       @media (min-width: 769px) {
-        margin-top: 2em; /* Smaller margin for larger screens */
+        margin-top: 1em; /* Smaller margin for medium screens */
       }
   
       @media (min-width: 1025px) {
-        margin-top: 1em; /* Even smaller margin for wide screens */
+        margin-top: 0.5em; /* Smaller margin for large screens */
       }
   
       /* Nesting the span inside the h1 */
@@ -57,10 +60,38 @@
         margin-top: 1em;
   
         @include respond-to('small') {
-          line-height: 3em;
+          line-height: 2em;
         }
       }
+  
+    p {
+      max-width: 30em;
+      font-size: 1.3em;
+      line-height: 1.4em;
     }
+  
+    .cta {
+      max-width: fit-content;
+      margin-top: 2em;
+      padding: 0.5em 2em;
+      background-color: $mortar-purple;
+      color: $white;
+      text-align: center;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 1.2em;
+      transition: background-color 0.3s ease;
+  
+      &:hover {
+        background-color: darken($mortar-purple, 10%);
+      }
+  
+      @include respond-to('small') {
+        margin-top: 3em;
+        font-size: 1.1em;
+      }
+    }
+  }
   
     p {
       max-width: 30em;
