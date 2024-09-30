@@ -81,8 +81,8 @@
 
   #features {
     background: lighten($mortar-purple, 75%);
-    padding-top: 5.6em; /* Match topline padding */
-    padding-bottom: 1.2em;
+    padding-top: 2em; /* Match topline padding */
+    padding-bottom: 1.4em;
   
     .wrapper {
       padding-left: 0;  /* Remove existing padding */
@@ -96,8 +96,8 @@
       h1 {
         font-family: 'Basis Grotesque Pro Bold'; 
         font-size: 3em;
-        line-height: 1.2em;
-        margin-bottom: 0.4em;
+        line-height: 1em;
+        margin-bottom: 0.5em;
 
         @media (max-width: 768px) {
           padding-left: 1em; /* Symmetrical padding */
