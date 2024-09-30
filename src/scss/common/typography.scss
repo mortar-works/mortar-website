@@ -71,7 +71,7 @@ $font-stack: 'Basis Grotesque', -apple-system, BlinkMacSystemFont, "Segoe UI", R
 
 @mixin bold-type {
   font-family: "Basis Grotesque Pro Bold", $font-stack;
-  font-weight: bold;
+  font-weight: normal;
 }
 
 @mixin light-type {
