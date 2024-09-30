@@ -87,7 +87,7 @@
     .wrapper {
       padding-left: 0;  /* Remove existing padding */
       padding-right: 0;
-      width: 100%;
+      max-width: 800px; /* Set a max width to control the line breaks */
       display: flex;
       flex-direction: column;
       align-content: center;
@@ -97,13 +97,19 @@
         font-family: 'Basis Grotesque Pro Bold'; 
         font-size: 3em;
         line-height: 1em;
+        width: 60%;
         margin-bottom: 0.5em;
 
-        @media (max-width: 768px) {
-          padding-left: 1em; /* Symmetrical padding */
-          padding-right: 1em; /* Same on both sides */
-          font-size: 2em; /* Adjust to desired size for small screens */
+        @media (max-width: 1024px) {
+          width: 70%; /* Adjust width for medium screens */
       }
+
+      @media (max-width: 768px) {
+        padding-left: 1em; /* Symmetrical padding */
+        padding-right: 1em; /* Same on both sides */
+        font-size: 2em; /* Adjust to desired size for small screens */
+        width: 70%; /* Reduce width further for mobile */
+    }
     }
   }
 
