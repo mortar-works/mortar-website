@@ -277,7 +277,9 @@
 
   #partners {
     padding: 2em 0;
-    background-color: $mortar-purple; /* Assuming you have a purple variable set */
+    background-color: $white; /* Change background to white */
+    border-top: 6px solid $mortar-purple; /* Thick top border */
+    border-bottom: 6px solid $mortar-purple; /* Thick bottom border */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -294,7 +296,7 @@
     .partners-ticker {
       display: flex;
       align-items: center;
-      animation: ticker 20s linear infinite; /* Continuous scrolling */
+      animation: ticker 40s linear infinite; /* Slower scrolling (40s) */
     }
   
     .partners-list {
@@ -307,18 +309,14 @@
   
     .partners-list li {
       flex-shrink: 0;
-      width: 120px; /* Set size of logos (adjust as needed) */
+      width: 160px; /* Increased size of logos */
     }
   
     .partners-list img {
       width: 100%;
       height: auto;
-      filter: grayscale(100%); /* Optional grayscale effect */
-      transition: filter 0.3s ease;
-    }
-  
-    .partners-list img:hover {
-      filter: none; /* Remove grayscale on hover */
+      border-radius: 5%; /* Optional: keep rounded corners */
+      /* No grayscale filter; logos in color */
     }
   
     /* Arrow button styles */
@@ -346,10 +344,10 @@
     /* Animation for continuous scrolling */
     @keyframes ticker {
       0% {
-        transform: translateX(100%);
+        transform: translateX(0); /* Start logos from the left */
       }
       100% {
-        transform: translateX(-100%);
+        transform: translateX(-100%); /* Scroll across the whole ticker width */
       }
     }
   
@@ -360,6 +358,7 @@
       }
     }
   }
+  
 
   #use-cases {
     background: lighten($mortar-purple, 75%);
