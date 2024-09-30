@@ -76,8 +76,8 @@
   
       /* For small screens */
       @include respond-to('small') {
-        padding-left: 2em; /* Add left indent for small screens */
-        padding-right: 2em;
+        padding-left: 0em; /* Add left indent for small screens */
+        padding-right: 0em;
       }
   
       /* For medium screens (iPads) */
