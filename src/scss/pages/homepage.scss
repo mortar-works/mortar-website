@@ -276,63 +276,66 @@
   
 
   #partners {
-    padding: 2em 0;
+    padding: 4em 0; /* Add padding around the section to give it space */
     background-color: $white; /* White background */
     border-top: 6px solid $mortar-purple; /* Thick purple top border */
     border-bottom: 6px solid $mortar-purple; /* Thick purple bottom border */
-    position: relative; /* Needed for fade effect */
+    position: relative;
     display: flex;
+    flex-direction: column; /* Stack heading and ticker vertically */
     justify-content: center;
     align-items: center;
   
+    .partners-heading {
+      font-size: 1.5em; /* Make the heading paragraph-sized */
+      text-align: center;
+      margin-bottom: 2em; /* Add space between heading and logos */
+      color: $mortar-purple; /* Use a color that matches the theme */
+    }
+  
     .partners-wrapper {
-      position: relative;
-      width: 80%; /* Adjust as needed */
-      overflow: hidden; /* Hides the logos when they move out of view */
-      display: flex;
-      justify-content: center;
-      align-items: center;
+      width: 80%;
+      overflow: hidden; /* Hide overflow */
     }
   
     .partners-ticker {
       display: flex;
       align-items: center;
-      animation: ticker 40s linear infinite; /* Slower scrolling (40s) */
+      padding: 2em 0; /* Add extra padding above and below the logos */
     }
   
-    /* Duplicate the partners list for continuous scrolling */
     .partners-list {
       display: flex;
-      gap: 4em; /* Increased space between logos */
+      gap: 4em; /* Space between logos */
       list-style: none;
       padding: 0;
       margin: 0;
+      animation: scroll 40s linear infinite;
     }
   
     .partners-list li {
       flex-shrink: 0;
       display: flex;
       justify-content: center;
-      align-items: center; /* Vertically align logos */
-      width: 160px; /* Set a standard width for logos */
-      height: 120px; /* Set a uniform height */
+      align-items: center;
+      width: 160px;
+      height: 120px;
     }
   
     .partners-list img {
-      max-width: 100%; /* Ensure logos fit within the width */
-      max-height: 100%; /* Enforce uniform height */
-      min-height: 60px; /* Minimum height to prevent oversized logos */
-      object-fit: contain; /* Ensure logos scale correctly without distortion */
-      border-radius: 5%; /* Optional: keep rounded corners */
+      max-width: 100%;
+      max-height: 100%;
+      object-fit: contain;
+      border-radius: 5%;
     }
   
-    /* Animation for continuous scrolling */
-    @keyframes ticker {
+    /* Keyframe for seamless scrolling */
+    @keyframes scroll {
       0% {
-        transform: translateX(0); /* Start logos from the left */
+        transform: translateX(0);
       }
       100% {
-        transform: translateX(-50%); /* Scroll across the duplicated list */
+        transform: translateX(-100%);
       }
     }
   
@@ -342,22 +345,23 @@
       content: '';
       position: absolute;
       top: 0;
-      width: 10%; /* Width of the fade area */
+      width: 10%;
       height: 100%;
       z-index: 2;
-      pointer-events: none; /* Allow interaction with the content underneath */
+      pointer-events: none;
     }
   
     .partners-wrapper::before {
       left: 0;
-      background: linear-gradient(to right, rgba(255, 255, 255, 1), rgba(255, 255, 255, 0)); /* Left fade */
+      background: linear-gradient(to right, rgba(255, 255, 255, 1), rgba(255, 255, 255, 0));
     }
   
     .partners-wrapper::after {
       right: 0;
-      background: linear-gradient(to left, rgba(255, 255, 255, 1), rgba(255, 255, 255, 0)); /* Right fade */
+      background: linear-gradient(to left, rgba(255, 255, 255, 1), rgba(255, 255, 255, 0));
     }
   }
+  
   
 
   #use-cases {
