@@ -43,7 +43,7 @@
         line-height: 1.2em;
       }
   
-      /* For medium screens (like iPads), add left indent */
+      /* For medium screens (iPads) */
       @media (min-width: 769px) and (max-width: 1024px) {
         padding-left: 1em; /* Add left indent for medium screens */
         margin-top: 1em;
@@ -66,10 +66,23 @@
       }
     }
   
+    /* Ensure paragraphs have consistent padding */
     p {
       max-width: 30em;
       font-size: 1.3em;
       line-height: 1.4em;
+  
+      /* For small screens */
+      @include respond-to('small') {
+        padding-left: 1em; /* Add left indent for small screens */
+        padding-right: 1em;
+      }
+  
+      /* For medium screens (iPads) */
+      @media (min-width: 769px) and (max-width: 1024px) {
+        padding-left: 1em; /* Add left indent for medium screens */
+        padding-right: 1em;
+      }
     }
   
     .cta {
@@ -88,68 +101,22 @@
         background-color: darken($mortar-purple, 10%);
       }
   
+      /* For small screens */
       @include respond-to('small') {
+        padding-left: 1em; /* Add left indent for CTA on small screens */
+        padding-right: 1em;
         margin-top: 3em;
         font-size: 1.1em;
       }
-    }
   
-    p {
-      max-width: 30em;
-      font-size: 1.3em;
-      line-height: 1.4em;
-    }
-  
-    .cta {
-      max-width: fit-content;
-      margin-top: 2em;
-      padding: 0.5em 2em;
-      background-color: $mortar-purple;
-      color: $white;
-      text-align: center;
-      text-decoration: none;
-      font-weight: bold;
-      font-size: 1.2em;
-      transition: background-color 0.3s ease;
-  
-      &:hover {
-        background-color: darken($mortar-purple, 10%);
-      }
-  
-      @include respond-to('small', 'max') {
-        margin-top: 3em;
-        font-size: 1.1em;
+      /* For medium screens (iPads) */
+      @media (min-width: 769px) and (max-width: 1024px) {
+        padding-left: 1em; /* Add left indent for CTA on medium screens */
+        padding-right: 1em;
       }
     }
-
-    p {
-      max-width: 30em;
-      font-size: 1.3em;
-      line-height: 1.4em;
-    }
-
-    .cta {
-      max-width: fit-content;
-      margin-top: 2em; /* Adjust spacing to fit nicely below the text */
-      padding: 0.5em 2em;
-      background-color: $mortar-purple;
-      color: $white;
-      text-align: center;
-      text-decoration: none;
-      font-weight: bold;
-      font-size: 1.2em;
-      transition: background-color 0.3s ease;
-
-      &:hover {
-        background-color: darken($mortar-purple, 10%);
-      }
-
-      @include respond-to('small') {
-        margin-top: 3em;
-        font-size: 1.1em;
-      }
-    }
-  } 
+  }
+  
   #features,
   #partners,
   #use-cases,
