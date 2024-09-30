@@ -84,21 +84,23 @@
     padding-top: 2em;
     padding-bottom: 1.2em;
   
+    /* Consistent padding for the wrapper to align with the topline */
     .wrapper {
-      padding-left: 0;
-      padding-right: 0;
+      padding-left: 2em; /* Adjust padding to align with other content */
+      padding-right: 2em;
     }
   
     h1 {
-      font-family: 'Basis Grotesque Pro Bold'; /* Ensure the same H1 style is applied */
+      font-family: 'Basis Grotesque Pro Bold'; 
       font-size: 3em;
       line-height: 1.2em;
       margin-bottom: 0.4em;
+      padding-left: 0; /* Ensure no extra padding on large screens */
   
       /* Add padding for both medium and mobile screens */
       @media (max-width: 992px) {
         padding-left: 1.5em; /* Consistent padding for medium screens */
-        padding-right: 1.5em; /* Consistent right padding */
+        padding-right: 1.5em;
       }
   
       @media (max-width: 768px) {
@@ -120,15 +122,15 @@
   
         /* Switch to 2x2 layout for medium screens */
         @media (max-width: 992px) {
-          grid-template-columns: repeat(2, 1fr); /* 2 columns for medium screens */
-          padding-left: 1.5em; /* Align features with the heading */
+          grid-template-columns: repeat(2, 1fr); 
+          padding-left: 1.5em; /* Ensure grid aligns with header */
           padding-right: 1.5em;
         }
   
-        /* Switch to 1 column layout for small screens (mobile) */
+        /* Switch to 1 column layout for small screens */
         @media (max-width: 768px) {
-          grid-template-columns: repeat(1, 1fr); /* 1 column for small screens */
-          padding-left: 1.2em; /* Consistent padding for mobile screens */
+          grid-template-columns: repeat(1, 1fr);
+          padding-left: 1.2em; 
           padding-right: 1.2em;
         }
       }
@@ -153,10 +155,10 @@
           &::before {
             content: '';
             position: absolute;
-            left: 0; /* Position the line on the left of the text */
+            left: 0;
             top: 0;
-            width: 4px; /* Line thickness */
-            height: 100%; /* Make the line match the height of the text */
+            width: 4px;
+            height: 100%;
             background-color: $mortar-orange; /* Mortar-orange color */
           }
         }
@@ -185,7 +187,7 @@
         }
       }
     }
-  }
+  }  
   
 
   #partners {
