@@ -4,11 +4,11 @@
 
     /* Adjust for medium screens to avoid content cutoff */
     @media (min-width: 769px) and (max-width: 1024px) {
-      min-height: 60vh; /* Allow more height on medium screens */
+      min-height: 100vh; /* Allow more height on medium screens */
     }
 
     @include respond-to('small') {
-      height: 80vh; /* Mobile view */
+      height: 60vh; /* Mobile view */
       
       .wrapper {
         height: 100%;
