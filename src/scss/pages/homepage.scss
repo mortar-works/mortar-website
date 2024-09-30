@@ -102,7 +102,7 @@
         @media (max-width: 768px) {
           padding-left: 1em; /* Symmetrical padding */
           padding-right: 1em; /* Same on both sides */
-        }
+          font-size: 2em; /* Adjust to desired size for small screens */
       }
     }
 
@@ -122,14 +122,15 @@
           grid-template-columns: repeat(1, 1fr);
           padding-left: 1em; /* Match topline padding on mobile */
           padding-right: 1em; /* Symmetrical padding */
+          grid-gap: 1.5em; /* Reduced gap for mobile */
         }
 
         /* 2x2 grid for medium screens */
         @media (min-width: 769px) and (max-width: 1024px) {
           grid-template-columns: repeat(2, 1fr); /* 2 columns for medium screens */
-          grid-gap: 2em; /* Adjust spacing as needed */
           padding-left: 1em;
           padding-right: 1em;
+          grid-gap: 1.5em; /* Adjust spacing as needed */
         }
       }
 
@@ -147,6 +148,8 @@
           font-family: 'Basis Grotesque Pro Bold';
           position: relative;
           padding-left: 1em;
+          width: 90%;  /* Adjust as needed for large screens */
+          word-wrap: break-word;
 
           &::before {
             content: '';
