@@ -81,30 +81,31 @@
 
   #features {
     background: lighten($mortar-purple, 75%);
-    padding-top: 2em;
+    padding-top: 2em; /* Match topline padding */
     padding-bottom: 1.2em;
   
     .wrapper {
+      padding-left: 0;  /* Remove existing padding */
+      padding-right: 0;
       width: 100%;
       display: flex;
       flex-direction: column;
       align-content: center;
       justify-content: left;
-    }
-  
-    h1 {
-      font-family: 'Basis Grotesque Pro Bold'; 
-      font-size: 3em;
-      line-height: 1.2em;
-      margin-bottom: 0.4em;
-  
-      /* Align the feature header with the topline on mobile */
-      @media (max-width: 768px) {
-        padding-left: 1em; /* Match the topline padding on mobile */
-        padding-right: 0; /* Optional: Right padding to match as well */
+
+      h1 {
+        font-family: 'Basis Grotesque Pro Bold'; 
+        font-size: 3em;
+        line-height: 1.2em;
+        margin-bottom: 0.4em;
+
+        @media (max-width: 768px) {
+          padding-left: 1em; /* Symmetrical padding */
+          padding-right: 1em; /* Same on both sides */
+        }
       }
     }
-  
+
     #feature-list {
       ul {
         padding-left: 0;
@@ -115,14 +116,14 @@
         grid-template-columns: repeat(4, 1fr); /* Default for large screens */
         grid-gap: 3em 2em;
         justify-content: start;
-  
+
         /* 1 column for small screens */
         @media (max-width: 768px) {
           grid-template-columns: repeat(1, 1fr);
           padding-left: 1em; /* Match topline padding on mobile */
-          padding-right: 2em;
+          padding-right: 1em; /* Symmetrical padding */
         }
-  
+
         /* 2x2 grid for medium screens */
         @media (min-width: 769px) and (max-width: 1024px) {
           grid-template-columns: repeat(2, 1fr); /* 2 columns for medium screens */
@@ -131,7 +132,7 @@
           padding-right: 1em;
         }
       }
-  
+
       li {
         background: none;
         padding: 1.5em;
@@ -139,15 +140,14 @@
         display: flex;
         flex-direction: column;
         justify-content: space-between;
-  
-        /* Vertical line next to h3 */
+
         h3 {
           font-size: 1.5em;
           margin: 0 0 1em;
           font-family: 'Basis Grotesque Pro Bold';
           position: relative;
-          padding-left: 1em; /* Space between the line and the text */
-  
+          padding-left: 1em;
+
           &::before {
             content: '';
             position: absolute;
@@ -158,12 +158,12 @@
             background-color: $mortar-orange;
           }
         }
-  
+
         p {
           margin: 0 0 1em;
           font-size: 1em;
         }
-  
+
         .learn-more {
           margin-top: auto;
           color: $mortar-purple;
@@ -171,12 +171,12 @@
           font-weight: bold;
           font-size: 1.2em;
           transition: color 0.3s ease;
-  
+
           &::after {
             content: " →";
             font-size: 1.4em;
           }
-  
+
           &:hover {
             color: darken($mortar-purple, 10%);
           }
@@ -184,8 +184,6 @@
       }
     }
   }
-  
-  
 
   #partners {
     border-top: 1em solid $mortar-purple;
