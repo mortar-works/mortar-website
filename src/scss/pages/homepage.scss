@@ -276,41 +276,41 @@
   
 
   #partners {
-    padding: 4em 0; /* Add padding around the section to give it space */
+    padding: 4em 0;
     background-color: $white; /* White background */
     border-top: 6px solid $mortar-purple; /* Thick purple top border */
     border-bottom: 6px solid $mortar-purple; /* Thick purple bottom border */
     position: relative;
     display: flex;
-    flex-direction: column; /* Stack heading and ticker vertically */
+    flex-direction: column;
     justify-content: center;
     align-items: center;
   
     .partners-heading {
-      font-size: 1.5em; /* Make the heading paragraph-sized */
+      font-size: 1.5em;
       text-align: center;
-      margin-bottom: 2em; /* Add space between heading and logos */
-      color: $mortar-purple; /* Use a color that matches the theme */
+      margin-bottom: 2em;
+      color: $mortar-purple;
     }
   
     .partners-wrapper {
-      width: 80%;
-      overflow: hidden; /* Hide overflow */
+      position: relative; /* Position relative for fade effect */
+      width: 80%; /* Set width as necessary for your design */
+      overflow: hidden; /* Hide logos that overflow the container */
     }
   
     .partners-ticker {
       display: flex;
       align-items: center;
-      padding: 2em 0; /* Add extra padding above and below the logos */
     }
   
     .partners-list {
       display: flex;
       gap: 4em; /* Space between logos */
+      animation: scroll 40s linear infinite; /* Seamless scrolling */
       list-style: none;
       padding: 0;
       margin: 0;
-      animation: scroll 40s linear infinite;
     }
   
     .partners-list li {
@@ -329,13 +329,13 @@
       border-radius: 5%;
     }
   
-    /* Keyframe for seamless scrolling */
+    /* Keyframe for smooth, continuous scrolling */
     @keyframes scroll {
       0% {
-        transform: translateX(0);
+        transform: translateX(0); /* Start at the initial position */
       }
       100% {
-        transform: translateX(-100%);
+        transform: translateX(-50%); /* Move the logos left by 50% to create a loop */
       }
     }
   
@@ -345,25 +345,23 @@
       content: '';
       position: absolute;
       top: 0;
-      width: 10%;
+      width: 15%; /* Increased width for more visible fade effect */
       height: 100%;
-      z-index: 2;
-      pointer-events: none;
+      z-index: 2; /* Ensure the fade effect is on top of the logos */
+      pointer-events: none; /* Allow interaction with content underneath */
     }
   
     .partners-wrapper::before {
       left: 0;
-      background: linear-gradient(to right, rgba(255, 255, 255, 1), rgba(255, 255, 255, 0));
+      background: linear-gradient(to right, rgba(255, 255, 255, 1), rgba(255, 255, 255, 0)); /* Fade from white to transparent */
     }
   
     .partners-wrapper::after {
       right: 0;
-      background: linear-gradient(to left, rgba(255, 255, 255, 1), rgba(255, 255, 255, 0));
+      background: linear-gradient(to left, rgba(255, 255, 255, 1), rgba(255, 255, 255, 0)); /* Fade from white to transparent */
     }
-  }
+  }  
   
-  
-
   #use-cases {
     background: lighten($mortar-purple, 75%);
 
