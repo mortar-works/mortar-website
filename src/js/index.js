@@ -33,8 +33,10 @@ window.addEventListener('load', (event) => {
   window.addEventListener('scroll', () => {
     const header = document.querySelector('header');
     const sticky = header.offsetTop;
-
-    if (window.pageYOffset > sticky) {
+  
+    console.log("Scroll Position:", window.scrollY); // Check scroll position
+  
+    if (window.scrollY > sticky) {
       header.classList.add('sticky');
     } else {
       header.classList.remove('sticky');
