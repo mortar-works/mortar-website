@@ -4,6 +4,7 @@
     description: |-
       Customise pathways into your service using our triage tool and assess needs whilst capturing data. Read our case study on how the triage tool is supporting young people at risk of exclusion.
     subfeatures: |-
+    image: "src\site\static\images\use-cases\bespoke_case_study_detail_06.png"
     link: "/features/ux-ui-toolkit"
     learnMoreText: "Custom solutions"
 
