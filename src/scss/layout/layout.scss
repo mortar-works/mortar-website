@@ -1,7 +1,19 @@
 body {
   background-color: $mortar-purple;
   color: $white;
-  margin: 0;
+}
+
+header, footer, main > section {
+  overflow: hidden;
+
+  & .wrapper {
+    max-width: map-get($breakpoints, 'large');
+    margin: auto;
+    padding: 1em 2em;
+
+    @include respond-to('small') {
+    }
+  }
 }
 
 header {
@@ -9,21 +21,126 @@ header {
   position: sticky;
   top: 0;
   z-index: 1000;
-  background: transparent !important; /* Start with transparent background */
+  background: transparent !important; /* Initially transparent */
   color: $black;
   transition: background-color 0.3s ease, box-shadow 0.3s ease;
-  box-shadow: none !important; /* No shadow initially */
+  box-shadow: none; /* No shadow initially */
+
+  &.nav-active {
+    height: 100%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: $mortar-orange !important;
+    z-index: 10000;
+  }
+
+  #homepage & {
+    background: transparent;
+
+    nav a {
+      color: $white;
+    }
+
+    #mortar-logo {
+      background-image: url('../images/mortar-logo-white.png');
+    }
+  }
+
+  .wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+
+  #mortar-logo {
+    margin: 0;
+    padding: 0;
+    height: 75px;
+    width: 165px;
+    display: block;
+    background: transparent scroll no-repeat 0 0;
+    background-image: url('../images/mortar-logo-black.png');
+    background-size: cover;
+    text-indent: -9999px;
+  }
+
+  .hamburger {
+    @include respond-to('small'){
+      display: none;
+    }
+
+    .hamburger-inner,
+    .hamburger-inner:after,
+    .hamburger-inner:before {
+      background-color: $black;
+
+      #homepage & {
+        background-color: $white;
+      }
+    }
+  }
+
+  &.nav-active nav {
+    display: flex;
+    margin-top: 3em;
+    font-size: 1.4em;
+  }
+
+  nav {
+    display: none;
+    align-items: center;
+    flex-basis: 100%;
+
+    @include respond-to('small'){
+      display: flex;
+      flex-basis: auto;
+    }
+  }
+
+  ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+
+    li {
+      a {
+        @include rajdhani-regular-type;
+        font-size: 1.8em;
+        line-height: 2em;
+        color: $black;
+      }
+    }
+
+    @include respond-to('small'){
+      display: flex;
+      flex-wrap: wrap;
+      font-size: 1.5em;
+
+      li {
+        a {
+          font-size: 1em;
+          line-height: 1em;
+          padding: 0 0.6em;
+        }
+
+        &:last-of-type a {
+          padding: 0 0.6em;
+          padding-right: inherit;
+        }
+      }
+    }
+  }
 }
 
+/* Sticky header styles */
 .sticky {
-  background-color: $mortar-purple !important; /* Change to purple when sticky */
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15) !important; /* Adds a shadow */
-  transition: background-color 0.3s ease, box-shadow 0.3s ease;
-}
-
-/* Ensure main content starts right after the header without disrupting layout */
-main {
-  margin-top: 0; /* No margin or padding to keep layout consistent */
+  background-color: $mortar-purple !important; /* Ensure background changes to purple when sticky */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15) !important; /* Add shadow when sticky */
 }
 
 footer {
@@ -60,11 +177,11 @@ footer {
       grid-gap: 2em;
     }
 
-    @include respond-to('medium') {
+    @include respond-to('medium'){
       grid-gap: 3em;
     }
 
-    @include respond-to('large') {
+    @include respond-to('large'){
       grid-gap: 4em;
     }
   }
