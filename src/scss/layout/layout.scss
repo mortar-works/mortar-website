@@ -21,7 +21,7 @@ header {
   position: sticky;
   top: 0;
   z-index: 1000;
-  background: transparent !important; /* Initially transparent */
+  background: transparent !important; /* Ensure background starts transparent */
   color: $black;
   transition: background-color 0.3s ease, box-shadow 0.3s ease;
   box-shadow: none !important; /* No shadow initially */
@@ -38,7 +38,7 @@ header {
   }
 
   #homepage & {
-    background: transparent;
+    background: transparent !important; /* Ensure transparent background for the homepage */
 
     nav a {
       color: $white;
@@ -139,14 +139,14 @@ header {
 
 /* Sticky header styles */
 .sticky {
-  background-color: $mortar-purple !important; /* Background changes to purple when sticky */
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15) !important; /* Adds shadow when sticky */
+  background-color: $mortar-purple !important; /* Apply background color only when sticky */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15) !important; /* Add shadow only when sticky */
   transition: background-color 0.3s ease, box-shadow 0.3s ease;
 }
 
-/* Add padding to the main content to prevent layout shifting caused by sticky header */
+/* Padding for the main content to prevent layout shifting */
 main {
-  padding-top: 7em; /* Adjust this if needed */
+  padding-top: 7em; /* Adjust padding to account for sticky header height */
 }
 
 footer {
