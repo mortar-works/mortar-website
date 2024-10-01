@@ -1,4 +1,4 @@
-use_cases:
+---
   - title: "Triage tool"
     description: "Discover how we helped improve efficiency in Case Study 1."
     image: "path-to-image-1.jpg"
