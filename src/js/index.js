@@ -32,21 +32,15 @@ window.addEventListener('load', (event) => {
   // Sticky menu code
   window.addEventListener('scroll', () => {
     const header = document.querySelector('header');
-    const stickyPoint = 100; // You can adjust this as needed
+    const stickyPoint = 100; // Adjust the scroll trigger point as needed
     
-    // Debugging: Log the current scroll position
-    console.log('Current scroll position:', window.scrollY);
-  
     if (window.scrollY > stickyPoint) {
-      // Add sticky class once we've scrolled past stickyPoint
       header.classList.add('sticky');
-      console.log('Sticky class added');
     } else {
-      // Remove sticky class when we're above stickyPoint
       header.classList.remove('sticky');
-      console.log('Sticky class removed');
     }
   });
+  
   
 
   // Load more insights functionality

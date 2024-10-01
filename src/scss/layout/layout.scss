@@ -4,144 +4,34 @@ body {
   margin: 0;
 }
 
-header, footer, main > section {
-  overflow: hidden;
-
-  & .wrapper {
-    max-width: map-get($breakpoints, 'large');
-    margin: auto;
-    padding: 1em 2em;
-
-    @include respond-to('small') {
-    }
-  }
-}
-
 header {
   height: 7em;
-  position: sticky;
+  position: absolute; /* Start as absolute to overlay content */
   top: 0;
+  left: 0;
+  right: 0;
   z-index: 1000;
-  background: transparent !important; /* Ensure header starts transparent */
+  background: transparent !important; /* Transparent at the start */
   color: $black;
   transition: background-color 0.3s ease, box-shadow 0.3s ease;
-  box-shadow: none; /* No shadow initially */
-
-  &.nav-active nav {
-    display: flex;
-    margin-top: 3em;
-    font-size: 1.4em;
-  }
-
-  #homepage & {
-    background: transparent !important; /* Transparent header for homepage */
-
-    nav a {
-      color: $white;
-    }
-
-    #mortar-logo {
-      background-image: url('../images/mortar-logo-white.png');
-    }
-  }
-
-  .wrapper {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    align-items: center;
-  }
-
-  #mortar-logo {
-    margin: 0;
-    padding: 0;
-    height: 75px;
-    width: 165px;
-    display: block;
-    background: transparent scroll no-repeat 0 0;
-    background-image: url('../images/mortar-logo-black.png');
-    background-size: cover;
-    text-indent: -9999px;
-  }
-
-  .hamburger {
-    @include respond-to('small') {
-      display: none;
-    }
-
-    .hamburger-inner,
-    .hamburger-inner:after,
-    .hamburger-inner:before {
-      background-color: $black;
-
-      #homepage & {
-        background-color: $white;
-      }
-    }
-  }
-
-  nav {
-    display: none;
-    align-items: center;
-    flex-basis: 100%;
-
-    @include respond-to('small') {
-      display: flex;
-      flex-basis: auto;
-    }
-  }
-
-  ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-
-    li {
-      a {
-        @include rajdhani-regular-type;
-        font-size: 1.8em;
-        line-height: 2em;
-        color: $black;
-      }
-    }
-
-    @include respond-to('small') {
-      display: flex;
-      flex-wrap: wrap;
-      font-size: 1.5em;
-
-      li {
-        a {
-          font-size: 1em;
-          line-height: 1em;
-          padding: 0 0.6em;
-        }
-
-        &:last-of-type a {
-          padding: 0 0.6em;
-          padding-right: inherit;
-        }
-      }
-    }
-  }
+  box-shadow: none !important; /* No shadow initially */
 }
 
-/* Sticky header styles */
 .sticky {
-  background-color: $mortar-purple !important; /* Turns purple when sticky */
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15) !important; /* Adds shadow */
+  position: sticky; /* Become sticky when scrolling */
+  background-color: $mortar-purple !important; /* Turn purple when sticky */
+  top: 0;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15) !important;
   transition: background-color 0.3s ease, box-shadow 0.3s ease;
 }
 
-/* Ensure no extra space is created at the top */
+/* Remove the padding from the main to prevent a gap */
 main {
-  padding-top: 0;
+  margin: 0;
 }
 
 footer {
   padding: 2em 0 6em 0;
-
   ul {
     list-style: none;
     padding-left: 0;
@@ -168,7 +58,7 @@ footer {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
     grid-gap: 1em;
-
+    
     @include respond-to('small') {
       grid-gap: 2em;
     }
