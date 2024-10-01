@@ -92,18 +92,26 @@ name: homepage
 <section id="use-cases">
   <div class="use-cases-wrapper">
     <h2>Our Use Cases</h2>
-    <p>Explore how our innovative solutions have helped organizations overcome challenges and achieve significant results across various industries. Each case study highlights the unique approaches we've taken to deliver impactful outcomes.</p>
-
+    <p>Explore how our innovative solutions have helped organizations overcome challenges and achieve significant results across various industries.</p>
     <div class="use-cases-grid">
-      <!-- Loop through the usecases data -->
-      {% for case in usecases %}
+      {% for case in collections.useCases %}
       <div class="use-case-card">
+        <!-- Title -->
+        <h3>{{ case.title }}</h3>
+        
+        <!-- Image -->
         <img src="{{ case.image }}" alt="{{ case.title }} Image" />
-        <div class="use-case-content">
-          <h3>{{ case.title }}</h3>
-          <p>{{ case.description }}</p>
-          <a href="{{ case.link }}" class="read-more">Read More</a>
+        
+        <!-- Description -->
+        <p>{{ case.description }}</p>
+        
+        <!-- Inset Case Study Sentence Box -->
+        <div class="case-study-sentence">
+          {{ case.case_study_sentence }}
         </div>
+
+        <!-- Read More Button -->
+        <a href="{{ case.link }}" class="read-more">Read More</a>
       </div>
       {% endfor %}
     </div>
