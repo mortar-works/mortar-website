@@ -4,9 +4,14 @@
     description: |-
       Customise pathways into your service using our triage tool and assess needs whilst capturing data. Read our case study on how the triage tool is supporting young people at risk of exclusion.
     subfeatures: |-
-    image: "src\site\static\images\use-cases\bespoke_case_study_detail_06.png"
+    image: "/images/use-cases/bespoke_case_study_detail_06.png"
     link: "/features/ux-ui-toolkit"
     learnMoreText: "Custom solutions"
+
+  - title: "Case Study 1"
+    description: "Discover how we helped improve efficiency in Case Study 1."
+    image: "/images/use-cases/bespoke_case_study_detail_06.png"
+    link: "/case-study-1"
 
   - title: Self assessment tool
     tagline: Build and grow your local networks and partnerships by using our platform to deliver accreditation programmes, referral pathways and tailored directories and resources.
