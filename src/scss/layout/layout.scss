@@ -17,14 +17,14 @@ header, footer, main > section {
 }
 
 header {
-    height: 7em;
-    position: sticky;
-    top: 0;
-    z-index: 1000;
-    background: transparent !important; /* Make sure background starts transparent */
-    color: $black;
-    transition: background-color 0.3s ease, box-shadow 0.3s ease;
-    box-shadow: none !important; /* Ensure no shadow initially */
+  height: 7em;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background: transparent !important; /* Initially transparent */
+  color: $black;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: none !important; /* No shadow initially */
 
   &.nav-active {
     height: 100%;
@@ -70,7 +70,7 @@ header {
   }
 
   .hamburger {
-    @include respond-to('small'){
+    @include respond-to('small') {
       display: none;
     }
 
@@ -96,7 +96,7 @@ header {
     align-items: center;
     flex-basis: 100%;
 
-    @include respond-to('small'){
+    @include respond-to('small') {
       display: flex;
       flex-basis: auto;
     }
@@ -116,7 +116,7 @@ header {
       }
     }
 
-    @include respond-to('small'){
+    @include respond-to('small') {
       display: flex;
       flex-wrap: wrap;
       font-size: 1.5em;
@@ -139,8 +139,14 @@ header {
 
 /* Sticky header styles */
 .sticky {
-    background-color: $mortar-purple !important; /* Ensure background changes to purple when sticky */
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15) !important; /* Add shadow when sticky */
+  background-color: $mortar-purple !important; /* Background changes to purple when sticky */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15) !important; /* Adds shadow when sticky */
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Add padding to the main content to prevent layout shifting caused by sticky header */
+main {
+  padding-top: 7em; /* Adjust this if needed */
 }
 
 footer {
@@ -177,11 +183,11 @@ footer {
       grid-gap: 2em;
     }
 
-    @include respond-to('medium'){
+    @include respond-to('medium') {
       grid-gap: 3em;
     }
 
-    @include respond-to('large'){
+    @include respond-to('large') {
       grid-gap: 4em;
     }
   }
