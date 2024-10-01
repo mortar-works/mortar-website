@@ -18,13 +18,13 @@ header, footer, main > section {
 
 header {
   height: 7em;
-  position: sticky; /* Changed to sticky */
+  position: sticky;
   top: 0;
-  z-index: 1000; /* Ensure the header stays on top of other content */
-  background: rgba(255, 255, 255, 0.65); /* Transparent background */
+  z-index: 1000;
+  background: transparent; /* Initially transparent */
   color: $black;
-  transition: all 0.3s ease-out;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: none; /* No shadow initially */
 
   &.nav-active {
     height: 100%;
@@ -139,9 +139,9 @@ header {
 
 /* Sticky header styles */
 .sticky {
-  background-color: $mortar-purple; /* Makes the header fully opaque */
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15); /* Adds a shadow to the sticky header */
-  transition: background-color 0.3s ease, box-shadow 0.3s ease; /* Smooth transition */
+  background-color: $mortar-purple; /* Background changes to purple when sticky */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15); /* Adds shadow when sticky */
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
 }
 
 footer {
