@@ -32,7 +32,7 @@ window.addEventListener('load', (event) => {
   // Sticky menu code
   window.addEventListener('scroll', () => {
     const header = document.querySelector('header');
-    const stickyPoint = 100; // Adjust the scroll trigger point as needed
+    const stickyPoint = 100; // Adjust this as needed
     
     if (window.scrollY > stickyPoint) {
       header.classList.add('sticky');
