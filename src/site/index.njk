@@ -22,72 +22,116 @@ name: homepage
     </div>
   </section>
 
-<section id="features">
-  <div class="wrapper">
-    <div class="section-head">
-      <h1>
-        How <span class="mortar-purple">Mortar</span> can help to
-        <span class="mortar-purple">transform your services</span>
-      </h1>
-      <p class="section-tagline"></p>
-    </div>
+  <section id="features">
+    <div class="wrapper">
+      <div class="section-head">
+        <h2>Building Better Services</h2>
+        <h3>Mortar creates scalable solutions to real-world problems</h3>
+        <p class="section-tagline">
+          We combine our technology and expertise in data, intelligence, and
+          user-led design to build scalable products and solutions. Our toolkit,
+          platform, and framework support the development of customizable
+          solutions that enhance service quality, efficiency, and accessibility.
+          Have a look at our use cases to see how our partners are delivering
+          solutions at scale and to learn how we can support you in the
+          transformation of your services and the delivery of better outcomes
+          for your users.
+        </p>
+      </div>
 
-    <div id="feature-list">
+      <div id="feature-list">
+        <ul>
+          {% for feature in features %}
+          <li>
+            <h3>{{ feature.title }}</h3>
+            <p class="feature-tagline">{{ feature.tagline }}</p>
+            {{ feature.subfeatures | markdown | safe }}
+          </li>
+          {% endfor %}
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section id="partners">
+    <div class="wrapper">
+      <h2>Our partners</h2>
       <ul>
-        {% for feature in features %}
         <li>
-          <h3>{{ feature.title }}</h3>
-          <p class="feature-tagline">{{ feature.tagline }}</p>
-          {{ feature.subfeatures | markdown | safe }}
-          
-          <!-- Update the Learn More link to have dynamic text -->
-          <a href="{{ feature.link }}" class="learn-more">{{ feature.learnMoreText }}</a>
+          <img
+            src="{{ '/static/images/partners/lga_logo.png' | url }}"
+            alt="Local Government Association logo"
+          />
         </li>
-        {% endfor %}
+        <li>
+          <img
+            src="{{ '/static/images/partners/gla_logo2.jpeg' | url }}"
+            alt="Greater London Authority logo"
+          />
+        </li>
+        <li>
+          <img
+            src="{{ '/static/images/partners/havering-council.png' | url }}"
+            alt="Havering Council logo"
+          />
+        </li>
+        <li>
+          <img
+            src="{{ '/static/images/partners/Hackney-Logo.png' | url }}"
+            alt="Hackney Council logo"
+          />
+        </li>
+        <li>
+          <img
+            src="{{ '/static/images/partners/Clarion-Housing-Group-Logo.png' | url }}"
+            alt="Clarion Housing Group logo"
+          />
+        </li>
+        <li>
+          <img
+            src="{{ '/static/images/partners/salford02.png' | url }}"
+            alt="Salford City Council logo"
+          />
+        </li>
+        <li>
+          <img
+            src="{{ '/static/images/partners/eastriding1.png' | url }}"
+            alt="East Riding of Yorkshire logo"
+          />
+        </li>
+        <li>
+          <img
+            src="{{ '/static/images/partners/humberandnorth.png' | url }}"
+            alt="Humber and North Yorkshire Integrated Care Partnership logo"
+          />
+        </li>
+        <li>
+          <img
+            src="{{ '/static/images/partners/walthamforest01.png' | url }}"
+            alt="Waltham Forest logo"
+          />
+        </li>
+        <li>
+          <img
+            src="{{ '/static/images/partners/Worcestershire-County-Council-logo.png' | url }}"
+            alt="Worcestershire County Council logo"
+          />
+        </li>
+        <li>
+          <img
+            src="{{ '/static/images/partners/socialfinance01.png' | url }}"
+            alt="Social Finance logo"
+          />
+        </li>
+        <li>
+          <img
+            src="{{ '/static/images/partners/mayoroflondonlogo01.png' | url }}"
+            alt="Mayor of London logo"
+          />
+        </li>
       </ul>
     </div>
-  </div>
-</section>
-
-<section id="partners">
-  <div class="partners-wrapper">
-    <!-- Heading Above the Logos -->
-    <h2 class="partners-heading">Reaching 1000s of users and businesses</h2>
-
-    <!-- Ticker container -->
-    <div class="partners-ticker">
-      <ul class="partners-list">
-        <!-- List of partner logos -->
-        <li><img src="{{ '/static/images/partners/lga_logo.png' | url }}" alt="Local Government Association logo" /></li>
-        <li><img src="{{ '/static/images/partners/gla_logo2.jpeg' | url }}" alt="Greater London Authority logo" /></li>
-        <li><img src="{{ '/static/images/partners/havering-council.png' | url }}" alt="Havering Council logo" /></li>
-        <li><img src="{{ '/static/images/partners/Hackney-Logo.png' | url }}" alt="Hackney Council logo" /></li>
-        <li><img src="{{ '/static/images/partners/Clarion-Housing-Group-Logo.png' | url }}" alt="Clarion Housing Group logo" /></li>
-        <li><img src="{{ '/static/images/partners/salford02.png' | url }}" alt="Salford City Council logo" /></li>
-        <li><img src="{{ '/static/images/partners/eastriding1.png' | url }}" alt="East Riding of Yorkshire logo" /></li>
-        <li><img src="{{ '/static/images/partners/humberandnorth.png' | url }}" alt="Humber and North Yorkshire Integrated Care Partnership logo" /></li>
-        <li><img src="{{ '/static/images/partners/walthamforest01.png' | url }}" alt="Waltham Forest logo" /></li>
-        <li><img src="{{ '/static/images/partners/Worcestershire-County-Council-logo.png' | url }}" alt="Worcestershire County Council logo" /></li>
-        <li><img src="{{ '/static/images/partners/socialfinance01.png' | url }}" alt="Social Finance logo" /></li>
-        <li><img src="{{ '/static/images/partners/mayoroflondonlogo01.png' | url }}" alt="Mayor of London logo" /></li>
-        <li><img src="{{ '/static/images/partners/lga_logo.png' | url }}" alt="Local Government Association logo" /></li>
-        <li><img src="{{ '/static/images/partners/gla_logo2.jpeg' | url }}" alt="Greater London Authority logo" /></li>
-        <li><img src="{{ '/static/images/partners/havering-council.png' | url }}" alt="Havering Council logo" /></li>
-        <li><img src="{{ '/static/images/partners/Hackney-Logo.png' | url }}" alt="Hackney Council logo" /></li>
-        <li><img src="{{ '/static/images/partners/Clarion-Housing-Group-Logo.png' | url }}" alt="Clarion Housing Group logo" /></li>
-        <li><img src="{{ '/static/images/partners/salford02.png' | url }}" alt="Salford City Council logo" /></li>
-        <li><img src="{{ '/static/images/partners/eastriding1.png' | url }}" alt="East Riding of Yorkshire logo" /></li>
-        <li><img src="{{ '/static/images/partners/humberandnorth.png' | url }}" alt="Humber and North Yorkshire Integrated Care Partnership logo" /></li>
-        <li><img src="{{ '/static/images/partners/walthamforest01.png' | url }}" alt="Waltham Forest logo" /></li>
-        <li><img src="{{ '/static/images/partners/Worcestershire-County-Council-logo.png' | url }}" alt="Worcestershire County Council logo" /></li>
-        <li><img src="{{ '/static/images/partners/socialfinance01.png' | url }}" alt="Social Finance logo" /></li>
-        <li><img src="{{ '/static/images/partners/mayoroflondonlogo01.png' | url }}" alt="Mayor of London logo" /></li>
-      </ul>
-    </div>
-  </div>
-</section>
-
-
+  </section>
 
   <section id="use-cases">
     <div class="wrapper">
