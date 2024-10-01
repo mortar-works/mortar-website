@@ -92,15 +92,14 @@ name: homepage
 <section id="use-cases">
   <div class="use-cases-wrapper">
     <h2>Our Use Cases</h2>
-    <p>Explore how our innovative solutions have helped organizations overcome challenges and achieve significant results across various industries.</p>
     <div class="use-cases-grid">
       {% for case in collections.useCases %}
       <div class="use-case-card">
         <!-- Title -->
         <h3>{{ case.title }}</h3>
         
-        <!-- Image -->
-        <img src="{{ case.image }}" alt="{{ case.title }} Image" />
+        <!-- Strapline -->
+        <h4 class="strapline">{{ case.strapline }}</h4>
         
         <!-- Description -->
         <p>{{ case.description }}</p>
@@ -110,54 +109,10 @@ name: homepage
           {{ case.case_study_sentence }}
         </div>
 
-        <!-- Read More Button -->
-        <a href="{{ case.link }}" class="read-more">Read More</a>
+        <!-- Read More Text Link styled like "Learn More" -->
+        <a href="{{ case.link }}" class="learn-more-link">Learn More</a>
       </div>
       {% endfor %}
     </div>
   </div>
 </section>
-
-
-  <section id="insights">
-    <div class="wrapper">
-      <div class="section-head">
-        <h2>Insights</h2>
-        <p class="section-tagline">
-          Mortar makes the application of intelligence, data, and user-led design
-          easier and more affordable; to inspire services, experiences, and
-          relationships to be more accessible and inclusive. Read our insights to
-          find out how we are applying technology to build better services.
-        </p>
-      </div>
-
-      <ul id="insight-list">
-        {% for post in collections.insights %}
-        <li class="{% if loop.index > 6 %}hidden{% endif %}">
-          <a
-            class="insight-title"
-            href="{{ post.url }}"
-            aria-label="Insight: {{ post.data.title }}"
-          >
-            <div
-              class="insight-image"
-              style="background-image: url('{{ '/static/images/insights/' + post.data.image | url }}')"
-            >
-              <div class="hover-overlay"></div>
-            </div>
-            <div class="insight-details">
-              <time datetime="{{ post.data.date | w3date }}">{{ post.data.date | date }}</time>
-              {{ post.data.title }}
-            </div>
-          </a>
-        </li>
-        {% endfor %}
-      </ul>
-
-      <button id="load-more-insights" class="cta">Load More Insights</button>
-      <div id="insights-preloader" class="hidden">
-        <div class="spinner"></div>
-      </div>
-    </div>
-  </section>
-{% endblock %}

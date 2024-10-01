@@ -393,80 +393,71 @@
       }
     }
   
-    .use-case-card {
-      background-color: #fff;
-      border-radius: 10px;
-      overflow: hidden;
-      padding: 20px;
-      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
-      display: flex;
-      flex-direction: column;
-      justify-content: space-between;
-      transition: transform 0.3s ease, box-shadow 0.3s ease;
-    }
-    
-    .use-case-card:hover {
-      transform: translateY(-5px); /* Subtle hover lift */
-      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Enhanced shadow on hover */
-    }
-    
-    /* Title styling */
-    .use-case-card h3 {
-      font-family: "Basis", sans-serif;
-      font-weight: 300; /* Light font weight */
-      text-align: center;
-      font-size: 1.8em;
-      margin-bottom: 15px;
-    }
-    
-    /* Image styling with padding */
-    .use-case-card img {
-      width: 100%;
-      height: auto;
-      object-fit: cover;
-      padding: 10px;
-      border-radius: 8px;
-    }
-    
-    /* Description below the image */
-    .use-case-card p {
-      font-size: 1em;
-      color: #555;
-      margin: 10px 0;
-      text-align: left;
-    }
-    
-    /* Case study inset box */
-    .case-study-sentence {
-      background-color: #f4f4f4; /* Light background for differentiation */
-      border: 1px solid #ddd; /* Subtle border */
-      padding: 15px;
-      border-radius: 6px;
-      font-size: 0.9em;
-      color: #333;
-      margin-bottom: 15px;
-      text-align: left;
-    }
-    
-    /* Read more button styled like the rest of the website */
-    .read-more {
-      display: inline-block;
-      background-color: #007BFF; /* Assuming your button is blue */
-      color: #fff;
-      padding: 10px 20px;
-      border-radius: 5px;
-      text-decoration: none;
-      text-align: center;
-      font-weight: bold;
-      transition: background-color 0.3s ease;
-      cursor: pointer;
-      margin-top: 20px;
-    }
-    
-    .read-more:hover {
-      background-color: #0056b3; /* Darker shade on hover */
-    }
-  }
+    /* Card style */
+.use-case-card {
+  background-color: #fff;
+  border-radius: 10px;
+  overflow: hidden;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: left; /* Align everything to the left */
+}
+
+/* Title */
+.use-case-card h3 {
+  font-family: "Basis", sans-serif;
+  font-weight: 300; /* Light font */
+  font-size: 1.8em;
+  margin-bottom: 10px;
+  text-align: left; /* Left-aligned */
+}
+
+/* Strapline */
+.strapline {
+  font-family: "Basis", sans-serif;
+  font-size: 1.2em;
+  font-weight: 400;
+  color: #666;
+  margin-bottom: 15px;
+  text-align: left; /* Left-aligned */
+}
+
+/* Description */
+.use-case-card p {
+  font-size: 1em;
+  color: #555;
+  margin: 10px 0;
+  text-align: left; /* Left-aligned */
+}
+
+/* Case study inset box */
+.case-study-sentence {
+  background-color: #f4f4f4; /* Light background */
+  border: 1px solid #ddd; /* Subtle border */
+  padding: 15px;
+  border-radius: 6px;
+  font-size: 0.9em;
+  color: #333;
+  margin-bottom: 15px;
+  text-align: left; /* Left-aligned */
+}
+
+/* Learn More link styled like other links on your website */
+.learn-more-link {
+  font-size: 1em;
+  color: #007BFF; /* Assuming your link color is blue */
+  text-decoration: none;
+  font-weight: bold;
+  margin-top: 15px;
+  transition: color 0.3s ease;
+}
+
+.learn-more-link:hover {
+  color: #0056b3; /* Darker blue on hover */
+}
 
   #insights {
     padding: 0 0 8em 0;
