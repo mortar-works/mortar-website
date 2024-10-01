@@ -1,0 +1,30 @@
+use_cases:
+  - title: "Case Study 1"
+    description: "Discover how we helped improve efficiency in Case Study 1."
+    image: "path-to-image-1.jpg"
+    link: "/case-study-1"
+
+  - title: "Case Study 2"
+    description: "Explore how Case Study 2 achieved outstanding results."
+    image: "path-to-image-2.jpg"
+    link: "/case-study-2"
+
+  - title: "Case Study 3"
+    description: "Learn about the solutions we provided in Case Study 3."
+    image: "path-to-image-3.jpg"
+    link: "/case-study-3"
+
+  - title: "Case Study 4"
+    description: "Case Study 4 showcases innovative approaches to solving challenges."
+    image: "path-to-image-4.jpg"
+    link: "/case-study-4"
+
+  - title: "Case Study 5"
+    description: "Uncover the impact of our work in Case Study 5."
+    image: "path-to-image-5.jpg"
+    link: "/case-study-5"
+
+  - title: "Case Study 6"
+    description: "Case Study 6 demonstrates exceptional problem-solving."
+    image: "path-to-image-6.jpg"
+    link: "/case-study-6"
