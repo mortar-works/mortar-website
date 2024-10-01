@@ -36,6 +36,11 @@ module.exports = function(eleventyConfig) {
             .reverse();
   });
 
+  eleventyConfig.addCollection("useCases", function(collection) {
+    return collection.getFilteredByGlob("src/site/use-cases/*.md")
+            .sort((a,b) => Math.sign(a.data.order - b.data.order));
+  });
+
 
   // This bit required for the dev command
   eleventyConfig.setUseGitIgnore(false);
