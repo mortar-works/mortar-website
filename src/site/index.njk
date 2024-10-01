@@ -103,15 +103,17 @@ name: homepage
         
         <!-- Description -->
         <p>{{ case.description }}</p>
-        
-        <!-- Inset Case Study Sentence Box -->
+        <!-- Read More link at the end of the description -->
+        <a href="{{ case.read_more_link }}" class="read-more-link">Read More</a>
+
+        <!-- Learn More Text Link styled with a right arrow -->
+        <a href="{{ case.link }}" class="learn-more-link">Learn More</a>
+
+        <!-- Inset Case Study Sentence Box at the bottom of the card -->
         <div class="case-study-sentence">
           <h4>Case Study</h4> <!-- Case Study title inside the box -->
           {{ case.case_study_sentence }}
         </div>
-
-        <!-- Learn More Text Link styled with a right arrow -->
-        <a href="{{ case.link }}" class="learn-more-link">Learn More</a>
       </div>
       {% endfor %}
     </div>
