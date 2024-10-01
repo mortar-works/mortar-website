@@ -1,56 +1,45 @@
 const yaml = require("js-yaml");
 
-// Import filters
-const dateFilter = require('./src/filters/date-filter.js');
-const markdownFilter = require('./src/filters/markdown-filter.js');
-const w3DateFilter = require('./src/filters/w3-date-filter.js');
-const { MultiWatching } = require("webpack");
-
-const env = process.env.ELEVENTY_ENV;
-
 module.exports = function(eleventyConfig) {
-  // Static passthroughs for files like CSS, JS, images
+  // Passthrough for static files
   eleventyConfig.addPassthroughCopy("src/site/static");
 
-  // Enable YAML data files to be processed
+  // Enable Eleventy to process YAML data files
   eleventyConfig.addDataExtension("yaml", contents => yaml.safeLoad(contents));
 
-  // Add filters
-  eleventyConfig.addFilter('date', dateFilter);
-  eleventyConfig.addFilter('markdown', markdownFilter);
-  eleventyConfig.addFilter('w3date', w3DateFilter);
+  // Add custom filters
+  eleventyConfig.addFilter('date', require('./src/filters/date-filter.js'));
+  eleventyConfig.addFilter('markdown', require('./src/filters/markdown-filter.js'));
+  eleventyConfig.addFilter('w3date', require('./src/filters/w3-date-filter.js'));
 
-  // Create collections
-  const livePosts = p => p.date <= new Date() && !p.data.draft;
-
-  // Insights collection (filter drafts)
+  // Create insights collection
   eleventyConfig.addCollection("insights", function(collection) {
     return collection.getFilteredByGlob("src/site/insights/*.md")
-            .filter(livePosts)
+            .filter(post => post.date <= new Date() && !post.data.draft)
             .reverse();
   });
 
-  // Insight drafts collection (filter non-live posts)
+  // Create insight drafts collection
   eleventyConfig.addCollection("insightDrafts", function(collection) {
     return collection.getFilteredByGlob("src/site/insights/*.md")
-            .filter(_ => !livePosts(_))
+            .filter(post => post.data.draft)
             .reverse();
   });
 
-  // Create a collection for use cases, but based on the YAML file instead of Markdown
+  // Create useCases collection from the YAML file
   eleventyConfig.addCollection("useCases", function(collectionApi) {
-    // Access the global `use_cases` data from the YAML file
+    // Access the use_cases data from the global data (YAML)
     const useCasesData = collectionApi.getAll()[0].data.use_cases;
 
-    // Ensure the data is an array before sorting/returning
+    // Check if useCasesData is an array, otherwise log an error
     if (Array.isArray(useCasesData)) {
-      return useCasesData.sort((a, b) => Math.sign(a.order - b.order));
+      return useCasesData;
     } else {
       throw new Error("use_cases data is not an array");
     }
   });
 
-  // This bit is required for the dev command (to avoid ignoring .gitignore files)
+  // Watch targets and other dev settings
   eleventyConfig.setUseGitIgnore(false);
   eleventyConfig.addWatchTarget('src/site/static/js');
   eleventyConfig.addWatchTarget('src/site/static/css');
