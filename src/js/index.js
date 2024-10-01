@@ -32,17 +32,12 @@ window.addEventListener('load', (event) => {
   // Sticky menu code
   window.addEventListener('scroll', () => {
     const header = document.querySelector('header');
-    const sticky = header.offsetTop;
+    const stickyPoint = 50; // Change to the point at which you want the header to become sticky
   
-    console.log("Scroll Position:", window.scrollY); // Check scroll position
-    console.log("Header offset:", sticky); // Check header's offset
-  
-    if (window.scrollY > sticky) {
+    if (window.scrollY > stickyPoint) {
       header.classList.add('sticky');
-      console.log("Sticky class added");
     } else {
       header.classList.remove('sticky');
-      console.log("Sticky class removed");
     }
   });
 
