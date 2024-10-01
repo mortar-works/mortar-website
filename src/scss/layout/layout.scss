@@ -17,14 +17,14 @@ header, footer, main > section {
 }
 
 header {
-  height: 7em;
-  position: sticky;
-  top: 0;
-  z-index: 1000;
-  background: transparent !important; /* Initially transparent */
-  color: $black;
-  transition: background-color 0.3s ease, box-shadow 0.3s ease;
-  box-shadow: none; /* No shadow initially */
+    height: 7em;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    background: transparent !important; /* Make sure background starts transparent */
+    color: $black;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: none !important; /* Ensure no shadow initially */
 
   &.nav-active {
     height: 100%;
@@ -139,9 +139,8 @@ header {
 
 /* Sticky header styles */
 .sticky {
-  background-color: $mortar-purple; /* Background changes to purple when sticky */
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15); /* Adds shadow when sticky */
-  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    background-color: $mortar-purple !important; /* Ensure background changes to purple when sticky */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15) !important; /* Add shadow when sticky */
 }
 
 footer {

@@ -35,11 +35,14 @@ window.addEventListener('load', (event) => {
     const sticky = header.offsetTop;
   
     console.log("Scroll Position:", window.scrollY); // Check scroll position
+    console.log("Header offset:", sticky); // Check header's offset
   
     if (window.scrollY > sticky) {
       header.classList.add('sticky');
+      console.log("Sticky class added");
     } else {
       header.classList.remove('sticky');
+      console.log("Sticky class removed");
     }
   });
 
