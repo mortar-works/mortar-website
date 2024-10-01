@@ -139,7 +139,7 @@ header {
 
 /* Sticky header styles */
 .sticky {
-  background-color: $mortar-purple !important; /* Ensure background changes to purple when sticky */
+  background-color: rgba(67, 34, 124, 0.8) !important; /* Semi-transparent purple */
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15) !important; /* Add shadow when sticky */
 }
 
