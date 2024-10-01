@@ -1,6 +1,7 @@
 body {
   background-color: $mortar-purple;
   color: $white;
+  margin: 0; /* Ensure no extra margins around body */
 }
 
 header, footer, main > section {
@@ -21,117 +22,106 @@ header {
   position: sticky;
   top: 0;
   z-index: 1000;
-  background: transparent !important; /* Ensure background starts transparent */
+  background: transparent !important; /* Ensure header is transparent initially */
   color: $black;
   transition: background-color 0.3s ease, box-shadow 0.3s ease;
-  box-shadow: none !important; /* No shadow initially */
+  box-shadow: none; /* No shadow initially */
+}
 
-  &.nav-active {
-    height: 100%;
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    background: $mortar-orange !important;
-    z-index: 10000;
-  }
+#homepage & {
+  background: transparent !important; /* Transparent header for the homepage */
 
-  #homepage & {
-    background: transparent !important; /* Ensure transparent background for the homepage */
-
-    nav a {
-      color: $white;
-    }
-
-    #mortar-logo {
-      background-image: url('../images/mortar-logo-white.png');
-    }
-  }
-
-  .wrapper {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    align-items: center;
+  nav a {
+    color: $white;
   }
 
   #mortar-logo {
-    margin: 0;
-    padding: 0;
-    height: 75px;
-    width: 165px;
-    display: block;
-    background: transparent scroll no-repeat 0 0;
-    background-image: url('../images/mortar-logo-black.png');
-    background-size: cover;
-    text-indent: -9999px;
+    background-image: url('../images/mortar-logo-white.png');
   }
+}
 
-  .hamburger {
-    @include respond-to('small') {
-      display: none;
-    }
+.wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: center;
+}
 
-    .hamburger-inner,
-    .hamburger-inner:after,
-    .hamburger-inner:before {
-      background-color: $black;
+#mortar-logo {
+  margin: 0;
+  padding: 0;
+  height: 75px;
+  width: 165px;
+  display: block;
+  background: transparent scroll no-repeat 0 0;
+  background-image: url('../images/mortar-logo-black.png');
+  background-size: cover;
+  text-indent: -9999px;
+}
 
-      #homepage & {
-        background-color: $white;
-      }
-    }
-  }
-
-  &.nav-active nav {
-    display: flex;
-    margin-top: 3em;
-    font-size: 1.4em;
-  }
-
-  nav {
+.hamburger {
+  @include respond-to('small') {
     display: none;
-    align-items: center;
-    flex-basis: 100%;
+  }
 
-    @include respond-to('small') {
-      display: flex;
-      flex-basis: auto;
+  .hamburger-inner,
+  .hamburger-inner:after,
+  .hamburger-inner:before {
+    background-color: $black;
+
+    #homepage & {
+      background-color: $white;
+    }
+  }
+}
+
+&.nav-active nav {
+  display: flex;
+  margin-top: 3em;
+  font-size: 1.4em;
+}
+
+nav {
+  display: none;
+  align-items: center;
+  flex-basis: 100%;
+
+  @include respond-to('small') {
+    display: flex;
+    flex-basis: auto;
+  }
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+
+  li {
+    a {
+      @include rajdhani-regular-type;
+      font-size: 1.8em;
+      line-height: 2em;
+      color: $black;
     }
   }
 
-  ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
+  @include respond-to('small') {
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 1.5em;
 
     li {
       a {
-        @include rajdhani-regular-type;
-        font-size: 1.8em;
-        line-height: 2em;
-        color: $black;
+        font-size: 1em;
+        line-height: 1em;
+        padding: 0 0.6em;
       }
-    }
 
-    @include respond-to('small') {
-      display: flex;
-      flex-wrap: wrap;
-      font-size: 1.5em;
-
-      li {
-        a {
-          font-size: 1em;
-          line-height: 1em;
-          padding: 0 0.6em;
-        }
-
-        &:last-of-type a {
-          padding: 0 0.6em;
-          padding-right: inherit;
-        }
+      &:last-of-type a {
+        padding: 0 0.6em;
+        padding-right: inherit;
       }
     }
   }
@@ -139,14 +129,14 @@ header {
 
 /* Sticky header styles */
 .sticky {
-  background-color: $mortar-purple !important; /* Apply background color only when sticky */
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15) !important; /* Add shadow only when sticky */
+  background-color: $mortar-purple !important; /* Background turns purple only when sticky */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15) !important; /* Adds shadow when sticky */
   transition: background-color 0.3s ease, box-shadow 0.3s ease;
 }
 
-/* Padding for the main content to prevent layout shifting */
+/* Remove the padding from main to prevent a gap between header and content */
 main {
-  padding-top: 7em; /* Adjust padding to account for sticky header height */
+  margin-top: 7em; /* Instead of padding, use margin-top to ensure the header does not overlap content */
 }
 
 footer {
