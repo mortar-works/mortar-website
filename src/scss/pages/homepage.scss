@@ -362,38 +362,41 @@
       background: linear-gradient(to left, rgba(255, 255, 255, 1), rgba(255, 255, 255, 0)); /* Fade from white to transparent */
     }
   }  
+
   
-  #use-cases {
-    padding: 4em 0;
-    background-color: #f9f9f9;
-  
-    .use-cases-wrapper {
-      max-width: 1200px;
-      margin: 0 auto;
-      text-align: center;
-  
-      h2 {
-        font-size: 2.5em;
-        margin-bottom: 1em;
-      }
-    }
-  
-    .use-cases-grid {
-      display: grid;
-      grid-template-columns: repeat(1, 1fr); /* 1 column on mobile */
-      grid-gap: 2em;
-      padding: 0 1em;
-  
-      @media (min-width: 768px) {
-        grid-template-columns: repeat(2, 1fr); /* 2 columns on tablets */
-      }
-  
-      @media (min-width: 1024px) {
-        grid-template-columns: repeat(3, 1fr); /* 3 columns on desktops */
-      }
-    }
-  
-    /* Card style */
+  /* Container for the use cases section */
+#use-cases {
+  padding: 2em 0;
+  background-color: #f9f9f9;
+}
+
+.use-cases-wrapper {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1.5em;
+}
+
+/* Responsive grid for the use cases */
+.use-cases-grid {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  grid-gap: 2em;
+  padding-top: 2em;
+}
+
+@media (min-width: 768px) {
+  .use-cases-grid {
+    grid-template-columns: repeat(2, 1fr); /* 2 columns on tablets */
+  }
+}
+
+@media (min-width: 1024px) {
+  .use-cases-grid {
+    grid-template-columns: repeat(3, 1fr); /* 3 columns on desktops */
+  }
+}
+
+/* Styling for each use case card */
 .use-case-card {
   background-color: #fff;
   border-radius: 10px;
@@ -406,16 +409,16 @@
   text-align: left;
 }
 
-/* Title */
+/* Title styling */
 .use-case-card h3 {
   font-family: "Basis", sans-serif;
   font-weight: 300;
   font-size: 1.8em;
-  margin-bottom: 5px;
+  margin-bottom: 5px; /* Adjusted gap below title */
   text-align: left;
 }
 
-/* Strapline */
+/* Strapline styling */
 .strapline {
   font-family: "Basis", sans-serif;
   font-size: 1.2em;
@@ -425,7 +428,7 @@
   text-align: left;
 }
 
-/* Description */
+/* Description styling */
 .use-case-card p {
   font-size: 1em;
   color: #555;
@@ -433,21 +436,7 @@
   text-align: left;
 }
 
-/* Read More link at the end of the description */
-.read-more-link {
-  font-size: 0.9em;
-  color: #673ab7; /* Mortar-purple */
-  text-decoration: underline;
-  margin-top: 5px;
-  display: inline-block;
-  transition: color 0.3s ease;
-}
-
-.read-more-link:hover {
-  color: #ff6347; /* Mortar-orange on hover */
-}
-
-/* Learn More link with right arrow */
+/* Learn More link styling with right arrow */
 .learn-more-link {
   font-size: 1em;
   color: #673ab7; /* Mortar-purple */
@@ -470,18 +459,18 @@
   margin-left: 5px;
 }
 
-/* Case study inset box with uniform padding */
+/* Case study inset box */
 .case-study-sentence {
   background-color: rgba(255, 99, 71, 0.1); /* Mortar-orange with opacity */
   padding: 15px;
   border-radius: 6px;
   font-size: 0.9em;
   color: #333;
-  margin-top: 15px; /* Added space above the box */
+  margin-top: 15px; /* Gap between box and previous content */
   text-align: left;
 }
 
-/* Case study title inside the inset box */
+/* Case study title inside the box */
 .case-study-sentence h4 {
   font-size: 1em;
   font-weight: bold;
@@ -489,9 +478,20 @@
   color: #333;
 }
 
+/* Read More link inside case study box */
+.read-more-link {
+  font-size: 0.9em;
+  color: #673ab7; /* Mortar-purple */
+  text-decoration: underline;
+  display: inline; /* Keeps it inline with the sentence */
+  margin-left: 5px; /* Small space before Read More */
+  transition: color 0.3s ease;
+}
 
+.read-more-link:hover {
+  color: #ff6347; /* Mortar-orange on hover */
+}
 
-  }
   #insights {
     padding: 0 0 8em 0;
     background: lighten($mortar-yellow, 15%);

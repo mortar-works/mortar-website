@@ -2,21 +2,21 @@
   - title: Building new solutions
     strapline: "A modular service design framework for creating tailored solutions."
     description: "Many different barriers prevent people from accessing services. Learn how our framework applies existing tools and data to create custom solutions." 
-    case_study_sentence: "Case study: learn how Cheshire and Gloucestershire are reaching young people at risk of exclusion"
+    case_study_sentence: "Learn how we are supporting Cheshire and Gloucestershire reach young people at risk of exclusion"
     link: "/features/ux-ui-toolkit"
     ReadMoreText: "Explore our framework"
     read_more_link: "/case-study-1-more"
 
   - title: Scaling your impact
     strapline: "The technical partnership you need to deliver impact at scale."
-    description: "It is hard to scale services without strong partnerships. Our robust and versatile framework allows solutions to grow into large-scale, national offers." 
-    case_study_sentence: "Case study: read about how the Local Government Association is combatting digital exclusion."
+    description: "It is hard to scale services without a strong product architecture. Our robust and versatile framework allows solutions to grow into large-scale, national offers." 
+    case_study_sentence: "Read about how we are scaling the digital inclusion triage tool with the Local Government Association."
     link: "/case-study-1"
     read_more_link: "/case-study-2-more"
 
   - title: Making data work
     strapline: "Why a data platform is essential to building a better service."
     description: "Capturing and analysing data is essential to developing your service. The tools we build are focused on delivering the data you need to learn, act and invest."
-    case_study_sentence: "Case study: data is at the heart of our skills assessment tool being led by Essex County Council."
+    case_study_sentence: "Explore how data is defining our skills assessment tool being led by Essex County Council."
     link: "/case-study-1"
     read_more_link: "/case-study-3-more"
