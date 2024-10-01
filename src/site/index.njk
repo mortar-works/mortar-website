@@ -92,10 +92,11 @@ name: homepage
 <section id="use-cases">
   <div class="use-cases-wrapper">
     <h2>Our Use Cases</h2>
-    <p>Explore how our innovative solutions have helped organizations overcome challenges and achieve significant results across various industries.
-    </p>
+    <p>Explore how our innovative solutions have helped organizations overcome challenges and achieve significant results across various industries. Each case study highlights the unique approaches we've taken to deliver impactful outcomes.</p>
+
     <div class="use-cases-grid">
-      {% for case in use_cases %}
+      <!-- Loop through the usecases data -->
+      {% for case in usecases %}
       <div class="use-case-card">
         <img src="{{ case.image }}" alt="{{ case.title }} Image" />
         <div class="use-case-content">
