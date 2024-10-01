@@ -10,7 +10,7 @@
 
   - title: "Case Study 1"
     description: "Discover how we helped improve efficiency in Case Study 1."
-    image: "/images/use-cases/bespoke_case_study_detail_06.png"
+    image: "static/images/use-cases/bespoke_case_study_detail_06.png"
     link: "/case-study-1"
 
   - title: Self assessment tool
