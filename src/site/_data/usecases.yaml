@@ -1,16 +1,14 @@
 ---
-  - title: Triage tool
-    tagline: Enhance engagement and improve accessibility using our templates and toolkits to deliver tailored solutions for user onboarding, self-assessment and triage.
-    description: |-
-      Customise pathways into your service using our triage tool and assess needs whilst capturing data. Read our case study on how the triage tool is supporting young people at risk of exclusion.
-    subfeatures: |-
-    image: "/images/use-cases/bespoke_case_study_detail_06.png"
+  - title: The front door
+    description: Access into services can be complex and a barrier to engagement. Find out about our custom solutions improving access using our triage tool, assessing needs and capturing data at the same time. Read our case study on how the triage tool is supporting young people at risk of exclusion.
+    image: "static/images/use-cases/bespoke_case_study_detail_06.png"
+    case_study_sentence: "This is a brief sentence about the impact and success of Case Study 1."
     link: "/features/ux-ui-toolkit"
-    learnMoreText: "Custom solutions"
 
   - title: "Case Study 1"
     description: "Discover how we helped improve efficiency in Case Study 1."
     image: "static/images/use-cases/bespoke_case_study_detail_06.png"
+    case_study_sentence: "This is a brief sentence about the impact and success of Case Study 1."
     link: "/case-study-1"
 
   - title: Self assessment tool
