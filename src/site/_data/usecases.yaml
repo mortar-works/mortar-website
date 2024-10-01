@@ -1,17 +1,18 @@
 ---
-  - title: The front door
-    description: Access into services can be complex and a barrier to engagement. Find out about our custom solutions improving access using our triage tool, assessing needs and capturing data at the same time. Read our case study on how the triage tool is supporting young people at risk of exclusion.
+  - title: Building service solutions
+    description: There are so many barriers preventing access into services. Use our framework to customise the solution you need, assess the needs of your users and capture valuable data to grow. 
     image: "static/images/use-cases/bespoke_case_study_detail_06.png"
-    case_study_sentence: "This is a brief sentence about the impact and success of Case Study 1."
+    case_study_sentence: "Read our case study on how our triage tool is supporting young people at risk of exclusion"
     link: "/features/ux-ui-toolkit"
+    ReadMoreText: "Explore the triage tool"
 
-  - title: "Case Study 1"
+  - title: Scaling your impact
     description: "Discover how we helped improve efficiency in Case Study 1."
     image: "static/images/use-cases/bespoke_case_study_detail_06.png"
     case_study_sentence: "This is a brief sentence about the impact and success of Case Study 1."
     link: "/case-study-1"
 
-  - title: Self assessment tool
+  - title: Making data work
     tagline: Build and grow your local networks and partnerships by using our platform to deliver accreditation programmes, referral pathways and tailored directories and resources.
     description: |-
       Work smarter, not harder. Mortar's framework makes it easier to apply intelligent solutions; transforming systems and services with predictive analytics, automation and machine learning.
