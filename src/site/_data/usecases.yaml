@@ -9,45 +9,11 @@
   - title: Scaling your impact
     strapline: "The technical partnership you need to deliver impact at scale."
     description: "It is hard to scale services without strong partnerships. Our robust and versatile framework allows solutions to grow into large-scale, national offers." 
-    case_study_sentence: "Case study: read about how we are working with the Local Government Association to deliver a national tools combatting digital exclusion."
+    case_study_sentence: "Case study: read about how the Local Government Association is combatting digital exclusion."
     link: "/case-study-1"
 
   - title: Making data work
-    strapline: "The data platform on which to build a better service."
-    description: "Capturing and analysing data is essential to developing your service. The tools we build deliver the data you need to act and invest."
+    strapline: "Why a data platform is essential to building a better service."
+    description: "Capturing and analysing data is essential to developing your service. The tools we build are focused on delivering the data you need to learn, act and invest."
     case_study_sentence: "Case study: data is at the heart of our skills assessment tool being led by Essex County Council."
     link: "/case-study-1"
-
-  - title: Accreditation builder
-    tagline: Continuously capture and analyse data using our data platform to identify gaps in provision, assess needs and visualise impact across complex systems and services.
-    description: |-
-      Designed for co-creation. Mortar's AI engine analyses patterns and behaviours in correspondence, streamlining caseworking and consumer responses.
-    subfeatures: |-
-    link: "/features/intelligence-framework"
-    learnMoreText: "Measure impact"
-
-  - title: Directory manager
-    tagline: Drive efficiencies in service provision using our intelligence framework, personalising experiences for your users and prioritising cases, actions and decisions for your team.
-    description: |-
-      Designed for co-creation. Mortar's AI engine analyses patterns and behaviours in correspondence, streamlining caseworking and consumer responses.
-    subfeatures: |-
-    link: "/features/intelligence-framework"
-    learnMoreText: "Drive growth"
-
-  - title: Case manager
-    tagline: Drive efficiencies in service provision using our intelligence framework, personalising experiences for your users and prioritising cases, actions and decisions for your team.
-    description: |-
-      Designed for co-creation. Mortar's AI engine analyses patterns and behaviours in correspondence, streamlining caseworking and consumer responses.
-    subfeatures: |-
-    link: "/features/intelligence-framework"
-    learnMoreText: "Drive growth"
-
-  - title: Network builder
-    tagline: Drive efficiencies in service provision using our intelligence framework, personalising experiences for your users and prioritising cases, actions and decisions for your team.
-    description: |-
-      Designed for co-creation. Mortar's AI engine analyses patterns and behaviours in correspondence, streamlining caseworking and consumer responses.
-    subfeatures: |-
-    link: "/features/intelligence-framework"
-    learnMoreText: "Drive growth"
-
-

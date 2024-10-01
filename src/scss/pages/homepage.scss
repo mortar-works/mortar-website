@@ -398,21 +398,21 @@
   background-color: #fff;
   border-radius: 10px;
   overflow: hidden;
-  padding: 20px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+  padding: 15px; /* Adjusted padding to make it neater */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow */
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  text-align: left; /* Align everything to the left */
+  text-align: left; /* Align content to the left */
 }
 
 /* Title */
 .use-case-card h3 {
   font-family: "Basis", sans-serif;
-  font-weight: 300; /* Light font */
+  font-weight: 300;
   font-size: 1.8em;
-  margin-bottom: 10px;
-  text-align: left; /* Left-aligned */
+  margin-bottom: 5px; /* Reduce gap below title */
+  text-align: left;
 }
 
 /* Strapline */
@@ -421,34 +421,41 @@
   font-size: 1.2em;
   font-weight: 400;
   color: #666;
-  margin-bottom: 15px;
-  text-align: left; /* Left-aligned */
+  margin-bottom: 10px; /* Reduce gap between strapline and description */
+  text-align: left;
 }
 
 /* Description */
 .use-case-card p {
   font-size: 1em;
   color: #555;
-  margin: 10px 0;
-  text-align: left; /* Left-aligned */
+  margin: 5px 0; /* Smaller gap between description and strapline */
+  text-align: left;
 }
 
 /* Case study inset box */
 .case-study-sentence {
-  background-color: #f4f4f4; /* Light background */
-  border: 1px solid #ddd; /* Subtle border */
+  background-color: rgba(255, 99, 71, 0.1); /* Mortar-orange with opacity */
   padding: 15px;
-  border-radius: 6px;
+  border-radius: 6px; /* Removed the border */
   font-size: 0.9em;
   color: #333;
   margin-bottom: 15px;
-  text-align: left; /* Left-aligned */
+  text-align: left;
 }
 
-/* Learn More link styled like other links on your website */
+/* Small "Case Study" title inside the inset box */
+.case-study-sentence h4 {
+  font-size: 1em;
+  font-weight: bold;
+  margin-bottom: 5px;
+  color: #333;
+}
+
+/* Learn More link styled with mortar-purple */
 .learn-more-link {
   font-size: 1em;
-  color: #007BFF; /* Assuming your link color is blue */
+  color: #673ab7; /* Mortar-purple */
   text-decoration: none;
   font-weight: bold;
   margin-top: 15px;
@@ -456,8 +463,19 @@
 }
 
 .learn-more-link:hover {
-  color: #0056b3; /* Darker blue on hover */
+  color: #ff6347; /* Mortar-orange on hover */
 }
+
+/* Adding a right arrow to the "Learn More" link */
+.learn-more-link::after {
+  content: " →"; /* Right arrow */
+  transition: margin-left 0.3s ease;
+}
+
+.learn-more-link:hover::after {
+  margin-left: 5px; /* Slight shift of arrow on hover */
+}
+
 
   }
   #insights {
