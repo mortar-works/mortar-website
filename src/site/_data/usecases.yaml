@@ -1,8 +1,8 @@
 ---
-  - title: Building service solutions
-    strapline: "Efficiency improvements that drove operational success."
-    description: "There are so many barriers preventing access into services. Use our framework to customise the solution you need, assess the needs of your users and capture valuable data to grow." 
-    case_study_sentence: "Read our case study on how our triage tool is supporting young people at risk of exclusion"
+  - title: Building new solutions
+    strapline: "A modular framework for creating tailored service solutions."
+    description: "There are many barriers preventing people accessing your service. Use our framework to customise the solution you need, applying existing tools to assess the needs of your users and capture the valuable data you need to grow." 
+    case_study_sentence: "Read our case study on how different modules from our framework have come together to support young people at risk of exclusion in Cheshire and Gloucestershire"
     link: "/features/ux-ui-toolkit"
     ReadMoreText: "Explore the triage tool"
 
