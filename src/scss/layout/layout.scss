@@ -22,7 +22,7 @@ header {
   position: sticky;
   top: 0;
   z-index: 1000;
-  background: transparent !important; /* Ensure header is transparent initially */
+  background: transparent !important; /* Ensure header starts transparent */
   color: $black;
   transition: background-color 0.3s ease, box-shadow 0.3s ease;
   box-shadow: none; /* No shadow initially */
@@ -34,7 +34,7 @@ header {
   }
 
   #homepage & {
-    background: transparent !important; /* Transparent header for the homepage */
+    background: transparent !important; /* Transparent header for homepage */
 
     nav a {
       color: $white;
@@ -129,14 +129,14 @@ header {
 
 /* Sticky header styles */
 .sticky {
-  background-color: $mortar-purple !important; /* Background turns purple only when sticky */
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15) !important; /* Adds shadow when sticky */
+  background-color: $mortar-purple !important; /* Turns purple when sticky */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15) !important; /* Adds shadow */
   transition: background-color 0.3s ease, box-shadow 0.3s ease;
 }
 
-/* Remove the padding from main to prevent a gap between header and content */
+/* Ensure no extra space is created at the top */
 main {
-  margin-top: 7em; /* Instead of padding, use margin-top to ensure the header does not overlap content */
+  padding-top: 0;
 }
 
 footer {
