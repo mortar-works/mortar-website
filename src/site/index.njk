@@ -90,46 +90,74 @@ name: homepage
 
 
   <section id="use-cases">
-    <div class="wrapper">
-      <div class="section-head">
-        <h2>Use Cases</h2>
-        <div class="section-tagline">
-          <p>
-            Alongside providing bespoke systems and service design, our scalable
-            solutions address and solve complex societal issues, making your
-            adoption of new technology easier and more affordable.
-          </p>
+  <div class="use-cases-wrapper">
+    <h2>Our Use Cases</h2>
+    <p>Explore how our innovative solutions have helped organizations overcome challenges and achieve significant results across various industries. Each case study highlights the unique approaches we've taken to deliver impactful outcomes.</p>
+    
+    <div class="use-cases-grid">
+      <!-- Case Study 1 -->
+      <div class="use-case-card">
+        <img src="path-to-image-1.jpg" alt="Case Study 1 Image" />
+        <div class="use-case-content">
+          <h3>Case Study 1</h3>
+          <p>Discover how we helped improve efficiency in Case Study 1.</p>
+          <a href="/case-study-1" class="read-more">Read More</a>
         </div>
       </div>
 
-      <ol>
-        {% for useCase in collections.useCases %}
-        <li>
-          <h3>{{ useCase.data.title }}</h3>
+      <!-- Case Study 2 -->
+      <div class="use-case-card">
+        <img src="path-to-image-2.jpg" alt="Case Study 2 Image" />
+        <div class="use-case-content">
+          <h3>Case Study 2</h3>
+          <p>Explore how Case Study 2 achieved outstanding results.</p>
+          <a href="/case-study-2" class="read-more">Read More</a>
+        </div>
+      </div>
 
-          {% if useCase.data.homepageImage %}
-          <figure>
-            <img
-              src="{{ '/static/images/homepage/' + useCase.data.homepageImage | url }}"
-              alt=""
-            />
-          </figure>
-          {% endif %}
+      <!-- Case Study 3 -->
+      <div class="use-case-card">
+        <img src="path-to-image-3.jpg" alt="Case Study 3 Image" />
+        <div class="use-case-content">
+          <h3>Case Study 3</h3>
+          <p>Learn about the solutions we provided in Case Study 3.</p>
+          <a href="/case-study-3" class="read-more">Read More</a>
+        </div>
+      </div>
 
-          <div>
-            {{ useCase.data.description | markdown | safe }}
+      <!-- Case Study 4 -->
+      <div class="use-case-card">
+        <img src="path-to-image-4.jpg" alt="Case Study 4 Image" />
+        <div class="use-case-content">
+          <h3>Case Study 4</h3>
+          <p>Case Study 4 showcases innovative approaches to solving challenges.</p>
+          <a href="/case-study-4" class="read-more">Read More</a>
+        </div>
+      </div>
 
-            <a href="{{ useCase.url }}" class="cta">
-              Learn more<span class="visually-hidden"
-                >about {{ useCase.data.title }}</span
-              >
-            </a>
-          </div>
-        </li>
-        {% endfor %}
-      </ol>
+      <!-- Case Study 5 -->
+      <div class="use-case-card">
+        <img src="path-to-image-5.jpg" alt="Case Study 5 Image" />
+        <div class="use-case-content">
+          <h3>Case Study 5</h3>
+          <p>Uncover the impact of our work in Case Study 5.</p>
+          <a href="/case-study-5" class="read-more">Read More</a>
+        </div>
+      </div>
+
+      <!-- Case Study 6 -->
+      <div class="use-case-card">
+        <img src="path-to-image-6.jpg" alt="Case Study 6 Image" />
+        <div class="use-case-content">
+          <h3>Case Study 6</h3>
+          <p>Case Study 6 demonstrates exceptional problem-solving.</p>
+          <a href="/case-study-6" class="read-more">Read More</a>
+        </div>
+      </div>
     </div>
-  </section>
+  </div>
+</section>
+
 
   <section id="insights">
     <div class="wrapper">
