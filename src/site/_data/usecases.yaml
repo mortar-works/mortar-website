@@ -1,0 +1,33 @@
+---
+  - title: Improve service experience
+    tagline: Enhance engagement and improve accessibility using our templates and toolkits to deliver tailored solutions for user onboarding, self-assessment and triage.
+    description: |-
+      Better data, bigger impact. Our universal data adapter helps assess, share and improve the quality of data; making it easier to visualise, understand and act effectively.
+    subfeatures: |-
+    link: "/features/ux-ui-toolkit"
+    learnMoreText: "Custom solutions"
+
+  - title: Work with your partners
+    tagline: Build and grow your local networks and partnerships by using our platform to deliver accreditation programmes, referral pathways and tailored directories and resources.
+    description: |-
+      Work smarter, not harder. Mortar's framework makes it easier to apply intelligent solutions; transforming systems and services with predictive analytics, automation and machine learning.
+    subfeatures: |-
+    link: "/features/data-platform"
+    learnMoreText: "Build networks"
+
+  - title: Understand your service
+    tagline: Continuously capture and analyse data using our data platform to identify gaps in provision, assess needs and visualise impact across complex systems and services.
+    description: |-
+      Designed for co-creation. Mortar's AI engine analyses patterns and behaviours in correspondence, streamlining caseworking and consumer responses.
+    subfeatures: |-
+    link: "/features/intelligence-framework"
+    learnMoreText: "Measure impact"
+
+  - title: Create intelligent solutions
+    tagline: Drive efficiencies in service provision using our intelligence framework, personalising experiences for your users and prioritising cases, actions and decisions for your team.
+    description: |-
+      Designed for co-creation. Mortar's AI engine analyses patterns and behaviours in correspondence, streamlining caseworking and consumer responses.
+    subfeatures: |-
+    link: "/features/intelligence-framework"
+    learnMoreText: "Drive growth"
+
