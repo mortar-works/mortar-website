@@ -447,16 +447,16 @@
 
 /* Learn More link with right arrow, positioned closer to the description */
 .learn-more-link {
-  font-size: 1em;
-  color: #673ab7; /* Mortar-purple */
+  font-weight: normal;
+  font-size: 1.2em;
+  color: $mortar-purple; /* Mortar-purple */
   text-decoration: none;
-  font-weight: bold;
   margin-bottom: 20px; /* Increased gap between Learn More and case study box */
   transition: color 0.3s ease;
 }
 
 .learn-more-link:hover {
-  color: #ff6347; /* Mortar-orange on hover */
+  color: $mortar-orange; /* Mortar-orange on hover */
 }
 
 .learn-more-link::after {
@@ -490,7 +490,7 @@
 /* Read More link inside case study box */
 .read-more-link {
   font-size: 0.9em;
-  color: #673ab7; /* Mortar-purple */
+  color: $mortar-purple; /* Mortar-purple */
   text-decoration: underline;
   display: inline;
   margin-left: 5px;
@@ -498,7 +498,7 @@
 }
 
 .read-more-link:hover {
-  color: #ff6347; /* Mortar-orange on hover */
+  color: $mortar-orange; /* Mortar-orange on hover */
 }
 
 
