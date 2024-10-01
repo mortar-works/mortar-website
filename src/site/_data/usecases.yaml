@@ -1,20 +1,21 @@
 ---
   - title: Building new solutions
-    strapline: "Using our modular service framework to create tailored solutions."
-    description: "Many barriers prevent people accessing your service. Learn about how our framework has created customised service solutions, applying existing tools to assess the needs of users and capture valuable data." 
+    strapline: "A modular service design framework for creating tailored solutions."
+    description: "Many barriers prevent people accessing your service. Learn how our framework applies existing tools and data to create custom solutions." 
     case_study_sentence: "Case study: learn how Cheshire and Gloucestershire are reaching young people at risk of exclusion"
     link: "/features/ux-ui-toolkit"
-    ReadMoreText: "Explore the triage tool"
+    ReadMoreText: "Explore our framework"
 
   - title: Scaling your impact
-    strapline: "Provide and share tools with your partners to grow your reach and impact."
-    description: "Scaling solutions efficiently and affordably to benefit many users requires a robust and versatile framework. We help design and deliver national solutions alongside dedicated partners.    case_study_sentence: "This is a brief sentence about the impact and success of Case Study 1."
+    strapline: "The technical partnership you need to deliver impact at scale."
+    description: "It is hard to scale services. Our robust and versatile framework allows solutions to grow into large-scale, national offers." 
+    Case study: "Case study: read about how we are working with the Local Government Association to deliver a national tools combatting digital exclusion."
     link: "/case-study-1"
 
   - title: Making data work
-    strapline: "Efficiency improvements that drove operational success."
-    description: Work smarter, not harder. Mortar's framework makes it easier to apply intelligent solutions; transforming systems and services with predictive analytics, automation and machine learning.
-    case_study_sentence: "This is a brief sentence about the impact and success of Case Study 1."
+    strapline: "The data platform on which to build a better service."
+    description: "Capturing and analysing data is essential to developing your service. The tools we build deliver the data you need to act and invest."
+    case_study_sentence: "Case study: data is at the heart of our skills assessment tool being led by Essex County Council."
     link: "/case-study-1"
 
   - title: Accreditation builder
