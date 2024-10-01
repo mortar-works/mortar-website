@@ -18,14 +18,13 @@ header, footer, main > section {
 
 header {
   height: 7em;
-  position: absolute;
-  left: 0;
-  right: 0;
+  position: sticky; /* Changed to sticky */
   top: 0;
-  z-index: 100;
-  background: rgba(255,255,255,0.65);
+  z-index: 1000; /* Ensure the header stays on top of other content */
+  background: rgba(255, 255, 255, 0.65); /* Transparent background */
   color: $black;
   transition: all 0.3s ease-out;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
 
   &.nav-active {
     height: 100%;
@@ -130,12 +129,19 @@ header {
         }
 
         &:last-of-type a {
-        padding: 0 0.6em;
+          padding: 0 0.6em;
           padding-right: inherit;
         }
       }
     }
   }
+}
+
+/* Sticky header styles */
+.sticky {
+  background-color: $mortar-purple; /* Makes the header fully opaque */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15); /* Adds a shadow to the sticky header */
+  transition: background-color 0.3s ease, box-shadow 0.3s ease; /* Smooth transition */
 }
 
 footer {

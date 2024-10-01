@@ -29,6 +29,18 @@ window.addEventListener('load', (event) => {
     });
   });
 
+  // Sticky menu code
+  window.addEventListener('scroll', () => {
+    const header = document.querySelector('header');
+    const sticky = header.offsetTop;
+
+    if (window.pageYOffset > sticky) {
+      header.classList.add('sticky');
+    } else {
+      header.classList.remove('sticky');
+    }
+  });
+
   // Load more insights functionality
   const loadMoreButton = document.querySelector('#load-more-insights');
   const insightList = document.querySelectorAll('#insight-list li');
