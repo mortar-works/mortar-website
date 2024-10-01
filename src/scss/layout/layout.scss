@@ -1,7 +1,7 @@
 body {
   background-color: $mortar-purple;
   color: $white;
-  margin: 0; /* Ensure no extra margins around body */
+  margin: 0;
 }
 
 header, footer, main > section {
@@ -26,102 +26,102 @@ header {
   color: $black;
   transition: background-color 0.3s ease, box-shadow 0.3s ease;
   box-shadow: none; /* No shadow initially */
-}
 
-#homepage & {
-  background: transparent !important; /* Transparent header for the homepage */
+  &.nav-active nav {
+    display: flex;
+    margin-top: 3em;
+    font-size: 1.4em;
+  }
 
-  nav a {
-    color: $white;
+  #homepage & {
+    background: transparent !important; /* Transparent header for the homepage */
+
+    nav a {
+      color: $white;
+    }
+
+    #mortar-logo {
+      background-image: url('../images/mortar-logo-white.png');
+    }
+  }
+
+  .wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
   }
 
   #mortar-logo {
-    background-image: url('../images/mortar-logo-white.png');
+    margin: 0;
+    padding: 0;
+    height: 75px;
+    width: 165px;
+    display: block;
+    background: transparent scroll no-repeat 0 0;
+    background-image: url('../images/mortar-logo-black.png');
+    background-size: cover;
+    text-indent: -9999px;
   }
-}
 
-.wrapper {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  align-items: center;
-}
+  .hamburger {
+    @include respond-to('small') {
+      display: none;
+    }
 
-#mortar-logo {
-  margin: 0;
-  padding: 0;
-  height: 75px;
-  width: 165px;
-  display: block;
-  background: transparent scroll no-repeat 0 0;
-  background-image: url('../images/mortar-logo-black.png');
-  background-size: cover;
-  text-indent: -9999px;
-}
+    .hamburger-inner,
+    .hamburger-inner:after,
+    .hamburger-inner:before {
+      background-color: $black;
 
-.hamburger {
-  @include respond-to('small') {
+      #homepage & {
+        background-color: $white;
+      }
+    }
+  }
+
+  nav {
     display: none;
-  }
+    align-items: center;
+    flex-basis: 100%;
 
-  .hamburger-inner,
-  .hamburger-inner:after,
-  .hamburger-inner:before {
-    background-color: $black;
-
-    #homepage & {
-      background-color: $white;
-    }
-  }
-}
-
-&.nav-active nav {
-  display: flex;
-  margin-top: 3em;
-  font-size: 1.4em;
-}
-
-nav {
-  display: none;
-  align-items: center;
-  flex-basis: 100%;
-
-  @include respond-to('small') {
-    display: flex;
-    flex-basis: auto;
-  }
-}
-
-ul {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-
-  li {
-    a {
-      @include rajdhani-regular-type;
-      font-size: 1.8em;
-      line-height: 2em;
-      color: $black;
+    @include respond-to('small') {
+      display: flex;
+      flex-basis: auto;
     }
   }
 
-  @include respond-to('small') {
-    display: flex;
-    flex-wrap: wrap;
-    font-size: 1.5em;
+  ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
 
     li {
       a {
-        font-size: 1em;
-        line-height: 1em;
-        padding: 0 0.6em;
+        @include rajdhani-regular-type;
+        font-size: 1.8em;
+        line-height: 2em;
+        color: $black;
       }
+    }
 
-      &:last-of-type a {
-        padding: 0 0.6em;
-        padding-right: inherit;
+    @include respond-to('small') {
+      display: flex;
+      flex-wrap: wrap;
+      font-size: 1.5em;
+
+      li {
+        a {
+          font-size: 1em;
+          line-height: 1em;
+          padding: 0 0.6em;
+        }
+
+        &:last-of-type a {
+          padding: 0 0.6em;
+          padding-right: inherit;
+        }
       }
     }
   }
