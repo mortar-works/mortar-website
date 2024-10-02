@@ -726,24 +726,24 @@
       .contact-details {
         list-style: none;
         padding: 0;
-        display: flex;
-        gap: 2em; /* Space between each contact info item */
         font-size: 1em;
         color: #555;
+        line-height: 1.5; /* Increase line height for readability */
   
         li {
-          font-weight: 400; /* Light font for actual info */
+          margin-bottom: 1.5em; /* Space between each contact info item */
           
           /* Style the contact info titles */
           strong {
             font-weight: bold;
-            margin-right: 0.5em; /* Space between title and info */
+            display: block;
+            margin-bottom: 0.5em; /* Space between title and info */
           }
   
-          /* Align the info slightly softer for better contrast */
           span {
             font-weight: 400;
             color: #666;
+            display: block; /* Ensure the info appears on its own line */
           }
         }
       }
@@ -763,7 +763,7 @@
   
         label {
           margin-bottom: 0.6em;
-          font-weight: 500; /* Slightly heavier for visibility */
+          font-weight: 500;
           color: #555;
         }
   
@@ -794,6 +794,7 @@
       }
     }
   }
+  
   
   
   .confirmation-modal {
