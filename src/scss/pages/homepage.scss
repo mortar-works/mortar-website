@@ -795,7 +795,34 @@
     }
   }
   
+  .contact-columns {
+    display: flex;
+    justify-content: space-between;
+    gap: 2em; /* Adds space between the two columns */
   
+    @media (max-width: 768px) {
+      flex-direction: column; /* Stack vertically on smaller screens */
+    }
+  
+    .contact-column {
+      flex: 1; /* Make both columns equal width */
+      
+      .contact-item {
+        margin-bottom: 1em;
+        display: flex;
+        flex-direction: column; /* Stack the content within the item */
+        
+        strong {
+          font-weight: bold;
+        }
+  
+        span {
+          font-weight: 400;
+          color: #666;
+        }
+      }
+    }
+  }
   
   .confirmation-modal {
     position: fixed;
