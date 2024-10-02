@@ -12,7 +12,7 @@
       padding: 2em 0;
     }
   
-    /* For small screens */
+    /* Responsive adjustments for smaller screens */
     @include respond-to('small') {
       padding-top: 4em;
       padding-bottom: 4em;
@@ -22,7 +22,7 @@
       background-position: center;
     }
   
-    /* For larger screens */
+    /* Adjustments for larger screens */
     @media (min-width: 1025px) {
       padding-top: 6em;
       padding-bottom: 6em;
@@ -36,20 +36,20 @@
       line-height: 1em;
       margin: 0;
   
-      /* For small screens */
+      /* Adjustments for small screens */
       @include respond-to('small') {
         margin-top: 0;
         max-width: 13em;
         line-height: 1.2em;
       }
   
-      /* For medium screens (iPads) */
+      /* Adjustments for medium screens (iPads) */
       @media (min-width: 769px) and (max-width: 1024px) {
         padding-left: 1em; /* Add left indent for medium screens */
         margin-top: 1em;
       }
   
-      /* For large screens */
+      /* Adjustments for large screens */
       @media (min-width: 1025px) {
         margin-top: 0.5em;
       }
@@ -71,19 +71,20 @@
       max-width: 30em;
       font-size: 1.3em;
       line-height: 1.4em;
-      padding-left: 0; 
+      padding-left: 0;
       padding-right: 0;
+      margin: 0 auto; /* Center paragraph */
   
       /* For small screens */
       @include respond-to('small') {
-        padding-left: 0em; /* Add left indent for small screens */
-        padding-right: 0em;
+        padding-left: 0;
+        padding-right: 0;
       }
   
       /* For medium screens (iPads) */
       @media (min-width: 769px) and (max-width: 1024px) {
-        padding-left: 0em; /* Add left indent for medium screens */
-        padding-right: 0em;
+        padding-left: 0;
+        padding-right: 0;
       }
     }
   
@@ -105,7 +106,7 @@
   
       /* For small screens */
       @include respond-to('small') {
-        padding-left: 1em; /* Add left indent for CTA on small screens */
+        padding-left: 1em;
         padding-right: 1em;
         margin-top: 3em;
         font-size: 1.1em;
@@ -113,11 +114,12 @@
   
       /* For medium screens (iPads) */
       @media (min-width: 769px) and (max-width: 1024px) {
-        padding-left: 1em; /* Add left indent for CTA on medium screens */
+        padding-left: 1em;
         padding-right: 1em;
       }
     }
   }
+  
   
   #features,
   #partners,
@@ -380,25 +382,9 @@
 }
 
 .use-cases-wrapper {
-  text-align: center; /* Center content only in the use-cases section */
-  padding: 3em 1em; /* Adjust padding specifically for this section */
-
-  h2 {
-    font-size: 2.5em;
-    margin-bottom: 0.5em;
-  }
-
-  /* Ensure paragraph styles only apply to paragraphs inside #use-cases */
-  p {
-    font-family: "Basis", sans-serif;
-    font-size: 1.2em;
-    font-weight: 400;
-    color: #666;
-    max-width: 800px;
-    margin: 0 auto 2em;
-    padding: 0 1em;
-    line-height: 1.4em;
-  }
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1.5em;
 }
 
 /* Responsive grid for the use cases */
