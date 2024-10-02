@@ -380,18 +380,25 @@
 }
 
 .use-cases-wrapper {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 0 1.5em;
-}
+  text-align: center; /* Center content only in the use-cases section */
+  padding: 3em 1em; /* Adjust padding specifically for this section */
 
-p {
-  font-size: 1.2em; /* Adjust size for consistency with the rest of the page */
-  color: black; /* Make sure to use your site's brand colors */
-  max-width: 800px; /* Optional: Set a max-width for readability */
-  margin: 0 auto 2em; /* Center the paragraph and add space below */
-  padding: 0 1em; /* Add horizontal padding if needed */
-  line-height: 1.2em; /* Increase readability */
+  h2 {
+    font-size: 2.5em;
+    margin-bottom: 0.5em;
+  }
+
+  /* Ensure paragraph styles only apply to paragraphs inside #use-cases */
+  p {
+    font-family: "Basis", sans-serif;
+    font-size: 1.2em;
+    font-weight: 400;
+    color: #666;
+    max-width: 800px;
+    margin: 0 auto 2em;
+    padding: 0 1em;
+    line-height: 1.4em;
+  }
 }
 
 /* Responsive grid for the use cases */
