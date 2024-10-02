@@ -1,6 +1,5 @@
 #homepage {
   #topline {
-    /* Existing settings and padding */
     padding-top: 5.6em;
   
     .wrapper {
@@ -8,7 +7,7 @@
       display: flex;
       flex-direction: column;
       align-content: center;
-      justify-content: center;
+      justify-content: center; /* Center all content */
       padding: 2em 0;
     }
   
@@ -22,7 +21,7 @@
       background-position: center;
     }
   
-    /* Adjustments for larger screens */
+    /* For larger screens */
     @media (min-width: 1025px) {
       padding-top: 6em;
       padding-bottom: 6em;
@@ -35,21 +34,22 @@
       font-size: 3em;
       line-height: 1em;
       margin: 0;
+      text-align: center; /* Center header */
   
-      /* Adjustments for small screens */
+      /* For small screens */
       @include respond-to('small') {
         margin-top: 0;
         max-width: 13em;
         line-height: 1.2em;
       }
   
-      /* Adjustments for medium screens (iPads) */
+      /* For medium screens (iPads) */
       @media (min-width: 769px) and (max-width: 1024px) {
         padding-left: 1em; /* Add left indent for medium screens */
         margin-top: 1em;
       }
   
-      /* Adjustments for large screens */
+      /* For large screens */
       @media (min-width: 1025px) {
         margin-top: 0.5em;
       }
@@ -66,14 +66,15 @@
       }
     }
   
-    /* Ensure paragraphs have consistent padding */
+    /* Paragraph styling for alignment consistency */
     p {
       max-width: 30em;
       font-size: 1.3em;
       line-height: 1.4em;
+      margin: 0 auto; /* Center paragraph */
+      text-align: center;
       padding-left: 0;
       padding-right: 0;
-      margin: 0 auto; /* Center paragraph */
   
       /* For small screens */
       @include respond-to('small') {
@@ -81,7 +82,7 @@
         padding-right: 0;
       }
   
-      /* For medium screens (iPads) */
+      /* For medium screens */
       @media (min-width: 769px) and (max-width: 1024px) {
         padding-left: 0;
         padding-right: 0;
@@ -112,13 +113,14 @@
         font-size: 1.1em;
       }
   
-      /* For medium screens (iPads) */
+      /* For medium screens */
       @media (min-width: 769px) and (max-width: 1024px) {
         padding-left: 1em;
         padding-right: 1em;
       }
     }
   }
+  
   
   
   #features,
