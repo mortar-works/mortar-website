@@ -710,9 +710,11 @@
       margin-right: 2em;
   
       h2 {
-        font-size: 2em;
-        margin-bottom: 1em;
-        color: #555;
+        text-align: left;
+        font-size: 2.2em;
+        font-weight: bold;
+        margin-bottom: 1.5em;
+        font-family: "Basis", sans-serif;
       }
   
       p {
@@ -793,6 +795,7 @@
       p {
         font-size: 1.2em;
         margin-bottom: 1.5em;
+        color: black;
       }
   
       button {
