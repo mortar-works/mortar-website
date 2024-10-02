@@ -81,12 +81,12 @@ name: homepage
         <div class="use-case-card">
           <h3>{{ case.title }}</h3>
           <h4 class="strapline">{{ case.strapline }}</h4>
-          <img src="{{ case.image }}" alt="{{ case.title }} image" class="case-study-image" />
           <p class="usecasecardp">{{ case.description }}</p>
           <a href="{{ case.link }}" class="learn-more-link">Learn More</a>
 
           <div class="case-study-sentence">
             <h4>Case Study</h4>
+            <img src="{{ case.image }}" alt="{{ case.title }} image" class="case-study-image" />
             {{ case.case_study_sentence }}
             <a href="{{ case.read_more_link }}" class="read-more-link">Read More</a>
           </div>
