@@ -369,45 +369,55 @@
 
   
   /* Container for the use cases section */
-#use-cases {
-  padding: 2em 0;
-  background-color: #f9f9f9;
-}
-
-/* Centering the section title */
-.use-cases-wrapper h2 {
-  text-align: center;
-  font-size: 2.2em;
-  font-weight: bold;
-  margin-bottom: 1.5em;
-  font-family: "Basis", sans-serif;
-}
-
-.use-cases-wrapper {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 0 1.5em;
-}
-
-/* Responsive grid for the use cases */
-.use-cases-grid {
-  display: grid;
-  grid-template-columns: repeat(1, 1fr);
-  grid-gap: 2em;
-  padding-top: 2em;
-}
-
-@media (min-width: 768px) {
-  .use-cases-grid {
-    grid-template-columns: repeat(2, 1fr); /* 2 columns on tablets */
+  #use-cases {
+    padding: 2em 0;
+    background-color: #f9f9f9;
+  
+    .use-cases-wrapper {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 1.5em;
+  
+      /* Centering the section title */
+      h2 {
+        text-align: center;
+        font-size: 2.2em;
+        font-weight: bold;
+        margin-bottom: 1.5em;
+        font-family: "Basis", sans-serif;
+      }
+  
+      /* Paragraph styling below the title */
+      p {
+        text-align: center; /* Center the paragraph */
+        font-size: 1.2em; /* Slightly smaller than the title */
+        max-width: 800px; /* Limit width for better readability */
+        margin: 0 auto 2em; /* Center horizontally and add margin below */
+        color: #666; /* Ensure it matches the site's theme */
+        line-height: 1.4em; /* Increase readability */
+        padding: 0 1em; /* Optional padding to give it space on smaller screens */
+        font-weight: 400;
+        font-family: "Basis", sans-serif;
+      }
+    }
+  
+    .use-cases-grid {
+      display: grid;
+      grid-template-columns: repeat(1, 1fr); /* 1 column on small screens */
+      grid-gap: 2em;
+      padding-top: 2em;
+  
+      /* 2 columns for tablets */
+      @media (min-width: 768px) {
+        grid-template-columns: repeat(2, 1fr);
+      }
+  
+      /* 3 columns for desktops */
+      @media (min-width: 1024px) {
+        grid-template-columns: repeat(3, 1fr);
+      }
+    }
   }
-}
-
-@media (min-width: 1024px) {
-  .use-cases-grid {
-    grid-template-columns: repeat(3, 1fr); /* 3 columns on desktops */
-  }
-}
 
 /* Use case card styling with increased padding for better alignment */
 .use-case-card {
