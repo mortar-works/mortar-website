@@ -118,61 +118,8 @@
         padding-right: 1em;
       }
     }
-  
-    /* Paragraph styling for alignment consistency */
-    p {
-      max-width: 30em;
-      font-size: 1.3em;
-      line-height: 1.4em;
-      margin: 0 auto; /* Center paragraph */
-      text-align: center;
-      padding-left: 0;
-      padding-right: 0;
-  
-      /* For small screens */
-      @include respond-to('small') {
-        padding-left: 0;
-        padding-right: 0;
-      }
-  
-      /* For medium screens */
-      @media (min-width: 769px) and (max-width: 1024px) {
-        padding-left: 0;
-        padding-right: 0;
-      }
-    }
-  
-    .cta {
-      max-width: fit-content;
-      margin-top: 2em;
-      padding: 0.5em 2em;
-      background-color: $mortar-purple;
-      color: $white;
-      text-align: center;
-      text-decoration: none;
-      font-weight: bold;
-      font-size: 1.2em;
-      transition: background-color 0.3s ease;
-  
-      &:hover {
-        background-color: darken($mortar-purple, 10%);
-      }
-  
-      /* For small screens */
-      @include respond-to('small') {
-        padding-left: 1em;
-        padding-right: 1em;
-        margin-top: 3em;
-        font-size: 1.1em;
-      }
-  
-      /* For medium screens */
-      @media (min-width: 769px) and (max-width: 1024px) {
-        padding-left: 1em;
-        padding-right: 1em;
-      }
-    }
   }
+  
   
   
   
@@ -442,14 +389,14 @@
   
       /* Paragraph styling below the title */
       p {
-        text-align: center; /* Center the paragraph */
-        font-size: 1.2em; /* Slightly smaller than the title */
+        text-align: left; /* Center the paragraph */
+        font-size: 1em; /* Slightly smaller than the title */
         max-width: 800px; /* Limit width for better readability */
         margin: 0 auto 2em; /* Center horizontally and add margin below */
-        color: #666; /* Ensure it matches the site's theme */
-        line-height: 1.4em; /* Increase readability */
+        color: black; /* Ensure it matches the site's theme */
+        line-height: normal; /* Increase readability */
         padding: 0 1em; /* Optional padding to give it space on smaller screens */
-        font-weight: 400;
+        font-weight: normal;
         font-family: "Basis", sans-serif;
       }
     }
