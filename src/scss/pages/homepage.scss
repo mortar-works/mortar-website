@@ -699,11 +699,11 @@
       display: flex;
       justify-content: space-between;
       flex-wrap: wrap;
-      gap: 3em; /* Increased gap between columns */
+      gap: 3em;
   
       @media (max-width: 768px) {
         flex-direction: column;
-        gap: 2em; /* Smaller gap for mobile */
+        gap: 2em;
       }
     }
   
@@ -726,15 +726,24 @@
       .contact-details {
         list-style: none;
         padding: 0;
+        display: flex;
+        gap: 2em; /* Space between each contact info item */
+        font-size: 1em;
+        color: #555;
   
         li {
-          margin-bottom: 0.8em;
-          font-size: 1em;
-          font-weight: 300; /* Lighter font for email, phone, etc. */
-          color: #555;
-  
+          font-weight: 400; /* Light font for actual info */
+          
+          /* Style the contact info titles */
           strong {
-            font-weight: 400; /* Slightly heavier for the titles */
+            font-weight: bold;
+            margin-right: 0.5em; /* Space between title and info */
+          }
+  
+          /* Align the info slightly softer for better contrast */
+          span {
+            font-weight: 400;
+            color: #666;
           }
         }
       }
@@ -753,13 +762,13 @@
         flex-direction: column;
   
         label {
-          margin-bottom: 0.3em; /* Slight gap between label and field */
-          font-weight: 300; /* Lighter font for form labels */
+          margin-bottom: 0.6em;
+          font-weight: 500; /* Slightly heavier for visibility */
           color: #555;
         }
   
         input, select, textarea {
-          margin-bottom: 1em;
+          margin-bottom: 1.2em;
           padding: 0.8em;
           border-radius: 5px;
           border: 1px solid #ddd;
@@ -785,6 +794,7 @@
       }
     }
   }
+  
   
   .confirmation-modal {
     position: fixed;
