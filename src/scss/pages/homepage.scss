@@ -693,7 +693,7 @@
   }
   #contact {
     background: lighten($mortar-purple, 75%); /* Same background as usecase section */
-    padding: 4em 2em;
+    padding: 6em 2em;
   
     .contact-wrapper {
       display: flex;
@@ -712,11 +712,13 @@
       h2 {
         font-size: 2em;
         margin-bottom: 1em;
+        color: #555;
       }
   
       p {
         font-size: 1.1em;
         margin-bottom: 1.5em;
+        color: #555;
       }
   
       .contact-details {
@@ -726,6 +728,7 @@
         li {
           margin-bottom: 0.8em;
           font-size: 1em;
+          color: #555;
         }
       }
     }
@@ -740,6 +743,7 @@
         label {
           margin-bottom: 0.5em;
           font-weight: bold;
+          color: #555;
         }
   
         input, select, textarea {
@@ -748,6 +752,7 @@
           border-radius: 5px;
           border: 1px solid #ddd;
           width: 100%;
+          box-sizing: border-box; /* Ensures padding doesn't affect width */
         }
   
         button {
@@ -757,6 +762,7 @@
           border: none;
           cursor: pointer;
           transition: background-color 0.3s ease;
+          width: 100%;
   
           &:hover {
             background-color: darken($mortar-purple, 10%);
