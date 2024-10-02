@@ -537,30 +537,40 @@
   border-radius: 6px;
   font-size: 0.9em;
   color: #333;
-  margin-top: 15px; /* Gap between box and previous content */
+  margin: 15px 0; /* Unified margin between elements */
   text-align: left;
 }
 
-/* Case study title inside the box */
+/* Case study title inside the inset box */
 .case-study-sentence h4 {
   font-size: 1em;
   font-weight: bold;
-  margin: 0 0 5px; /* Removed top margin to close gap */
+  margin: 0 0 5px; /* Removed top margin for consistency */
   color: #333;
 }
 
 /* Read More link inside case study box */
 .read-more-link {
   font-size: 0.9em;
-  color: #673ab7; /* Mortar-purple */
-  text-decoration: underline;
+  color: $mortar-purple; /* Mortar-purple */
+  text-decoration: none;
   display: inline; /* Keeps it inline with the sentence */
   margin-left: 5px; /* Small space before Read More */
   transition: color 0.3s ease;
 }
 
 .read-more-link:hover {
-  color: #ff6347; /* Mortar-orange on hover */
+  color: $mortar-orange; /* Mortar-orange on hover */
+}
+
+/* Learn More link with right arrow */
+.learn-more-link::after {
+  content: " →"; /* Right arrow */
+  transition: margin-left 0.3s ease;
+}
+
+.learn-more-link:hover::after {
+  margin-left: 5px;
 }
 
   #insights {
