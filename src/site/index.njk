@@ -12,8 +12,8 @@ name: homepage
 {% block content %}
   <section id="topline">
     <div class="wrapper">
-      <h1>Redefining relationships between people, places and property</h1>
-      <p>
+      <h1>Redefining relationships between people, places, and property</h1>
+      <p class="toplinep">
         Mortar is a technology company building better services. Our products
         and solutions are driving the next generation of intelligent, accessible,
         user-led services.
@@ -22,111 +22,79 @@ name: homepage
     </div>
   </section>
 
-<section id="features">
-  <div class="wrapper">
-    <div class="section-head">
-      <h1>
-        How <span class="mortar-purple">Mortar</span> can help to
-        <span class="mortar-purple">transform your services</span>
-      </h1>
-      <p class="section-tagline"></p>
+  <section id="features">
+    <div class="wrapper">
+      <div class="section-head">
+        <h1>
+          How <span class="mortar-purple">Mortar</span> can help to
+          <span class="mortar-purple">transform your services</span>
+        </h1>
+        <p class="section-tagline"></p>
+      </div>
+
+      <div id="feature-list">
+        <ul>
+          {% for feature in features %}
+          <li>
+            <h3>{{ feature.title }}</h3>
+            <p class="feature-tagline">{{ feature.tagline }}</p>
+            {{ feature.subfeatures | markdown | safe }}
+            <a href="{{ feature.link }}" class="learn-more">{{ feature.learnMoreText }}</a>
+          </li>
+          {% endfor %}
+        </ul>
+      </div>
     </div>
+  </section>
 
-    <div id="feature-list">
-      <ul>
-        {% for feature in features %}
-        <li>
-          <h3>{{ feature.title }}</h3>
-          <p class="feature-tagline">{{ feature.tagline }}</p>
-          {{ feature.subfeatures | markdown | safe }}
-          
-          <!-- Update the Learn More link to have dynamic text -->
-          <a href="{{ feature.link }}" class="learn-more">{{ feature.learnMoreText }}</a>
-        </li>
-        {% endfor %}
-      </ul>
+  <section id="partners">
+    <div class="partners-wrapper">
+      <h2 class="partners-heading">Reaching 1000s of users and businesses</h2>
+      <div class="partners-ticker">
+        <ul class="partners-list">
+          <li><img src="{{ '/static/images/partners/lga_logo.png' | url }}" alt="Local Government Association logo" /></li>
+          <li><img src="{{ '/static/images/partners/gla_logo2.jpeg' | url }}" alt="Greater London Authority logo" /></li>
+          <li><img src="{{ '/static/images/partners/havering-council.png' | url }}" alt="Havering Council logo" /></li>
+          <li><img src="{{ '/static/images/partners/Hackney-Logo.png' | url }}" alt="Hackney Council logo" /></li>
+          <li><img src="{{ '/static/images/partners/Clarion-Housing-Group-Logo.png' | url }}" alt="Clarion Housing Group logo" /></li>
+          <li><img src="{{ '/static/images/partners/salford02.png' | url }}" alt="Salford City Council logo" /></li>
+          <li><img src="{{ '/static/images/partners/eastriding1.png' | url }}" alt="East Riding of Yorkshire logo" /></li>
+          <li><img src="{{ '/static/images/partners/humberandnorth.png' | url }}" alt="Humber and North Yorkshire Integrated Care Partnership logo" /></li>
+          <li><img src="{{ '/static/images/partners/walthamforest01.png' | url }}" alt="Waltham Forest logo" /></li>
+          <li><img src="{{ '/static/images/partners/Worcestershire-County-Council-logo.png' | url }}" alt="Worcestershire County Council logo" /></li>
+          <li><img src="{{ '/static/images/partners/socialfinance01.png' | url }}" alt="Social Finance logo" /></li>
+          <li><img src="{{ '/static/images/partners/mayoroflondonlogo01.png' | url }}" alt="Mayor of London logo" /></li>
+        </ul>
+      </div>
     </div>
-  </div>
-</section>
+  </section>
 
-<section id="partners">
-  <div class="partners-wrapper">
-    <!-- Heading Above the Logos -->
-    <h2 class="partners-heading">Reaching 1000s of users and businesses</h2>
+  <section id="use-cases">
+    <div class="use-cases-wrapper">
+      <h2>Our Use Cases</h2>
+      <p class="usecasep">
+        Maximize the impact of your service and make every user experience count.
+        Mortar brings together a global suite of tools to help deliver the solution you need.
+      </p>
 
-    <!-- Ticker container -->
-    <div class="partners-ticker">
-      <ul class="partners-list">
-        <!-- List of partner logos -->
-        <li><img src="{{ '/static/images/partners/lga_logo.png' | url }}" alt="Local Government Association logo" /></li>
-        <li><img src="{{ '/static/images/partners/gla_logo2.jpeg' | url }}" alt="Greater London Authority logo" /></li>
-        <li><img src="{{ '/static/images/partners/havering-council.png' | url }}" alt="Havering Council logo" /></li>
-        <li><img src="{{ '/static/images/partners/Hackney-Logo.png' | url }}" alt="Hackney Council logo" /></li>
-        <li><img src="{{ '/static/images/partners/Clarion-Housing-Group-Logo.png' | url }}" alt="Clarion Housing Group logo" /></li>
-        <li><img src="{{ '/static/images/partners/salford02.png' | url }}" alt="Salford City Council logo" /></li>
-        <li><img src="{{ '/static/images/partners/eastriding1.png' | url }}" alt="East Riding of Yorkshire logo" /></li>
-        <li><img src="{{ '/static/images/partners/humberandnorth.png' | url }}" alt="Humber and North Yorkshire Integrated Care Partnership logo" /></li>
-        <li><img src="{{ '/static/images/partners/walthamforest01.png' | url }}" alt="Waltham Forest logo" /></li>
-        <li><img src="{{ '/static/images/partners/Worcestershire-County-Council-logo.png' | url }}" alt="Worcestershire County Council logo" /></li>
-        <li><img src="{{ '/static/images/partners/socialfinance01.png' | url }}" alt="Social Finance logo" /></li>
-        <li><img src="{{ '/static/images/partners/mayoroflondonlogo01.png' | url }}" alt="Mayor of London logo" /></li>
-        <li><img src="{{ '/static/images/partners/lga_logo.png' | url }}" alt="Local Government Association logo" /></li>
-        <li><img src="{{ '/static/images/partners/gla_logo2.jpeg' | url }}" alt="Greater London Authority logo" /></li>
-        <li><img src="{{ '/static/images/partners/havering-council.png' | url }}" alt="Havering Council logo" /></li>
-        <li><img src="{{ '/static/images/partners/Hackney-Logo.png' | url }}" alt="Hackney Council logo" /></li>
-        <li><img src="{{ '/static/images/partners/Clarion-Housing-Group-Logo.png' | url }}" alt="Clarion Housing Group logo" /></li>
-        <li><img src="{{ '/static/images/partners/salford02.png' | url }}" alt="Salford City Council logo" /></li>
-        <li><img src="{{ '/static/images/partners/eastriding1.png' | url }}" alt="East Riding of Yorkshire logo" /></li>
-        <li><img src="{{ '/static/images/partners/humberandnorth.png' | url }}" alt="Humber and North Yorkshire Integrated Care Partnership logo" /></li>
-        <li><img src="{{ '/static/images/partners/walthamforest01.png' | url }}" alt="Waltham Forest logo" /></li>
-        <li><img src="{{ '/static/images/partners/Worcestershire-County-Council-logo.png' | url }}" alt="Worcestershire County Council logo" /></li>
-        <li><img src="{{ '/static/images/partners/socialfinance01.png' | url }}" alt="Social Finance logo" /></li>
-        <li><img src="{{ '/static/images/partners/mayoroflondonlogo01.png' | url }}" alt="Mayor of London logo" /></li>
-      </ul>
-    </div>
-  </div>
-</section>
-
-
-
-<section id="use-cases">
-  <div class="use-cases-wrapper">
-    <!-- Title -->
-    <h2>Our Use Cases</h2>
-    <p>Maximise the impact of your service and make every user experience count. Mortar brings together a global suite of tools to help deliver the solution you need.</p>
-
-    <!-- Use Cases Grid -->
-    <div class="use-cases-grid">
-      {% for case in collections.useCases %}
+      <div class="use-cases-grid">
+        {% for case in collections.useCases %}
         <div class="use-case-card">
-          <!-- Title -->
           <h3>{{ case.title }}</h3>
-
-          <!-- Strapline -->
           <h4 class="strapline">{{ case.strapline }}</h4>
-
-          <!-- Description -->
-          <p>{{ case.description }}</p>
-
-          <!-- Learn More Text Link -->
+          <p class="usecasecardp">{{ case.description }}</p>
           <a href="{{ case.link }}" class="learn-more-link">Learn More</a>
 
-          <!-- Inset Case Study Sentence Box at the bottom of the card -->
           <div class="case-study-sentence">
             <h4>Case Study</h4>
             {{ case.case_study_sentence }}
             <a href="{{ case.read_more_link }}" class="read-more-link">Read More</a>
           </div>
         </div>
-      {% endfor %}
+        {% endfor %}
+      </div>
     </div>
-  </div>
-</section>
-
-
-
-
-
+  </section>
 
   <section id="insights">
     <div class="wrapper">
@@ -143,15 +111,8 @@ name: homepage
       <ul id="insight-list">
         {% for post in collections.insights %}
         <li class="{% if loop.index > 6 %}hidden{% endif %}">
-          <a
-            class="insight-title"
-            href="{{ post.url }}"
-            aria-label="Insight: {{ post.data.title }}"
-          >
-            <div
-              class="insight-image"
-              style="background-image: url('{{ '/static/images/insights/' + post.data.image | url }}')"
-            >
+          <a class="insight-title" href="{{ post.url }}" aria-label="Insight: {{ post.data.title }}">
+            <div class="insight-image" style="background-image: url('{{ '/static/images/insights/' + post.data.image | url }}')">
               <div class="hover-overlay"></div>
             </div>
             <div class="insight-details">

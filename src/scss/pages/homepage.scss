@@ -67,21 +67,20 @@
     }
   
     /* Paragraph styling for the topline */
-    p {
+    .toplinep {
       max-width: 30em;
       font-size: 1.3em;
       line-height: 1.4em;
-      margin: 0; /* Remove auto-centering */
-      padding-left: 0; /* Ensure padding aligns with the header and CTA */
-      text-align: left; /* Left-align the paragraph */
-  
-      /* For small screens */
+      margin: 0;
+      padding-left: 0;
+      padding-top: 1.2em;
+      text-align: left;
+
       @include respond-to('small') {
         padding-left: 0;
         padding-right: 0;
       }
-  
-      /* For medium screens */
+
       @media (min-width: 769px) and (max-width: 1024px) {
         padding-left: 0;
         padding-right: 0;
@@ -387,16 +386,15 @@
         font-family: "Basis", sans-serif;
       }
   
-      /* Paragraph styling below the title */
-      p {
-        text-align: left; /* Center the paragraph */
-        font-size: 1em; /* Slightly smaller than the title */
-        max-width: 800px; /* Limit width for better readability */
-        margin: 0 auto 2em; /* Center horizontally and add margin below */
-        color: black; /* Ensure it matches the site's theme */
-        line-height: normal; /* Increase readability */
-        padding: 0 1em; /* Optional padding to give it space on smaller screens */
-        font-weight: normal;
+      .usecasep {
+        text-align: center;
+        font-size: 1.2em;
+        max-width: 800px;
+        margin: 0 auto 2em;
+        color: #555;
+        line-height: 1.4em;
+        padding: 0 1em;
+        font-weight: 400;
         font-family: "Basis", sans-serif;
       }
     }
@@ -451,11 +449,10 @@
   text-align: left;
 }
 
-/* Description */
-.use-case-card p {
+.usecasecardp {
   font-size: 1em;
   color: #555;
-  margin: 5px 0 8px; /* Reduce gap between description and Learn More */
+  margin: 5px 0 8px;
   text-align: left;
 }
 
