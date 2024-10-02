@@ -385,6 +385,15 @@
   padding: 0 1.5em;
 }
 
+p {
+  font-size: 1.2em; /* Adjust size for consistency with the rest of the page */
+  color: black; /* Make sure to use your site's brand colors */
+  max-width: 800px; /* Optional: Set a max-width for readability */
+  margin: 0 auto 2em; /* Center the paragraph and add space below */
+  padding: 0 1em; /* Add horizontal padding if needed */
+  line-height: 1.2em; /* Increase readability */
+}
+
 /* Responsive grid for the use cases */
 .use-cases-grid {
   display: grid;
