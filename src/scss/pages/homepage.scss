@@ -6,8 +6,8 @@
       width: 100%;
       display: flex;
       flex-direction: column;
-      align-content: center;
-      justify-content: center; /* Center all content */
+      align-content: flex-start; /* Align all content to the left */
+      justify-content: flex-start; /* Align content to the left */
       padding: 2em 0;
     }
   
@@ -34,7 +34,7 @@
       font-size: 3em;
       line-height: 1em;
       margin: 0;
-      text-align: center; /* Center header */
+      text-align: left; /* Left-align the header */
   
       /* For small screens */
       @include respond-to('small') {
@@ -45,7 +45,7 @@
   
       /* For medium screens (iPads) */
       @media (min-width: 769px) and (max-width: 1024px) {
-        padding-left: 1em; /* Add left indent for medium screens */
+        padding-left: 1em;
         margin-top: 1em;
       }
   
@@ -65,6 +65,61 @@
         }
       }
     }
+  
+    /* Paragraph styling for the topline */
+    p {
+      max-width: 30em;
+      font-size: 1.3em;
+      line-height: 1.4em;
+      margin: 0; /* Remove auto-centering */
+      padding-left: 0; /* Ensure padding aligns with the header and CTA */
+      text-align: left; /* Left-align the paragraph */
+  
+      /* For small screens */
+      @include respond-to('small') {
+        padding-left: 0;
+        padding-right: 0;
+      }
+  
+      /* For medium screens */
+      @media (min-width: 769px) and (max-width: 1024px) {
+        padding-left: 0;
+        padding-right: 0;
+      }
+    }
+  
+    .cta {
+      max-width: fit-content;
+      margin-top: 2em;
+      padding: 0.5em 2em;
+      background-color: $mortar-purple;
+      color: $white;
+      text-align: center;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 1.2em;
+      transition: background-color 0.3s ease;
+  
+      &:hover {
+        background-color: darken($mortar-purple, 10%);
+      }
+  
+      /* For small screens */
+      @include respond-to('small') {
+        padding-left: 1em;
+        padding-right: 1em;
+        margin-top: 3em;
+        font-size: 1.1em;
+      }
+  
+      /* For medium screens */
+      @media (min-width: 769px) and (max-width: 1024px) {
+        padding-left: 1em;
+        padding-right: 1em;
+      }
+    }
+  }
+  
   
     /* Paragraph styling for alignment consistency */
     p {
