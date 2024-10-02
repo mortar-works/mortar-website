@@ -428,6 +428,7 @@
   flex-direction: column;
   justify-content: space-between;
   text-align: left;
+  margin-bottom: 30px;
 }
 
 /* Title */
@@ -687,6 +688,120 @@
       }
       100% {
         transform: rotate(360deg);
+      }
+    }
+  }
+  #contact {
+    background: lighten($mortar-purple, 75%); /* Same background as usecase section */
+    padding: 4em 2em;
+  
+    .contact-wrapper {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+  
+      @media (max-width: 768px) {
+        flex-direction: column;
+      }
+    }
+  
+    .contact-info {
+      flex: 1;
+      margin-right: 2em;
+  
+      h2 {
+        font-size: 2em;
+        margin-bottom: 1em;
+      }
+  
+      p {
+        font-size: 1.1em;
+        margin-bottom: 1.5em;
+      }
+  
+      .contact-details {
+        list-style: none;
+        padding: 0;
+  
+        li {
+          margin-bottom: 0.8em;
+          font-size: 1em;
+        }
+      }
+    }
+  
+    .contact-form {
+      flex: 1;
+  
+      form {
+        display: flex;
+        flex-direction: column;
+  
+        label {
+          margin-bottom: 0.5em;
+          font-weight: bold;
+        }
+  
+        input, select, textarea {
+          margin-bottom: 1em;
+          padding: 0.8em;
+          border-radius: 5px;
+          border: 1px solid #ddd;
+          width: 100%;
+        }
+  
+        button {
+          background-color: $mortar-purple;
+          color: white;
+          padding: 0.8em 1.5em;
+          border: none;
+          cursor: pointer;
+          transition: background-color 0.3s ease;
+  
+          &:hover {
+            background-color: darken($mortar-purple, 10%);
+          }
+        }
+      }
+    }
+  }
+  .confirmation-modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Dim the background */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 999;
+  
+    .modal-content {
+      background-color: white;
+      padding: 2em;
+      border-radius: 10px;
+      text-align: center;
+      box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.15); /* Subtle shadow for depth */
+  
+      p {
+        font-size: 1.2em;
+        margin-bottom: 1.5em;
+      }
+  
+      button {
+        padding: 0.5em 1em;
+        background-color: $mortar-purple;
+        color: white;
+        border: none;
+        cursor: pointer;
+        font-size: 1em;
+        border-radius: 5px;
+        transition: background-color 0.3s ease;
+  
+        &:hover {
+          background-color: darken($mortar-purple, 10%);
+        }
       }
     }
   }

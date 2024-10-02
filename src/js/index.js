@@ -32,29 +32,25 @@ window.addEventListener('load', (event) => {
   // Sticky menu code
   window.addEventListener('scroll', () => {
     const header = document.querySelector('header');
-    const stickyPoint = 50; // Change to the point at which you want the header to become sticky
-  
+    const stickyPoint = 50;
+
     if (window.scrollY > stickyPoint) {
       header.classList.add('sticky');
     } else {
       header.classList.remove('sticky');
     }
   });
-  
-  
 
   // Load more insights functionality
   const loadMoreButton = document.querySelector('#load-more-insights');
   const insightList = document.querySelectorAll('#insight-list li');
   const preloader = document.querySelector('#insights-preloader');
-  let visibleInsights = 6; // Initially show 6 insights
+  let visibleInsights = 6;
 
   if (loadMoreButton && insightList) {
     loadMoreButton.addEventListener('click', () => {
-      // Show the preloader
       preloader.classList.remove('hidden');
 
-      // Simulate loading delay with setTimeout
       setTimeout(() => {
         for (let i = visibleInsights; i < visibleInsights + 6; i++) {
           if (insightList[i]) {
@@ -63,32 +59,64 @@ window.addEventListener('load', (event) => {
         }
 
         visibleInsights += 6;
-
-        // Hide preloader after loading new items
         preloader.classList.add('hidden');
 
-        // Hide the load more button if all items are shown
         if (visibleInsights >= insightList.length) {
           loadMoreButton.style.display = 'none';
         }
-      }, 800); // 800ms delay to simulate slower loading
+      }, 800);
     });
   }
 
   // Partners Ticker Scrolling
-  const ticker = document.querySelector('.partners-ticker'); // The ticker container
-  const leftArrow = document.querySelector('.left-arrow');   // Left arrow button
-  const rightArrow = document.querySelector('.right-arrow'); // Right arrow button
+  const ticker = document.querySelector('.partners-ticker');
+  const leftArrow = document.querySelector('.left-arrow');
+  const rightArrow = document.querySelector('.right-arrow');
 
   if (ticker && leftArrow && rightArrow) {
-    // Scroll left when the left arrow is clicked
     leftArrow.addEventListener('click', () => {
       ticker.scrollBy({ left: -200, behavior: 'smooth' });
     });
 
-    // Scroll right when the right arrow is clicked
     rightArrow.addEventListener('click', () => {
       ticker.scrollBy({ left: 200, behavior: 'smooth' });
+    });
+  }
+
+  // Contact Form Handling (New Code)
+  const contactForm = document.getElementById('contactForm');
+  if (contactForm) {
+    contactForm.addEventListener('submit', function(event) {
+      event.preventDefault();
+
+      const name = document.getElementById('name').value;
+      const email = document.getElementById('email').value;
+      const message = document.getElementById('message').value;
+
+      if (!name || !email || !message) {
+        alert('Please fill in all required fields.');
+        return;
+      }
+
+      // Show confirmation modal
+      showConfirmationModal();
+    });
+  }
+
+  function showConfirmationModal() {
+    const modal = document.createElement('div');
+    modal.classList.add('confirmation-modal');
+    modal.innerHTML = `
+      <div class="modal-content">
+        <p>Many thanks for your enquiry! We will be in touch soon.</p>
+        <button id="closeModal">OK</button>
+      </div>
+    `;
+
+    document.body.appendChild(modal);
+
+    document.getElementById('closeModal').addEventListener('click', function() {
+      modal.remove();
     });
   }
 });
