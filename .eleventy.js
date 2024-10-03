@@ -1,3 +1,10 @@
+const yaml = require("js-yaml");
+
+// Import custom filters
+const dateFilter = require('./src/filters/date-filter.js');   // Ensure this path is correct
+const markdownFilter = require('./src/filters/markdown-filter.js');
+const w3DateFilter = require('./src/filters/w3-date-filter.js');
+
 module.exports = function(eleventyConfig) {
   // Static passthroughs
   eleventyConfig.addPassthroughCopy("src/site/static");
