@@ -1,13 +1,3 @@
-const yaml = require("js-yaml");
-
-// Import filters
-const dateFilter = require('./src/filters/date-filter.js');
-const markdownFilter = require('./src/filters/markdown-filter.js');
-const w3DateFilter = require('./src/filters/w3-date-filter.js');
-const { MultiWatching } = require("webpack");
-
-const env = process.env.ELEVENTY_ENV;
-
 module.exports = function(eleventyConfig) {
   // Static passthroughs
   eleventyConfig.addPassthroughCopy("src/site/static");
@@ -39,15 +29,19 @@ module.exports = function(eleventyConfig) {
 
   // Create useCases collection from the `usecases.yaml` file
   eleventyConfig.addCollection("useCases", function(collectionApi) {
-    // Access the usecases data from the global YAML data (loaded from _data/usecases.yaml)
     const useCasesData = collectionApi.getAll()[0].data.usecases;
-
-    // Ensure useCasesData is an array, otherwise log an error
     if (Array.isArray(useCasesData)) {
       return useCasesData;
     } else {
       throw new Error("usecases data is not an array");
     }
+  });
+
+  // **New caseStudies collection**: Pull Markdown files from `case-studies` folder
+  eleventyConfig.addCollection("caseStudies", function(collectionApi) {
+    return collectionApi.getFilteredByGlob("src/site/case-studies/*.md")
+      .filter(livePosts)
+      .reverse();  // Reverse the order so newest case studies appear first
   });
 
   // Watch targets for development (live reload)

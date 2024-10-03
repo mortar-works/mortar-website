@@ -819,16 +819,18 @@
         flex-direction: column;
   
         label {
-          margin-bottom: 0.6em;
+          line-height: 2em;
           font-weight: 500;
-          color: #555;
+          color: #000000;
+          font-family: 'Basis Grotesque Pro Light';
         }
+
   
         input, select, textarea {
           margin-bottom: 1.2em;
           padding: 0.8em;
           border-radius: 5px;
-          border: 1px solid #ddd;
+          border: 2px solid #fe6d6a;
           width: 100%;
           box-sizing: border-box;
         }
