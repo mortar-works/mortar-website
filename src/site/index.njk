@@ -85,23 +85,28 @@ name: homepage
   </section>
 
   <!-- Case Studies Section -->
-  <section id="case-studies" class="shared-section-background">
-    <div class="case-studies-wrapper">
-      <h2>Case Studies</h2>
-      <p>Explore how we’ve successfully delivered tailored solutions for our clients through our case studies.</p>
+<section id="case-studies">
+  <div class="case-studies-wrapper">
+    <h2>Our Case Studies</h2>
+    <div class="case-studies-grid">
+      {% for case in collections.caseStudies %}
+      <div class="case-study-card">
+        <h3>{{ case.title }}</h3>
+        <h4 class="strapline">{{ case.strapline }}</h4>
+        <p>{{ case.description }}</p>
 
-      <div class="case-studies-grid">
-        {% for study in collections.caseStudies %}
-               <div class="case-study-sentence">
-            <h4>Case Study</h4>
-            <img src="{{ case.image }}" alt="{{ case.title }} image" class="case-study-image" />
-            {{ case.case_study_sentence }}
-            <a href="{{ case.read_more_link }}" class="read-more-link">Read More</a>
-          </div>
-        {% endfor %}
+        <!-- Case study section with inset box -->
+        <div class="case-study-sentence"> 
+          <h4>Case Study</h4>
+          <img src="{{ case.image }}" alt="{{ case.title }} image" class="case-study-image" />
+          {{ case.case_study_sentence }}
+          <a href="{{ case.read_more_link }}" class="read-more-link">Read More</a>
+        </div>
       </div>
+      {% endfor %}
     </div>
-  </section>
+  </div>
+</section>
 
   <!-- Solutions Section -->
   <section id="solutions" class="shared-section-background">
