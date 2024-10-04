@@ -367,6 +367,7 @@
   }  
 
   
+  /* Container for the use cases section */
   #use-cases {
     padding: 2em 0;
     background-color: #f9f9f9;
@@ -376,6 +377,7 @@
       margin: 0 auto;
       padding: 0 1.5em;
   
+      /* Centering the section title */
       h2 {
         text-align: center;
         font-size: 2.2em;
@@ -395,124 +397,182 @@
         font-weight: 400;
         font-family: "Basis", sans-serif;
       }
+    }
   
-      /* Grid for use-case cards */
-      .use-cases-grid {
-        display: grid;
-        grid-template-columns: repeat(1, 1fr);
-        grid-gap: 2em;
-        padding-top: 2em;
+    .use-cases-grid {
+      display: grid;
+      grid-template-columns: repeat(1, 1fr); /* 1 column on small screens */
+      grid-gap: 2em;
+      padding-top: 2em;
   
-        @media (min-width: 768px) {
-          grid-template-columns: repeat(2, 1fr);
-        }
-  
-        @media (min-width: 1024px) {
-          grid-template-columns: repeat(3, 1fr);
-        }
+      /* 2 columns for tablets */
+      @media (min-width: 768px) {
+        grid-template-columns: repeat(2, 1fr);
       }
   
-      /* Use Case Card Styles */
-      .use-case-card {
-        background-color: #fff;
-        border-radius: 10px;
-        overflow: hidden;
-        padding: 15px 20px;
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        text-align: left;
-        margin-bottom: 30px;
-  
-        h3 {
-          font-family: "Basis", sans-serif;
-          font-weight: 300;
-          font-size: 1.8em;
-          margin-bottom: 5px;
-          text-align: left;
-        }
-  
-        .strapline {
-          font-family: "Basis", sans-serif;
-          font-size: 1.2em;
-          font-weight: 400;
-          color: #666;
-          margin-bottom: 10px;
-          text-align: left;
-        }
-  
-        .usecasecardp {
-          font-size: 1em;
-          color: #555;
-          margin: 5px 0 8px;
-          text-align: left;
-        }
-  
-        .learn-more-link {
-          font-weight: normal;
-          font-size: 1.2em;
-          color: $mortar-purple;
-          text-decoration: none;
-          margin-bottom: 20px;
-          transition: color 0.3s ease;
-  
-          &::after {
-            content: " →";
-            transition: margin-left 0.3s ease;
-          }
-  
-          &:hover {
-            color: $mortar-orange;
-          }
-  
-          &:hover::after {
-            margin-left: 5px;
-          }
-        }
-      }
-  
-      /* Case Study Card Styles */
-      .case-study-sentence {
-        background-color: rgba(255, 99, 71, 0.1); /* Light orange background */
-        padding: 15px;
-        border-radius: 6px;
-        font-size: 0.9em;
-        color: #333;
-        margin-top: 20px;
-        text-align: left;
-  
-        h4 {
-          font-size: 1em;
-          font-weight: bold;
-          margin: 0 0 5px;
-          color: #333;
-        }
-  
-        .case-study-image {
-          width: 100%;
-          height: auto;
-          margin-bottom: 10px;
-          border-radius: 0px;
-          box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
-        }
-  
-        .read-more-link {
-          font-size: 0.9em;
-          color: $mortar-purple;
-          text-decoration: none;
-          margin-left: 5px;
-          transition: color 0.3s ease;
-  
-          &:hover {
-            color: $mortar-orange;
-          }
-        }
+      /* 3 columns for desktops */
+      @media (min-width: 1024px) {
+        grid-template-columns: repeat(3, 1fr);
       }
     }
   }
-  
-  
+
+/* Use case card styling with increased padding for better alignment */
+.use-case-card {
+  background-color: #fff;
+  border-radius: 10px;
+  overflow: hidden;
+  padding: 15px 20px; /* Adjust padding for consistent alignment */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: left;
+  margin-bottom: 30px;
+}
+
+/* Title */
+.use-case-card h3 {
+  font-family: "Basis", sans-serif;
+  font-weight: 300;
+  font-size: 1.8em;
+  margin-bottom: 5px;
+  text-align: left;
+}
+
+.case-study-image {
+  width: 100%;
+  height: auto;
+  margin-bottom: 10px;
+  border-radius: 0px; /* Add rounded corners */
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+/* Strapline */
+.strapline {
+  font-family: "Basis", sans-serif;
+  font-size: 1.2em;
+  font-weight: 400;
+  color: #666;
+  margin-bottom: 10px;
+  text-align: left;
+}
+
+.usecasecardp {
+  font-size: 1em;
+  color: #555;
+  margin: 5px 0 8px;
+  text-align: left;
+}
+
+/* Learn More link with right arrow, positioned closer to the description */
+.learn-more-link {
+  font-weight: normal;
+  font-size: 1.2em;
+  color: $mortar-purple; /* Mortar-purple */
+  text-decoration: none;
+  margin-bottom: 20px; /* Increased gap between Learn More and case study box */
+  transition: color 0.3s ease;
+}
+
+.learn-more-link:hover {
+  color: $mortar-orange; /* Mortar-orange on hover */
+}
+
+.learn-more-link::after {
+  content: " →"; /* Right arrow */
+  transition: margin-left 0.3s ease;
+}
+
+.learn-more-link:hover::after {
+  margin-left: 5px;
+}
+
+/* Case study inset box */
+.case-study-sentence {
+  background-color: rgba(255, 99, 71, 0.1); /* Mortar-orange with opacity */
+  padding: 15px;
+  border-radius: 6px;
+  font-size: 0.9em;
+  color: #333;
+  margin-top: 20px; /* Space between Learn More and the case study box */
+  text-align: left;
+}
+
+/* Case study title inside the inset box */
+.case-study-sentence h4 {
+  font-size: 1em;
+  font-weight: bold;
+  margin: 0 0 5px;
+  color: #333;
+}
+
+/* Read More link inside case study box */
+.read-more-link {
+  font-size: 0.9em;
+  color: $mortar-purple; /* Mortar-purple */
+  text-decoration: none;
+  display: inline;
+  margin-left: 5px;
+  transition: color 0.3s ease;
+}
+
+.read-more-link:hover {
+  color: $mortar-orange; /* Mortar-orange on hover */
+}
+
+
+.learn-more-link::after {
+  content: " →"; /* Right arrow */
+  transition: margin-left 0.3s ease;
+}
+
+.learn-more-link:hover::after {
+  margin-left: 5px;
+}
+
+/* Case study inset box */
+.case-study-sentence {
+  background-color: rgba(255, 99, 71, 0.1); /* Mortar-orange with opacity */
+  padding: 15px;
+  border-radius: 6px;
+  font-size: 0.9em;
+  color: #333;
+  margin: 15px 0; /* Unified margin between elements */
+  text-align: left;
+}
+
+/* Case study title inside the inset box */
+.case-study-sentence h4 {
+  font-size: 1em;
+  font-weight: bold;
+  margin: 0 0 5px; /* Removed top margin for consistency */
+  color: #333;
+}
+
+/* Read More link inside case study box */
+.read-more-link {
+  font-size: 0.9em;
+  color: $mortar-purple; /* Mortar-purple */
+  text-decoration: none;
+  display: inline; /* Keeps it inline with the sentence */
+  margin-left: 5px; /* Small space before Read More */
+  transition: color 0.3s ease;
+}
+
+.read-more-link:hover {
+  color: $mortar-orange; /* Mortar-orange on hover */
+}
+
+/* Learn More link with right arrow */
+.learn-more-link::after {
+  content: " →"; /* Right arrow */
+  transition: margin-left 0.3s ease;
+}
+
+.learn-more-link:hover::after {
+  margin-left: 5px;
+}
 
   #insights {
     padding: 0 0 8em 0;
