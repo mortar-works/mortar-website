@@ -47,64 +47,49 @@ name: homepage
     </div>
   </section>
 
-  <section id="partners">
-    <div class="partners-wrapper">
-      <h2 class="partners-heading">Reaching 1000s of users and businesses</h2>
-      <div class="partners-ticker">
-        <ul class="partners-list">
-          <li><img src="{{ '/static/images/partners/lga_logo.png' | url }}" alt="Local Government Association logo" /></li>
-          <li><img src="{{ '/static/images/partners/gla_logo2.jpeg' | url }}" alt="Greater London Authority logo" /></li>
-          <li><img src="{{ '/static/images/partners/havering-council.png' | url }}" alt="Havering Council logo" /></li>
-          <li><img src="{{ '/static/images/partners/Hackney-Logo.png' | url }}" alt="Hackney Council logo" /></li>
-          <li><img src="{{ '/static/images/partners/Clarion-Housing-Group-Logo.png' | url }}" alt="Clarion Housing Group logo" /></li>
-          <li><img src="{{ '/static/images/partners/salford02.png' | url }}" alt="Salford City Council logo" /></li>
-          <li><img src="{{ '/static/images/partners/eastriding1.png' | url }}" alt="East Riding of Yorkshire logo" /></li>
-          <li><img src="{{ '/static/images/partners/humberandnorth.png' | url }}" alt="Humber and North Yorkshire Integrated Care Partnership logo" /></li>
-          <li><img src="{{ '/static/images/partners/walthamforest01.png' | url }}" alt="Waltham Forest logo" /></li>
-          <li><img src="{{ '/static/images/partners/Worcestershire-County-Council-logo.png' | url }}" alt="Worcestershire County Council logo" /></li>
-          <li><img src="{{ '/static/images/partners/socialfinance01.png' | url }}" alt="Social Finance logo" /></li>
-          <li><img src="{{ '/static/images/partners/mayoroflondonlogo01.png' | url }}" alt="Mayor of London logo" /></li>
-        </ul>
+  <!-- Use Cases Section -->
+  <section id="use-cases">
+    <div class="use-cases-wrapper">
+      <h2>Our Use Cases</h2>
+      <p class="usecasep">
+        We work to maximize the impact of services, ensuring that every user experience counts. Learn about how Mortar brings together a global suite of tools to create solutions to difficult and complex service challenges.
+      </p>
+
+      <!-- Use Cases Grid -->
+      <div class="use-cases-grid">
+        {% for case in collections.useCases %}
+        <div class="use-case-card">
+          <h3>{{ case.title }}</h3>
+          <h4 class="strapline">{{ case.strapline }}</h4>
+          <p class="usecasecardp">{{ case.description }}</p>
+          <a href="{{ case.link }}" class="learn-more-link">Learn More</a>
+        </div>
+        {% endfor %}
       </div>
     </div>
   </section>
 
-  <section id="use-cases">
-  <div class="use-cases-wrapper">
-    <h2>Our Use Cases</h2>
-    <p class="usecasep">
-      We work to maximize the impact of services, ensuring that every user experience counts.
-      Learn about how Mortar brings together a global suite of tools to create solutions to
-      difficult and complex service challenges.
-    </p>
+  <!-- Case Studies Section -->
+  <section id="case-studies">
+    <div class="use-cases-wrapper">
+      <h2>Case Studies</h2>
+      <p class="usecasep">
+        Explore our case studies to see how Mortar has applied innovative solutions to real-world challenges, transforming services for our partners.
+      </p>
 
-    <!-- Use Case Cards -->
-    <div class="use-cases-grid">
-      {% for case in collections.useCases %}
-      <div class="use-case-card">
-        <h3>{{ case.title }}</h3>
-        <h4 class="strapline">{{ case.strapline }}</h4>
-        <p class="usecasecardp">{{ case.description }}</p>
-        <a href="{{ case.link }}" class="learn-more-link">Learn More</a>
-      </div>
-      {% endfor %}
-    </div>
-
-    <!-- Case Study Cards Below Use Cases -->
-    <h2>Our Case Studies</h2>
-    <div class="case-studies-grid">
-      {% for caseStudy in collections.caseStudies %}
-      <div class="case-study-sentence">
+      <!-- Case Studies Grid -->
+      <div class="use-cases-grid">
+        {% for study in collections.caseStudies %}
+        <div class="case-study-sentence">
           <h4>Case Study</h4>
-          <img src="{{ caseStudy.image }}" alt="{{ caseStudy.title }} image" class="case-study-image" />
-          {{ caseStudy.case_study_sentence }}
-          <a href="{{ caseStudy.read_more_link }}" class="read-more-link">Read More</a>
+          <img src="{{ study.image }}" alt="{{ study.title }} image" class="case-study-image" />
+          <p>{{ study.case_study_sentence }}</p>
+          <a href="{{ study.read_more_link }}" class="read-more-link">Read More</a>
+        </div>
+        {% endfor %}
       </div>
-      {% endfor %}
     </div>
-  </div>
-</section>
-  
+  </section>
 
   <section id="insights">
     <div class="wrapper">
@@ -210,9 +195,5 @@ name: homepage
     </div>
   </div>
 </section>
-
-
-
-
 
 {% endblock %}

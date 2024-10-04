@@ -412,22 +412,6 @@
         }
       }
   
-      /* Grid for case-study cards */
-      .case-studies-grid {
-        display: grid;
-        grid-template-columns: repeat(1, 1fr);
-        grid-gap: 2em;
-        padding-top: 2em;
-  
-        @media (min-width: 768px) {
-          grid-template-columns: repeat(2, 1fr);
-        }
-  
-        @media (min-width: 1024px) {
-          grid-template-columns: repeat(3, 1fr);
-        }
-      }
-  
       /* Use Case Card Styles */
       .use-case-card {
         background-color: #fff;
@@ -489,78 +473,45 @@
       }
   
       /* Case Study Card Styles */
-      .case-study-card {
+      .case-study-sentence {
         background-color: rgba(255, 99, 71, 0.1); /* Light orange background */
+        padding: 15px;
         border-radius: 6px;
-        padding: 20px;
-        box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+        font-size: 0.9em;
+        color: #333;
         margin-top: 20px;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
         text-align: left;
   
-        h3 {
-          font-family: "Basis", sans-serif;
-          font-weight: 500;
-          font-size: 1.6em;
-          color: #333;
-          margin-bottom: 10px;
-        }
-  
-        .strapline {
-          font-family: "Basis", sans-serif;
-          font-size: 1.2em;
-          font-weight: 400;
-          color: #555;
-          margin-bottom: 10px;
-        }
-  
-        .case-study-desc {
+        h4 {
           font-size: 1em;
-          color: #555;
-          margin: 5px 0 10px;
+          font-weight: bold;
+          margin: 0 0 5px;
+          color: #333;
         }
   
-        .case-study-sentence {
-          background-color: rgba(255, 99, 71, 0.1);
-          padding: 15px;
-          border-radius: 6px;
+        .case-study-image {
+          width: 100%;
+          height: auto;
+          margin-bottom: 10px;
+          border-radius: 0px;
+          box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+        }
+  
+        .read-more-link {
           font-size: 0.9em;
-          color: #333;
-          margin-top: 10px;
-          text-align: left;
+          color: $mortar-purple;
+          text-decoration: none;
+          margin-left: 5px;
+          transition: color 0.3s ease;
   
-          h4 {
-            font-size: 1em;
-            font-weight: bold;
-            margin: 0 0 5px;
-            color: #333;
-          }
-  
-          .case-study-image {
-            width: 100%;
-            height: auto;
-            margin-bottom: 10px;
-            border-radius: 0px;
-            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
-          }
-  
-          .read-more-link {
-            font-size: 0.9em;
-            color: $mortar-purple;
-            text-decoration: none;
-            margin-left: 5px;
-            transition: color 0.3s ease;
-  
-            &:hover {
-              color: $mortar-orange;
-            }
+          &:hover {
+            color: $mortar-orange;
           }
         }
       }
     }
   }
+  
   
 
   #insights {
