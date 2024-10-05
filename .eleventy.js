@@ -34,9 +34,9 @@ module.exports = function(eleventyConfig) {
       .reverse();
   });
 
-  // Create useCases collection from the `usecases.yaml` file
+  // Create useCases collection from the usecases.yaml file
   eleventyConfig.addCollection("useCases", function(collectionApi) {
-    const useCasesData = collectionApi.globalData.usecases;
+    const useCasesData = collectionApi.getAll()[0].data.usecases;
     if (Array.isArray(useCasesData)) {
       return useCasesData;
     } else {
@@ -44,18 +44,18 @@ module.exports = function(eleventyConfig) {
     }
   });
 
-  // Case Studies collection from YAML data
-  eleventyConfig.addCollection("caseStudies", function(collectionApi) {
-    // Use the caseStudies data directly from globalData
-    const caseStudiesData = collectionApi.globalData.caseStudies;
-
-    // Return the array of case studies
-    if (Array.isArray(caseStudiesData)) {
-      return caseStudiesData;
-    } else {
-      throw new Error("caseStudies data is not an array");
-    }
-  });
+// Case Studies collection from YAML data
+eleventyConfig.addCollection("caseStudies", function(collectionApi) {
+  // Load from the _data/casestudies.yaml
+  const caseStudiesData = collectionApi.getAll()[0].data.caseStudies; // Ensure the data file is named correctly
+  
+  // Return the array of case studies
+  if (Array.isArray(caseStudiesData)) {
+    return caseStudiesData;
+  } else {
+    throw new Error("caseStudies data is not an array");
+  }
+});
 
   // Watch targets for development (live reload)
   eleventyConfig.setUseGitIgnore(false);
