@@ -478,7 +478,7 @@
       }
     }
   
-    /* Case Studies Grid */
+    /* Case Study Cards Grid */
     .case-studies-grid {
       display: grid;
       grid-template-columns: repeat(1, 1fr);
@@ -494,69 +494,56 @@
       }
     }
   
-    .case-study-card {
-      background-color: #fff;
-      border-radius: 10px;
-      overflow: hidden;
-      padding: 15px 20px;
-      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    /* Case Study Main Structure (was inner card before) */
+    .case-study-sentence {
+      background-color: #fff; /* Background for the entire card */
+      padding: 20px; /* Padding inside the card */
+      border-radius: 6px; /* Rounded corners */
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for card effect */
       display: flex;
       flex-direction: column;
       justify-content: space-between;
       text-align: left;
-    }
   
-    .learn-more-link {
-      font-weight: normal;
-      font-size: 1.2em;
-      color: $mortar-purple;
-      text-decoration: none;
-      margin-bottom: 20px;
-      transition: color 0.3s ease;
-  
-      &::after {
-        content: " →";
-        transition: margin-left 0.3s ease;
+      h3 {
+        font-size: 1.5em;
+        margin-bottom: 0.5em;
       }
   
-      &:hover {
-        color: $mortar-orange;
+      .strapline {
+        font-size: 1.2em;
+        margin-bottom: 1em;
+        color: #555;
       }
   
-      &:hover::after {
-        margin-left: 5px;
+      .case-study-desc {
+        font-size: 1.1em;
+        margin-bottom: 1em;
+        color: #555;
       }
-    }
   
-    .case-study-sentence {
-      background-color: rgba(255, 99, 71, 0.1);
-      padding: 15px;
-      border-radius: 6px;
-      font-size: 0.9em;
-      color: #333;
-      margin-top: 20px;
-    }
+      .case-study-image {
+        width: 100%;
+        height: auto;
+        margin-bottom: 10px;
+        border-radius: 6px;
+        box-shadow: none;
+      }
   
-    .case-study-image {
-      width: 100%;
-      height: auto;
-      margin-bottom: 10px;
-      border-radius: 0px;
-      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
-    }
+      .read-more-link {
+        font-size: 1em;
+        color: $mortar-purple;
+        text-decoration: none;
+        margin-top: 15px;
+        transition: color 0.3s ease;
   
-    .read-more-link {
-      font-size: 0.9em;
-      color: $mortar-purple;
-      text-decoration: none;
-      margin-left: 5px;
-      transition: color 0.3s ease;
-  
-      &:hover {
-        color: $mortar-orange;
+        &:hover {
+          color: $mortar-orange;
+        }
       }
     }
   }
+  
   
 
   #insights {

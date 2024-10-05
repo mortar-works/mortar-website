@@ -92,36 +92,29 @@ name: homepage
     </div>
   </section>
 
-  <!-- New Section for Case Studies -->
   <section id="case-studies">
-    <div class="case-studies-wrapper">
-      <h2>Our Case Studies</h2>
-      <p class="case-study-p">
-        Mortar is proud to share our case studies, highlighting the successful
-        application of our tools and services in various industries.
-      </p>
+  <div class="case-studies-wrapper">
+    <h2>Our Case Studies</h2>
+    <p class="case-study-p">
+      Mortar is proud to share our case studies, highlighting the successful
+      application of our tools and services in various industries.
+    </p>
 
-      <!-- Case Study Cards -->
-      <div class="case-studies-grid">
-        {% for caseStudy in collections.caseStudies %}
-        <div class="case-study-card">
-          <h3>{{ caseStudy.title }}</h3>
-          <h4 class="strapline">{{ caseStudy.strapline }}</h4>
-          <p class="case-study-desc">{{ caseStudy.description }}</p>
-          <a href="{{ caseStudy.link }}" class="learn-more-link">Learn More</a>
-
-          <!-- Case Study Specific Info -->
-          <div class="case-study-sentence">
-            <h4>Case Study</h4>
-            <img src="{{ caseStudy.image }}" alt="{{ caseStudy.title }} image" class="case-study-image" />
-            {{ caseStudy.case_study_sentence }}
-            <a href="{{ caseStudy.read_more_link }}" class="read-more-link">Read More</a>
-          </div>
-        </div>
-        {% endfor %}
+    <!-- Case Study Cards Grid -->
+    <div class="case-studies-grid">
+      {% for caseStudy in collections.caseStudies %}
+      <div class="case-study-sentence">
+        <h3>{{ caseStudy.title }}</h3>
+        <h4 class="strapline">{{ caseStudy.strapline }}</h4>
+        <p class="case-study-desc">{{ caseStudy.description }}</p>
+        <img src="{{ caseStudy.image }}" alt="{{ caseStudy.title }} image" class="case-study-image" />
+        {{ caseStudy.case_study_sentence }}
+        <a href="{{ caseStudy.read_more_link }}" class="read-more-link">Read More</a>
       </div>
+      {% endfor %}
     </div>
-  </section>
+  </div>
+</section>
   
 
   <section id="insights">
