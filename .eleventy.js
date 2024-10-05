@@ -44,18 +44,12 @@ module.exports = function(eleventyConfig) {
     }
   });
 
-// Case Studies collection from YAML data
-eleventyConfig.addCollection("caseStudies", function(collectionApi) {
-  // Load from the _data/casestudies.yaml
-  const caseStudiesData = collectionApi.getAll()[0].data.caseStudies; // Ensure the data file is named correctly
-  
-  // Return the array of case studies
-  if (Array.isArray(caseStudiesData)) {
-    return caseStudiesData;
-  } else {
-    throw new Error("caseStudies data is not an array");
-  }
-});
+  // **New caseStudies collection**: Pull Markdown files from case-studies folder
+  eleventyConfig.addCollection("caseStudies", function(collectionApi) {
+    return collectionApi.getFilteredByGlob("src/site/case-studies/*.md")
+      .filter(livePosts)
+      .reverse();  // Reverse the order so newest case studies appear first
+  });
 
   // Watch targets for development (live reload)
   eleventyConfig.setUseGitIgnore(false);
