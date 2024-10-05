@@ -69,48 +69,59 @@ name: homepage
     </div>
   </section>
 
-  <section id="use-cases">
-  <div class="use-cases-wrapper">
-    <h2>Our Use Cases</h2>
-    <p class="usecasep">
-      We work to maximize the impact of services, ensuring that every user experience counts.
-      Learn about how Mortar brings together a global suite of tools to create solutions to
-      difficult and complex service challenges.
-    </p>
+ <section id="use-cases">
+    <div class="use-cases-wrapper">
+      <h2>Our Use Cases</h2>
+      <p class="usecasep">
+        We work to maximize the impact of services, ensuring that every user experience counts.
+        Learn about how Mortar brings together a global suite of tools to create solutions to
+        difficult and complex service challenges.
+      </p>
 
-    <!-- Use Case Cards -->
-    <div class="use-cases-grid">
-      {% for case in collections.useCases %}
-      <div class="use-case-card">
-        <h3>{{ case.title }}</h3>
-        <h4 class="strapline">{{ case.strapline }}</h4>
-        <p class="usecasecardp">{{ case.description }}</p>
-        <a href="{{ case.link }}" class="learn-more-link">Learn More</a>
-      </div>
-      {% endfor %}
-    </div>
-
-    <!-- Case Study Cards Below Use Cases -->
-    <h2>Our Case Studies</h2>
-    <div class="case-studies-grid">
-      {% for caseStudy in collections.caseStudies %}
-      <div class="case-study-card">
-        <h3>{{ caseStudy.title }}</h3>
-        <h4 class="strapline">{{ caseStudy.strapline }}</h4>
-        <p class="case-study-desc">{{ caseStudy.description }}</p>
-        <a href="{{ caseStudy.link }}" class="learn-more-link">Learn More</a>
-
-        <div class="case-study-sentence">
-          <h4>Case Study</h4>
-          <img src="{{ caseStudy.image }}" alt="{{ caseStudy.title }} image" class="case-study-image" />
-          {{ caseStudy.case_study_sentence }}
-          <a href="{{ caseStudy.read_more_link }}" class="read-more-link">Read More</a>
+      <!-- Use Case Cards -->
+      <div class="use-cases-grid">
+        {% for case in collections.useCases %}
+        <div class="use-case-card">
+          <h3>{{ case.title }}</h3>
+          <h4 class="strapline">{{ case.strapline }}</h4>
+          <p class="usecasecardp">{{ case.description }}</p>
+          <a href="{{ case.link }}" class="learn-more-link">Learn More</a>
         </div>
+        {% endfor %}
       </div>
-      {% endfor %}
     </div>
-  </div>
-</section>
+  </section>
+
+  <!-- New Section for Case Studies -->
+  <section id="case-studies">
+    <div class="case-studies-wrapper">
+      <h2>Our Case Studies</h2>
+      <p class="case-study-p">
+        Mortar is proud to share our case studies, highlighting the successful
+        application of our tools and services in various industries.
+      </p>
+
+      <!-- Case Study Cards -->
+      <div class="case-studies-grid">
+        {% for caseStudy in collections.caseStudies %}
+        <div class="case-study-card">
+          <h3>{{ caseStudy.title }}</h3>
+          <h4 class="strapline">{{ caseStudy.strapline }}</h4>
+          <p class="case-study-desc">{{ caseStudy.description }}</p>
+          <a href="{{ caseStudy.link }}" class="learn-more-link">Learn More</a>
+
+          <!-- Case Study Specific Info -->
+          <div class="case-study-sentence">
+            <h4>Case Study</h4>
+            <img src="{{ caseStudy.image }}" alt="{{ caseStudy.title }} image" class="case-study-image" />
+            {{ caseStudy.case_study_sentence }}
+            <a href="{{ caseStudy.read_more_link }}" class="read-more-link">Read More</a>
+          </div>
+        </div>
+        {% endfor %}
+      </div>
+    </div>
+  </section>
   
 
   <section id="insights">
