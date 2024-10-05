@@ -368,7 +368,7 @@
 
   
   #use-cases {
-    padding: 2em 0;
+    padding: 4em 0;
     background-color: #f9f9f9;
   
     .use-cases-wrapper {
@@ -412,24 +412,7 @@
         }
       }
   
-      /* Case Study Cards Grid */
-      .case-studies-grid {
-        display: grid;
-        grid-template-columns: repeat(1, 1fr);
-        grid-gap: 2em;
-        padding-top: 2em;
-  
-        @media (min-width: 768px) {
-          grid-template-columns: repeat(2, 1fr);
-        }
-  
-        @media (min-width: 1024px) {
-          grid-template-columns: repeat(3, 1fr);
-        }
-      }
-  
-      /* Shared Card Styles for Use Cases and Case Studies */
-      .use-case-card, .case-study-card {
+      .use-case-card {
         background-color: #fff;
         border-radius: 10px;
         overflow: hidden;
@@ -463,46 +446,118 @@
           margin-left: 5px;
         }
       }
+    }
+  }
+
+  #case-studies {
+    padding: 4em 0;
+    background-color: lighten($mortar-purple, 60%);
   
-      /* Case Study Specific Styles */
-      .case-study-sentence {
-        background-color: rgba(255, 99, 71, 0.1);
-        padding: 15px;
-        border-radius: 6px;
-        font-size: 0.9em;
-        color: #333;
-        margin-top: 20px;
-        text-align: left;
-      }
+    .case-studies-wrapper {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 1.5em;
   
-      .case-study-sentence h4 {
-        font-size: 1em;
+      h2 {
+        text-align: center;
+        font-size: 2.2em;
         font-weight: bold;
-        margin: 0 0 5px;
-        color: #333;
+        margin-bottom: 1.5em;
+        font-family: "Basis", sans-serif;
       }
   
-      .case-study-image {
-        width: 100%;
-        height: auto;
-        margin-bottom: 10px;
-        border-radius: 0px;
-        box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+      .case-study-p {
+        text-align: center;
+        font-size: 1.4em;
+        max-width: 800px;
+        margin: 0 auto 1em;
+        color: #555;
+        line-height: 1.4em;
+        padding: 0 1em;
+        font-weight: 400;
+      }
+    }
+  
+    /* Case Studies Grid */
+    .case-studies-grid {
+      display: grid;
+      grid-template-columns: repeat(1, 1fr);
+      grid-gap: 2em;
+      padding-top: 2em;
+  
+      @media (min-width: 768px) {
+        grid-template-columns: repeat(2, 1fr);
       }
   
-      .read-more-link {
-        font-size: 0.9em;
-        color: $mortar-purple;
-        text-decoration: none;
+      @media (min-width: 1024px) {
+        grid-template-columns: repeat(3, 1fr);
+      }
+    }
+  
+    .case-study-card {
+      background-color: #fff;
+      border-radius: 10px;
+      overflow: hidden;
+      padding: 15px 20px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      text-align: left;
+    }
+  
+    .learn-more-link {
+      font-weight: normal;
+      font-size: 1.2em;
+      color: $mortar-purple;
+      text-decoration: none;
+      margin-bottom: 20px;
+      transition: color 0.3s ease;
+  
+      &::after {
+        content: " →";
+        transition: margin-left 0.3s ease;
+      }
+  
+      &:hover {
+        color: $mortar-orange;
+      }
+  
+      &:hover::after {
         margin-left: 5px;
-        transition: color 0.3s ease;
+      }
+    }
   
-        &:hover {
-          color: $mortar-orange;
-        }
+    .case-study-sentence {
+      background-color: rgba(255, 99, 71, 0.1);
+      padding: 15px;
+      border-radius: 6px;
+      font-size: 0.9em;
+      color: #333;
+      margin-top: 20px;
+    }
+  
+    .case-study-image {
+      width: 100%;
+      height: auto;
+      margin-bottom: 10px;
+      border-radius: 0px;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    }
+  
+    .read-more-link {
+      font-size: 0.9em;
+      color: $mortar-purple;
+      text-decoration: none;
+      margin-left: 5px;
+      transition: color 0.3s ease;
+  
+      &:hover {
+        color: $mortar-orange;
       }
     }
   }
+  
 
   #insights {
     padding: 0 0 8em 0;

@@ -23,10 +23,3 @@
     image: "/static/images/use-cases/bg-usecase-02.png"
     read_more_link: "/case-study-3-more"
 
-  - title: Making data work
-    strapline: "Why a data platform is essential to building a better service."
-    description: "Capturing and analysing data is essential to developing your service. The tools we build are focused on delivering the data you need to learn, act and invest."
-    case_study_sentence: "Explore how we are using data to define the development of our skills assessment tool being led by Essex County Council."
-    link: "/case-study-1"
-    image: "/static/images/use-cases/bg-usecase-02.png"
-    read_more_link: "/case-study-3-more"
