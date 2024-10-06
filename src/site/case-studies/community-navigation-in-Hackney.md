@@ -6,13 +6,6 @@ read_more_link: "/case-study-url"
 order: 1
 ---
 
----
-title: A Community Navigation Platform for Hackney
-pageImage: hc-01bg.png
-homepageImage: hc-01.png
-description: |-
-  Our platform Hoop'd is delivering a custom social prescribing service in Hackney. Hackney Circle combats health inequality through creative health and wellbeing interventions, reaching isolated older residents with participation opportunities. 
-
 Our Community Navigation Platform enables Hackney Council's culture and public health team to work together to reach and connect with older residents, in particular those living alone. Residents are engaged with tailored community and cultural sector touchpoints, and consistent information in accessible formats; all monitored and powered by our Hoop'd platform to drive more effective early interventions.
 
 <section>
