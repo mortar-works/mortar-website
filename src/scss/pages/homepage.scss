@@ -602,7 +602,7 @@
       max-width: 1200px;
       margin: 0 auto;
       padding: 0 1.5em;
-    
+  
       h2 {
         text-align: center;
         font-size: 2.2em;
@@ -629,37 +629,41 @@
   
     .solution-card {
       display: flex;
-      align-items: center;
-      justify-content: space-between;
+      align-items: flex-start; /* Align content to the top */
+      justify-content: flex-start; /* Align content to the left */
       padding: 2em;
       background-color: #fff;
       border-radius: 8px;
       box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Slight shadow for depth */
-      position: relative; /* For positioning label */
       text-align: left;
+      position: relative;
     }
   
-    /* Solution Label */
+    /* Solution Label Column */
     .solution-label {
-      position: absolute;
-      top: 15px;
-      left: 15px;
-      border: 1px solid black;
-      background-color: transparent;
-      color: black;
-      padding: 0.15em 0.6em;
-      font-size: 0.8em;
-      font-weight: 300;
-      border-radius: 15px;
+      flex-basis: 15%; /* Adjust the width of the label column */
+      text-align: left;
+      display: inline-block;
+      border: 1px solid black; /* Black border */
+      background-color: transparent; /* No background fill */
+      color: black; /* Black text */
+      padding: 0.5em 0.6em; /* Adjust padding for label size */
+      font-size: 0.9em; /* Adjust font size */
+      font-weight: 300; /* Light font weight */
+      border-radius: 15px; /* Rounded corners */
+      text-transform: none; /* Keep normal text casing */
+      letter-spacing: 0.05em; /* Optional letter spacing */
+      margin-right: 2em; /* Space between label and content */
     }
   
-    /* Solution Content */
+    /* Solution Content - Align content to the top and left */
     .solution-content {
       display: flex;
-      justify-content: space-between;
-      flex: 1;
-      align-items: center;
+      justify-content: flex-start;
+      align-items: flex-start; /* Ensure content aligns to the top */
       gap: 2em; /* Space between columns */
+      flex-wrap: wrap;
+      flex-grow: 1; /* Allow content to take up remaining space */
     }
   
     .solution-content h3 {
@@ -667,13 +671,16 @@
       font-weight: bold;
       color: #333;
       margin: 0;
+      flex: 1; /* Give it some flexibility */
     }
   
+    /* Shorten the description column */
     .solution-desc {
       font-size: 1.2em;
       color: #555;
       margin: 0;
-      flex: 2;
+      flex: 1.5; /* Control width with flex to make it shorter */
+      max-width: 400px; /* You can tweak this value to make it even narrower */
     }
   
     .find-out-more-link {
@@ -681,7 +688,8 @@
       color: $mortar-purple;
       text-decoration: none;
       transition: color 0.3s ease;
-  
+      margin-top: auto; /* Pushes the link down */
+      
       &::after {
         content: " →";
         transition: margin-left 0.3s ease;
@@ -697,6 +705,7 @@
     }
   }
   
+
 
   #insights {
     padding: 0 0 8em 0;
