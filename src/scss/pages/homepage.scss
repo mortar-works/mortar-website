@@ -369,6 +369,7 @@
   
   #use-cases {
     padding-top: 4em;
+    padding-bottom: 4em;
     background-color: #f9f9f9;
   
     .use-cases-wrapper {
@@ -424,12 +425,12 @@
         text-align: left;
         margin-bottom: 30px;
       }
-
+  
       /* Wrapper for the title and strapline */
       .use-case-header {
-        margin-bottom: 0; /* Adds spacing below the strapline */
+        margin-bottom: 0;
       }
-
+  
       .use-case-card h3 {
         font-size: 1.5em; /* Adjust the size as needed */
         margin: 0 0 0.8em; /* Space below the title */
@@ -437,18 +438,20 @@
         color: #333; /* Set the text color */
         font-family: "Basis Grotesque Pro Light", sans-serif; /* Adjust the font if needed */
         position: relative;
+        display: inline-block; /* Make title's width match the text */
       }
-      /* Add a horizontal bar between the title and strapline */
-.use-case-header h3::after {
-  content: "";
-  display: block;
-  width: 100%; /* Length of the bar */
-  height: 4px; /* Thickness of the bar */
-  background-color: $mortar-purple; /* Bar color */
-  margin-top: 0.5em; /* Spacing between the title and the bar */
-}
-
-      /* Styles for the h4 (strapline) inside the use case card */
+  
+      /* Horizontal bar exactly matching the width of the title text */
+      .use-case-header h3::after {
+        content: "";
+        display: block;
+        width: 100%; /* Length of the bar matches the title */
+        height: 4px; /* Thickness of the bar */
+        background-color: $mortar-purple; /* Bar color */
+        margin-top: 0.5em; /* Spacing between the title and the bar */
+      }
+  
+      /* Strapline styling */
       .use-case-card h4.strapline {
         font-size: 1.2em; /* Smaller than the title */
         margin: 0 0 0;
@@ -481,10 +484,14 @@
       }
     }
   }
+  
 
   #case-studies {
     padding: 2em 0;
-    background-color: #f9f9f9;
+    background-color: #f9f8fd;
+    border-top: 6px solid #2b1c5a;
+    border-bottom: 6px solid #2b1c5a;
+}
   
     .case-studies-wrapper {
       max-width: 1200px;
