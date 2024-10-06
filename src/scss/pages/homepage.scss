@@ -506,28 +506,28 @@
       position: relative;
 
       .case-study-label {
-        position: absolute; /* Make the label position inside the case-study-card */
-        top: 10px;
-        left: 10px;
+        position: absolute;
+        top: 15px; /* Adjust to move label down slightly */
+        left: 15px; /* Adjust to move label right slightly */
         display: inline-block;
         background-color: $mortar-purple; /* Use your Mortar purple */
         color: white;
-        padding: 0.2em 0.6em; /* Tight padding for compact appearance */
-        font-size: 0.8em; /* Adjust text size */
-        border-radius: 15px; /* Rounded corners for the pill shape */
+        padding: 0.15em 0.6em; /* Slightly tighter padding for a smaller label */
+        font-size: 0.8em;
+        border-radius: 15px; /* Rounded corners for pill shape */
         font-weight: bold;
         text-transform: none;
-        letter-spacing: 0.05em; /* Optional: Spacing for readability */
-        z-index: 1; /* Ensures it appears above other content */
+        letter-spacing: 0.05em; /* Optional for letter spacing */
+        z-index: 1; /* Ensures it stays above other content */
       }
   
       h3 {
         font-size: 1.5em;
-        margin-bottom: 0em;
+        margin-bottom: 0em; 
         color: black;
         font-family: Basis Grotesque, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, sans-serif;
         line-height: 1.2em;
-        margin-top: 0em;
+        margin-top: 50px;
       }
   
       .strapline {
