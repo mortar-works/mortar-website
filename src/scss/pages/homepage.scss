@@ -368,7 +368,7 @@
 
   
   #use-cases {
-    padding: 4em 0;
+    padding-top: 4em;
     background-color: #f9f9f9;
   
     .use-cases-wrapper {
@@ -494,6 +494,18 @@
       }
     }
 
+    .case-study-link {
+      text-decoration: none; /* Remove underline */
+      color: inherit; /* Inherit text color */
+      display: block; /* Make the entire card a block element */
+      transition: background-color 0.3s ease, transform 0.3s ease; /* Smooth hover transition */
+    
+      &:hover .case-study-card {
+        background-color: rgba(253, 94, 83, 0.8); /* Opaque $mortar-orange on hover */
+        transform: scale(1.02); /* Slightly scale the card on hover */
+      }
+    }
+    
     .case-study-card {
       background-color: #fff; /* Background for the entire card */
       padding: 20px; /* Padding inside the card */

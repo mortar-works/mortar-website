@@ -95,13 +95,14 @@ name: homepage
   <div class="case-studies-wrapper">
     <div class="case-studies-grid">
       {% for caseStudy in collections.caseStudies %}
-      <div class="case-study-card"> <!-- Updated: Using case-study-card as wrapper -->
-        <div class="case-study-label">Case Study</div> <!-- Label is inside the card wrapper -->
-        <h3>{{ caseStudy.data.title }}</h3>
-        <p class="case-study-desc">{{ caseStudy.data.description }}</p>
-        <img src="{{ caseStudy.data.image }}" alt="{{ caseStudy.data.title }} image" class="case-study-image" />
-        <a href="{{ caseStudy.url }}" class="read-more-link">Read More</a>
-      </div>
+      <a href="{{ caseStudy.url }}" class="case-study-link"> <!-- Make the entire card clickable -->
+        <div class="case-study-card">
+          <div class="case-study-label">Case Study</div> <!-- Label is inside the card wrapper -->
+          <h3>{{ caseStudy.data.title }}</h3>
+          <p class="case-study-desc">{{ caseStudy.data.description }}</p>
+          <img src="{{ caseStudy.data.image }}" alt="{{ caseStudy.data.title }} image" class="case-study-image" />
+        </div>
+      </a>
       {% endfor %}
     </div>
   </div>
