@@ -1,17 +1,21 @@
-- title: "A Community Navigation Platform for Hackney"
-  strapline: "Helping older residents access services"
-  description: "Our tailored navigation solution, developed in collaboration with Hackney Council, addresses barriers faced by older residents in accessing critical services."
+# _data/casestudies.yaml
+- title: Community Navigation in Hackney
+  strapline: Helping older residents access services.
+  description: Our tailored navigation solution, developed in collaboration with Hackney Council, addresses barriers faced by older residents in accessing critical services."
+  results: Building relationships with public health and the social prescribing team.
+  link: "/case-study-hackney"
   image: "/static/images/case-studies/hackney.png"
-  read_more_link: "/case-studies/hackney"
-
+    
 - title: "Scaling Digital Inclusion"
   strapline: "Working with the Local Government Association to scale."
   description: "Our digital inclusion triage tool, initially piloted locally, has been scaled nationally to reach a broader audience, helping communities improve access to essential digital services."
+  results: "The tool is now implemented across six local authorities."
+  link: "/case-study-lga"
   image: "/static/images/case-studies/lga.png"
-  read_more_link: "/case-studies/lga"
-
+    
 - title: "Skills Assessment Platform"
   strapline: "Using data to build a better skills assessment tool."
   description: "Collaborating with Essex County Council, we designed a platform that gathers real-time data to identify and address skill gaps in the workforce."
+  results: "The platform will help over 2000 individuals improve their skill sets in its first year."
+  link: "/case-study-essex"
   image: "/static/images/case-studies/essex.png"
-  read_more_link: "/case-studies/essex"
