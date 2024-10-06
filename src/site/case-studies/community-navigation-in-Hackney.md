@@ -1,5 +1,6 @@
 ---
 title: "Your Case Study Title"
+date: 2024-01-01 
 strapline: "A brief strapline for the case study"
 description: "A short description of the case study that should appear in the card"
 case_study_sentence: "A one-liner or short sentence summarizing the case study"
