@@ -427,7 +427,7 @@
 
       /* Wrapper for the title and strapline */
       .use-case-header {
-        margin-bottom: 1em; /* Adds spacing below the strapline */
+        margin-bottom: 0; /* Adds spacing below the strapline */
       }
 
       .use-case-card h3 {
@@ -442,7 +442,7 @@
 .use-case-header h3::after {
   content: "";
   display: block;
-  width: 50px; /* Length of the bar */
+  width: 100%; /* Length of the bar */
   height: 4px; /* Thickness of the bar */
   background-color: $mortar-purple; /* Bar color */
   margin-top: 0.5em; /* Spacing between the title and the bar */
@@ -451,7 +451,7 @@
       /* Styles for the h4 (strapline) inside the use case card */
       .use-case-card h4.strapline {
         font-size: 1.2em; /* Smaller than the title */
-        margin: 0 0 1em;
+        margin: 0 0 0;
         font-weight: 300; /* Lighter font weight */
         color: #555; /* Softer color than the title */
         font-family: "Basis Grotesque Pro", sans-serif; /* Adjust the font */
