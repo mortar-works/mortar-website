@@ -1,8 +1,8 @@
 ---
 title: "Progress Online for Humber and Yorkshire"
-description: "The skills and inclusion initiative for Humber and Yorkshire. A custom version of our Triage Tool, building a regional digital inclusion network."
+description: "A custom version of our Triage Tool, building regional digital inclusion networks and skills campaigns."
 read_more_link: "/case-study-url"
-image: "/static/images/case-studies/progressonline01.jpg"
+image: "/static/images/case-studies/progressonline02.png"
 ---
 
 Progress Online is a tailored implementation of our Digital Inclusion Triage Tool for East Riding, developed in partnership with the Humber and Yorkshire Integrated Care Board. For East Riding the tool is establishing a new Digital Inclusion Network, working to engage residents in early interventions across a huge, rural, geographic area. 
