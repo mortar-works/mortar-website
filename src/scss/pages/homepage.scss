@@ -424,6 +424,24 @@
         text-align: left;
         margin-bottom: 30px;
       }
+
+      .use-case-card h3 {
+        font-size: 1.5em; /* Adjust the size as needed */
+        margin: 0 0 0.5em; /* Space below the title */
+        font-weight: bold; /* Ensure it's bold */
+        color: #333; /* Set the text color */
+        font-family: "Basis Grotesque Pro Light", sans-serif; /* Adjust the font if needed */
+      }
+      
+      /* Styles for the h4 (strapline) inside the use case card */
+      .use-case-card h4.strapline {
+        font-size: 1.2em; /* Smaller than the title */
+        margin: 0 0 1em; /* Space below the strapline */
+        font-weight: 300; /* Lighter font weight */
+        color: #555; /* Softer color than the title */
+        font-family: "Basis Grotesque Pro", sans-serif; /* Adjust the font */
+        line-height: 1.4; /* Adjust line height for readability */
+      }
   
       .learn-more-link {
         font-weight: normal;
