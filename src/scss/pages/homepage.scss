@@ -426,34 +426,32 @@
       }
 
       /* Wrapper for the title and strapline */
-.use-case-header {
-  position: relative; /* Required for the vertical bar */
-  padding-left: 20px; /* Space for the bar */
-}
-
-/* Vertical colored bar */
-.use-case-header::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 6px;
-  height: 100%; /* Makes sure the bar runs alongside both the title and strapline */
-  background-color: $mortar-purple; /* Adjust to your vertical bar color */
-}
+      .use-case-header {
+        margin-bottom: 1em; /* Adds spacing below the strapline */
+      }
 
       .use-case-card h3 {
         font-size: 1.5em; /* Adjust the size as needed */
-        margin: 0; /* Space below the title */
+        margin: 0 0 0.8em; /* Space below the title */
         font-weight: bold; /* Ensure it's bold */
         color: #333; /* Set the text color */
         font-family: "Basis Grotesque Pro Light", sans-serif; /* Adjust the font if needed */
+        position: relative;
       }
-      
+      /* Add a horizontal bar between the title and strapline */
+.use-case-header h3::after {
+  content: "";
+  display: block;
+  width: 50px; /* Length of the bar */
+  height: 4px; /* Thickness of the bar */
+  background-color: $mortar-purple; /* Bar color */
+  margin-top: 0.5em; /* Spacing between the title and the bar */
+}
+
       /* Styles for the h4 (strapline) inside the use case card */
       .use-case-card h4.strapline {
         font-size: 1.2em; /* Smaller than the title */
-        margin: 0; /* Space below the strapline */
+        margin: 0 0 1em;
         font-weight: 300; /* Lighter font weight */
         color: #555; /* Softer color than the title */
         font-family: "Basis Grotesque Pro", sans-serif; /* Adjust the font */

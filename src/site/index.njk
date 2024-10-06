@@ -79,14 +79,14 @@ name: homepage
       <!-- Use Case Cards -->
       <div class="use-cases-grid">
         {% for case in collections.useCases %}
-        <div class="use-case-card">
-          <div class="use-case-header">
-            <h3>{{ case.title }}</h3>
-            <h4 class="strapline">{{ case.strapline }}</h4>
-          </div>
-          <p class="usecasecardp">{{ case.description }}</p>
-          <a href="{{ case.link }}" class="learn-more-link">Learn More</a>
-        </div>
+       <div class="use-case-card">
+  <div class="use-case-header">
+    <h3>{{ case.title }}</h3>
+    <h4 class="strapline">{{ case.strapline }}</h4>
+  </div>
+  <p class="usecasecardp">{{ case.description }}</p>
+  <a href="{{ case.link }}" class="learn-more-link">Learn More</a>
+</div>
         {% endfor %}
       </div>
     </div>
