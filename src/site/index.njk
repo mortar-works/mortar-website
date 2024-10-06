@@ -80,8 +80,10 @@ name: homepage
       <div class="use-cases-grid">
         {% for case in collections.useCases %}
         <div class="use-case-card">
-          <h3>{{ case.title }}</h3>
-          <h4 class="strapline">{{ case.strapline }}</h4>
+          <div class="use-case-header">
+            <h3>{{ case.title }}</h3>
+            <h4 class="strapline">{{ case.strapline }}</h4>
+          </div>
           <p class="usecasecardp">{{ case.description }}</p>
           <a href="{{ case.link }}" class="learn-more-link">Learn More</a>
         </div>

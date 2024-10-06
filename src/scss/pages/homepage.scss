@@ -425,6 +425,23 @@
         margin-bottom: 30px;
       }
 
+      /* Wrapper for the title and strapline */
+.use-case-header {
+  position: relative; /* Required for the vertical bar */
+  padding-left: 20px; /* Space for the bar */
+}
+
+/* Vertical colored bar */
+.use-case-header::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 4px;
+  height: 100%; /* Makes sure the bar runs alongside both the title and strapline */
+  background-color: $mortar-purple; /* Adjust to your vertical bar color */
+}
+
       .use-case-card h3 {
         font-size: 1.5em; /* Adjust the size as needed */
         margin: 0 0 0.5em; /* Space below the title */
