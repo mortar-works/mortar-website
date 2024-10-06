@@ -390,36 +390,39 @@
         }
       }
 
-      .use-case-label {
-        position: absolute;
-        top: 15px; /* Adjust the position to place the label at the top-left */
-        left: 15px;
-        display: inline-block;
-        border: 1px solid black; /* Black border */
-        background-color: transparent; /* No background fill */
-        color: black; /* Black text */
-        padding: 0.15em 0.6em; /* Adjust padding for label size */
-        font-size: 0.8em; /* Smaller font size */
-        font-weight: 300; /* Light font weight */
-        border-radius: 15px; /* Rounded corners */
-        z-index: 1; /* Ensures it stays above other content */
-        text-transform: none; /* Keep normal text casing */
-        letter-spacing: 0.05em; /* Optional letter spacing */
-      }
+      /* Use Case Label */
+.use-case-label {
+  position: absolute;
+  top: 10px; /* Adjust the position to move label down slightly */
+  left: 10px; /* Adjust the position to move label right slightly */
+  display: inline-block;
+  border: 1px solid black; /* Black border */
+  background-color: transparent; /* No background fill */
+  color: black; /* Black text */
+  padding: 0.25em 0.8em; /* Slightly adjust padding for better size */
+  font-size: 0.8em; /* Smaller font size */
+  font-weight: 300; /* Light font weight */
+  border-radius: 15px; /* Rounded corners for pill shape */
+  z-index: 1; /* Ensures it stays above other content */
+  text-transform: none; /* Keep normal text casing */
+  letter-spacing: 0.05em; /* Optional letter spacing */
+}
 
-      .use-case-card {
-        position: relative;
-        background-color: white;
-        border-radius: 10px;
-        overflow: hidden;
-        padding: 2em;
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        text-align: left;
-        margin-bottom: 30px;
-      }
+/* Make sure to position the card container relative */
+.use-case-card {
+  position: relative; /* Important to ensure the label is positioned inside the card */
+  background-color: white;
+  border-radius: 10px;
+  overflow: hidden;
+  padding: 2em;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: left;
+  margin-bottom: 30px;
+}
+
 
       /* Wrapper for the title and strapline */
       .use-case-header {
