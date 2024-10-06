@@ -642,18 +642,19 @@
     /* Solution Label Column */
     .solution-label {
       flex-basis: 15%; /* Adjust the width of the label column */
-      text-align: left;
+      text-align: center;
       display: inline-block;
-      border: 1px solid black; /* Black border */
-      background-color: transparent; /* No background fill */
-      color: black; /* Black text */
+      border: 0px solid $mortar-orange; /* Black border */
+      background-color: $mortar-orange; /* No background fill */
+      color: white; /* Black text */
       padding: 0.5em 0.6em; /* Adjust padding for label size */
       font-size: 0.9em; /* Adjust font size */
       font-weight: 300; /* Light font weight */
       border-radius: 15px; /* Rounded corners */
       text-transform: none; /* Keep normal text casing */
       letter-spacing: 0.05em; /* Optional letter spacing */
-      margin-right: 2em; /* Space between label and content */
+      margin-right: 2em;
+      max-width: 140px; /* Space between label and content */
     }
   
     /* Solution Content - Align content to the top and left */
@@ -671,7 +672,7 @@
       font-weight: bold;
       color: #333;
       margin: 0;
-      flex: 1; /* Give it some flexibility */
+      flex: 2; /* Give it some flexibility */
     }
   
     /* Shorten the description column */
@@ -688,7 +689,8 @@
       color: $mortar-purple;
       text-decoration: none;
       transition: color 0.3s ease;
-      margin-top: auto; /* Pushes the link down */
+      margin: 0; /* Pushes the link down */
+      padding: 0;
       
       &::after {
         content: " →";
