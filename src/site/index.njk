@@ -69,31 +69,28 @@ name: homepage
     </div>
   </section>
 
-<section id="use-cases">
-  <div class="use-cases-wrapper">
-    <p class="usecasep">
-      Mortar brings together a <span class="mortar-orange">global suite of tools</span> to help solve
-      difficult and complex problems impacting society
-    </p>
-    
-    <!-- Use Case Cards -->
-    <div class="use-cases-grid">
-      {% for case in collections.useCases %}
-      <div class="use-case-card">
-        <!-- Add the "Use Case" label in the top-left corner of the card -->
-        <div class="use-case-label">Use Case</div> <!-- Label for each use case -->
-
-        <div class="use-case-header">
-          <h3>{{ case.title }}</h3>
-          <h4 class="strapline">{{ case.strapline }}</h4>
-        </div>
-        <p class="usecasecardp">{{ case.description }}</p>
-        <a href="{{ case.link }}" class="learn-more-link">Learn More</a>
-      </div>
-      {% endfor %}
-    </div>
+ <section id="use-cases">
+    <div class="use-cases-wrapper">
+      <p class="usecasep">
+        Mortar brings together a <span class="mortar-orange">global suite of tools</span> to help solve
+        difficult and complex problems impacting society.
+      </p>
+      
+      <!-- Use Case Cards -->
+      <div class="use-cases-grid">
+        {% for case in collections.useCases %}
+       <div class="use-case-card">
+  <div class="use-case-header">
+    <h3>{{ case.title }}</h3>
+    <h4 class="strapline">{{ case.strapline }}</h4>
   </div>
-</section>
+  <p class="usecasecardp">{{ case.description }}</p>
+  <a href="{{ case.link }}" class="learn-more-link">Learn More</a>
+</div>
+        {% endfor %}
+      </div>
+    </div>
+  </section>
 
 <section id="case-studies">
   <div class="case-studies-wrapper">
