@@ -1,8 +1,7 @@
 ---
 title: "Digital Help Finder for Salford City"
 description: "Tailored triage for assessing resident need, supporting a place-based approach to digital inclusion."
-results: "Building relationships with public health and the social prescribing team."
-link: "/case-study-hackney"
+read_more_link: "/case-study-url"
 image: "/static/images/case-studies/digitalhelpfinder.jpg"
 ---
 
