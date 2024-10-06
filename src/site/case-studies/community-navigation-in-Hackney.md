@@ -4,7 +4,7 @@ date: 2024-01-01
 strapline: "A brief strapline for the case study"
 description: "A short description of the case study that should appear in the card"
 case_study_sentence: "A one-liner or short sentence summarizing the case study"
-image: "/path/to/case-study-image.png"
+image: "/static/images/case-studies/balance_01.png"
 read_more_link: "/case-study-url"
 order: 1
 ---
