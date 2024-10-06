@@ -1,7 +1,6 @@
 ---
 title: "A Community Navigation Platform for Hackney"
-description: "Our tailored navigation solution, developed in collaboration with Hackney Council, addresses barriers faced by older residents in accessing cultural and creative health opportunities and services."
-case_study_sentence: "A one-liner or short sentence summarizing the case study"
+description: "Reducing barriers faced by older residents in accessing cultural, health and wellbeing opportunities."
 image: "/static/images/case-studies/hackneycircle01.jpg"
 read_more_link: "/case-study-url"
 order: 1

@@ -1,8 +1,8 @@
 ---
-title: "Community Navigation in Hackney"
-description: "Our tailored navigation solution, developed in collaboration with Hackney Council, addresses barriers faced by older residents in accessing cultural and creative health opportunities and services."
+title: "Dementia friendly venue accreditation for London"
+description: "A bespoke venue accreditation and training environment for Alzheimers UK and the Mayor of London"
 link: "/case-studies/dementia-friendly-venue-accredition-for-London"
-image: "/static/images/case-studies/hackney.png"
+image: "/static/images/case-studies/museumoflondon.jpeg"
 ---
 
 In response to the ‘postcode lottery’ of support on offer for people with dementia we worked with the GLA to design and deliver the Dementia Friendly Venues Charter, supporting hundreds of venues in becoming dementia friendly and ready to welcome those with dementia, their families and carers.
