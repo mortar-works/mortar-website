@@ -493,33 +493,8 @@
         grid-template-columns: repeat(4, 1fr);
       }
     }
-  
-    .case-study-label {
-      position: absolute;
-      top: 10px; /* Adjust the vertical position */
-      left: 10px; /* Adjust the horizontal position */
-      display: inline-block;
-      background-color: $mortar-purple; /* Mortar purple background */
-      color: white; /* White text */
-      padding: 0.2em 0.6em; /* Tighter padding for a compact look */
-      font-size: 0.8em; /* Slightly smaller text size */
-      border-radius: 15px; /* Rounded corners for pill shape */
-      font-weight: bold; /* Bold text */
-      text-transform: uppercase; /* Optional: Make text uppercase */
-      letter-spacing: 0.05em; /* Optional: Letter spacing */
-      z-index: 1; /* Ensure the label stays above the card content */
-    }
 
-    @media (max-width: 768px) {
-      .case-study-label {
-        font-size: 0.7em; /* Smaller font size on mobile */
-        padding: 0.15em 0.5em; /* Tighter padding on mobile */
-        top: 5px; /* Adjust position for mobile */
-        left: 5px; /* Adjust position for mobile */
-      }
-    }
-
-    .case-study-sentence {
+    .case-study-card {
       background-color: #fff; /* Background for the entire card */
       padding: 20px; /* Padding inside the card */
       border-radius: 6px; /* Rounded corners */
@@ -528,6 +503,23 @@
       flex-direction: column;
       justify-content: space-between;
       text-align: left;
+      position: relative;
+
+      .case-study-label {
+        position: absolute; /* Make the label position inside the case-study-card */
+        top: 10px;
+        left: 10px;
+        display: inline-block;
+        background-color: $mortar-purple; /* Use your Mortar purple */
+        color: white;
+        padding: 0.2em 0.6em; /* Tight padding for compact appearance */
+        font-size: 0.8em; /* Adjust text size */
+        border-radius: 15px; /* Rounded corners for the pill shape */
+        font-weight: bold;
+        text-transform: none;
+        letter-spacing: 0.05em; /* Optional: Spacing for readability */
+        z-index: 1; /* Ensures it appears above other content */
+      }
   
       h3 {
         font-size: 1.5em;
