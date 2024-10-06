@@ -641,15 +641,15 @@
   
     /* Solution Label Column */
     .solution-label {
-      flex-basis: 15%; /* Adjust the width of the label column */
+      flex-basis: 7%; /* Adjust the width of the label column */
       text-align: center;
       display: inline-block;
       border: 0px solid $mortar-orange; /* Black border */
       background-color: $mortar-orange; /* No background fill */
-      color: black; /* Black text */
+      color: white; /* Black text */
       padding: 0.3em 0.8em; /* More padding than case study label for a nicer appearance */
       font-size: 0.9em; /* Adjust font size */
-      font-weight: 300; /* Light font weight */
+      font-weight: 500; /* Light font weight */
       border-radius: 15px; /* Rounded corners */
       text-transform: none; /* Keep normal text casing */
       letter-spacing: 0.05em; /* Optional letter spacing */
@@ -674,6 +674,8 @@
       color: #333;
       margin: 0;
       flex: 2; /* Give it some flexibility */
+      padding-left: 1em;
+      line-height: 1.2em; 
     }
   
     /* Shorten the description column */
@@ -681,7 +683,7 @@
       font-size: 1.2em;
       color: #555;
       margin: 0;
-      flex: 1.5; /* Control width with flex to make it shorter */
+      flex: 2; /* Control width with flex to make it shorter */
       max-width: 400px; /* You can tweak this value to make it even narrower */
     }
   
