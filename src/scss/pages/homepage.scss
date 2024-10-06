@@ -413,11 +413,11 @@
       }
   
       .use-case-card {
-        background-color: #fff;
+        background-color: none;
         border-radius: 10px;
         overflow: hidden;
         padding: 15px 20px;
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        box-shadow: 0;
         display: flex;
         flex-direction: column;
         justify-content: space-between;
@@ -437,14 +437,14 @@
   position: absolute;
   top: 0;
   left: 0;
-  width: 4px;
+  width: 6px;
   height: 100%; /* Makes sure the bar runs alongside both the title and strapline */
   background-color: $mortar-purple; /* Adjust to your vertical bar color */
 }
 
       .use-case-card h3 {
         font-size: 1.5em; /* Adjust the size as needed */
-        margin: 0 0 0.5em; /* Space below the title */
+        margin: 0; /* Space below the title */
         font-weight: bold; /* Ensure it's bold */
         color: #333; /* Set the text color */
         font-family: "Basis Grotesque Pro Light", sans-serif; /* Adjust the font if needed */
@@ -453,7 +453,7 @@
       /* Styles for the h4 (strapline) inside the use case card */
       .use-case-card h4.strapline {
         font-size: 1.2em; /* Smaller than the title */
-        margin: 0 0 1em; /* Space below the strapline */
+        margin: 0; /* Space below the strapline */
         font-weight: 300; /* Lighter font weight */
         color: #555; /* Softer color than the title */
         font-family: "Basis Grotesque Pro", sans-serif; /* Adjust the font */
