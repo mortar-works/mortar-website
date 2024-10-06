@@ -1,10 +1,9 @@
 ---
-title: "Community Navigation in Hackney"
+title: "Tenancy sustainment tool for the Mayor of London"
 strapline: "Helping older residents access services."
-description: "Our tailored navigation solution, developed in collaboration with Hackney Council, addresses barriers faced by older residents in accessing critical services."
-results: "Building relationships with public health and the social prescribing team."
-link: "/case-study-hackney"
-image: "/static/images/case-studies/hackney.png"
+description: "Tailored case management platform delivering advice, triage and referral for those most at risk of losing their home."
+read_more_link: "/case-study-url"
+image: "/static/images/case-studies/tenancysustainment01.png"
 ---
 
 Working with the Mayor of London's Challenge London team we have developed the Tenancy Sustainment Tool, aimed at reducing the vulnerability of those at risk of losing their home. Evictions and homelessness continues to increase and inequalities around access to information and opportunities is growing for residents in both the public and private housing sector. 

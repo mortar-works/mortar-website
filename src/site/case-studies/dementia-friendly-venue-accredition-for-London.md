@@ -1,7 +1,7 @@
 ---
 title: "Dementia friendly venue accreditation for London"
 description: "A bespoke venue accreditation and training environment for Alzheimers UK and the Mayor of London"
-link: "/case-studies/dementia-friendly-venue-accredition-for-London"
+read_more_link: "/case-study-url"
 image: "/static/images/case-studies/museumoflondon.jpeg"
 ---
 

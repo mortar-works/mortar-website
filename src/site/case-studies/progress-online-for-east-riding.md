@@ -1,7 +1,7 @@
 ---
 title: "Progress Online for Humber and Yorkshire"
 description: "The skills and inclusion initiative for Humber and Yorkshire. A custom version of our Triage Tool, building a regional digital inclusion network."
-link: "/case-study-hackney"
+read_more_link: "/case-study-url"
 image: "/static/images/case-studies/progressonline01.jpg"
 ---
 
