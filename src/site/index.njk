@@ -94,7 +94,7 @@ name: homepage
 
 
 
-  <section id="case-studies">
+ <section id="case-studies">
   <div class="case-studies-wrapper">
     <h2>Our Case Studies</h2>
     <p class="case-study-p">
@@ -104,17 +104,15 @@ name: homepage
 
     <!-- Case Study Cards Grid -->
     <div class="case-studies-grid">
-      {% for caseStudy in collections.caseStudies %}
+      {% for caseStudy in caseStudies %}
       <div class="case-study-sentence">
         <h3>{{ caseStudy.title }}</h3>
         <h4 class="strapline">{{ caseStudy.strapline }}</h4>
         <p class="case-study-desc">{{ caseStudy.description }}</p>
         <img src="{{ caseStudy.image }}" alt="{{ caseStudy.title }} image" class="case-study-image" />
-        {{ caseStudy.case_study_sentence }}
         <a href="{{ caseStudy.read_more_link }}" class="read-more-link">Read More</a>
       </div>
       {% endfor %}
-      
     </div>
   </div>
 </section>
