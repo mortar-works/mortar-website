@@ -1,11 +1,10 @@
 ---
-title: Reducing school exclusions in Cheshire 
-pageImage: doww-bg01.png
-homepageImage: doww-01.png
-description: |-
-  The Directory of What Works supports teachers in assessing the needs of young people at risk of exclusion, creating better pathways into the most appropriate services. The directory is a customised version of our Triage Tool for Cheshire County Council and Social Finance. 
-  
-order: 6
+title: "Community Navigation in Hackney"
+strapline: "Helping older residents access services."
+description: "Our tailored navigation solution, developed in collaboration with Hackney Council, addresses barriers faced by older residents in accessing critical services."
+results: "Building relationships with public health and the social prescribing team."
+link: "/case-study-hackney"
+image: "/static/images/case-studies/hackney.png"
 ---
 
 The Directory of What Works is a tool for schools and local authorities to promote better pathways for young people into local area services. The tool combines the use of data with local knowledge and lived experience, and works towards standardising data-sharing practices to create better referral and signposting opportunities.

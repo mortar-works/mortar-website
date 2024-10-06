@@ -1,12 +1,10 @@
 ---
 title: "Your Case Study Title"
-date: 2024-01-01 
 strapline: "A brief strapline for the case study"
 description: "A short description of the case study that should appear in the card"
 case_study_sentence: "A one-liner or short sentence summarizing the case study"
 image: "/static/images/case-studies/balance_01.png"
 read_more_link: "/case-study-url"
-order: 1
 ---
 
 Our Community Navigation Platform enables Hackney Council's culture and public health team to work together to reach and connect with older residents, in particular those living alone. Residents are engaged with tailored community and cultural sector touchpoints, and consistent information in accessible formats; all monitored and powered by our Hoop'd platform to drive more effective early interventions.

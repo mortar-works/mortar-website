@@ -1,13 +1,12 @@
 ---
-title: Digital Help Finder for Salford City Council
-pageImage: bg-digitalinclusion-salford.jpg
-homepageImage: salford-01.png
-description: |-
-  Digital Help Finder is a tailored version of our Digital Inclusion Triage Tool. The tool delivers early intervention for Salford's residents and is supporting the city in adopting a more holistic, place-based approach to digital inclusion, redefining how their local services work together. 
-  
-order: 1
-
+title: "Community Navigation in Hackney"
+strapline: "Helping older residents access services."
+description: "Our tailored navigation solution, developed in collaboration with Hackney Council, addresses barriers faced by older residents in accessing critical services."
+results: "Building relationships with public health and the social prescribing team."
+link: "/case-study-hackney"
+image: "/static/images/case-studies/hackney.png"
 ---
+
 'Digital Help Finder' is a tailored version of our **Digital Inclusion Triage Tool** for Salford City Council. The tool enforces Salford's committment to creating a better and fairer Salford, helping residents become better off by focusing on early intervention to achieve the right outcomes for individuals, families and businesses. Digital inclusion is central to this strategic aim and makes 'Digital Help Finder' a core element in the delivery of their offer to Salford's citizens.  
 
 <section>

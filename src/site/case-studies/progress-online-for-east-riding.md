@@ -1,11 +1,10 @@
 ---
-title: Progress Online for Humber and Yorkshire
-pageImage: progonline-bg01.jpg
-homepageImage: prog-online01.png
-description: |-
-   Progress Online is the digital inclusion initiative for Humber and Yorkshire. Using a customised version of our Digital Inclusion Triage Tool we are building service provider networks, assessing the needs of residents and referring them to appropriate digital inclusion resources. 
- 
-order: 5
+title: "Community Navigation in Hackney"
+strapline: "Helping older residents access services."
+description: "Our tailored navigation solution, developed in collaboration with Hackney Council, addresses barriers faced by older residents in accessing critical services."
+results: "Building relationships with public health and the social prescribing team."
+link: "/case-study-hackney"
+image: "/static/images/case-studies/hackney.png"
 ---
 
 Progress Online is a tailored implementation of our Digital Inclusion Triage Tool for East Riding, developed in partnership with the Humber and Yorkshire Integrated Care Board. For East Riding the tool is establishing a new Digital Inclusion Network, working to engage residents in early interventions across a huge, rural, geographic area. 

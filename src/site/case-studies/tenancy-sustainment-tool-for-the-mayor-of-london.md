@@ -1,11 +1,10 @@
 ---
-title: Tenancy sustainment tool for the Mayor of London
-pageImage: tenancy-sust-bg01.png
-homepageImage: tensus01hp.png
-description: |-
-  The Tenancy Sustainment Tool delivers advice, triage and referral for those at risk of losing their home. The case management platform delivers more efficient referral pathways by assessing the needs of users, recommending appropriate information and advice, and prioritising cases.  
- 
-order: 3
+title: "Community Navigation in Hackney"
+strapline: "Helping older residents access services."
+description: "Our tailored navigation solution, developed in collaboration with Hackney Council, addresses barriers faced by older residents in accessing critical services."
+results: "Building relationships with public health and the social prescribing team."
+link: "/case-study-hackney"
+image: "/static/images/case-studies/hackney.png"
 ---
 
 Working with the Mayor of London's Challenge London team we have developed the Tenancy Sustainment Tool, aimed at reducing the vulnerability of those at risk of losing their home. Evictions and homelessness continues to increase and inequalities around access to information and opportunities is growing for residents in both the public and private housing sector. 

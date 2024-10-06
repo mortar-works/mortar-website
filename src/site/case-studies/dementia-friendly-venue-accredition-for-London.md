@@ -1,12 +1,12 @@
 ---
-title: Dementia friendly venue accreditation for London
-pageImage: dfvc-bg-20.png
-homepageImage: dfvc-dashboard02.png
-description: |-
-  Our framework Hoop'd delivers bespoke, accessible accreditation and training environments. This platform for Alzheimers UK and the Greater London Authority makes the process of learning, training and becoming dementia friendly available to all venues across London.  
- 
-order: 4
+title: "Community Navigation in Hackney"
+strapline: "Helping older residents access services."
+description: "Our tailored navigation solution, developed in collaboration with Hackney Council, addresses barriers faced by older residents in accessing critical services."
+results: "Building relationships with public health and the social prescribing team."
+link: "/case-study-hackney"
+image: "/static/images/case-studies/hackney.png"
 ---
+
 In response to the ‘postcode lottery’ of support on offer for people with dementia we worked with the GLA to design and deliver the Dementia Friendly Venues Charter, supporting hundreds of venues in becoming dementia friendly and ready to welcome those with dementia, their families and carers.
 
 <section>
