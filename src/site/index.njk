@@ -125,15 +125,16 @@ name: homepage
         
         <!-- Solution Content in Columns -->
         <div class="solution-content">
-          <h3>{{ solution.title }}</h3> <!-- Solution Name -->
-          <p class="solution-desc">{{ solution.description }}</p> <!-- Solution Description -->
-          <a href="{{ solution.link }}" class="find-out-more-link">Find Out More</a> <!-- Learn More Link -->
+          <h3>{{ solution.data.title }}</h3> <!-- Solution Name -->
+          <p class="solution-desc">{{ solution.data.description }}</p> <!-- Solution Description -->
+          <a href="{{ solution.url }}" class="find-out-more-link">Find Out More</a> <!-- Learn More Link -->
         </div>
       </div>
       {% endfor %}
     </div>
   </div>
 </section>
+
 
 
   
