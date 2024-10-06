@@ -1,5 +1,5 @@
 ---
-title: "Progress Online for Humber and Yorkshire"
+title: "Reaching digitally excluded residents in East Riding"
 description: "A custom version of our Triage Tool, building regional digital inclusion networks and skills campaigns."
 read_more_link: "/case-study-url"
 image: "/static/images/case-studies/progressonline02.png"

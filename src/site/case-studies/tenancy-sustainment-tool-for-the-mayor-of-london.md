@@ -1,5 +1,5 @@
 ---
-title: "Tenancy sustainment tool for the Mayor of London"
+title: "Supporting tenants for the Mayor of London"
 strapline: "Helping older residents access services."
 description: "Tailored case management platform delivering advice, triage and referral for those most at risk of losing their home."
 read_more_link: "/case-study-url"
