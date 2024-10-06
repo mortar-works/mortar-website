@@ -490,11 +490,23 @@
       }
   
       @media (min-width: 1024px) {
-        grid-template-columns: repeat(3, 1fr);
+        grid-template-columns: repeat(4, 1fr);
       }
     }
   
-    /* Case Study Main Structure (was inner card before) */
+    .case-study-label {
+      display: inline-block;
+      background-color: $mortar-purple; /* Mortar purple background */
+      color: white; /* White text */
+      padding: 0.3em 0.8em; /* Padding to create the pill shape */
+      font-size: 0.9em; /* Adjust font size */
+      border-radius: 20px; /* Full-rounded corners for pill shape */
+      font-weight: bold; /* Bold text */
+      text-transform: uppercase; /* Optional: Make text uppercase */
+      margin-bottom: 1em; /* Add space below the label */
+      letter-spacing: 0.05em; /* Optional: Slight letter spacing for readability */
+    }
+    
     .case-study-sentence {
       background-color: #fff; /* Background for the entire card */
       padding: 20px; /* Padding inside the card */
