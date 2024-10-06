@@ -51,6 +51,11 @@ module.exports = function(eleventyConfig) {
       .reverse();  // Reverse the order so newest case studies appear first
   });
 
+  // Create a collection for solutions from the markdown files
+  eleventyConfig.addCollection("solutions", function(collectionApi) {
+    return collectionApi.getFilteredByGlob("src/site/solutions/*.md");
+  });
+
   // Watch targets for development (live reload)
   eleventyConfig.setUseGitIgnore(false);
   eleventyConfig.addWatchTarget('src/site/static/js');
