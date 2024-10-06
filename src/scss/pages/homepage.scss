@@ -495,18 +495,30 @@
     }
   
     .case-study-label {
+      position: absolute;
+      top: 10px; /* Adjust the vertical position */
+      left: 10px; /* Adjust the horizontal position */
       display: inline-block;
       background-color: $mortar-purple; /* Mortar purple background */
       color: white; /* White text */
-      padding: 0.3em 0.8em; /* Padding to create the pill shape */
-      font-size: 0.9em; /* Adjust font size */
-      border-radius: 20px; /* Full-rounded corners for pill shape */
+      padding: 0.2em 0.6em; /* Tighter padding for a compact look */
+      font-size: 0.8em; /* Slightly smaller text size */
+      border-radius: 15px; /* Rounded corners for pill shape */
       font-weight: bold; /* Bold text */
       text-transform: uppercase; /* Optional: Make text uppercase */
-      margin-bottom: 1em; /* Add space below the label */
-      letter-spacing: 0.05em; /* Optional: Slight letter spacing for readability */
+      letter-spacing: 0.05em; /* Optional: Letter spacing */
+      z-index: 1; /* Ensure the label stays above the card content */
     }
-    
+
+    @media (max-width: 768px) {
+      .case-study-label {
+        font-size: 0.7em; /* Smaller font size on mobile */
+        padding: 0.15em 0.5em; /* Tighter padding on mobile */
+        top: 5px; /* Adjust position for mobile */
+        left: 5px; /* Adjust position for mobile */
+      }
+    }
+
     .case-study-sentence {
       background-color: #fff; /* Background for the entire card */
       padding: 20px; /* Padding inside the card */
