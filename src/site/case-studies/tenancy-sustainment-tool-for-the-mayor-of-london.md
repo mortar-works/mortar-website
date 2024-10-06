@@ -3,6 +3,7 @@ title: "Supporting tenants for the Mayor of London"
 strapline: "Helping older residents access services."
 description: "Tailored case management platform delivering advice, triage and referral for those most at risk of losing their home."
 read_more_link: "/case-study-url"
+draft: true
 image: "/static/images/case-studies/tenancysustainment01.png"
 ---
 
