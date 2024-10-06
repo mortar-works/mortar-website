@@ -107,7 +107,6 @@ name: homepage
       {% for caseStudy in collections.caseStudies %}
   <div class="case-study-sentence">
     <h3>{{ caseStudy.data.title }}</h3>
-    <h4 class="strapline">{{ caseStudy.data.strapline }}</h4>
     <p class="case-study-desc">{{ caseStudy.data.description }}</p>
     <img src="{{ caseStudy.data.image }}" alt="{{ caseStudy.data.title }} image" class="case-study-image" />
     <p>{{ caseStudy.data.results }}</p>

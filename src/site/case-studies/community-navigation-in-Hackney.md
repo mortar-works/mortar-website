@@ -1,11 +1,18 @@
 ---
-title: "Your Case Study Title"
-strapline: "A brief strapline for the case study"
-description: "A short description of the case study that should appear in the card"
+title: "A Community Navigation Platform for Hackney"
+description: "Our tailored navigation solution, developed in collaboration with Hackney Council, addresses barriers faced by older residents in accessing cultural and creative health opportunities and services."
 case_study_sentence: "A one-liner or short sentence summarizing the case study"
-image: "/static/images/case-studies/balance_01.png"
+image: "/static/images/case-studies/hackneycircle01.jpg"
 read_more_link: "/case-study-url"
+order: 1
 ---
+
+---
+title: A Community Navigation Platform for Hackney
+pageImage: hc-01bg.png
+homepageImage: hc-01.png
+description: |-
+  Our platform Hoop'd is delivering a custom social prescribing service in Hackney. Hackney Circle combats health inequality through creative health and wellbeing interventions, reaching isolated older residents with participation opportunities. 
 
 Our Community Navigation Platform enables Hackney Council's culture and public health team to work together to reach and connect with older residents, in particular those living alone. Residents are engaged with tailored community and cultural sector touchpoints, and consistent information in accessible formats; all monitored and powered by our Hoop'd platform to drive more effective early interventions.
 

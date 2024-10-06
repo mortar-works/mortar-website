@@ -1,8 +1,6 @@
 ---
 title: "Community Navigation in Hackney"
-strapline: "Helping older residents access services."
-description: "Our tailored navigation solution, developed in collaboration with Hackney Council, addresses barriers faced by older residents in accessing critical services."
-results: "Building relationships with public health and the social prescribing team."
+description: "Our tailored navigation solution, developed in collaboration with Hackney Council, addresses barriers faced by older residents in accessing cultural and creative health opportunities and services."
 link: "/case-studies/dementia-friendly-venue-accredition-for-London"
 image: "/static/images/case-studies/hackney.png"
 ---
