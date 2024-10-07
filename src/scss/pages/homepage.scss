@@ -604,120 +604,142 @@
     border-bottom: 6px solid #2b1c5a;
     
     .solutions-wrapper {
-      max-width: 1200px;
-      margin: 0 auto;
-      padding: 0 1.5em;
-  
-      h2 {
-        font-size: 2.2em;
-        text-align: center;
-        margin: 0 0 1em;
-        font-weight: 800;
-        color: black;
-        font-family: "Basis Grotesque Pro Light", sans-serif;
-        position: relative;
-      }
-  
-      .solutions-description {
-        text-align: center;
-        font-size: 1.3em;
-        max-width: 60%;
-        margin: 0 auto 2em;
-        color: black;
-        line-height: 1.4em;
-      }
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 0 1.5em;
+
+        h2 {
+            font-size: 2.2em;
+            text-align: center;
+            margin: 0 0 1em;
+            font-weight: 800;
+            color: black;
+            font-family: "Basis Grotesque Pro Light", sans-serif;
+            position: relative;
+        }
+
+        .solutions-description {
+            text-align: center;
+            font-size: 1.3em;
+            max-width: 60%;
+            margin: 0 auto 2em;
+            color: black;
+            line-height: 1.4em;
+        }
     }
-  
+
     .solutions-grid {
-      display: flex;
-      flex-direction: column;
-      gap: 2em; /* Space between each solution card */
-      margin: 4em 0;
+        display: flex;
+        flex-direction: column;
+        gap: 2em; /* Space between each solution card */
+        margin: 4em 0;
     }
-  
+
     .solution-card {
-      display: flex;
-      align-items: flex-start; /* Align content to the top */
-      justify-content: flex-start; /* Align content to the left */
-      padding: 2em;
-      background-color: #fff;
-      border-radius: 8px;
-      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Slight shadow for depth */
-      text-align: left;
-      position: relative;
+        display: flex;
+        align-items: flex-start; /* Align content to the top */
+        justify-content: flex-start; /* Align content to the left */
+        padding: 2em;
+        background-color: #fff;
+        border-radius: 8px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Slight shadow for depth */
+        text-align: left;
+        position: relative;
     }
-  
+
     /* Solution Label Column */
     .solution-label {
-      flex-basis: 7%; /* Adjust the width of the label column */
-      text-align: center;
-      display: inline-block;
-      border: 0px solid $mortar-orange; /* Black border */
-      background-color: $mortar-orange; /* No background fill */
-      color: white; /* Black text */
-      padding: 0.3em 0.8em; /* More padding than case study label for a nicer appearance */
-      font-size: 0.9em; /* Adjust font size */
-      font-weight: 500; /* Light font weight */
-      border-radius: 15px; /* Rounded corners */
-      text-transform: none; /* Keep normal text casing */
-      letter-spacing: 0.05em; /* Optional letter spacing */
-      margin-right: 2em; /* Space between label and content */
-      width: auto; /* Let the width be determined by content */
-      white-space: nowrap; /* Prevent label text from wrapping */
+        flex-basis: 7%; /* Adjust the width of the label column */
+        text-align: center;
+        display: inline-block;
+        background-color: $mortar-orange;
+        color: white;
+        padding: 0.3em 0.8em; /* Padding for the label */
+        font-size: 0.9em;
+        font-weight: 500;
+        border-radius: 15px;
+        letter-spacing: 0.05em;
+        margin-right: 2em; /* Space between label and content */
+        white-space: nowrap; /* Prevent label text from wrapping */
     }
-  
+
     /* Solution Content - Align content to the top and left */
     .solution-content {
-      display: flex;
-      justify-content: flex-start;
-      align-items: flex-start; /* Ensure content aligns to the top */
-      gap: 2em; /* Space between columns */
-      flex-wrap: wrap;
-      flex-grow: 1; /* Allow content to take up remaining space */
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-start; /* Aligns content to the top */
+        gap: 2em; /* Space between columns */
+        flex-grow: 1;
+        flex-wrap: wrap;
     }
-  
+
     .solution-content h3 {
-      font-size: 1.6em;
-      font-weight: bold;
-      color: #333;
-      margin: 0;
-      flex: 2; /* Give it some flexibility */
-      padding-left: 1em;
-      line-height: 1.2em; 
+        font-size: 1.6em;
+        font-weight: bold;
+        color: #333;
+        margin: 0;
+        flex: 2;
+        padding-left: 1em;
+        line-height: 1.2em;
     }
-  
-    /* Shorten the description column */
+
     .solution-desc {
-      font-size: 1.2em;
-      color: #555;
-      margin: 0;
-      flex: 2; /* Control width with flex to make it shorter */
-      max-width: 400px; /* You can tweak this value to make it even narrower */
+        font-size: 1.2em;
+        color: #555;
+        margin: 0;
+        flex: 2;
+        max-width: 400px;
     }
-  
+
     .find-out-more-link {
-      font-size: 1.1em;
-      color: $mortar-purple;
-      text-decoration: none;
-      transition: color 0.3s ease;
-      margin: 0; /* Pushes the link down */
-      padding: 0;
-      
-      &::after {
-        content: " →";
-        transition: margin-left 0.3s ease;
-      }
-  
-      &:hover {
-        color: $mortar-orange;
-      }
-  
-      &:hover::after {
-        margin-left: 5px;
-      }
+        font-size: 1.1em;
+        color: $mortar-purple;
+        text-decoration: none;
+        transition: color 0.3s ease;
+        margin: 0;
+        padding: 0;
+
+        &::after {
+            content: " →";
+            transition: margin-left 0.3s ease;
+        }
+
+        &:hover {
+            color: $mortar-orange;
+        }
+
+        &:hover::after {
+            margin-left: 5px;
+        }
     }
-  }
-  
+
+    /* Media Query for Mobile Devices */
+    @media (max-width: 768px) {
+        .solutions-grid {
+            flex-direction: column; /* Stack solution cards vertically */
+        }
+
+        .solution-card {
+            flex-direction: column; /* Stack content inside solution card vertically */
+            align-items: center; /* Center the content horizontally */
+            text-align: center; /* Center the text inside the card */
+
+            .solution-label {
+                margin-bottom: 1em; /* Add spacing below the label */
+            }
+
+            .solution-content {
+                align-items: center; /* Center the content */
+                text-align: center; /* Center the text */
+            }
+
+            .solution-desc {
+                max-width: 100%; /* Allow description to take full width */
+            }
+        }
+    }
+}
+
 
 
   #insights {
