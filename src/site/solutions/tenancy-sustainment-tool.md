@@ -1,6 +1,6 @@
 ---
 title: "Tenancy sustainment tool"
-description: "A modular framework for creating scalable and tailored service design solutions."
+description: "Case management and advice sharing platform for tenants at risk of losing their home."
 link: "/tenancy-sustainment-tool"
 ---
 

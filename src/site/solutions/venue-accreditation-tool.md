@@ -1,6 +1,6 @@
 ---
 title: "Venue accreditation tool"
-description: "A modular framework for creating scalable and tailored service design solutions."
+description: "Provide training and resources for your venue and staff to become accredited in accessibility and service standards."
 link: "/venue-accreditation-tool"
 ---
 
