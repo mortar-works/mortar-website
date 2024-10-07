@@ -725,12 +725,12 @@
   
     .insights-tagline {
       font-size: 1.3em;
-      color: black; /* Adjust as per your design */
+      color:black;
       line-height: 1.4;
       margin-bottom: 1.5em;
       text-align: left;
       max-width: 60%;
-      margin: 0 auto;
+      margin: 0;
     }
   
     ul {
@@ -775,15 +775,20 @@
       color: $mortar-purple;
     }
   
-    time {
-      display: block;
-      margin: 0.5em 0;
-      color: $mortar-purple;
-    }
-  
     .insight-title {
       font-size: 1.3em;
-      font-weight: bold;
+      font-weight: 400; 
+      color: black;
+    }
+  
+    /* New Description Styling */
+    .insight-description {
+      font-size: 1em;
+      line-height: 1.2em;
+      margin-bottom: 1em;
+      color: #000;
+      font-family: Basis Grotesque, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, sans-serif;
+      font-weight: 400;
     }
   
     .insight-details {
@@ -845,6 +850,7 @@
       }
     }
   }
+  
   
 
   #contact {

@@ -90,7 +90,7 @@ name: homepage
 </section>
 
 
-  <section id="insights">
+<section id="insights">
   <div class="wrapper">
     <div class="section-head">
       <h2>Insights</h2>
@@ -110,8 +110,8 @@ name: homepage
             <div class="hover-overlay"></div>
           </div>
           <div class="insight-details">
-            <time datetime="{{ post.data.date | w3date }}">{{ post.data.date | date }}</time>
-            {{ post.data.title }}
+            <h3>{{ post.data.title }}</h3>
+            <p class="insight-description">{{ post.data.description }}</p> <!-- New description field -->
           </div>
         </a>
       </li>
@@ -124,6 +124,7 @@ name: homepage
     </div>
   </div>
 </section>
+
 
 
 <section id="contact">
