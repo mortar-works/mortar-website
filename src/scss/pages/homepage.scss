@@ -180,22 +180,22 @@
         grid-template-columns: repeat(4, 1fr);
         grid-gap: 3em 2em;
         justify-content: start;
-
+    
         @media (max-width: 768px) {
           grid-template-columns: repeat(1, 1fr);
           padding-left: 1em;
           padding-right: 1em;
           grid-gap: 1.5em;
         }
-
+    
         @media (min-width: 769px) and (max-width: 1024px) {
           grid-template-columns: repeat(2, 1fr);
           padding-left: 1em;
           padding-right: 1em;
           grid-gap: 1.5em;
         }
-      }
-
+      }  // <--- This curly bracket was missing, closing the 'ul' block
+    
       li {
         background: none;
         padding: 1.5em;
@@ -203,7 +203,7 @@
         display: flex;
         flex-direction: column;
         justify-content: space-between;
-
+    
         h3 {
           font-size: 1.5em;
           margin: 0 0 1em;
@@ -213,15 +213,15 @@
           white-space: normal;
           word-break: keep-all;
           width: 100%;
-
+    
           @media (min-width: 769px) and (max-width: 1024px) {
             width: 80%;
           }
-
+    
           @media (max-width: 768px) {
             width: 80%;
           }
-
+    
           &::before {
             content: '';
             position: absolute;
@@ -232,12 +232,12 @@
             background-color: $mortar-orange;
           }
         }
-
+    
         p {
           margin: 0 0 1em;
           font-size: 1em;
         }
-
+    
         .learn-more {
           margin-top: auto;
           color: $mortar-purple;
@@ -245,19 +245,18 @@
           font-weight: normal;
           font-size: 1.2em;
           transition: color 0.3s ease;
-
+    
           &::after {
             content: " →";
             font-size: 1.4em;
           }
-
+    
           &:hover {
             color: darken($mortar-orange, 10%);
           }
         }
       }
     }
-  }
 
   #partners {
     padding: 2em 0;
