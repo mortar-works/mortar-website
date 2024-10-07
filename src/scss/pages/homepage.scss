@@ -599,125 +599,124 @@
   }
 
   #solutions {
-    padding: 4em 0;
-    background-color: #f9f9f9;
+    padding: 4em 0em 8em 0em; /* Space around the section */
+    background-color: #f9f9f9; /* Light background color */
     border-bottom: 6px solid #2b1c5a;
-
+    
     .solutions-wrapper {
-        max-width: 1200px;
-        margin: 0 auto;
-        padding: 0 1.5em;
-
-        h2 {
-            font-size: 2.2em;
-            text-align: center;
-            margin-bottom: 1em;
-            font-weight: 800;
-            color: black;
-        }
-
-        .solutions-description {
-            text-align: center;
-            font-size: 1.3em;
-            max-width: 60%;
-            margin: 0 auto 2em;
-            color: black;
-            line-height: 1.4em;
-        }
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 1.5em;
+  
+      h2 {
+        font-size: 2.2em;
+        text-align: center;
+        margin: 0 0 1em;
+        font-weight: 800;
+        color: black;
+        font-family: "Basis Grotesque Pro Light", sans-serif;
+        position: relative;
+      }
+  
+      .solutions-description {
+        text-align: center;
+        font-size: 1.3em;
+        max-width: 60%;
+        margin: 0 auto 2em;
+        color: black;
+        line-height: 1.4em;
+      }
     }
-
+  
     .solutions-grid {
-        display: flex;
-        flex-direction: column; /* Stack solutions vertically */
-        gap: 2em;
-        margin: 4em 0;
+      display: flex;
+      flex-direction: column;
+      gap: 2em; /* Space between each solution card */
+      margin: 4em 0;
     }
-
+  
     .solution-card {
-        display: flex;
-        flex-direction: row; /* Align items in a row */
-        align-items: center;
-        padding: 2em;
-        background-color: #fff;
-        border-radius: 8px;
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-        width: 100%;
-        text-align: left;
-
-        /* Solution Label */
-        .solution-label {
-            flex: 0 0 100px; /* Fixed width for the label */
-            background-color: $mortar-orange;
-            color: white;
-            padding: 0.3em 0.8em;
-            font-size: 0.85em; /* Slightly smaller font */
-            font-weight: 500;
-            border-radius: 15px;
-            text-align: center;
-            margin-right: 1.5em;
-            white-space: nowrap;
-        }
-
-        /* Solution Content */
-        .solution-content {
-            display: flex;
-            flex-direction: column;
-            flex-grow: 1; /* Take up remaining space */
-        }
-
-        h3 {
-            font-size: 1.6em;
-            font-weight: bold;
-            color: #333;
-            margin: 0 0 0.5em;
-        }
-
-        .solution-desc {
-            font-size: 1.2em;
-            color: #555;
-            margin-bottom: 1em;
-            line-height: 1.4em;
-        }
-
-        .find-out-more-link {
-            margin-left: auto; /* Push button to the far right */
-            font-size: 1.1em;
-            color: $mortar-purple;
-            text-decoration: none;
-            padding: 0.5em 1em;
-            background-color: #eee;
-            border-radius: 5px;
-            transition: background-color 0.3s ease;
-
-            &:hover {
-                background-color: $mortar-orange;
-                color: white;
-            }
-        }
+      display: flex;
+      align-items: flex-start; /* Align content to the top */
+      justify-content: flex-start; /* Align content to the left */
+      padding: 2em;
+      background-color: #fff;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Slight shadow for depth */
+      text-align: left;
+      position: relative;
     }
-
-    /* Mobile Layout */
-    @media (max-width: 768px) {
-        .solution-card {
-            flex-direction: column; /* Stack items vertically */
-            align-items: flex-start;
-            text-align: center;
-        }
-
-        .solution-label {
-            margin-bottom: 0.8em; /* Reduce space below label */
-        }
-
-        .solution-content {
-            align-items: flex-start;
-        }
-
-        .find-out-more-link {
-            margin-top: 0.8em;
-            margin-left: 0;
-        }
+  
+    /* Solution Label Column */
+    .solution-label {
+      flex-basis: 7%; /* Adjust the width of the label column */
+      text-align: center;
+      display: inline-block;
+      border: 0px solid $mortar-orange; /* Black border */
+      background-color: $mortar-orange; /* No background fill */
+      color: white; /* Black text */
+      padding: 0.3em 0.8em; /* More padding than case study label for a nicer appearance */
+      font-size: 0.9em; /* Adjust font size */
+      font-weight: 500; /* Light font weight */
+      border-radius: 15px; /* Rounded corners */
+      text-transform: none; /* Keep normal text casing */
+      letter-spacing: 0.05em; /* Optional letter spacing */
+      margin-right: 2em; /* Space between label and content */
+      width: auto; /* Let the width be determined by content */
+      white-space: nowrap; /* Prevent label text from wrapping */
     }
-}
+  
+    /* Solution Content - Align content to the top and left */
+    .solution-content {
+      display: flex;
+      justify-content: flex-start;
+      align-items: flex-start; /* Ensure content aligns to the top */
+      gap: 2em; /* Space between columns */
+      flex-wrap: wrap;
+      flex-grow: 1; /* Allow content to take up remaining space */
+    }
+  
+    .solution-content h3 {
+      font-size: 1.6em;
+      font-weight: bold;
+      color: #333;
+      margin: 0;
+      flex: 2; /* Give it some flexibility */
+      padding-left: 1em;
+      line-height: 1.2em; 
+    }
+  
+    /* Shorten the description column */
+    .solution-desc {
+      font-size: 1.2em;
+      color: #555;
+      margin: 0;
+      flex: 2; /* Control width with flex to make it shorter */
+      max-width: 400px; /* You can tweak this value to make it even narrower */
+    }
+  
+    .find-out-more-link {
+      font-size: 1.1em;
+      color: $mortar-purple;
+      text-decoration: none;
+      transition: color 0.3s ease;
+      margin: 0; /* Pushes the link down */
+      padding: 0;
+      
+      &::after {
+        content: " →";
+        transition: margin-left 0.3s ease;
+      }
+  
+      &:hover {
+        color: $mortar-orange;
+      }
+  
+      &:hover::after {
+        margin-left: 5px;
+      }
+    }
+  }
 
 
 
