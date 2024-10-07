@@ -24,7 +24,6 @@ name: homepage
 
   <section id="partners">
     <div class="partners-wrapper">
-      <h2 class="partners-heading">Reaching 1000s of users and businesses</h2>
       <div class="partners-ticker">
         <ul class="partners-list">
           <li><img src="{{ '/static/images/partners/lga_logo.png' | url }}" alt="Local Government Association logo" /></li>
@@ -46,11 +45,14 @@ name: homepage
 
 <section id="case-studies">
   <div class="case-studies-wrapper">
+  <h2>Case studies</h2>
+    <p class="solutions-description">
+      We bring together a <span class="mortar-orange">global suite of tools</span> that solve problems impacting services and communities.
+    </p>
     <div class="case-studies-grid">
       {% for caseStudy in collections.caseStudies %}
       <a href="{{ caseStudy.url }}" class="case-study-link"> <!-- Make the entire card clickable -->
         <div class="case-study-card">
-          <div class="case-study-label">Case Study</div> <!-- Label is inside the card wrapper -->
           <h3>{{ caseStudy.data.title }}</h3>
           <p class="case-study-desc">{{ caseStudy.data.description }}</p>
           <img src="{{ caseStudy.data.image }}" alt="{{ caseStudy.data.title }} image" class="case-study-image" />
