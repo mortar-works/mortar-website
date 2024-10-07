@@ -629,6 +629,7 @@
       display: flex;
       flex-direction: column;
       gap: 2em; /* Space between each solution card */
+      margin: 4em 0;
     }
   
     .solution-card {
@@ -866,10 +867,10 @@
 
       p {
         font-size: 1.3em;
-        margin-bottom: 1.5em;
-        line-height: 1.4em;
+        max-width: 70%;
+        margin: 0 auto 2em;
         color: black;
-        font-family: "Basis Grotesque Pro Light", sans-serif;
+        line-height: 1.4em;
       }
 
       .contact-columns {
