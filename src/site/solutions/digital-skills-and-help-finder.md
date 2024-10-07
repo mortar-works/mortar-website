@@ -1,6 +1,6 @@
 ---
 title: "Digital skills and help finder"
-description: "A modular framework for creating scalable and tailored service design solutions."
+description: "Provide every user and partner with dynamic self assessments; to discover the need, availability and progress of skills."
 link: "/digital-skills-and-help-finder"
 ---
 

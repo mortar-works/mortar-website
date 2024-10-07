@@ -1,6 +1,6 @@
 ---
 title: "Community navigator"
-description: "A modular framework for creating scalable and tailored service design solutions."
+description: "Build and manage your local network to deliver accurate, up-to-date information, opportunities and events."
 link: "/community-navigator"
 ---
 

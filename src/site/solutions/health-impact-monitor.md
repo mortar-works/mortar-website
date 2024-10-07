@@ -1,6 +1,6 @@
 ---
 title: "Health impact monitor"
-description: "A modular framework for creating scalable and tailored service design solutions."
+description: "Deliver personal health plans whilst capturing and monitoring service, property and place based impact."
 link: "/health-impact-monitor"
 ---
 
