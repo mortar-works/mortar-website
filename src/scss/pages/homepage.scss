@@ -123,8 +123,9 @@
     }
 
     h2 {
-      @include bold-type;
+      @include light-type;
       font-size: 2.3em;
+      font-weight: 800;
     }
 
     .section-head {
@@ -527,7 +528,7 @@
       background-color: #fff;
       padding: 20px;
       border-radius: 6px;
-      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
       display: flex;
       flex-direction: column;
       justify-content: space-between;
@@ -616,11 +617,11 @@
   
       .solutions-description {
         text-align: center;
-        font-size: 1.4em;
-        max-width: 800px;
+        font-size: 1.3em;
+        max-width: 70%;
         margin: 0 auto 2em;
-        color: #555;
-        line-height: 1.5em;
+        color: black;
+        line-height: 1.4em;
       }
     }
   

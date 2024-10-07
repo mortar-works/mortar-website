@@ -67,7 +67,7 @@ name: homepage
   <div class="solutions-wrapper">
     <h2>Our Solutions</h2>
     <p class="solutions-description">
-      We combine our most successful work into scalable solutions, using our technology keep them personalised and tailored to the needs of your users.
+      We combine our most successful work into scalable solutions, making them personalised and tailored to the needs of your users.
     </p>
 
     <!-- Solutions Grid (Horizontal Layout) -->
@@ -104,7 +104,7 @@ name: homepage
 
       <ul id="insight-list">
         {% for post in collections.insights %}
-        <li class="{% if loop.index > 9 %}hidden{% endif %}">
+        <li class="{% if loop.index > 3 %}hidden{% endif %}">
           <a class="insight-title" href="{{ post.url }}" aria-label="Insight: {{ post.data.title }}">
             <div class="insight-image" style="background-image: url('{{ '/static/images/insights/' + post.data.image | url }}')">
               <div class="hover-overlay"></div>
@@ -131,21 +131,11 @@ name: homepage
     <div class="contact-info">
       <h2>Get in Touch</h2>
       <p>Interested in learning more about one of our products or tools, need technical support, or want to discuss a project? Fill out our form and we will be in touch with you soon.</p>
-
-      <!-- Single Column: Email and Phone -->
-      <div class="contact-columns">
-        <div class="contact-column">
           <div class="contact-item">
             <strong>Email:</strong>
             <span>office@mortar.works</span>
           </div>
-          <div class="contact-item">
-            <strong>Phone:</strong>
-            <span>020 8374 2322</span>
-          </div>
-        </div>
       </div>
-    </div>
 
     <!-- Right Column: Contact Form in a Card -->
     <div class="contact-form-card">
