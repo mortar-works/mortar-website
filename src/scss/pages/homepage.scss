@@ -776,8 +776,8 @@
     }
   
     .insight-title {
-      font-size: 1.5em;  /* Increased font-size for better distinction */
-      font-weight: 700;  /* Set font-weight to bold */
+      font-size: 1.3em;  /* Increased font-size for better distinction */
+      font-weight: 400;  /* Set font-weight to bold */
       color: black;
       margin-bottom: 0.5em; /* Added margin for spacing */
       font-family: 'Basis Grotesque', -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, sans-serif;
@@ -785,10 +785,10 @@
   
     /* Description Styling */
     .insight-description {
-      font-size: 1.1em;  /* Increased font size for readability */
-      line-height: 1.5em;  /* Adjusted line-height for better spacing */
+      font-size: 0.8em;  /* Increased font size for readability */
+      line-height: 1.3em;  /* Adjusted line-height for better spacing */
       margin-bottom: 1em;
-      color: #333;  /* Slightly darker color for readability */
+      color: black;  /* Slightly darker color for readability */
       font-family: 'Basis Grotesque', -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, sans-serif;
       font-weight: 400;
     }
