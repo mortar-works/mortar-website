@@ -47,7 +47,7 @@ name: homepage
   <div class="case-studies-wrapper">
   <h2>Case studies</h2>
     <p class="case-study-p">
-      We bring together a <span class="mortar-orange">global suite of tools</span> that solve problems impacting services and communities.
+      We bring together a global suite of tools that solve problems impacting services and communities.
     </p>
     <div class="case-studies-grid">
       {% for caseStudy in collections.caseStudies %}
@@ -67,7 +67,7 @@ name: homepage
   <div class="solutions-wrapper">
     <h2>Our Solutions</h2>
     <p class="solutions-description">
-      We combine our most successful work into scalable solutions, using our technology to reduce barriers to adoption whilst keeping solutions personalised and tailored for your users.
+      We combine our most successful work into scalable solutions, using our technology keep them personalised and tailored to the needs of your users.
     </p>
 
     <!-- Solutions Grid (Horizontal Layout) -->
@@ -127,51 +127,62 @@ name: homepage
 
 <section id="contact">
   <div class="wrapper contact-wrapper">
-    <!-- Center Column: Contact Info and Form -->
+    <!-- Left Column: Contact Info -->
     <div class="contact-info">
       <h2>Get in Touch</h2>
+      <p>Interested in learning more about one of our products or tools, need technical support, or want to discuss a project? Fill out our form and we will be in touch with you soon.</p>
 
-      <!-- Contact Form -->
-      <div class="contact-form">
-        <form id="contactForm">
-          <div>
-            <label for="name">Name</label>
-            <input type="text" id="name" name="name" required>
+      <!-- Single Column: Email and Phone -->
+      <div class="contact-columns">
+        <div class="contact-column">
+          <div class="contact-item">
+            <strong>Email:</strong>
+            <span>office@mortar.works</span>
           </div>
-          
-          <div>
-            <label for="email">Email</label>
-            <input type="email" id="email" name="email" required>
+          <div class="contact-item">
+            <strong>Phone:</strong>
+            <span>020 8374 2322</span>
           </div>
-
-          <div>
-            <label for="reason">What is the reason for getting in touch?</label>
-            <select id="reason" name="reason">
-              <option value="General Enquiry">General Enquiry</option>
-              <option value="Demo">Demo of an existing tool or product</option>
-              <option value="Service Design Support">Service Design Support</option>
-              <option value="Technical Consultancy">Technical Consultancy</option>
-              <option value="Product Development">Product Development</option>
-              <option value="Data Solutions">Data and Intelligence Solutions</option>
-              <option value="None">None of the above</option>
-            </select>
-          </div>
-
-          <div>
-            <label for="message">Message</label>
-            <textarea id="message" name="message" required></textarea>
-          </div>
-
-          <button type="submit">Send Message</button>
-        </form>
+        </div>
       </div>
+    </div>
 
-      <!-- Email Address Below Form -->
-      <div class="contact-email">
-        <p><strong>Email:</strong> office@mortar.works</p>
-      </div>
+    <!-- Right Column: Contact Form in a Card -->
+    <div class="contact-form-card">
+      <form id="contactForm">
+        <div>
+          <label for="name">Name</label>
+          <input type="text" id="name" name="name" required>
+        </div>
+        
+        <div>
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" required>
+        </div>
+
+        <div>
+          <label for="reason">What is the reason for getting in touch?</label>
+          <select id="reason" name="reason">
+            <option value="General Enquiry">General Enquiry</option>
+            <option value="Demo">Demo of an existing tool or product</option>
+            <option value="Service Design Support">Service Design Support</option>
+            <option value="Technical Consultancy">Technical Consultancy</option>
+            <option value="Product Development">Product Development</option>
+            <option value="Data Solutions">Data and Intelligence Solutions</option>
+            <option value="None">None of the above</option>
+          </select>
+        </div>
+
+        <div>
+          <label for="message">Message</label>
+          <textarea id="message" name="message" required></textarea>
+        </div>
+
+        <button type="submit">Send Message</button>
+      </form>
     </div>
   </div>
 </section>
+
 
 {% endblock %}
