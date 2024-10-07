@@ -731,7 +731,6 @@
       margin: 0 auto;
     }
 
-
     .insights-tagline {
       font-size: 1.3em;
       color: black;
@@ -785,19 +784,18 @@
     }
   
     .insight-title {
-      font-size: 1.3em;  /* Increased font-size for better distinction */
-      font-weight: 400;  /* Set font-weight to bold */
+      font-size: 1.3em;
+      font-weight: 400;
       color: black;
-      margin-bottom: 0.5em; /* Added margin for spacing */
+      margin-bottom: 0.5em;
       font-family: 'Basis Grotesque', -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, sans-serif;
     }
   
-    /* Description Styling */
     .insight-description {
-      font-size: 0.8em;  /* Increased font size for readability */
-      line-height: 1.3em;  /* Adjusted line-height for better spacing */
+      font-size: 0.8em;
+      line-height: 1.3em;
       margin-bottom: 1em;
-      color: black;  /* Slightly darker color for readability */
+      color: black;
       font-family: 'Basis Grotesque', -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, sans-serif;
       font-weight: 400;
     }
@@ -810,9 +808,10 @@
       display: none;
     }
   
-    #load-more-btn {
-      display: block;
-      margin: 2em auto;
+    /* Centering the 'Load More Insights' button */
+    #load-more-insights {
+      display: inline-block;   /* Keep the button's current width */
+      margin: 2em auto;        /* Center the button horizontally */
       padding: 0.7em 2em;
       background-color: $mortar-purple;
       color: $white;
@@ -861,6 +860,7 @@
       }
     }
 }
+
   
   
 
