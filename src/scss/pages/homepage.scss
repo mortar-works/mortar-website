@@ -599,7 +599,7 @@
   }
 
   #solutions {
-    padding: 4em 0em 8em 0em;
+    padding: 4em 0;
     background-color: #f9f9f9;
     border-bottom: 6px solid #2b1c5a;
 
@@ -611,10 +611,9 @@
         h2 {
             font-size: 2.2em;
             text-align: center;
-            margin: 0 0 1em;
+            margin-bottom: 1em;
             font-weight: 800;
             color: black;
-            font-family: "Basis Grotesque Pro Light", sans-serif;
         }
 
         .solutions-description {
@@ -629,14 +628,14 @@
 
     .solutions-grid {
         display: flex;
-        flex-direction: column;
+        flex-direction: column; /* Stack solutions vertically */
         gap: 2em;
         margin: 4em 0;
     }
 
     .solution-card {
         display: flex;
-        flex-direction: row;
+        flex-direction: row; /* Align items in a row */
         align-items: center;
         padding: 2em;
         background-color: #fff;
@@ -647,15 +646,15 @@
 
         /* Solution Label */
         .solution-label {
-            flex: 0 0 100px; /* Reduce the size of the label */
+            flex: 0 0 100px; /* Fixed width for the label */
             background-color: $mortar-orange;
             color: white;
-            padding: 0.2em 0.5em; /* Adjust padding to make it more compact */
-            font-size: 0.85em; /* Reduce font size */
+            padding: 0.3em 0.8em;
+            font-size: 0.85em; /* Slightly smaller font */
             font-weight: 500;
             border-radius: 15px;
             text-align: center;
-            margin-right: 1.5em; /* Spacing between label and content */
+            margin-right: 1.5em;
             white-space: nowrap;
         }
 
@@ -663,8 +662,7 @@
         .solution-content {
             display: flex;
             flex-direction: column;
-            flex-grow: 1; /* Allow content to take up available space */
-            padding-right: 1em;
+            flex-grow: 1; /* Take up remaining space */
         }
 
         h3 {
@@ -677,11 +675,10 @@
         .solution-desc {
             font-size: 1.2em;
             color: #555;
-            margin: 0 0 1em;
-            line-height: 1.4;
+            margin-bottom: 1em;
+            line-height: 1.4em;
         }
 
-        /* Button */
         .find-out-more-link {
             margin-left: auto; /* Push button to the far right */
             font-size: 1.1em;
@@ -691,11 +688,6 @@
             background-color: #eee;
             border-radius: 5px;
             transition: background-color 0.3s ease;
-
-            &::after {
-                content: " →";
-                transition: margin-left 0.3s ease;
-            }
 
             &:hover {
                 background-color: $mortar-orange;
@@ -707,13 +699,13 @@
     /* Mobile Layout */
     @media (max-width: 768px) {
         .solution-card {
-            flex-direction: column; /* Stack content vertically */
+            flex-direction: column; /* Stack items vertically */
             align-items: flex-start;
+            text-align: center;
         }
 
         .solution-label {
-            margin-bottom: 0.8em; /* Reduce spacing below the label */
-            font-size: 0.9em; /* Slightly adjust label size */
+            margin-bottom: 0.8em; /* Reduce space below label */
         }
 
         .solution-content {
@@ -721,7 +713,7 @@
         }
 
         .find-out-more-link {
-            margin-top: 0.8em; /* Consistent spacing between button and description */
+            margin-top: 0.8em;
             margin-left: 0;
         }
     }
