@@ -154,7 +154,7 @@ name: homepage
 
       <ul id="insight-list">
         {% for post in collections.insights %}
-        <li class="{% if loop.index > 6 %}hidden{% endif %}">
+        <li class="{% if loop.index > 9 %}hidden{% endif %}">
           <a class="insight-title" href="{{ post.url }}" aria-label="Insight: {{ post.data.title }}">
             <div class="insight-image" style="background-image: url('{{ '/static/images/insights/' + post.data.image | url }}')">
               <div class="hover-overlay"></div>
