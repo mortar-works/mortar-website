@@ -637,7 +637,7 @@
 
     .solution-card {
       display: flex;
-      flex-direction: row; /* Aligns content in a row on larger screens */
+      flex-direction: row; /* Aligns content horizontally by default */
       align-items: flex-start; /* Align content to the top */
       justify-content: flex-start; /* Align content to the left */
       padding: 2em;
@@ -736,6 +736,34 @@
                 max-width: 100%; /* Allow the description to take full width */
                 padding: 0; /* Remove padding for cleaner alignment */
             }
+        }
+    }
+
+    /* Media Query for Larger Screens */
+    @media (min-width: 769px) {
+        .solutions-grid {
+            flex-direction: column; /* Keep solution cards stacked vertically */
+        }
+
+        .solution-card {
+            flex-direction: row; /* Align content horizontally for larger screens */
+            align-items: flex-start;
+            justify-content: flex-start;
+        }
+    }
+
+    /* Media Query for Wider Screens (e.g., desktops) */
+    @media (min-width: 1025px) {
+        .solutions-grid {
+            flex-direction: row; /* Make the cards appear horizontally aligned */
+            flex-wrap: wrap; /* Wrap the cards if necessary */
+            justify-content: space-between; /* Add spacing between the solution cards */
+        }
+
+        .solution-card {
+            flex-direction: row; /* Ensure the card content stays horizontal */
+            width: 48%; /* Set a specific width for each card */
+            margin-bottom: 2em; /* Add space between rows of cards */
         }
     }
 }
