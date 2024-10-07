@@ -630,14 +630,14 @@
     .solutions-grid {
         display: flex;
         flex-direction: column;
-        gap: 2em; /* Space between each solution card */
+        gap: 2em;
         margin: 4em 0;
     }
 
     .solution-card {
         display: flex;
-        flex-direction: row; /* Align everything horizontally */
-        align-items: center; /* Vertically center content */
+        flex-direction: row;
+        align-items: center;
         padding: 2em;
         background-color: #fff;
         border-radius: 8px;
@@ -645,25 +645,26 @@
         width: 100%;
         text-align: left;
 
-        /* Fixed Label */
+        /* Solution Label */
         .solution-label {
-            flex: 0 0 120px; /* Fixed width */
+            flex: 0 0 100px; /* Reduce the size of the label */
             background-color: $mortar-orange;
             color: white;
-            padding: 0.3em 0.8em;
-            font-size: 0.9em;
+            padding: 0.2em 0.5em; /* Adjust padding to make it more compact */
+            font-size: 0.85em; /* Reduce font size */
             font-weight: 500;
             border-radius: 15px;
             text-align: center;
-            margin-right: 1.5em;
+            margin-right: 1.5em; /* Spacing between label and content */
             white-space: nowrap;
         }
 
-        /* Solution Content - flexible, grows to fill space */
+        /* Solution Content */
         .solution-content {
             display: flex;
-            flex-direction: column; /* Content stacks vertically inside the flex row */
-            flex-grow: 1; /* This ensures the content takes up the remaining space */
+            flex-direction: column;
+            flex-grow: 1; /* Allow content to take up available space */
+            padding-right: 1em;
         }
 
         h3 {
@@ -680,9 +681,9 @@
             line-height: 1.4;
         }
 
-        /* Aligns the button to the far right */
+        /* Button */
         .find-out-more-link {
-            margin-left: auto; /* This pushes the button to the far right */
+            margin-left: auto; /* Push button to the far right */
             font-size: 1.1em;
             color: $mortar-purple;
             text-decoration: none;
@@ -706,13 +707,13 @@
     /* Mobile Layout */
     @media (max-width: 768px) {
         .solution-card {
-            flex-direction: column; /* Stack content vertically on mobile */
-            align-items: flex-start; /* Align to the left */
-            text-align: left;
+            flex-direction: column; /* Stack content vertically */
+            align-items: flex-start;
         }
 
         .solution-label {
-            margin-bottom: 1em;
+            margin-bottom: 0.8em; /* Reduce spacing below the label */
+            font-size: 0.9em; /* Slightly adjust label size */
         }
 
         .solution-content {
@@ -720,11 +721,12 @@
         }
 
         .find-out-more-link {
-            margin-top: 1em;
-            margin-left: 0; /* No auto margin on mobile */
+            margin-top: 0.8em; /* Consistent spacing between button and description */
+            margin-left: 0;
         }
     }
 }
+
 
 
 
