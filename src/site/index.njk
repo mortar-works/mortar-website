@@ -22,31 +22,6 @@ name: homepage
     </div>
   </section>
 
-  <section id="features">
-    <div class="wrapper">
-      <div class="section-head">
-        <h1>
-          How <span class="mortar-purple">Mortar</span> can help to
-          <span class="mortar-purple">transform your services</span>
-        </h1>
-        <p class="section-tagline"></p>
-      </div>
-
-      <div id="feature-list">
-        <ul>
-          {% for feature in features %}
-          <li>
-            <h3>{{ feature.title }}</h3>
-            <p class="feature-tagline">{{ feature.tagline }}</p>
-            {{ feature.subfeatures | markdown | safe }}
-            <a href="{{ feature.link }}" class="learn-more">{{ feature.learnMoreText }}</a>
-          </li>
-          {% endfor %}
-        </ul>
-      </div>
-    </div>
-  </section>
-
   <section id="partners">
     <div class="partners-wrapper">
       <h2 class="partners-heading">Reaching 1000s of users and businesses</h2>
@@ -65,29 +40,6 @@ name: homepage
           <li><img src="{{ '/static/images/partners/socialfinance01.png' | url }}" alt="Social Finance logo" /></li>
           <li><img src="{{ '/static/images/partners/mayoroflondonlogo01.png' | url }}" alt="Mayor of London logo" /></li>
         </ul>
-      </div>
-    </div>
-  </section>
-
- <section id="use-cases">
-    <div class="use-cases-wrapper">
-      <p class="usecasep">
-        Mortar brings together a <span class="mortar-orange">global suite of tools</span> to help solve
-        difficult and complex problems impacting society
-      </p>
-      
-      <!-- Use Case Cards -->
-      <div class="use-cases-grid">
-        {% for case in collections.useCases %}
-       <div class="use-case-card">
-  <div class="use-case-header">
-    <h3>{{ case.title }}</h3>
-    <h4 class="strapline">{{ case.strapline }}</h4>
-  </div>
-  <p class="usecasecardp">{{ case.description }}</p>
-  <a href="{{ case.link }}" class="learn-more-link">Learn More</a>
-</div>
-        {% endfor %}
       </div>
     </div>
   </section>
@@ -136,10 +88,6 @@ name: homepage
 </section>
 
 
-
-
-  
-
   <section id="insights">
     <div class="wrapper">
       <div class="section-head">
@@ -177,70 +125,49 @@ name: homepage
 
 <section id="contact">
   <div class="wrapper contact-wrapper">
-    <!-- Left Column: Contact Info -->
+    <!-- Center Column: Contact Info and Form -->
     <div class="contact-info">
       <h2>Get in Touch</h2>
-      <p>Interested in learning more about one of our products or tools, need technical support, or want to discuss a project? Fill out our form and we will be in touch with you soon.</p>
 
-      <!-- Two Columns for Contact Info -->
-      <div class="contact-columns">
-        <!-- First Column: Email and Phone -->
-        <div class="contact-column">
-          <div class="contact-item">
-            <strong>Email:</strong>
-            <span>office@mortar.works</span>
+      <!-- Contact Form -->
+      <div class="contact-form">
+        <form id="contactForm">
+          <div>
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" required>
           </div>
-          <div class="contact-item">
-            <strong>Phone:</strong>
-            <span>020 8374 2322</span>
+          
+          <div>
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required>
           </div>
-        </div>
 
-        <!-- Second Column: Office Address -->
-        <div class="contact-column">
-          <div class="contact-item">
-            <strong>Office Address:</strong>
-            <span>Mortar Works Ltd</span>
-            <span>66 High Street</span>
-            <span>Lewes, BN7 1XG</span>
+          <div>
+            <label for="reason">What is the reason for getting in touch?</label>
+            <select id="reason" name="reason">
+              <option value="General Enquiry">General Enquiry</option>
+              <option value="Demo">Demo of an existing tool or product</option>
+              <option value="Service Design Support">Service Design Support</option>
+              <option value="Technical Consultancy">Technical Consultancy</option>
+              <option value="Product Development">Product Development</option>
+              <option value="Data Solutions">Data and Intelligence Solutions</option>
+              <option value="None">None of the above</option>
+            </select>
           </div>
-        </div>
+
+          <div>
+            <label for="message">Message</label>
+            <textarea id="message" name="message" required></textarea>
+          </div>
+
+          <button type="submit">Send Message</button>
+        </form>
       </div>
-    </div>
 
-    <!-- Right Column: Contact Form in a Card -->
-    <div class="contact-form-card">
-      <form id="contactForm">
-        <div>
-          <label for="name">Name</label>
-          <input type="text" id="name" name="name" required>
-        </div>
-        
-        <div>
-          <label for="email">Email</label>
-          <input type="email" id="email" name="email" required>
-        </div>
-
-        <div>
-          <label for="reason">What is the reason for getting in touch?</label>
-          <select id="reason" name="reason">
-            <option value="General Enquiry">General Enquiry</option>
-            <option value="Demo">Demo of an existing tool or product</option>
-            <option value="Service Design Support">Service Design Support</option>
-            <option value="Technical Consultancy">Technical Consultancy</option>
-            <option value="Product Development">Product Development</option>
-            <option value="Data Solutions">Data and Intelligence Solutions</option>
-            <option value="None">None of the above</option>
-          </select>
-        </div>
-
-        <div>
-          <label for="message">Message</label>
-          <textarea id="message" name="message" required></textarea>
-        </div>
-
-        <button type="submit">Send Message</button>
-      </form>
+      <!-- Email Address Below Form -->
+      <div class="contact-email">
+        <p><strong>Email:</strong> office@mortar.works</p>
+      </div>
     </div>
   </div>
 </section>
