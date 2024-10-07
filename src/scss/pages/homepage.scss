@@ -810,19 +810,15 @@
   
     /* Centering the 'Load More Insights' button */
     #load-more-insights {
-      display: inline-block;   /* Keep the button's current width */
-      margin: 2em auto;        /* Center the button horizontally */
-      padding: 0.7em 2em;
-      background-color: $mortar-purple;
-      color: $white;
-      border: none;
-      font-size: 1em;
-      cursor: pointer;
-      transition: background-color 0.3s ease;
-  
-      &:hover {
-        background-color: darken($mortar-purple, 10%);
-      }
+      display: inline-block;
+      margin: 0; /* Remove automatic margins from button itself */
+    }
+
+    /* Ensure the button is centered using flexbox */
+    .insights-button-container {
+      display: flex;
+      justify-content: center; /* Center button horizontally */
+      margin-top: 2em;
     }
   
     #insights-preloader {
@@ -850,6 +846,17 @@
         display: none;
       }
     }
+  
+    @keyframes spin {
+      0% {
+        transform: rotate(0deg);
+      }
+      100% {
+        transform: rotate(360deg);
+      }
+    }
+}
+
   
     @keyframes spin {
       0% {
