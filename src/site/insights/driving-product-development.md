@@ -2,6 +2,7 @@
 title: Driving product development
 date: 2024-08-05
 image: driving-product_01.png
+description: How we first began building digital solutions and why we remain committed to user-led design principles in driving the benefits and efficiencies of our tools and products.
 author: George Unsworth
 draft: false
 tags:
