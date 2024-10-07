@@ -2,7 +2,7 @@
 title: Intelligent User Pathways
 date: 2023-11-08
 image: bg-usecase-02.png
-description: Our Triage and Referral Tools transition services into more preventative and personalised methods of delivery.
+description: Transition services into more effective methods of delivery using out triage and referral tools.
 author: George Unsworth
 draft: false
 tags:
