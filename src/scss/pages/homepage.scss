@@ -599,8 +599,8 @@
   }
 
   #solutions {
-    padding: 4em 0em 8em 0em; /* Space around the section */
-    background-color: #f9f9f9; /* Light background color */
+    padding: 4em 0em 8em 0em;
+    background-color: #f9f9f9;
     border-bottom: 6px solid #2b1c5a;
     
     .solutions-wrapper {
@@ -615,7 +615,6 @@
         font-weight: 800;
         color: black;
         font-family: "Basis Grotesque Pro Light", sans-serif;
-        position: relative;
       }
 
       .solutions-description {
@@ -631,46 +630,43 @@
     .solutions-grid {
       display: flex;
       flex-direction: column;
-      gap: 2em; /* Space between each solution card */
+      gap: 2em;
       margin: 4em 0;
     }
 
     .solution-card {
       display: flex;
-      flex-direction: row; /* Aligns content horizontally by default */
-      align-items: flex-start; /* Align content to the top */
-      justify-content: flex-start; /* Align content to the left */
+      flex-direction: row; /* Ensure horizontal alignment */
+      align-items: center; /* Vertically align content in the middle */
+      justify-content: space-between; /* Ensure spacing between elements */
       padding: 2em;
       background-color: #fff;
       border-radius: 8px;
-      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Slight shadow for depth */
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
       text-align: left;
       position: relative;
-      width: 100%; /* Make sure cards take full width */
+      width: 100%;
 
-      /* Solution Label Column */
       .solution-label {
-        flex-basis: 7%; /* Adjust the width of the label column */
-        text-align: center;
-        display: inline-block;
+        flex: 0 0 auto;
         background-color: $mortar-orange;
         color: white;
         padding: 0.3em 0.8em;
         font-size: 0.9em;
         font-weight: 500;
         border-radius: 15px;
-        margin-right: 2em;
+        text-align: center;
         white-space: nowrap;
+        margin-right: 1.5em; /* Add spacing between label and title */
       }
 
-      /* Solution Content */
       .solution-content {
         display: flex;
+        flex-direction: row;
         justify-content: flex-start;
-        align-items: flex-start;
-        flex-direction: column;
-        gap: 1em;
-        flex-grow: 1;
+        align-items: center;
+        gap: 1.5em;
+        flex-grow: 1; /* Allow content to take up remaining space */
       }
 
       .solution-content h3 {
@@ -678,15 +674,15 @@
         font-weight: bold;
         color: #333;
         margin: 0;
-        padding-left: 1em;
-        line-height: 1.2em;
+        padding-right: 1em;
+        white-space: nowrap; /* Prevent title from breaking into new lines */
       }
 
       .solution-desc {
         font-size: 1.2em;
         color: #555;
         margin: 0;
-        padding-left: 1em;
+        flex-grow: 1;
       }
 
       .find-out-more-link {
@@ -694,8 +690,9 @@
         color: $mortar-purple;
         text-decoration: none;
         transition: color 0.3s ease;
-        margin: 0;
-        padding: 0;
+        margin-left: auto;
+        white-space: nowrap; /* Prevent button from breaking into new lines */
+        padding-left: 1em;
 
         &::after {
           content: " →";
@@ -712,59 +709,33 @@
       }
     }
 
-    /* Media Query for Mobile Devices */
+    /* Mobile Layout */
     @media (max-width: 768px) {
-        .solutions-grid {
-            flex-direction: column; /* Stack solution cards vertically */
-        }
+      .solution-card {
+        flex-direction: column;
+        align-items: flex-start;
+        text-align: left;
+      }
 
-        .solution-card {
-            flex-direction: column; /* Stack content inside the solution card vertically */
-            align-items: center; /* Center the content horizontally */
-            width: 100%; /* Ensure the solution card takes full width */
+      .solution-label {
+        margin-bottom: 1em;
+      }
 
-            .solution-label {
-                margin-bottom: 1em; /* Add spacing below the label */
-            }
+      .solution-content {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0.5em;
+      }
 
-            .solution-content {
-                align-items: center; /* Center the content */
-                text-align: center; /* Center the text */
-            }
+      .solution-desc {
+        max-width: 100%;
+        padding: 0;
+      }
 
-            .solution-desc {
-                max-width: 100%; /* Allow the description to take full width */
-                padding: 0; /* Remove padding for cleaner alignment */
-            }
-        }
-    }
-
-    /* Media Query for Larger Screens */
-    @media (min-width: 769px) {
-        .solutions-grid {
-            flex-direction: column; /* Keep solution cards stacked vertically */
-        }
-
-        .solution-card {
-            flex-direction: row; /* Align content horizontally for larger screens */
-            align-items: flex-start;
-            justify-content: flex-start;
-        }
-    }
-
-    /* Media Query for Wider Screens (e.g., desktops) */
-    @media (min-width: 1025px) {
-        .solutions-grid {
-            flex-direction: row; /* Make the cards appear horizontally aligned */
-            flex-wrap: wrap; /* Wrap the cards if necessary */
-            justify-content: space-between; /* Add spacing between the solution cards */
-        }
-
-        .solution-card {
-            flex-direction: row; /* Ensure the card content stays horizontal */
-            width: 48%; /* Set a specific width for each card */
-            margin-bottom: 2em; /* Add space between rows of cards */
-        }
+      .find-out-more-link {
+        margin-top: 1em;
+        margin-left: 0;
+      }
     }
 }
 
