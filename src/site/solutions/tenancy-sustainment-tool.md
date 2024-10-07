@@ -1,5 +1,5 @@
 ---
-title: "Tenancy Sustainment Tool"
+title: "Tenancy sustainment tool"
 description: "A modular framework for creating scalable and tailored service design solutions."
 link: "/tenancy-sustainment-tool"
 ---
