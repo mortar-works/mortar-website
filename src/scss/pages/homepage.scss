@@ -738,6 +738,14 @@
       flex-direction: column;
       min-height: 8em;
 
+      .insights-tagline {
+        text-align: left;
+        font-size: 1.3em;
+        max-width: 60%;
+        margin: 0;
+        color: #000;
+        line-height: 1.4em;
+
       .insight-image {
         position: relative;
         height: 200px;
