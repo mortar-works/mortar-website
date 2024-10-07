@@ -595,8 +595,9 @@
   }
 
   #solutions {
-    padding: 4em 0; /* Space around the section */
+    padding: 4em 0em 8em 0em; /* Space around the section */
     background-color: #f9f9f9; /* Light background color */
+    border-bottom: 6px solid #2b1c5a;
     
     .solutions-wrapper {
       max-width: 1200px;
