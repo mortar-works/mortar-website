@@ -667,8 +667,8 @@
         font-weight: bold;
         color: #333;
         margin: 0;
-        flex: 2; /* Give it some flexibility */
-        padding-left: 0em;
+        flex: 1; /* Give it some flexibility */
+        padding-left: 1em;
         line-height: 1.2em; 
     }
 
@@ -677,7 +677,7 @@
         font-size: 1.2em;
         color: #555;
         margin: 0;
-        flex: 2; /* Control width with flex to make it shorter */
+        flex: 1; /* Control width with flex to make it shorter */
         max-width: 400px; /* You can tweak this value to make it even narrower */
     }
 
