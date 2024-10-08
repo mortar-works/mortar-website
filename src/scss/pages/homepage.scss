@@ -678,8 +678,9 @@
         font-size: 1.2em;
         color: #555;
         margin: 0;
-        flex: 2; /* Control width with flex to make it shorter */
-        max-width: 400px; /* You can tweak this value to make it even narrower */
+        flex-grow: 1; /* Control width with flex to make it shorter */
+        max-width: 60%; /* You can tweak this value to make it even narrower */
+        padding-left: 0;
     }
 
     .find-out-more-link {
@@ -687,7 +688,7 @@
         color: $mortar-purple;
         text-decoration: none;
         transition: color 0.3s ease;
-        margin: 0; /* Pushes the link down */
+        margin-left: auto; 
         padding: 0;
         
         &::after {
