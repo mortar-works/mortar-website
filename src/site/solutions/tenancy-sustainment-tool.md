@@ -2,6 +2,7 @@
 title: "Tenancy sustainment tool"
 description: "Case management and advice sharing platform for tenants at risk of losing their home."
 link: "/tenancy-sustainment-tool"
+label_image: "/static/images/solutions/solution_label01.png"
 ---
 
 Our Community Navigation Platform enables Hackney Council's culture and public health team to work together to reach and connect with older residents, in particular those living alone. Residents are engaged with tailored community and cultural sector touchpoints, and consistent information in accessible formats; all monitored and powered by our Hoop'd platform to drive more effective early interventions.
