@@ -597,7 +597,6 @@
       }
     }
   }
-
   #solutions {
     padding: 4em 0em 8em 0em; /* Space around the section */
     background-color: #f9f9f9; /* Light background color */
@@ -669,7 +668,7 @@
         color: #333;
         margin: 0;
         flex: 2; /* Give it some flexibility */
-        padding-left: 1em;
+        padding-left: 0em;
         line-height: 1.2em; 
     }
 
@@ -678,9 +677,8 @@
         font-size: 1.2em;
         color: #555;
         margin: 0;
-        flex-grow: 1; /* Control width with flex to make it shorter */
-        max-width: 60%; /* You can tweak this value to make it even narrower */
-        padding-left: 0;
+        flex: 2; /* Control width with flex to make it shorter */
+        max-width: 400px; /* You can tweak this value to make it even narrower */
     }
 
     .find-out-more-link {
@@ -688,7 +686,7 @@
         color: $mortar-purple;
         text-decoration: none;
         transition: color 0.3s ease;
-        margin-left: auto; 
+        margin: 0; /* Pushes the link down */
         padding: 0;
         
         &::after {
@@ -765,6 +763,7 @@
         }
     }
 }
+
 
 
 
