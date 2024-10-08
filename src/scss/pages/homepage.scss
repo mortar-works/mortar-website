@@ -650,17 +650,17 @@
     .solution-content {
         display: flex;
         justify-content: flex-start;
-        align-items: flex-start;
-        gap: 2em;
+        align-items: flex-start; /* Ensure content aligns to the top */
+        gap: 2em; /* Space between columns */
         flex-wrap: wrap;
-        flex-grow: 1;
+        flex-grow: 1; /* Allow content to take up remaining space */
     }
 
     /* Solution Label Image */
     .solution-label-image {
-        max-width: 150px;
-        height: auto;
-        margin-bottom: 1em;
+        max-width: 150px; /* Set a max width for the image */
+        height: auto; /* Maintain aspect ratio */
+        margin-bottom: 1em; /* Space between image and the rest of the content */
     }
 
     .solution-content h3 {
@@ -668,6 +668,7 @@
         font-weight: bold;
         color: #333;
         margin: 0;
+        flex: 2; /* Give it some flexibility */
         padding-left: 1em;
         line-height: 1.2em; 
     }
@@ -677,7 +678,8 @@
         font-size: 1.2em;
         color: #555;
         margin: 0;
-        max-width: 400px;
+        flex: 2; /* Control width with flex to make it shorter */
+        max-width: 400px; /* You can tweak this value to make it even narrower */
     }
 
     .find-out-more-link {
@@ -685,8 +687,9 @@
         color: $mortar-purple;
         text-decoration: none;
         transition: color 0.3s ease;
+        margin: 0; /* Pushes the link down */
         padding: 0;
-      
+        
         &::after {
             content: " →";
             transition: margin-left 0.3s ease;
@@ -735,10 +738,33 @@
 
         .find-out-more-link {
             margin-top: 1em; /* Add space between description and button */
-            width: fit-content; /* Keep button width to its content size */
+            width: fit-content; /* Button fits content size */
+        }
+    }
+
+    /* --------------------------
+       Tablet and Wide Screen Styles
+    -------------------------- */
+    @media (min-width: 769px) {
+        .solution-content {
+            display: flex;
+            flex-direction: row; /* Align content in a row */
+            justify-content: space-between; /* Space between content */
+            align-items: flex-start; /* Align items to the top */
+        }
+
+        .solution-desc {
+            flex-grow: 1; /* Allow the description to take up available space */
+            max-width: 60%; /* Limit the width of the description */
+        }
+
+        .find-out-more-link {
+            margin-left: auto; /* Push the button to the right */
+            align-self: flex-start; /* Ensure the button stays aligned to the top */
         }
     }
 }
+
 
 
 

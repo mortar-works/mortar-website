@@ -1,6 +1,6 @@
 ---
 title: "Tenancy sustainment tool"
-description: "Case management and advice sharing platform for tenants at risk of losing their home."
+description: "Deliver local advice and referrals through a case management platform tailored for tenants at risk of losing their home."
 link: "/tenancy-sustainment-tool"
 label_image: "/static/images/solutions/solution_label01.png"
 ---
