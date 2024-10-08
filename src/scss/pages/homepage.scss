@@ -604,107 +604,142 @@
     border-bottom: 6px solid #2b1c5a;
     
     .solutions-wrapper {
-      max-width: 1200px;
-      margin: 0 auto;
-      padding: 0 1.5em;
-  
-      h2 {
-        font-size: 2.2em;
-        text-align: center;
-        margin: 0 0 1em;
-        font-weight: 800;
-        color: black;
-        font-family: "Basis Grotesque Pro Light", sans-serif;
-        position: relative;
-      }
-  
-      .solutions-description {
-        text-align: center;
-        font-size: 1.3em;
-        max-width: 60%;
-        margin: 0 auto 2em;
-        color: black;
-        line-height: 1.4em;
-      }
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 0 1.5em;
+
+        h2 {
+            font-size: 2.2em;
+            text-align: center;
+            margin: 0 0 1em;
+            font-weight: 800;
+            color: black;
+            font-family: "Basis Grotesque Pro Light", sans-serif;
+        }
+
+        .solutions-description {
+            text-align: center;
+            font-size: 1.3em;
+            max-width: 60%;
+            margin: 0 auto 2em;
+            color: black;
+            line-height: 1.4em;
+        }
     }
-  
+
     .solutions-grid {
-      display: flex;
-      flex-direction: column;
-      gap: 2em; /* Space between each solution card */
-      margin: 4em 0;
+        display: flex;
+        flex-direction: column;
+        gap: 2em; /* Space between each solution card */
+        margin: 4em 0;
     }
-  
+
     .solution-card {
-      display: flex;
-      align-items: flex-start; /* Align content to the top */
-      justify-content: flex-start; /* Align content to the left */
-      padding: 2em;
-      background-color: #fff;
-      border-radius: 8px;
-      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Slight shadow for depth */
-      text-align: left;
-      position: relative;
+        display: flex;
+        align-items: flex-start; /* Align content to the top */
+        justify-content: flex-start; /* Align content to the left */
+        padding: 2em;
+        background-color: #fff;
+        border-radius: 8px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Slight shadow for depth */
+        text-align: left;
+        position: relative;
     }
-  
+
     /* Solution Content - Align content to the top and left */
     .solution-content {
-      display: flex;
-      justify-content: flex-start;
-      align-items: flex-start; /* Ensure content aligns to the top */
-      gap: 2em; /* Space between columns */
-      flex-wrap: wrap;
-      flex-grow: 1; /* Allow content to take up remaining space */
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-start;
+        gap: 2em;
+        flex-wrap: wrap;
+        flex-grow: 1;
     }
-    
+
     /* Solution Label Image */
     .solution-label-image {
-      max-width: 150px; /* Set a max width for the image */
-      height: auto; /* Maintain aspect ratio */
-      margin-bottom: 1em; /* Space between image and the rest of the content */
+        max-width: 150px;
+        height: auto;
+        margin-bottom: 1em;
     }
 
     .solution-content h3 {
-      font-size: 1.6em;
-      font-weight: bold;
-      color: #333;
-      margin: 0;
-      flex: 2; /* Give it some flexibility */
-      padding-left: 1em;
-      line-height: 1.2em; 
+        font-size: 1.6em;
+        font-weight: bold;
+        color: #333;
+        margin: 0;
+        padding-left: 1em;
+        line-height: 1.2em; 
     }
-  
+
     /* Shorten the description column */
     .solution-desc {
-      font-size: 1.2em;
-      color: #555;
-      margin: 0;
-      flex: 2; /* Control width with flex to make it shorter */
-      max-width: 400px; /* You can tweak this value to make it even narrower */
+        font-size: 1.2em;
+        color: #555;
+        margin: 0;
+        max-width: 400px;
     }
-  
+
     .find-out-more-link {
-      font-size: 1.1em;
-      color: $mortar-purple;
-      text-decoration: none;
-      transition: color 0.3s ease;
-      margin: 0; /* Pushes the link down */
-      padding: 0;
+        font-size: 1.1em;
+        color: $mortar-purple;
+        text-decoration: none;
+        transition: color 0.3s ease;
+        padding: 0;
       
-      &::after {
-        content: " →";
-        transition: margin-left 0.3s ease;
-      }
-  
-      &:hover {
-        color: $mortar-orange;
-      }
-  
-      &:hover::after {
-        margin-left: 5px;
-      }
+        &::after {
+            content: " →";
+            transition: margin-left 0.3s ease;
+        }
+
+        &:hover {
+            color: $mortar-orange;
+        }
+
+        &:hover::after {
+            margin-left: 5px;
+        }
     }
-  }
+
+    /* --------------------------
+       Mobile Styling Below 768px
+    -------------------------- */
+    @media (max-width: 768px) {
+        .solution-card {
+            flex-direction: column; /* Stack everything vertically */
+            align-items: flex-start; /* Align items to the left */
+        }
+
+        .solution-content {
+            gap: 1.5em; /* Adjust the gap between elements */
+            flex-direction: column; /* Stack title, description, and button */
+            align-items: flex-start;
+        }
+
+        .solution-label-image {
+            max-width: 100px; /* Smaller label image for mobile */
+            margin-bottom: 1em;
+        }
+
+        .solution-content h3 {
+            font-size: 1.4em; /* Slightly smaller title font for mobile */
+            margin-bottom: 0.5em;
+            padding-left: 0;
+        }
+
+        .solution-desc {
+            font-size: 1.1em; /* Smaller description font for mobile */
+            max-width: 100%; /* Full width on mobile */
+            line-height: 1.4em;
+        }
+
+        .find-out-more-link {
+            margin-top: 1em; /* Add space between description and button */
+            width: fit-content; /* Keep button width to its content size */
+        }
+    }
+}
+
 
 
 
