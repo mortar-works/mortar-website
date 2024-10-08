@@ -647,25 +647,6 @@
       position: relative;
     }
   
-    /* Solution Label Column */
-    .solution-label {
-      flex-basis: 7%; /* Adjust the width of the label column */
-      text-align: center;
-      display: inline-block;
-      border: 0px solid $mortar-orange; /* Black border */
-      background-color: $mortar-orange; /* No background fill */
-      color: white; /* Black text */
-      padding: 0.3em 0.8em; /* More padding than case study label for a nicer appearance */
-      font-size: 0.9em; /* Adjust font size */
-      font-weight: 500; /* Light font weight */
-      border-radius: 15px; /* Rounded corners */
-      text-transform: none; /* Keep normal text casing */
-      letter-spacing: 0.05em; /* Optional letter spacing */
-      margin-right: 2em; /* Space between label and content */
-      width: auto; /* Let the width be determined by content */
-      white-space: nowrap; /* Prevent label text from wrapping */
-    }
-  
     /* Solution Content - Align content to the top and left */
     .solution-content {
       display: flex;
@@ -675,7 +656,14 @@
       flex-wrap: wrap;
       flex-grow: 1; /* Allow content to take up remaining space */
     }
-  
+    
+    /* Solution Label Image */
+    .solution-label-image {
+      max-width: 150px; /* Set a max width for the image */
+      height: auto; /* Maintain aspect ratio */
+      margin-bottom: 1em; /* Space between image and the rest of the content */
+    }
+
     .solution-content h3 {
       font-size: 1.6em;
       font-weight: bold;

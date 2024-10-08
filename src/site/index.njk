@@ -74,11 +74,12 @@ name: homepage
     <div class="solutions-grid">
       {% for solution in collections.solutions %}
       <div class="solution-card">
-        <!-- Solution Label Column -->
-        <div class="solution-label">Solution</div>
         
         <!-- Solution Content in Columns -->
         <div class="solution-content">
+          <!-- New Solution Label Image from Frontmatter -->
+          <img src="{{ solution.data.label_image }}" alt="{{ solution.data.title }} Label" class="solution-label-image">
+          
           <h3>{{ solution.data.title }}</h3> <!-- Solution Name -->
           <p class="solution-desc">{{ solution.data.description }}</p> <!-- Solution Description -->
           <a href="{{ solution.url }}" class="find-out-more-link">Find Out More</a> <!-- Learn More Link -->
