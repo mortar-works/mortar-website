@@ -720,12 +720,12 @@
 
         .solution-label-image {
             max-width: 100px; /* Smaller label image for mobile */
-            margin-bottom: 1em;
+            margin-bottom: 0em;
         }
 
         .solution-content h3 {
             font-size: 1.4em; /* Slightly smaller title font for mobile */
-            margin-bottom: 0.5em;
+            margin-bottom: 0em;
             padding-left: 0;
         }
 
@@ -736,7 +736,7 @@
         }
 
         .find-out-more-link {
-            margin-top: 1em; /* Add space between description and button */
+            margin-top: 0em; /* Add space between description and button */
             width: fit-content; /* Button fits content size */
         }
     }
