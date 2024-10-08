@@ -22,9 +22,23 @@ header {
   top: 0;
   z-index: 1000;
   background: transparent !important; /* Initially transparent */
-  color: $black;
+  color: $white; /* White text globally */
   transition: background-color 0.3s ease, box-shadow 0.3s ease;
   box-shadow: none; /* No shadow initially */
+
+  /* Sticky header styles */
+  &.sticky {
+    background-color: rgba(67, 34, 124, 0.8) !important; /* Semi-transparent purple when scrolling */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15) !important; /* Add shadow when sticky */
+  }
+
+  nav a {
+    color: $white; /* White links globally */
+  }
+
+  #mortar-logo {
+    background-image: url('../images/mortar-logo-white.png'); /* White logo globally */
+  }
 
   &.nav-active {
     height: 100%;
@@ -35,18 +49,6 @@ header {
     left: 0;
     background: $mortar-orange !important;
     z-index: 10000;
-  }
-
-  #homepage & {
-    background: transparent;
-
-    nav a {
-      color: $white;
-    }
-
-    #mortar-logo {
-      background-image: url('../images/mortar-logo-white.png');
-    }
   }
 
   .wrapper {
@@ -64,24 +66,19 @@ header {
     width: 165px;
     display: block;
     background: transparent scroll no-repeat 0 0;
-    background-image: url('../images/mortar-logo-black.png');
     background-size: cover;
     text-indent: -9999px;
   }
 
   .hamburger {
-    @include respond-to('small'){
+    @include respond-to('small') {
       display: none;
     }
 
     .hamburger-inner,
     .hamburger-inner:after,
     .hamburger-inner:before {
-      background-color: $black;
-
-      #homepage & {
-        background-color: $white;
-      }
+      background-color: $white; /* White hamburger menu globally */
     }
   }
 
@@ -96,7 +93,7 @@ header {
     align-items: center;
     flex-basis: 100%;
 
-    @include respond-to('small'){
+    @include respond-to('small') {
       display: flex;
       flex-basis: auto;
     }
@@ -112,11 +109,11 @@ header {
         @include rajdhani-regular-type;
         font-size: 1.8em;
         line-height: 2em;
-        color: $black;
+        color: $white; /* Ensure link color remains white globally */
       }
     }
 
-    @include respond-to('small'){
+    @include respond-to('small') {
       display: flex;
       flex-wrap: wrap;
       font-size: 1.5em;
@@ -135,12 +132,6 @@ header {
       }
     }
   }
-}
-
-/* Sticky header styles */
-.sticky {
-  background-color: rgba(67, 34, 124, 0.8) !important; /* Semi-transparent purple */
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15) !important; /* Add shadow when sticky */
 }
 
 footer {
@@ -177,11 +168,11 @@ footer {
       grid-gap: 2em;
     }
 
-    @include respond-to('medium'){
+    @include respond-to('medium') {
       grid-gap: 3em;
     }
 
-    @include respond-to('large'){
+    @include respond-to('large') {
       grid-gap: 4em;
     }
   }
