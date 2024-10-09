@@ -81,8 +81,11 @@
       }
     }
 
+    /* Improved topline CTA */
     .topline-cta {
+      display: block;
       max-width: fit-content;
+      width: fit-content;
       margin-top: 2em;
       padding: 0.7em 2.5em;
       background-color: $mortar-purple;
@@ -91,27 +94,34 @@
       text-decoration: none;
       font-weight: bold;
       font-size: 1.2em;
-      transition: background-color 0.3s ease;
-      border: 1px white solid;
-      transition: border-color 0.3s ease;
+      transition: background-color 0.3s ease, border-color 0.3s ease;
+      border: 1px solid $white;
 
       &:hover {
-          background-color: darken($mortar-purple, 10%);
-          color: white;  
-          border: 1px $mortar-yellow solid;
+        background-color: darken($mortar-purple, 10%);
+        color: white;  
+        border: 1px $mortar-yellow solid;
       }
 
       @include respond-to('small') {
-          padding-left: 1.5em;
-          padding-right: 1.5em;
-          margin-top: 3em;
-          font-size: 1.1em;
+        padding-left: 1.5em;
+        padding-right: 1.5em;
+        margin-top: 3em;
+        font-size: 1.1em;
+        width: 90%; /* Ensures good fit on mobile */
+        text-align: center;
       }
-  }
 
+      @media (min-width: 769px) {
+        width: fit-content; /* Keeps the width based on content */
+      }
+    }
 
+    /* General CTA buttons */
     .cta {
+      display: block;
       max-width: fit-content;
+      width: fit-content;
       margin-top: 2em;
       padding: 0.5em 2em;
       background-color: $mortar-purple;
@@ -131,14 +141,15 @@
         padding-right: 1em;
         margin-top: 3em;
         font-size: 1.1em;
+        width: 90%; /* Ensure the button fits well on mobile */
       }
 
-      @media (min-width: 769px) and (max-width: 1024px) {
-        padding-left: 1em;
-        padding-right: 1em;
+      @media (min-width: 769px) {
+        width: fit-content; /* Makes sure the width resizes properly on desktop */
       }
     }
   }
+
 
   #features,
   #partners,
