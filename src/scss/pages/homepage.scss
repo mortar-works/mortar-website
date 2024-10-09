@@ -92,6 +92,7 @@
       font-weight: bold;
       font-size: 1.2em;
       transition: background-color 0.3s ease;
+      border: 1px white solid;
 
       &:hover {
           background-color: darken($mortar-yellow, 10%);
