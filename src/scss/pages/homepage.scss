@@ -110,45 +110,32 @@
   }
 
 
-  .cta {
-    display: block;
-    width: fit-content;
-    max-width: 100%; /* Prevent overflow on large screens */
-    white-space: nowrap; /* Prevent text from wrapping */
-    padding: 0.7em 2.5em; /* Adjust padding for better spacing */
-    background-color: $mortar-purple;
-    color: $white;
-    text-align: center;
-    text-decoration: none;
-    font-weight: bold;
-    font-size: 1.2em;
-    cursor: pointer;
-    margin: 2em auto; /* Center the button and add space above and below */
-    border: 1px solid $white;
-    transition: background-color 0.3s ease, border-color 0.3s ease;
-  
-    &:hover {
-      background-color: darken($mortar-purple, 10%);
-      border-color: $mortar-yellow;
-    }
-  
-    @include respond-to('small') {
-      padding-left: 1.5em;
-      padding-right: 1.5em;
-      font-size: 1.1em; /* Slightly reduce font size on small screens */
-      width: 90%; /* Adjust width for mobile */
+    .cta {
+      max-width: fit-content;
+      margin-top: 2em;
+      padding: 0.5em 2em;
+      background-color: $mortar-purple;
+      color: $white;
       text-align: center;
-    }
-  
-    @media (min-width: 769px) {
-      width: fit-content; /* Make sure it resizes properly on desktop */
-    }
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 1.2em;
+      transition: background-color 0.3s ease;
 
-    @media (max-width: 768px) {
-      .cta {
-        width: 90%; /* Take up most of the available width on mobile */
-        padding: 0.7em 1.5em; /* Adjust padding to prevent squishing */
-        font-size: 1.1em; /* Slightly smaller font for mobile */
+      &:hover {
+        background-color: darken($mortar-purple, 10%);
+      }
+
+      @include respond-to('small') {
+        padding-left: 1em;
+        padding-right: 1em;
+        margin-top: 3em;
+        font-size: 1.1em;
+      }
+
+      @media (min-width: 769px) and (max-width: 1024px) {
+        padding-left: 1em;
+        padding-right: 1em;
       }
     }
   }
