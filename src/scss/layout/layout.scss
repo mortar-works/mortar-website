@@ -70,6 +70,10 @@ header {
     text-indent: -9999px;
   }
 
+  nav a {
+    color: $white;
+  }
+
   .hamburger {
     @include respond-to('small') {
       display: none;
