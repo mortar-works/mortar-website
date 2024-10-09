@@ -37,7 +37,7 @@ a {
   &:hover {
     background-color: darken($mortar-purple, 10%);
     color: white;
-    border: 1px $mortar-orange solid;
+    border: 1px white solid;
   }
 
   @include respond-to('small') {
