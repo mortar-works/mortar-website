@@ -93,10 +93,12 @@
       font-size: 1.2em;
       transition: background-color 0.3s ease;
       border: 1px white solid;
+      transition: border-color 0.3s ease;
 
       &:hover {
-          background-color: darken($mortar-yellow, 10%);
-          color: black;  
+          background-color: darken($mortar-purple, 10%);
+          color: white;  
+          border: 1px $mortar-yellow solid;
       }
 
       @include respond-to('small') {
