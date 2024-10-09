@@ -26,7 +26,7 @@ a {
   margin: 0 auto;
   padding: 0.5em 2em;
   background-color: transparent;
-  color: $white;
+  color: black;
   text-align: center;
   text-decoration: none;
   font-weight: bold;
@@ -36,12 +36,13 @@ a {
 
   &:hover {
     background-color: darken($mortar-purple, 10%);
+    color: white;
   }
 
   @include respond-to('small') {
     padding-left: 1em;
     padding-right: 1em;
-    margin-top: 3em;
+    margin-bottom: 3em;
     font-size: 1.1em;
     width: 90%; /* Ensure the button fits well on mobile */
   }
