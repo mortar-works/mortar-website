@@ -45,13 +45,13 @@ name: homepage
 
 <section id="case-studies">
   <div class="case-studies-wrapper">
-  <h2>Case studies</h2>
+    <h2>Case studies</h2>
     <p class="case-study-p">
       We bring together a global suite of tools that solve problems impacting services and communities.
     </p>
     <div class="case-studies-grid">
       {% for caseStudy in collections.caseStudies %}
-      <a href="{{ caseStudy.url }}" class="case-study-link"> <!-- Make the entire card clickable -->
+      <a href="{{ caseStudy.url }}" class="case-study-link {% if loop.index > 4 %} hidden {% endif %}"> <!-- Hide the extra case studies -->
         <div class="case-study-card">
           <h3>{{ caseStudy.data.title }}</h3>
           <p class="case-study-desc">{{ caseStudy.data.description }}</p>
@@ -60,6 +60,9 @@ name: homepage
       </a>
       {% endfor %}
     </div>
+
+    <!-- Load More Button -->
+    <button id="load-more-btn" class="cta">Load More Case Studies</button> <!-- Added Load More button -->
   </div>
 </section>
 
