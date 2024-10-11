@@ -68,6 +68,33 @@ window.addEventListener('load', (event) => {
     });
   }
 
+  // Load more case studies functionality (New Code)
+  const loadMoreCaseStudiesButton = document.querySelector('#load-more-casestudies');
+  const caseStudiesList = document.querySelectorAll('.case-studies-grid .case-study-link');
+  const caseStudiesPreloader = document.querySelector('#case-studies-preloader');
+  let visibleCaseStudies = 4; // Number of initially visible case studies
+
+  if (loadMoreCaseStudiesButton && caseStudiesList) {
+    loadMoreCaseStudiesButton.addEventListener('click', () => {
+      caseStudiesPreloader.classList.remove('hidden');
+
+      setTimeout(() => {
+        for (let i = visibleCaseStudies; i < visibleCaseStudies + 4; i++) {
+          if (caseStudiesList[i]) {
+            caseStudiesList[i].classList.remove('hidden');
+          }
+        }
+
+        visibleCaseStudies += 4;
+        caseStudiesPreloader.classList.add('hidden');
+
+        if (visibleCaseStudies >= caseStudiesList.length) {
+          loadMoreCaseStudiesButton.style.display = 'none';
+        }
+      }, 800); // Simulate a 0.8s delay for loading
+    });
+  }
+
   // Partners Ticker Scrolling
   const ticker = document.querySelector('.partners-ticker');
   const leftArrow = document.querySelector('.left-arrow');
@@ -83,7 +110,7 @@ window.addEventListener('load', (event) => {
     });
   }
 
-  // Contact Form Handling (New Code)
+  // Contact Form Handling
   const contactForm = document.getElementById('contactForm');
   if (contactForm) {
     contactForm.addEventListener('submit', function(event) {
