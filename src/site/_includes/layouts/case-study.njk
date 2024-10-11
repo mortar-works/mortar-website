@@ -9,8 +9,8 @@
 
 {% block content %}
 <section>
-  <!-- Updated image handling -->
-  <div class="hero-image" style="background-image: url('{{ caseStudy.data.image | url }}')"></div>
+  <!-- Updated hero image logic -->
+  <div class="hero-image" style="background-image: url('{{ image | url }}')"></div>
   <div class="wrapper">
     <article>
       <h1>{{ title }}</h1>
