@@ -4,6 +4,7 @@ date: 2023-06-21
 image: dfvc_03_2.jpg
 author: George Unsworth
 draft: false
+description: Build accreditation processes with digital tools. Driving accessibility, scalability, and engagement.
 tags:
   - accessibility
   - accreditation

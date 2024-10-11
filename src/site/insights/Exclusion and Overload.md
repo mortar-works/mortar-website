@@ -4,6 +4,7 @@ date: 2022-05-01
 image: exclusion02.jpg
 author: George Unsworth
 draft: false
+description: Address exclusion by creating accessible, tailored tools that connect users to essential services and reduce barriers to access.
 tags:
   - digital inclusion
 

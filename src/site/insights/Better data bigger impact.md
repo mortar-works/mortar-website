@@ -3,6 +3,7 @@ title: Better data, bigger impact
 date: 2022-10-10
 image: mortar_web_01.jpg
 author: George Unsworth
+description: Unlock the potential of data with intelligent environments that drive more impactful decision-making.
 draft: false
 tags:
   - data services

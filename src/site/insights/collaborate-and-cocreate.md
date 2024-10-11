@@ -3,6 +3,7 @@ title: Collaborate and co-create
 date: 2021-04-11
 image: collaborate_cocreate01.jpg
 author: George Unsworth
+description: Accelerate digital transformation through real-time data and AI-powered collaboration.
 draft: false
 tags:
   - digital transformation

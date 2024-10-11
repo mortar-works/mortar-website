@@ -3,6 +3,7 @@ title: Understanding automation
 date: 2020-07-06
 image: understanding-automation-2.png
 author: George Unsworth
+description: Embrace automation and machine learning to unlock new opportunities, navigate uncertainty, and shape the future of business and property.
 draft: false
 tags:
   - automation

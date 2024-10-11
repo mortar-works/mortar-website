@@ -3,6 +3,7 @@ title: The power of balance
 date: 2020-11-20
 image: powerofbalance.jpeg
 author: George Unsworth
+description: Empower tenants with self-service tools that foster equitable communication, collaboration, and sustainable relationships.
 draft: false
 tags:
     - debt  

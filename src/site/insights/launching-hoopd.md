@@ -4,6 +4,7 @@ date: 2021-09-01
 image: conversation02.jpg
 author: George Unsworth
 draft: false
+description: Transform local area engagement with personalised communication tools that deliver meaningful, timely information.
 tags:
     - engagement platform 
     - data

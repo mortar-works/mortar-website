@@ -4,6 +4,7 @@ date: 2022-08-04
 image: mortar_web_03.jpg
 author: George Unsworth
 draft: false
+description: Co-create digital solutions that transform services through custom tools, interfaces, and flexible environments.
 tags:
   - bespoke implementation
   - customisation
@@ -40,7 +41,4 @@ If you need to develop and improve your existing services or systems, and want t
   </figcaption>
 </figure>
 
-Get in touch
----------------------------------------------------------------------------------------------------------------------------------
-To find out more about Ditto you can get in touch with us by emailing: office@mortar.works
 

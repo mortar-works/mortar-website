@@ -3,6 +3,7 @@ title: Service mapping for Hackney
 date: 2021-04-11
 image: servicemapping01.jpg
 author: George Unsworth
+description: Using digital platforms to enhance communication and improve access to information for targeted residents.
 draft: false
 tags:
   - digital transformation

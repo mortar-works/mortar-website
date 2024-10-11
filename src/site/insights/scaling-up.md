@@ -4,6 +4,7 @@ date: 2020-01-20
 image: scaling-up.jpg
 author: George Unsworth
 draft: false
+description: Discover how Mortar worked with PwC to refine its market positioning, strategy, and product development.
 tags:
   - pwc
   - realestatetech
