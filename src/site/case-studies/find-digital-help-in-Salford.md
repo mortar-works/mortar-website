@@ -1,7 +1,6 @@
 ---
 title: "Triage and signposting tool for Salford"
 description: "Tailored triage for assessing resident need, supporting a place-based approach to digital inclusion."
-draft: true
 read_more_link: "/case-study-url"
 image: "/static/images/case-studies/digitalhelpfinder.jpg"
 ---
