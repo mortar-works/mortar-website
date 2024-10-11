@@ -41,7 +41,7 @@ An early engagement service
 ---------------------------------------------------------------------------------------------------------------------------------
 The impact of a school exclusion is enormous. The increasing rates of exclusion and the inequality associated with exclusion rates amongst certain groups of young people is a national problem. Local areas need flexible support in the design and delivery of an effective evidence-led response. 
 
-Our tool presents a tailored triage module, for helping teachers assess the needs of a young person, allowing them to specify what types of alternative support might be of interest or preferred. The tool then creates a recommended selection of accredited local area services and organisations, making the process of sharing information with young people, families and carers more personalised, quicker and easier. 
+Using a tailored version of our triage tool we help teachers assess the needs of a young person, allowing them to specify what types of alternative support might be of interest or preferred. The tool then creates a recommended selection of accredited local area services and organisations, making the process of sharing information with young people, families and carers more personalised, quicker and easier. 
 
 <figure>
   <img src="{{ '/static/images/use-cases/whatworks01.png' | url }}" />
