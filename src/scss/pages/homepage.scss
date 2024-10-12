@@ -946,15 +946,16 @@
     /* Centering the 'Load More Insights' button */
     #load-more-insights {
         padding: 0.7em 2em;
-        background-color: $mortar-purple;
-        color: $white;
-        border: none;
+        background-color: transparent;
+        color: $black;
+        border: 1 px black solid;
         font-size: 1em;
         cursor: pointer;
         transition: background-color 0.3s ease;
 
         &:hover {
             background-color: darken($mortar-purple, 10%);
+            color: $white;
         }
     }
 
