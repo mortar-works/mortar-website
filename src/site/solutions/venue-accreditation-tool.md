@@ -3,13 +3,13 @@ title: "Venue Accreditation Tool"
 strapline: "Empower your venue with training, resources, and accreditation to ensure accessibility and service standards."
 description: "Provide training and resources for your venue and staff to become accredited in accessibility and service standards."
 read_more_link: "/venue-accreditation"
-image: "/static/images/case-studies/venue-accreditation.jpg"
+image: "/static/images/homepage/dfvc-dashboard.png"
 ---
 
 ## Introduction  
-The Venue Accreditation Tool enables cultural, commercial, and community venues to become more accessible and inclusive. Our platform supports training and resources for staff, helping you meet specific accessibility and service standards. Whether you're aiming for dementia-friendly certification, accessibility accreditation, or customer service excellence, our tool makes it easier and more efficient to achieve these goals.
+Our Venue Accreditation Tool enables cultural, commercial, and community venues to become more accessible and inclusive. Our platform supports training and resources for staff, helping you meet specific accessibility and service standards. Whether you're aiming for dementia-friendly certification, accessibility accreditation, or customer service excellence, our tool makes it easier and more efficient to achieve these goals.
 
-Accredited venues create a welcoming environment for everyone, improve community engagement, and meet evolving legal requirements and public expectations.
+Accredited venues create a welcoming environment for everyone, improve community and team engagement, and meet evolving legal requirements and public expectations.
 
 ## How it Works  
 Our platform delivers an all-in-one solution for training, assessment, and progress tracking. We provide the tools you need to onboard, train, and certify your venue staff. The process is broken into clear, manageable stages, and can be fully customised to meet the needs of your organisation.
@@ -32,7 +32,7 @@ Our platform delivers an all-in-one solution for training, assessment, and progr
 Tailor training to your venue's specific needs. Our tool offers flexibility in setting up learning paths for various service standards such as dementia-friendly services, accessibility, or general customer care. Design the resources you need and want to provide to your team members and users. 
 
 ### Progress Tracking & Reporting  
-Monitor staff engagement, track progress towards accreditation, and visualise which teams need additional support. Keep oversight simple with automated reporting features.
+Monitor venue, staff and volunteer engagement, track progress towards accreditation, and visualise who needs additional support. Keep oversight simple with automated reporting features.
 
 ### Scaling for your Sites and Partners  
 Whether you manage large multiple sites and venues with big teams, or a small community space with a small number of staff or volunteers, our platform scales to fit your needs. With easy-to-use interfaces and cloud-based accessibility, your team can engage with the tool and manage users from any number of locations.
