@@ -3,7 +3,8 @@ title: "Venue Accreditation Tool"
 strapline: "Empower your venue with training, resources, and accreditation to ensure accessibility and service standards."
 description: "Provide training and resources for your venue and staff to become accredited in accessibility and service standards."
 read_more_link: "/venue-accreditation"
-image: "/static/images/homepage/dfvc-dashboard.png"
+label_image: "/static/images/solutions/solution_label01.png"
+image: "/static/images/solutions/dfvc-dashboard02.png"
 ---
 
 ## Introduction  
