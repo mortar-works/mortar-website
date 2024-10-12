@@ -923,6 +923,7 @@
         font-weight: 400;
         color: black;
         margin-bottom: 0.5em;
+        line-height: 1.2em;
         font-family: 'Basis Grotesque', -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, sans-serif;
     }
 
@@ -956,6 +957,8 @@
         &:hover {
             background-color: darken($mortar-purple, 10%);
             color: $white;
+            border: 1 px black solid;
+
         }
     }
 
