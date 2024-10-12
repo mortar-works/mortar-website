@@ -118,55 +118,64 @@ window.addEventListener('load', (event) => {
   }
 
   // Contact Form Handling with Formspree Integration
-  const contactForm = document.getElementById('contactForm');
-  if (contactForm) {
-    contactForm.addEventListener('submit', function(event) {
-      event.preventDefault();
+const contactForm = document.getElementById('contactForm');
+const contactPreloader = document.getElementById('contact-preloader'); // Preloader reference
 
-      const formData = new FormData(contactForm);
-      const submitButton = contactForm.querySelector('button[type="submit"]');
-      submitButton.disabled = true;  // Disable the submit button
-      submitButton.textContent = 'Sending...';  // Change button text to indicate sending
+if (contactForm) {
+  contactForm.addEventListener('submit', function(event) {
+    event.preventDefault();
 
-      // Fetch request to submit form data to Formspree
-      fetch('https://formspree.io/f/mnnqqnev', {
-        method: 'POST',
-        body: formData,
-        headers: {
-          'Accept': 'application/json'
-        }
-      }).then(response => {
-        submitButton.disabled = false;
-        submitButton.textContent = 'Send Message';  // Reset button text
+    const formData = new FormData(contactForm);
+    const submitButton = contactForm.querySelector('button[type="submit"]');
+    
+    // Disable the submit button and show spinner
+    submitButton.disabled = true;
+    submitButton.textContent = 'Sending...';
+    contactPreloader.classList.remove('hidden'); // Show the spinner
 
-        if (response.ok) {
-          showConfirmationModal();
-          contactForm.reset();  // Optionally reset the form after submission
-        } else {
-          alert('Oops! There was a problem submitting the form. Please try again.');
-        }
-      }).catch(error => {
-        submitButton.disabled = false;
-        submitButton.textContent = 'Send Message';  // Reset button text
-        alert('Oops! Something went wrong.');
-      });
+    // Fetch request to submit form data to Formspree
+    fetch('https://formspree.io/f/mnnqqnev', {
+      method: 'POST',
+      body: formData,
+      headers: {
+        'Accept': 'application/json'
+      }
+    }).then(response => {
+      // Enable the submit button and hide the spinner
+      submitButton.disabled = false;
+      submitButton.textContent = 'Send Message';
+      contactPreloader.classList.add('hidden'); // Hide the spinner
+
+      if (response.ok) {
+        showConfirmationModal();
+        contactForm.reset();  // Optionally reset the form after submission
+      } else {
+        alert('Oops! There was a problem submitting the form. Please try again.');
+      }
+    }).catch(error => {
+      // Enable the submit button and hide the spinner
+      submitButton.disabled = false;
+      submitButton.textContent = 'Send Message';
+      contactPreloader.classList.add('hidden'); // Hide the spinner
+      alert('Oops! Something went wrong.');
     });
-  }
+  });
+}
 
-  function showConfirmationModal() {
-    const modal = document.createElement('div');
-    modal.classList.add('confirmation-modal');
-    modal.innerHTML = `
-      <div class="modal-content">
-        <p>Many thanks for your enquiry! We will be in touch soon.</p>
-        <button id="closeModal">OK</button>
-      </div>
-    `;
+function showConfirmationModal() {
+  const modal = document.createElement('div');
+  modal.classList.add('confirmation-modal');
+  modal.innerHTML = `
+    <div class="modal-content">
+      <p>Many thanks for your enquiry! We will be in touch soon.</p>
+      <button id="closeModal">OK</button>
+    </div>
+  `;
 
-    document.body.appendChild(modal);
+  document.body.appendChild(modal);
 
-    document.getElementById('closeModal').addEventListener('click', function() {
-      modal.remove();
-    });
-  }
+  document.getElementById('closeModal').addEventListener('click', function() {
+    modal.remove();
+  });
+}
 });
