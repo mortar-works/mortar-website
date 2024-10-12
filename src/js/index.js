@@ -117,7 +117,7 @@ window.addEventListener('load', (event) => {
     });
   }
 
-  // Contact Form Handling with Formspree Integration
+// Contact Form Handling with Formspree Integration
 const contactForm = document.getElementById('contactForm');
 const contactPreloader = document.getElementById('contact-preloader'); // Preloader reference
 
@@ -141,23 +141,29 @@ if (contactForm) {
         'Accept': 'application/json'
       }
     }).then(response => {
-      // Enable the submit button and hide the spinner
-      submitButton.disabled = false;
-      submitButton.textContent = 'Send Message';
-      contactPreloader.classList.add('hidden'); // Hide the spinner
+      // Ensure the spinner is shown for at least 500ms
+      setTimeout(() => {
+        // Enable the submit button and hide the spinner
+        submitButton.disabled = false;
+        submitButton.textContent = 'Send Message';
+        contactPreloader.classList.add('hidden'); // Hide the spinner
 
-      if (response.ok) {
-        showConfirmationModal();
-        contactForm.reset();  // Optionally reset the form after submission
-      } else {
-        alert('Oops! There was a problem submitting the form. Please try again.');
-      }
+        if (response.ok) {
+          showConfirmationModal();
+          contactForm.reset();  // Optionally reset the form after submission
+        } else {
+          alert('Oops! There was a problem submitting the form. Please try again.');
+        }
+      }, 800); // Set a delay of 500ms before hiding the spinner
     }).catch(error => {
-      // Enable the submit button and hide the spinner
-      submitButton.disabled = false;
-      submitButton.textContent = 'Send Message';
-      contactPreloader.classList.add('hidden'); // Hide the spinner
-      alert('Oops! Something went wrong.');
+      // Ensure the spinner is shown for at least 500ms
+      setTimeout(() => {
+        // Enable the submit button and hide the spinner
+        submitButton.disabled = false;
+        submitButton.textContent = 'Send Message';
+        contactPreloader.classList.add('hidden'); // Hide the spinner
+        alert('Oops! Something went wrong.');
+      }, 500); // Set a delay of 500ms before hiding the spinner in case of an error
     });
   });
 }
@@ -178,4 +184,5 @@ function showConfirmationModal() {
     modal.remove();
   });
 }
+
 });
