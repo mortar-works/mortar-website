@@ -117,23 +117,39 @@ window.addEventListener('load', (event) => {
     });
   }
 
-  // Contact Form Handling
+  // Contact Form Handling with Formspree Integration
   const contactForm = document.getElementById('contactForm');
   if (contactForm) {
     contactForm.addEventListener('submit', function(event) {
       event.preventDefault();
 
-      const name = document.getElementById('name').value;
-      const email = document.getElementById('email').value;
-      const message = document.getElementById('message').value;
+      const formData = new FormData(contactForm);
+      const submitButton = contactForm.querySelector('button[type="submit"]');
+      submitButton.disabled = true;  // Disable the submit button
+      submitButton.textContent = 'Sending...';  // Change button text to indicate sending
 
-      if (!name || !email || !message) {
-        alert('Please fill in all required fields.');
-        return;
-      }
+      // Fetch request to submit form data to Formspree
+      fetch('https://formspree.io/f/mnnqqnev', {
+        method: 'POST',
+        body: formData,
+        headers: {
+          'Accept': 'application/json'
+        }
+      }).then(response => {
+        submitButton.disabled = false;
+        submitButton.textContent = 'Send Message';  // Reset button text
 
-      // Show confirmation modal
-      showConfirmationModal();
+        if (response.ok) {
+          showConfirmationModal();
+          contactForm.reset();  // Optionally reset the form after submission
+        } else {
+          alert('Oops! There was a problem submitting the form. Please try again.');
+        }
+      }).catch(error => {
+        submitButton.disabled = false;
+        submitButton.textContent = 'Send Message';  // Reset button text
+        alert('Oops! Something went wrong.');
+      });
     });
   }
 
