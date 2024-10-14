@@ -1,0 +1,47 @@
+// solutions.scss
+#solutions {
+    padding: 4em 0em;
+    background-color: #f9f9f9;
+    
+    .solution-card {
+      background-color: #fff;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      padding: 2em;
+      display: flex;
+      flex-direction: column;
+      text-align: left;
+    }
+  
+    h2, h3 {
+      font-family: 'Basis Grotesque Pro Light', sans-serif;
+      color: $mortar-purple;
+    }
+  
+    .case-study-card {
+      margin-top: 3em;
+      background-color: #fff;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+  
+    .case-study-card img {
+      border-radius: 8px;
+      max-width: 100%;
+      height: auto;
+    }
+  
+    .read-more {
+      font-weight: normal;
+      font-size: 1.2em;
+      color: $mortar-purple;
+      text-decoration: none;
+      transition: color 0.3s ease;
+      
+      &:hover {
+        color: $mortar-orange;
+      }
+    }
+  }
+  
