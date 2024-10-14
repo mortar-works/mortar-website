@@ -3,6 +3,7 @@ title: "Digital skills and help finder"
 description: "Provide every user and partner with dynamic self assessments; to discover the need, availability and progress of skills."
 link: "/digital-skills-and-help-finder"
 label_image: "/static/images/solutions/solution_label01.png"
+image: "/static/images/solutions/digitalskills01.png"
 ---
 
 ## Digital Skills and Help Finder  
@@ -20,9 +21,9 @@ The Digital Skills and Help Finder empowers users to assess their digital skills
 - **Partnership management:** Organisations can manage local resources and partner offerings, ensuring up-to-date opportunities for users.
 
 <figure>
-  <img src="/static/images/use-cases/digitalskills-helpfinder_01.png" alt="Screenshot of the Digital Skills and Help Finder assessment interface" />
+  <img src="/static/images/solutions/digitalskills02.png" alt="Screenshot of the Digital Skills and Help Finder assessment interface" />
   <figcaption>
-    Example of the self-assessment interface in the Digital Skills and Help Finder tool.
+    Example of a comms page in the Digital Skills and Help Finder tool.
   </figcaption>
 </figure>
 
@@ -43,10 +44,6 @@ The Digital Skills and Help Finder is packed with essential features that make i
 
 - **Data Insights and Reporting**  
   Organisations can access a real-time dataset, gaining insights into digital skills gaps within their communities and understanding the impact of interventions.
-
-### Case Study Highlight  
-> Progress Online is a tailored implementation of our Digital Inclusion Triage Tool for East Riding, developed in partnership with the Humber and Yorkshire Integrated Care Board.   <a class="topline-cta" href="https://draft.mortar.works/case-studies/progress-online-for-east-riding/">Read more</a>
-
 
 ### Why It Matters  
 As the world becomes more digitally dependent, individuals without access to digital skills and resources face significant disadvantages. The **Digital Skills and Help Finder** offers an essential tool for combating digital exclusion, empowering individuals to improve their skills and access vital resources.
