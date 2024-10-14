@@ -12,6 +12,19 @@ Our Venue Accreditation Tool enables cultural, commercial, and community venues 
 
 Accredited venues create a welcoming environment for everyone, improve community and team engagement, and meet evolving legal requirements and public expectations.
 
+## Case Study Highlight  
+
+We’ve successfully implemented our Venue Accreditation Tool in collaboration with the **Greater London Authority** and **Alzheimers UK**. 
+
+{% assign caseStudy = site.caseStudies | where: "title", "Dementia friendly venue accreditation for London" | first %}
+
+<div class="case-study-card">
+  <h3>{{ caseStudy.title }}</h3>
+  <p class="case-study-desc">{{ caseStudy.description }}</p>
+  <img src="{{ caseStudy.image }}" alt="{{ caseStudy.title }} image" class="case-study-image" />
+  <a href="{{ caseStudy.read_more_link }}" class="read-more">Read more</a>
+</div>
+
 ## How it Works  
 Our platform delivers an all-in-one solution for training, assessment, and progress tracking. We provide the tools you need to onboard, train, and certify your venue staff. The process is broken into clear, manageable stages, and can be fully customised to meet the needs of your organisation.
 
