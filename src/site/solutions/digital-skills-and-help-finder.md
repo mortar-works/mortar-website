@@ -26,7 +26,7 @@ The Digital Skills and Help Finder empowers users to assess their digital skills
   </figcaption>
 </figure>
 
-### Key Features  
+## Key Features  
 The Digital Skills and Help Finder is packed with essential features that make it easy for organisations to promote digital inclusion:
 
 - **Self-Assessment Module**  
