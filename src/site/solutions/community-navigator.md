@@ -3,6 +3,7 @@ title: "Community navigator"
 description: "Build and manage your local network to deliver accurate, up-to-date information, opportunities and events."
 link: "/community-navigator"
 label_image: "/static/images/solutions/solution_label01.png"
+image: "/static/images/solutions/communitynavigator01.png"
 ---
 
 ## Community Navigator  
@@ -19,7 +20,7 @@ The Community Navigator serves as a central hub, allowing administrators to mana
 - **Event promotion:** Share local events, workshops, and engagement opportunities with your community.
 - **Opportunities and support services:** Provide easy access to resources, support services, and opportunities for individuals across the community.
 
-### Key Features  
+## Key Features  
 The Community Navigator solution offers a range of features to help organisations effectively engage with their communities and manage networks of services and support.
 
 - **Directory Management**  
