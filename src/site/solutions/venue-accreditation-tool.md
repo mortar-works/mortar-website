@@ -32,6 +32,7 @@ Read about how we have successfully implemented our Venue Accreditation Tool in 
 </div>
 
 
+
 ## How it Works  
 Our platform delivers an all-in-one solution for training, assessment, and progress tracking. We provide the tools you need to onboard, train, and certify your venue staff. The process is broken into clear, manageable stages, and can be fully customised to meet the needs of your organisation.
 
