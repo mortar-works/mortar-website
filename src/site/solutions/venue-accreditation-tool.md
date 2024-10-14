@@ -58,7 +58,7 @@ Showcase your accredited venues on a dynamic, public-facing map. This helps attr
 - **Continuous Support**  
    Our team will support you in customising the platform, offering continuous updates and new resources as standards evolve.
 
-## Real-world Impact  
+## Case Study Highlight
 > Read about how we have successfully implemented our Venue Accreditation Tool in collaboration with the Greater London Authority and Alzheimers UK, supporting over 150 venues in becoming accredited in dementia accessibility and best practice. <a class="topline-cta" href="https://draft.mortar.works/case-studies/dementia-friendly-venue-accredition-for-london/">  Read more</a>
 
 ## Get Started  
