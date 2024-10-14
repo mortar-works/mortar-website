@@ -38,7 +38,7 @@ The Community Navigator solution offers a range of features to help organisation
   Access real-time data on community engagement, service usage, and more. Gain insights into how services and resources are being utilised, and optimise community outreach based on this information.
 
 ## Case Study Highlight
-> We successfully implemented the **Community Navigator** for **Hackney Council**, helping to manage a network of community services and providing up-to-date information to residents. This platform has streamlined the way Hackney delivers services and opportunities to its community, ensuring efficient communication and engagement.<a class="topline-cta" href="https://draft.mortar.works/case-studies/community-navigation-in-hackney/">  Read more</a>
+> We successfully implemented the Community Navigator for Hackney Council, helping to manage a network of community services and providing up-to-date information to residents. This platform has streamlined the way Hackney delivers services and opportunities to its community, ensuring efficient communication and engagement.<a class="topline-cta" href="https://draft.mortar.works/case-studies/community-navigation-in-hackney/">  Read more</a>
 
 ### Why It Matters  
 Local authorities and organisations often struggle with delivering timely and accurate information to their communities. The **Community Navigator** addresses this issue by providing a central platform to manage local networks and distribute critical information. This tool enhances communication, making sure that residents and service users can access relevant and up-to-date resources and opportunities.

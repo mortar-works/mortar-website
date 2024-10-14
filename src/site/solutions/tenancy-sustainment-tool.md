@@ -38,7 +38,7 @@ Our Tenancy Sustainment Tool provides comprehensive support through a range of c
   Administrators and service providers can easily add and update local resources and services to help guide tenants to the right support.
 
 ## Case Study Highlight
-> We’ve successfully implemented our **Tenancy Sustainment Tool** in collaboration with the **Mayor of London** to help tenants across the city access essential services and support.<a class="topline-cta" href="https://draft.mortar.works/case-studies/tenancy-sustainment-tool-for-the-mayor-of-london/">  Read more</a>
+> We’ve successfully implemented our Tenancy Sustainment Tool in collaboration with the Mayor of London to help tenants across the city access essential services and support.<a class="topline-cta" href="https://draft.mortar.works/case-studies/tenancy-sustainment-tool-for-the-mayor-of-london/">  Read more</a>
 
 ### Why It Matters  
 With growing inequalities in access to housing information, advice, and support, the Tenancy Sustainment Tool provides a much-needed solution for housing providers to deliver better tenant outcomes. By improving the accessibility of advice and support, landlords and housing officers can help tenants stay in their homes, reducing the number of evictions and promoting long-term tenancy sustainment.
