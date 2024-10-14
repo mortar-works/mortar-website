@@ -45,7 +45,7 @@ The Digital Skills and Help Finder is packed with essential features that make i
   Organisations can access a real-time dataset, gaining insights into digital skills gaps within their communities and understanding the impact of interventions.
 
 ### Case Study Highlight  
-> Progress Online is a tailored implementation of our Digital Inclusion Triage Tool for East Riding, developed in partnership with the Humber and Yorkshire Integrated Care Board. <a class="topline-cta" href="https://draft.mortar.works/case-studies/progress-online-for-east-riding/">  Read more</a>
+> Progress Online is a tailored implementation of our Digital Inclusion Triage Tool for East Riding, developed in partnership with the Humber and Yorkshire Integrated Care Board.   <a class="topline-cta" href="https://draft.mortar.works/case-studies/progress-online-for-east-riding/">Read more</a>
 
 
 ### Why It Matters  
