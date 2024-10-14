@@ -12,6 +12,9 @@
     <link rel="shortcut icon" href="{{ '/static/images/mortar-favicon.png' | url }}" />
     <link rel="stylesheet" href="{{ '/static/css/styles.css' | url }}">
     <script async="async" defer="defer" src="{{ '/static/js/main.js' | url }}"></script>
+    {% if bodyId == "solutions" %}
+  <link rel="stylesheet" href="/static/css/solutions.css">
+  {% endif %}
   </head>
   <body id="{% block bodyId %}{% endblock %}">
     <header>
