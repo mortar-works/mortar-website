@@ -16,20 +16,16 @@ Accredited venues create a welcoming environment for everyone, improve community
 
 Read about how we have successfully implemented our Venue Accreditation Tool in collaboration with the **Greater London Authority** and **Alzheimers UK**. 
 
-<div class="case-study-wrapper">
-  {% for caseStudy in collections.caseStudies %}
-    {% if caseStudy.data.title == "Dementia friendly venue accreditation for London" %}
-    <div class="case-study-card">
-      <div class="case-study-card-content">
-        <h3>{{ caseStudy.data.title }}</h3>
-        <p class="case-study-desc">{{ caseStudy.data.description }}</p>
-        <img src="{{ caseStudy.data.image }}" alt="{{ caseStudy.data.title }} image" class="case-study-image" />
-        <a href="{{ caseStudy.data.read_more_link }}" class="read-more">Read more</a>
-      </div>
-    </div>
-    {% endif %}
-  {% endfor %}
-</div>
+{% for caseStudy in collections.caseStudies %}
+  {% if caseStudy.data.title == "Dementia friendly venue accreditation for London" %}
+  <div class="case-study-card">
+    <h3>{{ caseStudy.data.title }}</h3>
+    <p class="case-study-desc">{{ caseStudy.data.description }}</p>
+    <img src="{{ caseStudy.data.image }}" alt="{{ caseStudy.data.title }} image" class="case-study-image" />
+    <a href="{{ caseStudy.data.read_more_link }}" class="read-more">Read more</a>
+  </div>
+  {% endif %}
+{% endfor %}
 
 
 
