@@ -3,6 +3,7 @@ title: Dynamic Information Directories
 date: 2023-09-20
 image: usecase_bg01.jpg
 author: George Unsworth
+description: Structuring information to transform customer engagement and power more efficient services.
 draft: false
 tags:
   - Digital inclusion

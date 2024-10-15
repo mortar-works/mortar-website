@@ -12,125 +12,179 @@ name: homepage
 {% block content %}
   <section id="topline">
     <div class="wrapper">
-      <h1>Redefining relationships between people, places and property</h1>
-
-      <p>
-       Mortar is a technology company building better services. Our products and solutions are driving the next generation of intelligent, accessible, user-led services. </p>
-
-      <a class="cta light" href="#use-cases">Learn about our work</a>
+      <h1>Redefining relationships between people, places, and property</h1>
+      <p class="toplinep">
+        Mortar is a technology company building better services. Our products
+        and solutions are driving the next generation of intelligent, accessible,
+        user-led services.
+      </p>
+      <a class="topline-cta" href="#case-studies">Learn about our work</a>
     </div>
   </section>
 
-  <section id="features">
-    <div class="wrapper">
-      <div class="section-head">
-        <h2>Building Better Services</h2>
-       
- <h3>Mortar creates scalable solutions to real-world problems</h3>  
-<p class="section-tagline"> <p>We combine our technology and expertise in data, intelligence and user-led design to build scalable products and solutions. Our toolkit, platform and framework support the development of customisable solutions that enhance service quality, effiency and accessibility. Have a look at our use-cases to see how our partners are delivering solutions at scale and to learn how we can support you in the transformation of your services and the delivery of better outcomes for your users.  
-
-<br><br></p>
-     </p> </div>
-
-      <div id="feature-list">
-        <ul>
-        {% for feature in features  %}
-          <li>
-            <h3>{{ feature.title }}</h3>
-            <p class="feature-tagline">{{ feature.tagline }}</p>
-            {{ feature.subfeatures | markdown | safe }}
-          </li>
-        {% endfor %}
+  <section id="partners">
+    <div class="partners-wrapper">
+      <div class="partners-ticker">
+        <ul class="partners-list">
+          <li><img src="{{ '/static/images/partners/lga_logo.png' | url }}" alt="Local Government Association logo" /></li>
+          <li><img src="{{ '/static/images/partners/gla_logo2.jpeg' | url }}" alt="Greater London Authority logo" /></li>
+          <li><img src="{{ '/static/images/partners/havering-council.png' | url }}" alt="Havering Council logo" /></li>
+          <li><img src="{{ '/static/images/partners/Hackney-Logo.png' | url }}" alt="Hackney Council logo" /></li>
+          <li><img src="{{ '/static/images/partners/Clarion-Housing-Group-Logo.png' | url }}" alt="Clarion Housing Group logo" /></li>
+          <li><img src="{{ '/static/images/partners/salford02.png' | url }}" alt="Salford City Council logo" /></li>
+          <li><img src="{{ '/static/images/partners/eastriding1.png' | url }}" alt="East Riding of Yorkshire logo" /></li>
+          <li><img src="{{ '/static/images/partners/humberandnorth.png' | url }}" alt="Humber and North Yorkshire Integrated Care Partnership logo" /></li>
+          <li><img src="{{ '/static/images/partners/walthamforest01.png' | url }}" alt="Waltham Forest logo" /></li>
+          <li><img src="{{ '/static/images/partners/Worcestershire-County-Council-logo.png' | url }}" alt="Worcestershire County Council logo" /></li>
+          <li><img src="{{ '/static/images/partners/socialfinance01.png' | url }}" alt="Social Finance logo" /></li>
+          <li><img src="{{ '/static/images/partners/mayoroflondonlogo01.png' | url }}" alt="Mayor of London logo" /></li>
         </ul>
       </div>
     </div>
   </section>
 
-  <section id="partners">
-    <div class="wrapper">
-      <h2>Our partners</h2>
-      <ul>
-
-       <li><img src="{{ '/static/images/partners/lga_logo.png' | url }}" alt="Local Government Association logo" /></li> 
-           <li><img src="{{ '/static/images/partners/gla_logo2.jpeg' | url }}" alt="Greater London Authority logo" /></li>
-         <li><img src="{{ '/static/images/partners/havering-council.png' | url }}" alt="Havering Council logo" /></li 
-           <li><img src="{{ '/static/images/partners/Hackney-Logo.png' | url }}" alt="Hackney Council logo" /></li>
-            <li><img src="{{ '/static/images/partners/Clarion-Housing-Group-Logo.png' | url }}" alt="Clarion Housing Group logo" /></li>
-                  <li><img src="{{ '/static/images/partners/salford02.png' | url }}" alt="Salford City Council logo" /></li>
-                  <li><img src="{{ '/static/images/partners/eastriding1.png' | url }}" alt="East Riding of Yorkshire logo" /></li>
-                  <li><img src="{{ '/static/images/partners/humberandnorth.png' | url }}" alt="Humber and North Yorkshire Integrated Care Partnership logo" /></li>
-                  <li><img src="{{ '/static/images/partners/walthamforest01.png' | url }}" alt="Waltham Forest logo" /></li>
-                  <li><img src="{{ '/static/images/partners/Worcestershire-County-Council-logo.png' | url }}" alt="Worcestershire County Council logo" /></li>
-                  <li><img src="{{ '/static/images/partners/socialfinance01.png' | url }}" alt="Social Finance logo" /></li>
-                  <li><img src="{{ '/static/images/partners/mayoroflondonlogo01.png' | url }}" alt="Mayor of London logo" /></li>
-
-
-
-      
-      </ul>
+<section id="case-studies">
+  <div class="case-studies-wrapper">
+    <h2>Case studies</h2>
+    <p class="case-study-p">
+      We bring together a global suite of tools that solve problems impacting services and communities.
+    </p>
+    <div class="case-studies-grid">
+      {% for caseStudy in collections.caseStudies %}
+      <a href="{{ caseStudy.url }}" class="case-study-link {% if loop.index > 4 %} hidden {% endif %}"> <!-- Hide the extra case studies -->
+        <div class="case-study-card">
+          <h3>{{ caseStudy.data.title }}</h3>
+          <p class="case-study-desc">{{ caseStudy.data.description }}</p>
+          <img src="{{ caseStudy.data.image }}" alt="{{ caseStudy.data.title }} image" class="case-study-image" />
+        </div>
+      </a>
+      {% endfor %}
     </div>
-  </section>
 
-  <section id="use-cases">
-    <div class="wrapper">
-      <div class="section-head">
-        <h2>Use Cases</h2>
-        <div class="section-tagline">
-          <p>
+   <!-- Load More Case Studies Button -->
+    <div class="case-studies-button-container">
+      <button id="load-more-casestudies" class="cta">Load More Case Studies</button>
+    </div>
 
-Alongside providing bespoke systems and service design our scalable solutions address and solve complex societal issues, making your adoption of new technology easier and more affordable.
+    <!-- Preloader for Case Studies -->
+    <div id="case-studies-preloader" class="hidden">
+      <div class="spinner"></div>
+    </div>
+  </div>
+</section>
 
-          </p>
-         
-          
-          
-          
-          <p></p>
+<section id="solutions">
+  <div class="solutions-wrapper">
+    <h2>Our Solutions</h2>
+    <p class="solutions-description">
+      We combine our most successful work into scalable solutions, making them personalised and tailored to the needs of your users.
+    </p>
+
+    <!-- Solutions Grid -->
+    <div class="solutions-grid">
+      {% for solution in collections.solutions %}
+      <div class="solution-card">
+        
+        <!-- Solution Content in Columns -->
+        <div class="solution-content">
+          <img src="{{ solution.data.label_image }}" alt="{{ solution.data.title }} Label" class="solution-label-image">
+          <h3>{{ solution.data.title }}</h3> 
+          <p class="solution-desc">{{ solution.data.description }}</p> 
+          <a href="{{ solution.url }}" class="find-out-more-link">Find Out More</a> 
         </div>
       </div>
-
-      <ol>
-      {% for useCase in collections.useCases %}
-        <li>
-          <h3>{{ useCase.data.title }}</h3>
-
-          {% if useCase.data.homepageImage %}
-            <figure>
-              <img src="{{ '/static/images/homepage/' + useCase.data.homepageImage | url }}" alt="" />
-            </figure>
-          {% endif %}
-
-          <div>
-            {{ useCase.data.description | markdown | safe }}
-
-            <a href="{{ useCase.url }}" class="cta">Learn more<span class="visually-hidden"> about {{ useCase.data.title }}<span></a>
-          </div>
-        </li>
       {% endfor %}
-      </ol>
     </div>
-  </section>
+  </div>
+</section>
 
-  <section id="insights">
-    <div class="wrapper">
-      <div class="section-head">
-        <h2>Insights</h2>
-        <p class="section-tagline">Mortar makes the application of intelligence, data and user-led design easier and more affordable; to inspire services, experiences and relationships to be more accessible and inclusive. Read our insights to find out how we are applying technology to build better services.</p>
-      </div>
 
-      <ul>
+
+<section id="insights">
+  <div class="wrapper">
+    <div class="section-head">
+      <h2>Insights</h2>
+      <p class="insights-tagline">
+        Explore our insights to find out how we are applying new technology to build better services.
+      </p>
+    </div>
+
+    <ul id="insight-list">
       {% for post in collections.insights %}
-        <li>
-          <a class="insight-title" href="{{ post.url }}" aria-label="Insight: {{ post.data.title }}">
-            <div class="insight-image" style="background-image: url('{{ '/static/images/insights/' + post.data.image | url }}')"></div>
-            <div class="insight-details">
-              <time datetime="{{ post.data.date | w3date }}">{{ post.data.date | date }}</time>
-              {{ post.data.title }}
-            </div>
-          </a>
-        </li>
+      <li class="{% if loop.index > 3 %}hidden{% endif %}">
+        <a class="insight-title" href="{{ post.url }}" aria-label="Insight: {{ post.data.title }}">
+          <div class="insight-image" style="background-image: url('{{ '/static/images/insights/' + post.data.image | url }}')">
+            <div class="hover-overlay"></div>
+          </div>
+          <div class="insight-details">
+            <div class="insight-title">{{ post.data.title }}</div> <!-- Title now in a div -->
+            <div class="insight-description">{{ post.data.description }}</div> <!-- Description now in a div -->
+          </div>
+        </a>
+      </li>
       {% endfor %}
-      </ul>
+    </ul>
+      <div class="insights-button-container">
+        <button id="load-more-insights" class="cta">Load More Insights</button>
+      </div>
+    <div id="insights-preloader" class="hidden">
+      <div class="spinner"></div>
     </div>
-  </section>
+  </div>
+</section>
+
+
+
+<section id="contact">
+  <div class="wrapper contact-wrapper">
+    <!-- Left Column: Contact Info -->
+    <div class="contact-info">
+      <h2>Get in Touch</h2>
+      <p>Interested in learning more about one of our products or tools, need technical support, or want to discuss a project? Fill out our form and we will be in touch with you soon.
+      <br><br>Or, skip the form and send us an email:<br><br>office@mortar.works</p>
+    </div>
+
+    <!-- Right Column: Contact Form in a Card -->
+    <div class="contact-form-card">
+      <form id="contactForm" action="https://formspree.io/f/mnnqqnev" method="POST">
+        <div>
+          <label for="name">Name</label>
+          <input type="text" id="name" name="name" required>
+        </div>
+        
+        <div>
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" required>
+        </div>
+
+        <div>
+          <label for="reason">What is the reason for getting in touch?</label>
+          <select id="reason" name="reason">
+            <option value="General Enquiry">General Enquiry</option>
+            <option value="Demo">Demo of an existing tool or product</option>
+            <option value="Service Design Support">Service Design Support</option>
+            <option value="Technical Consultancy">Technical Consultancy</option>
+            <option value="Product Development">Product Development</option>
+            <option value="Data Solutions">Data and Intelligence Solutions</option>
+            <option value="None">None of the above</option>
+          </select>
+        </div>
+
+        <div>
+          <label for="message">Message</label>
+          <textarea id="message" name="message" required></textarea>
+        </div>
+
+        <button type="submit">Send Message</button>
+
+        <!-- Preloader/Spinner (initially hidden) -->
+        <div id="contact-preloader" class="hidden">
+          <div class="spinner"></div>
+        </div>
+      </form>
+    </div>
+  </div>
+</section>
+
+
 {% endblock %}

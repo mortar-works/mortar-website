@@ -3,6 +3,7 @@ title: Markers of growth
 date: 2020-03-14
 image: markers-of-growth.jpg
 author: George Unsworth
+description: Exploring the impact of the pandemic on business growth, technology adoption, and the long-term challenges facing communities.
 draft: false
 tags:
   - growth

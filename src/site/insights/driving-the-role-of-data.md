@@ -4,6 +4,7 @@ date: 2021-02-21
 image: data-analysis-2.jpg
 author: George Unsworth
 draft: false
+description: Enhance data sharing, consent management, and real-time analysis with unified data environments that streamline decision-making.
 tags:
   - proptech
   - realestatetech

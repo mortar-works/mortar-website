@@ -1,60 +1,75 @@
 const yaml = require("js-yaml");
 
-// Import filters
-const dateFilter = require('./src/filters/date-filter.js');
+// Import custom filters
+const dateFilter = require('./src/filters/date-filter.js');   // Ensure this path is correct
 const markdownFilter = require('./src/filters/markdown-filter.js');
 const w3DateFilter = require('./src/filters/w3-date-filter.js');
-const { MultiWatching } = require("webpack");
-
-const env = process.env.ELEVENTY_ENV;
 
 module.exports = function(eleventyConfig) {
-  // static passthroughs
+  // Static passthroughs
   eleventyConfig.addPassthroughCopy("src/site/static");
 
-  // yaml data files
+  // Enable YAML data files to be processed
   eleventyConfig.addDataExtension("yaml", contents => yaml.safeLoad(contents));
 
-
+  // Add custom filters
   eleventyConfig.addFilter('date', dateFilter);
   eleventyConfig.addFilter('markdown', markdownFilter);
   eleventyConfig.addFilter('w3date', w3DateFilter);
 
+  // Create a collection for blog posts (live posts only, no drafts)
+  const livePosts = post => post.date <= new Date() && !post.data.draft;
 
-  // create collections
-  const livePosts = p => p.date <= new Date() && !p.data.draft;
-
+  // Insights collection: Filter to show live posts only
   eleventyConfig.addCollection("insights", function(collection) {
     return collection.getFilteredByGlob("src/site/insights/*.md")
-            .filter(livePosts)
-            .reverse();
+      .filter(livePosts)
+      .reverse();
   });
 
+  // Insight drafts collection: Show drafts only
   eleventyConfig.addCollection("insightDrafts", function(collection) {
     return collection.getFilteredByGlob("src/site/insights/*.md")
-            .filter( _ => !livePosts(_) )
-            .reverse();
+      .filter(post => post.data.draft)
+      .reverse();
   });
 
-  eleventyConfig.addCollection("useCases", function(collection) {
-    return collection.getFilteredByGlob("src/site/use-cases/*.md")
-            .sort((a,b) => Math.sign(a.data.order - b.data.order));
+  // Create useCases collection from the usecases.yaml file
+  eleventyConfig.addCollection("useCases", function(collectionApi) {
+    const useCasesData = collectionApi.getAll()[0].data.usecases;
+    if (Array.isArray(useCasesData)) {
+      return useCasesData;
+    } else {
+      throw new Error("usecases data is not an array");
+    }
   });
 
+  // **New caseStudies collection**: Pull Markdown files from case-studies folder
+  eleventyConfig.addCollection("caseStudies", function(collectionApi) {
+    return collectionApi.getFilteredByGlob("src/site/case-studies/*.md")
+      .filter(livePosts)
+      .reverse();  // Reverse the order so newest case studies appear first
+  });
 
-  // This bit required for the dev command
+  // Create a collection for solutions from the markdown files
+  eleventyConfig.addCollection("solutions", function(collectionApi) {
+    return collectionApi.getFilteredByGlob("src/site/solutions/*.md");
+  });
+
+  // Watch targets for development (live reload)
   eleventyConfig.setUseGitIgnore(false);
   eleventyConfig.addWatchTarget('src/site/static/js');
   eleventyConfig.addWatchTarget('src/site/static/css');
 
+  // Final configuration for directories, file types, etc.
   return {
     dir: {
-      input: "src/site",
-      output: "public"
+      input: "src/site",    // Input directory for content files
+      output: "public"      // Output directory for the generated site
     },
-    templateFormats : ["njk", "md"],
-    htmlTemplateEngine : "njk",
-    markdownTemplateEngine : "njk",
-    passthroughFileCopy: true
+    templateFormats: ["njk", "md"],   // Supported file formats
+    htmlTemplateEngine: "njk",        // Template engine for HTML files
+    markdownTemplateEngine: "njk",    // Template engine for Markdown files
+    passthroughFileCopy: true         // Enable passthrough copy for static files
   };
-}
+};

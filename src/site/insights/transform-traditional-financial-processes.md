@@ -3,6 +3,7 @@ title: Transform traditional finance
 date: 2020-02-08
 image: transform_finance04.jpg
 author: George Unsworth
+description: How real-time data and automated allocation increases productivity and transparency.
 draft: false
 tags:
   - finance function

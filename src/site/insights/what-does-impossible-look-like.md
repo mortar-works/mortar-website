@@ -3,6 +3,7 @@ title: What does impossible look like...
 date: 2020-04-19
 image: what-does-impossible-look-like.jpg
 author: George Unsworth
+description: How navigating the future requires transparency, flexibility, and collaboration to build a more resilient and adaptable sector.
 draft: false
 tags:
   - proptech

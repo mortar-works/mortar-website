@@ -4,6 +4,7 @@ date: 2023-02-08
 image: triage03_2.png
 author: George Unsworth
 draft: false
+description: Transform local area services with tools that assesses exclusion, provides tailored referrals, and enhance access to resources.
 tags:
   - digital inclusion
   - triage tool

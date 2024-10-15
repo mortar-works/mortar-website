@@ -3,6 +3,7 @@ title: Custom engagement environments
 date: 2023-08-10
 image: bg-customengagement.png
 author: George Unsworth
+description: Empower local networks and services with custom-designed environments that enhance service delivery outcomes.
 draft: false
 tags:
   - engagement environments

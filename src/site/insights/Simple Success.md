@@ -4,6 +4,7 @@ date: 2022-07-18
 image: simplesuccess01.jpg
 author: George Unsworth
 draft: false
+description: How simple solutions can achieve great impact by improving the accessibility and sharing of service information.
 tags:
   - digital inclusion
   - financial inclusion

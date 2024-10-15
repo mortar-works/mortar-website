@@ -1,5 +1,8 @@
 html {
   scroll-behavior: smooth;
+  -webkit-font-smoothing: antialiased; /* For Chrome, Safari, etc. */
+  -moz-osx-font-smoothing: grayscale;  /* For Firefox on Mac */
+  box-sizing: border-box;
 }
 
 a {
@@ -17,26 +20,36 @@ a {
 }
 
 .cta {
-  display: inline-block;
-  color: $black;
-  padding: 0.7em 2em;
-  border: 1px solid $mortar-purple;
-  transition: all 0.3s ease-in-out;
-  margin: 1em 0;
+  display: block;
+  max-width: fit-content;
+  width: fit-content;
+  margin: 0 auto;
+  padding: 0.7em 2.5em;
+  background-color: transparent;
+  cursor: pointer ;
+  color: black;
+  text-align: center;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1.2em;
+  transition: background-color 0.3s ease; 
+  border: 1px black solid;
 
   &:hover {
-    background: $mortar-purple;
-    color: $mortar-yellow;
+    background-color: darken($mortar-purple, 10%);
+    color: white;
   }
 
-  &.light {
-    border-color: $white;
-    color: $white;
+  @include respond-to('small') {
+    padding-left: 1em;
+    padding-right: 1em;
+    margin-bottom: 3em;
+    font-size: 1.1em;
+    width: 90%; /* Ensure the button fits well on mobile */
+  }
 
-    &:hover {
-      background: $mortar-yellow;
-      color: $black;
-    }
+  @media (min-width: 769px) {
+    width: fit-content; /* Makes sure the width resizes properly on desktop */
   }
 }
 

@@ -1,0 +1,103 @@
+#case-study {
+    /* Hero image styling for case study */
+    .hero-image {
+      background-size: cover;
+      background-position: center;
+      height: 400px;
+      margin-bottom: 2em;
+      
+      /* Example background image - can be set dynamically per case study */
+      background-image: url('/static/images/case-studies/default-image.jpg');
+    }
+  
+    /* Centered "Get in Touch" button */
+    .case-study-get-in-touch {
+      text-align: center;
+      margin-top: 2em;
+      
+      a.cta {
+        padding: 0.8em 2em;
+        background-color: $mortar-purple;
+        color: white;
+        text-decoration: none;
+        font-size: 1.2em;
+        border-radius: 5px;
+        transition: background-color 0.3s ease;
+  
+        &:hover {
+          background-color: darken($mortar-purple, 10%);
+        }
+      }
+    }
+  
+    /* Styling for case study content */
+    .case-study-content {
+      max-width: 800px;
+      margin: 0 auto;
+      font-size: 1.1em;
+      line-height: 1.6em;
+  
+      h2, h3 {
+        color: $mortar-purple;
+        margin-top: 1.5em;
+      }
+  
+      p {
+        margin-bottom: 1.5em;
+        color: #555;
+      }
+  
+      ul, ol {
+        margin: 1em 0;
+        padding-left: 1.5em;
+  
+        li {
+          margin-bottom: 0.5em;
+        }
+      }
+    }
+  
+    /* Styling for related case studies section */
+    .other-case-studies {
+      background: lighten($mortar-yellow, 15%);
+      padding: 2em 0;
+  
+      ul {
+        list-style: none;
+        padding-left: 0;
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+        grid-gap: 1em;
+  
+        @include respond-to('small') {
+          grid-gap: 2em;
+        }
+  
+        @include respond-to('medium') {
+          grid-gap: 3em;
+        }
+  
+        @include respond-to('large') {
+          grid-gap: 4em;
+        }
+      }
+  
+      .previous-post, .next-post {
+        margin: 1em 0;
+        text-align: center;
+  
+        a {
+          color: $mortar-purple;
+          text-decoration: none;
+          font-weight: bold;
+          font-size: 1.1em;
+          transition: color 0.3s ease;
+  
+          &:hover {
+            color: darken($mortar-purple, 10%);
+          }
+        }
+      }
+    }
+  }
+  

@@ -3,6 +3,7 @@ title: Truth, transformation and real estate
 date: 2021-08-15
 image: truthandrealestate01.jpg
 author: George Unsworth
+description: Digital transformation in real estate should be powered by user-driven innovation to enhance local area engagement.
 draft: false
 tags:
     - digital transformation  

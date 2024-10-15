@@ -4,6 +4,7 @@ date: 2020-09-01
 image: evolvefinancefunction.jpg
 author: George Unsworth
 draft: false
+description: Transform operations with AI-driven solutions that streamline processes, eliminate manual tasks, and drive strategic business growth.
 tags:
   - proptech
   - realestatetech

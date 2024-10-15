@@ -4,6 +4,7 @@ date: 2020-05-01
 image: creating-connections01.jpg
 author: George Unsworth
 draft: false
+description: Enhance revenue with AI-powered tools that unify financial data, automate collections, and improve customer engagement.
 tags:
     - income
     - revenue

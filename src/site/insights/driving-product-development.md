@@ -2,6 +2,7 @@
 title: Driving product development
 date: 2024-08-05
 image: driving-product_01.png
+description: Why user-led design principles drive the benefits and efficiencies of our solutions.
 author: George Unsworth
 draft: false
 tags:

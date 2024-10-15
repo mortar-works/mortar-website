@@ -1,0 +1,43 @@
+{% extends 'layouts/base.njk' %}
+
+{% block pageTitle %}{{ title }} - Solutions - {{ super() }}{% endblock %}
+{% block bodyId %}{{ title | slug }}{% endblock %}
+{% block mainClass %}solution content-page{% endblock %}
+
+{% set previousPost = collections.solutions | getPreviousCollectionItem(page) %}
+{% set nextPost = collections.solutions | getNextCollectionItem(page) %}
+
+{% block content %}
+<section>
+  <div class="hero-image" style="background-image: url('{{ image | url }}')"></div>
+  <div class="wrapper">
+    <article>
+      <h1>{{ title }}</h1>
+      {{ content | safe }}
+    </article>
+
+    <p class="solution-get-in-touch">
+      <a class="cta" href="https://draft.mortar.works/#contact" target="_blank" rel="noopener">Get in touch</a>
+    </p>
+
+    <div class="other-content">
+      {% if previousPost %}
+        <div class="previous-post">
+          <a href="{{ previousPost.url }}">
+            <span>Previous solution</span>
+            {{ previousPost.data.title }}
+          </a>
+        </div>
+      {% endif %}
+      {% if nextPost %}
+        <div class="next-post">
+          <a href="{{ nextPost.url }}">
+            <span>Next solution</span>
+            {{ nextPost.data.title }}
+          </a>
+        </div>
+      {% endif %}
+    </div>
+  </div>
+</section>
+{% endblock %}

@@ -4,6 +4,7 @@ date: 2022-12-18
 image: hc03_2.jpg
 author: George Unsworth
 draft: false
+description: Combat isolation and improve outreach with user-led communication tools that connect residents to community services and cultural initiatives.
 tags:
   - exclusion
   - data capture

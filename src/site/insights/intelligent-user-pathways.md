@@ -2,6 +2,7 @@
 title: Intelligent User Pathways
 date: 2023-11-08
 image: bg-usecase-02.png
+description: Transition services into more effective methods of delivery using our triage and referral tools.
 author: George Unsworth
 draft: false
 tags:

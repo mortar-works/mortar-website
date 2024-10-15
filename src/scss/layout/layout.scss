@@ -18,36 +18,38 @@ header, footer, main > section {
 
 header {
   height: 7em;
-  position: absolute;
-  left: 0;
-  right: 0;
+  position: sticky;
   top: 0;
-  z-index: 100;
-  background: rgba(255,255,255,0.65);
-  color: $black;
-  transition: all 0.3s ease-out;
+  z-index: 1000;
+  background: transparent !important; /* Initially transparent */
+  color: $white; /* Change to white to ensure white text */
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: none; /* No shadow initially */
 
-  &.nav-active {
-    height: 100%;
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    background: $mortar-orange !important;
-    z-index: 10000;
+  /* Sticky behavior */
+  &.sticky {
+    background-color: rgba(67, 34, 124, 0.8) !important; /* Purple semi-transparent */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15) !important; /* Add shadow */
   }
 
-  #homepage & {
-    background: transparent;
+  /* Ensure white links across all pages */
+  nav a {
+    color: $white !important; /* White links */
+    transition: color 0.3s ease;
+  }
 
-    nav a {
-      color: $white;
-    }
-
-    #mortar-logo {
-      background-image: url('../images/mortar-logo-white.png');
-    }
+  /* Apply white logo globally */
+  #mortar-logo {
+    margin: 0;
+    padding: 0;
+    height: 75px;
+    width: 165px;
+    display: block;
+    background: transparent scroll no-repeat 0 0;
+    background-image: url('../images/mortar-logo-white.png'); /* White logo */
+    background-size: cover;
+    text-indent: -9999px;
+    transition: background-image 0.3s ease;
   }
 
   .wrapper {
@@ -58,31 +60,34 @@ header {
     align-items: center;
   }
 
-  #mortar-logo {
-    margin: 0;
-    padding: 0;
-    height: 75px;
-    width: 165px;
-    display: block;
-    background: transparent scroll no-repeat 0 0;
-    background-image: url('../images/mortar-logo-black.png');
-    background-size: cover;
-    text-indent: -9999px;
-  }
-
   .hamburger {
-    @include respond-to('small'){
+    @include respond-to('small') {
       display: none;
     }
 
     .hamburger-inner,
     .hamburger-inner:after,
     .hamburger-inner:before {
-      background-color: $black;
+      background-color: $white !important; /* White hamburger for consistency */
+    }
+  }
 
-      #homepage & {
-        background-color: $white;
-      }
+  &.nav-active {
+    height: 100%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: $mortar-orange !important;
+    z-index: 10000;
+
+    nav a {
+      color: $black; /* Black text for the nav when active */
+    }
+
+    #mortar-logo {
+      background-image: url('../images/mortar-logo-black.png'); /* Black logo */
     }
   }
 
@@ -97,7 +102,7 @@ header {
     align-items: center;
     flex-basis: 100%;
 
-    @include respond-to('small'){
+    @include respond-to('small') {
       display: flex;
       flex-basis: auto;
     }
@@ -113,11 +118,11 @@ header {
         @include rajdhani-regular-type;
         font-size: 1.8em;
         line-height: 2em;
-        color: $black;
+        color: $white; /* Ensure white color */
       }
     }
 
-    @include respond-to('small'){
+    @include respond-to('small') {
       display: flex;
       flex-wrap: wrap;
       font-size: 1.5em;
@@ -130,12 +135,18 @@ header {
         }
 
         &:last-of-type a {
-        padding: 0 0.6em;
+          padding: 0 0.6em;
           padding-right: inherit;
         }
       }
     }
   }
+}
+
+/* Sticky header styles */
+.sticky {
+  background-color: rgba(67, 34, 124, 0.8) !important; /* Semi-transparent purple */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15) !important; /* Add shadow when sticky */
 }
 
 footer {
@@ -172,11 +183,11 @@ footer {
       grid-gap: 2em;
     }
 
-    @include respond-to('medium'){
+    @include respond-to('medium') {
       grid-gap: 3em;
     }
 
-    @include respond-to('large'){
+    @include respond-to('large') {
       grid-gap: 4em;
     }
   }
