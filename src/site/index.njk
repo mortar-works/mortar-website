@@ -98,6 +98,20 @@ name: homepage
   </div>
 </section>
 
+<section id="news-updates">
+  <div class="wrapper">
+    <h2>Latest News & Updates</h2>
+    <div class="news-grid">
+      {% for post in collections.news %}
+      <div class="news-card">
+        <h3>{{ post.data.title }}</h3>
+        <p class="news-excerpt">{{ post.data.excerpt }}</p>
+        <a href="{{ post.url }}" class="read-more-link">Read More</a>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+</section>
 
 
 <section id="insights">

@@ -56,6 +56,13 @@ module.exports = function(eleventyConfig) {
     return collectionApi.getFilteredByGlob("src/site/solutions/*.md");
   });
 
+eleventyConfig.addCollection("news", function (collectionApi) {
+  return collectionApi.getFilteredByGlob("src/site/news/*.md").reverse().slice(0, 3);
+});
+
+
+
+
   // Watch targets for development (live reload)
   eleventyConfig.setUseGitIgnore(false);
   eleventyConfig.addWatchTarget('src/site/static/js');
