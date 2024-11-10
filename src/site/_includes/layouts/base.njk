@@ -12,6 +12,9 @@
     <link rel="shortcut icon" href="{{ '/static/images/mortar-favicon.png' | url }}" />
     <link rel="stylesheet" href="{{ '/static/css/styles.css' | url }}">
     <script async="async" defer="defer" src="{{ '/static/js/main.js' | url }}"></script>
+    {% if bodyId == "solutions" %}
+  <link rel="stylesheet" href="/static/css/solutions.css">
+  {% endif %}
   </head>
   <body id="{% block bodyId %}{% endblock %}">
     <header>
@@ -55,11 +58,11 @@
           </nav>
 
           <div>
-            <h3>Use cases</h3>
+            <h3>Solutions</h3>
             <ul>
-            {% for useCase in collections.useCases %}
+            {% for solution in collections.solutions %}
               <li>
-                <a href="{{ useCase.url }}">{{ useCase.data.title }}</a>
+                <a href="{{ solution.url }}">{{ solution.data.title }}</a>
               </li>
             {% endfor %}
             </ul>
@@ -80,7 +83,7 @@
 
         <div class="footer-disclaimer">
           <p>
-            &copy; 2023 Mortar
+            &copy; 2024 Mortar
           </p>
           <p>
             Mortar Works Limited is a company registered in England and Wales (Co. No. 12169493).
