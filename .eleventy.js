@@ -56,10 +56,13 @@ module.exports = function(eleventyConfig) {
     return collectionApi.getFilteredByGlob("src/site/solutions/*.md");
   });
 
-eleventyConfig.addCollection("news", function (collectionApi) {
-  return collectionApi.getFilteredByGlob("src/site/news/*.md").reverse().slice(0, 3);
+ // Add a new 'news' collection
+ eleventyConfig.addCollection("news", function (collectionApi) {
+  return collectionApi
+    .getFilteredByGlob("src/site/news/*.md")
+    .sort((a, b) => b.date - a.date) // Sort by date (newest first)
+    .slice(0, 3); // Limit to the 3 most recent posts
 });
-
 
 
 

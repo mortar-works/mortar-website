@@ -103,15 +103,30 @@ name: homepage
     <h2>Latest News & Updates</h2>
     <div class="news-grid">
       {% for post in collections.news %}
-      <div class="news-card">
-        <h3>{{ post.data.title }}</h3>
-        <p class="news-excerpt">{{ post.data.excerpt }}</p>
-        <a href="{{ post.url }}" class="read-more-link">Read More</a>
-      </div>
+      <a href="{{ post.url }}" class="news-card-link {% if loop.index > 3 %} hidden {% endif %}">
+        <div class="news-card">
+          <span class="news-label">News</span>
+          <h3>{{ post.data.title }}</h3>
+          <p class="news-date">{{ post.date | date("MMMM D, YYYY") }}</p>
+          <p class="news-excerpt">{{ post.data.excerpt }}</p>
+          <span class="read-more-link">Read More →</span>
+        </div>
+      </a>
       {% endfor %}
+    </div>
+
+    <!-- Load More News Button -->
+    <div class="news-button-container">
+      <button id="load-more-news" class="cta">Load More News</button>
+    </div>
+
+    <!-- Preloader for News -->
+    <div id="news-preloader" class="hidden">
+      <div class="spinner"></div>
     </div>
   </div>
 </section>
+
 
 
 <section id="insights">
