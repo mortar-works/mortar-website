@@ -105,6 +105,11 @@ name: homepage
       {% for post in collections.news %}
       <div class="news-card {% if loop.index > 3 %} hidden {% endif %}">
         <span class="news-label">News</span>
+        {% if post.data.image %}
+        <div class="news-image-wrapper">
+          <img src="{{ post.data.image | url }}" alt="{{ post.data.title }}" class="news-image">
+        </div>
+        {% endif %}
         <a href="{{ post.url }}" class="news-title-link">
           <h3>{{ post.data.title }}</h3>
         </a>

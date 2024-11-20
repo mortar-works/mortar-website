@@ -763,65 +763,75 @@
       box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
       text-align: left;
       transition: transform 0.3s ease, box-shadow 0.3s ease;
-  
+    
       &:hover {
         transform: translateY(-5px);
         box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
       }
-  
-      @media (max-width: 768px) {
-        padding: 1em; /* Adjust padding for smaller screens */
-      }
-  
+    
       .news-label {
         font-size: 0.9em;
         color: #666;
         font-weight: bold;
         margin-bottom: 0.5em;
         display: block;
+        text-transform: uppercase; /* Optional for consistency */
       }
-  
+    
+      .news-image-wrapper {
+        width: 100%;
+        height: 180px; /* Adjust height as needed */
+        overflow: hidden;
+        border-radius: 8px;
+        margin-bottom: 1em;
+    
+        .news-image {
+          width: 100%;
+          height: 100%;
+          object-fit: cover; /* Ensures the image covers the container */
+        }
+      }
+    
       .news-title-link {
         text-decoration: none;
-  
+    
         h3 {
           margin-bottom: 0.5em;
           font-size: 1.5em;
           font-weight: bold;
           color: $mortar-purple;
           transition: color 0.3s ease;
-  
+    
           &:hover {
             color: darken($mortar-purple, 10%);
           }
         }
       }
-  
+    
       .news-date {
         font-size: 0.9em;
         color: #999;
         margin-bottom: 0.5em;
       }
-  
+    
       .news-excerpt {
         font-size: 1em;
         margin-bottom: 1em;
         line-height: 1.4;
         color: black;
-  
-        /* Truncate long text for uniform card heights */
+    
         overflow: hidden;
         text-overflow: ellipsis;
         display: -webkit-box;
         -webkit-line-clamp: 3; /* Limit to 3 lines */
         -webkit-box-orient: vertical;
       }
-  
+    
       .read-more-link {
         color: $mortar-purple;
         font-weight: bold;
         text-decoration: none;
-  
+    
         &:hover {
           text-decoration: underline;
         }
@@ -849,7 +859,7 @@
       }
     }
   }
-  
+
 
     /* --------------------------
        Mobile Styling Below 768px
