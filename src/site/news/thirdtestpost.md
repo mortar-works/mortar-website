@@ -1,6 +1,6 @@
 ---
 title: "Exciting New Product Launch"
-date: "2024-13-10"
+date: "2024-09-10"
 excerpt: "We are thrilled to announce the launch of our new product, designed to revolutionize service delivery."
 image: "/static/images/news/product-launch.jpg" # Optional: Featured image
 tags: ["news"] # Tag to help filter this as a news post
