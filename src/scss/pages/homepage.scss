@@ -758,104 +758,115 @@
     }
   
     .news-card {
-      position: relative; /* Ensures the mask is aligned relative to the card */
-      padding: 1.5em;
+      position: relative; /* Allows layers to be positioned */
       border-radius: 8px;
       box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      overflow: hidden; /* Clips anything outside the card boundaries */
       text-align: left;
       transition: transform 0.3s ease, box-shadow 0.3s ease;
-      overflow: hidden; /* Ensure anything overflowing the card is clipped */
-    
-      /* Gradient Background */
-      background: linear-gradient(135deg, #fff5cc 0%, #9c27b0 100%);
-    
-      /* SVG Mask */
-      -webkit-mask-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 200" preserveAspectRatio="none"><path d="M0,80 C150,180 350,20 500,80 L500,200 L0,200 Z" fill="white"/></svg>');
-      -webkit-mask-size: 100% 120%; /* Adjust size to cover the card properly */
-      -webkit-mask-position: center top; /* Position the mask */
-      -webkit-mask-repeat: no-repeat;
-    
-      mask-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 200" preserveAspectRatio="none"><path d="M0,80 C150,180 350,20 500,80 L500,200 L0,200 Z" fill="white"/></svg>');
-      mask-size: 100% 120%; /* Match -webkit-mask-size */
-      mask-position: center top; /* Match -webkit-mask-position */
-      mask-repeat: no-repeat;
-    }
-    
+  
       &:hover {
         transform: translateY(-5px);
         box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
       }
-    
-      .news-label {
-        font-size: 0.9em;
-        color: #666;
-        font-weight: bold;
-        margin-bottom: 0.5em;
-        display: block;
-        text-transform: uppercase; /* Optional for consistency */
-      }
-    
-      .news-image-wrapper {
+  
+      /* Background Layer for Swoosh */
+      .news-card-background {
+        position: absolute;
+        top: 0;
+        left: 0;
         width: 100%;
-        aspect-ratio: 16 / 9; /* Maintain a consistent 16:9 ratio */
-        overflow: hidden;
-        border-radius: 8px; /* Optional: To match card corners */
-        margin-bottom: 1em;
-        background-color: #f9f8fd; /* Optional: Matches the card background */
-        display: flex;
-        align-items: center;
-        justify-content: center;
-      
-        .news-image {
-          width: 100%;
-          height: 100%;
-          object-fit: contain; /* Ensures the entire image is visible */
-          background-color: #ffffff; /* Fills any empty space with a neutral color */
-        }
+        height: 100%;
+        z-index: 1; /* Behind the content */
+        background: linear-gradient(135deg, #fff5cc 0%, #9c27b0 100%);
+        -webkit-mask-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 200" preserveAspectRatio="none"><path d="M0,80 C150,180 350,20 500,80 L500,200 L0,200 Z" fill="white"/></svg>');
+        -webkit-mask-size: 100% 120%;
+        -webkit-mask-position: center top;
+        -webkit-mask-repeat: no-repeat;
+        mask-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 200" preserveAspectRatio="none"><path d="M0,80 C150,180 350,20 500,80 L500,200 L0,200 Z" fill="white"/></svg>');
+        mask-size: 100% 120%;
+        mask-position: center top;
+        mask-repeat: no-repeat;
       }
-    
-      .news-title-link {
-        text-decoration: none;
-    
-        h3 {
-          margin-bottom: 0.5em;
-          font-size: 1.5em;
+  
+      /* Content Layer */
+      .news-card-content {
+        position: relative; /* Ensures content sits above the background */
+        z-index: 2; /* Higher than the background */
+        padding: 1.5em;
+  
+        .news-label {
+          font-size: 0.9em;
+          color: #666;
           font-weight: bold;
-          color: $mortar-purple;
-          transition: color 0.3s ease;
-    
-          &:hover {
-            color: darken($mortar-purple, 10%);
+          margin-bottom: 0.5em;
+          display: block;
+          text-transform: uppercase; /* Optional: for consistency */
+        }
+  
+        .news-image-wrapper {
+          width: 100%;
+          aspect-ratio: 16 / 9; /* Maintain consistent 16:9 ratio */
+          overflow: hidden;
+          border-radius: 8px; /* Match card corners */
+          margin-bottom: 1em;
+          background-color: #f9f8fd; /* Matches the card background */
+          display: flex;
+          align-items: center;
+          justify-content: center;
+  
+          .news-image {
+            width: 100%;
+            height: 100%;
+            object-fit: contain; /* Ensures entire image is visible */
+            background-color: #ffffff; /* Fills empty space with white */
           }
         }
-      }
-    
-      .news-date {
-        font-size: 0.9em;
-        color: #999;
-        margin-bottom: 0.5em;
-      }
-    
-      .news-excerpt {
-        font-size: 1em;
-        margin-bottom: 1em;
-        line-height: 1.4;
-        color: black;
-    
-        overflow: hidden;
-        text-overflow: ellipsis;
-        display: -webkit-box;
-        -webkit-line-clamp: 3; /* Limit to 3 lines */
-        -webkit-box-orient: vertical;
-      }
-    
-      .read-more-link {
-        color: $mortar-purple;
-        font-weight: bold;
-        text-decoration: none;
-    
-        &:hover {
-          text-decoration: underline;
+  
+        .news-title-link {
+          text-decoration: none;
+  
+          h3 {
+            margin-bottom: 0.5em;
+            font-size: 1.5em;
+            font-weight: bold;
+            color: $mortar-purple;
+            transition: color 0.3s ease;
+  
+            &:hover {
+              color: darken($mortar-purple, 10%);
+            }
+          }
+        }
+  
+        .news-date {
+          font-size: 0.9em;
+          color: #999;
+          margin-bottom: 0.5em;
+        }
+  
+        .news-excerpt {
+          font-size: 1em;
+          margin-bottom: 1em;
+          line-height: 1.4;
+          color: black;
+  
+          /* Truncate long text for uniform card heights */
+          overflow: hidden;
+          text-overflow: ellipsis;
+          display: -webkit-box;
+          -webkit-line-clamp: 3; /* Limit to 3 lines */
+          -webkit-box-orient: vertical;
+        }
+  
+        .read-more-link {
+          color: $mortar-purple;
+          font-weight: bold;
+          text-decoration: none;
+  
+          &:hover {
+            text-decoration: underline;
+          }
         }
       }
     }
@@ -881,6 +892,7 @@
       }
     }
   }
+  
 
 
     /* --------------------------
