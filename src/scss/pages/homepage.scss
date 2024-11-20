@@ -780,15 +780,20 @@
     
       .news-image-wrapper {
         width: 100%;
-        height: 180px; /* Adjust height as needed */
+        aspect-ratio: 16 / 9; /* Maintain a consistent 16:9 ratio */
         overflow: hidden;
-        border-radius: 8px;
+        border-radius: 8px; /* Optional: To match card corners */
         margin-bottom: 1em;
-    
+        background-color: #f9f8fd; /* Optional: Matches the card background */
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      
         .news-image {
           width: 100%;
           height: 100%;
-          object-fit: cover; /* Ensures the image covers the container */
+          object-fit: contain; /* Ensures the entire image is visible */
+          background-color: #ffffff; /* Fills any empty space with a neutral color */
         }
       }
     
