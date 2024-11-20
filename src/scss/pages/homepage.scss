@@ -778,15 +778,7 @@
         width: 100%;
         height: 100%;
         z-index: 1; /* Behind the content */
-        background: linear-gradient(135deg, #ffd6e6 0%, #9c27b0 100%);
-        -webkit-mask-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 200" preserveAspectRatio="none"><path d="M0,80 C150,180 350,20 500,80 L500,200 L0,200 Z" fill="white"/></svg>');
-        -webkit-mask-size: 100% 120%;
-        -webkit-mask-position: center top;
-        -webkit-mask-repeat: no-repeat;
-        mask-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 200" preserveAspectRatio="none"><path d="M0,80 C150,180 350,20 500,80 L500,200 L0,200 Z" fill="white"/></svg>');
-        mask-size: 100% 120%;
-        mask-position: center top;
-        mask-repeat: no-repeat;
+        background: linear-gradient(135deg, #ffd6e6 0%, #9c27b0 300%);
       }
   
       /* Content Layer */
@@ -801,7 +793,7 @@
           font-weight: bold;
           margin-bottom: 0.5em;
           display: block;
-          text-transform: uppercase; /* Optional: for consistency */
+          text-transform: none; /* Optional: for consistency */
         }
   
         .news-image-wrapper {
@@ -819,7 +811,7 @@
             width: 100%;
             height: 100%;
             object-fit: contain; /* Ensures entire image is visible */
-            background-color: #ffffff; /* Fills empty space with white */
+            background-color: #FFED79; /* Fills empty space with white */
           }
         }
   
@@ -841,7 +833,7 @@
   
         .news-date {
           font-size: 0.9em;
-          color: #999;
+          color: black;
           margin-bottom: 0.5em;
         }
   
