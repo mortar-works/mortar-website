@@ -759,11 +759,17 @@
   
     .news-card {
       padding: 1.5em;
-      background-color: $white;
       border-radius: 8px;
       box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
       text-align: left;
       transition: transform 0.3s ease, box-shadow 0.3s ease;
+      background: linear-gradient(135deg, #fff5cc 0%, #9c27b0 100%);
+      -webkit-mask-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 200" preserveAspectRatio="none"><path d="M0,100 C150,200 350,0 500,100 L500,200 L0,200 Z" fill="white"/></svg>');
+      -webkit-mask-size: cover;
+      -webkit-mask-repeat: no-repeat;
+      mask-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 200" preserveAspectRatio="none"><path d="M0,100 C150,200 350,0 500,100 L500,200 L0,200 Z" fill="white"/></svg>');
+      mask-size: cover;
+      mask-repeat: no-repeat;
     
       &:hover {
         transform: translateY(-5px);
