@@ -1,7 +1,7 @@
 ---
-title: "Exciting New Product Launch"
+title: "Mortar is selected as The Innovation Zone start-up"
 date: "2024-11-10"
-excerpt: "We are thrilled to announce the launch of our new product, designed to revolutionize service delivery."
+excerpt: "Mortar selected alongside other cutting-edge startups applying technology to transform local services."
 image: "/static/images/news/innovationzone02.png" # Optional: Featured image
 tags: ["news"] # Tag to help filter this as a news post
 ---
