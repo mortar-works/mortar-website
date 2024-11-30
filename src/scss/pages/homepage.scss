@@ -732,6 +732,68 @@
     }
   }
 
+    /* --------------------------
+       Mobile Styling Below 768px
+    -------------------------- */
+    @media (max-width: 768px) {
+      .solution-card {
+          flex-direction: column; /* Stack everything vertically */
+          align-items: flex-start; /* Align items to the left */
+      }
+
+      .solution-content {
+          gap: 1.5em; /* Adjust the gap between elements */
+          flex-direction: column; /* Stack title, description, and button */
+          align-items: flex-start;
+      }
+
+      .solution-label-image {
+          max-width: 100px; /* Smaller label image for mobile */
+          margin-bottom: 0em;
+      }
+
+      .solution-content h3 {
+          font-size: 1.4em; /* Slightly smaller title font for mobile */
+          margin-bottom: 0em;
+          padding-left: 0;
+      }
+
+      .solution-desc {
+          font-size: 1.1em; /* Smaller description font for mobile */
+          max-width: 100%; /* Full width on mobile */
+          line-height: 1.4em;
+      }
+
+      .find-out-more-link {
+          margin-top: 0em; /* Add space between description and button */
+          width: fit-content; /* Button fits content size */
+      }
+  }
+
+  /* --------------------------
+     Tablet and Wide Screen Styles
+  -------------------------- */
+  @media (min-width: 769px) {
+      .solution-content {
+          display: flex;
+          flex-direction: row; /* Align content in a row */
+          justify-content: space-between; /* Space between content */
+          align-items: flex-start; /* Align items to the top */
+      }
+
+      .solution-desc {
+          flex-grow: 1; /* Allow the description to take up available space */
+          max-width: 60%; /* Limit the width of the description */
+      }
+
+      .find-out-more-link {
+          margin-left: auto; /* Push the button to the right */
+          align-self: flex-start; /* Ensure the button stays aligned to the top */
+      }
+  }
+}
+
+
   #news-updates {
     padding: 4em 0;
     background-color: #f9f8fd;
@@ -886,68 +948,6 @@
     }
   }
   
-
-
-    /* --------------------------
-       Mobile Styling Below 768px
-    -------------------------- */
-    @media (max-width: 768px) {
-        .solution-card {
-            flex-direction: column; /* Stack everything vertically */
-            align-items: flex-start; /* Align items to the left */
-        }
-
-        .solution-content {
-            gap: 1.5em; /* Adjust the gap between elements */
-            flex-direction: column; /* Stack title, description, and button */
-            align-items: flex-start;
-        }
-
-        .solution-label-image {
-            max-width: 100px; /* Smaller label image for mobile */
-            margin-bottom: 0em;
-        }
-
-        .solution-content h3 {
-            font-size: 1.4em; /* Slightly smaller title font for mobile */
-            margin-bottom: 0em;
-            padding-left: 0;
-        }
-
-        .solution-desc {
-            font-size: 1.1em; /* Smaller description font for mobile */
-            max-width: 100%; /* Full width on mobile */
-            line-height: 1.4em;
-        }
-
-        .find-out-more-link {
-            margin-top: 0em; /* Add space between description and button */
-            width: fit-content; /* Button fits content size */
-        }
-    }
-
-    /* --------------------------
-       Tablet and Wide Screen Styles
-    -------------------------- */
-    @media (min-width: 769px) {
-        .solution-content {
-            display: flex;
-            flex-direction: row; /* Align content in a row */
-            justify-content: space-between; /* Space between content */
-            align-items: flex-start; /* Align items to the top */
-        }
-
-        .solution-desc {
-            flex-grow: 1; /* Allow the description to take up available space */
-            max-width: 60%; /* Limit the width of the description */
-        }
-
-        .find-out-more-link {
-            margin-left: auto; /* Push the button to the right */
-            align-self: flex-start; /* Ensure the button stays aligned to the top */
-        }
-    }
-}
 
 
 
