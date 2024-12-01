@@ -4,10 +4,9 @@
     position: relative; /* Allows layering */
     background-size: cover;
     background-position: center;
-    height: 800px;
+    height: 400px;
     margin-bottom: 2em;
-    background-color: #ffed79 !important; /* Soft yellow background */
-    background-image: url('/static/images/news/default-image.jpg'); /* Default image */
+    background: pink;
 
     /* Optional gradient overlay for better blending */
     &::before {
