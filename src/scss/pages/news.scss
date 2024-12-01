@@ -4,9 +4,9 @@
     position: relative; /* Allows layering */
     background-size: cover;
     background-position: center;
-    height: 400px;
+    height: 800px;
     margin-bottom: 2em;
-    background-color: #ffed79; /* Soft yellow background */
+    background-color: #ffed79 !important; /* Soft yellow background */
     background-image: url('/static/images/news/default-image.jpg'); /* Default image */
 
     /* Optional gradient overlay for better blending */
