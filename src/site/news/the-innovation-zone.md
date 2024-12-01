@@ -7,12 +7,14 @@ tags: ["news"] # Tag to help filter this as a news post
 ---
 
 We were happy to be selected to present at the Local Government Association’s (LGA) Innovation Zone, presenting Mortar and our product Hoop'd to a crowd that shares our passion for revolutionizing public services through the innovative application of new technology.
+
 <figure>
   <img src="{{ '/static/images/news/innovationzone01.jpg' | url }}" />
   <figcaption>
     The Innovation Zone brings together local government leaders, technology innovators, and change-makers
   </figcaption>
-</figure>
+</figure> 
+
 The Innovation Zone is an initiative led by the LGA in partnership with PUBLIC, a leading organisation dedicated to supporting the digital transformation of the public sector. PUBLIC works to build lasting and impactful relationships between innovative technology companies and government departments, making it a key stakeholder in how the public sector can best innovate and adopt technology.
 
 Together, PUBLIC and the LGA brought together local government leaders, technology innovators, and change-makers at the Innovation Zone. With over 80 attendees in person and more than 150 joining virtually, the event was a hub for collaboration, knowledge sharing, and forward-thinking ideas on transforming local services through technology.
