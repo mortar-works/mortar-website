@@ -1,14 +1,14 @@
 #news {
   /* Hero image styling for news */
   .hero-image {
-    position: relative; /* Ensures proper layering */
+    position: relative;
     background-size: cover;
     background-position: center;
     height: 400px;
-    margin-bottom: 0; /* No bottom margin to allow content to overlap */
-    background-color: #ffed79;
+    margin-bottom: -100px; /* Creates the "cut into content" effect */
+    background-color: #fff9cc;
 
-    /* Optional gradient overlay for better blending */
+    /* Gradient overlay for better blending */
     &::before {
       content: '';
       position: absolute;
@@ -21,35 +21,15 @@
     }
   }
 
-  /* Ensuring the content overlaps the hero image */
-  .wrapper {
+  /* Fixes z-index issue for overlapping elements */
+  header {
     position: relative;
-    z-index: 2; /* Ensures content is above the hero image */
-    margin-top: -100px; /* Negative margin to create the cut-in effect */
-    padding: 2em 1em; /* Standard padding for inner content */
+    z-index: 10; /* Ensure it is above the hero image */
+  }
 
-    article {
-      max-width: 800px;
-      margin: 0 auto;
-      background: white; /* Optional: Adds a background if desired */
-      border-radius: 8px; /* Optional: Smooth edges for better styling */
-      padding: 2em;
-      box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* Optional: Adds depth */
-
-      h1 {
-        font-size: 2.5em;
-        font-weight: bold;
-        margin-bottom: 1em;
-        color: $mortar-purple;
-      }
-
-      p {
-        font-size: 1.1em;
-        line-height: 1.6;
-        color: #555;
-        margin-bottom: 1.5em;
-      }
-    }
+  footer {
+    position: relative;
+    z-index: 10; /* Ensure it is above the hero image */
   }
 
   /* Centered "Get in Touch" button */
@@ -68,6 +48,34 @@
 
       &:hover {
         background-color: darken($mortar-purple, 10%);
+      }
+    }
+  }
+
+  /* Styling for news content */
+  .news-content {
+    max-width: 800px;
+    margin: 0 auto;
+    font-size: 1.1em;
+    line-height: 1.6em;
+    z-index: 5; /* Ensure it's above the hero image */
+
+    h2, h3 {
+      color: $mortar-purple;
+      margin-top: 1.5em;
+    }
+
+    p {
+      margin-bottom: 1.5em;
+      color: #555;
+    }
+
+    ul, ol {
+      margin: 1em 0;
+      padding-left: 1.5em;
+
+      li {
+        margin-bottom: 0.5em;
       }
     }
   }
