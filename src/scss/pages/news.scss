@@ -2,7 +2,7 @@
 
   .hero-image {
     height: 15em;
-    background: #ffed79 no-repeat scroll 50% 50%;
+    background: #ffed79;
     background-size: cover;
 
     @include respond-to('small') {
