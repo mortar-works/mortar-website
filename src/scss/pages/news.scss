@@ -1,4 +1,15 @@
 #solutions {
+
+  .hero-image {
+    height: 15em;
+    background: transparent no-repeat scroll 50% 50%;
+    background-size: cover;
+
+    @include respond-to('small') {
+      height: 20em;
+    }
+  }
+  
   .case-study-wrapper {
     display: flex;
     flex-direction: column;
