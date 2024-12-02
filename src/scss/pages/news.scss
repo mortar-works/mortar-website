@@ -1,14 +1,10 @@
-#solutions {
+#news {
 
-  .hero-image {
+  .content-page .hero-image {
     height: 15em;
-    background: #ffed79;
-    background-size: cover;
-
-    @include respond-to('small') {
-      height: 20em;
-    }
-  }
+    background: #ffed79 no-repeat scroll 50% 50%;
+    background-size: cover
+}
 
   .case-study-wrapper {
     display: flex;
