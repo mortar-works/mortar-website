@@ -1,12 +1,12 @@
 #news {
   /* Hero image styling for news */
   .hero-image {
-    position: relative; /* Allows layering */
+    position: relative; /* Ensures layering */
     background-size: cover;
     background-position: center;
     height: 400px;
     margin-bottom: 2em;
-    background: pink;
+    background-color: #ffed79; /* Default background color for fallback */
 
     /* Optional gradient overlay for better blending */
     &::before {
@@ -19,6 +19,10 @@
       background: linear-gradient(to bottom, rgba(255, 237, 121, 0.8), rgba(255, 237, 121, 0.5));
       z-index: 1;
     }
+
+    /* Ensures content doesn't overflow */
+    overflow: hidden;
+    z-index: 0; /* Positions the hero image below other elements */
   }
 
   /* Centered "Get in Touch" button */
@@ -47,6 +51,13 @@
     margin: 0 auto;
     font-size: 1.1em;
     line-height: 1.6em;
+
+    h1 {
+      font-size: 2.5em;
+      font-weight: bold;
+      margin-bottom: 1em;
+      color: $mortar-purple;
+    }
 
     h2, h3 {
       color: $mortar-purple;
@@ -107,6 +118,32 @@
         &:hover {
           color: darken($mortar-purple, 10%);
         }
+      }
+    }
+  }
+
+  /* Ensuring proper layering and spacing for the wrapper */
+  .wrapper {
+    position: relative;
+    z-index: 2;
+    padding: 2em 1em;
+
+    article {
+      max-width: 800px;
+      margin: 0 auto;
+
+      h1 {
+        font-size: 2.5em;
+        font-weight: bold;
+        margin-bottom: 1em;
+        color: $mortar-purple;
+      }
+
+      p {
+        font-size: 1.1em;
+        line-height: 1.6;
+        color: #555;
+        margin-bottom: 1.5em;
       }
     }
   }
