@@ -1,7 +1,7 @@
 {% extends 'layouts/base.njk' %}
 
 {% block pageTitle %}{{ title }} - News - {{ super() }}{% endblock %}
-{% block bodyId %}{{ title | slug }}{% endblock %}
+{% block bodyId %}news{% endblock %}
 {% block mainClass %}news content-page{% endblock %}
 
 {% set previousPost = collections.news | getPreviousCollectionItem(page) %}
