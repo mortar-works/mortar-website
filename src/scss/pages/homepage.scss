@@ -966,37 +966,43 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        flex-wrap: wrap; /* Allows wrapping on smaller screens */
         width: 80%;
         margin: 0 auto;
     }
 
     .partner-company-list {
-        display: flex;
-        justify-content: center;
-        align-items: center;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr); /* Two columns */
+        grid-template-rows: repeat(2, auto); /* Two rows */
+        gap: 2em;
         list-style: none;
         padding: 0;
         margin: 0;
-        gap: 2em;
-        flex-wrap: wrap;
+        width: 100%;
+        max-width: 600px; /* Keeps it neat on larger screens */
+    }
 
-        li {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            flex: 1 1 200px; /* Ensures responsiveness */
-            max-width: 200px;
-        }
+    .partner-company-list li {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
 
-        img {
-            max-width: 100%;
-            height: 80px; /* Ensures equal height */
-            object-fit: contain;
-            border-radius: 5%;
+    .partner-company-list img {
+        max-width: 100%;
+        height: 120px; /* Increased size */
+        object-fit: contain;
+        border-radius: 5%;
+    }
+
+    /* Responsive: Stack logos in a single column on small screens */
+    @media (max-width: 600px) {
+        .partner-company-list {
+            grid-template-columns: 1fr; /* Single column */
         }
     }
 }
+
 
 
 
