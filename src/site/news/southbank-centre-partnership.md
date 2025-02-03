@@ -10,7 +10,9 @@ tags: ["news"] # Tag to help filter this as a news post
 
 We’re delighted to announce our role as technical partner in an exciting new partnership with the Southbank Centre and the South East London Integrated Care Board. 
 
-This groundbreaking partnership aims to improve the mental health of children and young people across south east London, offering creative opportunities and resources to tackle health inequalities by focusing on those most in need. Mortar will be supporting the partnership with the implementation of a bespoke environment for promoting the Southbank's offer and facilitating referrals into its programmes. Ensuring information and data is shared safely and securely to enabling partners to effectively deliver, monitor and report on their service outcomes. 
+This groundbreaking partnership aims to improve the mental health of children and young people across south east London, offering creative opportunities and resources to tackle health inequalities by focusing on those most in need. 
+
+Mortar will be supporting the partnership with the implementation of a bespoke environment promoting the Southbank's offer, facilitating referrals into its programmes, and ensuring information and data is shared safely and securely to enable effective delivery, monitoring and reporting on service outcomes. As a scalable platform built on our modular Hoop'd framework we'll be working with Southbank Centre and a growing number of partners to build a young person's health centre fit for future needs and demands.  
 
 The partnership will focus on supporting the development of:
 
