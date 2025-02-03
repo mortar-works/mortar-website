@@ -962,25 +962,28 @@
         margin-bottom: 1.5em;
     }
 
+    /* Give more space to the wrapper */
     .partner-company-wrapper {
         display: flex;
         justify-content: center;
         align-items: center;
-        width: 80%;
+        width: 90%; /* Increased width */
+        max-width: 1200px; /* Allow wider layouts */
         margin: 0 auto;
     }
 
+    /* Ensure items stay in one row */
     .partner-company-list {
-        display: flex; /* Changed from grid to flex */
-        justify-content: center; /* Centers items horizontally */
+        display: flex;
+        justify-content: center;
         align-items: center;
-        gap: 3em; /* Space between items */
+        gap: 2em; /* Reduce gap slightly to fit more */
         list-style: none;
         padding: 0;
         margin: 0;
         width: 100%;
-        max-width: 900px; /* Adjusted for wider layout */
-        flex-wrap: wrap; /* Ensures wrapping on smaller screens */
+        flex-wrap: nowrap; /* Prevent wrapping */
+        overflow-x: auto; /* Enable horizontal scrolling if necessary */
     }
 
     .partner-company-list li {
@@ -992,6 +995,7 @@
         border-radius: 8px;
         box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
         transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+        min-width: 150px; /* Ensures all items have enough space */
     }
 
     .partner-company-list li:hover {
@@ -1005,7 +1009,14 @@
         object-fit: contain;
     }
 
-    /* Responsive: Stack logos in a single column on small screens */
+    /* Responsive: Allow wrapping on smaller screens */
+    @media (max-width: 1024px) {
+        .partner-company-list {
+            flex-wrap: wrap; /* Allow wrapping at this size */
+            justify-content: center;
+        }
+    }
+
     @media (max-width: 768px) {
         .partner-company-list {
             display: grid;
