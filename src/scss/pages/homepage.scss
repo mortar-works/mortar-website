@@ -795,7 +795,7 @@
 
 
   #news-updates {
-    padding: 4em 0;
+    padding: 4em 0em 0em 0em;
     background-color: #f9f8fd;
   
     .wrapper {
@@ -950,16 +950,16 @@
   
 
   #partner-company {
-    padding: 2em 0;
-    background-color: $white;
-    border-top: 6px solid $mortar-purple;
+    padding: 2em 0em 4em 0em;
+    background-color: #f9f8fd;
+    border-top: 3px solid #f9f8fd;
     text-align: center;
 
     .partner-company-heading {
-        font-size: 1.2em;
+        font-size: 1.3em;
         font-family: 'Basis Grotesque Pro Light';
-        color: $mortar-purple;
-        margin-bottom: 1.5em;
+        color: black;
+        margin-bottom: 1.8em;
     }
 
     /* Give more space to the wrapper */
@@ -990,7 +990,7 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        background: #f8f8f8;
+        background: white;
         padding: 1.5em;
         border-radius: 8px;
         box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
