@@ -18,7 +18,7 @@ Mortar specialises in technology that enhances service accessibility and engagem
 
 With digital transformation high on the agenda across the public sector, Mortar remains committed to supporting organisations in their transition towards smarter, data-driven service design. Inclusion in the G-Cloud framework underscores Mortar’s dedication to enabling meaningful, technology-led improvements across essential services.
 
-For more information about Mortar’s solutions available on G-Cloud 14 visit our product listings on the framework <a href="https://www.applytosupply.digitalmarketplace.service.gov.uk/g-cloud/services/108970376931284" target="_blank">>here</a>, or get in touch.
+For more information about Mortar’s solutions available on G-Cloud 14 visit our product listings on the framework <a href="https://www.applytosupply.digitalmarketplace.service.gov.uk/g-cloud/services/108970376931284" target="_blank">here</a>, or get in touch.
 
 <strong>About G-Cloud:</strong>
-The G-Cloud framework is a UK government initiative that simplifies the procurement of cloud-based services for public sector organisations. It provides an approved marketplace where suppliers offer cloud platforms, software, and infrastructure services, helping buyers implement technology solutions efficiently and securely. Learn more about the Crown Commercial Service <a href="https://www.crowncommercial.gov.uk/" target="_blank">>here</a>.
+The G-Cloud framework is a UK government initiative that simplifies the procurement of cloud-based services for public sector organisations. It provides an approved marketplace where suppliers offer cloud platforms, software, and infrastructure services, helping buyers implement technology solutions efficiently and securely. Learn more about the Crown Commercial Service <a href="https://www.crowncommercial.gov.uk/" target="_blank">here</a>.
