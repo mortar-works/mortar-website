@@ -1,0 +1,74 @@
+#news {
+
+  .content-page .hero-image {
+    height: 15em;
+    background: #ffed79 no-repeat scroll 50% 50%;
+    background-size: cover
+}
+
+  .case-study-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 2em; /* Adjust spacing between case study cards */
+    margin: 3em 0; /* Space above and below the case study section */
+  }
+
+  .case-study-card {
+    background-color: #fff; /* White background for the card */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Light shadow for depth */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: left;
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Add hover effects */
+
+    &:hover {
+      transform: scale(1.02); /* Slight zoom on hover */
+      box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15); /* Deepen shadow on hover */
+    }
+
+    .case-study-card-content {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: flex-start; /* Align content to the top left */
+      gap: 1em; /* Add space between elements inside the card */
+    }
+
+    h3 {
+      font-size: 1.5em;
+      font-weight: bold;
+      color: $mortar-purple; /* Use the brand's purple color */
+      margin: 0;
+      line-height: 1.2;
+    }
+
+    .case-study-desc {
+      font-size: 1.1em;
+      color: #555; /* Light gray for description text */
+      margin-bottom: 1em;
+    }
+
+    .case-study-image {
+      width: 100%;
+      height: auto;
+      margin-bottom: 1em;
+      border-radius: 6px;
+      box-shadow: none;
+    }
+
+    .read-more {
+      font-size: 1.1em;
+      color: $mortar-purple; /* Button link color */
+      text-decoration: none;
+      font-weight: 600;
+      transition: color 0.3s ease;
+
+      &:hover {
+        color: $mortar-orange; /* Change to brand orange on hover */
+      }
+    }
+  }
+}

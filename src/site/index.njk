@@ -47,7 +47,7 @@ name: homepage
   <div class="case-studies-wrapper">
     <h2>Case studies</h2>
     <p class="case-study-p">
-      We bring together a global suite of tools that solve problems impacting services and communities.
+      Mortar is trusted by government, health and housing institutions to solve complex problems impacting services and communities. Our product Hoop'd supports the transformation of services, applying new technologies to deliver local, bespoke, user-led solutions. 
     </p>
     <div class="case-studies-grid">
       {% for caseStudy in collections.caseStudies %}
@@ -96,6 +96,57 @@ name: homepage
       {% endfor %}
     </div>
   </div>
+</section>
+
+<section id="news-updates">
+  <div class="wrapper">
+    <h2>Latest News & Updates</h2>
+    <div class="news-grid">
+      {% for post in collections.news %}
+      <div class="news-card {% if loop.index > 3 %} hidden {% endif %}">
+        <!-- Background Layer -->
+        <div class="news-card-background"></div>
+
+        <!-- Content Layer -->
+        <div class="news-card-content">
+          {% if post.data.image %}
+          <div class="news-image-wrapper">
+            <img src="{{ post.data.image | url }}" alt="{{ post.data.title }}" class="news-image">
+          </div>
+          {% endif %}
+          <a href="{{ post.url }}" class="news-title-link">
+            <h3>{{ post.data.title }}</h3>
+          </a>
+          <p class="news-excerpt">{{ post.data.excerpt }}</p>
+          <a href="{{ post.url }}" class="read-more-link">Read More →</a>
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+
+    <!-- Load More News Button -->
+    <div class="news-button-container">
+      <button id="load-more-news" class="cta">Load More News</button>
+    </div>
+
+    <!-- Preloader for News -->
+    <div id="news-preloader" class="hidden">
+      <div class="spinner"></div>
+    </div>
+  </div>
+</section>
+
+
+<section id="partner-company">
+    <p class="partner-company-heading">Mortar has been featured, recommended, and accredited by the following organizations:</p>
+    <div class="partner-company-wrapper">
+        <ul class="partner-company-list">
+            <li><img src="{{ '/static/images/partners/g-cloud-14.png' | url }}" alt="G-Cloud 14 Supplier logo" /></li>
+            <li><img src="{{ '/static/images/partners/bbc-logo.png' | url }}" alt="BBC logo" /></li>
+            <li><img src="{{ '/static/images/partners/rics-logo.png' | url }}" alt="RICS logo" /></li>
+            <li><img src="{{ '/static/images/partners/cyber-essentials-logo.png' | url }}" alt="Cyber Essentials logo" /></li>
+        </ul>
+    </div>
 </section>
 
 

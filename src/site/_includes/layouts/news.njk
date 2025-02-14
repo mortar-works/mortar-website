@@ -1,0 +1,44 @@
+{% extends 'layouts/base.njk' %}
+
+{% block pageTitle %}{{ title }} - News - {{ super() }}{% endblock %}
+{% block bodyId %}news{% endblock %}
+{% block mainClass %}news content-page{% endblock %}
+
+{% set previousPost = collections.news | getPreviousCollectionItem(page) %}
+{% set nextPost = collections.news | getNextCollectionItem(page) %}
+
+{% block content %}
+<section>
+  <!-- Updated hero image logic -->
+  <div class="hero-image" style="background-image: url('{{ image | url }}')"></div>
+  <div class="wrapper">
+    <article>
+      <h1>{{ title }}</h1>
+      {{ content | safe }}
+    </article>
+
+    <p class="news-get-in-touch">
+      <a class="cta" href="https://draft.mortar.works/#contact" target="_blank" rel="noopener">Get in touch</a>
+    </p>
+
+    <div class="other-content">
+      {% if previousPost %}
+        <div class="previous-post">
+          <a href="{{ previousPost.url }}">
+            <span>Previous news</span>
+            {{ previousPost.data.title }}
+          </a>
+        </div>
+      {% endif %}
+      {% if nextPost %}
+        <div class="next-post">
+          <a href="{{ nextPost.url }}">
+            <span>Next news</span>
+            {{ nextPost.data.title }}
+          </a>
+        </div>
+      {% endif %}
+    </div>
+  </div>
+</section>
+{% endblock %}
