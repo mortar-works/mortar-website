@@ -10,7 +10,7 @@ module.exports = function(eleventyConfig) {
   eleventyConfig.addPassthroughCopy("src/site/static");
 
   // Enable YAML data files to be processed
-  eleventyConfig.addDataExtension("yaml", contents => yaml.safeLoad(contents));
+  eleventyConfig.addDataExtension("yaml", contents => yaml.load(contents));
 
   // Add custom filters
   eleventyConfig.addFilter('date', dateFilter);
