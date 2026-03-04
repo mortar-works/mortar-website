@@ -29,7 +29,7 @@
         transition: background-color 0.3s ease;
   
         &:hover {
-          background-color: darken($mortar-purple, 10%);
+          background-color: color.adjust($mortar-purple, $lightness: -10%);
         }
       }
     }
@@ -63,7 +63,7 @@
   
     /* Styling for related case studies section */
     .other-case-studies {
-      background: lighten($mortar-yellow, 15%);
+      background: color.adjust($mortar-yellow, $lightness: 15%);
       padding: 2em 0;
   
       ul {
@@ -98,7 +98,7 @@
           transition: color 0.3s ease;
   
           &:hover {
-            color: darken($mortar-purple, 10%);
+            color: color.adjust($mortar-purple, $lightness: -10%);
           }
         }
       }

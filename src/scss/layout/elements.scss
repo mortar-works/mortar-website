@@ -1,6 +1,6 @@
-@use "../common/variables" as *;
-@use "../utilities/responsive" as *;
-@use "../common/typography" as *;
+@use "../common/variables" as vars;
+@use "../utilities/responsive" as resp;
+@use "../common/typography" as typo;
 
 html {
   scroll-behavior: smooth;
@@ -10,15 +10,15 @@ html {
 }
 
 a {
-  color: $white;
+  color: vars.$white;
   text-decoration: none;
   padding: 0.3em 0;
 
   &:active, &:focus {
     outline: 3px solid transparent;
-    color: $black;
-    background-color: $mortar-yellow;
-    box-shadow: 0 -2px $mortar-yellow, 0 4px $black;
+    color: vars.$black;
+    background-color: vars.$mortar-yellow;
+    box-shadow: 0 -2px vars.$mortar-yellow, 0 4px vars.$black;
     text-decoration: none;
   }
 }
@@ -40,11 +40,11 @@ a {
   border: 1px black solid;
 
   &:hover {
-    background-color: darken($mortar-purple, 10%);
+    background-color: color.adjust(vars.$mortar-purple, $lightness: -10%);
     color: white;
   }
 
-  @include respond-to('small') {
+  @include resp.respond-to('small') {
     padding-left: 1em;
     padding-right: 1em;
     margin-bottom: 3em;
@@ -62,5 +62,5 @@ img {
 }
 
 strong {
-  @include bold-type;
+  @include typo.bold-type;
 }

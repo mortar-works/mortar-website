@@ -1,21 +1,21 @@
-@use "../common/variables" as *;
-@use "../utilities/responsive" as *;
-@use "../common/typography" as *;
+@use "../common/variables" as vars;
+@use "../utilities/responsive" as resp;
+@use "../common/typography" as typo;
 
 body {
-  background-color: $mortar-purple;
-  color: $white;
+  background-color: vars.$mortar-purple;
+  color: vars.$white;
 }
 
 header, footer, main > section {
   overflow: hidden;
 
   & .wrapper {
-    max-width: map-get($breakpoints, 'large');
+    max-width: map.get(vars.$breakpoints, 'large');
     margin: auto;
     padding: 1em 2em;
 
-    @include respond-to('small') {
+    @include resp.respond-to('small') {
     }
   }
 }
@@ -26,7 +26,7 @@ header {
   top: 0;
   z-index: 1000;
   background: transparent !important; /* Initially transparent */
-  color: $white; /* Change to white to ensure white text */
+  color: vars.$white; /* Change to white to ensure white text */
   transition: background-color 0.3s ease, box-shadow 0.3s ease;
   box-shadow: none; /* No shadow initially */
 
@@ -38,7 +38,7 @@ header {
 
   /* Ensure white links across all pages */
   nav a {
-    color: $white !important; /* White links */
+    color: vars.$white !important; /* White links */
     transition: color 0.3s ease;
   }
 
@@ -65,14 +65,14 @@ header {
   }
 
   .hamburger {
-    @include respond-to('small') {
+    @include resp.respond-to('small') {
       display: none;
     }
 
     .hamburger-inner,
     .hamburger-inner:after,
     .hamburger-inner:before {
-      background-color: $white !important; /* White hamburger for consistency */
+      background-color: vars.$white !important; /* White hamburger for consistency */
     }
   }
 
@@ -83,11 +83,11 @@ header {
     right: 0;
     bottom: 0;
     left: 0;
-    background: $mortar-orange !important;
+    background: vars.$mortar-orange !important;
     z-index: 10000;
 
     nav a {
-      color: $black; /* Black text for the nav when active */
+      color: vars.$black; /* Black text for the nav when active */
     }
 
     #mortar-logo {
@@ -106,7 +106,7 @@ header {
     align-items: center;
     flex-basis: 100%;
 
-    @include respond-to('small') {
+    @include resp.respond-to('small') {
       display: flex;
       flex-basis: auto;
     }

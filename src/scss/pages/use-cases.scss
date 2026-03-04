@@ -19,7 +19,7 @@
 }
 
 .other-use-cases {
-  background: lighten($mortar-yellow, 15%);
+  background: color.adjust($mortar-yellow, $lightness: 15%);
 
   ul {
     list-style: none;

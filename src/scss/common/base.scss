@@ -1,12 +1,12 @@
-@use "./variables" as *;
-@use "./typography" as *;
+@use "./variables" as vars;
+@use "./typography" as typo;
 
 html {
   font-size: 1em;
   line-height: 1.4em;
-  @include regular-type;
-  color: $black;
-  background: $white;
+  @include typo.regular-type;
+  color: vars.$black;
+  background: vars.$white;
 }
 
  th, td {
