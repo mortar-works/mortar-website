@@ -22,6 +22,32 @@ name: homepage
         <a class="topline-cta" href="#case-studies">Learn about our work</a>
       </div>
     </div>
+
+    <!-- Recent Content List -->
+    <div class="recent-content">
+      <div class="recent-content-list">
+        {% for item in collections.insights | slice(0, 2) %}
+        <div class="content-item">
+          <a href="{{ item.url }}" class="content-title">{{ item.data.title }}</a>
+          <span class="content-category">Insights</span>
+        </div>
+        {% endfor %}
+
+        {% for item in collections.news | slice(0, 2) %}
+        <div class="content-item">
+          <a href="{{ item.url }}" class="content-title">{{ item.data.title }}</a>
+          <span class="content-category">News</span>
+        </div>
+        {% endfor %}
+
+        {% for item in collections.caseStudies | slice(0, 2) %}
+        <div class="content-item">
+          <a href="{{ item.url }}" class="content-title">{{ item.data.title }}</a>
+          <span class="content-category">Case Studies</span>
+        </div>
+        {% endfor %}
+      </div>
+    </div>
   </section>
 
   <section id="partners">
