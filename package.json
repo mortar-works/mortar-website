@@ -36,4 +36,12 @@
     "webpack": "^5.84.1",
     "webpack-cli": "^5.1.4"
   }
+  ,"overrides": {
+    "markdown-it": "14.1.1",
+    "minimatch": "3.1.4",
+    "tar": "7.5.9",
+    "node-gyp": "12.2.0",
+    "cacache": "20.0.3",
+    "make-fetch-happen": "15.0.4"
+  }
 }
