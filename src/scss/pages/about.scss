@@ -1,0 +1,89 @@
+@use 'sass:color';
+@use "../common/variables" as *;
+@use "../utilities/responsive" as *;
+@use "../common/typography" as *;
+
+#about-mortar {
+  #vision {
+    background-color: #f9f8fd;
+    padding: 6em 0;
+
+    .vision-wrapper {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 4em;
+      display: flex;
+      align-items: center;
+      gap: 7em;
+
+      & + .vision-wrapper {
+        margin-top: 5em;
+        padding-top: 5em;
+      }
+    }
+
+    .vision-text {
+      flex: 1;
+
+      h2 {
+        @include bold-type;
+        font-size: 1.8em;
+        color: $black;
+        line-height: 1.2em;
+        margin: 0 0 0.6em 0;
+      }
+
+      p {
+        font-size: 0.95em;
+        color: $black;
+        line-height: 1.75em;
+        margin: 0 0 2em 0;
+        max-width: 36em;
+      }
+
+      .vision-cta {
+        display: inline-block;
+        padding: 0.75em 1.8em;
+        background: $mortar-purple;
+        color: $white;
+        text-decoration: none;
+        border-radius: 4px;
+        font-size: 0.95em;
+        font-weight: 500;
+        transition: background-color 0.2s ease, color 0.2s ease;
+
+        &:hover, &:focus, &:active {
+          background-color: color.adjust($mortar-purple, $lightness: -8%);
+          color: $white;
+          box-shadow: none;
+        }
+      }
+    }
+
+    .vision-image {
+      flex: 1.3;
+      position: relative;
+      overflow: hidden;
+      border-radius: 16px;
+
+      img {
+        display: block;
+        width: 100%;
+      }
+    }
+
+    @include respond-to('small', 'max') {
+      padding: 3em 0;
+
+      .vision-wrapper {
+        flex-direction: column;
+        gap: 2.5em;
+        padding: 0 1.5em;
+      }
+
+      .vision-image {
+        width: 100%;
+      }
+    }
+  }
+}

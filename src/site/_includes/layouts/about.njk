@@ -1,0 +1,39 @@
+{% extends 'layouts/base.njk' %}
+
+{% block pageTitle %}{{ title }} - {{ super() }}{% endblock %}
+{% block bodyId %}about-mortar{% endblock %}
+{% block mainClass %}content-page{% endblock %}
+
+{% block content %}
+<section id="vision">
+  <div class="vision-wrapper">
+    <div class="vision-text">
+      <h2>Scaling human connections</h2>
+      <p>We create solutions used by humans; they solve human problems and they are built to enhance human relationships. We use technology to scale the positive effects of bringing people closer together.</p>
+      <a href="/contact/" class="vision-cta">Get in touch</a>
+    </div>
+    <div class="vision-image">
+      <img src="{{ '/static/images/homepage/Claude_Monet01.jpg' | url }}" alt="Mortar — scaling human connections" />
+    </div>
+  </div>
+  <div class="vision-wrapper vision-wrapper--reversed">
+    <div class="vision-image">
+      <img src="{{ '/static/images/homepage/Georges_Seurat.jpg' | url }}" alt="Mortar — intelligent design systems" />
+    </div>
+    <div class="vision-text">
+      <h2>Intelligent design systems</h2>
+      <p>Our mission is to ensure that technology serves all of society; that the systems we build today are human-centric, and aligned to bring opportunity to everyone.</p>
+      <a href="/contact/" class="vision-cta">Get in touch</a>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrapper">
+    <article>
+      <h1>{{ title }}</h1>
+      {{ content | safe }}
+    </article>
+  </div>
+</section>
+{% endblock %}

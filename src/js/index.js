@@ -7,14 +7,17 @@ function toggleBurger() {
   const method = burger.classList.contains('is-active') ? 'remove' : 'add';
   burger.classList[method]('is-active');
   header.classList[method]('nav-active');
+  document.body.classList[method]('menu-open');
 }
 
 window.addEventListener('load', (event) => {
   // Burger Menu Navigation
   document.querySelectorAll('header nav a').forEach((el) => {
-    el.addEventListener('click', (event) =>
-      el.scrollIntoView({ behavior: 'smooth' })
-    );
+    if (el.getAttribute('href') && el.getAttribute('href').includes('#')) {
+      el.addEventListener('click', (event) =>
+        el.scrollIntoView({ behavior: 'smooth' })
+      );
+    }
   });
 
   const burger = document.querySelector('header .hamburger');
@@ -26,6 +29,47 @@ window.addEventListener('load', (event) => {
       if (document.querySelector('header').classList.contains('nav-active')) {
         toggleBurger();
       }
+    });
+  });
+
+  // Nav dropdowns (Solutions, Company, etc.)
+  const closeAllDropdowns = () => {
+    document.querySelectorAll('.nav-dropdown-menu.is-open').forEach((menu) => {
+      menu.classList.remove('is-open');
+      menu.closest('.nav-has-dropdown').querySelector('.nav-dropdown-toggle').setAttribute('aria-expanded', 'false');
+    });
+  };
+
+  document.querySelectorAll('.nav-has-dropdown').forEach((dropdown) => {
+    const toggle = dropdown.querySelector('.nav-dropdown-toggle');
+    const menu = dropdown.querySelector('.nav-dropdown-menu');
+    if (!toggle || !menu) return;
+
+    toggle.addEventListener('click', (e) => {
+      e.stopPropagation();
+      const isOpen = menu.classList.contains('is-open');
+      closeAllDropdowns();
+      menu.classList.toggle('is-open', !isOpen);
+      toggle.setAttribute('aria-expanded', String(!isOpen));
+    });
+
+    dropdown.addEventListener('mouseleave', () => {
+      menu.classList.remove('is-open');
+      toggle.setAttribute('aria-expanded', 'false');
+    });
+  });
+
+  document.addEventListener('click', closeAllDropdowns);
+
+  document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape') closeAllDropdowns();
+  });
+
+  // Mobile accordion for Solutions subheadings
+  document.querySelectorAll('.nav-dropdown-menu--wide .dropdown-subheading').forEach((heading) => {
+    heading.addEventListener('click', (e) => {
+      e.stopPropagation();
+      heading.closest('.dropdown-column').classList.toggle('is-open');
     });
   });
 
@@ -101,6 +145,34 @@ window.addEventListener('load', (event) => {
       }, 800); // Simulate a 0.8s delay for loading
     });
   }
+
+  // Services tab switcher
+  const serviceNavItems = document.querySelectorAll('.service-nav-item');
+  const servicePanels = document.querySelectorAll('.service-panel');
+
+  serviceNavItems.forEach((btn) => {
+    btn.addEventListener('click', () => {
+      const target = btn.dataset.service;
+      serviceNavItems.forEach((b) => b.classList.remove('is-active'));
+      servicePanels.forEach((p) => p.classList.remove('is-active'));
+      btn.classList.add('is-active');
+      document.querySelector(`.service-panel[data-service="${target}"]`).classList.add('is-active');
+    });
+  });
+
+  // Vision tab switcher
+  const visionTabs = document.querySelectorAll('.vision-tab');
+  const visionPanels = document.querySelectorAll('.vision-panel');
+
+  visionTabs.forEach((btn) => {
+    btn.addEventListener('click', () => {
+      const target = btn.dataset.tab;
+      visionTabs.forEach((b) => b.classList.remove('is-active'));
+      visionPanels.forEach((p) => p.classList.remove('is-active'));
+      btn.classList.add('is-active');
+      document.querySelector(`.vision-panel[data-tab="${target}"]`).classList.add('is-active');
+    });
+  });
 
   // Partners Ticker Scrolling
   const ticker = document.querySelector('.partners-ticker');
