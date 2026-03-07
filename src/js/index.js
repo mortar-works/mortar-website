@@ -160,6 +160,31 @@ window.addEventListener('load', (event) => {
     });
   });
 
+  // Logo tombola cycling
+  const tombola = document.querySelector('.logo-tombola');
+  if (tombola) {
+    const logos = Array.from(tombola.querySelectorAll('.tombola-slide'));
+    let currentIndex = 0;
+
+    setInterval(() => {
+      const nextIndex = (currentIndex + 1) % logos.length;
+      const current = logos[currentIndex];
+      const next = logos[nextIndex];
+
+      current.classList.remove('is-current');
+      current.classList.add('is-exiting');
+      next.classList.add('is-current');
+
+      setTimeout(() => {
+        current.style.transition = 'none';
+        current.classList.remove('is-exiting');
+        current.offsetHeight; // force reflow
+        current.style.transition = '';
+        currentIndex = nextIndex;
+      }, 450);
+    }, 3000);
+  }
+
   // Vision tab switcher
   const visionTabs = document.querySelectorAll('.vision-tab');
   const visionPanels = document.querySelectorAll('.vision-panel');

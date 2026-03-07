@@ -923,11 +923,58 @@
       line-height: 1.1em;
       color: $mortar-purple;
       margin: 0 0 0.5em;
+
+      .logo-tombola {
+        display: inline-block;
+        overflow: hidden;
+        height: 2.2em;
+        width: 6em;
+        position: relative;
+        top: -0.65em;
+        vertical-align: middle;
+        margin-left: 0.15em;
+      }
+
+      .tombola-slide {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        transform: translateY(100%);
+        transition: transform 0.45s cubic-bezier(0.4, 0, 0.2, 1);
+
+        &.is-current {
+          transform: translateY(0);
+        }
+
+        &.is-exiting {
+          transform: translateY(-100%);
+        }
+      }
+
+      .tombola-logo {
+        height: 1.71em;
+        width: auto;
+
+        &.tombola-logo--hoopd {
+          height: 1.2em;
+          margin-top: 1.0em;
+        }
+
+        &.tombola-logo--hxly {
+          height: 1.1em;
+          margin-top: 1.0em;
+          margin-left: 0.2em;
+        }
+      }
     }
 
     .vision-strapline {
       font-size: 1.1em;
-      color: rgba($black, 0.7);
+      color: $black;
       line-height: 1.6em;
       margin: 0 auto 2em;
       max-width: 36em;
