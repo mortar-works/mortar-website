@@ -13,7 +13,7 @@ name: homepage
   <section id="topline">
     <div class="wrapper">
       <div class="topline-left">
-        <h1>Redefining relationships between people, places and property</h1>
+        <h1>Redefining relationships between <a class="headline-link headline-link--1" href="#">people</a>, <a class="headline-link headline-link--2" href="#">places</a> and <a class="headline-link headline-link--3" href="#">property</a></h1>
       </div>
       <div class="topline-right">
         <p class="toplinep">
@@ -97,7 +97,7 @@ name: homepage
 
 <section id="services">
   <div class="services-heading-wrapper">
-    <h2 class="services-heading"><span class="services-heading--pink">Trusted technology builders.</span> <span class="services-heading--blue">Leading research, design and the application of intelligence.</span></h2>
+    <h2 class="services-heading"><span class="services-heading--pink">Trusted technology <span id="typewriter-word">builders</span><span class="typewriter-cursor">|</span></span> <span class="services-heading--blue">Leading research, design and the application of intelligence.</span></h2>
   </div>
   <div class="services-wrapper">
 
@@ -105,13 +105,13 @@ name: homepage
       <button class="service-nav-item is-active" data-service="0">Finding new solutions</button>
       <button class="service-nav-item" data-service="1">Transforming systems</button>
       <button class="service-nav-item" data-service="2">Understanding behaviour</button>
-      <button class="service-nav-item" data-service="3">Redefining impact</button>
+      <button class="service-nav-item" data-service="3">Redefining reporting</button>
     </nav>
 
     <div class="services-content">
       <div class="service-panel is-active" data-service="0">
         <div class="service-panel-text">
-          <p>Existing solutions have been heavily influenced by bias, incomplete data and asymmetry in user needs. We use modular, adaptive and intelligent frameworks to build a new generation of solutions; more equitable, adaptive and user-centric.</p>
+          <p>Existing solutions have been heavily influenced by bias, incomplete data and asymmetry in user needs. We use modular, adaptive and intelligent frameworks to build a new generation of solutions; easy to integrate and scale, dynamic and personalised.</p>
           <a href="/solutions/" class="service-panel-link">Our design framework</a>
         </div>
         <div class="service-panel-image">
@@ -120,7 +120,7 @@ name: homepage
       </div>
       <div class="service-panel" data-service="1">
         <div class="service-panel-text">
-          <p>Our systems were not built for complexity or change. Siloed information and legacy processes make them difficult to navigate and slow to respond. We integrate data to model, test and discover how systems can deliver responsive, resilient and user-centred experiences.</p>
+          <p>Traditional systems were not built for complexity or change. Siloed information and legacy processes make them difficult to navigate and slow to respond. We integrate data to model, test and discover how systems can deliver responsive, resilient and connected experiences.</p>
           <a href="/solutions/" class="service-panel-link">Intelligent systems</a>
         </div>
         <div class="service-panel-image">
@@ -129,7 +129,7 @@ name: homepage
       </div>
       <div class="service-panel" data-service="2">
         <div class="service-panel-text">
-          <p>Our ability to sense, interpret and respond to the world will shape the future. Yet too many decisions remain based on static assumptions about human behaviour. At Mortar we are pioneering behavioural intelligence, creating new ways of seeing and responding to the world that are more aligned with human understanding.</p>
+          <p>Our ability to sense, interpret and respond to the world is shaping the future. At Mortar we pioneer behavioural intelligence, creating new ways of seeing and responding to the world that are aligned with human understanding. So decisions are grounded in how people actually perceive, behave and adapt.</p>
           <a href="/solutions/" class="service-panel-link">Our research</a>
         </div>
         <div class="service-panel-image">
@@ -138,7 +138,7 @@ name: homepage
       </div>
       <div class="service-panel" data-service="3">
         <div class="service-panel-text">
-          <p>Impact should not be something evaluated retrospectively. At Mortar we model impact into the solutions we create, with custom frameworks built in for real-time capture, monitoring and reporting. Enabling teams to see impact clearly, guide decisions and improve outcomes throughout the journey.</p>
+          <p>Reporting should not be something evaluated retrospectively. At Mortar we model impact into our solutions, informing how information is being captured, monitored and reported in real time. Enabling teams to see impact, guide decisions and improve outcomes throughout the journey.</p>
           <a href="/solutions/" class="service-panel-link">Impact models and frameworks</a>
         </div>
         <div class="service-panel-image">
@@ -163,67 +163,72 @@ name: homepage
         <img src="{{ '/static/images/hxly-logo01.svg' | url }}" alt="Hxly" class="tombola-logo tombola-logo--hxly" />
       </span>
     </span></h2>
-    <p class="vision-strapline">Organisations are using Mortar and our suite of products to power their own solutions; improving efficiencies and driving growth.</p>
-    <div class="vision-tabs">
-      <button class="vision-tab is-active" data-tab="people">People</button>
-      <button class="vision-tab" data-tab="places">Places</button>
-      <button class="vision-tab" data-tab="property">Property</button>
-    </div>
+    <p class="vision-strapline">Organisations use Mortar and our suite of products to power and scale their solutions; improving efficiencies and driving growth.</p>
   </div>
+
+  <div class="vision-tabs" id="vision-tabs-bar">
+    <a class="vision-tab is-active" href="#vision-people">People</a>
+    <a class="vision-tab" href="#vision-places">Places</a>
+    <a class="vision-tab" href="#vision-property">Property</a>
+  </div>
+  <div class="vision-tabs-placeholder" id="vision-tabs-placeholder"></div>
 
   <div class="vision-panels">
 
-    <div class="vision-panel is-active" data-tab="people">
-      <div class="vision-panel-header">
-        <h3>Improving outcomes for people</h3>
-        <p>Our people-centred solutions help organisations understand, reach and serve the individuals who need them most.</p>
-      </div>
+    <div class="vision-panel vision-panel--shaded" id="vision-people" data-tab="people">
       <div class="vision-panel-body">
-        <ul class="vision-modules">
-          <li>Needs assessment and profiling</li>
-          <li>User journey mapping</li>
-          <li>Community navigation</li>
-          <li>Personalised service design</li>
-          <li>Outcomes and impact tracking</li>
-        </ul>
+        <div class="vision-panel-left">
+          <h3>Improving outcomes for people</h3>
+          <p>Our people-centred solutions help organisations understand, reach and serve the individuals who need them most.</p>
+          <ul class="vision-modules">
+            <li>Needs assessment and profiling</li>
+            <li>User journey mapping</li>
+            <li>Community navigation</li>
+            <li>Personalised service design</li>
+            <li>Outcomes and impact tracking</li>
+          </ul>
+          <a href="#" class="vision-panel-link">Future human-centric design</a>
+        </div>
         <div class="vision-graphic">
-          <img src="{{ '/static/images/homepage/Claude_Monet01.jpg' | url }}" alt="People solutions illustration" />
+          <img src="{{ '/static/images/homepage/bgvision01.jpg' | url }}" alt="People solutions illustration" />
         </div>
       </div>
     </div>
 
-    <div class="vision-panel" data-tab="places">
-      <div class="vision-panel-header">
-        <h3>Understanding and shaping places</h3>
-        <p>Our place intelligence tools help organisations map, model and respond to the dynamics of the communities and environments they serve.</p>
-      </div>
-      <div class="vision-panel-body">
-        <ul class="vision-modules">
-          <li>Place intelligence and mapping</li>
-          <li>Community asset analysis</li>
-          <li>Spatial demand modelling</li>
-          <li>Local area planning support</li>
-          <li>Place-based impact reporting</li>
-        </ul>
+    <div class="vision-panel" id="vision-places" data-tab="places">
+      <div class="vision-panel-body vision-panel-body--reverse">
+        <div class="vision-panel-left">
+          <h3>Understanding and shaping places</h3>
+          <p>Our place intelligence tools help organisations map, model and respond to the dynamics of the communities and environments they serve.</p>
+          <ul class="vision-modules">
+            <li>Place intelligence and mapping</li>
+            <li>Community asset analysis</li>
+            <li>Spatial demand modelling</li>
+            <li>Local area planning support</li>
+            <li>Place-based impact reporting</li>
+          </ul>
+          <a href="#" class="vision-panel-link">Local information infrastructure</a>
+        </div>
         <div class="vision-graphic">
           <img src="{{ '/static/images/homepage/Georges_Seurat.jpg' | url }}" alt="Places solutions illustration" />
         </div>
       </div>
     </div>
 
-    <div class="vision-panel" data-tab="property">
-      <div class="vision-panel-header">
-        <h3>Smarter property decisions</h3>
-        <p>Our property intelligence solutions help organisations optimise assets, forecast demand and make evidence-led investment decisions.</p>
-      </div>
+    <div class="vision-panel vision-panel--shaded" id="vision-property" data-tab="property">
       <div class="vision-panel-body">
-        <ul class="vision-modules">
-          <li>Portfolio analysis and optimisation</li>
-          <li>Property demand forecasting</li>
-          <li>Asset condition modelling</li>
-          <li>Investment scenario planning</li>
-          <li>Property impact frameworks</li>
-        </ul>
+        <div class="vision-panel-left">
+          <h3>Smarter property decisions</h3>
+          <p>Our property intelligence solutions help organisations optimise assets, forecast demand and make evidence-led investment decisions.</p>
+          <ul class="vision-modules">
+            <li>Portfolio analysis and optimisation</li>
+            <li>Property demand forecasting</li>
+            <li>Asset condition modelling</li>
+            <li>Investment scenario planning</li>
+            <li>Property impact frameworks</li>
+          </ul>
+          <a href="#" class="vision-panel-link">Changing approaches to property</a>
+        </div>
         <div class="vision-graphic">
           <img src="{{ '/static/images/homepage/Claude_Monet01.jpg' | url }}" alt="Property solutions illustration" />
         </div>

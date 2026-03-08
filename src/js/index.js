@@ -185,19 +185,105 @@ window.addEventListener('load', (event) => {
     }, 3000);
   }
 
-  // Vision tab switcher
+  // Vision tabs — sticky on scroll + smooth scroll + active state
   const visionTabs = document.querySelectorAll('.vision-tab');
   const visionPanels = document.querySelectorAll('.vision-panel');
+  const visionTabsBar = document.getElementById('vision-tabs-bar');
+  const visionTabsPlaceholder = document.getElementById('vision-tabs-placeholder');
+  const visionSection = document.getElementById('vision');
+  const siteHeader = document.querySelector('header');
 
-  visionTabs.forEach((btn) => {
-    btn.addEventListener('click', () => {
-      const target = btn.dataset.tab;
-      visionTabs.forEach((b) => b.classList.remove('is-active'));
-      visionPanels.forEach((p) => p.classList.remove('is-active'));
-      btn.classList.add('is-active');
-      document.querySelector(`.vision-panel[data-tab="${target}"]`).classList.add('is-active');
+  function updateStickyTabs() {
+    if (!visionTabsBar || !visionSection || !siteHeader) return;
+    const headerHeight = siteHeader.offsetHeight;
+    const tabsHeight = visionTabsBar.offsetHeight;
+    const placeholderTop = visionTabsPlaceholder.getBoundingClientRect().top;
+    const sectionBottom = visionSection.getBoundingClientRect().bottom;
+    const triggerTop = visionTabsBar.classList.contains('is-sticky') ? placeholderTop : visionTabsBar.getBoundingClientRect().top;
+
+    if (triggerTop <= headerHeight && sectionBottom > headerHeight + tabsHeight) {
+      visionTabsBar.style.top = headerHeight + 'px';
+      visionTabsBar.classList.add('is-sticky');
+      visionTabsPlaceholder.style.height = tabsHeight + 'px';
+      visionTabsPlaceholder.classList.add('is-visible');
+    } else {
+      visionTabsBar.classList.remove('is-sticky');
+      visionTabsPlaceholder.classList.remove('is-visible');
+    }
+  }
+  window.addEventListener('scroll', updateStickyTabs, { passive: true });
+  updateStickyTabs();
+
+  // Smooth scroll on tab click
+  visionTabs.forEach((link) => {
+    link.addEventListener('click', (e) => {
+      e.preventDefault();
+      const target = document.querySelector(link.getAttribute('href'));
+      if (target) {
+        const headerHeight = siteHeader ? siteHeader.offsetHeight : 0;
+        const tabsHeight = visionTabsBar ? visionTabsBar.offsetHeight : 0;
+        const top = target.getBoundingClientRect().top + window.scrollY - headerHeight - tabsHeight - 16;
+        window.scrollTo({ top, behavior: 'smooth' });
+      }
     });
   });
+
+  // Highlight active tab on scroll
+  const visionObserver = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        const id = entry.target.id;
+        visionTabs.forEach((link) => {
+          link.classList.toggle('is-active', link.getAttribute('href') === `#${id}`);
+        });
+      }
+    });
+  }, { threshold: 0.3 });
+
+  visionPanels.forEach((panel) => visionObserver.observe(panel));
+
+  // Typewriter animation for services heading
+  const typewriterWord = document.getElementById('typewriter-word');
+  const typewriterCursor = document.querySelector('.typewriter-cursor');
+  if (typewriterWord && typewriterCursor) {
+    const words = ['builders.', 'partners.', 'designers.', 'builders.'];
+    let wordIndex = 0;
+    let charIndex = words[0].length;
+    let isDeleting = true;
+    const typeSpeed = 150;
+    const deleteSpeed = 90;
+    const pauseAfterType = 1300;
+    const pauseAfterDelete = 400;
+
+    function typeWriter() {
+      const currentWord = words[wordIndex];
+      if (isDeleting) {
+        charIndex--;
+        typewriterWord.textContent = currentWord.slice(0, charIndex);
+        if (charIndex === 0) {
+          isDeleting = false;
+          wordIndex++;
+          setTimeout(typeWriter, pauseAfterDelete);
+          return;
+        }
+        setTimeout(typeWriter, deleteSpeed);
+      } else {
+        charIndex++;
+        typewriterWord.textContent = currentWord.slice(0, charIndex);
+        if (charIndex === currentWord.length) {
+          // Stop after typing the final "builders."
+          if (wordIndex === words.length - 1) return;
+          isDeleting = true;
+          setTimeout(typeWriter, pauseAfterType);
+          return;
+        }
+        setTimeout(typeWriter, typeSpeed);
+      }
+    }
+
+    // Start by pausing on "builders." then cycling once
+    setTimeout(typeWriter, pauseAfterType);
+  }
 
   // Partners Ticker Scrolling
   const ticker = document.querySelector('.partners-ticker');
