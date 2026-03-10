@@ -10,6 +10,9 @@
     <meta name="description" content="Mortar powers intelligent, accessible, and human-centric solutions for society. We are a technology company committed to building a better world.">
 
     <link rel="shortcut icon" href="{{ '/static/images/mortar-favicon.png' | url }}" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap">
     <link rel="stylesheet" href="{{ '/static/css/styles.css' | url }}">
     <script async="async" defer="defer" src="{{ '/static/js/main.js' | url }}"></script>
 
@@ -65,7 +68,6 @@
                       <a href="{{ '/solutions/service-design/' | url }}" role="menuitem">Service design <span class="link-chevron" aria-hidden="true"></span></a>
                       <a href="{{ '/solutions/system-design/' | url }}" role="menuitem">System design <span class="link-chevron" aria-hidden="true"></span></a>
                       <a href="{{ '/solutions/modelling-and-simulation/' | url }}" role="menuitem">Modelling and simulation <span class="link-chevron" aria-hidden="true"></span></a>
-                      <hr class="dropdown-divider">
                       <a href="#" role="menuitem">People <span class="link-chevron" aria-hidden="true"></span></a>
                       <a href="#" role="menuitem">Places <span class="link-chevron" aria-hidden="true"></span></a>
                       <a href="#" role="menuitem">Property <span class="link-chevron" aria-hidden="true"></span></a>
@@ -108,16 +110,30 @@
               </li>
               <li class="nav-has-dropdown">
                 <button class="nav-dropdown-toggle" aria-expanded="false" aria-haspopup="true">
-                  Insights <span class="dropdown-chevron" aria-hidden="true"></span>
+                  Content <span class="dropdown-chevron" aria-hidden="true"></span>
                 </button>
-                <div class="nav-dropdown-menu" role="menu">
-                  <div class="dropdown-section">
-                    <span class="dropdown-subheading">Latest posts</span>
-                    <a href="{{ '/insights/driving-product-development/' | url }}" role="menuitem">Driving product development <span class="link-chevron" aria-hidden="true"></span></a>
-                    <a href="{{ '/insights/intelligent-user-pathways/' | url }}" role="menuitem">Intelligent User Pathways <span class="link-chevron" aria-hidden="true"></span></a>
-                    <a href="{{ '/insights/dynamic-information-directories/' | url }}" role="menuitem">Dynamic Information Directories <span class="link-chevron" aria-hidden="true"></span></a>
-                    <a href="{{ '/insights/custom-engagement-environments/' | url }}" role="menuitem">Custom engagement environments <span class="link-chevron" aria-hidden="true"></span></a>
-                    <a href="{{ '/#insights' | url }}" role="menuitem" class="dropdown-link--more">View all <span class="link-chevron" aria-hidden="true"></span></a>
+                <div class="nav-dropdown-menu nav-dropdown-menu--wide" role="menu">
+                  <div class="dropdown-columns">
+                    <div class="dropdown-column">
+                      <span class="dropdown-subheading">Latest content</span>
+                      <a href="{{ '/insights/driving-product-development/' | url }}" role="menuitem">Driving product development <span class="link-chevron" aria-hidden="true"></span></a>
+                      <a href="{{ '/insights/intelligent-user-pathways/' | url }}" role="menuitem">Intelligent User Pathways <span class="link-chevron" aria-hidden="true"></span></a>
+                      <a href="{{ '/insights/dynamic-information-directories/' | url }}" role="menuitem">Dynamic Information Directories <span class="link-chevron" aria-hidden="true"></span></a>
+                      <a href="{{ '/insights/custom-engagement-environments/' | url }}" role="menuitem">Custom engagement environments <span class="link-chevron" aria-hidden="true"></span></a>
+                      <a href="{{ '/#insights' | url }}" role="menuitem" class="dropdown-link--more">View all <span class="link-chevron" aria-hidden="true"></span></a>
+                    </div>
+                    <div class="dropdown-column">
+                      <span class="dropdown-subheading">Categories</span>
+                      <a href="#" role="menuitem">Product <span class="link-chevron" aria-hidden="true"></span></a>
+                      <a href="#" role="menuitem">Solution <span class="link-chevron" aria-hidden="true"></span></a>
+                      <a href="#" role="menuitem">Research <span class="link-chevron" aria-hidden="true"></span></a>
+                      <a href="#" role="menuitem">Use Case <span class="link-chevron" aria-hidden="true"></span></a>
+                      <a href="#" role="menuitem">Case Study <span class="link-chevron" aria-hidden="true"></span></a>
+                      <a href="#" role="menuitem">Service <span class="link-chevron" aria-hidden="true"></span></a>
+                      <a href="#" role="menuitem">Customer <span class="link-chevron" aria-hidden="true"></span></a>
+                      <a href="#" role="menuitem">Industry <span class="link-chevron" aria-hidden="true"></span></a>
+                      <a href="#" role="menuitem">Company <span class="link-chevron" aria-hidden="true"></span></a>
+                    </div>
                   </div>
                 </div>
               </li>
@@ -139,7 +155,30 @@
 
         <div class="header-right">
           <a href="{{ '/contact/' | url }}" class="nav-cta nav-cta--outline">Contact</a>
-          <a href="https://mortar.works" class="nav-cta nav-cta--solid" target="_blank" rel="noopener">Visit</a>
+          <div class="nav-has-dropdown header-cta-dropdown">
+            <button class="nav-cta nav-cta--solid nav-dropdown-toggle" type="button" aria-expanded="false" aria-haspopup="true">
+              View our products <span class="dropdown-chevron" aria-hidden="true"></span>
+            </button>
+            <div class="nav-dropdown-menu nav-dropdown-menu--visit" role="menu">
+              <div class="dropdown-section">
+                <a href="#" role="menuitem" class="product-visit-link" target="_blank" rel="noopener">
+                  <span class="product-visit-logo product-visit-logo--hoopd"></span>
+                  <span class="product-visit-name">Visit Hoop'd</span>
+                  <span class="link-chevron" aria-hidden="true"></span>
+                </a>
+                <a href="#" role="menuitem" class="product-visit-link" target="_blank" rel="noopener">
+                  <span class="product-visit-logo product-visit-logo--hxly"></span>
+                  <span class="product-visit-name">Visit Hxly</span>
+                  <span class="link-chevron" aria-hidden="true"></span>
+                </a>
+                <a href="#" role="menuitem" class="product-visit-link">
+                  <span class="product-visit-logo product-visit-logo--harla"></span>
+                  <span class="product-visit-name">Visit Harla</span>
+                  <span class="link-chevron" aria-hidden="true"></span>
+                </a>
+              </div>
+            </div>
+          </div>
           <button class="hamburger hamburger--squeeze" type="button">
             <span class="visually-hidden">Toggle menu</span>
             <span class="hamburger-box">

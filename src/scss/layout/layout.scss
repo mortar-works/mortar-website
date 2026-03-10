@@ -126,6 +126,134 @@ header {
     }
   }
 
+  /* CTA "View our products" dropdown in header-right */
+  .header-cta-dropdown {
+    display: none;
+
+    @include respond-to('small') {
+      display: block;
+      position: relative;
+    }
+
+    // Keep the solid CTA button styling regardless of nav-dropdown-toggle resets
+    .nav-dropdown-toggle {
+      background: $mortar-yellow !important;
+      color: $mortar-purple !important;
+      border: 1.5px solid $mortar-yellow !important;
+      font-weight: 600 !important;
+      padding: 0.5em 1.2em !important;
+      border-radius: 4px !important;
+      font-size: 0.95em !important;
+      gap: 0.55em !important;
+      white-space: nowrap;
+      display: inline-flex !important;
+      line-height: normal !important;
+      box-sizing: border-box;
+
+      &:hover {
+        background: color.adjust($mortar-yellow, $lightness: -8%) !important;
+        border-color: color.adjust($mortar-yellow, $lightness: -8%) !important;
+      }
+
+      .dropdown-chevron {
+        border-right-color: $mortar-purple;
+        border-bottom-color: $mortar-purple;
+      }
+    }
+
+    .nav-dropdown-menu--visit {
+      left: auto;
+      right: 0;
+      border-radius: 8px 0 8px 8px;
+      min-width: 260px;
+      padding: 0.5em 0;
+
+      &::before {
+        left: auto;
+        right: 0;
+        width: 170px; // approximate button width
+        border-radius: 4px 4px 0 0;
+      }
+
+      // Reset the default hover-dim rule for these rows
+      &:has(a:hover) a:not(:hover) {
+        opacity: 0.5;
+      }
+    }
+
+    // Large product rows with logo
+    .product-visit-link {
+      display: flex !important;
+      align-items: center !important;
+      justify-content: flex-start !important;
+      gap: 1em;
+      padding: 0.75em 1.2em !important;
+
+      &::after {
+        display: none !important;
+      }
+
+      &:last-child {
+        border-bottom: none;
+      }
+    }
+
+    .product-visit-logo {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 48px;
+      height: 48px;
+      border-radius: 8px;
+      flex-shrink: 0;
+
+      &--hoopd {
+        background: #1a6eb5;
+      }
+
+      &--hxly {
+        background: $mortar-purple;
+      }
+
+      &--harla {
+        background: $mortar-orange;
+      }
+
+      &--hoopd,
+      &--hxly,
+      &--harla {
+        &::after {
+          content: 'H';
+          font-family: 'Manrope', sans-serif;
+          font-weight: 700;
+          font-size: 1.4em;
+          color: $white;
+        }
+      }
+    }
+
+    .product-visit-name {
+      flex: 1;
+      font-family: 'Manrope', sans-serif;
+      font-weight: 600;
+      font-size: 0.95em;
+      color: $mortar-purple;
+    }
+
+    .product-visit-link .link-chevron {
+      flex-shrink: 0;
+    }
+
+    // Override the hover bridge to be right-aligned
+    @include respond-to('small') {
+      &::before {
+        left: auto !important;
+        right: 0 !important;
+        width: 170px !important;
+      }
+    }
+  }
+
   .hamburger {
     @include respond-to('small') {
       display: none;
@@ -253,7 +381,7 @@ header {
   }
 
   .nav-dropdown-menu {
-    display: none;
+    display: block;
     position: absolute;
     top: calc(100% + 10px + 0.7em);
     left: 0;
@@ -266,24 +394,44 @@ header {
     min-width: 315px;
     padding: 1em 0 0.8em 0;
     z-index: 100;
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+
+    &::before {
+      content: '';
+      position: absolute;
+      top: -0.7em;
+      left: 0;
+      width: 130px;
+      height: 0.7em;
+      background: #faf5e0;
+      border-radius: 4px 4px 0 0;
+    }
 
     &.is-open {
-      display: block;
+      opacity: 1;
+      visibility: visible;
+      pointer-events: auto;
     }
+  }
+
+  .nav-dropdown-menu {
+    font-family: 'Manrope', sans-serif;
   }
 
   .dropdown-subheading {
     display: block;
     @include regular-type;
+    font-family: 'Manrope', sans-serif;
     font-size: 0.9em;
     color: $mortar-purple;
     padding: 0 1.4em 0.8em 1.4em;
     margin-bottom: 0.8em;
-    border-bottom: 1px solid rgba($mortar-purple, 0.12);
   }
 
   .nav-dropdown-menu:has(a:hover) a:not(:hover) {
-    color: rgba($mortar-purple, 0.3) !important;
+    opacity: 0.3;
   }
 
   .nav-dropdown-menu a {
@@ -291,11 +439,29 @@ header {
     justify-content: space-between;
     align-items: center;
     color: $mortar-purple !important;
+    font-family: 'Manrope', sans-serif;
     font-size: 0.9em;
     padding: 0.65em 1.4em;
     text-decoration: none;
-    transition: background-color 0.2s ease, color 0.2s ease;
+    transition: color 0.2s ease, opacity 0.2s ease;
     outline: none;
+    position: relative;
+
+    &::after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 1.4em;
+      right: 1.4em;
+      height: 1px;
+      background: $mortar-purple;
+      opacity: 0.1;
+      transition: opacity 0.2s ease;
+    }
+
+    &:hover::after {
+      opacity: 0.5;
+    }
 
     &:focus-visible {
       outline: 2px solid $mortar-orange;
@@ -304,7 +470,6 @@ header {
 
     &:hover, &:focus, &:active {
       box-shadow: none;
-      background-color: rgba($mortar-purple, 0.06);
     }
 
     &:active {
@@ -322,7 +487,6 @@ header {
     }
 
     &:hover {
-      background-color: rgba($mortar-purple, 0.06);
       color: $mortar-orange !important;
     }
   }
@@ -340,6 +504,10 @@ header {
     color: rgba($mortar-purple, 0.6) !important;
     justify-content: flex-start;
     gap: 0.5em;
+
+    &::after {
+      display: none;
+    }
 
     &:hover {
       background-color: transparent;
@@ -377,31 +545,10 @@ header {
       z-index: 102;
     }
 
-    /* Visual tab above the dropdown */
-    &::after {
-      content: '';
-      position: absolute;
-      top: calc(100% + 10px);
-      left: 0;
-      width: 130px;
-      height: 0.7em;
-      background: #faf5e0;
-      border-radius: 4px 4px 0 0;
-      display: none;
-      z-index: 101;
-    }
-
     &:hover::before {
       display: block;
     }
 
-    &:hover::after {
-      display: block;
-    }
-
-    &:hover .nav-dropdown-menu {
-      display: block;
-    }
 
     &:hover .dropdown-chevron {
       transform: rotate(-135deg);
@@ -442,6 +589,7 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    font-size: 1.1em;
   }
 
   .product-desc {
@@ -471,6 +619,15 @@ header {
     box-shadow: none;
     border-radius: 0;
     padding: 0.2em 0 0.4em 0;
+    display: none;
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+    transition: none;
+
+    &.is-open {
+      display: block;
+    }
 
     .dropdown-columns {
       flex-direction: column;

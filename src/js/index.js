@@ -10,6 +10,19 @@ function toggleBurger() {
   document.body.classList[method]('menu-open');
 }
 
+function smoothScrollTo(targetY, duration) {
+  const startY = window.scrollY;
+  const distance = targetY - startY;
+  const startTime = performance.now();
+  function ease(t) { return 1 - Math.pow(1 - t, 3); }
+  function step(now) {
+    const progress = Math.min((now - startTime) / duration, 1);
+    window.scrollTo(0, startY + distance * ease(progress));
+    if (progress < 1) requestAnimationFrame(step);
+  }
+  requestAnimationFrame(step);
+}
+
 window.addEventListener('load', (event) => {
   // Burger Menu Navigation
   document.querySelectorAll('header nav a').forEach((el) => {
@@ -19,6 +32,20 @@ window.addEventListener('load', (event) => {
       );
     }
   });
+
+  // Topline CTA — slow scroll to bottom of partners section
+  const toplineCta = document.querySelector('.topline-cta');
+  if (toplineCta) {
+    toplineCta.addEventListener('click', (e) => {
+      e.preventDefault();
+      const partners = document.getElementById('partners');
+      const header = document.querySelector('header');
+      if (partners && header) {
+        const targetY = partners.getBoundingClientRect().bottom + window.scrollY - header.offsetHeight;
+        smoothScrollTo(targetY, 1000);
+      }
+    });
+  }
 
   const burger = document.querySelector('header .hamburger');
   burger.addEventListener('click', toggleBurger);
@@ -32,38 +59,125 @@ window.addEventListener('load', (event) => {
     });
   });
 
-  // Nav dropdowns (Solutions, Company, etc.)
-  const closeAllDropdowns = () => {
-    document.querySelectorAll('.nav-dropdown-menu.is-open').forEach((menu) => {
-      menu.classList.remove('is-open');
-      menu.closest('.nav-has-dropdown').querySelector('.nav-dropdown-toggle').setAttribute('aria-expanded', 'false');
-    });
-  };
+  // Nav dropdowns — directional slide animation
+  const dropdownItems = Array.from(document.querySelectorAll('.nav-has-dropdown'));
+  let activeIndex = -1;
+  let closeTimer = null;
+  const SLIDE_PX = 20;
+  const DURATION = 220;
 
-  document.querySelectorAll('.nav-has-dropdown').forEach((dropdown) => {
-    const toggle = dropdown.querySelector('.nav-dropdown-toggle');
-    const menu = dropdown.querySelector('.nav-dropdown-menu');
+  const isDesktop = () => !document.querySelector('header').classList.contains('nav-active');
+
+  function animateIn(menu, fromX) {
+    const inner = menu.querySelector('.dropdown-section, .dropdown-columns');
+    // Outer panel: fade only — no transform so the tab stays anchored
+    menu.style.transition = 'none';
+    menu.style.opacity = '0';
+    menu.style.visibility = 'visible';
+    menu.style.pointerEvents = 'auto';
+    // Inner content: slide from direction
+    if (inner && fromX !== 0) {
+      inner.style.transition = 'none';
+      inner.style.transform = `translateX(${fromX}px)`;
+      inner.style.opacity = '0';
+    }
+    requestAnimationFrame(() => requestAnimationFrame(() => {
+      menu.style.transition = `opacity ${DURATION}ms ease`;
+      menu.style.opacity = '1';
+      if (inner && fromX !== 0) {
+        inner.style.transition = `opacity ${DURATION}ms ease, transform ${DURATION}ms ease`;
+        inner.style.transform = 'translateX(0)';
+        inner.style.opacity = '1';
+      }
+    }));
+  }
+
+  function animateOut(menu, toX) {
+    const inner = menu.querySelector('.dropdown-section, .dropdown-columns');
+    menu.style.transition = `opacity ${DURATION}ms ease`;
+    menu.style.opacity = '0';
+    menu.style.pointerEvents = 'none';
+    if (inner && toX !== 0) {
+      inner.style.transition = `opacity ${DURATION}ms ease, transform ${DURATION}ms ease`;
+      inner.style.transform = `translateX(${toX}px)`;
+      inner.style.opacity = '0';
+    }
+    setTimeout(() => {
+      menu.style.cssText = '';
+      if (inner) inner.style.cssText = '';
+    }, DURATION);
+  }
+
+  function openAt(index) {
+    if (index === activeIndex) return;
+    clearTimeout(closeTimer);
+    const dir = activeIndex === -1 ? 0 : (index > activeIndex ? 1 : -1);
+
+    if (activeIndex !== -1) {
+      const oldItem = dropdownItems[activeIndex];
+      const oldMenu = oldItem?.querySelector('.nav-dropdown-menu');
+      const oldToggle = oldItem?.querySelector('.nav-dropdown-toggle');
+      if (oldMenu) animateOut(oldMenu, dir * -SLIDE_PX);
+      oldToggle?.setAttribute('aria-expanded', 'false');
+    }
+
+    const newItem = dropdownItems[index];
+    const newMenu = newItem.querySelector('.nav-dropdown-menu');
+    const newToggle = newItem.querySelector('.nav-dropdown-toggle');
+    if (newMenu) animateIn(newMenu, dir * SLIDE_PX);
+    newToggle?.setAttribute('aria-expanded', 'true');
+    activeIndex = index;
+  }
+
+  function closeAll() {
+    clearTimeout(closeTimer);
+    if (activeIndex !== -1) {
+      const item = dropdownItems[activeIndex];
+      const menu = item?.querySelector('.nav-dropdown-menu');
+      const toggle = item?.querySelector('.nav-dropdown-toggle');
+      if (menu) animateOut(menu, 0);
+      toggle?.setAttribute('aria-expanded', 'false');
+    }
+    activeIndex = -1;
+  }
+
+  dropdownItems.forEach((item, index) => {
+    const toggle = item.querySelector('.nav-dropdown-toggle');
+    const menu = item.querySelector('.nav-dropdown-menu');
     if (!toggle || !menu) return;
+
+    item.addEventListener('mouseenter', () => {
+      if (isDesktop()) { clearTimeout(closeTimer); openAt(index); }
+    });
+
+    item.addEventListener('mouseleave', () => {
+      if (isDesktop()) {
+        closeTimer = setTimeout(() => { if (activeIndex === index) closeAll(); }, 80);
+      }
+    });
 
     toggle.addEventListener('click', (e) => {
       e.stopPropagation();
-      const isOpen = menu.classList.contains('is-open');
-      closeAllDropdowns();
-      menu.classList.toggle('is-open', !isOpen);
-      toggle.setAttribute('aria-expanded', String(!isOpen));
-    });
-
-    dropdown.addEventListener('mouseleave', () => {
-      menu.classList.remove('is-open');
-      toggle.setAttribute('aria-expanded', 'false');
+      if (!isDesktop()) {
+        // Mobile: accordion toggle
+        const isOpen = menu.classList.contains('is-open');
+        document.querySelectorAll('.nav-dropdown-menu.is-open').forEach((m) => {
+          m.classList.remove('is-open');
+          m.closest('.nav-has-dropdown')?.querySelector('.nav-dropdown-toggle')?.setAttribute('aria-expanded', 'false');
+        });
+        if (!isOpen) {
+          menu.classList.add('is-open');
+          toggle.setAttribute('aria-expanded', 'true');
+        }
+      } else {
+        // Desktop: click also toggles
+        if (activeIndex === index) { closeAll(); } else { openAt(index); }
+      }
     });
   });
 
-  document.addEventListener('click', closeAllDropdowns);
-
-  document.addEventListener('keydown', (e) => {
-    if (e.key === 'Escape') closeAllDropdowns();
-  });
+  document.addEventListener('click', closeAll);
+  document.addEventListener('keydown', (e) => { if (e.key === 'Escape') closeAll(); });
 
   // Mobile accordion for Solutions subheadings
   document.querySelectorAll('.nav-dropdown-menu--wide .dropdown-subheading').forEach((heading) => {
@@ -85,32 +199,25 @@ window.addEventListener('load', (event) => {
     }
   });
 
-  // Load more insights functionality
-  const loadMoreButton = document.querySelector('#load-more-insights');
-  const insightList = document.querySelectorAll('#insight-list li');
-  const preloader = document.querySelector('#insights-preloader');
-  let visibleInsights = 6;
+  // Insights filter functionality
+  const filterButtons = document.querySelectorAll('.insight-filter');
+  const insightItems = document.querySelectorAll('#insight-list li');
 
-  if (loadMoreButton && insightList) {
-    loadMoreButton.addEventListener('click', () => {
-      preloader.classList.remove('hidden');
+  filterButtons.forEach(btn => {
+    btn.addEventListener('click', () => {
+      filterButtons.forEach(b => b.classList.remove('is-active'));
+      btn.classList.add('is-active');
 
-      setTimeout(() => {
-        for (let i = visibleInsights; i < visibleInsights + 6; i++) {
-          if (insightList[i]) {
-            insightList[i].classList.remove('hidden');
-          }
+      const filter = btn.dataset.filter;
+      insightItems.forEach(item => {
+        if (filter === 'all' || item.dataset.category === filter) {
+          item.style.display = '';
+        } else {
+          item.style.display = 'none';
         }
-
-        visibleInsights += 6;
-        preloader.classList.add('hidden');
-
-        if (visibleInsights >= insightList.length) {
-          loadMoreButton.style.display = 'none';
-        }
-      }, 800);
+      });
     });
-  }
+  });
 
   // Load more case studies functionality (Updated Code)
   const loadMoreCaseStudiesButton = document.querySelector('#load-more-casestudies');
@@ -214,6 +321,20 @@ window.addEventListener('load', (event) => {
   window.addEventListener('scroll', updateStickyTabs, { passive: true });
   updateStickyTabs();
 
+  // Headline links (people / places / property) — smooth scroll to vision panels
+  document.querySelectorAll('.headline-link').forEach((link) => {
+    link.addEventListener('click', (e) => {
+      e.preventDefault();
+      const target = document.querySelector(link.getAttribute('href'));
+      if (target) {
+        const headerHeight = siteHeader ? siteHeader.offsetHeight : 0;
+        const tabsHeight = visionTabsBar ? visionTabsBar.offsetHeight : 0;
+        const top = target.getBoundingClientRect().top + window.scrollY - headerHeight - tabsHeight - 16;
+        window.scrollTo({ top, behavior: 'smooth' });
+      }
+    });
+  });
+
   // Smooth scroll on tab click
   visionTabs.forEach((link) => {
     link.addEventListener('click', (e) => {
@@ -245,44 +366,61 @@ window.addEventListener('load', (event) => {
   // Typewriter animation for services heading
   const typewriterWord = document.getElementById('typewriter-word');
   const typewriterCursor = document.querySelector('.typewriter-cursor');
-  if (typewriterWord && typewriterCursor) {
-    const words = ['builders.', 'partners.', 'designers.', 'builders.'];
-    let wordIndex = 0;
-    let charIndex = words[0].length;
-    let isDeleting = true;
-    const typeSpeed = 150;
-    const deleteSpeed = 90;
-    const pauseAfterType = 1300;
-    const pauseAfterDelete = 400;
+  const words = ['builders.', 'partners.', 'designers.', 'builders.'];
+  let wordIndex = 0;
+  let charIndex = words[0].length;
+  let isDeleting = true;
+  const typeSpeed = 150;
+  const deleteSpeed = 90;
+  const pauseAfterType = 1300;
+  const pauseAfterDelete = 400;
 
-    function typeWriter() {
-      const currentWord = words[wordIndex];
-      if (isDeleting) {
-        charIndex--;
-        typewriterWord.textContent = currentWord.slice(0, charIndex);
-        if (charIndex === 0) {
-          isDeleting = false;
-          wordIndex++;
-          setTimeout(typeWriter, pauseAfterDelete);
-          return;
-        }
-        setTimeout(typeWriter, deleteSpeed);
-      } else {
-        charIndex++;
-        typewriterWord.textContent = currentWord.slice(0, charIndex);
-        if (charIndex === currentWord.length) {
-          // Stop after typing the final "builders."
-          if (wordIndex === words.length - 1) return;
-          isDeleting = true;
-          setTimeout(typeWriter, pauseAfterType);
-          return;
-        }
-        setTimeout(typeWriter, typeSpeed);
+  function typeWriter() {
+    const currentWord = words[wordIndex];
+    if (isDeleting) {
+      charIndex--;
+      typewriterWord.textContent = currentWord.slice(0, charIndex);
+      if (charIndex === 0) {
+        isDeleting = false;
+        wordIndex++;
+        setTimeout(typeWriter, pauseAfterDelete);
+        return;
       }
+      setTimeout(typeWriter, deleteSpeed);
+    } else {
+      charIndex++;
+      typewriterWord.textContent = currentWord.slice(0, charIndex);
+      if (charIndex === currentWord.length) {
+        // Stop after typing the final "builders."
+        if (wordIndex === words.length - 1) return;
+        isDeleting = true;
+        setTimeout(typeWriter, pauseAfterType);
+        return;
+      }
+      setTimeout(typeWriter, typeSpeed);
     }
+  }
 
-    // Start by pausing on "builders." then cycling once
-    setTimeout(typeWriter, pauseAfterType);
+  // Services section — animate in on scroll
+  const servicesSection = document.getElementById('services');
+  if (servicesSection) {
+    const servicesObserver = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          servicesSection.classList.add('is-visible');
+          servicesObserver.unobserve(servicesSection);
+          // Start typewriter after heading has faded in (1s delay + 0.6s animation)
+          if (typewriterWord && typewriterCursor) {
+            setTimeout(() => {
+              typewriterCursor.style.opacity = '1';
+              typewriterCursor.style.animationPlayState = 'running';
+              setTimeout(typeWriter, pauseAfterType);
+            }, 1600);
+          }
+        }
+      });
+    }, { threshold: 0, rootMargin: '0px 0px -35% 0px' });
+    servicesObserver.observe(servicesSection);
   }
 
   // Partners Ticker Scrolling
