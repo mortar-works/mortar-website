@@ -219,6 +219,20 @@ window.addEventListener('load', (event) => {
     });
   });
 
+  // Insights search functionality
+  const searchInput = document.querySelector('.insight-search-input');
+  if (searchInput) {
+    searchInput.addEventListener('input', () => {
+      const query = searchInput.value.toLowerCase().trim();
+      insightItems.forEach(item => {
+        const title = item.querySelector('.insight-title')?.textContent.toLowerCase() || '';
+        const desc = item.querySelector('.insight-description')?.textContent.toLowerCase() || '';
+        const matches = !query || title.includes(query) || desc.includes(query);
+        item.style.display = matches ? '' : 'none';
+      });
+    });
+  }
+
   // Load more case studies functionality (Updated Code)
   const loadMoreCaseStudiesButton = document.querySelector('#load-more-casestudies');
   const caseStudiesList = document.querySelectorAll('.case-studies-grid .case-study-link');
@@ -401,27 +415,29 @@ window.addEventListener('load', (event) => {
     }
   }
 
-  // Services section — animate in on scroll
-  const servicesSection = document.getElementById('services');
-  if (servicesSection) {
-    const servicesObserver = new IntersectionObserver((entries) => {
-      entries.forEach((entry) => {
-        if (entry.isIntersecting) {
-          servicesSection.classList.add('is-visible');
-          servicesObserver.unobserve(servicesSection);
-          // Start typewriter after heading has faded in (1s delay + 0.6s animation)
-          if (typewriterWord && typewriterCursor) {
-            setTimeout(() => {
-              typewriterCursor.style.opacity = '1';
-              typewriterCursor.style.animationPlayState = 'running';
-              setTimeout(typeWriter, pauseAfterType);
-            }, 1600);
-          }
+  // Scroll fade-in for sections after topline
+  const scrollFadeObserver = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('is-visible');
+        scrollFadeObserver.unobserve(entry.target);
+
+        // Start typewriter once services heading fades in
+        if (entry.target.id === 'services' && typewriterWord && typewriterCursor) {
+          setTimeout(() => {
+            typewriterCursor.style.opacity = '1';
+            typewriterCursor.style.animationPlayState = 'running';
+            setTimeout(typeWriter, pauseAfterType);
+          }, 600);
         }
-      });
-    }, { threshold: 0, rootMargin: '0px 0px -35% 0px' });
-    servicesObserver.observe(servicesSection);
-  }
+      }
+    });
+  }, { threshold: 0 });
+
+  ['partners', 'services', 'vision', 'insights'].forEach((id) => {
+    const el = document.getElementById(id);
+    if (el) scrollFadeObserver.observe(el);
+  });
 
   // Partners Ticker Scrolling
   const ticker = document.querySelector('.partners-ticker');

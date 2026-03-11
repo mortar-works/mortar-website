@@ -5,6 +5,12 @@ image: understanding-automation-2.png
 author: George Unsworth
 description: Embrace automation and machine learning to unlock new opportunities, navigate uncertainty, and shape the future of business and property.
 draft: false
+category: research
+keywords:
+  - automation
+  - machine learning
+  - AI
+  - digital transformation
 tags:
   - automation
   - machinelearning

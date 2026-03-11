@@ -3,6 +3,16 @@ title: "Dementia friendly venue accreditation for London"
 description: "A bespoke venue accreditation and training environment for Alzheimers UK and the Mayor of London"
 read_more_link: "/case-study-url"
 image: "/static/images/case-studies/museumoflondon.jpeg"
+author: Mortar
+draft: false
+category: case-study
+keywords:
+  - dementia
+  - accessibility
+  - accreditation
+  - venue
+  - Alzheimer's
+  - Mayor of London
 ---
 
 In response to the ‘postcode lottery’ of support on offer for people with dementia we worked with the GLA to design and deliver the Dementia Friendly Venues Charter, supporting hundreds of venues in becoming dementia friendly and ready to welcome those with dementia, their families and carers.

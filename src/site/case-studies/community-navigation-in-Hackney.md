@@ -4,6 +4,16 @@ description: "Reducing barriers faced by older residents in accessing cultural, 
 image: "/static/images/case-studies/hackneycircle01.jpg"
 read_more_link: "/case-study-url"
 order: 1
+author: Mortar
+draft: false
+category: case-study
+keywords:
+  - community navigation
+  - older residents
+  - Hoop'd
+  - local government
+  - isolation
+  - directories
 ---
 
 Our Community Navigation Platform enables Hackney Council's culture and public health team to work together to reach and connect with older residents, in particular those living alone. Residents are engaged with tailored community and cultural sector touchpoints, and consistent information in accessible formats; all monitored and powered by our Hoop'd platform to drive more effective early interventions.

@@ -5,6 +5,16 @@ image: bg-usecase-02.png
 description: Transition services into more effective methods of delivery using our triage and referral tools.
 author: George Unsworth
 draft: false
+category: use-case
+keywords:
+  - triage
+  - referral
+  - service design
+  - digital inclusion
+  - accessibility
+  - user pathways
+  - local government
+  - exclusion prevention
 tags:
   - triage
   - referral

@@ -5,6 +5,13 @@ image: usecase_bg01.jpg
 author: George Unsworth
 description: Structuring information to transform customer engagement and power more efficient services.
 draft: false
+category: solution
+keywords:
+  - directories
+  - digital inclusion
+  - dementia
+  - accessibility
+  - information design
 tags:
   - Digital inclusion
   - Dementia

@@ -25,7 +25,7 @@ name: homepage
       <!-- Recent Content List -->
       <div class="recent-content">
         <div class="recent-content-list">
-          {% for item in collections.insights %}
+          {% for item in collections.allContent %}
             {% if loop.index <= 2 %}
             <div class="content-item">
               <a href="{{ item.url }}" class="content-link">
@@ -245,12 +245,12 @@ name: homepage
   <div class="wrapper">
 
     <div class="insights-header">
-      <h2>Get the latest updates from Mortar.</h2>
+      <h2>Get the latest updates from Mortar</h2>
     </div>
 
     {# Featured landscape card — first post #}
-    {% if collections.insights | length > 0 %}
-    {% set featuredPost = collections.insights | first %}
+    {% if collections.allContent | length > 0 %}
+    {% set featuredPost = collections.allContent | first %}
     <a class="insight-card insight-card--featured" href="{{ featuredPost.url }}" aria-label="Insight: {{ featuredPost.data.title }}">
       <div class="insight-card-body">
         <span class="insight-category">{{ featuredPost.data.category or 'Insights' }}</span>
@@ -274,25 +274,16 @@ name: homepage
       </div>
     </a>
     {% endif %}
+  </div>
 
-    {# Filter bar #}
-    <div class="insights-filters">
-      <button class="insight-filter is-active" data-filter="all">All</button>
-      <button class="insight-filter" data-filter="product">Product</button>
-      <button class="insight-filter" data-filter="solution">Solution</button>
-      <button class="insight-filter" data-filter="research">Research</button>
-      <button class="insight-filter" data-filter="use-case">Use Case</button>
-      <button class="insight-filter" data-filter="case-study">Case Study</button>
-      <button class="insight-filter" data-filter="service">Service</button>
-      <button class="insight-filter" data-filter="customer">Customer</button>
-      <button class="insight-filter" data-filter="industry">Industry</button>
-      <button class="insight-filter" data-filter="company">Company</button>
+  <div class="wrapper">
+    <div class="insights-grid-header">
+      <h3>Latest news</h3>
     </div>
-
-    {# Grid — next 6 posts after the featured one #}
+    {# Grid — next 3 posts after the featured one #}
     <ul id="insight-list">
-      {% for post in collections.insights %}
-      {% if loop.index > 1 and loop.index <= 7 %}
+      {% for post in collections.allContent %}
+      {% if loop.index > 1 and loop.index <= 4 %}
       <li data-category="{{ post.data.category | lower | replace(' ', '-') if post.data.category else 'all' }}">
         <a class="insight-card" href="{{ post.url }}" aria-label="Insight: {{ post.data.title }}">
           <div class="insight-card-body">
@@ -302,6 +293,11 @@ name: homepage
             <p class="insight-description">{{ post.data.description }}</p>
             {% endif %}
           </div>
+          {% if post.data.keywords %}
+          <div class="insight-card-keywords">
+            {% for kw in post.data.keywords %}{% if loop.index <= 7 %}<span class="insight-keyword">{{ kw }}</span>{% endif %}{% endfor %}
+          </div>
+          {% endif %}
           <div class="insight-card-footer">
             <div class="insight-footer-date">
               <span class="insight-date">{{ post.date | date }}</span>
@@ -320,6 +316,10 @@ name: homepage
       {% endif %}
       {% endfor %}
     </ul>
+
+    <div class="insights-view-more">
+      <a href="/content/" class="insights-view-more-link">View more content</a>
+    </div>
 
     <div id="insights-preloader" class="hidden">
       <div class="spinner"></div>

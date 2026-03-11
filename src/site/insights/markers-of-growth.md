@@ -5,6 +5,13 @@ image: markers-of-growth.jpg
 author: George Unsworth
 description: Exploring the impact of the pandemic on business growth, technology adoption, and the long-term challenges facing communities.
 draft: false
+category: company
+keywords:
+  - growth
+  - real estate tech
+  - proptech
+  - pandemic
+  - resilience
 tags:
   - growth
   - realestatetech

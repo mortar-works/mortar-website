@@ -4,6 +4,17 @@ description: "Architect scalable, resilient digital systems that integrate seaml
 link: "/system-design"
 label_image: "/static/images/solutions/solution_label01.png"
 image: "/static/images/solutions/dfvc-dashboard02.png"
+date: 2024-06-01
+author: Mortar
+draft: false
+category: solution
+keywords:
+  - system design
+  - architecture
+  - API
+  - scalability
+  - integration
+  - data
 ---
 
 ## System Design

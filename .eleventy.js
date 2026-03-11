@@ -64,7 +64,16 @@ module.exports = function(eleventyConfig) {
     .slice(0, 3); // Limit to the 3 most recent posts
 });
 
-
+  // Unified content feed: insights + case studies + news + solutions, sorted by date
+  eleventyConfig.addCollection("allContent", function(collectionApi) {
+    const insights    = collectionApi.getFilteredByGlob("src/site/insights/*.md");
+    const caseStudies = collectionApi.getFilteredByGlob("src/site/case-studies/*.md");
+    const news        = collectionApi.getFilteredByGlob("src/site/news/*.md");
+    const solutions   = collectionApi.getFilteredByGlob("src/site/solutions/*.md");
+    return [...insights, ...caseStudies, ...news, ...solutions]
+      .filter(post => post.date <= new Date() && !post.data.draft)
+      .sort((a, b) => b.date - a.date);
+  });
 
   // Watch targets for development (live reload)
   eleventyConfig.setUseGitIgnore(false);

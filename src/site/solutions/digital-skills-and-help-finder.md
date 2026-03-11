@@ -4,6 +4,17 @@ description: "Provide every user and partner with dynamic self assessments; to d
 link: "/digital-skills-and-help-finder"
 label_image: "/static/images/solutions/solution_label01.png"
 image: "/static/images/solutions/digitalskills01.png"
+date: 2024-01-01
+author: Mortar
+draft: false
+category: solution
+keywords:
+  - digital skills
+  - triage
+  - assessment
+  - directories
+  - digital inclusion
+  - self-assessment
 ---
 
 ## Digital Skills and Help Finder  

@@ -4,6 +4,13 @@ date: 2022-09-01
 image: mortar_web_02.jpg
 author: George Unsworth
 draft: false
+category: product
+keywords:
+  - AI
+  - automation
+  - machine learning
+  - applied intelligence
+  - intelligence tools
 description: Revealing hidden patterns offers stepping stones to improving service delivery through intelligent tools.
 tags:
   - artificial intelligence

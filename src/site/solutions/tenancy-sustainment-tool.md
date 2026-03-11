@@ -4,7 +4,17 @@ description: "Deliver local advice and referrals through a case management platf
 link: "/tenancy-sustainment-tool"
 label_image: "/static/images/solutions/solution_label01.png"
 image: "/static/images/solutions/tenancy-sustainment-tool01.jpg"
-
+date: 2024-01-01
+author: Mortar
+draft: false
+category: solution
+keywords:
+  - tenancy
+  - housing
+  - case management
+  - triage
+  - referral
+  - Mayor of London
 ---
 
 ## Tenancy Sustainment Tool  

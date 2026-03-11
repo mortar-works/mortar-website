@@ -4,6 +4,17 @@ description: "Understand complex systems, test policy scenarios, and forecast ou
 link: "/modelling-and-simulation"
 label_image: "/static/images/solutions/solution_label01.png"
 image: "/static/images/solutions/digitalskills02.png"
+date: 2024-06-01
+author: Mortar
+draft: false
+category: solution
+keywords:
+  - modelling
+  - simulation
+  - forecasting
+  - scenario planning
+  - data
+  - policy
 ---
 
 ## Modelling and Simulation

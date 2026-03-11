@@ -4,6 +4,16 @@ description: "Design services that work for real people — grounded in research
 link: "/service-design"
 label_image: "/static/images/solutions/solution_label01.png"
 image: "/static/images/solutions/digitalskills01.png"
+date: 2024-06-01
+author: Mortar
+draft: false
+category: solution
+keywords:
+  - service design
+  - user research
+  - co-design
+  - journey mapping
+  - prototyping
 ---
 
 ## Service Design

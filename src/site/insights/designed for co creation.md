@@ -4,6 +4,12 @@ date: 2022-08-04
 image: mortar_web_03.jpg
 author: George Unsworth
 draft: false
+category: service
+keywords:
+  - bespoke implementation
+  - customisation
+  - digital transformation
+  - service design
 description: Co-create digital solutions that transform services through custom tools, interfaces, and flexible environments.
 tags:
   - bespoke implementation

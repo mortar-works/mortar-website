@@ -3,6 +3,16 @@ title: "Reducing school exclusions in Cheshire "
 description: "Tailored assessments supporting teachers in signposting families and young people to appropriate services."
 read_more_link: "/case-study-url"
 image: "/static/images/case-studies/youngpeople02.jpg"
+author: Mortar
+draft: false
+category: case-study
+keywords:
+  - school exclusion
+  - young people
+  - triage
+  - Cheshire
+  - education
+  - assessment
 ---
 
 The Directory of What Works is a tool for schools and local authorities to promote better pathways for young people into local area services. The tool combines the use of data with local knowledge and lived experience, and works towards standardising data-sharing practices to create better referral and signposting opportunities.

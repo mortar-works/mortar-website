@@ -1,9 +1,18 @@
 ---
 title: "New partnership with the Southbank Centre"
-date: 
-excerpt: "Mortar chosen to design new platform for children and young people, improving access into creative health opportunities."
+date: 2024-06-01
+description: "Mortar chosen to design new platform for children and young people, improving access into creative health opportunities."
 image: "/static/images/news/southbanklogo02.png" # Optional: Featured image
 tags: ["news"] # Tag to help filter this as a news post
+author: Mortar
+draft: false
+category: company
+keywords:
+  - partnership
+  - creative health
+  - young people
+  - NHS
+  - Southbank Centre
 ---
 
 <strong>Enabling NHS and Cultural Sector data sharing and service delivery</strong>

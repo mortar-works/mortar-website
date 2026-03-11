@@ -3,6 +3,16 @@ title: "Triage and signposting tool for Salford"
 description: "Tailored triage for assessing resident need, supporting a place-based approach to digital inclusion."
 read_more_link: "/case-study-url"
 image: "/static/images/case-studies/digitalhelpfinder.jpg"
+author: Mortar
+draft: false
+category: case-study
+keywords:
+  - digital inclusion
+  - triage
+  - Salford
+  - directories
+  - local government
+  - signposting
 ---
 
 'Digital Help Finder' is a tailored version of our **Digital Inclusion Triage Tool** for Salford City Council. The tool enforces Salford's committment to creating a better and fairer Salford, helping residents become better off by focusing on early intervention to achieve the right outcomes for individuals, families and businesses. Digital inclusion is central to this strategic aim and makes 'Digital Help Finder' a core element in the delivery of their offer to Salford's citizens.  

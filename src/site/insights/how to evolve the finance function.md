@@ -4,6 +4,12 @@ date: 2020-09-01
 image: evolvefinancefunction.jpg
 author: George Unsworth
 draft: false
+category: industry
+keywords:
+  - proptech
+  - finance transformation
+  - digital transformation
+  - housing association
 description: Transform operations with AI-driven solutions that streamline processes, eliminate manual tasks, and drive strategic business growth.
 tags:
   - proptech

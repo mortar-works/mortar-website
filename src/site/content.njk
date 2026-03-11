@@ -1,0 +1,112 @@
+---
+title: Content
+name: content
+---
+
+{% extends 'layouts/base.njk' %}
+
+{% block pageTitle %}{{ title }} - {{ super() }}{% endblock %}
+
+{% block bodyId %}{{ name }}{% endblock %}
+
+{% block content %}
+<section id="insights">
+
+  <div class="wrapper">
+    <div class="insights-header">
+      <h2>Get the latest updates from Mortar</h2>
+    </div>
+
+    {# Featured landscape card — first post #}
+    {% if collections.allContent | length > 0 %}
+    {% set featuredPost = collections.allContent | first %}
+    <a class="insight-card insight-card--featured" href="{{ featuredPost.url }}" aria-label="Insight: {{ featuredPost.data.title }}">
+      <div class="insight-card-body">
+        <span class="insight-category">{{ featuredPost.data.category or 'Insights' }}</span>
+        <h3 class="insight-title">{{ featuredPost.data.title }}</h3>
+        {% if featuredPost.data.description %}
+        <p class="insight-description">{{ featuredPost.data.description }}</p>
+        {% endif %}
+      </div>
+      <div class="insight-card-footer">
+        <div class="insight-footer-date">
+          <span class="insight-date">{{ featuredPost.date | date }}</span>
+        </div>
+        <div class="insight-author-box">
+          <span class="insight-author">{{ featuredPost.data.author or 'Mortar' }}</span>
+        </div>
+        <div class="insight-arrow-box">
+          <svg class="insight-arrow" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <path d="M9 18l6-6-6-6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </div>
+      </div>
+    </a>
+    {% endif %}
+  </div>
+
+  <div class="insights-filter-bar">
+    <div class="insights-filter-bar-inner">
+      <div class="insights-filter-label">Filters</div>
+      <div class="insights-filters">
+        <button class="insight-filter is-active" data-filter="all">All</button>
+        <button class="insight-filter" data-filter="product">Product</button>
+        <button class="insight-filter" data-filter="solution">Solution</button>
+        <button class="insight-filter" data-filter="research">Research</button>
+        <button class="insight-filter" data-filter="use-case">Use Case</button>
+        <button class="insight-filter" data-filter="case-study">Case Study</button>
+        <button class="insight-filter" data-filter="service">Service</button>
+        <button class="insight-filter" data-filter="industry">Industry</button>
+        <button class="insight-filter" data-filter="company">Company</button>
+      </div>
+      <div class="insights-filter-keywords">
+        <input type="search" class="insight-search-input" placeholder="Keywords..." aria-label="Filter by keyword" />
+      </div>
+    </div>
+  </div>
+
+  <div class="wrapper">
+    {# Grid — all posts after the featured one #}
+    <ul id="insight-list">
+      {% for post in collections.allContent %}
+      {% if loop.index > 1 %}
+      <li data-category="{{ post.data.category | lower | replace(' ', '-') if post.data.category else 'all' }}">
+        <a class="insight-card" href="{{ post.url }}" aria-label="Insight: {{ post.data.title }}">
+          <div class="insight-card-body">
+            <span class="insight-category">{{ post.data.category or 'Insights' }}</span>
+            <h3 class="insight-title">{{ post.data.title }}</h3>
+            {% if post.data.description %}
+            <p class="insight-description">{{ post.data.description }}</p>
+            {% endif %}
+          </div>
+          {% if post.data.keywords %}
+          <div class="insight-card-keywords">
+            {% for kw in post.data.keywords %}{% if loop.index <= 7 %}<span class="insight-keyword">{{ kw }}</span>{% endif %}{% endfor %}
+          </div>
+          {% endif %}
+          <div class="insight-card-footer">
+            <div class="insight-footer-date">
+              <span class="insight-date">{{ post.date | date }}</span>
+            </div>
+            <div class="insight-author-box">
+              <span class="insight-author">{{ post.data.author or 'Mortar' }}</span>
+            </div>
+            <div class="insight-arrow-box">
+              <svg class="insight-arrow" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                <path d="M9 18l6-6-6-6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </div>
+          </div>
+        </a>
+      </li>
+      {% endif %}
+      {% endfor %}
+    </ul>
+
+    <div id="insights-preloader" class="hidden">
+      <div class="spinner"></div>
+    </div>
+  </div>
+
+</section>
+{% endblock %}
