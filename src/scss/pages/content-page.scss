@@ -3,29 +3,117 @@
 @use "../utilities/responsive" as *;
 @use "../common/typography" as *;
 
+// Override the global overflow:hidden on sections so position:sticky works
+.content-page > section {
+  overflow: visible;
+}
+
 .content-page {
-  background: $white;
+  background: #f9f8fd;
   color: $copy-black;
 
-  font-size: 1.3em;
+  font-size: 1.1em;
   @include reading-optimised;
 
   @include respond-to('small') {
-    font-size: 1.5em;
+    font-size: 1.2em;
+  }
+
+  // Article header — sits inside the article column, aligned with TOC top
+  .article-header {
+    padding: 2.5em 0 1.5em;
+
+    h1 {
+      @include rajdhani-bold-type;
+      color: $black;
+      margin: 0 0 0.5em 0;
+      line-height: 1.1em;
+    }
+
+    .article-strapline {
+      font-size: 1.05em;
+      color: rgba($copy-black, 0.75);
+      margin: 0 0 0.75em 0;
+      line-height: 1.6em;
+      max-width: 26em;
+    }
+
+    .article-date {
+      font-size: 0.8em;
+      color: rgba($copy-black, 0.5);
+      margin: 0;
+      font-family: 'Manrope', sans-serif;
+      letter-spacing: 0.03em;
+    }
+  }
+
+  // Two-column layout: sidebar TOC + article
+  .article-layout {
+    display: flex;
+    align-items: flex-start;
+    gap: 0;
+  }
+
+  // Sticky sidebar TOC — hidden on mobile, visible on desktop
+  .article-toc {
+    display: none;
+
+    @include respond-to('small') {
+      display: flex;
+      flex-direction: column;
+      flex-shrink: 0;
+      width: 180px;
+      position: sticky;
+      z-index: 99;
+      // top is set dynamically by JS
+      padding-top: 2.5em; // matches .article-header top padding
+      padding-right: 2em;
+      border-right: 1px solid rgba($mortar-purple, 0.1);
+    }
+
+    &:empty {
+      display: none !important;
+    }
+
+    a {
+      display: block;
+      padding: 0.55em 0.75em;
+      font-family: 'Manrope', sans-serif;
+      font-size: 0.75em;
+      font-weight: 500;
+      color: rgba($copy-black, 0.45);
+      text-decoration: none;
+      border-radius: 3px;
+      transition: color 0.2s ease, background 0.2s ease;
+      line-height: 1.4;
+
+      &:hover {
+        color: $mortar-purple;
+        background: rgba($mortar-purple, 0.04);
+      }
+
+      &.is-active {
+        color: $mortar-purple;
+        font-weight: 600;
+        background: rgba($mortar-purple, 0.06);
+      }
+    }
+  }
+
+  // Article main column
+  .article-main {
+    flex: 1;
+    min-width: 0;
+
+    @include respond-to('small') {
+      padding-left: 3em;
+    }
   }
 
   article {
-    background: $white;
-    // background: transparentize($white, 0.25);
     overflow: hidden;
-    margin: auto;
     padding-bottom: 2em;
-
-    @include respond-to('small') {
-      padding: 3em;
-      max-width: 40em;
-      margin-top: -10em;
-    }
+    max-width: 38em;
   }
 
   h1, h2 {
@@ -36,10 +124,6 @@
     @include rajdhani-bold-type;
     margin: 1em 0 0.8em 0;
     line-height: 1em;
-
-    @include respond-to('small') {
-      margin: 1em 0 2em 0;
-    }
   }
 
   h2 {
@@ -60,24 +144,116 @@
     box-shadow: 2px 3px 6px 1px rgba(29,40,40,.3);
   }
 
-  .hero-image {
-    height: 15em;
-    background: transparent no-repeat scroll 50% 50%;
-    background-size: cover;
+  // Article keywords
+  .article-keywords {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 0.5em;
+    padding: 1.5em 0 0.5em;
+    margin-top: 1em;
 
-    @include respond-to('small') {
-      height: 20em;
+    .article-keyword {
+      font-family: 'Manrope', sans-serif;
+      font-size: 0.72em;
+      background: rgba($mortar-purple, 0.07);
+      color: $mortar-purple;
+      border-radius: 3px;
+      padding: 0.3em 0.7em;
+      font-weight: 500;
+    }
+  }
+
+  // Get in touch CTA — overrides the global .cta
+  .solution-get-in-touch {
+    margin: 2em 0 1em;
+
+    .cta {
+      display: inline-flex;
+      align-items: center;
+      margin: 0;
+      padding: 0.6em 1.6em;
+      background: $mortar-yellow;
+      color: $mortar-purple;
+      border: 1.5px solid $mortar-yellow;
+      border-radius: 4px;
+      font-family: 'Manrope', sans-serif;
+      font-size: 0.9em;
+      font-weight: 600;
+      text-decoration: none;
+      width: auto;
+      transition: background 0.2s ease, border-color 0.2s ease, color 0.2s ease;
+
+      &:hover {
+        background: $mortar-purple;
+        border-color: $mortar-purple;
+        color: $white;
+      }
     }
   }
 
   blockquote {
-    margin: 2em 1em;
-    background: #ededed;
-    padding: 1em 1.2em;
-    border-left: 4px solid $mortar-pink;
+    margin: 2.5em 0;
+    background: $mortar-purple;
+    border-radius: 6px;
+    border-left: none;
+    padding: 2em 2em 4.5em; // extra bottom padding for the absolutely-positioned button
     position: relative;
-    font-style: italic;
-    border-left: 5px solid $mortar-pink;
+    font-style: normal;
+    color: rgba(255, 255, 255, 0.85);
+
+    &::before {
+      content: '\201C';
+      font-size: 3.5em;
+      line-height: 1;
+      display: block;
+      margin-bottom: 0.15em;
+      color: $mortar-yellow;
+      font-family: Georgia, serif;
+      opacity: 0.7;
+    }
+
+    p {
+      color: rgba(255, 255, 255, 0.85);
+      margin: 0;
+      line-height: 1.75;
+      font-size: 0.95em;
+    }
+
+    // "Read more" link — anchored to bottom-right of card
+    a.topline-cta {
+      position: absolute;
+      bottom: 1.8em;
+      right: 2em;
+      display: inline-flex;
+      align-items: center;
+      gap: 0.4em;
+      padding: 0.4em 1em;
+      background: $mortar-yellow;
+      color: $mortar-purple;
+      border-radius: 3px;
+      font-family: 'Manrope', sans-serif;
+      font-size: 0.75em;
+      font-weight: 700;
+      text-decoration: none;
+      transition: background 0.2s ease, color 0.2s ease, transform 0.2s ease;
+
+      &::after {
+        content: '→';
+        font-size: 1em;
+        transition: transform 0.2s ease;
+      }
+
+      &:hover {
+        background: $mortar-orange;
+        color: $white;
+
+        &::after {
+          transform: translateX(3px);
+        }
+      }
+    }
 
     strong {
       font-weight: normal;
@@ -85,6 +261,7 @@
       font-size: 0.9em;
       display: block;
       margin-top: 1.5em;
+      color: rgba(255, 255, 255, 0.6);
     }
   }
 
@@ -125,85 +302,48 @@
   }
 
   .other-content {
-    display: block;
-
-    @include respond-to('small'){
-      display: grid;
-      grid-template-columns: 50% 50%;
-    }
-
-    margin: 2em 0;
-
-    > div {
-      padding: 1em;
-
-    }
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1em;
+    margin: 3em 0 2em;
 
     .previous-post, .next-post {
-      position: relative;
+      a {
+        display: flex;
+        flex-direction: column;
+        gap: 0.3em;
+        padding: 1.2em 1.4em;
+        background: rgba($mortar-purple, 0.04);
+        border-radius: 6px;
+        text-decoration: none;
+        transition: background 0.2s ease;
 
-      &:before {
-        border-style: solid;
-        border-width: 0.25em 0.25em 0 0;
-        content: '';
-        height: 1em;
-        width: 1em;
-        position: absolute;
-        top: 50%;
-        margin-top: -0.5em;
-        transform: rotate(-45deg);
-        vertical-align: top;
-        transform: rotate(-135deg);
-      }
-
-      &:hover, &:focus, &:active {
-        &:before {
-          border-color: $mortar-orange;
+        &:hover {
+          background: rgba($mortar-purple, 0.08);
         }
       }
+
+      span {
+        display: block;
+        font-family: 'Manrope', sans-serif;
+        font-size: 0.65em;
+        font-weight: 700;
+        text-transform: uppercase;
+        letter-spacing: 0.1em;
+        color: rgba($copy-black, 0.4);
+      }
+
+      .post-title {
+        font-family: 'Manrope', sans-serif;
+        font-size: 0.85em;
+        font-weight: 600;
+        color: $mortar-purple;
+        line-height: 1.4;
+      }
     }
 
-    .previous-post {
-      grid-column-start: 1;
+    .next-post a {
       text-align: right;
-      border-bottom: 1px solid $mortar-purple;
-
-      @include respond-to('small'){
-        border-right: 1px solid $mortar-purple;
-        border-bottom: none;
-      }
-
-      &:before {
-        left: 0;
-      }
-    }
-
-    .next-post {
-      grid-column-start: 2;
-
-      @include respond-to('small'){
-        border-left: 1px solid $mortar-purple;
-      }
-
-      &:before {
-        right: 0;
-        transform: rotate(45deg);
-      }
-    }
-
-    a {
-      font-weight: 700;
-    }
-
-    a, a span {
-      display: block;
-      color: black;
-    }
-
-    a span {
-      font-weight: normal;
-      font-size: 0.9em;
-      margin-bottom: 0.8em;
     }
   }
 }

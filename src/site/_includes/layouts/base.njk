@@ -10,9 +10,6 @@
     <meta name="description" content="Mortar powers intelligent, accessible, and human-centric solutions for society. We are a technology company committed to building a better world.">
 
     <link rel="shortcut icon" href="{{ '/static/images/mortar-favicon.png' | url }}" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap">
     <link rel="stylesheet" href="{{ '/static/css/styles.css' | url }}">
     <script async="async" defer="defer" src="{{ '/static/js/main.js' | url }}"></script>
 
@@ -29,7 +26,7 @@
       <div class="wrapper">
         <div class="header-left">
           <a href="/" id="mortar-logo">
-            <img src="/static/images/mortar-logo-white.png" alt="Mortar" height="47" width="105">
+            <img src="/static/images/mortar-logo.svg" alt="Mortar" height="47" width="105">
           </a>
 
           <nav aria-label="Main navigation">
@@ -53,7 +50,6 @@
                       <span class="product-name">Hxly <span class="link-chevron" aria-hidden="true"></span></span>
                       <span class="product-desc">Our platform for the development of behavioural intelligence.</span>
                     </a>
-                    <a href="#" role="menuitem" class="dropdown-link--more">Product development <span class="link-chevron" aria-hidden="true"></span></a>
                   </div>
                 </div>
               </li>
@@ -68,10 +64,8 @@
                       <a href="{{ '/solutions/service-design/' | url }}" role="menuitem">Service design <span class="link-chevron" aria-hidden="true"></span></a>
                       <a href="{{ '/solutions/system-design/' | url }}" role="menuitem">System design <span class="link-chevron" aria-hidden="true"></span></a>
                       <a href="{{ '/solutions/modelling-and-simulation/' | url }}" role="menuitem">Modelling and simulation <span class="link-chevron" aria-hidden="true"></span></a>
-                      <a href="#" role="menuitem">People <span class="link-chevron" aria-hidden="true"></span></a>
-                      <a href="#" role="menuitem">Places <span class="link-chevron" aria-hidden="true"></span></a>
-                      <a href="#" role="menuitem">Property <span class="link-chevron" aria-hidden="true"></span></a>
-                      <a href="#" role="menuitem" class="dropdown-link--more">Service overview <span class="link-chevron" aria-hidden="true"></span></a>
+                      <a href="#" role="menuitem">Data and frameworks <span class="link-chevron" aria-hidden="true"></span></a>
+                      <a href="{{ '/services/' | url }}" role="menuitem" class="dropdown-link--more">Services overview <span class="link-chevron" aria-hidden="true"></span></a>
                     </div>
                     <div class="dropdown-column">
                       <span class="dropdown-subheading">Use Cases</span>
@@ -80,7 +74,7 @@
                       <a href="#" role="menuitem">Bigger impact <span class="link-chevron" aria-hidden="true"></span></a>
                       <a href="#" role="menuitem">Shared value <span class="link-chevron" aria-hidden="true"></span></a>
                       <a href="#" role="menuitem">Better connections <span class="link-chevron" aria-hidden="true"></span></a>
-                      <a href="#" role="menuitem" class="dropdown-link--more">View all use cases <span class="link-chevron" aria-hidden="true"></span></a>
+                      <a href="/content/?filter=use-case" role="menuitem" class="dropdown-link--more">View all use cases <span class="link-chevron" aria-hidden="true"></span></a>
                     </div>
                     <div class="dropdown-column">
                       <span class="dropdown-subheading">Industries</span>
@@ -89,7 +83,7 @@
                       <a href="#" role="menuitem">Cultural Sector <span class="link-chevron" aria-hidden="true"></span></a>
                       <a href="#" role="menuitem">Housing <span class="link-chevron" aria-hidden="true"></span></a>
                       <a href="#" role="menuitem">Asset management <span class="link-chevron" aria-hidden="true"></span></a>
-                      <a href="#" role="menuitem" class="dropdown-link--more">Our industries <span class="link-chevron" aria-hidden="true"></span></a>
+                      <a href="/content/?filter=industry" role="menuitem" class="dropdown-link--more">Our industries <span class="link-chevron" aria-hidden="true"></span></a>
                     </div>
                   </div>
                 </div>
@@ -104,7 +98,7 @@
                     <a href="#" role="menuitem">Transport for London <span class="link-chevron" aria-hidden="true"></span></a>
                     <a href="#" role="menuitem">Southbank Centre <span class="link-chevron" aria-hidden="true"></span></a>
                     <a href="#" role="menuitem">Gloucestershire <span class="link-chevron" aria-hidden="true"></span></a>
-                    <a href="#" role="menuitem" class="dropdown-link--more">View all <span class="link-chevron" aria-hidden="true"></span></a>
+                    <a href="/content/?filter=case-study" role="menuitem" class="dropdown-link--more">View all <span class="link-chevron" aria-hidden="true"></span></a>
                   </div>
                 </div>
               </li>
@@ -112,7 +106,7 @@
                 <a href="/content/" class="nav-dropdown-toggle" aria-expanded="false" aria-haspopup="true">
                   Content <span class="dropdown-chevron" aria-hidden="true"></span>
                 </a>
-                <div class="nav-dropdown-menu nav-dropdown-menu--wide" role="menu">
+                <div class="nav-dropdown-menu nav-dropdown-menu--wide nav-dropdown-menu--content" role="menu">
                   <div class="dropdown-columns">
                     <div class="dropdown-column">
                       <span class="dropdown-subheading">Latest content</span>
@@ -124,14 +118,14 @@
                     </div>
                     <div class="dropdown-column">
                       <span class="dropdown-subheading">Categories</span>
-                      <a href="#" role="menuitem">Product <span class="link-chevron" aria-hidden="true"></span></a>
-                      <a href="#" role="menuitem">Solution <span class="link-chevron" aria-hidden="true"></span></a>
-                      <a href="#" role="menuitem">Research <span class="link-chevron" aria-hidden="true"></span></a>
-                      <a href="#" role="menuitem">Use Case <span class="link-chevron" aria-hidden="true"></span></a>
-                      <a href="#" role="menuitem">Case Study <span class="link-chevron" aria-hidden="true"></span></a>
-                      <a href="#" role="menuitem">Service <span class="link-chevron" aria-hidden="true"></span></a>
-                      <a href="#" role="menuitem">Industry <span class="link-chevron" aria-hidden="true"></span></a>
-                      <a href="#" role="menuitem">Company <span class="link-chevron" aria-hidden="true"></span></a>
+                      <a href="/content/?filter=product" role="menuitem">Product <span class="link-chevron" aria-hidden="true"></span></a>
+                      <a href="/content/?filter=solution" role="menuitem">Solution <span class="link-chevron" aria-hidden="true"></span></a>
+                      <a href="/content/?filter=research" role="menuitem">Research <span class="link-chevron" aria-hidden="true"></span></a>
+                      <a href="/content/?filter=use-case" role="menuitem">Use Case <span class="link-chevron" aria-hidden="true"></span></a>
+                      <a href="/content/?filter=case-study" role="menuitem">Case Study <span class="link-chevron" aria-hidden="true"></span></a>
+                      <a href="/content/?filter=service" role="menuitem">Service <span class="link-chevron" aria-hidden="true"></span></a>
+                      <a href="/content/?filter=industry" role="menuitem">Industry <span class="link-chevron" aria-hidden="true"></span></a>
+                      <a href="/content/?filter=company" role="menuitem">Company <span class="link-chevron" aria-hidden="true"></span></a>
                     </div>
                   </div>
                 </div>
@@ -140,12 +134,12 @@
                 <button class="nav-dropdown-toggle" aria-expanded="false" aria-haspopup="true">
                   Company <span class="dropdown-chevron" aria-hidden="true"></span>
                 </button>
-                <div class="nav-dropdown-menu" role="menu">
+                <div class="nav-dropdown-menu nav-dropdown-menu--company" role="menu">
                   <div class="dropdown-section">
                     <span class="dropdown-subheading">Who we are</span>
                     <a href="{{ '/about/' | url }}" role="menuitem">About <span class="link-chevron" aria-hidden="true"></span></a>
                     <a href="{{ '/contact/' | url }}" role="menuitem">Contact <span class="link-chevron" aria-hidden="true"></span></a>
-                    <a href="{{ '/news/' | url }}" role="menuitem">Latest News <span class="link-chevron" aria-hidden="true"></span></a>
+                    <a href="/content/?filter=company" role="menuitem">Latest News <span class="link-chevron" aria-hidden="true"></span></a>
                     <a href="{{ '/work-with-us/' | url }}" role="menuitem">Work with us <span class="link-chevron" aria-hidden="true"></span></a>
                   </div>
                 </div>
@@ -196,49 +190,84 @@
 
     <footer>
       <div class="wrapper">
-        <div id="footer-link-bar">
-          <nav aria-label="Footer navigation">
-            <ul>
-            <li><a href="{{ '/#case-studies' | url }}">Case Studies</a></li>
-            <li><a href="{{ '/#solutions' | url }}">Solutions</a></li>
-            <li><a href="{{ '/#news-updates' | url }}">News</a></li>
-            <li><a href="{{ '/#insights' | url }}">Insights</a></li>
-            <li><a href="{{ '/#contact' | url }}">Contact</a></li>
-            </ul>
-          </nav>
 
-          <div>
-            <h3>Solutions</h3>
+        <div class="footer-links">
+
+          <div class="footer-col">
+            <a href="/" class="footer-logo">
+              <img src="/static/images/mortar-logo.svg" alt="Mortar" height="40" width="90">
+            </a>
+          </div>
+
+          <div class="footer-col">
+            <h4 class="footer-col-heading">Products</h4>
             <ul>
-            {% for solution in collections.solutions %}
-              <li>
-                <a href="{{ solution.url }}">{{ solution.data.title }}</a>
-              </li>
-            {% endfor %}
+              <li><a href="#">Hoop'd</a></li>
+              <li><a href="#">Harla</a></li>
+              <li><a href="#">Hxly</a></li>
+            </ul>
+            <h4 class="footer-col-heading footer-col-heading--spaced">Services</h4>
+            <ul>
+              <li><a href="{{ '/solutions/service-design/' | url }}">Service design</a></li>
+              <li><a href="{{ '/solutions/system-design/' | url }}">System design</a></li>
+              <li><a href="{{ '/solutions/modelling-and-simulation/' | url }}">Modelling and simulation</a></li>
+              <li><a href="#">Data and frameworks</a></li>
             </ul>
           </div>
 
-          <div>
-            <h3>Features</h3>
+          <div class="footer-col">
+            <h4 class="footer-col-heading">Use Cases</h4>
             <ul>
-            {% for feature in features %}
-              <li>
-                {{ feature.title }}
-              </li>
-            {% endfor %}
+              <li><a href="#">Smarter decisions</a></li>
+              <li><a href="#">Stronger teams</a></li>
+              <li><a href="#">Bigger impact</a></li>
+              <li><a href="#">Shared value</a></li>
+              <li><a href="#">Better connections</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-col">
+            <h4 class="footer-col-heading">Industries</h4>
+            <ul>
+              <li><a href="#">Health</a></li>
+              <li><a href="#">Government</a></li>
+              <li><a href="#">Cultural Sector</a></li>
+              <li><a href="#">Housing</a></li>
+              <li><a href="#">Asset management</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-col">
+            <h4 class="footer-col-heading">Categories</h4>
+            <ul>
+              <li><a href="#">Product</a></li>
+              <li><a href="#">Solution</a></li>
+              <li><a href="#">Research</a></li>
+              <li><a href="#">Use Case</a></li>
+              <li><a href="#">Case Study</a></li>
+              <li><a href="#">Service</a></li>
+              <li><a href="#">Industry</a></li>
+              <li><a href="#">Company</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-col">
+            <h4 class="footer-col-heading">Who we are</h4>
+            <ul>
+              <li><a href="{{ '/about/' | url }}">About</a></li>
+              <li><a href="{{ '/contact/' | url }}">Contact</a></li>
+              <li><a href="{{ '/news/' | url }}">Latest News</a></li>
+              <li><a href="{{ '/work-with-us/' | url }}">Work with us</a></li>
             </ul>
           </div>
 
         </div>
 
         <div class="footer-disclaimer">
-          <p>
-            &copy; 2025 Mortar
-          </p>
-          <p>
-            Mortar Works Limited is a company registered in England and Wales (Co. No. 12169493).
-          </p>
+          <p>&copy; 2026 Mortar</p>
+          <p>Mortar Works Limited is a company registered in England and Wales No. 12169493.</p>
         </div>
+
       </div>
     </footer>
 

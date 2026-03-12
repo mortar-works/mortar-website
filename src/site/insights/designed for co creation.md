@@ -2,9 +2,9 @@
 title: Designed for co-creation
 date: 2022-08-04
 image: mortar_web_03.jpg
-author: George Unsworth
+author: Hoop'd
 draft: false
-category: service
+category: use case
 keywords:
   - bespoke implementation
   - customisation

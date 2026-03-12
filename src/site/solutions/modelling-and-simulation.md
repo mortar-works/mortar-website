@@ -7,7 +7,7 @@ image: "/static/images/solutions/digitalskills02.png"
 date: 2024-06-01
 author: Mortar
 draft: false
-category: solution
+category: service
 keywords:
   - modelling
   - simulation

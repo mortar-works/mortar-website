@@ -5,7 +5,7 @@
 @use "../common/typography" as *;
 
 body {
-  background-color: $mortar-purple;
+  background-color: #f9f8fd;
   color: $white;
 
   &.menu-open {
@@ -33,17 +33,17 @@ header {
   position: sticky;
   top: 0;
   z-index: 1000;
-  background: transparent !important;
-  color: $white;
+  background: #f9f8fd !important;
+  color: $black;
   transition: background-color 0.3s ease, box-shadow 0.3s ease;
   box-shadow: none;
 
   &.sticky {
-    background-color: $mortar-purple !important;
+    background-color: #f9f8fd !important;
   }
 
   nav a {
-    color: $white !important;
+    color: $black !important;
     transition: color 0.3s ease;
   }
 
@@ -104,13 +104,13 @@ header {
     }
 
     &--outline {
-      border: 1.5px solid rgba($white, 0.55);
-      color: $white !important;
+      border: 1.5px solid $black;
+      color: $black !important;
       background: transparent;
 
       &:hover {
-        border-color: $white;
-        background: rgba($white, 0.12);
+        border-color: $black;
+        background: rgba($black, 0.08);
       }
     }
 
@@ -263,7 +263,7 @@ header {
     .hamburger-inner,
     .hamburger-inner:after,
     .hamburger-inner:before {
-      background-color: $white !important; /* White hamburger for consistency */
+      background-color: $black !important;
     }
   }
 
@@ -318,7 +318,7 @@ header {
         @include regular-type;
         font-size: 1.1em;
         line-height: 1.6em;
-        color: $white;
+        color: $black;
       }
     }
 
@@ -356,7 +356,7 @@ header {
     border: none;
     cursor: pointer;
     padding: 0 0.6em;
-    color: $white;
+    color: $black;
     @include regular-type;
     font-size: 1em;
     line-height: 1em;
@@ -384,10 +384,10 @@ header {
   .nav-dropdown-menu {
     display: block;
     position: absolute;
-    top: calc(100% + 10px + 0.7em);
+    top: calc(100% + 10px);
     left: 0;
     background: #faf5e0;
-    border-radius: 0 8px 8px 8px;
+    border-radius: 8px;
     box-shadow:
       0 2px 4px rgba(67, 34, 124, 0.06),
       0 8px 24px rgba(67, 34, 124, 0.14),
@@ -398,17 +398,6 @@ header {
     opacity: 0;
     visibility: hidden;
     pointer-events: none;
-
-    &::before {
-      content: '';
-      position: absolute;
-      top: -0.7em;
-      left: 0;
-      width: 130px;
-      height: 0.7em;
-      background: #faf5e0;
-      border-radius: 4px 4px 0 0;
-    }
 
     &.is-open {
       opacity: 1;
@@ -426,7 +415,7 @@ header {
     @include regular-type;
     font-family: 'Manrope', sans-serif;
     font-size: 0.9em;
-    color: $mortar-purple;
+    color: $black;
     padding: 0 1.4em 0.8em 1.4em;
     margin-bottom: 0.8em;
   }
@@ -439,7 +428,7 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    color: $mortar-purple !important;
+    color: $black !important;
     font-family: 'Manrope', sans-serif;
     font-size: 0.9em;
     padding: 0.65em 1.4em;
@@ -502,7 +491,7 @@ header {
   .nav-dropdown-menu a.dropdown-link--more {
     font-size: 0.8em;
     padding-top: 1.4em;
-    color: rgba($mortar-purple, 0.6) !important;
+    color: rgba($black, 0.6) !important;
     justify-content: flex-start;
     gap: 0.5em;
 
@@ -540,7 +529,7 @@ header {
       top: 100%;
       left: 0;
       width: 130px;
-      height: calc(10px + 0.7em);
+      height: 12px;
       background: transparent;
       display: none;
       z-index: 102;
@@ -595,10 +584,23 @@ header {
 
   .product-desc {
     font-size: 0.8em;
-    color: rgba($mortar-purple, 0.6);
+    color: rgba($black, 0.6);
     line-height: 1.45;
     max-width: 70%;
   }
+
+  .product-link:last-child::after {
+    display: none;
+  }
+}
+
+/* Remove bottom border on last link in specific dropdown sections */
+.nav-dropdown-menu--content .dropdown-column:last-child a:last-child::after {
+  display: none;
+}
+
+.nav-dropdown-menu--company .dropdown-section a:last-child::after {
+  display: none;
 }
 
 /* Mobile dropdown (within nav-active overlay) */
@@ -725,73 +727,109 @@ header {
 
 /* Sticky header styles */
 .sticky {
-  background-color: $mortar-purple !important;
+  background-color: #f9f8fd !important;
 }
 
 footer {
-  padding: 2em 0 6em 0;
+  background-color: $mortar-purple;
+  color: rgba($white, 0.85);
+  font-family: 'Manrope', sans-serif;
+  padding: 4em 0 2.5em;
+
+  a {
+    color: rgba($white, 0.65);
+    text-decoration: none;
+    font-family: 'Manrope', sans-serif;
+    font-size: 0.875em;
+    font-weight: 400;
+    transition: color 0.2s ease;
+
+    &:hover, &:focus {
+      color: $white;
+      box-shadow: none;
+      background: transparent;
+    }
+
+    &:active {
+      color: $mortar-orange;
+      box-shadow: none;
+    }
+  }
 
   ul {
     list-style: none;
-    padding-left: 0;
+    padding: 0;
+    margin: 0;
   }
 
   li {
-    font-size: 1.2em;
-    line-height: 1.5em;
-    margin-bottom: 0.6em;
+    margin-bottom: 0.55em;
+    font-size: 1em;
+    line-height: 1.4;
   }
 
-  nav ul, h3 {
-    padding-top: 0.6em;
-    margin-bottom: 0.6em;
-    margin-top: 1.2em;
-    border-top: 2px solid $mortar-orange;
+  .footer-logo {
+    display: inline-flex;
+
+    img {
+      height: 38px;
+      width: auto;
+      filter: brightness(0) invert(1);
+      display: block;
+    }
+
+    &:hover, &:focus, &:active {
+      box-shadow: none;
+      background: transparent;
+    }
   }
 
-  nav ul {
-    margin-top: 1.4em;
-  }
-
-  #footer-link-bar {
+  .footer-links {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-    grid-gap: 1em;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2.5em 1.5em;
 
     @include respond-to('small') {
-      grid-gap: 2em;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 3em 2em;
     }
 
     @include respond-to('medium') {
-      grid-gap: 3em;
+      grid-template-columns: repeat(6, 1fr);
+      gap: 2em;
     }
+  }
 
-    @include respond-to('large') {
-      grid-gap: 4em;
+  .footer-col-heading {
+    font-family: 'Manrope', sans-serif;
+    font-size: 0.68em;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.13em;
+    color: $mortar-orange;
+    margin: 0 0 1.1em 0;
+
+    &--spaced {
+      margin-top: 2em;
     }
   }
 
   .footer-disclaimer {
-    margin-top: 3em;
-    padding-top: 1.2em;
-    position: relative;
+    margin-top: 3.5em;
+    padding-top: 1.5em;
+    display: flex;
+    flex-direction: column;
+    gap: 0.4em;
 
     @include respond-to('small') {
-      margin-top: 5em;
-    }
-
-    &:before {
-      content: '';
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 64px;
-      height: 1px;
-      background-color: $white;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
     }
 
     p {
-      font-size: 0.9em;
+      font-size: 0.75em;
+      color: rgba($white, 0.35);
       margin: 0;
     }
   }

@@ -1,5 +1,24 @@
 import '../scss/main.scss';
 
+function initRotatingEmoji() {
+  const el = document.getElementById('rotating-emoji');
+  if (!el) return;
+  const emojis = ['🌍', '🙏', '❤️', '👏'];
+  const durations = [10000, 1800, 1800, 1800];
+  let index = 0;
+  el.style.transition = 'opacity 0.2s ease';
+  function next() {
+    el.style.opacity = '0';
+    setTimeout(() => {
+      index = (index + 1) % emojis.length;
+      el.textContent = emojis[index];
+      el.style.opacity = '1';
+      setTimeout(next, durations[index]);
+    }, 200);
+  }
+  setTimeout(next, durations[0]);
+}
+
 function toggleBurger() {
   const burger = document.querySelector('header .hamburger');
   const header = document.querySelector('header');
@@ -23,7 +42,82 @@ function smoothScrollTo(targetY, duration) {
   requestAnimationFrame(step);
 }
 
+function initArticleToc() {
+  const toc = document.getElementById('article-toc');
+  if (!toc) return;
+
+  const article = document.querySelector('.article-content');
+  if (!article) return;
+
+  const header = document.querySelector('header');
+  const headings = Array.from(article.querySelectorAll('h2, h3'));
+  if (headings.length === 0) return;
+
+  // Ensure each heading has an ID
+  headings.forEach((h) => {
+    if (!h.id) {
+      h.id = h.textContent.trim().toLowerCase()
+        .replace(/[^\w\s-]/g, '')
+        .replace(/\s+/g, '-')
+        .replace(/-+/g, '-');
+    }
+  });
+
+  // Build TOC links
+  headings.forEach((h) => {
+    const a = document.createElement('a');
+    a.href = '#' + h.id;
+    a.textContent = h.textContent;
+    toc.appendChild(a);
+  });
+
+  // Set sticky top position to sit just below the header
+  function updateTocTop() {
+    if (header) toc.style.top = header.offsetHeight + 'px';
+  }
+  updateTocTop();
+  window.addEventListener('resize', updateTocTop, { passive: true });
+
+  // Set scroll-margin-top so headings land below the sticky header
+  function updateScrollMargins() {
+    const offset = (header ? header.offsetHeight : 0) + 24;
+    headings.forEach((h) => { h.style.scrollMarginTop = offset + 'px'; });
+  }
+  updateScrollMargins();
+  window.addEventListener('resize', updateScrollMargins, { passive: true });
+
+  // Smooth scroll on TOC link click
+  toc.querySelectorAll('a').forEach((a) => {
+    a.addEventListener('click', (e) => {
+      e.preventDefault();
+      const target = document.getElementById(a.getAttribute('href').slice(1));
+      if (target) target.scrollIntoView({ behavior: 'smooth' });
+    });
+  });
+
+  // Highlight active TOC link on scroll
+  const tocLinks = Array.from(toc.querySelectorAll('a'));
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        const id = entry.target.id;
+        tocLinks.forEach((a) => {
+          a.classList.toggle('is-active', a.getAttribute('href') === '#' + id);
+        });
+      }
+    });
+  }, {
+    rootMargin: '-10% 0px -80% 0px',
+    threshold: 0
+  });
+
+  headings.forEach((h) => observer.observe(h));
+}
+
 window.addEventListener('load', (event) => {
+  initRotatingEmoji();
+  initArticleToc();
+
   // Burger Menu Navigation
   document.querySelectorAll('header nav a').forEach((el) => {
     if (el.getAttribute('href') && el.getAttribute('href').includes('#')) {
@@ -199,25 +293,74 @@ window.addEventListener('load', (event) => {
     }
   });
 
-  // Insights filter functionality
+  // Insights filter + pagination
   const filterButtons = document.querySelectorAll('.insight-filter');
-  const insightItems = document.querySelectorAll('#insight-list li');
+  const insightItems = Array.from(document.querySelectorAll('#insight-list li'));
+  const paginationContainer = document.getElementById('insights-pagination');
+  const ITEMS_PER_PAGE = 12;
+  let currentFilter = 'all';
+  let currentPage = 1;
 
-  filterButtons.forEach(btn => {
-    btn.addEventListener('click', () => {
-      filterButtons.forEach(b => b.classList.remove('is-active'));
-      btn.classList.add('is-active');
+  function getFilteredItems() {
+    return insightItems.filter(item =>
+      currentFilter === 'all' || item.dataset.category === currentFilter
+    );
+  }
 
-      const filter = btn.dataset.filter;
-      insightItems.forEach(item => {
-        if (filter === 'all' || item.dataset.category === filter) {
-          item.style.display = '';
-        } else {
-          item.style.display = 'none';
-        }
+  function renderPage() {
+    const filtered = getFilteredItems();
+    const totalPages = Math.ceil(filtered.length / ITEMS_PER_PAGE);
+    const start = (currentPage - 1) * ITEMS_PER_PAGE;
+    const end = start + ITEMS_PER_PAGE;
+
+    insightItems.forEach(item => { item.style.display = 'none'; });
+    filtered.slice(start, end).forEach(item => { item.style.display = ''; });
+
+    renderPagination(totalPages, filtered.length);
+  }
+
+  function renderPagination(totalPages, totalItems) {
+    if (!paginationContainer) return;
+    if (totalPages <= 1) { paginationContainer.innerHTML = ''; return; }
+
+    let html = `<div class="pagination-info">${totalItems} articles</div><div class="pagination-controls">`;
+    html += `<button class="pagination-btn pagination-prev" data-page="${currentPage - 1}" ${currentPage === 1 ? 'disabled' : ''}>Previous</button>`;
+    for (let i = 1; i <= totalPages; i++) {
+      html += `<button class="pagination-btn ${i === currentPage ? 'is-active' : ''}" data-page="${i}">${i}</button>`;
+    }
+    html += `<button class="pagination-btn pagination-next" data-page="${currentPage + 1}" ${currentPage === totalPages ? 'disabled' : ''}>Next</button>`;
+    html += '</div>';
+    paginationContainer.innerHTML = html;
+
+    paginationContainer.querySelectorAll('.pagination-btn:not([disabled])').forEach(btn => {
+      btn.addEventListener('click', () => {
+        currentPage = parseInt(btn.dataset.page);
+        renderPage();
+        document.getElementById('insights')?.scrollIntoView({ behavior: 'smooth' });
       });
     });
+  }
+
+  function applyFilter(filter) {
+    currentFilter = filter;
+    currentPage = 1;
+    filterButtons.forEach(b => b.classList.remove('is-active'));
+    const activeBtn = Array.from(filterButtons).find(b => b.dataset.filter === filter);
+    if (activeBtn) activeBtn.classList.add('is-active');
+    renderPage();
+  }
+
+  filterButtons.forEach(btn => {
+    btn.addEventListener('click', () => applyFilter(btn.dataset.filter));
   });
+
+  // Pre-select filter from URL query param (e.g. ?filter=case-study)
+  const urlFilter = new URLSearchParams(window.location.search).get('filter');
+  if (urlFilter && filterButtons.length) {
+    applyFilter(urlFilter);
+  } else if (insightItems.length) {
+    renderPage();
+  }
 
   // Insights search functionality
   const searchInput = document.querySelector('.insight-search-input');
@@ -523,3 +666,157 @@ function showConfirmationModal() {
 }
 
 });
+
+// ─── Grid snake animation (homepage topline only) ────────────────────────────
+(function() {
+  if (document.body.id !== 'homepage') return;
+
+  const CELL = 44;
+  // head → tail: orange, purple, yellow, pink — each progressively fainter
+  const SEGMENT_COLORS = [
+    'rgba(254,109,106,0.28)',  // mortar orange  (head)
+    'rgba(43,28,90,0.16)',     // mortar purple
+    'rgba(255,227,44,0.14)',   // mortar yellow
+    'rgba(252,168,147,0.88)',  // mortar pink    (tail)
+  ];
+  const MOVE_MS = 175;
+  const BLINK_MS = 360;
+  const BLINK_TOGGLES = 6;
+
+  const DIRS = [[1,0],[-1,0],[0,1],[0,-1]];
+
+  function randomDir(current) {
+    const rev = [-current[0], -current[1]];
+    const opts = DIRS.filter(d => !(d[0] === rev[0] && d[1] === rev[1]));
+    return opts[Math.floor(Math.random() * opts.length)];
+  }
+
+  function randomSteps() {
+    return 4 + Math.floor(Math.random() * 7);
+  }
+
+  function init() {
+    const section = document.getElementById('topline');
+    if (!section) return;
+
+    // Wrapper inherits the same edge-fade mask as the ::before grid
+    const wrap = document.createElement('div');
+    wrap.setAttribute('aria-hidden', 'true');
+    wrap.style.cssText = [
+      'position:absolute', 'inset:0', 'pointer-events:none', 'z-index:0', 'overflow:hidden',
+      'mask-image:linear-gradient(to right,transparent 0%,black 25%,black 75%,transparent 100%)',
+      '-webkit-mask-image:linear-gradient(to right,transparent 0%,black 25%,black 75%,transparent 100%)',
+    ].join(';');
+    section.appendChild(wrap);
+
+    // One div per segment — positioned in CSS pixels so they snap to the grid exactly
+    const segs = SEGMENT_COLORS.map(color => {
+      const el = document.createElement('div');
+      el.style.cssText = [
+        'position:absolute',
+        `width:${CELL}px`, `height:${CELL}px`,
+        `background:${color}`,
+        'display:none', 'pointer-events:none',
+      ].join(';');
+      wrap.appendChild(el);
+      return el;
+    });
+
+    let cols = 0, rows = 0;
+
+    function resize() {
+      cols = Math.floor(section.offsetWidth  / CELL);
+      rows = Math.floor(section.offsetHeight / CELL);
+    }
+    resize();
+    window.addEventListener('resize', resize);
+
+    let snake = [];
+    let dir = [1, 0];
+    let stepsLeft = 0;
+    let state = 'moving';
+    let blinkToggle = 0;
+    let headVisible = true;
+    let lastMoveTime = 0;
+    let lastBlinkTime = 0;
+
+    function start() {
+      const x = 2 + Math.floor(Math.random() * Math.max(1, cols - 4));
+      const y = 1 + Math.floor(Math.random() * Math.max(1, rows - 2));
+      snake = [[x, y]];
+      dir = DIRS[Math.floor(Math.random() * DIRS.length)];
+      stepsLeft = randomSteps();
+      state = 'moving';
+      headVisible = true;
+    }
+
+    function tick(now) {
+      if (state === 'moving') {
+        if (now - lastMoveTime < MOVE_MS) return;
+        lastMoveTime = now;
+
+        const [hx, hy] = snake[0];
+        const nx = hx + dir[0];
+        const ny = hy + dir[1];
+
+        if (nx < 0 || nx >= cols || ny < 0 || ny >= rows) {
+          dir = randomDir(dir);
+          stepsLeft = randomSteps();
+          return;
+        }
+
+        snake.unshift([nx, ny]);
+        if (snake.length > SEGMENT_COLORS.length - 1) snake.pop();
+
+        stepsLeft--;
+        if (stepsLeft <= 0) {
+          state = 'pausing';
+          blinkToggle = 0;
+          headVisible = true;
+          lastBlinkTime = now;
+        }
+      } else {
+        if (now - lastBlinkTime < BLINK_MS) return;
+        lastBlinkTime = now;
+        headVisible = !headVisible;
+        blinkToggle++;
+        if (blinkToggle >= BLINK_TOGGLES) {
+          state = 'moving';
+          headVisible = true;
+          dir = randomDir(dir);
+          stepsLeft = randomSteps();
+          lastMoveTime = now;
+        }
+      }
+    }
+
+    function draw() {
+      segs.forEach((el, i) => {
+        const pos = snake[i];
+        if (!pos || (i === 0 && !headVisible)) {
+          el.style.display = 'none';
+        } else {
+          el.style.display = 'block';
+          el.style.left = (pos[0] * CELL) + 'px';
+          el.style.top  = (pos[1] * CELL) + 'px';
+        }
+      });
+    }
+
+    if (cols > 0 && rows > 0) start();
+
+    function loop(now) {
+      if (snake.length === 0 && cols > 0 && rows > 0) start();
+      tick(now);
+      draw();
+      requestAnimationFrame(loop);
+    }
+    requestAnimationFrame(loop);
+  }
+
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', init);
+  } else {
+    init();
+  }
+})();
