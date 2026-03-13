@@ -5,7 +5,7 @@ image: transform_finance04.jpg
 author: George Unsworth
 description: How real-time data and automated allocation increases productivity and transparency.
 draft: false
-category: industry
+category: use case
 keywords:
   - finance function
   - automation

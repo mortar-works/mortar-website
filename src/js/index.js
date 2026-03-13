@@ -43,15 +43,29 @@ function smoothScrollTo(targetY, duration) {
 }
 
 function initArticleToc() {
+  const layout = document.querySelector('.article-layout');
+
+  // Always fade in the layout wrapper once setup is done
+  function fadeInLayout() {
+    requestAnimationFrame(() => requestAnimationFrame(() => {
+      if (layout) layout.classList.add('is-visible');
+    }));
+  }
+
   const toc = document.getElementById('article-toc');
-  if (!toc) return;
+  if (!toc || !document.querySelector('.article-content')) {
+    fadeInLayout();
+    return;
+  }
 
   const article = document.querySelector('.article-content');
-  if (!article) return;
-
   const header = document.querySelector('header');
   const headings = Array.from(article.querySelectorAll('h2, h3'));
-  if (headings.length === 0) return;
+
+  if (headings.length === 0) {
+    fadeInLayout();
+    return;
+  }
 
   // Ensure each heading has an ID
   headings.forEach((h) => {
@@ -112,6 +126,9 @@ function initArticleToc() {
   });
 
   headings.forEach((h) => observer.observe(h));
+
+  // Fade in once TOC is fully built and layout is settled
+  fadeInLayout();
 }
 
 window.addEventListener('load', (event) => {

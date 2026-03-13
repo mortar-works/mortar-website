@@ -7,10 +7,17 @@
 body {
   background-color: #f9f8fd;
   color: $white;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
 
   &.menu-open {
     overflow: hidden;
   }
+}
+
+main {
+  flex: 1;
 }
 
 header, footer, main > section {

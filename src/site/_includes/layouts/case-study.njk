@@ -9,35 +9,52 @@
 
 {% block content %}
 <section>
-  <!-- Updated hero image logic -->
-  <div class="hero-image" style="background-image: url('{{ image | url }}')"></div>
-  <div class="wrapper">
-    <article>
-      <h1>{{ title }}</h1>
-      {{ content | safe }}
-    </article>
+  <div class="wrapper article-layout">
+    <nav class="article-toc" id="article-toc" aria-label="Article contents"></nav>
 
-    <p class="case-study-get-in-touch">
-      <a class="cta" href="https://draft.mortar.works/#contact" target="_blank" rel="noopener">Get in touch</a>
-    </p>
+    <div class="article-main">
+      <div class="article-header">
+        <h1>{{ title }}</h1>
+        {% if description %}
+          <p class="article-strapline">{{ description }}</p>
+        {% endif %}
+        <p class="article-date">Last updated on {{ date | date }}</p>
+      </div>
 
-    <div class="other-content">
-      {% if previousPost %}
-        <div class="previous-post">
-          <a href="{{ previousPost.url }}">
-            <span>Previous case study</span>
-            {{ previousPost.data.title }}
-          </a>
-        </div>
+      <article class="article-content">
+        {{ content | safe }}
+      </article>
+
+      {% if keywords %}
+      <div class="article-keywords">
+        {% for keyword in keywords %}
+          <span class="article-keyword">{{ keyword }}</span>
+        {% endfor %}
+      </div>
       {% endif %}
-      {% if nextPost %}
-        <div class="next-post">
-          <a href="{{ nextPost.url }}">
-            <span>Next case study</span>
-            {{ nextPost.data.title }}
-          </a>
-        </div>
-      {% endif %}
+
+      <p class="solution-get-in-touch">
+        <a class="cta" href="https://draft.mortar.works/#contact" target="_blank" rel="noopener">Get in touch</a>
+      </p>
+
+      <div class="other-content">
+        {% if previousPost %}
+          <div class="previous-post">
+            <a href="{{ previousPost.url }}">
+              <span>Previous case study</span>
+              <span class="post-title">{{ previousPost.data.title }}</span>
+            </a>
+          </div>
+        {% endif %}
+        {% if nextPost %}
+          <div class="next-post">
+            <a href="{{ nextPost.url }}">
+              <span>Next case study</span>
+              <span class="post-title">{{ nextPost.data.title }}</span>
+            </a>
+          </div>
+        {% endif %}
+      </div>
     </div>
   </div>
 </section>

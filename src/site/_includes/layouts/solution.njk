@@ -18,9 +18,7 @@
         {% if description %}
           <p class="article-strapline">{{ description }}</p>
         {% endif %}
-        {% if date %}
-          <p class="article-date">{{ date | date }}</p>
-        {% endif %}
+        <p class="article-date">Last updated on {{ date | date }}</p>
       </div>
 
       <article class="article-content">

@@ -5,7 +5,7 @@ image: truthandrealestate01.jpg
 author: George Unsworth
 description: Digital transformation in real estate should be powered by user-driven innovation to enhance local area engagement.
 draft: false
-category: industry
+category: use case
 keywords:
   - digital transformation
   - real estate

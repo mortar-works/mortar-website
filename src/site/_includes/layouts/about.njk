@@ -5,35 +5,66 @@
 {% block mainClass %}content-page{% endblock %}
 
 {% block content %}
-<section id="vision">
-  <div class="vision-wrapper">
-    <div class="vision-text">
-      <h2>Scaling human connections</h2>
-      <p>We create solutions used by humans; they solve human problems and they are built to enhance human relationships. We use technology to scale the positive effects of bringing people closer together.</p>
-      <a href="/contact/" class="vision-cta">Get in touch</a>
+<section id="about-hero">
+  <div class="wrapper">
+    <div class="about-hero-left">
+      <h1>Building a better world through technology</h1>
+      <p class="about-strapline">We develop intelligent systems that power the next generation of public services — making them more accessible, more equitable, and more effective for the people who need them most.</p>
+      <a href="/contact/" class="about-cta">Work with us</a>
     </div>
-    <div class="vision-image">
-      <img src="{{ '/static/images/homepage/Claude_Monet01.jpg' | url }}" alt="Mortar — scaling human connections" />
-    </div>
-  </div>
-  <div class="vision-wrapper vision-wrapper--reversed">
-    <div class="vision-image">
-      <img src="{{ '/static/images/homepage/Georges_Seurat.jpg' | url }}" alt="Mortar — intelligent design systems" />
-    </div>
-    <div class="vision-text">
-      <h2>Intelligent design systems</h2>
-      <p>Our mission is to ensure that technology serves all of society; that the systems we build today are human-centric, and aligned to bring opportunity to everyone.</p>
-      <a href="/contact/" class="vision-cta">Get in touch</a>
+    <div class="about-hero-right">
+      <p class="about-articles-label">Latest thinking</p>
+      <div class="about-articles-list">
+        {% for item in collections.insights %}
+          {% if item.data.category == 'company' %}
+          <div class="about-article-item">
+            <a href="{{ item.url }}" class="about-article-link">
+              <span class="about-article-title">{{ item.data.title }}</span>
+              <span class="about-article-category">Company</span>
+            </a>
+          </div>
+          {% endif %}
+        {% endfor %}
+      </div>
     </div>
   </div>
 </section>
 
-<section>
+<section id="about-values">
   <div class="wrapper">
-    <article>
-      <h1>{{ title }}</h1>
-      {{ content | safe }}
-    </article>
+    <p class="values-label">What drives us</p>
+    <div class="values-grid">
+      <div class="value-card">
+        <h3>People first</h3>
+        <p>Every decision we make starts with the impact on the people who use and deliver the services we build.</p>
+      </div>
+      <div class="value-card">
+        <h3>Evidence over assumption</h3>
+        <p>We design and build based on what we know, not what we guess. When we don't know, we say so — and we find out.</p>
+      </div>
+      <div class="value-card">
+        <h3>Long-term thinking</h3>
+        <p>We build for sustainability. Our tools are designed to grow and adapt, not to be replaced in two years.</p>
+      </div>
+      <div class="value-card">
+        <h3>Equity by design</h3>
+        <p>Accessibility and inclusion are not afterthoughts. They are embedded in how we research, design, and build.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="about-content">
+  <div class="wrapper article-layout">
+    <nav class="article-toc" id="article-toc" aria-label="Page contents"></nav>
+    <div class="article-main">
+      <article class="article-content">
+        {{ content | safe }}
+      </article>
+      <p class="solution-get-in-touch">
+        <a class="cta" href="/contact/">Get in touch</a>
+      </p>
+    </div>
   </div>
 </section>
 {% endblock %}

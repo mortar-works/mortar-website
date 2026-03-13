@@ -22,6 +22,7 @@
   // Article header — sits inside the article column, aligned with TOC top
   .article-header {
     padding: 2.5em 0 1.5em;
+    max-width: 38em;
 
     h1 {
       @include rajdhani-bold-type;
@@ -52,6 +53,12 @@
     display: flex;
     align-items: flex-start;
     gap: 0;
+    opacity: 0;
+    transition: opacity 0.4s ease;
+
+    &.is-visible {
+      opacity: 1;
+    }
   }
 
   // Sticky sidebar TOC — hidden on mobile, visible on desktop
@@ -112,7 +119,7 @@
 
   article {
     overflow: hidden;
-    padding-bottom: 2em;
+    padding-bottom: 0.75em;
     max-width: 38em;
   }
 
@@ -151,12 +158,12 @@
     justify-content: flex-start;
     align-items: center;
     gap: 0.5em;
-    padding: 1.5em 0 0.5em;
-    margin-top: 1em;
+    padding: 0.5em 0 0.5em;
+    margin-top: 0;
 
     .article-keyword {
       font-family: 'Manrope', sans-serif;
-      font-size: 0.72em;
+      font-size: 0.85em;
       background: rgba($mortar-purple, 0.07);
       color: $mortar-purple;
       border-radius: 3px;
@@ -306,6 +313,7 @@
     grid-template-columns: 1fr 1fr;
     gap: 1em;
     margin: 3em 0 2em;
+    max-width: 38em;
 
     .previous-post, .next-post {
       a {

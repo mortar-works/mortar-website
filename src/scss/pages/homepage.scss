@@ -2044,62 +2044,72 @@
         box-sizing: border-box;
     }
 
+    .powered-by-title {
+        font-family: 'Manrope', sans-serif;
+        font-size: 2.8em;
+        line-height: 1.1em;
+        color: $mortar-purple;
+        margin: 0 0 0.6em;
+        text-align: center;
+
+        .logo-tombola {
+            display: inline-block;
+            overflow: hidden;
+            height: 2.2em;
+            width: 6em;
+            position: relative;
+            top: -0.65em;
+            vertical-align: middle;
+            margin-left: 0.15em;
+        }
+
+        .tombola-slide {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            transform: translateY(100%);
+            transition: transform 0.45s cubic-bezier(0.4, 0, 0.2, 1);
+
+            &.is-current {
+                transform: translateY(0);
+            }
+
+            &.is-exiting {
+                transform: translateY(-100%);
+            }
+        }
+
+        .tombola-logo {
+            height: 1.71em;
+            width: auto;
+
+            &.tombola-logo--hoopd {
+                height: 1.2em;
+                margin-top: 1.0em;
+            }
+
+            &.tombola-logo--hxly {
+                height: 1.1em;
+                margin-top: 1.0em;
+                margin-left: 0em;
+            }
+        }
+    }
+
     .insights-powered-by {
         text-align: center;
 
-        .powered-by-title {
+        .powered-by-box-title {
             font-family: 'Manrope', sans-serif;
-            font-size: 2.8em;
-            line-height: 1.1em;
-            color: $mortar-purple;
-            margin: 0;
-
-            .logo-tombola {
-                display: inline-block;
-                overflow: hidden;
-                height: 2.2em;
-                width: 6em;
-                position: relative;
-                top: -0.65em;
-                vertical-align: middle;
-                margin-left: 0.15em;
-            }
-
-            .tombola-slide {
-                position: absolute;
-                top: 0;
-                left: 0;
-                width: 100%;
-                height: 100%;
-                display: flex;
-                align-items: center;
-                transform: translateY(100%);
-                transition: transform 0.45s cubic-bezier(0.4, 0, 0.2, 1);
-
-                &.is-current {
-                    transform: translateY(0);
-                }
-
-                &.is-exiting {
-                    transform: translateY(-100%);
-                }
-            }
-
-            .tombola-logo {
-                height: 1.71em;
-                width: auto;
-
-                &.tombola-logo--hoopd {
-                    height: 1.2em;
-                    margin-top: 1.0em;
-                }
-
-                &.tombola-logo--hxly {
-                    height: 1.1em;
-                    margin-top: 1.0em;
-                    margin-left: 0em;
-                }
-            }
+            font-size: 1.8em;
+            font-weight: 700;
+            color: black;
+            margin: 0 0 0.5em;
+            line-height: 1.2em;
         }
 
         .powered-by-strapline {
@@ -2516,165 +2526,6 @@
   
   
 
-  #contact {
-    background: color.adjust($mortar-purple, $lightness: 75%);
-    padding: 6em 2em;
-
-    .contact-wrapper {
-      display: flex;
-      justify-content: space-between;
-      flex-wrap: wrap;
-      gap: 3em;
-
-      @media (max-width: 768px) {
-        flex-direction: column;
-        gap: 2em;
-      }
-    }
-
-    .contact-info {
-      flex: 1;
-      margin-right: 2em;
-
-      h2 {
-        font-size: 2.2em;
-        margin-bottom: 1em;
-        color: black;
-        font-family: 'Manrope', sans-serif;
-        font-weight: 800;
-
-      }
-
-      p {
-        font-size: 1.3em;
-        max-width: 85%;
-        margin: 0;
-        color: black;
-        line-height: 1.4em;
-      }
-
-      .contact-columns {
-        display: flex;
-        justify-content: space-between;
-        gap: 2em;
-
-        @media (max-width: 768px) {
-          flex-direction: column;
-        }
-
-        .contact-column {
-          flex: 1;
-
-          .contact-item {
-            margin-bottom: 1em;
-            display: flex;
-            flex-direction: column;
-
-            strong {
-              font-weight: 400;
-              color: black;
-            }
-
-            span {
-              font-weight: 400;
-              color: #666;
-            }
-          }
-        }
-      }
-    }
-
-    .contact-form-card {
-      flex: 1;
-      background-color: #fff;
-      padding: 2em;
-      box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
-      border-radius: 10px;
-      border: 1px solid #eaeaea;
-
-      form {
-        display: flex;
-        flex-direction: column;
-
-        label {
-          margin-bottom: 0.6em;
-          font-weight: 500;
-          color: #555;
-        }
-
-        input, select, textarea {
-          margin-bottom: 1.2em;
-          padding: 0.8em;
-          border-radius: 5px;
-          border: 1px solid #ddd;
-          width: 100%;
-          box-sizing: border-box;
-        }
-
-        textarea {
-          height: 10em;
-        }
-
-        button {
-          width: 100%;
-          background-color: $mortar-purple;
-          color: white;
-          padding: 0.8em 1.5em;
-          border: none;
-          cursor: pointer;
-          font-size: 1em;
-          border-radius: 5px;
-          transition: background-color 0.3s ease;
-
-          &:hover {
-            background-color: color.adjust($mortar-purple, $lightness: -10%);
-          }
-        }
-      }
-    }
-  }
-
-  .confirmation-modal {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.5);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    z-index: 999;
-
-    .modal-content {
-      background-color: white;
-      padding: 2em;
-      border-radius: 10px;
-      text-align: center;
-      box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.15);
-
-      p {
-        font-size: 1.2em;
-        margin-bottom: 1.5em;
-        color: black;
-      }
-
-      button {
-        padding: 0.5em 1em;
-        background-color: $mortar-purple;
-        color: white;
-        border: none;
-        cursor: pointer;
-        font-size: 1em;
-        border-radius: 5px;
-        transition: background-color 0.3s ease;
-
-        &:hover {
-          background-color: color.adjust($mortar-purple, $lightness: -10%);
-        }
-      }
-    }
-  }
 
 // ─── Content page: insights section inherits homepage styles ─────────────────
 
