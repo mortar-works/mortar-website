@@ -16,11 +16,11 @@ keywords:
   - prototyping
 ---
 
-## Service Design
+## Overcoming the challenges facing service design
 
 Service design is often constrained by slow processes, high costs, and bias in who gets to participate. Traditional research methods such as focus groups, interviews, and workshops generate useful insights, but they are resource-intensive and often capture only a partial view of user need at that moment in time. With deep experience in service design, we know the value of these approaches, but we also know their limitations. That is why we are developing more intelligent ways of designing services: using technology to model behaviour, expand the evidence base, and help organisations create solutions that are continuously shaped by real users at greater speed and scale.
 
-**Mortar's Service Design practice** is delivered alongside a suite of intelligence tools that help organisations engage their users and their teams to reimagine and transform the way they deliver their services. We combine deep user research with expertise in accessibility and digitally inclusive design methodology to ensure that services are accessible, equitable, and genuinely effective. We work alongside your teams to understand the people you serve, uncover what is and isn't working, and design solutions that are built to last. 
+**Mortar's Service Design practice** is delivered alongside a suite of intelligence tools that help organisations understand and engage their users, and to reimagine and transform the way they deliver their services. We combine deep user research with expertise in accessibility and digitally inclusive design to ensure that services are accessible, equitable, and genuinely effective.
 
 ### How it Works
 We approach service design as an iterative, collaborative process. Rather than delivering a static blueprint we embed ourselves and our data gathering tools in your organisation, your data and work flows. At the same time we work with your staff, user groups, and stakeholders to identify the true challenges and to generate insights that reflect the needs of everyone involved.
@@ -38,8 +38,8 @@ Our Service Design tools enable the exploration of alternative methods and appro
 - **User Research and Insight**
 We develop full models of services based on qualitative and quantitative research and data from the people who use and deliver your services. Using service models allows us to conduct research that interrogates and helps to shape new approaches, develop content and improve reporting. Interviews, ethnographic observation, and data analysis contribute to the model to build a rich picture of the needs, behaviours, and context of your users and customers.
 
-- **Journey Mapping**
-Our in depth technical user research with personas enables us to map the full user journey, from first point of contact to resolution, surfacing friction, duplication, and inequity. These maps become powerful tools for aligning teams and prioritising change. We can also target solutions for specific personas, or for those with specific characteristics such as accessibility needs. 
+- **Persona creation and Journey Mapping**
+Our in depth technical research produces highly refined groups of user personas. Libraries of specific tailored users that enable us to simulate, test and map the full user journey, from first point of contact to resolution, surfacing friction, duplication, and inequity. These maps become powerful tools for aligning teams and prioritising change. We can also target solutions for specific personas, or for those with specific characteristics such as accessibility needs. 
 
 - **Co-design Workshops**
   We facilitate structured workshops that bring together service users, frontline staff, and commissioners to generate and evaluate ideas. Our workshops are inclusive by design, ensuring diverse voices shape the outcome. Using Mortar's technology the insights captured support the building of custom models, hybrid datasets and user persona libraries that can be used to continually simulate workshops in response to new features and design.  
