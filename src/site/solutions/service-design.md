@@ -42,7 +42,7 @@ We develop full models of services based on qualitative and quantitative researc
 Our in depth technical research produces highly refined groups of user personas. Libraries of specific tailored users that enable us to simulate, test and map the full user journey, from first point of contact to resolution, surfacing friction, duplication, and inequity. These maps become powerful tools for aligning teams and prioritising change. We can also target solutions for specific personas, or for those with specific characteristics such as accessibility needs. 
 
 - **Co-design Workshops**
-  We facilitate structured workshops that bring together service users, frontline staff, and commissioners to generate and evaluate ideas. Our workshops are inclusive by design, ensuring diverse voices shape the outcome. Using Mortar's technology the insights captured support the building of custom models, hybrid datasets and user persona libraries that can be used to continually simulate workshops in response to new features and design.  
+ Our workshops are inclusive by design, ensuring diverse voices shape the outcome. Using Mortar's technology the insights captured support the ondoing development of custom models, hybrid datasets and user persona libraries that can be used to simulate future workshops in response to new features and design.  
 
 - **Prototyping and Testing**
   We build low and high-fidelity prototypes to test assumptions quickly. By putting ideas in front of users early, we reduce the risk of building the wrong thing and accelerate the path to a working solution.
