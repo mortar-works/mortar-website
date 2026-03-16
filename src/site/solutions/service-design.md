@@ -18,12 +18,12 @@ keywords:
 
 ## Service Design
 
-Using new technology to design services and solutions that work for everyone — grounded in research, shaped by users, and built to deliver measurable outcomes.
+Service design is often constrained by slow processes, high costs, and bias in who gets to participate. Traditional research methods such as focus groups, interviews, and workshops generate useful insights, but they are resource-intensive and often capture only a partial view of user need at that moment in time. With deep experience in service design, we know the value of these approaches, but we also know their limitations. That is why we are developing more intelligent ways of designing services: using technology to model behaviour, expand the evidence base, and help organisations create solutions that are continuously shaped by real users at greater speed and scale.
 
-**Mortar's Service Design practice** is delivered alongside a suite of specialised tools that help organisations engage their users and their teams to reimagine and transform the way they deliver their services. We are experts in service design, applying new technology whilst being sensitive to changing digital cultures, capacity and capabilities. We combine deep user research, co-design methods, and evidence-based practice to ensure that services are accessible, equitable, and genuinely effective. We work alongside your teams to understand the people you serve, uncover what is and isn't working, and design solutions that are built to last using our suite of intelligent service design tools. 
+**Mortar's Service Design practice** is delivered alongside a suite of intelligence tools that help organisations engage their users and their teams to reimagine and transform the way they deliver their services. We combine deep user research with expertise in accessibility and digitally inclusive design methodology to ensure that services are accessible, equitable, and genuinely effective. We work alongside your teams to understand the people you serve, uncover what is and isn't working, and design solutions that are built to last. 
 
 ### How it Works
-We approach service design as an iterative, collaborative process. Rather than delivering a static blueprint, we embed ourselves in your organisation, your data and work flows, working with  staff, user groups, and stakeholders to surface the real challenges and to generate insights that reflect the needs of everyone involved.
+We approach service design as an iterative, collaborative process. Rather than delivering a static blueprint we embed ourselves and our data gathering tools in your organisation, your data and work flows. At the same time we work with your staff, user groups, and stakeholders to identify the true challenges and to generate insights that reflect the needs of everyone involved.
 
 - **Discovery and research:** Deep-dive into your service landscape through data analysis and engagement to understand user needs and system constraints.
 - **Establish and understand your data:** Create the right datasets to craft, test and simulate your services and systems. 
@@ -33,10 +33,10 @@ We approach service design as an iterative, collaborative process. Rather than d
 - **Service blueprinting:** Map the front-stage and back-stage processes to align people, technology, and policy around a coherent service model.
 
 ## Key Features
-Our Service Design tools provides different modules to customise and experiement with. Exploring alternative methods, tools, and expertise needed to take your service from problem to working solution.
+Our Service Design tools enable the exploration of alternative methods and approaches needed to take your service from problem to working solution:
 
 - **User Research and Insight**
-We conduct qualitative and quantitative research with the people who use and deliver your services to build a full model to interrogate and help shape new approaches, develop content and improve reporting. Interviews, ethnographic observation, and data analysis combine to build a rich picture of the needs, behaviours, and context of your users and customers.
+We develop full models of services based on qualitative and quantitative research and data from the people who use and deliver your services. Using service models allows us to conduct research that interrogates and helps to shape new approaches, develop content and improve reporting. Interviews, ethnographic observation, and data analysis contribute to the model to build a rich picture of the needs, behaviours, and context of your users and customers.
 
 - **Journey Mapping**
 Our in depth technical user research with personas enables us to map the full user journey, from first point of contact to resolution, surfacing friction, duplication, and inequity. These maps become powerful tools for aligning teams and prioritising change. We can also target solutions for specific personas, or for those with specific characteristics such as accessibility needs. 
