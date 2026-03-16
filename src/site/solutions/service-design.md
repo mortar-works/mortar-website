@@ -1,6 +1,6 @@
 ---
 title: "Service design"
-description: "Transforming traditional approaches to Service Design. We model user behaviour, build custom persona libraries and develop service models shaped by real users to accelerate the delivery of custom solutions."
+description: "Transforming traditional approaches to Service Design. We are modelling user behaviour, building custom persona libraries and developing service models shaped by real users. Accelerating the delivery of custom service solutions."
 link: "/service-design"
 label_image: "/static/images/solutions/solution_label01.png"
 image: "/static/images/solutions/digitalskills01.png"
@@ -20,7 +20,7 @@ keywords:
 
 Using new technology to design services and solutions that work for everyone — grounded in research, shaped by users, and built to deliver measurable outcomes.
 
-**Mortar's Service Design practice** is delivered alongside a suite of specialised tools that help organisations engage their users and their teams to reimagine and transform the way they deliver their services. We combine deep user research, co-design methods, and evidence-based practice to create services that are accessible, equitable, and genuinely effective. We work alongside your teams to understand the people you serve, uncover what is and isn't working, and design solutions that are built to last using our suite of intelligent service design tools. 
+**Mortar's Service Design practice** is delivered alongside a suite of specialised tools that help organisations engage their users and their teams to reimagine and transform the way they deliver their services. We are experts in service design, applying new technology whilst being sensitive to changing digital cultures, capacity and capabilities. We combine deep user research, co-design methods, and evidence-based practice to ensure that services are accessible, equitable, and genuinely effective. We work alongside your teams to understand the people you serve, uncover what is and isn't working, and design solutions that are built to last using our suite of intelligent service design tools. 
 
 ### How it Works
 We approach service design as an iterative, collaborative process. Rather than delivering a static blueprint, we embed ourselves in your organisation, your data and work flows, working with  staff, user groups, and stakeholders to surface the real challenges and to generate insights that reflect the needs of everyone involved.
@@ -28,7 +28,7 @@ We approach service design as an iterative, collaborative process. Rather than d
 - **Discovery and research:** Deep-dive into your service landscape through data analysis and engagement to understand user needs and system constraints.
 - **Establish and understand your data:** Create the right datasets to craft, test and simulate your services and systems. 
 - **Build and deploy user personas:** Develop custom user personas for simulating, testing and mapping solutions.
-- **Service models:** Build a model to simulate the end-to-end experience of your personas — identifying gaps and moments that matter through simulation and testing.
+- **Service models:** Build a model to simulate the end-to-end experience of your personas; identifying gaps and moments that matter through simulation and testing.
 - **Co-design and prototyping:** Run collaborative workshops to generate ideas, test concepts, and iterate quickly with real users.
 - **Service blueprinting:** Map the front-stage and back-stage processes to align people, technology, and policy around a coherent service model.
 
