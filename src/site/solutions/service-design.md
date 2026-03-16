@@ -16,7 +16,7 @@ keywords:
   - prototyping
 ---
 
-## Overcoming service challenges
+## Design challenges
 
 Service design is often constrained by slow processes, high costs, and bias in who gets to participate. Traditional research methods such as focus groups, interviews, and workshops generate useful insights, but they are resource-intensive and often capture only a partial view of user need at that moment in time. With deep experience in service design, we know the value of these approaches, but we also know their limitations. That is why we are developing more intelligent ways of designing services: using technology to model behaviour, expand the evidence base, and help organisations create solutions that are continuously shaped by real users at greater speed and scale.
 
