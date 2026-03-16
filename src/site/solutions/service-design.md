@@ -1,6 +1,6 @@
 ---
 title: "Service design"
-description: "We are transforming traditional approaches to Service Design with tailored applications of intelligence. Our behavioural modelling, persona libraries and datasets are shaped by real users and built to accelerate the delivery of custom solutions."
+description: "Transforming traditional approaches to Service Design. We model user behaviour, build custom persona libraries and develop service models shaped by real users to accelerate the delivery of custom solutions."
 link: "/service-design"
 label_image: "/static/images/solutions/solution_label01.png"
 image: "/static/images/solutions/digitalskills01.png"
