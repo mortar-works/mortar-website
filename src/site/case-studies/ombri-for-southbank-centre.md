@@ -1,6 +1,6 @@
 ---
 title: "Ombri: a creative health platform for Southbank Centre"
-description: "Building Ombri — a digital referral platform that connects young people aged 11–25 with creative health opportunities, developed in partnership with Southbank Centre's Arts and Wellbeing team."
+description: "Young people in London face major inequalities in mental-health care. Ombri is a digital referral platform that connects young people aged 11–25 with creative health opportunities, developed in partnership with Southbank Centre and establishing and monitoring their partnership with South East London Integrated Care Board. A modular solution built on Hoop'd, Ombri offers the foundation for scaling access to preventative and supportive creative health provision for young people."
 read_more_link: "/case-study-url"
 image: "/static/images/case-studies/tenancysustainment01.png"
 author: Mortar
@@ -40,7 +40,7 @@ Creative activities have a well-established role in supporting mental health and
       </tr>
       <tr>
         <td>Integrated wellbeing measurement</td>
-        <td>An embedded survey — developed with Brunel University — measures changes in wellbeing before and after participation using validated tools including WEMWBS and EQ-5D</td>
+        <td>An embedded survey — developed with Brunel University — measures changes in wellbeing before, during and after participation, building on validated tools including WEMWBS and EQ-5D</td>
       </tr>
       <tr>
         <td>Modular architecture</td>
@@ -65,9 +65,9 @@ Connecting creative culture and health systems
 One of the platform's core functions is bridging a gap that has long existed between cultural organisations and health and care systems. Referral pathways into creative health programmes have historically been informal, inconsistent, and hard to navigate. Ombri formalises and simplifies those pathways — making it straightforward for a GP, social prescriber, school counsellor, or youth worker to connect a young person with the right creative opportunity at the right time.
 
 <figure>
-  <img src="{{ '/static/images/case-studies/tenancysustainment01.png' | url }}" />
+  <img src="{{ '/static/images/case-studies/sb_01.png' | url }}" />
   <figcaption>
-    The Ombri platform, connecting young people aged 11–25 with creative health opportunities through multiple referral pathways
+    The Ombri platform, connecting young people aged 11–25 with creative health opportunities through multiple referral pathways.
   </figcaption>
 </figure>
 
@@ -75,6 +75,13 @@ Building the evidence base for creative health
 ---------------------------------------------------------------------------------------------------------------------------------
 Ombri's integrated evaluation framework — developed in collaboration with Brunel University — uses validated tools to measure changes in wellbeing before and after programme participation. This generates consistent, comparable evidence across partner organisations, giving cultural providers and commissioners the data they need to demonstrate impact, secure funding, and make the case for creative health at a system level.
 
-The platform's modular architecture means it can be adapted to local priorities and extended to new regions — making it a foundation for scaling creative health provision beyond Southbank Centre's immediate geography.
+<figure>
+  <img src="{{ '/static/images/case-studies/sb_02.png' | url }}" />
+  <figcaption>
+    The Wellbeing Scale measures impact and whether participants’ wellbeing changed during and after creative programmes.
+  </figcaption>
+</figure>
+
+The platform's modular architecture means it can be adapted and extended to new regions — making it a foundation for scaling creative health provision beyond Southbank Centre's immediate geography.
 
 If you work in the cultural or health sector and want to explore how digital infrastructure can strengthen access to creative health programmes, we would love to hear from you.
