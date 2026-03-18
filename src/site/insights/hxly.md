@@ -40,7 +40,9 @@ Unlike generic data science platforms, Hxly is an adaptive and evolving suite of
 
 ## How Hxly Works
 
-Hxly operates as an end-to-end behavioural intelligence platform. It connects to your existing data infrastructure, and applies advanced modelling techniques to identify patterns and predict outcomes, to deliver insight in forms that decision-makers can apply. Such applications are currently taking place within models of organisational workforce, in event and campaign risk and planning simulation environments, and in individual persona and agent deployments for representing brands and delivering services. Some of the fundamental processes offered include:  
+Hxly operates as an end-to-end behavioural intelligence platform. It connects to your existing data infrastructure, and applies advanced modelling techniques to identify patterns and predict outcomes, to deliver insight in forms that decision-makers can apply. 
+
+Such applications are currently deployed to deliver models of organisational workforce, to provide event and campaign risk and planning simulation environments, and for monitoring individual persona and agent deployments in the represention of brands and delivery of services. Some of the fundamental processes we deliver include:  
 
 - **Data ingestion and preparation:** Connect Hxly to your existing systems and data sources. Hxly handles data cleaning, normalisation, and enrichment so your models are built on solid foundations. 
 - **Persona creation and deployment:** Test custom personas in simulated services and workflows to drive specific targeted insights. Monitor performance over time for different types of users and customers, with automatic drift detection and retraining capabilities.
