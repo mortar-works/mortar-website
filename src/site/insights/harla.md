@@ -2,7 +2,7 @@
 title: Harla
 date: 2025-03-01
 image: driving-product_01.png
-description: Our intelligent management system for providing custom property solutions. Harla is a platform purpose built to drive the future of the property sector with dynamic and data-led products. 
+description: The way we utilise and operate property needs to change. We build custom property solutions using Harla, an intelligent property system for driving the future of the property sector with a suite of dynamic, data-led products. 
 author: Mortar
 draft: false
 category: product
@@ -19,15 +19,15 @@ tags:
   - management system
 ---
 
-> Harla is an intelligent platform, built to give organisations access to the technology they need to drive bespoke property solutions.
+> Harla is an intelligent platform, built to give organisations access to the technology and services they need to drive bespoke property solutions.
 
-Managing property has never been straightforward. The systems that organisations, individuals and teams rely on to manage their assets and their customers have historically been rigid, disconnected, and built around process rather than people. Harla changes that.
+Operating and managing property is not straightforward. The many different ways in which portfolios, individual assets and all the relationships function and interact makes generic, uniform solutions difficult to integrate and work holistically. As a result property systems have always struggled to deliver the custom solutions required. We know because we operate and manage property across different sectors, and we've been building systems to more effectively operate and manage property for over 20 years. With new technologies the opportunity exists to completely revolutionise the field of services and solutions available to the sector. No longer should individuals and teams rely on rigid, disconnected processes, a lack of data or real-time knowledge about their assets and the localities in which they operate, or be concerned about delivering negative experiences and inappropriate communications to their tenants, customers and members. Harla changes that.
 
 ## What is Harla
 
-Harla is Mortar's intelligent property system. It is designed to handle the complexity of modern property portfolios — bringing together data from disparate systems, applying intelligence to surface actionable insights, and enabling organisations to make faster, more confident decisions.
+Harla is an intelligent system for building and deploying flexible, customisable solutions, with a core suite of modules purposefully designed for different property use-cases. It is designed to handle the complexity of modern property portfolios, bringing together data from disparate systems, applying intelligence to surface actionable insights, and enabling organisations to make faster, more confident decisions. It's modular design means solutions can be tailored to fit the needs of landlords, operators and asset managers. From simple data integration solutions, to full-scale escalation and collections systems. 
 
-At its core, Harla is built around the principle that property management should serve the people living and working within those properties, not just the administrative processes that surround them. By integrating data using a modular system that spans both the property and the customer lifecycle Harla gives teams the view of their estate they need — and the tools to act on it.
+At its core, Harla is built around the principle that property management should serve the people living and working within those properties, not just the administrative processes that surround them. By integrating data using a modular system that spans both the property and the customer lifecycle Harla gives teams the view of their estate they need, and the tools to act on it.
 
 ## How Harla Works
 
