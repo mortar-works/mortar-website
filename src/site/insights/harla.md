@@ -2,7 +2,7 @@
 title: Harla
 date: 2025-03-01
 image: driving-product_01.png
-description: We build custom property solutions that change the way property is viewed, utilised and operated. Harla is an intelligent property system driving the future of the property sector with a suite of dynamic, data-led products. 
+description: Build custom property models and agents, changing the way property is viewed, utilised and operated. Harla is an intelligent property system driving the future of the property sector with a suite of dynamic, data-led products. 
 author: Mortar
 draft: false
 category: product
