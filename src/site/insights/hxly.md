@@ -24,7 +24,9 @@ tags:
 
 Beyond the generic, homogenised applications of artificial intelligence, are highly specific and targeted applications that businesses, organisations and society need to serve their customers and users. Applications that require a detailed and refined understanding of the humans they are designed to represent and support. 
 
-Hxly conducts research and creates resources for understanding and responding to human behaviour. In doing so we build the datasets and models needed to provide custom intelligence applications and solutions that confidently represent and serve people as individuals, as groups and communities, and in society. Hxly is creating the datasets and the models to drive human-focused and aligned solutions, and the technical integration for owners to access, utilse and improve them sustainably.
+Hxly conducts research and creates resources for understanding and responding to human behaviour. In doing so we build the datasets and models needed to provide custom intelligence applications and solutions that confidently represent and serve people as individuals, as groups and communities, and in society. 
+
+Hxly is creating the datasets and the models to drive human-focused and aligned solutions, and the technical integration for owners to access, utilse and improve them sustainably.
 
 What digital foundations are needed to deploy AI personas consistently and effectively? What are the early warning signs we need to respond to agents with access to customer credentials? How can we track identity and brand infringements, ensuring personas and agents intervene at the right moment? Our research is exploring the answers to such questions and in doing so we are building the resources needed to drive more meaningful applications of intelligence.
 
@@ -34,7 +36,7 @@ For organisations Hxly provides intelligence services, and offers an intelligenc
 
 Hxly is an AI lab developing behavioural intelligence, with a platform for providing intelligence services to organisations. We are focused on providing organisations with the infrastructure, tools, and methodology needed to build, train, and deploy models for understanding and simulating human behaviour in highly specific and complex contexts.
 
-Unlike generic data science platforms, Hxly is an adaptive and evolving suite of models and datasets specifically for overcoming the messy, incomplete data we find across complex systems. It is designed to surface insights and enrich decision making. And it is structured to ensure that the outcomes it generates are used to create applications that bring maximum benefit to all users and stakeholders. 
+Unlike generic data science platforms, Hxly is an adaptive and evolving suite of models and datasets specifically for overcoming the messy, incomplete data we find across complex systems. It is designed to surface insights and enrich decision making, and it is structured to ensure that the outcomes it generates are used to drive applications that bring maximum benefit to users and stakeholders. 
 
 ## How Hxly Works
 
