@@ -2,7 +2,7 @@
 title: Hxly
 date: 2025-03-03
 image: driving-product_01.png
-description: Our platform for the development of behavioural intelligence. Building the models and datasets to drive solutions that serve humans and society. 
+description: Understanding people, actions and behaviour. Hxly builds custom models and datasets. Supporting organisations in developing and applying intelligence to power solutions that serve humans and society.
 author: Mortar
 draft: false
 category: product
