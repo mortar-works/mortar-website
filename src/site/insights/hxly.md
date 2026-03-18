@@ -52,7 +52,7 @@ Such applications are currently deployed to deliver models of organisational wor
 
 ## Key Features
 
-- **Behavioural risk modelling:** Identify where a system or service poses an elevated risk of negative outcomes — from tenancy failure to product failures or service disengagement — before a crisis occurs.
+- **Behavioural risk modelling:** Identify where a system or service poses an elevated risk of negative outcomes, from product failure to service disengagement or risk exposure, before a crisis occurs.
 - **Pathway analysis:** Understand the sequences of events and interactions that precede different outcomes, enabling earlier and more effective interventions and solutions.
 - **Outcome prediction:** Predict the likely outcome of different intervention strategies, enabling the allocation of resources more effectively.
 - **Explainable AI:** Every prediction comes with a clear explanation of the factors that drove it; ensuring that intelligence supports human judgement rather than replacing it.
