@@ -21,7 +21,9 @@ tags:
 
 > Harla is an intelligent platform, giving organisations access to the technology and services they need to deliver bespoke property solutions.
 
-Operating and managing property is not straightforward. The many different ways in which portfolios, individual assets and all the relationships function and interact means that generic, uniform solutions are difficult to integrate and work holistically. As a result property systems have always struggled to deliver the custom solutions required for them to operate most effectively and efficiently. We know because we operate and manage property across different sectors, and we've been developing our own systems to more effectively transform how they are viewed and managed. With new technologies the opportunity exists to completely revolutionise the field of services and solutions available to the sector. No longer should individuals and teams rely on rigid, disconnected processes, a lack of data or real-time knowledge about their assets and the localities in which they operate, or be concerned about delivering negative experiences and inappropriate communications to their tenants, customers and members. Harla changes that.
+Operating and managing property is not straightforward. There are so many different ways in which portfolios, individual assets and all the relationships involved in property function and interact. This means that there are many different generic, uniform solutions that are difficult to integrate, making communication highly complex, and operations static and slow moving. For the same reasons property systems have always struggled to deliver the custom solutions required for them to operate most effectively and efficiently. 
+
+We have been operating and managing property portfolios for many years, developing our own systems to transform how we are able to operate and manage individual sites, whilst automating and establishing real-time strategic views of specific processes and performance. With new technologies we are building on this experience, to completely revolutionise the field of services and solutions available to the sector. No longer should individuals and teams rely on rigid, disconnected processes, a lack of data or real-time knowledge about their assets and the localities in which they operate, or be concerned about delivering negative experiences and inappropriate communications to their tenants, customers and members. With Harla we are changing the sector by supporting the custom implementation of intelligence to improve property systems.
 
 ## What is Harla
 
@@ -31,27 +33,27 @@ At its core, Harla is built around the principle that property management should
 
 ## How Harla Works
 
-Harla connects to existing systems and data sources — housing management platforms, maintenance workflows, compliance registers, and resident-facing services. It consolidates data into a unified model, to identify patterns, risks, and opportunities. Then delivers custom interfaces, workflows and agentic operations to solve the problems and issues at hand. 
+Harla connects to existing systems and data sources, consolidating data into a unified model. Harla identifies patterns, risks, and opportunities associated with different property processes, and delivers the custom interfaces, workflows and agentic operations to support you and your team in solving the problems and issues at hand. 
 
-- **Unified data model:** Connect and consolidate data from across your property systems into a single, structured view of your entire estate.
-- **Intelligent insight:** Surface trends, anomalies, and risks automatically — from maintenance backlogs to compliance gaps and tenancy risks.
+- **Unified data model:** Connect and consolidate data from across your property systems into a single, structured views.
+- **Intelligent insight:** Surface trends, anomalies, and risks automatically; from collections, to maintenance backlogs, compliance gaps and tenancy risks.
 - **Custom workflows:** Configure Harla around your organisation's specific processes, not the other way around.
-- **User-led design:** Every interface is designed with the people who will use it, ensuring that complex data becomes accessible and actionable.
+- **User-led design:** Every interface is designed with the people who will use it, ensuring that complex information becomes accessible and actionable.
 
 ## Key Features
 
-- **Portfolio dashboard:** A clear, real-time overview of your entire property portfolio — occupancy, compliance status, maintenance activity, and financial performance in one place.
-- **Predictive maintenance:** Identify maintenance needs before they become failures, reducing reactive spend and improving resident experience.
-- **Compliance management:** Track and manage your compliance obligations across fire safety, gas, electrical, and other regulatory requirements — with automated alerts and audit trails.
-- **Resident and tenant management:** Manage tenancy lifecycles, communications, and support needs from a single platform.
-- **Reporting and analytics:** Generate the reports you need for board, regulator, and funder audiences — quickly and without manual data extraction.
+- **Collections and Escalations:** Create your own real-time collections systems. Establish tailored and personalised tenant correspondence, with automated statement creation, payment schedule creation and payment allocation solutions.  
+- **Resident and tenant management:** Easily establish and manage different tenancies and tenant relationships. Including short-term lettings, membership programmes, and licences to occupy most suitable to driving revenue and sustainability for the property at hand. Manage tenancy lifecycles, communications, and support needs from a single platform.
+- **Portfolio and asset modelling:** Build, simulate and test clear, real-time overviews of your entire property portfolios; gaining insights into occupancy scenarios, compliance status, maintenance activity, and financial performance in one place.
+- **Risk and compliance management:** Track and manage compliance obligations across fire safety, gas, electrical, and other regulatory requirements; with automated alerts and audit trails. Deliver tenant due diligence faster, matching occupiers more quickly and speeding up the time spent onboarding and occupying property.  
+- **Reporting and analytics:** Share data with your stakeholders more effectively in real-time, to create the delivery environments necessary for alternative operation and occupation solutions. Generate the reports you need for board, regulator, and funder audiences quickly and without manual data extraction.
 
 ## Why It Matters
 
-The housing sector is under significant pressure. Regulatory requirements are increasing, budgets are tightening, and the expectations of residents and communities are rising. Organisations need systems that help them do more with less — not systems that add friction and administrative burden.
+In the commercial sector a highly challenging climate means assets are heavily under utilised; more effective, mixed use and hybrid models of operation are needed for their successful operation. In housing regulatory requirements continue to increase, budgets are tightening, and the expectations of residents and communities are rising at the same time. Organisations need systems that help them deliver the right offer, better — overcoming the increasing expenses that come with the friction and administrative burden of property ownership. 
 
-Harla is built to meet that challenge. By making data accessible, workflows intuitive, and insight actionable, Harla enables housing and property organisations to focus their resources where they matter most: on the people and communities they serve.
+Harla is built to meet these challenges. By making the most valuable tenancy, occupation and operation options easier to identify, establish and deliver. Intelligence is embedded in the heart of Harla solutions, giving you more accessible data, making your workflows intuitive, and insights actionable. Harla enables organisations to focus their resources where they matter most: delivering outstanding services to the people and communities they serve.
 
 ### Get in Touch
 
-If you are looking to replace a legacy system, consolidate your technology stack, or simply get more from the data you already have, we would love to show you what Harla can do. Get in touch to arrange a demonstration.
+If you are looking at new ways of improving your operations with intelligence, finding simple solutions to frustrating problems, replacing legacy systems or consolidating your technology stack, or simply get more from the data you already have, we would love to show you what Harla can do. Get in touch to arrange a demonstration.
