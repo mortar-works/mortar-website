@@ -2,7 +2,7 @@
 title: "Hoop'd"
 date: 2025-03-02
 image: driving-product_01.png
-description: Our intelligent design system for connecting people and places. Building organisations, delivering partnerships and demonstrating meaningful long-term impact.
+description: Hoop'd is an intelligent design system for connecting people and places. Build, promote and grow your services. Hoop'd scales custom solutions for organisations and partnerships, capturing and demonstrating meaningful long-term impact. 
 author: Mortar
 draft: false
 category: product
