@@ -14,7 +14,11 @@
 
     <div class="article-main">
       <div class="article-header">
-        <h1>{{ title }}</h1>
+        {% if logo %}
+          <img class="article-header-logo" src="{{ logo }}" alt="{{ title }} logo">
+        {% else %}
+          <h1>{{ title }}</h1>
+        {% endif %}
         {% if description %}
           <p class="article-strapline">{{ description }}</p>
         {% endif %}

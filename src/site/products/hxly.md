@@ -2,6 +2,7 @@
 title: Hxly
 date: 2025-03-03
 image: driving-product_01.png
+logo: /static/images/hxly-logo01.svg
 description: Understanding people, actions and behaviour. Hxly builds custom models and datasets. Supporting organisations in developing and applying intelligence to power solutions that serve humans and society.
 author: Mortar
 draft: false
@@ -21,6 +22,8 @@ tags:
 ---
 
 > The underlying datasets, the manner of training utilised, the method and ownership of the model. These fundamentals are essential for organisations enter the most challenging era of AI application and embodiment. 
+
+## Building behaviour
 
 Beyond the generic, homogenised applications of artificial intelligence, are highly specific and targeted applications that businesses, organisations and society need to serve their customers and users. Applications that require a detailed and refined understanding of the humans they are designed to represent and support. 
 

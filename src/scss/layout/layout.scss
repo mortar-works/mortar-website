@@ -443,6 +443,9 @@ header {
     transition: color 0.2s ease, opacity 0.2s ease;
     outline: none;
     position: relative;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
 
     &::after {
       content: '';
@@ -474,6 +477,7 @@ header {
     }
 
     .link-chevron {
+      flex-shrink: 0;
       display: inline-block;
       width: 6px;
       height: 6px;
@@ -599,6 +603,11 @@ header {
   .product-link:last-child::after {
     display: none;
   }
+}
+
+/* Content dropdown — narrower two-column layout */
+.nav-has-dropdown .nav-dropdown-menu--content {
+  min-width: 580px;
 }
 
 /* Remove bottom border on last link in specific dropdown sections */

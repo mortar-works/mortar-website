@@ -1,6 +1,6 @@
 ---
 title: "Service design"
-description: "Transforming traditional approaches to Service Design. We are modelling user behaviour, building custom persona libraries and developing service models shaped by real users. Accelerating the delivery of custom service solutions."
+description: "We accelerate the delivery of custom service solutions. Our service design toolkit includes modelling user behaviour, building custom persona libraries and developing service models shaped by real users."
 link: "/service-design"
 label_image: "/static/images/solutions/solution_label01.png"
 image: "/static/images/solutions/digitalskills01.png"
@@ -16,9 +16,11 @@ keywords:
   - prototyping
 ---
 
-## Design challenges
+## Transforming design
 
-Service design is often constrained by slow processes, high costs, and bias in who gets to participate. Traditional research methods such as focus groups, interviews, and workshops generate useful insights, but they are resource-intensive and often capture only a partial view of user need at that moment in time. With deep experience in service design, we know the value of these approaches, but we also know their limitations. That is why we are developing more intelligent ways of designing services: using technology to model behaviour, expand the evidence base, and help organisations create solutions that are continuously shaped by real users at greater speed and scale.
+Service design is often constrained by slow processes, high costs, and bias in who gets to participate. Traditional research methods such as focus groups, interviews, and workshops generate useful insights, but they are resource-intensive and often capture only a partial view of user need at that moment in time. 
+
+With deep experience in service design, we know the value of these approaches, but we also know their limitations. That is why we are developing more intelligent ways of designing services: using technology to model behaviour, expand the evidence base, and help organisations create, test and deploy solutions that are continuously shaped by real users at greater speed and scale.
 
 **Mortar's Service Design practice** is delivered alongside a suite of intelligence tools that help organisations to initially understand and engage their users in new ways. In doing so we enable organisations to reimagine and transform the way they deliver their services. We combine deep user research with expertise in accessibility and digitally inclusive design to ensure that services are accessible, equitable, and genuinely effective.
 
