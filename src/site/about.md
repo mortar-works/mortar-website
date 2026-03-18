@@ -5,13 +5,13 @@ layout: layouts/about.njk
 
 ## What we do
 
-We work at the intersection of service design, data, and technology — building intelligent triage tools, case management platforms, and community information systems used across housing, health, education, and local government.
+We work at the intersection of design, research, and technology; building intelligent systems to serve people, places and property. We solve complex problems for society, supporting our clients and partners improve outcomes across Health, Government, Culture, Housing and Assets.
 
 ## How we work
 
-We start with research, build iteratively, and stay involved long after launch. We embed in client teams, share our thinking openly, and measure success by outcomes for people — not outputs from teams.
+We start from research and the understanding of data, out of which we build our systems and frameworks iteratively. We help our clients understand their users and customers, building them the solutions that serve their needs most effectively.
 
 ## Our story
 
-Founded on the belief that the public sector deserves technology as good as the private sector gets. We began with housing and tenancy services, and have since expanded into health, social care, education, and community services across the UK.
+Mortar was founded during a time of monumental crisis and change. We built solutions that connected those most isolated, supporting people in staying safe and secure at home and in employment. Our work continues through the development of intelligence that has at its core the connection, safety and security of people.
 
