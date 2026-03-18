@@ -2,7 +2,7 @@
 title: Harla
 date: 2025-03-01
 image: driving-product_01.png
-description: The way we utilise and operate property needs to change. We build custom property solutions using Harla, an intelligent property system for driving the future of the property sector with a suite of dynamic, data-led products. 
+description: The way we view, interpret, occupy and operate property is changing. We build custom property solutions using Harla, an intelligent property system driving the future of the property sector with a suite of dynamic, data-led products. 
 author: Mortar
 draft: false
 category: product
@@ -19,9 +19,9 @@ tags:
   - management system
 ---
 
-> Harla is an intelligent platform, built to give organisations access to the technology and services they need to drive bespoke property solutions.
+> Harla is an intelligent platform, giving organisations access to the technology and services they need to deliver bespoke property solutions.
 
-Operating and managing property is not straightforward. The many different ways in which portfolios, individual assets and all the relationships function and interact makes generic, uniform solutions difficult to integrate and work holistically. As a result property systems have always struggled to deliver the custom solutions required. We know because we operate and manage property across different sectors, and we've been building systems to more effectively operate and manage property for over 20 years. With new technologies the opportunity exists to completely revolutionise the field of services and solutions available to the sector. No longer should individuals and teams rely on rigid, disconnected processes, a lack of data or real-time knowledge about their assets and the localities in which they operate, or be concerned about delivering negative experiences and inappropriate communications to their tenants, customers and members. Harla changes that.
+Operating and managing property is not straightforward. The many different ways in which portfolios, individual assets and all the relationships function and interact means that generic, uniform solutions are difficult to integrate and work holistically. As a result property systems have always struggled to deliver the custom solutions required for them to operate most effectively and efficiently. We know because we operate and manage property across different sectors, and we've been developing our own systems to more effectively transform how they are viewed and managed. With new technologies the opportunity exists to completely revolutionise the field of services and solutions available to the sector. No longer should individuals and teams rely on rigid, disconnected processes, a lack of data or real-time knowledge about their assets and the localities in which they operate, or be concerned about delivering negative experiences and inappropriate communications to their tenants, customers and members. Harla changes that.
 
 ## What is Harla
 
