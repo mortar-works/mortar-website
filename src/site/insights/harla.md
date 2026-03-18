@@ -35,9 +35,9 @@ At its core, Harla is built around the principle that property management should
 
 Harla connects to existing systems and data sources, consolidating data into a unified model. Harla identifies patterns, risks, and opportunities associated with different property processes, and delivers the custom interfaces, workflows and agentic operations to support you and your team in solving the problems and issues at hand. 
 
-- **Unified data model:** Connect and consolidate data from across your property systems into a single, structured views.
+- **Unified data model:** Connect and consolidate data from across your property systems into a single dynamic model; test, simulate and build your services.
 - **Intelligent insight:** Surface trends, anomalies, and risks automatically; from collections, to maintenance backlogs, compliance gaps and tenancy risks.
-- **Custom workflows:** Configure Harla around your organisation's specific processes, not the other way around.
+- **Custom workflows:** Configure your Harla model around your organisation's specific processes, building and evolving knowledge to form bespoke solutions. 
 - **User-led design:** Every interface is designed with the people who will use it, ensuring that complex information becomes accessible and actionable.
 
 ## Key Features
