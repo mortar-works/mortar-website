@@ -396,17 +396,38 @@ window.addEventListener('load', (event) => {
 
   // Insights search functionality
   const searchInput = document.querySelector('.insight-search-input');
-  if (searchInput) {
-    searchInput.addEventListener('input', () => {
-      const query = searchInput.value.toLowerCase().trim();
-      insightItems.forEach(item => {
-        const title = item.querySelector('.insight-title')?.textContent.toLowerCase() || '';
-        const desc = item.querySelector('.insight-description')?.textContent.toLowerCase() || '';
-        const matches = !query || title.includes(query) || desc.includes(query);
-        item.style.display = matches ? '' : 'none';
-      });
+
+  function applySearch(query) {
+    const q = query.toLowerCase().trim();
+    insightItems.forEach(item => {
+      const title = item.querySelector('.insight-title')?.textContent.toLowerCase() || '';
+      const desc = item.querySelector('.insight-description')?.textContent.toLowerCase() || '';
+      const kws = Array.from(item.querySelectorAll('.insight-keyword')).map(el => el.textContent.toLowerCase()).join(' ');
+      const matches = !q || title.includes(q) || desc.includes(q) || kws.includes(q);
+      item.style.display = matches ? '' : 'none';
     });
   }
+
+  if (searchInput) {
+    searchInput.addEventListener('input', () => applySearch(searchInput.value));
+
+    // Pre-populate search from URL query param (e.g. ?search=data+management)
+    const urlSearch = new URLSearchParams(window.location.search).get('search');
+    if (urlSearch) {
+      searchInput.value = urlSearch;
+      applySearch(urlSearch);
+    }
+  }
+
+  // Keyword clicks on content cards — navigate to /content/?search=keyword
+  document.querySelectorAll('.insight-keyword[data-keyword]').forEach(span => {
+    span.style.cursor = 'pointer';
+    span.addEventListener('click', e => {
+      e.preventDefault();
+      e.stopPropagation();
+      window.location.href = '/content/?search=' + encodeURIComponent(span.dataset.keyword);
+    });
+  });
 
   // Load more case studies functionality (Updated Code)
   const loadMoreCaseStudiesButton = document.querySelector('#load-more-casestudies');

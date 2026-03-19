@@ -47,7 +47,7 @@ name: content
           </div>
           {% if post.data.keywords %}
           <div class="insight-card-keywords">
-            {% for kw in post.data.keywords %}{% if loop.index <= 7 %}<span class="insight-keyword">{{ kw }}</span>{% endif %}{% endfor %}
+            {% for kw in post.data.keywords %}{% if loop.index <= 7 %}<span class="insight-keyword" data-keyword="{{ kw }}">{{ kw }}</span>{% endif %}{% endfor %}
           </div>
           {% endif %}
           <div class="insight-card-footer">

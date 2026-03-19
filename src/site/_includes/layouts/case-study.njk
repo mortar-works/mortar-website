@@ -39,7 +39,7 @@
       {% if keywords %}
       <div class="article-keywords">
         {% for keyword in keywords %}
-          <span class="article-keyword">{{ keyword }}</span>
+          <a class="article-keyword" href="/content/?search={{ keyword | replace(' ', '+') }}">{{ keyword }}</a>
         {% endfor %}
       </div>
       {% endif %}

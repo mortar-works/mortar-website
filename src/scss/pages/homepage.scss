@@ -2383,6 +2383,14 @@
         border-radius: 3px;
         padding: 0.2em 0.6em;
         white-space: nowrap;
+
+        &[data-keyword] {
+            cursor: pointer;
+
+            &:hover {
+                background: rgba(43, 28, 90, 0.15);
+            }
+        }
     }
 
     .insight-card-footer {
@@ -2700,6 +2708,14 @@
     border-radius: 3px;
     padding: 0.2em 0.6em;
     white-space: nowrap;
+
+    &[data-keyword] {
+      cursor: pointer;
+
+      &:hover {
+        background: rgba(43, 28, 90, 0.15);
+      }
+    }
   }
 
   .insight-footer-date {
