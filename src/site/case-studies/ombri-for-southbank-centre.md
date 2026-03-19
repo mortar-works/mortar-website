@@ -1,6 +1,6 @@
 ---
-title: "Ombri: a creative health platform for Southbank Centre"
-description: "Young people in London face major inequalities in mental-health care. Ombri is a digital referral platform that connects young people aged 11–25 with creative health opportunities, developed in partnership with Southbank Centre and establishing and monitoring their partnership with South East London Integrated Care Board. A modular solution built on Hoop'd, Ombri offers the foundation for scaling access to preventative and supportive creative health provision for young people."
+title: "Health platform for Southbank Centre"
+description: "Ombri is a digital referral platform that connects young people aged 11–25 with creative health opportunities, developed in partnership with Southbank Centre and establishing and monitoring their partnership with South East London Integrated Care Board."
 read_more_link: "/case-study-url"
 image: "/static/images/case-studies/tenancysustainment01.png"
 author: Mortar

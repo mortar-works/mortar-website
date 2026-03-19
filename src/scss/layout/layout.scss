@@ -492,6 +492,17 @@ header {
     }
   }
 
+  .dropdown-link-label {
+    display: flex;
+    align-items: center;
+    gap: 0.7em;
+  }
+
+  .dropdown-emoji {
+    font-size: 1.4em;
+    line-height: 1;
+  }
+
   .dropdown-divider {
     border: none;
     border-top: 1px solid rgba($mortar-purple, 0.2);
@@ -597,7 +608,10 @@ header {
     font-size: 0.8em;
     color: rgba($black, 0.6);
     line-height: 1.45;
-    max-width: 70%;
+    max-width: 65%;
+    white-space: normal;
+    overflow: visible;
+    text-overflow: clip;
   }
 
   .product-link:last-child::after {
@@ -608,6 +622,10 @@ header {
 /* Content dropdown — narrower two-column layout */
 .nav-has-dropdown .nav-dropdown-menu--content {
   min-width: 580px;
+
+  .dropdown-column:first-child {
+    flex: 1.5;
+  }
 }
 
 /* Remove bottom border on last link in specific dropdown sections */

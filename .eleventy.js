@@ -66,8 +66,7 @@ module.exports = function(eleventyConfig) {
  eleventyConfig.addCollection("news", function (collectionApi) {
   return collectionApi
     .getFilteredByGlob("src/site/news/*.md")
-    .sort((a, b) => b.date - a.date) // Sort by date (newest first)
-    .slice(0, 3); // Limit to the 3 most recent posts
+    .sort((a, b) => b.date - a.date); // Sort by date (newest first)
 });
 
   // Unified content feed: insights + case studies + news + solutions + products, sorted by date
