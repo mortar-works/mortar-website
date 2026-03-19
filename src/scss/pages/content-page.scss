@@ -6,6 +6,29 @@
 // Override the global overflow:hidden on sections so position:sticky works
 .content-page > section {
   overflow: visible;
+  position: relative;
+  margin-top: -6px;
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 320px;
+    pointer-events: none;
+    z-index: 0;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='44' height='44'%3E%3Cpath d='M 44 0 L 0 0 0 44' fill='none' stroke='%232b1c5a' stroke-width='0.5' stroke-opacity='.12'/%3E%3C/svg%3E");
+    background-size: 44px 44px;
+    mask-image:
+      linear-gradient(to right,  transparent 0%, black 25%, black 75%, transparent 100%),
+      linear-gradient(to bottom, transparent 0%, black 20%, black 80%, transparent 100%);
+    mask-composite: intersect;
+    -webkit-mask-image:
+      linear-gradient(to right,  transparent 0%, black 25%, black 75%, transparent 100%),
+      linear-gradient(to bottom, transparent 0%, black 20%, black 80%, transparent 100%);
+    -webkit-mask-composite: source-in;
+  }
 }
 
 .content-page {
@@ -22,7 +45,17 @@
   // Article header — sits inside the article column, aligned with TOC top
   .article-header {
     padding: 2.5em 0 1.5em;
-    max-width: 38em;
+
+    @include respond-to('small') {
+      display: flex;
+      align-items: center;
+      gap: 3em;
+    }
+
+    .article-header-text {
+      max-width: 32em;
+      flex: 1 1 auto;
+    }
 
     h1 {
       @include rajdhani-bold-type;
@@ -52,6 +85,37 @@
       height: 2.8em;
       width: auto;
       margin: 0 0 1.5em;
+    }
+
+    .article-logos-row {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 1.5em;
+      margin-top: 1em;
+
+      .article-logos-row-item {
+        min-height: 100px;
+        width: auto;
+        display: block;
+      }
+    }
+
+    .article-header-anim {
+      display: none;
+
+      @include respond-to('small') {
+        display: block;
+        flex-shrink: 0;
+        width: 264px;  // 6 × 44px
+        height: 220px; // 5 × 44px
+        position: relative;
+        overflow: hidden;
+        margin-left: -88px; // pull ~2 cells into the text column for overlap
+        background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='44' height='44'%3E%3Cpath d='M 44 0 L 0 0 0 44' fill='none' stroke='%232b1c5a' stroke-width='0.5' stroke-opacity='.12'/%3E%3C/svg%3E");
+        background-size: 44px 44px;
+      }
     }
   }
 
@@ -382,6 +446,74 @@
           padding-left: calc(1.5em - 3px);
           padding-right: 1.5em;
         }
+      }
+    }
+  }
+
+  // Breadcrumb navigation
+  .article-breadcrumb {
+    .wrapper {
+      padding-top: 0;
+      padding-bottom: 0;
+
+      @include respond-to('small') {
+        // Mirror the header's flex layout so the ol aligns with the nav links.
+        // The spacer div takes up logo-rendered-width + header-left gap,
+        // pushing the ol to the same x-position as the nav items.
+        display: flex;
+        align-items: center;
+        // Match the header wrapper's root-relative left padding exactly
+        padding-left: 2rem;
+      }
+    }
+
+    // Invisible spacer that mirrors the logo area in the header:
+    //   logo rendered width = 47px height × (309.09 / 110.97 viewBox) ≈ 131px
+    //   + header-left flex gap = 2.5rem
+    .breadcrumb-spacer {
+      display: none;
+
+      @include respond-to('small') {
+        display: block;
+        flex-shrink: 0;
+        width: calc(131px + 3.0rem);
+      }
+    }
+
+    ol {
+      display: flex;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 0.6em;
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      font-family: 'Manrope', sans-serif;
+      font-size: 0.7em;
+      font-weight: 500;
+    }
+
+    li {
+      display: flex;
+      align-items: center;
+      color: rgba($copy-black, 0.45);
+
+      &[aria-current="page"] {
+        color: rgba($copy-black, 0.55);
+        max-width: 30em;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+      }
+    }
+
+    a {
+      color: rgba($copy-black, 0.45);
+      text-decoration: none;
+      transition: color 0.2s ease;
+
+      &:hover {
+        color: $mortar-purple;
       }
     }
   }

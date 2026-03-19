@@ -277,14 +277,14 @@
 
       h3 {
         @include bold-type;
-        font-size: 1.1em;
+        font-size: 0.95em;
         color: $mortar-yellow;
         margin: 0 0 0.6em;
         line-height: 1.2;
       }
 
       p {
-        font-size: 0.9em;
+        font-size: 0.8em;
         color: rgba($white, 0.72);
         line-height: 1.7em;
         margin: 0;

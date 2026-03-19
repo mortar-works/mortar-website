@@ -13,6 +13,8 @@ keywords:
   - East Riding
   - directories
   - digital skills
+logos:
+  - /static/images/partners/eastriding1.png
 ---
 
 Progress Online is a tailored implementation of our Digital Inclusion Triage Tool for East Riding, developed in partnership with the Humber and Yorkshire Integrated Care Board. For East Riding the tool is establishing a new Digital Inclusion Network, working to engage residents in early interventions across a huge, rural, geographic area. 

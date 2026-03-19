@@ -3,7 +3,8 @@ title: "Contact"
 layout: layouts/contact.njk
 ---
 
-<form id="contactForm" action="https://formspree.io/f/mnnqqnev" method="POST">
+<form id="contactForm" name="contact" method="POST" data-netlify="true">
+  <input type="hidden" name="form-name" value="contact" />
   <div class="cf-field">
     <label for="name">Name</label>
     <input type="text" id="name" name="name" placeholder="Your name" required>
