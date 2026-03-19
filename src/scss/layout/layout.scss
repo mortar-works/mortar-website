@@ -619,12 +619,12 @@ header {
   }
 }
 
-/* Content dropdown — narrower two-column layout */
+/* Content dropdown — two-column layout */
 .nav-has-dropdown .nav-dropdown-menu--content {
-  min-width: 580px;
+  min-width: 620px;
 
   .dropdown-column:first-child {
-    flex: 1.5;
+    flex: 1.21;
   }
 }
 

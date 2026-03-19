@@ -16,6 +16,9 @@ module.exports = function(eleventyConfig) {
   eleventyConfig.addFilter('date', dateFilter);
   eleventyConfig.addFilter('markdown', markdownFilter);
   eleventyConfig.addFilter('w3date', w3DateFilter);
+  eleventyConfig.addFilter('titlecase', str =>
+    (str || '').replace(/-/g, ' ').replace(/\b\w/g, c => c.toUpperCase())
+  );
 
   // Create a collection for blog posts (live posts only, no drafts)
   const livePosts = post => post.date <= new Date() && !post.data.draft;
@@ -68,6 +71,21 @@ module.exports = function(eleventyConfig) {
     .getFilteredByGlob("src/site/news/*.md")
     .sort((a, b) => b.date - a.date); // Sort by date (newest first)
 });
+
+  // 4 most recent company news articles (for about page hero)
+  eleventyConfig.addCollection("recentCompanyNews", function (collectionApi) {
+    return collectionApi
+      .getFilteredByGlob("src/site/news/*.md")
+      .filter(item => item.data.category === 'company')
+      .sort((a, b) => b.date - a.date)
+      .slice(0, 4);
+  });
+
+  // Pinned items for the frontpage topline
+  eleventyConfig.addCollection("pinned", function(collectionApi) {
+    return collectionApi.getAll()
+      .filter(item => item.data.pinned === true && !item.data.draft);
+  });
 
   // Unified content feed: insights + case studies + news + solutions + products, sorted by date
   eleventyConfig.addCollection("allContent", function(collectionApi) {

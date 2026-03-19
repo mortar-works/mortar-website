@@ -5,7 +5,7 @@ image: powerofbalance.jpeg
 author: George Unsworth
 description: Empower tenants with self-service tools that foster equitable communication, collaboration, and sustainable relationships.
 draft: false
-category: product
+category: use-case
 keywords:
   - Balance
   - debt

@@ -4,7 +4,7 @@ date: 2021-09-01
 image: conversation02.jpg
 author: George Unsworth
 draft: false
-category: product
+category: use-case
 keywords:
   - Hoop'd
   - engagement platform

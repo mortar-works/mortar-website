@@ -5,6 +5,7 @@ read_more_link: "/case-study-url"
 image: "/static/images/case-studies/tenancysustainment01.png"
 author: Mortar
 draft: false
+pinned: true
 category: case-study
 keywords:
   - Gloucestershire

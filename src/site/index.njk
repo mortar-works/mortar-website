@@ -25,46 +25,16 @@ name: homepage
       <!-- Recent Content List -->
       <div class="recent-content">
         <div class="recent-content-list">
-          {% for item in collections.allContent %}
-            {% if loop.index <= 2 %}
+          {% for item in collections.pinned %}
             <div class="content-item">
               <a href="{{ item.url }}" class="content-link">
                 <span class="content-title">{{ item.data.title }}</span>
-                <span class="content-category">Insights</span>
-              </a>
-              {% if item.data.description %}
-              <div class="content-description">{{ item.data.description }}</div>
-              {% endif %}
-            </div>
-            {% endif %}
-          {% endfor %}
-
-          {% for item in collections.news %}
-            {% if loop.index <= 2 %}
-            <div class="content-item">
-              <a href="{{ item.url }}" class="content-link">
-                <span class="content-title">{{ item.data.title }}</span>
-                <span class="content-category">News</span>
+                <span class="content-category">{{ (item.data.category or 'Insights') | titlecase }}</span>
               </a>
               {% if item.data.description or item.data.excerpt %}
               <div class="content-description">{{ item.data.description or item.data.excerpt }}</div>
               {% endif %}
             </div>
-            {% endif %}
-          {% endfor %}
-
-          {% for item in collections.caseStudies %}
-            {% if loop.index <= 2 %}
-            <div class="content-item">
-              <a href="{{ item.url }}" class="content-link">
-                <span class="content-title">{{ item.data.title }}</span>
-                <span class="content-category">Case Studies</span>
-              </a>
-              {% if item.data.description %}
-              <div class="content-description">{{ item.data.description }}</div>
-              {% endif %}
-            </div>
-            {% endif %}
           {% endfor %}
         </div>
       </div>
@@ -121,7 +91,7 @@ name: homepage
       <div class="service-panel" data-service="1">
         <div class="service-panel-text">
           <p>Traditional systems were not built for complexity or change. Siloed information and legacy processes make them difficult to navigate and slow to respond. We integrate data to model and test systems. Learning how to deliver more responsive, resilient and connected experiences.</p>
-          <a href="/solutions/" class="service-panel-link">Intelligent systems</a>
+          <a href="/solutions/system-design/" class="service-panel-link">Intelligent systems</a>
         </div>
         <div class="service-panel-image">
           <img src="{{ '/static/images/case-studies/progressonline02.png' | url }}" alt="Technology Build" />
@@ -139,7 +109,7 @@ name: homepage
       <div class="service-panel" data-service="3">
         <div class="service-panel-text">
           <p>We continually model the impact of our solutions. Building new datasets and frameworks, informing how we capture, monitor and report in real time. Improving outcomes across the entire journey for both organisations and their users.</p>
-          <a href="/solutions/" class="service-panel-link">Impact models and frameworks</a>
+          <a href="/solutions/bigger-impact/" class="service-panel-link">Impact models and frameworks</a>
         </div>
         <div class="service-panel-image">
           <img src="{{ '/static/images/case-studies/digitalhelpfinder.jpg' | url }}" alt="Research and Strategy" />
@@ -186,7 +156,7 @@ name: homepage
     <ul id="insight-list">
       {% for post in collections.allContent %}
       {% if loop.index <= 3 %}
-      <li data-category="{{ post.data.category | lower | replace(' ', '-') if post.data.category else 'all' }}">
+      <li data-category="{{ post.data.categories | join(' ') if post.data.categories else (post.data.category | lower | replace(' ', '-') if post.data.category else 'all') }}">
         <a class="insight-card" href="{{ post.url }}" aria-label="Insight: {{ post.data.title }}">
           <div class="insight-card-body">
             <span class="insight-category insight-category--{{ post.data.category | lower | replace(' ', '-') if post.data.category else 'insights' }}">{{ post.data.category or 'Insights' }}</span>

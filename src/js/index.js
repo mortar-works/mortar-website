@@ -335,7 +335,7 @@ window.addEventListener('load', (event) => {
 
   function getFilteredItems() {
     return insightItems.filter(item =>
-      currentFilter === 'all' || item.dataset.category === currentFilter
+      currentFilter === 'all' || item.dataset.category.split(' ').includes(currentFilter)
     );
   }
 

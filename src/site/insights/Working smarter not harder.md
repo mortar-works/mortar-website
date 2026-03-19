@@ -4,7 +4,7 @@ date: 2022-09-01
 image: mortar_web_02.jpg
 author: George Unsworth
 draft: false
-category: product
+category: use-case
 keywords:
   - AI
   - automation

@@ -36,7 +36,7 @@ name: content
     {# Grid — all posts after the featured one #}
     <ul id="insight-list">
       {% for post in collections.allContent %}
-      <li data-category="{{ post.data.category | lower | replace(' ', '-') if post.data.category else 'all' }}">
+      <li data-category="{{ post.data.categories | join(' ') if post.data.categories else (post.data.category | lower | replace(' ', '-') if post.data.category else 'all') }}">
         <a class="insight-card" href="{{ post.url }}" aria-label="Insight: {{ post.data.title }}">
           <div class="insight-card-body">
             <span class="insight-category insight-category--{{ post.data.category | lower | replace(' ', '-') if post.data.category else 'insights' }}">{{ post.data.category or 'Insights' }}</span>

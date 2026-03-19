@@ -14,14 +14,12 @@
     </div>
     <div class="about-hero-right">
 <div class="about-articles-list">
-        {% for item in collections.news %}
-          {% if item.data.category == 'company' %}
+        {% for item in collections.recentCompanyNews %}
           <div class="about-article-item">
             <a href="{{ item.url }}" class="about-article-link">
               <span class="about-article-title">{{ item.data.title }}</span>
             </a>
           </div>
-          {% endif %}
         {% endfor %}
       </div>
     </div>

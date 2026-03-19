@@ -5,7 +5,7 @@ image: bg-customengagement.png
 author: George Unsworth
 description: Empower local networks and services with custom-designed environments that enhance service delivery outcomes.
 draft: false
-category: product
+category: use-case
 keywords:
   - engagement environments
   - membership

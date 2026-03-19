@@ -7,6 +7,7 @@ image: "/static/images/solutions/digitalskills01.png"
 date: 2025-03-06
 author: Mortar
 draft: false
+pinned: true
 category: use-case
 keywords:
   - impact

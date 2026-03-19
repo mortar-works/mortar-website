@@ -5,7 +5,7 @@ image: driving-product_01.png
 description: Why user-led design principles drive the benefits and efficiencies of our solutions.
 author: George Unsworth
 draft: false
-category: product
+category: use-case
 keywords:
   - product development
   - AI
