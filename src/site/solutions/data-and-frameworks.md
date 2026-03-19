@@ -54,7 +54,7 @@ Our Data and Frameworks solution provides the strategy, design, and implementati
   We support organisations to develop the legal, technical, and governance frameworks needed to share data with partners — unlocking the value of cross-organisational data assets while managing risk and protecting the people whose data it is.
 
 ## Case Study Highlight
-> Mortar worked with a consortium of local authorities to design a shared data infrastructure for integrated health and social care services. By implementing common standards and a federated data governance model, we enabled the consortium to share data across organisational boundaries for the first time — improving care coordination and reducing duplication across the system. <a class="topline-cta" href="/#case-studies">Read more</a>
+> Working with Southbank Centre and South East London Integrated Care Board, Mortar designed the data infrastructure underpinning Ombri — a platform that formalises referral pathways between cultural organisations and health systems. At its core is an integrated evaluation framework, developed with Brunel University, that applies validated wellbeing tools across partner organisations to generate consistent, comparable evidence. For the first time, commissioners could access standardised data on creative health outcomes — enabling evidence-based investment decisions and a stronger case for scaling the programme. <a class="topline-cta" href="/#case-studies">Read more</a>
 
 ### Why It Matters
 

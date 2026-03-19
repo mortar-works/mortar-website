@@ -181,7 +181,7 @@
 
   // Get in touch CTA — overrides the global .cta
   .solution-get-in-touch {
-    margin: 1em 0 1em;
+    margin: 3em 0;
 
     .cta {
       display: inline-flex;
@@ -307,22 +307,83 @@
     margin: 1.5em 0;
 
     li {
-      margin: 0;
+      margin: 0 0 0.5em;
       padding: 0.85em 1.1em;
       border-radius: 4px;
-
-      &:nth-child(odd) {
-        background: rgba($mortar-purple, 0.05);
-      }
-
-      &:nth-child(even) {
-        background: rgba($mortar-purple, 0.1);
-      }
+      border-left: 3px solid $mortar-yellow;
+      background: rgba($mortar-purple, 0.04);
+      font-size: 0.9em;
     }
   }
 
   ol li {
     padding-left: 0.45em;
+  }
+
+  article section {
+    margin: 2em 0;
+    border-radius: 6px;
+    border: 1px solid rgba($mortar-purple, 0.1);
+    overflow: hidden;
+
+    h2 {
+      font-family: 'Manrope', sans-serif;
+      font-size: 0.7em;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      color: rgba($copy-black, 0.4);
+      margin: 0;
+      padding: 0.9em 1.5em;
+      border-bottom: 1px solid rgba($mortar-purple, 0.1);
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+
+      thead th {
+        font-family: 'Manrope', sans-serif;
+        font-size: 0.65em;
+        font-weight: 700;
+        text-transform: uppercase;
+        letter-spacing: 0.08em;
+        color: rgba($copy-black, 0.3);
+        padding: 0.65em 1em 0.65em 1.5em;
+        border-bottom: 1px solid rgba($mortar-purple, 0.08);
+
+        &:first-child {
+          padding-left: 1.5em;
+          border-left: 3px solid transparent;
+        }
+      }
+
+      tbody tr {
+        border-bottom: 1px solid rgba($mortar-purple, 0.06);
+
+        &:last-child {
+          border-bottom: none;
+        }
+      }
+
+      tbody td {
+        padding: 0.85em 1em 0.85em 1.5em;
+        font-size: 0.9em;
+        vertical-align: top;
+        line-height: 1.5;
+
+        &:first-child {
+          font-family: 'Manrope', sans-serif;
+          font-weight: 600;
+          color: $mortar-purple;
+          white-space: nowrap;
+          width: 32%;
+          border-left: 3px solid $mortar-yellow;
+          padding-left: calc(1.5em - 3px);
+          padding-right: 1.5em;
+        }
+      }
+    }
   }
 
   article a {
@@ -338,47 +399,77 @@
   .other-content {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 1em;
+    gap: 1.5em;
     margin: 3em 0 2em;
     max-width: 38em;
+    border-top: 1px solid rgba($mortar-purple, 0.12);
+    padding-top: 2em;
 
     .previous-post, .next-post {
       a {
         display: flex;
         flex-direction: column;
-        gap: 0.3em;
-        padding: 1.2em 1.4em;
-        background: rgba($mortar-purple, 0.04);
-        border-radius: 6px;
+        gap: 0.35em;
         text-decoration: none;
-        transition: background 0.2s ease;
-
-        &:hover {
-          background: rgba($mortar-purple, 0.08);
-        }
+        padding: 0.1em 0 0.1em 1em;
+        transition: border-color 0.2s ease;
       }
 
       span {
-        display: block;
+        display: flex;
+        align-items: center;
+        gap: 0.4em;
         font-family: 'Manrope', sans-serif;
-        font-size: 0.65em;
-        font-weight: 700;
-        text-transform: uppercase;
-        letter-spacing: 0.1em;
-        color: rgba($copy-black, 0.4);
+        font-size: 0.72em;
+        font-weight: 500;
+        color: rgba($copy-black, 0.45);
       }
 
       .post-title {
         font-family: 'Manrope', sans-serif;
-        font-size: 0.85em;
+        font-size: 0.88em;
         font-weight: 600;
         color: $mortar-purple;
         line-height: 1.4;
+        transition: opacity 0.2s ease;
+      }
+
+      a:hover .post-title {
+        opacity: 0.7;
       }
     }
 
-    .next-post a {
-      text-align: right;
+    .previous-post {
+      a {
+        border-left: 3px solid $mortar-yellow;
+
+        &:hover {
+          border-left-color: $mortar-purple;
+        }
+      }
+
+      .post-title::before {
+        content: '← ';
+        color: rgba($copy-black, 0.3);
+      }
+    }
+
+    .next-post {
+      a {
+        text-align: right;
+        align-items: flex-end;
+        padding: 0.1em 1em 0.1em 0;
+        border-right: 3px solid $mortar-yellow;
+
+        &:hover {
+          border-right-color: $mortar-purple;
+        }
+      }
+
+      .post-title::after {
+        content: ' →';
+        color: rgba($copy-black, 0.3);
+      }
     }
   }
 }
