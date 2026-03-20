@@ -151,6 +151,10 @@
       white-space: nowrap;
       -webkit-tap-highlight-color: transparent;
 
+      @media (max-width: 400px) {
+        white-space: normal;
+      }
+
       &:hover {
         text-decoration-color: $mortar-orange;
       }
@@ -484,6 +488,10 @@
         padding: 0 1em;
         font-size: 2em;
       }
+
+      @media (max-width: 400px) {
+        width: 90%;
+      }
     }
 
     #feature-list {
@@ -635,6 +643,10 @@
       position: relative;
       width: 60%;
       overflow: hidden;
+
+      @media (max-width: 768px) {
+        width: 95%;
+      }
     }
 
     .partners-ticker {
@@ -1020,29 +1032,58 @@
     @include respond-to('small', 'max') {
       padding: 3em 0;
 
+      .services-heading-wrapper {
+        padding: 0 1.5em 2em;
+      }
+
+      .services-heading {
+        font-size: 2.1em;
+
+        &--pink {
+          white-space: normal;
+        }
+      }
+
       .services-wrapper {
         flex-direction: column;
         padding: 0 1.5em;
       }
 
       .services-content {
-        min-height: 0;
+        display: none;
       }
 
       .service-panel {
         position: relative;
         inset: auto;
         flex-direction: column;
-        display: none;
+        display: flex;
+        height: 0;
+        overflow: hidden;
+        opacity: 0;
+        pointer-events: none;
+        transition: height 0.38s ease, opacity 0.28s ease;
 
         &.is-active {
-          display: flex;
+          // height set via JS to actual scrollHeight for smooth animation
+          opacity: 1;
+          pointer-events: auto;
         }
       }
 
       .service-panel-text {
         flex: none;
-        padding: 1.5em 0;
+        padding: 1em 0 1.5em 1.6em;
+        background-color: transparent;
+        border-right: none;
+
+        p {
+          font-size: 0.95em;
+        }
+
+        .service-panel-link {
+          margin-top: 1em;
+        }
       }
 
       .service-panel-image {
@@ -1407,6 +1448,10 @@
         padding: 0 1.5em;
       }
 
+      .vision-title {
+        font-size: 2em;
+      }
+
       .vision-tabs {
         flex-wrap: wrap;
       }
@@ -1419,6 +1464,10 @@
       .vision-modules {
         flex: none;
         width: 100%;
+      }
+
+      .vision-graphic {
+        display: none;
       }
     }
   }
@@ -2100,6 +2149,33 @@
         }
     }
 
+    @media (max-width: 768px) {
+      .wrapper {
+        margin: 0 1.2em;
+      }
+
+      .powered-by-title {
+        font-size: 1.6em;
+
+        .logo-tombola {
+          top: -0.5em;
+        }
+      }
+
+      .powered-by-links {
+        flex-wrap: nowrap;
+        gap: 1em;
+
+        a {
+          font-size: 0.85em;
+        }
+
+        .pbl-box {
+          padding: 0.6em 1.2em;
+        }
+      }
+    }
+
     .insights-powered-by {
         text-align: center;
 
@@ -2550,6 +2626,10 @@
     z-index: 100;
     margin-bottom: 0;
     box-shadow: 0 2px 10px rgba(43, 28, 90, 0.1);
+
+    @media (max-width: 767px) {
+      top: 5.8em;
+    }
   }
 
   .insights-header {

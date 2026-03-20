@@ -463,19 +463,100 @@ window.addEventListener('load', (event) => {
     });
   }
 
-  // Services tab switcher
+  // Services tab switcher / mobile accordion
   const serviceNavItems = document.querySelectorAll('.service-nav-item');
-  const servicePanels = document.querySelectorAll('.service-panel');
+  const servicePanels   = document.querySelectorAll('.service-panel');
+  const servicesContent = document.querySelector('.services-content');
+
+  const serviceIsMobile = () => window.innerWidth < 768;
+
+  function restorePanelsToContent() {
+    servicePanels.forEach(panel => {
+      panel.style.height = '';
+      servicesContent.appendChild(panel);
+    });
+  }
+
+  function openPanel(panel, btn) {
+    btn.classList.add('is-active');
+    btn.insertAdjacentElement('afterend', panel);
+    // Measure real content height, then animate from 0 to that value
+    panel.style.height = 'auto';
+    const h = panel.scrollHeight;
+    panel.style.height = '0';
+    panel.getBoundingClientRect(); // force reflow
+    panel.classList.add('is-active');
+    panel.style.height = h + 'px';
+    panel.addEventListener('transitionend', () => {
+      if (panel.classList.contains('is-active')) panel.style.height = 'auto';
+    }, { once: true });
+  }
+
+  function closePanel(panel) {
+    // Pin to current height first so transition has a start point
+    panel.style.height = panel.scrollHeight + 'px';
+    panel.getBoundingClientRect(); // force reflow
+    panel.classList.remove('is-active');
+    panel.style.height = '0';
+    panel.addEventListener('transitionend', () => {
+      if (!panel.classList.contains('is-active')) {
+        panel.style.height = '';
+        servicesContent.appendChild(panel);
+      }
+    }, { once: true });
+  }
+
+  function initServicesAccordion() {
+    const activeBtn = document.querySelector('.service-nav-item.is-active');
+    if (activeBtn) {
+      const panel = document.querySelector(`.service-panel[data-service="${activeBtn.dataset.service}"]`);
+      activeBtn.insertAdjacentElement('afterend', panel);
+      panel.classList.add('is-active');
+      panel.style.height = 'auto'; // no animation on initial load
+    }
+  }
 
   serviceNavItems.forEach((btn) => {
     btn.addEventListener('click', () => {
-      const target = btn.dataset.service;
-      serviceNavItems.forEach((b) => b.classList.remove('is-active'));
-      servicePanels.forEach((p) => p.classList.remove('is-active'));
-      btn.classList.add('is-active');
-      document.querySelector(`.service-panel[data-service="${target}"]`).classList.add('is-active');
+      const target    = btn.dataset.service;
+      const panel     = document.querySelector(`.service-panel[data-service="${target}"]`);
+      const wasActive = btn.classList.contains('is-active');
+
+      if (serviceIsMobile()) {
+        // Find and close any currently open panel
+        const openPanel_ = document.querySelector('.services-nav .service-panel.is-active');
+        const openBtn    = document.querySelector('.service-nav-item.is-active');
+        if (openBtn)  openBtn.classList.remove('is-active');
+        if (openPanel_) closePanel(openPanel_);
+
+        if (!wasActive) openPanel(panel, btn);
+      } else {
+        serviceNavItems.forEach((b) => b.classList.remove('is-active'));
+        servicePanels.forEach((p)   => p.classList.remove('is-active'));
+        btn.classList.add('is-active');
+        panel.classList.add('is-active');
+      }
     });
   });
+
+  // Restore panels to desktop layout on resize
+  let servicesLastMobile = serviceIsMobile();
+  window.addEventListener('resize', () => {
+    const nowMobile = serviceIsMobile();
+    if (servicesLastMobile !== nowMobile) {
+      if (!nowMobile) {
+        restorePanelsToContent();
+        serviceNavItems.forEach((b) => b.classList.remove('is-active'));
+        servicePanels.forEach((p)   => p.classList.remove('is-active'));
+        serviceNavItems[0].classList.add('is-active');
+        servicePanels[0].classList.add('is-active');
+      }
+      servicesLastMobile = nowMobile;
+    }
+  });
+
+  // Init accordion on mobile page load
+  if (serviceIsMobile()) initServicesAccordion();
 
   // Logo tombola cycling
   const tombola = document.querySelector('.logo-tombola');
@@ -707,7 +788,7 @@ function showConfirmationModal() {
   modal.classList.add('confirmation-modal');
   modal.innerHTML = `
     <div class="modal-content">
-      <p>Many thanks for your enquiry! We will be in touch soon.</p>
+      <p>Many thanks for your enquiry!<br>We will be in touch soon.</p>
       <button id="closeModal">OK</button>
     </div>
   `;
