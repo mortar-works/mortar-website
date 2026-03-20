@@ -5,6 +5,13 @@ image: mortar_web_01.jpg
 author: George Unsworth
 description: Unlock the potential of data with intelligent environments that drive more impactful decision-making.
 draft: false
+category: research
+keywords:
+  - data management
+  - data capture
+  - data blending
+  - service transformation
+  - universal data adaptor
 tags:
   - data services
   - universal data adaptor

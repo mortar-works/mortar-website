@@ -4,6 +4,12 @@ date: 2022-07-18
 image: simplesuccess01.jpg
 author: George Unsworth
 draft: false
+category: use-case
+keywords:
+  - digital inclusion
+  - financial inclusion
+  - information design
+  - service design
 description: How simple solutions can achieve great impact by improving the accessibility and sharing of service information.
 tags:
   - digital inclusion

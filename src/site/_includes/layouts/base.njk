@@ -2,12 +2,12 @@
 <html lang="en">
   <head>
     <title>
-      {% block pageTitle %}Building better services{% endblock %}
+      {% block pageTitle %}Building a better world{% endblock %}
     </title>
     <meta charset="utf-8">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Mortar is a technology company building the next generation of intelligent tools and products, redefining relationships between people, places, and property.">
+    <meta name="description" content="Mortar powers intelligent, human-centric systems for society. We are a technology company committed to building a better world.">
 
     <link rel="shortcut icon" href="{{ '/static/images/mortar-favicon.png' | url }}" />
     <link rel="stylesheet" href="{{ '/static/css/styles.css' | url }}">
@@ -24,26 +24,163 @@
   <body id="{% block bodyId %}{% endblock %}">
     <header>
       <div class="wrapper">
-        <a href="/" id="mortar-logo">
-          Mortar
-        </a>
+        <div class="header-left">
+          <a href="/" id="mortar-logo">
+            <img src="/static/images/mortar-logo.svg" alt="Mortar" height="47" width="105">
+          </a>
 
-        <button class="hamburger hamburger--squeeze" type="button">
-          <span class="visually-hidden">Toggle menu</span>
-          <span class="hamburger-box">
-            <span class="hamburger-inner"></span>
-          </span>
-        </button>
+          <nav aria-label="Main navigation">
+            <ul>
+              <li class="nav-has-dropdown">
+                <button class="nav-dropdown-toggle" aria-expanded="false" aria-haspopup="true">
+                  Products <span class="dropdown-chevron" aria-hidden="true"></span>
+                </button>
+                <div class="nav-dropdown-menu nav-dropdown-menu--products" role="menu">
+                  <div class="dropdown-section">
+                    <span class="dropdown-subheading">Mainline</span>
+                    <a href="{{ '/products/harla/' | url }}" role="menuitem" class="product-link">
+                      <span class="product-name">Harla <span class="link-chevron" aria-hidden="true"></span></span>
+                      <span class="product-desc">Our intelligent management system for custom property solutions.</span>
+                    </a>
+                    <a href="{{ '/products/hoopd/' | url }}" role="menuitem" class="product-link">
+                      <span class="product-name">Hoop'd <span class="link-chevron" aria-hidden="true"></span></span>
+                      <span class="product-desc">Our intelligent design system for connecting people and places.</span>
+                    </a>
+                    <a href="{{ '/products/hxly/' | url }}" role="menuitem" class="product-link">
+                      <span class="product-name">Hxly <span class="link-chevron" aria-hidden="true"></span></span>
+                      <span class="product-desc">Our platform for the development of behavioural intelligence.</span>
+                    </a>
+                  </div>
+                </div>
+              </li>
+              <li class="nav-has-dropdown">
+                <button class="nav-dropdown-toggle" aria-expanded="false" aria-haspopup="true">
+                  Solutions <span class="dropdown-chevron" aria-hidden="true"></span>
+                </button>
+                <div class="nav-dropdown-menu nav-dropdown-menu--wide" role="menu">
+                  <div class="dropdown-columns">
+                    <div class="dropdown-column">
+                      <span class="dropdown-subheading">Services</span>
+                      <a href="{{ '/solutions/service-design/' | url }}" role="menuitem">Service design <span class="link-chevron" aria-hidden="true"></span></a>
+                      <a href="{{ '/solutions/system-design/' | url }}" role="menuitem">System design <span class="link-chevron" aria-hidden="true"></span></a>
+                      <a href="{{ '/solutions/modelling-and-simulation/' | url }}" role="menuitem">Modelling and simulation <span class="link-chevron" aria-hidden="true"></span></a>
+                      <a href="{{ '/solutions/data-and-frameworks/' | url }}" role="menuitem">Data and frameworks <span class="link-chevron" aria-hidden="true"></span></a>
+                      <a href="{{ '/services/' | url }}" role="menuitem" class="dropdown-link--more">Services overview <span class="link-chevron" aria-hidden="true"></span></a>
+                    </div>
+                    <div class="dropdown-column">
+                      <span class="dropdown-subheading">Use Cases</span>
+                      <a href="{{ '/solutions/smarter-decisions/' | url }}" role="menuitem"><span class="dropdown-link-label"><span class="dropdown-emoji">🧠</span> Smarter decisions</span><span class="link-chevron" aria-hidden="true"></span></a>
+                      <a href="{{ '/solutions/stronger-teams/' | url }}" role="menuitem"><span class="dropdown-link-label"><span class="dropdown-emoji">💪</span> Stronger teams</span><span class="link-chevron" aria-hidden="true"></span></a>
+                      <a href="{{ '/solutions/bigger-impact/' | url }}" role="menuitem"><span class="dropdown-link-label"><span class="dropdown-emoji">💥</span> Bigger impact</span><span class="link-chevron" aria-hidden="true"></span></a>
+                      <a href="{{ '/solutions/shared-value/' | url }}" role="menuitem"><span class="dropdown-link-label"><span class="dropdown-emoji">💰</span> Shared value</span><span class="link-chevron" aria-hidden="true"></span></a>
+                      <a href="{{ '/solutions/better-connections/' | url }}" role="menuitem"><span class="dropdown-link-label"><span class="dropdown-emoji">🤝</span> Better connections</span><span class="link-chevron" aria-hidden="true"></span></a>
+                      <a href="/content/?filter=use-case" role="menuitem" class="dropdown-link--more">View all use cases <span class="link-chevron" aria-hidden="true"></span></a>
+                    </div>
+                    <div class="dropdown-column">
+                      <span class="dropdown-subheading">Industries</span>
+                      <a href="{{ '/solutions/health/' | url }}" role="menuitem">Health <span class="link-chevron" aria-hidden="true"></span></a>
+                      <a href="{{ '/solutions/government/' | url }}" role="menuitem">Government <span class="link-chevron" aria-hidden="true"></span></a>
+                      <a href="{{ '/solutions/cultural-sector/' | url }}" role="menuitem">Cultural Sector <span class="link-chevron" aria-hidden="true"></span></a>
+                      <a href="{{ '/solutions/housing/' | url }}" role="menuitem">Housing <span class="link-chevron" aria-hidden="true"></span></a>
+                      <a href="{{ '/solutions/asset-management/' | url }}" role="menuitem">Asset management <span class="link-chevron" aria-hidden="true"></span></a>
+                      <a href="/content/?filter=industry" role="menuitem" class="dropdown-link--more">Our industries <span class="link-chevron" aria-hidden="true"></span></a>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="nav-has-dropdown">
+                <button class="nav-dropdown-toggle" aria-expanded="false" aria-haspopup="true">
+                  Customers <span class="dropdown-chevron" aria-hidden="true"></span>
+                </button>
+                <div class="nav-dropdown-menu" role="menu">
+                  <div class="dropdown-section">
+                    <span class="dropdown-subheading">Case studies</span>
+                    <a href="{{ '/case-studies/dementia-friendly-venues-charter-for-gla/' | url }}" role="menuitem">Mayor of London <span class="link-chevron" aria-hidden="true"></span></a>
+                    <a href="{{ '/case-studies/ombri-for-southbank-centre/' | url }}" role="menuitem">Southbank Centre <span class="link-chevron" aria-hidden="true"></span></a>
+                    <a href="{{ '/case-studies/integrated-services-platform-for-gloucestershire/' | url }}" role="menuitem">Gloucestershire <span class="link-chevron" aria-hidden="true"></span></a>
+                    <a href="/content/?filter=case-study" role="menuitem" class="dropdown-link--more">View all <span class="link-chevron" aria-hidden="true"></span></a>
+                  </div>
+                </div>
+              </li>
+              <li class="nav-has-dropdown">
+                <a href="/content/" class="nav-dropdown-toggle" aria-expanded="false" aria-haspopup="true">
+                  Content <span class="dropdown-chevron" aria-hidden="true"></span>
+                </a>
+                <div class="nav-dropdown-menu nav-dropdown-menu--wide nav-dropdown-menu--content" role="menu">
+                  <div class="dropdown-columns">
+                    <div class="dropdown-column">
+                      <span class="dropdown-subheading">Latest content</span>
+                      <a href="{{ '/insights/driving-product-development/' | url }}" role="menuitem">Driving product development <span class="link-chevron" aria-hidden="true"></span></a>
+                      <a href="{{ '/insights/intelligent-user-pathways/' | url }}" role="menuitem">Intelligent User Pathways <span class="link-chevron" aria-hidden="true"></span></a>
+                      <a href="{{ '/insights/dynamic-information-directories/' | url }}" role="menuitem">Dynamic Information Directories <span class="link-chevron" aria-hidden="true"></span></a>
+                      <a href="{{ '/insights/custom-engagement-environments/' | url }}" role="menuitem">Custom engagement environments <span class="link-chevron" aria-hidden="true"></span></a>
+                      <a href="/content/" role="menuitem" class="dropdown-link--more">View all <span class="link-chevron" aria-hidden="true"></span></a>
+                    </div>
+                    <div class="dropdown-column">
+                      <span class="dropdown-subheading">Categories</span>
+                      <a href="/content/?filter=product" role="menuitem">Product <span class="link-chevron" aria-hidden="true"></span></a>
+                      <a href="/content/?filter=solution" role="menuitem">Solution <span class="link-chevron" aria-hidden="true"></span></a>
+                      <a href="/content/?filter=research" role="menuitem">Research <span class="link-chevron" aria-hidden="true"></span></a>
+                      <a href="/content/?filter=use-case" role="menuitem">Use Case <span class="link-chevron" aria-hidden="true"></span></a>
+                      <a href="/content/?filter=case-study" role="menuitem">Case Study <span class="link-chevron" aria-hidden="true"></span></a>
+                      <a href="/content/?filter=service" role="menuitem">Service <span class="link-chevron" aria-hidden="true"></span></a>
+                      <a href="/content/?filter=industry" role="menuitem">Industry <span class="link-chevron" aria-hidden="true"></span></a>
+                      <a href="/content/?filter=company" role="menuitem">Company <span class="link-chevron" aria-hidden="true"></span></a>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="nav-has-dropdown">
+                <button class="nav-dropdown-toggle" aria-expanded="false" aria-haspopup="true">
+                  Company <span class="dropdown-chevron" aria-hidden="true"></span>
+                </button>
+                <div class="nav-dropdown-menu nav-dropdown-menu--company" role="menu">
+                  <div class="dropdown-section">
+                    <span class="dropdown-subheading">Who we are</span>
+                    <a href="{{ '/about/' | url }}" role="menuitem">About <span class="link-chevron" aria-hidden="true"></span></a>
+                    <a href="{{ '/contact/' | url }}" role="menuitem">Contact <span class="link-chevron" aria-hidden="true"></span></a>
+                    <a href="/content/?filter=company" role="menuitem">Latest News <span class="link-chevron" aria-hidden="true"></span></a>
+                    <a href="{{ '/insights/work-with-us/' | url }}" role="menuitem">Work with us <span class="link-chevron" aria-hidden="true"></span></a>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </nav>
+        </div>
 
-        <nav aria-label="Main navigation">
-          <ul>
-            <li><a href="{{ '/#case-studies' | url }}">Case Studies</a></li>
-            <li><a href="{{ '/#solutions' | url }}">Solutions</a></li>
-            <li><a href="{{ '/#news-updates' | url }}">News</a></li>
-            <li><a href="{{ '/#insights' | url }}">Insights</a></li>
-            <li><a href="{{ '/#contact' | url }}">Contact</a></li>
-          </ul>
-        </nav>
+        <div class="header-right">
+          <a href="{{ '/contact/' | url }}" class="nav-cta nav-cta--outline">Contact</a>
+          <div class="nav-has-dropdown header-cta-dropdown">
+            <button class="nav-cta nav-cta--solid nav-dropdown-toggle" type="button" aria-expanded="false" aria-haspopup="true">
+              View our products <span class="dropdown-chevron" aria-hidden="true"></span>
+            </button>
+            <div class="nav-dropdown-menu nav-dropdown-menu--visit" role="menu">
+              <div class="dropdown-section">
+                <a href="{{ '/products/hoopd/' | url }}" role="menuitem" class="product-visit-link">
+                  <span class="product-visit-logo product-visit-logo--hoopd"></span>
+                  <span class="product-visit-name">Visit Hoop'd</span>
+                  <span class="link-chevron" aria-hidden="true"></span>
+                </a>
+                <a href="{{ '/products/hxly/' | url }}" role="menuitem" class="product-visit-link">
+                  <span class="product-visit-logo product-visit-logo--hxly"></span>
+                  <span class="product-visit-name">Visit Hxly</span>
+                  <span class="link-chevron" aria-hidden="true"></span>
+                </a>
+                <a href="{{ '/products/harla/' | url }}" role="menuitem" class="product-visit-link">
+                  <span class="product-visit-logo product-visit-logo--harla"></span>
+                  <span class="product-visit-name">Visit Harla</span>
+                  <span class="link-chevron" aria-hidden="true"></span>
+                </a>
+              </div>
+            </div>
+          </div>
+          <button class="hamburger hamburger--squeeze" type="button">
+            <span class="visually-hidden">Toggle menu</span>
+            <span class="hamburger-box">
+              <span class="hamburger-inner"></span>
+            </span>
+          </button>
+        </div>
       </div>
     </header>
 
@@ -53,49 +190,84 @@
 
     <footer>
       <div class="wrapper">
-        <div id="footer-link-bar">
-          <nav aria-label="Footer navigation">
-            <ul>
-            <li><a href="{{ '/#case-studies' | url }}">Case Studies</a></li>
-            <li><a href="{{ '/#solutions' | url }}">Solutions</a></li>
-            <li><a href="{{ '/#news-updates' | url }}">News</a></li>
-            <li><a href="{{ '/#insights' | url }}">Insights</a></li>
-            <li><a href="{{ '/#contact' | url }}">Contact</a></li>
-            </ul>
-          </nav>
 
-          <div>
-            <h3>Solutions</h3>
+        <div class="footer-links">
+
+          <div class="footer-col">
+            <a href="/" class="footer-logo">
+              <img src="/static/images/mortar-logo.svg" alt="Mortar" height="40" width="90">
+            </a>
+          </div>
+
+          <div class="footer-col">
+            <h4 class="footer-col-heading">Products</h4>
             <ul>
-            {% for solution in collections.solutions %}
-              <li>
-                <a href="{{ solution.url }}">{{ solution.data.title }}</a>
-              </li>
-            {% endfor %}
+              <li><a href="{{ '/products/hoopd/' | url }}">Hoop'd</a></li>
+              <li><a href="{{ '/products/harla/' | url }}">Harla</a></li>
+              <li><a href="{{ '/products/hxly/' | url }}">Hxly</a></li>
+            </ul>
+            <h4 class="footer-col-heading footer-col-heading--spaced">Services</h4>
+            <ul>
+              <li><a href="{{ '/solutions/service-design/' | url }}">Service design</a></li>
+              <li><a href="{{ '/solutions/system-design/' | url }}">System design</a></li>
+              <li><a href="{{ '/solutions/modelling-and-simulation/' | url }}">Modelling and simulation</a></li>
+              <li><a href="{{ '/solutions/data-and-frameworks/' | url }}">Data and frameworks</a></li>
             </ul>
           </div>
 
-          <div>
-            <h3>Features</h3>
+          <div class="footer-col">
+            <h4 class="footer-col-heading">Use Cases</h4>
             <ul>
-            {% for feature in features %}
-              <li>
-                {{ feature.title }}
-              </li>
-            {% endfor %}
+              <li><a href="{{ '/solutions/smarter-decisions/' | url }}">Smarter decisions</a></li>
+              <li><a href="{{ '/solutions/stronger-teams/' | url }}">Stronger teams</a></li>
+              <li><a href="{{ '/solutions/bigger-impact/' | url }}">Bigger impact</a></li>
+              <li><a href="{{ '/solutions/shared-value/' | url }}">Shared value</a></li>
+              <li><a href="{{ '/solutions/better-connections/' | url }}">Better connections</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-col">
+            <h4 class="footer-col-heading">Industries</h4>
+            <ul>
+              <li><a href="{{ '/solutions/health/' | url }}">Health</a></li>
+              <li><a href="{{ '/solutions/government/' | url }}">Government</a></li>
+              <li><a href="{{ '/solutions/cultural-sector/' | url }}">Cultural Sector</a></li>
+              <li><a href="{{ '/solutions/housing/' | url }}">Housing</a></li>
+              <li><a href="{{ '/solutions/asset-management/' | url }}">Asset management</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-col">
+            <h4 class="footer-col-heading">Categories</h4>
+            <ul>
+              <li><a href="{{ '/content/' | url }}?filter=product">Product</a></li>
+              <li><a href="{{ '/content/' | url }}?filter=solution">Solution</a></li>
+              <li><a href="{{ '/content/' | url }}?filter=research">Research</a></li>
+              <li><a href="{{ '/content/' | url }}?filter=use-case">Use Case</a></li>
+              <li><a href="{{ '/content/' | url }}?filter=case-study">Case Study</a></li>
+              <li><a href="{{ '/content/' | url }}?filter=service">Service</a></li>
+              <li><a href="{{ '/content/' | url }}?filter=industry">Industry</a></li>
+              <li><a href="{{ '/content/' | url }}?filter=company">Company</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-col">
+            <h4 class="footer-col-heading">Who we are</h4>
+            <ul>
+              <li><a href="{{ '/about/' | url }}">About</a></li>
+              <li><a href="{{ '/contact/' | url }}">Contact</a></li>
+              <li><a href="{{ '/content/' | url }}?filter=company">Latest News</a></li>
+              <li><a href="{{ '/insights/work-with-us/' | url }}">Work with us</a></li>
             </ul>
           </div>
 
         </div>
 
         <div class="footer-disclaimer">
-          <p>
-            &copy; 2025 Mortar
-          </p>
-          <p>
-            Mortar Works Limited is a company registered in England and Wales (Co. No. 12169493).
-          </p>
+          <p>&copy; 2026 Mortar</p>
+          <p>Mortar Works Limited is a company registered in England and Wales No. 12169493.</p>
         </div>
+
       </div>
     </footer>
 

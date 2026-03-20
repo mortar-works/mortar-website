@@ -4,6 +4,13 @@ date: 2022-12-18
 image: hc03_2.jpg
 author: George Unsworth
 draft: false
+category: use-case
+keywords:
+  - exclusion
+  - data capture
+  - community information
+  - isolation
+  - older residents
 description: Combat isolation and improve outreach with user-led communication tools that connect residents to community services and cultural initiatives.
 tags:
   - exclusion

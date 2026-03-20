@@ -4,6 +4,13 @@ date: 2020-05-01
 image: creating-connections01.jpg
 author: George Unsworth
 draft: false
+category: solution
+keywords:
+  - collections
+  - income
+  - machine learning
+  - financial engagement
+  - AI
 description: Enhance revenue with AI-powered tools that unify financial data, automate collections, and improve customer engagement.
 tags:
     - income

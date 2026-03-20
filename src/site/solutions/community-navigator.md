@@ -4,6 +4,17 @@ description: "Build and manage your local network to deliver accurate, up-to-dat
 link: "/community-navigator"
 label_image: "/static/images/solutions/solution_label01.png"
 image: "/static/images/solutions/communitynavigator01.png"
+date: 2024-01-01
+author: Mortar
+draft: false
+category: solution
+keywords:
+  - community navigation
+  - directories
+  - networks
+  - Hoop'd
+  - local services
+  - events
 ---
 
 ## Community Navigator  

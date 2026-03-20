@@ -5,6 +5,17 @@ description: "Provide training and resources for your venue and staff to become 
 read_more_link: "/venue-accreditation"
 label_image: "/static/images/solutions/solution_label01.png"
 image: "/static/images/solutions/dfvc-dashboard02.png"
+date: 2024-01-01
+author: Mortar
+draft: false
+category: solution
+keywords:
+  - accreditation
+  - training
+  - accessibility
+  - venue
+  - dementia
+  - certification
 ---
 
 ## Introduction  

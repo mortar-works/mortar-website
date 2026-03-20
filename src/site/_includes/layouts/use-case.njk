@@ -1,6 +1,6 @@
 {% extends 'layouts/base.njk' %}
 
-{% block pageTitle %}{{ title }} - Use cases - {{ super() }}}{% endblock %}
+{% block pageTitle %}{{ title }} - Use cases - {{ super() }}{% endblock %}
 {% block bodyId %}{{ title | slug }}{% endblock %}
 {% block mainClass %}use-case content-page{% endblock %}
 
@@ -9,34 +9,63 @@
 
 {% block content %}
 <section>
-  <div class="hero-image" style="background-image: url('{{ '/static/images/use-cases/' + pageImage | url }}')"></div>
-  <div class="wrapper">
-    <article>
-      <h1>{{ title }}</h1>
-      {{ content | safe }}
-    </article>
+  {% include 'partials/breadcrumb.njk' %}
+  <div class="wrapper article-layout">
+    <nav class="article-toc" id="article-toc" aria-label="Article contents"></nav>
 
-    <p class="use-case-get-in-touch">
-      <a class="cta" href="https://mehmet531303.typeform.com/to/HrCsUkRQ" target="_blank" rel="noopener">Get in touch</a>
-    </p>
+    <div class="article-main">
+      <div class="article-header">
+        <div class="article-header-text">
+          <h1>{{ title }}</h1>
+          {% if description %}
+            <p class="article-strapline">{{ description }}</p>
+          {% endif %}
+          <p class="article-date">{{ date | date }}</p>
+          {% if logos %}
+            <div class="article-logos-row">
+              {% for l in logos %}
+                <img class="article-logos-row-item" src="{{ l }}" alt="">
+              {% endfor %}
+            </div>
+          {% endif %}
+        </div>
+        <div class="article-header-anim" id="article-header-anim" aria-hidden="true"></div>
+      </div>
 
-    <div class="other-content">
-      {% if previousPost %}
-        <div class="previous-post">
-          <a href="{{ previousPost.url }}">
-            <span>Previous use case</span>
-            {{ previousPost.data.title }}
-          </a>
-        </div>
+      <article class="article-content">
+        {{ content | safe }}
+      </article>
+
+      {% if keywords %}
+      <div class="article-keywords">
+        {% for keyword in keywords %}
+          <a class="article-keyword" href="/content/?search={{ keyword | replace(' ', '+') }}">{{ keyword }}</a>
+        {% endfor %}
+      </div>
       {% endif %}
-      {% if nextPost %}
-        <div class="next-post">
-          <a href="{{ nextPost.url }}">
-            <span>Next use case</span>
-            {{ nextPost.data.title }}
-          </a>
-        </div>
-      {% endif %}
+
+      <p class="solution-get-in-touch">
+        <a class="cta" href="/contact/">Get in touch</a>
+      </p>
+
+      <div class="other-content">
+        {% if previousPost %}
+          <div class="previous-post">
+            <a href="{{ previousPost.url }}">
+              <span>Previous use case</span>
+              <span class="post-title">{{ previousPost.data.title }}</span>
+            </a>
+          </div>
+        {% endif %}
+        {% if nextPost %}
+          <div class="next-post">
+            <a href="{{ nextPost.url }}">
+              <span>Next use case</span>
+              <span class="post-title">{{ nextPost.data.title }}</span>
+            </a>
+          </div>
+        {% endif %}
+      </div>
     </div>
   </div>
 </section>

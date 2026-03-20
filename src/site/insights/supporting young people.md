@@ -4,6 +4,13 @@ date: 2023-04-21
 image: maxed03_2.jpg
 author: George Unsworth
 draft: false
+category: use-case
+keywords:
+  - triage tool
+  - young people
+  - exclusion
+  - directories
+  - local area
 description: Empower educators with quick and effective tools for assessing and referring young people at risk of exclusion.
 tags:
   - data services

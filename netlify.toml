@@ -3,7 +3,19 @@
   publish = "public"
 
 [build.environment]
-  NODE_VERSION = "14"
+  NODE_VERSION = "20"
 
-[build.processing]
-  skip_processing = true
+[[redirects]]
+  from = "/insights/hoopd/"
+  to = "/products/hoopd/"
+  status = 301
+
+[[redirects]]
+  from = "/insights/harla/"
+  to = "/products/harla/"
+  status = 301
+
+[[redirects]]
+  from = "/insights/hxly/"
+  to = "/products/hxly/"
+  status = 301

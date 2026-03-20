@@ -5,7 +5,7 @@ const appendSuffix = n => {
 };
 
 module.exports = function dateFilter(value) {
-  const dateObject = new Date(value);
+  const dateObject = value ? new Date(value) : new Date();
 
   const months = [
     'January', 'February', 'March', 'April', 'May', 'June', 

@@ -10,12 +10,15 @@ module.exports = function(eleventyConfig) {
   eleventyConfig.addPassthroughCopy("src/site/static");
 
   // Enable YAML data files to be processed
-  eleventyConfig.addDataExtension("yaml", contents => yaml.safeLoad(contents));
+  eleventyConfig.addDataExtension("yaml", contents => yaml.load(contents));
 
   // Add custom filters
   eleventyConfig.addFilter('date', dateFilter);
   eleventyConfig.addFilter('markdown', markdownFilter);
   eleventyConfig.addFilter('w3date', w3DateFilter);
+  eleventyConfig.addFilter('titlecase', str =>
+    (str || '').replace(/-/g, ' ').replace(/\b\w/g, c => c.toUpperCase())
+  );
 
   // Create a collection for blog posts (live posts only, no drafts)
   const livePosts = post => post.date <= new Date() && !post.data.draft;
@@ -56,15 +59,45 @@ module.exports = function(eleventyConfig) {
     return collectionApi.getFilteredByGlob("src/site/solutions/*.md");
   });
 
+  // Products collection
+  eleventyConfig.addCollection("products", function(collectionApi) {
+    return collectionApi.getFilteredByGlob("src/site/products/*.md")
+      .filter(livePosts);
+  });
+
  // Add a new 'news' collection
  eleventyConfig.addCollection("news", function (collectionApi) {
   return collectionApi
     .getFilteredByGlob("src/site/news/*.md")
-    .sort((a, b) => b.date - a.date) // Sort by date (newest first)
-    .slice(0, 3); // Limit to the 3 most recent posts
+    .sort((a, b) => b.date - a.date); // Sort by date (newest first)
 });
 
+  // 4 most recent company news articles (for about page hero)
+  eleventyConfig.addCollection("recentCompanyNews", function (collectionApi) {
+    return collectionApi
+      .getFilteredByGlob("src/site/news/*.md")
+      .filter(item => item.data.category === 'company')
+      .sort((a, b) => b.date - a.date)
+      .slice(0, 4);
+  });
 
+  // Pinned items for the frontpage topline
+  eleventyConfig.addCollection("pinned", function(collectionApi) {
+    return collectionApi.getAll()
+      .filter(item => item.data.pinned === true && !item.data.draft);
+  });
+
+  // Unified content feed: insights + case studies + news + solutions + products, sorted by date
+  eleventyConfig.addCollection("allContent", function(collectionApi) {
+    const insights    = collectionApi.getFilteredByGlob("src/site/insights/*.md");
+    const caseStudies = collectionApi.getFilteredByGlob("src/site/case-studies/*.md");
+    const news        = collectionApi.getFilteredByGlob("src/site/news/*.md");
+    const solutions   = collectionApi.getFilteredByGlob("src/site/solutions/*.md");
+    const products    = collectionApi.getFilteredByGlob("src/site/products/*.md");
+    return [...insights, ...caseStudies, ...news, ...solutions, ...products]
+      .filter(post => post.date <= new Date() && !post.data.draft)
+      .sort((a, b) => b.date - a.date);
+  });
 
   // Watch targets for development (live reload)
   eleventyConfig.setUseGitIgnore(false);

@@ -1,3 +1,8 @@
+@use 'sass:color';
+@use "../common/variables" as *;
+@use "../utilities/responsive" as *;
+@use "../common/typography" as *;
+
 #use-case-financial-processes {
   .hero-image {
     background-image: url('/static/images/use-cases/financial-processes.jpg');
@@ -15,7 +20,7 @@
 }
 
 .other-use-cases {
-  background: lighten($mortar-yellow, 15%);
+  background: color.adjust($mortar-yellow, $lightness: 15%);
 
   ul {
     list-style: none;

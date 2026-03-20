@@ -1,13 +1,28 @@
+@use 'sass:map';
+@use 'sass:color';
+@use "../common/variables" as *;
+@use "../utilities/responsive" as *;
+@use "../common/typography" as *;
+
 body {
-  background-color: $mortar-purple;
+  background-color: #f9f8fd;
   color: $white;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+
+  &.menu-open {
+    overflow: hidden;
+  }
+}
+
+main {
+  flex: 1;
 }
 
 header, footer, main > section {
-  overflow: hidden;
-
   & .wrapper {
-    max-width: map-get($breakpoints, 'large');
+    max-width: map.get($breakpoints, 'large');
     margin: auto;
     padding: 1em 2em;
 
@@ -16,48 +31,240 @@ header, footer, main > section {
   }
 }
 
+footer, main > section {
+  overflow: hidden;
+}
+
 header {
-  height: 7em;
+  font-family: 'Manrope', sans-serif;
   position: sticky;
   top: 0;
   z-index: 1000;
-  background: transparent !important; /* Initially transparent */
-  color: $white; /* Change to white to ensure white text */
+  background: #f9f8fd !important;
+  color: $black;
   transition: background-color 0.3s ease, box-shadow 0.3s ease;
-  box-shadow: none; /* No shadow initially */
+  box-shadow: none;
 
-  /* Sticky behavior */
   &.sticky {
-    background-color: rgba(67, 34, 124, 0.8) !important; /* Purple semi-transparent */
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15) !important; /* Add shadow */
+    background-color: #f9f8fd !important;
   }
 
-  /* Ensure white links across all pages */
   nav a {
-    color: $white !important; /* White links */
+    color: $black !important;
     transition: color 0.3s ease;
   }
 
-  /* Apply white logo globally */
-  #mortar-logo {
-    margin: 0;
-    padding: 0;
-    height: 75px;
-    width: 165px;
-    display: block;
-    background: transparent scroll no-repeat 0 0;
-    background-image: url('../images/mortar-logo-white.png'); /* White logo */
-    background-size: cover;
-    text-indent: -9999px;
-    transition: background-image 0.3s ease;
-  }
-
+  /* Wrapper drives the height — explicit 7em, no vertical padding */
   .wrapper {
+    height: 7em;
+    padding: 0 2em 1.2em;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    flex-wrap: wrap;
+    align-items: flex-end;
+
+    @media (max-width: 767px) {
+      height: 5em;
+      padding: 0 1.2em 0.8em;
+    }
+  }
+
+  .header-left {
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+    gap: 2.5em;
+  }
+
+  .header-right {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    gap: 0.8em;
+  }
+
+  #mortar-logo {
+    display: flex;
     align-items: center;
+    flex-shrink: 0;
+
+    &:hover, &:focus, &:active {
+      box-shadow: none;
+      background-color: transparent;
+    }
+
+    img {
+      display: block;
+      height: 47px;
+      width: auto;
+    }
+  }
+
+  .nav-cta {
+    display: none;
+
+    @include respond-to('small') {
+      display: inline-flex;
+      align-items: center;
+      padding: 0.5em 1.2em;
+      border-radius: 4px;
+      font-size: 0.95em;
+      text-decoration: none;
+      font-weight: 500;
+      white-space: nowrap;
+      transition: background-color 0.2s ease, border-color 0.2s ease, color 0.2s ease;
+    }
+
+    &--outline {
+      border: 1.5px solid $black;
+      color: $black !important;
+      background: transparent;
+
+      &:hover {
+        border-color: $black;
+        background: rgba($black, 0.08);
+      }
+    }
+
+    &--solid {
+      background: $mortar-yellow;
+      color: $mortar-purple !important;
+      border: 1.5px solid $mortar-yellow;
+      font-weight: 600;
+
+      &:hover {
+        background: color.adjust($mortar-yellow, $lightness: -8%);
+        border-color: color.adjust($mortar-yellow, $lightness: -8%);
+      }
+    }
+  }
+
+  /* CTA "View our products" dropdown in header-right */
+  .header-cta-dropdown {
+    display: none;
+
+    @include respond-to('small') {
+      display: block;
+      position: relative;
+    }
+
+    // Keep the solid CTA button styling regardless of nav-dropdown-toggle resets
+    .nav-dropdown-toggle {
+      background: $mortar-yellow !important;
+      color: $mortar-purple !important;
+      border: 1.5px solid $mortar-yellow !important;
+      font-weight: 600 !important;
+      padding: 0.5em 1.2em !important;
+      border-radius: 4px !important;
+      font-size: 0.95em !important;
+      gap: 0.55em !important;
+      white-space: nowrap;
+      display: inline-flex !important;
+      line-height: normal !important;
+      box-sizing: border-box;
+
+      &:hover {
+        background: color.adjust($mortar-yellow, $lightness: -8%) !important;
+        border-color: color.adjust($mortar-yellow, $lightness: -8%) !important;
+      }
+
+      .dropdown-chevron {
+        border-right-color: $mortar-purple;
+        border-bottom-color: $mortar-purple;
+      }
+    }
+
+    .nav-dropdown-menu--visit {
+      left: auto;
+      right: 0;
+      border-radius: 8px 0 8px 8px;
+      min-width: 260px;
+      padding: 0.5em 0;
+
+      &::before {
+        left: auto;
+        right: 0;
+        width: 170px; // approximate button width
+        border-radius: 4px 4px 0 0;
+      }
+
+      // Reset the default hover-dim rule for these rows
+      &:has(a:hover) a:not(:hover) {
+        opacity: 0.5;
+      }
+    }
+
+    // Large product rows with logo
+    .product-visit-link {
+      display: flex !important;
+      align-items: center !important;
+      justify-content: flex-start !important;
+      gap: 1em;
+      padding: 0.75em 1.2em !important;
+
+      &::after {
+        display: none !important;
+      }
+
+      &:last-child {
+        border-bottom: none;
+      }
+    }
+
+    .product-visit-logo {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 48px;
+      height: 48px;
+      border-radius: 8px;
+      flex-shrink: 0;
+
+      &--hoopd {
+        background: #1a6eb5;
+      }
+
+      &--hxly {
+        background: $mortar-purple;
+      }
+
+      &--harla {
+        background: $mortar-orange;
+      }
+
+      &--hoopd,
+      &--hxly,
+      &--harla {
+        &::after {
+          content: 'H';
+          font-family: 'Manrope', sans-serif;
+          font-weight: 700;
+          font-size: 1.4em;
+          color: $white;
+        }
+      }
+    }
+
+    .product-visit-name {
+      flex: 1;
+      font-family: 'Manrope', sans-serif;
+      font-weight: 600;
+      font-size: 0.95em;
+      color: $mortar-purple;
+    }
+
+    .product-visit-link .link-chevron {
+      flex-shrink: 0;
+    }
+
+    // Override the hover bridge to be right-aligned
+    @include respond-to('small') {
+      &::before {
+        left: auto !important;
+        right: 0 !important;
+        width: 170px !important;
+      }
+    }
   }
 
   .hamburger {
@@ -68,13 +275,12 @@ header {
     .hamburger-inner,
     .hamburger-inner:after,
     .hamburger-inner:before {
-      background-color: $white !important; /* White hamburger for consistency */
+      background-color: $black !important;
     }
   }
 
   &.nav-active {
-    height: 100%;
-    position: absolute;
+    position: fixed;
     top: 0;
     right: 0;
     bottom: 0;
@@ -83,28 +289,38 @@ header {
     z-index: 10000;
 
     nav a {
-      color: $black; /* Black text for the nav when active */
+      color: $black;
     }
 
-    #mortar-logo {
-      background-image: url('../images/mortar-logo-black.png'); /* Black logo */
+    #mortar-logo img {
+      filter: invert(1);
     }
   }
 
   &.nav-active nav {
     display: flex;
-    margin-top: 3em;
-    font-size: 1.4em;
+    flex-direction: column;
+    align-items: flex-start;
+    position: absolute;
+    top: 7em;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    overflow-y: auto;
+    padding: 1em 2em 2em;
+    font-size: 1em;
+
+    @media (max-width: 767px) {
+      top: 5em;
+    }
   }
 
   nav {
     display: none;
     align-items: center;
-    flex-basis: 100%;
 
     @include respond-to('small') {
       display: flex;
-      flex-basis: auto;
     }
   }
 
@@ -115,23 +331,27 @@ header {
 
     li {
       a {
-        @include rajdhani-regular-type;
-        font-size: 1.8em;
-        line-height: 2em;
-        color: $white; /* Ensure white color */
+        @include regular-type;
+        font-size: 1.1em;
+        line-height: 1.6em;
+        color: $black;
       }
     }
 
     @include respond-to('small') {
       display: flex;
       flex-wrap: wrap;
-      font-size: 1.5em;
+      align-items: center;
+      font-size: 1.1em;
 
       li {
+        display: flex;
+        align-items: center;
+
         a {
           font-size: 1em;
           line-height: 1em;
-          padding: 0 0.6em;
+          padding: 0 0.9em;
         }
 
         &:last-of-type a {
@@ -143,76 +363,518 @@ header {
   }
 }
 
+/* Company dropdown nav item */
+.nav-has-dropdown {
+  position: relative;
+
+  .nav-dropdown-toggle {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0 0.6em;
+    color: $black;
+    @include regular-type;
+    font-size: 1em;
+    line-height: 1em;
+    display: flex;
+    align-items: center;
+    gap: 0.7em;
+
+    .dropdown-chevron {
+      display: inline-block;
+      width: 6px;
+      height: 6px;
+      border-right: 2px solid #fc7d75;
+      border-bottom: 2px solid #fc7d75;
+      transform: rotate(45deg);
+      transition: transform 0.25s ease;
+      margin-bottom: 0;
+    }
+
+    &[aria-expanded="true"] .dropdown-chevron {
+      transform: rotate(-135deg);
+      margin-bottom: -3px;
+    }
+  }
+
+  .nav-dropdown-menu {
+    display: block;
+    position: absolute;
+    top: calc(100% + 10px);
+    left: 0;
+    background: #faf5e0;
+    border-radius: 8px;
+    box-shadow:
+      0 2px 4px rgba(67, 34, 124, 0.06),
+      0 8px 24px rgba(67, 34, 124, 0.14),
+      0 20px 48px rgba(0, 0, 0, 0.10);
+    min-width: 315px;
+    padding: 1em 0 0.8em 0;
+    z-index: 100;
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+
+    &.is-open {
+      opacity: 1;
+      visibility: visible;
+      pointer-events: auto;
+    }
+  }
+
+  .nav-dropdown-menu {
+    font-family: 'Manrope', sans-serif;
+  }
+
+  .dropdown-subheading {
+    display: block;
+    @include regular-type;
+    font-family: 'Manrope', sans-serif;
+    font-size: 0.9em;
+    color: $black;
+    padding: 0 1.4em 0.8em 1.4em;
+    margin-bottom: 0.8em;
+  }
+
+  .nav-dropdown-menu:has(a:hover) a:not(:hover) {
+    opacity: 0.3;
+  }
+
+  .nav-dropdown-menu a {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: $black !important;
+    font-family: 'Manrope', sans-serif;
+    font-size: 0.9em;
+    padding: 0.65em 1.4em;
+    text-decoration: none;
+    transition: color 0.2s ease, opacity 0.2s ease;
+    outline: none;
+    position: relative;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+
+    &::after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 1.4em;
+      right: 1.4em;
+      height: 1px;
+      background: $mortar-purple;
+      opacity: 0.1;
+      transition: opacity 0.2s ease;
+    }
+
+    &:hover::after {
+      opacity: 0.5;
+    }
+
+    &:focus-visible {
+      outline: 2px solid $mortar-orange;
+      outline-offset: -2px;
+    }
+
+    &:hover, &:focus, &:active {
+      box-shadow: none;
+    }
+
+    &:active {
+      color: $mortar-orange !important;
+    }
+
+    .link-chevron {
+      flex-shrink: 0;
+      display: inline-block;
+      width: 6px;
+      height: 6px;
+      border-right: 2px solid #fc7d75;
+      border-bottom: 2px solid #fc7d75;
+      transform: rotate(-45deg);
+      flex-shrink: 0;
+    }
+
+    &:hover {
+      color: $mortar-orange !important;
+    }
+  }
+
+  .dropdown-link-label {
+    display: flex;
+    align-items: center;
+    gap: 0.7em;
+  }
+
+  .dropdown-emoji {
+    font-size: 1.4em;
+    line-height: 1;
+  }
+
+  .dropdown-divider {
+    border: none;
+    border-top: 1px solid rgba($mortar-purple, 0.2);
+    margin: 0.5em 0;
+  }
+
+  /* Footer "view more" links within dropdowns */
+  .nav-dropdown-menu a.dropdown-link--more {
+    font-size: 0.8em;
+    padding-top: 1.4em;
+    color: rgba($black, 0.6) !important;
+    justify-content: flex-start;
+    gap: 0.5em;
+
+    &::after {
+      display: none;
+    }
+
+    &:hover {
+      background-color: transparent;
+      color: $mortar-orange !important;
+    }
+
+    .link-chevron {
+      border: none;
+      width: auto;
+      height: auto;
+      background: none;
+      transform: none;
+      flex-shrink: 0;
+
+      &::before {
+        content: '→';
+        display: inline-block;
+        font-size: 1em;
+        color: $mortar-orange;
+      }
+    }
+  }
+
+  @include respond-to('small') {
+    /* Invisible hover bridge — covers the 10px gap so the cursor doesn't lose the dropdown */
+    &::before {
+      content: '';
+      position: absolute;
+      top: 100%;
+      left: 0;
+      width: 130px;
+      height: 12px;
+      background: transparent;
+      display: none;
+      z-index: 102;
+    }
+
+    &:hover::before {
+      display: block;
+    }
+
+
+    &:hover .dropdown-chevron {
+      transform: rotate(-135deg);
+      margin-bottom: -3px;
+    }
+  }
+}
+
+/* Wide three-column dropdown (Solutions) */
+.nav-has-dropdown .nav-dropdown-menu--wide {
+  min-width: 820px;
+
+  .dropdown-columns {
+    display: flex;
+  }
+
+  .dropdown-column {
+    flex: 1;
+
+    &:not(:last-child) {
+      border-right: 1px solid rgba(0, 0, 0, 0.08);
+    }
+  }
+}
+
+/* Products dropdown — single wide column with name + subtitle */
+.nav-has-dropdown .nav-dropdown-menu--products {
+  min-width: 380px;
+
+  .product-link {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 0.2em;
+    padding-bottom: 0.8em;
+  }
+
+  .product-name {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1.1em;
+  }
+
+  .product-desc {
+    font-size: 0.8em;
+    color: rgba($black, 0.6);
+    line-height: 1.45;
+    max-width: 65%;
+    white-space: normal;
+    overflow: visible;
+    text-overflow: clip;
+  }
+
+  .product-link:last-child::after {
+    display: none;
+  }
+}
+
+/* Content dropdown — two-column layout */
+.nav-has-dropdown .nav-dropdown-menu--content {
+  min-width: 620px;
+
+  .dropdown-column:first-child {
+    flex: 1.21;
+  }
+}
+
+/* Remove bottom border on last link in specific dropdown sections */
+.nav-dropdown-menu--content .dropdown-column:last-child a:last-child::after {
+  display: none;
+}
+
+.nav-dropdown-menu--company .dropdown-section a:last-child::after {
+  display: none;
+}
+
+/* Mobile dropdown (within nav-active overlay) */
+.nav-active .nav-has-dropdown {
+  .nav-dropdown-toggle {
+    color: $black;
+    font-size: 1.1em;
+    line-height: 1.6em;
+    padding: 0.75em 0;
+    min-height: 44px;
+
+    .dropdown-chevron {
+      border-color: $black;
+    }
+  }
+
+  .nav-dropdown-menu {
+    position: static;
+    background: transparent;
+    box-shadow: none;
+    border-radius: 0;
+    padding: 0.2em 0 0.4em 0;
+    display: none;
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+    transition: none;
+
+    &.is-open {
+      display: block;
+    }
+
+    .dropdown-columns {
+      flex-direction: column;
+    }
+  }
+
+  .dropdown-subheading {
+    display: none;
+  }
+
+  .nav-dropdown-menu--wide .dropdown-subheading {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    user-select: none;
+    font-size: 0.8em;
+    color: rgba(0, 0, 0, 0.5);
+    border-bottom: none;
+    padding: 0.5em 0.8em;
+    margin-bottom: 0;
+
+    &::after {
+      content: '';
+      display: inline-block;
+      width: 5px;
+      height: 5px;
+      border-right: 2px solid rgba(0, 0, 0, 0.5);
+      border-bottom: 2px solid rgba(0, 0, 0, 0.5);
+      transform: rotate(45deg);
+      flex-shrink: 0;
+      margin-bottom: 2px;
+    }
+  }
+
+  .nav-dropdown-menu a.dropdown-link--more {
+    display: flex;
+    color: rgba(0, 0, 0, 0.5) !important;
+    padding-top: 0.8em;
+
+    .link-chevron::before {
+      color: $black;
+    }
+
+    &:hover, &:focus, &:active {
+      color: $white !important;
+      box-shadow: none;
+    }
+  }
+
+  /* Column rules come after footer link rule so display:none wins the cascade */
+  .nav-dropdown-menu--wide .dropdown-column {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.15);
+    padding-bottom: 0.4em;
+    margin-bottom: 0.2em;
+
+    > a {
+      display: none;
+    }
+
+    &.is-open {
+      > a {
+        display: flex;
+      }
+
+      .dropdown-subheading::after {
+        transform: rotate(-135deg);
+        margin-bottom: -2px;
+      }
+    }
+  }
+
+  .product-desc {
+    display: none;
+  }
+
+  .nav-dropdown-menu a {
+    color: $black !important;
+    font-size: 1em;
+    padding: 0.65em 0.8em;
+    min-height: 44px;
+
+    .link-chevron {
+      border-right-color: $black;
+      border-bottom-color: $black;
+    }
+
+    &:hover, &:focus, &:active {
+      background-color: rgba(0, 0, 0, 0.08);
+      color: $white !important;
+      box-shadow: none;
+    }
+  }
+}
+
 /* Sticky header styles */
 .sticky {
-  background-color: rgba(67, 34, 124, 0.8) !important; /* Semi-transparent purple */
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15) !important; /* Add shadow when sticky */
+  background-color: #f9f8fd !important;
 }
 
 footer {
-  padding: 2em 0 6em 0;
+  background-color: $mortar-purple;
+  color: rgba($white, 0.85);
+  font-family: 'Manrope', sans-serif;
+  padding: 4em 0 2.5em;
+
+  a {
+    color: rgba($white, 0.65);
+    text-decoration: none;
+    font-family: 'Manrope', sans-serif;
+    font-size: 0.875em;
+    font-weight: 400;
+    transition: color 0.2s ease;
+
+    &:hover, &:focus {
+      color: $white;
+      box-shadow: none;
+      background: transparent;
+    }
+
+    &:active {
+      color: $mortar-orange;
+      box-shadow: none;
+    }
+  }
 
   ul {
     list-style: none;
-    padding-left: 0;
+    padding: 0;
+    margin: 0;
   }
 
   li {
-    font-size: 1.2em;
-    line-height: 1.5em;
-    margin-bottom: 0.6em;
+    margin-bottom: 0.55em;
+    font-size: 1em;
+    line-height: 1.4;
   }
 
-  nav ul, h3 {
-    padding-top: 0.6em;
-    margin-bottom: 0.6em;
-    margin-top: 1.2em;
-    border-top: 2px solid $mortar-orange;
+  .footer-logo {
+    display: inline-flex;
+
+    img {
+      height: 38px;
+      width: auto;
+      filter: brightness(0) invert(1);
+      display: block;
+    }
+
+    &:hover, &:focus, &:active {
+      box-shadow: none;
+      background: transparent;
+    }
   }
 
-  nav ul {
-    margin-top: 1.4em;
-  }
-
-  #footer-link-bar {
+  .footer-links {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-    grid-gap: 1em;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2.5em 1.5em;
 
     @include respond-to('small') {
-      grid-gap: 2em;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 3em 2em;
     }
 
     @include respond-to('medium') {
-      grid-gap: 3em;
+      grid-template-columns: repeat(6, 1fr);
+      gap: 2em;
     }
+  }
 
-    @include respond-to('large') {
-      grid-gap: 4em;
+  .footer-col-heading {
+    font-family: 'Manrope', sans-serif;
+    font-size: 0.68em;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.13em;
+    color: $mortar-orange;
+    margin: 0 0 1.1em 0;
+
+    &--spaced {
+      margin-top: 2em;
     }
   }
 
   .footer-disclaimer {
-    margin-top: 3em;
-    padding-top: 1.2em;
-    position: relative;
+    margin-top: 3.5em;
+    padding-top: 1.5em;
+    display: flex;
+    flex-direction: column;
+    gap: 0.4em;
 
     @include respond-to('small') {
-      margin-top: 5em;
-    }
-
-    &:before {
-      content: '';
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 64px;
-      height: 1px;
-      background-color: $white;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
     }
 
     p {
-      font-size: 0.9em;
+      font-size: 0.75em;
+      color: rgba($white, 0.35);
       margin: 0;
     }
   }

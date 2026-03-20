@@ -1,0 +1,23 @@
+{% if category %}
+{% set categoryLabels = {
+  "product": "Product",
+  "solution": "Solution",
+  "research": "Research",
+  "use-case": "Use Case",
+  "case-study": "Case Study",
+  "service": "Service",
+  "industry": "Industry",
+  "company": "Company"
+} %}
+{% set categoryLabel = categoryLabels[category] or (category | replace("-", " ") | capitalize) %}
+<nav class="article-breadcrumb" aria-label="Breadcrumb">
+  <div class="wrapper">
+    <div class="breadcrumb-spacer" aria-hidden="true"></div>
+    <ol>
+      <li><a href="/content/">Content</a></li>
+      <li><a href="/content/?filter={{ category }}">{{ categoryLabel }}</a></li>
+      <li aria-current="page">{{ title }}</li>
+    </ol>
+  </div>
+</nav>
+{% endif %}

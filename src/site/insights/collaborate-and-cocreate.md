@@ -5,6 +5,13 @@ image: collaborate_cocreate01.jpg
 author: George Unsworth
 description: Accelerate digital transformation through real-time data and AI-powered collaboration.
 draft: false
+category: use case
+keywords:
+  - digital transformation
+  - AI
+  - real estate
+  - proptech
+  - co-creation
 tags:
   - digital transformation
   - AI
