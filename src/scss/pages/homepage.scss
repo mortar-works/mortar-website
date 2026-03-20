@@ -876,7 +876,7 @@
       max-width: 18em;
       opacity: 0;
 
-      &--pink { color: $mortar-orange; display: block; white-space: nowrap; }
+      &--pink { color: $mortar-orange; display: block; white-space: nowrap; br { display: none; } }
       &--blue  { color: $black; display: block; }
     }
 
@@ -1041,6 +1041,7 @@
 
         &--pink {
           white-space: normal;
+          br { display: inline; }
         }
       }
 

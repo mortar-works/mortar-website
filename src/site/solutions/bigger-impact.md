@@ -1,6 +1,6 @@
 ---
 title: "Bigger impact"
-description: "Scale your work, demonstrate your value, and maximise the difference your organisation makes to the people and communities you serve."
+description: "Learn how we support organisations in scaling their work, demonstrating value, and maximising the impact they are making for the people and communities they serve."
 link: "/bigger-impact"
 label_image: "/static/images/solutions/solution_label01.png"
 image: "/static/images/solutions/digitalskills01.png"

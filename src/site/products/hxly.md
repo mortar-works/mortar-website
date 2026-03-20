@@ -3,7 +3,7 @@ title: Hxly
 date: 2025-03-03
 image: driving-product_01.png
 logo: /static/images/hxly-logo01.svg
-description: Understanding people, actions and behaviour. Hxly builds custom models and datasets. Supporting organisations in developing and applying intelligence to power solutions that serve humans and society.
+description: Understanding people, actions and behaviour. Hxly builds custom models and datasets; supporting organisations in developing and applying intelligence to power solutions that serve humans and society.
 author: Mortar
 draft: false
 category: product
