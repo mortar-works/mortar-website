@@ -1,6 +1,6 @@
 ---
 title: "Modelling and simulation"
-description: "Understand complex systems, test policy scenarios, and forecast outcomes with confidence using advanced modelling and simulation tools."
+description: "Through our Hxly platform we help organisations to better establish and understand their data, testing new services and forecasting outcomes with more confidence using our advanced modelling and simulation tools."
 link: "/modelling-and-simulation"
 label_image: "/static/images/solutions/solution_label01.png"
 image: "/static/images/solutions/digitalskills02.png"

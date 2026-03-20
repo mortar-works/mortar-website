@@ -1,6 +1,6 @@
 ---
 title: "Alternative Provision directory for Gloucestershire"
-description: "Building a platform to help schools and teachers find, coordinate and manage Alternative Provision for young people in partnership with Gloucestershire County Council."
+description: "Using our Hoop'd platform we are building the intelligent directory for helping schools and teachers find, coordinate and manage Alternative Provision for young people in partnership with Gloucestershire County Council."
 read_more_link: "/case-study-url"
 image: "/static/images/case-studies/tenancysustainment01.png"
 author: Mortar
