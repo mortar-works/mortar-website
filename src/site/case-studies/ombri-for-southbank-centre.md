@@ -18,7 +18,7 @@ keywords:
 ---
 
 <figure>
-  <img src="{{ '/static/images/case-studies/Southbank_Ombri03.png' | url }}" />
+  <img src="{{ '/static/images/case-studies/Southbank_Ombri04.png' | url }}" />
   <figcaption>
     The Ombri platform, connecting young people aged 11–25 with creative health opportunities through multiple referral pathways.
   </figcaption>
