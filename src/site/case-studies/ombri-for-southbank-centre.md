@@ -1,5 +1,5 @@
 ---
-title: "Health platform for Southbank Centre"
+title: "Connecting young people to health and wellbeing support"
 description: "Using our Hoop'd platform we are delivering a scalable referral platform connecting young people with creative health opportunities, developed in partnership with Southbank Centre and South East London Integrated Care Board."
 read_more_link: "/case-study-url"
 image: "/static/images/case-studies/tenancysustainment01.png"
@@ -16,6 +16,13 @@ keywords:
   - mental health
   - arts and wellbeing
 ---
+
+<figure>
+  <img src="{{ '/static/images/case-studies/Southbank_Ombri04.png' | url }}" />
+  <figcaption>
+    The Ombri platform, connecting young people aged 11–25 with creative health opportunities through multiple referral pathways.
+  </figcaption>
+</figure>
 
 Working in partnership with Southbank Centre's Arts and Wellbeing team, we designed and built Ombri — a custom digital referral platform that connects young people aged 11–25 with creative health opportunities, and generates the evidence needed to demonstrate their impact.
 
