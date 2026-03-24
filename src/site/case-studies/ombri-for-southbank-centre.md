@@ -17,6 +17,13 @@ keywords:
   - arts and wellbeing
 ---
 
+<figure>
+  <img src="{{ '/static/images/case-studies/Southbank_Ombri01.png' | url }}" />
+  <figcaption>
+    The Ombri platform, connecting young people aged 11–25 with creative health opportunities through multiple referral pathways.
+  </figcaption>
+</figure>
+
 Working in partnership with Southbank Centre's Arts and Wellbeing team, we designed and built Ombri — a custom digital referral platform that connects young people aged 11–25 with creative health opportunities, and generates the evidence needed to demonstrate their impact.
 
 Creative activities have a well-established role in supporting mental health and wellbeing. But access to those activities is often fragmented, and the systems connecting young people to them — through schools, health services, community organisations, and social prescribing — rarely communicate well with one another. Southbank Centre wanted to change that. Ombri is the result: a platform that streamlines referral pathways, strengthens coordination between cultural providers and health systems, and builds a robust evidence base for creative health intervention.
