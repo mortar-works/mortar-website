@@ -1,5 +1,5 @@
 ---
-title: "Health platform for Southbank Centre"
+title: "Connecting young people to health and wellbeing support"
 description: "Using our Hoop'd platform we are delivering a scalable referral platform connecting young people with creative health opportunities, developed in partnership with Southbank Centre and South East London Integrated Care Board."
 read_more_link: "/case-study-url"
 image: "/static/images/case-studies/tenancysustainment01.png"
