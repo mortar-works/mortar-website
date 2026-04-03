@@ -1,0 +1,24 @@
+---
+permalink: /404.html
+---
+{% extends 'layouts/base.njk' %}
+
+{% block pageTitle %}Page not found - Building a better world{% endblock %}
+{% block bodyId %}not-found{% endblock %}
+{% block mainClass %}content-page{% endblock %}
+
+{% block content %}
+<section>
+  <div class="wrapper">
+    <article>
+      <p style="font-family:'Rajdhani',sans-serif;font-weight:700;font-size:clamp(6rem,20vw,14rem);line-height:1;color:#2b1c5a;opacity:0.12;margin:0 0 -0.2em -0.04em;user-select:none;" aria-hidden="true">404</p>
+      <h1>Whoops — looks like a broken link.</h1>
+      <p class="article-strapline">We'll get this fixed soon. In the meantime, please continue navigating the site.</p>
+      <div class="solution-get-in-touch">
+        <a href="/" class="cta">Back to homepage</a>
+      </div>
+      <p><a href="/contact/">Let us know about this</a></p>
+    </article>
+  </div>
+</section>
+{% endblock %}
