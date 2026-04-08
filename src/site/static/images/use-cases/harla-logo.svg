@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 210 80" width="210" height="80">
+  <title>Harla</title>
+  <!-- 4-block mark: 2x2, each 24x24, total 48x48 -->
+  <rect x="0"  y="16" width="24" height="24" fill="#2B2955"/>
+  <rect x="24" y="16" width="24" height="24" fill="#F0A030"/>
+  <rect x="0"  y="40" width="24" height="24" fill="#F5C860"/>
+  <rect x="24" y="40" width="24" height="24" fill="#4D47A0"/>
+  <!-- Wordmark -->
+  <text x="60" y="58" font-family="'Helvetica Neue', 'Arial Black', Helvetica, Arial, sans-serif" font-weight="800" font-size="52" fill="#2B2955" letter-spacing="-1">Harla</text>
+</svg>

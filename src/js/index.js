@@ -43,29 +43,14 @@ function smoothScrollTo(targetY, duration) {
 }
 
 function initArticleToc() {
-  const layout = document.querySelector('.article-layout');
-
-  // Always fade in the layout wrapper once setup is done
-  function fadeInLayout() {
-    requestAnimationFrame(() => requestAnimationFrame(() => {
-      if (layout) layout.classList.add('is-visible');
-    }));
-  }
-
   const toc = document.getElementById('article-toc');
-  if (!toc || !document.querySelector('.article-content')) {
-    fadeInLayout();
-    return;
-  }
+  if (!toc || !document.querySelector('.article-content')) return;
 
   const article = document.querySelector('.article-content');
   const header = document.querySelector('header');
   const headings = Array.from(article.querySelectorAll('h2, h3'));
 
-  if (headings.length === 0) {
-    fadeInLayout();
-    return;
-  }
+  if (headings.length === 0) return;
 
   // Ensure each heading has an ID
   headings.forEach((h) => {
@@ -85,13 +70,6 @@ function initArticleToc() {
     toc.appendChild(a);
   });
 
-  // Set sticky top position to sit just below the header
-  function updateTocTop() {
-    if (header) toc.style.top = header.offsetHeight + 'px';
-  }
-  updateTocTop();
-  window.addEventListener('resize', updateTocTop, { passive: true });
-
   // Set scroll-margin-top so headings land below the sticky header
   function updateScrollMargins() {
     const offset = (header ? header.offsetHeight : 0) + 24;
@@ -105,7 +83,10 @@ function initArticleToc() {
     a.addEventListener('click', (e) => {
       e.preventDefault();
       const target = document.getElementById(a.getAttribute('href').slice(1));
-      if (target) target.scrollIntoView({ behavior: 'smooth' });
+      if (target) {
+        const headerHeight = header ? header.offsetHeight : 0;
+        smoothScrollTo(target.getBoundingClientRect().top + window.scrollY - headerHeight, 1200);
+      }
     });
   });
 
@@ -126,9 +107,6 @@ function initArticleToc() {
   });
 
   headings.forEach((h) => observer.observe(h));
-
-  // Fade in once TOC is fully built and layout is settled
-  fadeInLayout();
 }
 
 window.addEventListener('load', (event) => {
@@ -155,6 +133,18 @@ window.addEventListener('load', (event) => {
         const targetY = partners.getBoundingClientRect().bottom + window.scrollY - header.offsetHeight;
         smoothScrollTo(targetY, 1000);
       }
+    });
+  }
+
+  // Back to top button
+  const backToTop = document.querySelector('.back-to-top');
+  if (backToTop) {
+    backToTop.removeAttribute('hidden');
+    window.addEventListener('scroll', () => {
+      backToTop.classList.toggle('is-visible', window.scrollY > 400);
+    }, { passive: true });
+    backToTop.addEventListener('click', () => {
+      smoothScrollTo(0, 1200);
     });
   }
 
@@ -1114,128 +1104,3 @@ function showConfirmationModal() {
   }
 })();
 
-// ─── Article header block shape animations ────────────────────────────────────
-(function () {
-  const CELL      = 44;
-  const COLS      = 6;
-  const ROWS      = 5;
-  const LERP      = 0.09;   // ease factor per rAF — slower = more graceful
-  const DELAY_MAX = 800;    // max per-block stagger in ms
-
-  // Faded mortar palette: orange, purple, yellow, pink
-  const COLORS = [
-    'rgba(254,109,106,0.38)',
-    'rgba(43,28,90,0.28)',
-    'rgba(255,227,44,0.55)',
-    'rgba(252,168,147,0.65)',
-  ];
-
-  // Six shape definitions: [col, row] pairs, 0-indexed within their bounding box.
-  // JS auto-centres each shape inside the COLS×ROWS container.
-  const SHAPES = [
-    // Triangle — filled, 5 wide × 3 tall
-    [[2,0],[1,1],[2,1],[3,1],[0,2],[1,2],[2,2],[3,2],[4,2]],
-
-    // H — outline strokes, 5 wide × 5 tall
-    [[0,0],[4,0],[0,1],[4,1],[0,2],[1,2],[2,2],[3,2],[4,2],[0,3],[4,3],[0,4],[4,4]],
-
-    // Square — outline, 5 wide × 5 tall
-    [[0,0],[1,0],[2,0],[3,0],[4,0],[0,1],[4,1],[0,2],[4,2],[0,3],[4,3],[0,4],[1,4],[2,4],[3,4],[4,4]],
-
-    // T — 5 wide × 5 tall
-    [[0,0],[1,0],[2,0],[3,0],[4,0],[2,1],[2,2],[2,3],[2,4]],
-
-    // Brickwork — running bond, 6 wide × 4 tall
-    [[0,0],[1,0],[3,0],[4,0],[1,1],[2,1],[4,1],[5,1],[0,2],[1,2],[3,2],[4,2],[1,3],[2,3],[4,3],[5,3]],
-
-    // O — outline, 5 wide × 5 tall
-    [[1,0],[2,0],[3,0],[0,1],[4,1],[0,2],[4,2],[0,3],[4,3],[1,4],[2,4],[3,4]],
-  ];
-
-  function init() {
-    const container = document.getElementById('article-header-anim');
-    if (!container) return;
-
-    const shape = SHAPES[Math.floor(Math.random() * SHAPES.length)];
-
-    // Centre the shape within the COLS×ROWS grid
-    const maxC = Math.max(...shape.map(([c]) => c));
-    const maxR = Math.max(...shape.map(([, r]) => r));
-    const offC = Math.floor((COLS - maxC - 1) / 2);
-    const offR = Math.floor((ROWS - maxR - 1) / 2);
-
-    const W = COLS * CELL;
-    const H = ROWS * CELL;
-
-    const blocks = shape.map(([sc, sr], i) => {
-      const tx = (sc + offC) * CELL;
-      const ty = (sr + offR) * CELL;
-
-      // Random edge start so blocks appear to fly in from the perimeter
-      const edge = Math.floor(Math.random() * 4);
-      let sx, sy;
-      switch (edge) {
-        case 0: sx = Math.random() * W; sy = -CELL;          break; // top
-        case 1: sx = W + CELL;          sy = Math.random() * H; break; // right
-        case 2: sx = Math.random() * W; sy = H + CELL;       break; // bottom
-        default:sx = -CELL;             sy = Math.random() * H; break; // left
-      }
-
-      const el = document.createElement('div');
-      el.style.cssText = [
-        'position:absolute',
-        `width:${CELL}px`,
-        `height:${CELL}px`,
-        `background:${COLORS[i % COLORS.length]}`,
-        'pointer-events:none',
-        'will-change:transform',
-        `transform:translate(${sx}px,${sy}px)`,
-      ].join(';');
-      container.appendChild(el);
-
-      return {
-        el,
-        cx: sx, cy: sy,
-        tx, ty,
-        startAt: performance.now() + Math.random() * DELAY_MAX,
-        done: false,
-      };
-    });
-
-    let allDone = false;
-
-    function loop(now) {
-      if (allDone) return;
-
-      let anyMoving = false;
-      for (const b of blocks) {
-        if (b.done) continue;
-        if (now < b.startAt) { anyMoving = true; continue; }
-
-        b.cx += (b.tx - b.cx) * LERP;
-        b.cy += (b.ty - b.cy) * LERP;
-
-        if (Math.abs(b.cx - b.tx) < 0.5 && Math.abs(b.cy - b.ty) < 0.5) {
-          b.cx = b.tx;
-          b.cy = b.ty;
-          b.done = true;
-        } else {
-          anyMoving = true;
-        }
-
-        b.el.style.transform = `translate(${b.cx}px,${b.cy}px)`;
-      }
-
-      if (!anyMoving) { allDone = true; return; }
-      requestAnimationFrame(loop);
-    }
-
-    requestAnimationFrame(loop);
-  }
-
-  if (document.readyState === 'loading') {
-    document.addEventListener('DOMContentLoaded', init);
-  } else {
-    init();
-  }
-})();

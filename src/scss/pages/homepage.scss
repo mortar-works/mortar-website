@@ -87,7 +87,7 @@
     @include respond-to('small') {
       padding-top: 4em;
       padding-bottom: 4em;
-      background: #f9f8fd;
+      background: #ffffff;
       background-size: cover;
       background-position: center;
     }
@@ -95,7 +95,7 @@
     @media (min-width: 1025px) {
       padding-top: 6em;
       padding-bottom: 6em;
-      background: #f9f8fd;
+      background: #ffffff;
       background-size: cover;
       background-position: center center;
     }
@@ -167,7 +167,7 @@
         right: -0.05em;
         bottom: -0.1em;
         height: 0.4em;
-        background-color: #f9f8fd;
+        background-color: #ffffff;
         z-index: 1;
         transform: scaleX(1);
         transform-origin: right center;
@@ -571,7 +571,7 @@
     transition: opacity 0.35s ease;
     &.is-visible { opacity: 1; }
     padding: 2em 0;
-    background-color: #f9f8fd;
+    background-color: #ffffff;
     position: relative;
     display: flex;
     flex-direction: column;
@@ -703,12 +703,12 @@
 
     .partners-wrapper::before {
       left: 0;
-      background: linear-gradient(to right, rgba(#f9f8fd, 1), rgba(#f9f8fd, 0));
+      background: linear-gradient(to right, rgba(#ffffff, 1), rgba(#ffffff, 0));
     }
 
     .partners-wrapper::after {
       right: 0;
-      background: linear-gradient(to left, rgba(#f9f8fd, 1), rgba(#f9f8fd, 0));
+      background: linear-gradient(to left, rgba(#ffffff, 1), rgba(#ffffff, 0));
     }
   }
 
@@ -836,7 +836,7 @@
     position: relative;
     overflow: hidden;
     padding: 5em 0 8.2em;
-    background-color: #f9f8fd;
+    background-color: #ffffff;
 
     &::before {
       content: '';
@@ -901,7 +901,7 @@
         right: -0.05em;
         bottom: -0.1em;
         height: 0.4em;
-        background-color: #f9f8fd;
+        background-color: #ffffff;
         z-index: 1;
         transform: scaleX(1);
         transform-origin: right center;
@@ -1114,7 +1114,7 @@
     transition: opacity 0.35s ease;
     &.is-visible { opacity: 1; }
     position: relative;
-    background-color: #f9f8fd;
+    background-color: #ffffff;
     padding: 5em 0em 0em 0em;
 
     &::before {
@@ -1214,7 +1214,7 @@
         position: fixed;
         left: 0;
         right: 0;
-        background: #f9f8fd;
+        background: #ffffff;
         box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
       }
     }
@@ -1241,7 +1241,7 @@
       transition: background-color 0.2s ease, color 0.2s ease;
 
       &:hover:not(.is-active) {
-        background-color: #f9f8fd;
+        background-color: #ffffff;
       }
 
       &.is-active {
@@ -1476,7 +1476,7 @@
   #case-studies {
     padding-top: 0.5em;
     padding-bottom: 0;
-    background-color: #f9f8fd;
+    background-color: #ffffff;
     border-top: 6px solid #2b1c5a;
 
     .case-studies-wrapper {
@@ -1828,7 +1828,7 @@
 
   #news-updates {
     padding: 0 0em 4em 0em;
-    background-color: #f9f8fd;
+    background-color: #ffffff;
   
     .wrapper {
       max-width: 1200px;
@@ -1900,7 +1900,7 @@
           overflow: hidden;
           border-radius: 8px; /* Match card corners */
           margin-bottom: 1em;
-          background-color: #f9f8fd; /* Matches the card background */
+          background-color: #ffffff; /* Matches the card background */
           display: flex;
           align-items: center;
           justify-content: center;
@@ -1991,8 +1991,8 @@
 
   #partner-company {
     padding: 2em 0em 8em 0em;
-    background-color: #f9f8fd;
-    border-top: 3px solid #f9f8fd;
+    background-color: #ffffff;
+    border-top: 3px solid #ffffff;
     text-align: center;
 
     .partner-company-heading {
@@ -2265,7 +2265,7 @@
     position: relative;
     overflow: hidden;
     padding: 5em 0 8em 0;
-    background: #f9f8fd;
+    background: #ffffff;
     color: $mortar-purple;
 
     &::before {
@@ -3021,7 +3021,7 @@
 
 #services-overview {
   #services-topline {
-    background: #f9f8fd;
+    background: #ffffff;
     color: $mortar-purple;
     padding: 8em 0 4em;
 
