@@ -1,11 +1,12 @@
 {% extends 'layouts/base.njk' %}
 
-{% block pageTitle %}{{ title }} - Solutions - {{ super() }}{% endblock %}
+{% set section = 'products' %}
+{% block pageTitle %}{{ title }} - Products - {{ super() }}{% endblock %}
 {% block bodyId %}{{ title | slug }}{% endblock %}
-{% block mainClass %}solution content-page{% endblock %}
+{% block mainClass %}insight-page content-page{% endblock %}
 
-{% set previousPost = collections.solutions | getPreviousCollectionItem(page) %}
-{% set nextPost = collections.solutions | getNextCollectionItem(page) %}
+{% set previousPost = collections.products | getPreviousCollectionItem(page) %}
+{% set nextPost = collections.products | getNextCollectionItem(page) %}
 
 {% block content %}
 <section>
@@ -13,18 +14,15 @@
     <div class="article-main">
       <div class="article-header">
         <div class="article-header-text">
-          <h1>{{ title }}</h1>
+          {% if logo %}
+            <img class="article-header-logo" src="{{ logo }}" alt="{{ title }} logo">
+          {% else %}
+            <h1>{{ title }}</h1>
+          {% endif %}
           {% if description %}
             <p class="article-strapline">{{ description }}</p>
           {% endif %}
           <p class="article-date">Last updated on {{ date | date }}</p>
-          {% if logos %}
-            <div class="article-logos-row">
-              {% for l in logos %}
-                <img class="article-logos-row-item" src="{{ l }}" alt="">
-              {% endfor %}
-            </div>
-          {% endif %}
           <nav class="article-toc" id="article-toc" aria-label="Article contents"></nav>
         </div>
       </div>
@@ -49,7 +47,7 @@
         {% if previousPost %}
           <div class="previous-post">
             <a href="{{ previousPost.url }}">
-              <span>Previous solution</span>
+              <span>Previous product</span>
               <span class="post-title">{{ previousPost.data.title }}</span>
             </a>
           </div>
@@ -57,7 +55,7 @@
         {% if nextPost %}
           <div class="next-post">
             <a href="{{ nextPost.url }}">
-              <span>Next solution</span>
+              <span>Next product</span>
               <span class="post-title">{{ nextPost.data.title }}</span>
             </a>
           </div>

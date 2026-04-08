@@ -2,6 +2,7 @@
 title: Harla
 date: 2025-03-01
 image: driving-product_01.png
+logo: /static/images/use-cases/harla-logo.svg
 description: Build custom property models and agents, changing the way property is viewed, utilised and operated. Harla is an intelligent property system driving the future of sector with a suite of dynamic, data-led products. 
 author: Mortar
 draft: false

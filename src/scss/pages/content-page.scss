@@ -32,7 +32,7 @@
 }
 
 .content-page {
-  background: #f9f8fd;
+  background: #ffffff;
   color: $copy-black;
 
   font-size: 1.1em;
@@ -42,26 +42,62 @@
     font-size: 1.2em;
   }
 
-  // Article header — sits inside the article column, aligned with TOC top
+  // Article header — centered
   .article-header {
-    padding: 2.5em 0 1.5em;
+    padding: 2.5em 0 3.5em;
+    text-align: center;
+    position: relative;
 
-    @include respond-to('small') {
-      display: flex;
-      align-items: center;
-      gap: 3em;
+    &::after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 120vw;
+      height: 32px;
+      background:
+        linear-gradient(
+          to bottom,
+          rgba(43, 28, 90, 0.10) 0%,
+          rgba(43, 28, 90, 0.00) 35%
+        ),
+        radial-gradient(
+          ellipse 60% 100% at 50% 0%,
+          rgba(51, 51, 51, 0.13) 0%,
+          rgba(51, 51, 51, 0.00) 100%
+        );
+      mask-image: linear-gradient(
+        to right,
+        transparent 0%,
+        black 18%,
+        black 82%,
+        transparent 100%
+      );
+      -webkit-mask-image: linear-gradient(
+        to right,
+        transparent 0%,
+        black 18%,
+        black 82%,
+        transparent 100%
+      );
+      pointer-events: none;
     }
 
     .article-header-text {
       max-width: 32em;
-      flex: 1 1 auto;
+      margin: 0 auto;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
     }
 
     h1 {
       @include rajdhani-bold-type;
       color: $black;
-      margin: 0 0 0.5em 0;
+      margin: 0;
       line-height: 1.1em;
+      margin-bottom: 0.5em;
     }
 
     .article-strapline {
@@ -69,7 +105,6 @@
       color: rgba($copy-black, 0.75);
       margin: 0 0 0.75em 0;
       line-height: 1.6em;
-      max-width: 26em;
     }
 
     .article-date {
@@ -81,16 +116,17 @@
     }
 
     .article-header-logo {
-      display: block;
+      display: inline-block;
       height: 2.8em;
       width: auto;
-      margin: 0 0 1.5em;
+      margin-bottom: 1.5em;
     }
 
     .article-logos-row {
       display: flex;
       flex-direction: row;
       align-items: center;
+      justify-content: center;
       flex-wrap: wrap;
       gap: 1.5em;
       margin-top: 1em;
@@ -105,96 +141,62 @@
       }
     }
 
-    .article-header-anim {
-      display: none;
-
-      @include respond-to('small') {
-        display: block;
-        flex-shrink: 0;
-        width: 264px;  // 6 × 44px
-        height: 220px; // 5 × 44px
-        position: relative;
-        overflow: hidden;
-        margin-left: -88px; // pull ~2 cells into the text column for overlap
-        background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='44' height='44'%3E%3Cpath d='M 44 0 L 0 0 0 44' fill='none' stroke='%232b1c5a' stroke-width='0.5' stroke-opacity='.12'/%3E%3C/svg%3E");
-        background-size: 44px 44px;
-      }
-    }
   }
 
-  // Two-column layout: sidebar TOC + article
   .article-layout {
-    display: flex;
-    align-items: flex-start;
-    gap: 0;
-    opacity: 0;
-    transition: opacity 0.4s ease;
-
-    &.is-visible {
-      opacity: 1;
-    }
+    display: block;
   }
 
-  // Sticky sidebar TOC — hidden on mobile, visible on desktop
+  // Inline TOC — horizontal row of links under the article date
   .article-toc {
-    display: none;
-
-    @include respond-to('small') {
-      display: flex;
-      flex-direction: column;
-      flex-shrink: 0;
-      width: 180px;
-      position: sticky;
-      z-index: 99;
-      // top is set dynamically by JS
-      padding-top: 2.5em; // matches .article-header top padding
-      padding-right: 2em;
-      border-right: 1px solid rgba($mortar-purple, 0.1);
-    }
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.4em;
+    margin-top: 1.25em;
+    padding: 0;
 
     &:empty {
-      display: none !important;
+      display: none;
     }
 
     a {
-      display: block;
-      padding: 0.55em 0.75em;
       font-family: 'Manrope', sans-serif;
       font-size: 0.75em;
       font-weight: 500;
-      color: rgba($copy-black, 0.45);
+      color: rgba($copy-black, 0.5);
       text-decoration: none;
+      padding: 0.35em 0.75em;
       border-radius: 3px;
-      transition: color 0.2s ease, background 0.2s ease;
+      border: 1px solid rgba($mortar-purple, 0.15);
+      transition: color 0.2s ease, background 0.2s ease, border-color 0.2s ease;
       line-height: 1.4;
 
       &:hover {
         color: $mortar-purple;
         background: rgba($mortar-purple, 0.04);
+        border-color: rgba($mortar-purple, 0.3);
       }
 
       &.is-active {
         color: $mortar-purple;
         font-weight: 600;
         background: rgba($mortar-purple, 0.06);
+        border-color: rgba($mortar-purple, 0.3);
       }
     }
   }
 
   // Article main column
   .article-main {
-    flex: 1;
     min-width: 0;
-
-    @include respond-to('small') {
-      padding-left: 3em;
-    }
   }
 
   article {
     overflow: hidden;
     padding-bottom: 0;
     max-width: 38em;
+    margin: 0 auto;
   }
 
   h1, h2 {
@@ -211,6 +213,11 @@
     @include rajdhani-bold-type;
     line-height: 1.2em;
     margin-top: 2.1em;
+    text-align: center;
+  }
+
+  h3 {
+    text-align: center;
   }
 
   p {
@@ -229,11 +236,14 @@
   .article-keywords {
     display: flex;
     flex-wrap: wrap;
-    justify-content: flex-start;
+    justify-content: center;
     align-items: center;
     gap: 0.5em;
     padding: 0.5em 0 0.5em;
     margin-top: 0;
+    max-width: 38em;
+    margin-left: auto;
+    margin-right: auto;
 
     .article-keyword {
       font-family: 'Manrope', sans-serif;
@@ -254,7 +264,9 @@
 
   // Get in touch CTA — overrides the global .cta
   .solution-get-in-touch {
-    margin: 3em 0;
+    margin: 3em auto;
+    max-width: 38em;
+    text-align: center;
 
     .cta {
       display: inline-flex;
@@ -541,7 +553,7 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 1.5em;
-    margin: 3em 0 2em;
+    margin: 3em auto 2em;
     max-width: 38em;
     border-top: 1px solid rgba($mortar-purple, 0.12);
     padding-top: 2em;
@@ -613,4 +625,16 @@
       }
     }
   }
+}
+
+.article-header-logo[src*="harla"] {
+  height: 4.55em;
+}
+
+.article-header-logo[src*="hoopd"] {
+  height: 5.23em;
+}
+
+.article-header-logo[src*="hxly"] {
+  height: 3.64em;
 }

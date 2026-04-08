@@ -9,10 +9,7 @@
 
 {% block content %}
 <section>
-  {% include 'partials/breadcrumb.njk' %}
   <div class="wrapper article-layout">
-    <nav class="article-toc" id="article-toc" aria-label="Article contents"></nav>
-
     <div class="article-main">
       <div class="article-header">
         <div class="article-header-text">
@@ -25,8 +22,8 @@
             <p class="article-strapline">{{ description }}</p>
           {% endif %}
           <p class="article-date">Last updated on {{ date | date }}</p>
+          <nav class="article-toc" id="article-toc" aria-label="Article contents"></nav>
         </div>
-        <div class="article-header-anim" id="article-header-anim" aria-hidden="true"></div>
       </div>
 
       <article class="article-content">
