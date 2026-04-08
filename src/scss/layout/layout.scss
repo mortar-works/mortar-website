@@ -404,16 +404,7 @@ header {
     position: absolute;
     top: calc(100% + 10px);
     left: 0;
-    background: rgba(255, 255, 255, 0.92);
-    backdrop-filter: blur(12px);
-    -webkit-backdrop-filter: blur(12px);
-    transition: background 0.15s ease, backdrop-filter 0.15s ease;
-
-    &:has(a:hover) {
-      background: rgba(255, 255, 255, 1);
-      backdrop-filter: none;
-      -webkit-backdrop-filter: none;
-    }
+    background: rgba(255, 255, 255, 1);
     border-radius: 8px;
     box-shadow:
       0 2px 4px rgba(67, 34, 124, 0.06),
