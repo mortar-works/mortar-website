@@ -794,6 +794,7 @@ function showConfirmationModal() {
 
 // ─── Grid snake animation (homepage topline only) ────────────────────────────
 (function() {
+  return; // disabled — preserved for later
   if (document.body.id !== 'homepage') return;
 
   const CELL = 44;

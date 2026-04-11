@@ -56,18 +56,20 @@ header {
     transition: color 0.3s ease;
   }
 
-  /* Wrapper drives the height — explicit 7em, no vertical padding */
+  /* Wrapper drives the height — full width, items vertically centred */
   .wrapper {
-    height: 7em;
-    padding: 0 2em 1.2em;
+    max-width: none;
+    margin: 0;
+    height: 5em;
+    padding: 0 2em;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    align-items: flex-end;
+    align-items: center;
 
     @media (max-width: 767px) {
-      height: 5em;
-      padding: 0 1.2em 0.8em;
+      height: 4em;
+      padding: 0 1.2em;
     }
   }
 
@@ -81,8 +83,8 @@ header {
   .header-right {
     display: flex;
     flex-direction: row;
-    align-items: flex-end;
-    gap: 0.8em;
+    align-items: center;
+    gap: 0.4em;
   }
 
   #mortar-logo {
@@ -304,7 +306,7 @@ header {
     flex-direction: column;
     align-items: flex-start;
     position: absolute;
-    top: 7em;
+    top: 5em;
     left: 0;
     right: 0;
     bottom: 0;
@@ -320,48 +322,51 @@ header {
   nav {
     display: none;
     align-items: center;
+    gap: 0.4em;
 
     @include respond-to('small') {
       display: flex;
+    }
+
+    a {
+      display: inline-flex;
+      align-items: center;
+      padding: 0.5em 1.2em;
+      border-radius: 4px;
+      font-family: 'Manrope', sans-serif;
+      font-size: 0.95em;
+      font-weight: 500;
+      text-decoration: none;
+      white-space: nowrap;
+      border: 1.5px solid $black;
+      color: $black !important;
+      background: transparent;
+      transition: background-color 0.2s ease, border-color 0.2s ease;
+
+      &:hover {
+        background: rgba($black, 0.08);
+        box-shadow: none;
+      }
     }
   }
+}
 
-  ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
+/* Mobile nav overlay — flat links */
+header.nav-active nav a {
+  border: none;
+  border-radius: 0;
+  padding: 0.75em 0;
+  font-size: 1.1em;
+  line-height: 1.6em;
+  min-height: 44px;
+  width: 100%;
+  justify-content: flex-start;
+  color: $black !important;
+  background: transparent;
 
-    li {
-      a {
-        @include regular-type;
-        font-size: 1.1em;
-        line-height: 1.6em;
-        color: $black;
-      }
-    }
-
-    @include respond-to('small') {
-      display: flex;
-      flex-wrap: wrap;
-      align-items: center;
-      font-size: 1.1em;
-
-      li {
-        display: flex;
-        align-items: center;
-
-        a {
-          font-size: 1em;
-          line-height: 1em;
-          padding: 0 0.9em;
-        }
-
-        &:last-of-type a {
-          padding: 0 0.6em;
-          padding-right: inherit;
-        }
-      }
-    }
+  &:hover, &:focus, &:active {
+    background: transparent;
+    box-shadow: none;
   }
 }
 
