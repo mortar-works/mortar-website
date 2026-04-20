@@ -1,18 +1,100 @@
 ---
-title: Harla
+title: "Harla"
+layout: layouts/product-feature.njk
 date: 2025-03-01
-image: driving-product_01.png
-logo: /static/images/use-cases/harla-logo.svg
-description: Build custom property models and agents, changing the way property is viewed, utilised and operated. Harla is an intelligent property system driving the future of sector with a suite of dynamic, data-led products. 
-author: Mortar
 draft: false
 category: product
+author: Mortar
+
+logo: /static/images/use-cases/harla-logo.svg
+
+tagline: "The intelligent property platform"
+
+description: "Build custom property models and agents, changing the way property is viewed, utilised and operated. Harla is an intelligent property system driving the future of the sector with a suite of dynamic, data-led products."
+
+stats:
+  - value: "5+"
+    label: "core property modules"
+  - value: "100%"
+    label: "customisable configuration"
+  - value: "1"
+    label: "unified property model"
+
+split_heading: "Turn fragmented property data and siloed systems into connected, intelligent operations."
+split_body: "Most organisations manage property across a patchwork of disconnected tools, spreadsheets and legacy systems. Harla consolidates everything into a single intelligent model — making risks visible, workflows intuitive, and decisions faster."
+
+duo_left_title: "Transforming commercial property"
+duo_left_stats:
+  - value: "40%"
+    label: "of commercial assets underutilised"
+  - value: "3x"
+    label: "faster onboarding with Harla"
+  - value: "60%"
+    label: "reduction in manual reporting"
+duo_left: "In a highly challenging climate, commercial assets are heavily under utilised. More effective, mixed-use and hybrid models of operation are needed. Harla makes the most valuable tenancy, occupation and operation options easier to identify, establish and deliver."
+
+duo_right_title: "Supporting social housing"
+duo_right_stats:
+  - value: "£1.3bn"
+    label: "lost to rent arrears annually"
+  - value: "25%"
+    label: "of compliance tasks missed without automation"
+  - value: "30%"
+    label: "increase in team capacity"
+duo_right: "In housing, regulatory requirements continue to increase, budgets are tightening, and the expectations of residents and communities are rising. Harla gives housing teams the data they need and the tools to act on it — reducing risk, improving compliance and delivering better resident outcomes."
+
+partners:
+  - name: "Clarion Housing Group"
+    logo: /static/images/partners/Clarion-Housing-Group-Logo.png
+  - name: "Greater London Authority"
+    logo: /static/images/partners/GLA-Logo-2.png
+  - name: "One Manchester"
+    logo: /static/images/partners/one-manchester-logo.png
+  - name: "G-Cloud"
+    logo: /static/images/partners/g-cloud-14.png
+    class: "pf-partner--lg"
+
+overview_eyebrow: "What is Harla"
+overview_heading: "Harla builds intelligent property systems. Customisable for the complexity of your portfolio and operations."
+
+steps_heading: "From data to property intelligence"
+steps:
+  - title: "Connect"
+    body: "Link your existing systems and data sources into a single unified property model. Understand what exists, where it lives, and how it connects across your portfolio."
+  - title: "Configure"
+    body: "Build your custom Harla model around your organisation's specific processes. Create workflows, define rules, and map outcomes to your operational priorities."
+  - title: "Integrate"
+    body: "Deploy intelligence across your estate — surfacing risks, automating collections, managing compliance, and enabling your teams to act with confidence."
+  - title: "Scale"
+    body: "Harla grows with your portfolio. Add new modules, data sources and capabilities as your needs evolve, without rebuilding from scratch."
+
+features_eyebrow: "Core modules"
+features_heading: "Everything you need to operate intelligently"
+features_subheading: "Purpose-built modules for the full property and tenancy lifecycle."
+features:
+  - title: "Collections and Escalations"
+    body: "Create your own real-time collections system. Establish tailored tenant correspondence, with automated statement creation, payment scheduling and payment allocation built around your processes."
+  - title: "Resident and Tenant Management"
+    body: "Manage tenancy lifecycles, communications, and support needs from a single platform. Handle short-term lettings, membership programmes, and licences to occupy with clarity and confidence."
+  - title: "Portfolio and Asset Modelling"
+    body: "Build, simulate and test real-time overviews of your entire property portfolio. Gain insights into occupancy scenarios, compliance status, maintenance activity and financial performance in one place."
+  - title: "Risk and Compliance"
+    body: "Track obligations across fire safety, gas, electrical and other regulatory requirements with automated alerts and audit trails. Deliver tenant due diligence faster and speed up the time to occupancy."
+  - title: "Reporting and Analytics"
+    body: "Share data with stakeholders in real time. Generate reports for board, regulator and funder audiences quickly — without manual data extraction or disconnected spreadsheets."
+  - title: "Custom Modules"
+    body: "Work with us to build the module you need. We support custom system and service design to help you scale your own property solution with your stakeholders and users."
+
 keywords:
   - Harla
   - property management
   - intelligent systems
   - housing
   - asset management
+  - collections
+  - compliance
+  - portfolio modelling
+
 tags:
   - product
   - property
@@ -20,41 +102,8 @@ tags:
   - management system
 ---
 
-> Harla is an intelligent platform, giving organisations access to the technology and services they need to deliver bespoke property solutions.
+Harla is an intelligent system for building and deploying flexible, customisable property solutions — with a core suite of modules purposefully designed for different property use-cases.
 
-Operating and managing property is not straightforward. There are so many different ways in which portfolios, individual assets and all the relationships involved in property function and interact. This means that there are many different generic, uniform solutions that are difficult to integrate, making communication highly complex, and operations static and slow moving. For the same reasons property systems have always struggled to deliver the custom solutions required for them to operate most effectively and efficiently. 
+It is designed to handle the complexity of modern property portfolios, bringing together data from disparate systems, applying intelligence to surface actionable insights, and enabling organisations to make faster, more confident decisions.
 
-We have been operating and managing property portfolios for many years, developing our own systems to transform how we are able to operate and manage individual sites, whilst automating and establishing real-time strategic views of specific processes and performance. With new technologies we are building on this experience, to completely revolutionise the field of services and solutions available to the sector. No longer should individuals and teams rely on rigid, disconnected processes, a lack of data or real-time knowledge about their assets and the localities in which they operate, or be concerned about delivering negative experiences and inappropriate communications to their tenants, customers and members. With Harla we are changing the sector by supporting the custom implementation of intelligence to improve property systems.
-
-## What is Harla
-
-Harla is an intelligent system for building and deploying flexible, customisable solutions, with a core suite of modules purposefully designed for different property use-cases. It is designed to handle the complexity of modern property portfolios, bringing together data from disparate systems, applying intelligence to surface actionable insights, and enabling organisations to make faster, more confident decisions. It's modular design means solutions can be tailored to fit the needs of landlords, operators and asset managers. From simple data integration solutions, to full-scale escalation and collections systems. 
-
-At its core, Harla is built around the principle that property management should serve the people living and working within those properties, not just the administrative processes that surround them. By integrating data using a modular system that spans both the property and the customer lifecycle Harla gives teams the view of their estate they need, and the tools to act on it.
-
-## How Harla Works
-
-Harla connects to existing systems and data sources, consolidating data into a unified model. Harla identifies patterns, risks, and opportunities associated with different property processes, and delivers the custom interfaces, workflows and agentic operations to support you and your team in solving the problems and issues at hand. 
-
-- **Unified data model:** Connect and consolidate data from across your property systems into a single dynamic model; test, simulate and build your services.
-- **Intelligent insight:** Surface trends, anomalies, and risks automatically; from collections, to maintenance backlogs, compliance gaps and tenancy risks.
-- **Custom workflows:** Configure your Harla model around your organisation's specific processes, building and evolving knowledge to form bespoke solutions. 
-- **User-led design:** Every interface is designed with the people who will use it, ensuring that complex information becomes accessible and actionable.
-
-## Key Features
-
-- **Collections and Escalations:** Create your own real-time collections systems. Establish tailored and personalised tenant correspondence, with automated statement creation, payment schedule creation and payment allocation solutions.  
-- **Resident and tenant management:** Easily establish and manage different tenancies and tenant relationships. Including short-term lettings, membership programmes, and licences to occupy most suitable to driving revenue and sustainability for the property at hand. Manage tenancy lifecycles, communications, and support needs from a single platform.
-- **Portfolio and asset modelling:** Build, simulate and test clear, real-time overviews of your entire property portfolios; gaining insights into occupancy scenarios, compliance status, maintenance activity, and financial performance in one place.
-- **Risk and compliance management:** Track and manage compliance obligations across fire safety, gas, electrical, and other regulatory requirements; with automated alerts and audit trails. Deliver tenant due diligence faster, matching occupiers more quickly and speeding up the time spent onboarding and occupying property.  
-- **Reporting and analytics:** Share data with your stakeholders more effectively in real-time, to create the delivery environments necessary for alternative operation and occupation solutions. Generate the reports you need for board, regulator, and funder audiences quickly and without manual data extraction.
-
-## Why It Matters
-
-In the commercial sector a highly challenging climate means assets are heavily under utilised; more effective, mixed use and hybrid models of operation are needed for their successful operation. In housing regulatory requirements continue to increase, budgets are tightening, and the expectations of residents and communities are rising at the same time. Organisations need systems that help them deliver the right offer, better — overcoming the increasing expenses that come with the friction and administrative burden of property ownership. 
-
-Harla is built to meet these challenges. By making the most valuable tenancy, occupation and operation options easier to identify, establish and deliver. Intelligence is embedded in the heart of Harla solutions, giving you more accessible data, making your workflows intuitive, and insights actionable. Harla enables organisations to focus their resources where they matter most: delivering outstanding services to the people and communities they serve.
-
-### Get in Touch
-
-If you are looking at new ways of improving your operations with intelligence, finding simple solutions to frustrating problems, replacing legacy systems or consolidating your technology stack, or simply get more from the data you already have, we would love to show you what Harla can do. Get in touch to arrange a demonstration.
+At its core, Harla is built around the principle that property management should serve the people living and working within those properties — not just the administrative processes that surround them.

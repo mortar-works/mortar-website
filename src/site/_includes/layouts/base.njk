@@ -21,7 +21,7 @@
       
   {% endif %}
   </head>
-  <body id="{% block bodyId %}{% endblock %}">
+  <body id="{% block bodyId %}{% endblock %}" class="{% block bodyClass %}{% endblock %}">
     <header>
       <div class="wrapper">
         <div class="header-left">
@@ -61,6 +61,11 @@
                   <span class="product-visit-name">Visit Harla</span>
                   <span class="link-chevron" aria-hidden="true"></span>
                 </a>
+                <a href="{{ '/products/henna/' | url }}" role="menuitem" class="product-visit-link">
+                  <span class="product-visit-logo product-visit-logo--henna"></span>
+                  <span class="product-visit-name">Visit Henna</span>
+                  <span class="link-chevron" aria-hidden="true"></span>
+                </a>
               </div>
             </div>
           </div>
@@ -95,6 +100,7 @@
               <li><a href="{{ '/products/hoopd/' | url }}">Hoop'd</a></li>
               <li><a href="{{ '/products/harla/' | url }}">Harla</a></li>
               <li><a href="{{ '/products/hxly/' | url }}">Hxly</a></li>
+              <li><a href="{{ '/products/henna/' | url }}">Henna</a></li>
             </ul>
             <h4 class="footer-col-heading footer-col-heading--spaced">Services</h4>
             <ul>

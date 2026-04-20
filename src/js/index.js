@@ -315,6 +315,7 @@ window.addEventListener('load', (event) => {
     }
   });
 
+
   // Insights filter + pagination
   const filterButtons = document.querySelectorAll('.insight-filter');
   const insightItems = Array.from(document.querySelectorAll('#insight-list li'));
@@ -706,6 +707,23 @@ window.addEventListener('load', (event) => {
     if (el) scrollFadeObserver.observe(el);
   });
 
+  // Featured work — second row tiles fade in left to right on scroll
+  const featuredGrid = document.querySelector('.featured-grid');
+  if (featuredGrid) {
+    const featuredTiles = Array.from(
+      featuredGrid.querySelectorAll('.featured-tile:not(.featured-tile--large)')
+    );
+    const featuredRowObserver = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          featuredTiles.forEach((tile) => tile.classList.add('is-visible'));
+          featuredRowObserver.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.15 });
+    featuredRowObserver.observe(featuredGrid);
+  }
+
   // Partners Ticker Scrolling
   const ticker = document.querySelector('.partners-ticker');
   const leftArrow = document.querySelector('.left-arrow');
@@ -936,164 +954,6 @@ function showConfirmationModal() {
       tick(now);
       draw();
       requestAnimationFrame(loop);
-    }
-    requestAnimationFrame(loop);
-  }
-
-  if (document.readyState === 'loading') {
-    document.addEventListener('DOMContentLoaded', init);
-  } else {
-    init();
-  }
-})();
-
-// ─── Lightning bolt animation (about page hero) ───────────────────────────────
-(function () {
-  if (document.body.id !== 'about-mortar') return;
-
-  const CELL      = 44;
-  const MOVE_MS   = 38;    // ~26 steps/sec — fast
-  const FADE_RATE = 0.10;  // opacity lost per step from trail cells
-  const FORK_P    = 0.20;  // probability of spawning a perpendicular fork at each step
-  const MAX_FORKS = 2;     // forks each individual bolt is allowed to spawn
-
-  const [R, G, B] = [252, 168, 147]; // mortar-pink #fca893
-
-  const DIRS = [[1, 0], [-1, 0], [0, 1], [0, -1]];
-
-  // Returns directions that are not the exact reverse of [dx, dy]
-  function nonReverse(dx, dy) {
-    return DIRS.filter(([x, y]) => !(x === -dx && y === -dy));
-  }
-
-  // Returns directions perpendicular to [dx, dy] (dot product === 0), never left
-  function perp(dx, dy) {
-    return DIRS.filter(([x, y]) => x * dx + y * dy === 0 && x !== -1);
-  }
-
-  function init() {
-    const section = document.getElementById('about-hero');
-    if (!section) return;
-
-    // Canvas wrapper — edge-faded mask matching the ::before grid mask
-    const wrap = document.createElement('div');
-    wrap.setAttribute('aria-hidden', 'true');
-    wrap.style.cssText = [
-      'position:absolute', 'inset:0', 'pointer-events:none', 'z-index:0',
-      'mask-image:' +
-        'linear-gradient(to right,transparent 0%,black 20%,black 80%,transparent 100%),' +
-        'linear-gradient(to bottom,transparent 0%,black 10%,black 90%,transparent 100%)',
-      'mask-composite:intersect',
-      '-webkit-mask-image:' +
-        'linear-gradient(to right,transparent 0%,black 20%,black 80%,transparent 100%),' +
-        'linear-gradient(to bottom,transparent 0%,black 10%,black 90%,transparent 100%)',
-      '-webkit-mask-composite:source-in',
-    ].join(';');
-    section.appendChild(wrap);
-
-    const canvas = document.createElement('canvas');
-    canvas.style.cssText = 'display:block;width:100%;height:100%;';
-    wrap.appendChild(canvas);
-
-    let W = 0, H = 0, cols = 0, rows = 0;
-
-    function resize() {
-      W = section.offsetWidth;
-      H = section.offsetHeight;
-      canvas.width  = W;
-      canvas.height = H;
-      cols = Math.floor(W / CELL);
-      rows = Math.floor(H / CELL);
-    }
-    resize();
-    window.addEventListener('resize', resize);
-
-    const ctx = canvas.getContext('2d');
-
-    // cells: Map<"x,y", opacity 0-1> — the currently glowing grid cells
-    const cells = new Map();
-
-    // bolts: active heads  { x, y, dx, dy, stepsLeft }
-    let bolts = [];
-    let lastMove = 0;
-    let done = false;
-
-    // Max steps a bolt can live
-    function maxSteps() { return cols + rows; }
-
-    function tick(now) {
-      if (done) return;
-      if (now - lastMove < MOVE_MS) return;
-      lastMove = now;
-
-      // Fade every existing cell
-      for (const [k, v] of cells) {
-        const nv = v - FADE_RATE;
-        if (nv <= 0) cells.delete(k);
-        else         cells.set(k, nv);
-      }
-
-      const forks = [];
-      const next  = [];
-
-      for (const bolt of bolts) {
-        const nx = bolt.x + bolt.dx;
-        const ny = bolt.y + bolt.dy;
-
-        // Bolt dies at the edge or when it exhausts its steps
-        if (nx < 0 || nx >= cols || ny < 0 || ny >= rows || bolt.stepsLeft <= 0) continue;
-
-        // Light up the new head cell at full brightness
-        cells.set(`${nx},${ny}`, 1.0);
-
-        // Fork: shoot off a perpendicular branch if this bolt still has forks left
-        let forksLeft = bolt.forksLeft;
-        if (forksLeft > 0 && Math.random() < FORK_P) {
-          const ps = perp(bolt.dx, bolt.dy);
-          if (ps.length) {
-            const [fdx, fdy] = ps[Math.floor(Math.random() * ps.length)];
-            const fx = nx + fdx, fy = ny + fdy;
-            if (fx >= 0 && fx < cols && fy >= 0 && fy < rows) {
-              cells.set(`${fx},${fy}`, 1.0);
-              forks.push({ x: fx, y: fy, dx: fdx, dy: fdy, stepsLeft: bolt.stepsLeft - 1, forksLeft: MAX_FORKS });
-              forksLeft--;
-            }
-          }
-        }
-
-        next.push({ x: nx, y: ny, dx: bolt.dx, dy: bolt.dy, stepsLeft: bolt.stepsLeft - 1, forksLeft });
-      }
-
-      bolts = [...next, ...forks];
-
-      // Animation complete: all heads gone and all trails faded
-      if (bolts.length === 0 && cells.size === 0) {
-        done = true;
-        ctx.clearRect(0, 0, W, H);
-      }
-    }
-
-    function draw() {
-      if (done) return;
-      ctx.clearRect(0, 0, W, H);
-      for (const [key, op] of cells) {
-        const comma = key.indexOf(',');
-        const x = +key.slice(0, comma);
-        const y = +key.slice(comma + 1);
-        ctx.fillStyle = `rgba(${R},${G},${B},${(op * 0.78).toFixed(3)})`;
-        ctx.fillRect(x * CELL, y * CELL, CELL, CELL);
-      }
-    }
-
-    // Seed: single bolt from the left edge, vertically centred
-    if (cols > 0 && rows > 0) {
-      bolts.push({ x: 0, y: Math.floor(rows / 2), dx: 1, dy: 0, stepsLeft: maxSteps(), forksLeft: MAX_FORKS });
-    }
-
-    function loop(now) {
-      tick(now);
-      draw();
-      if (!done) requestAnimationFrame(loop);
     }
     requestAnimationFrame(loop);
   }

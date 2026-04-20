@@ -61,7 +61,7 @@ header {
     max-width: none;
     margin: 0;
     height: 5em;
-    padding: 0 2em;
+    padding: 0 5%;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -69,7 +69,7 @@ header {
 
     @media (max-width: 767px) {
       height: 4em;
-      padding: 0 1.2em;
+      padding: 0 5%;
     }
   }
 
@@ -236,9 +236,14 @@ header {
         background: $mortar-orange;
       }
 
+      &--henna {
+        background: #1a7f6e;
+      }
+
       &--hoopd,
       &--hxly,
-      &--harla {
+      &--harla,
+      &--henna {
         &::after {
           content: 'H';
           font-family: 'Manrope', sans-serif;
@@ -338,10 +343,10 @@ header {
       font-weight: 500;
       text-decoration: none;
       white-space: nowrap;
-      border: 1.5px solid $black;
+      border: none;
       color: $black !important;
       background: transparent;
-      transition: background-color 0.2s ease, border-color 0.2s ease;
+      transition: background-color 0.2s ease;
 
       &:hover {
         background: rgba($black, 0.08);
@@ -825,6 +830,12 @@ footer {
   font-family: 'Manrope', sans-serif;
   padding: 4em 0 2.5em;
 
+  .wrapper {
+    max-width: none;
+    margin: 0;
+    padding: 0 5%;
+  }
+
   a {
     color: rgba($white, 0.65);
     text-decoration: none;
@@ -861,7 +872,7 @@ footer {
     display: inline-flex;
 
     img {
-      height: 38px;
+      height: 47px;
       width: auto;
       filter: brightness(0) invert(1);
       display: block;

@@ -1,0 +1,198 @@
+{% extends 'layouts/base.njk' %}
+
+{% set section = 'products' %}
+{% block pageTitle %}{{ title }} - Products - {{ super() }}{% endblock %}
+{% block bodyId %}product-feature{% endblock %}
+{% block bodyClass %}{% if theme %}theme-{{ theme }}{% endif %}{% endblock %}
+{% block mainClass %}product-feature-page{% if theme %} product-feature-page--{{ theme }}{% endif %}{% endblock %}
+
+{% set previousPost = collections.products | getPreviousCollectionItem(page) %}
+{% set nextPost = collections.products | getNextCollectionItem(page) %}
+
+{% block content %}
+
+{# ── Hero ──────────────────────────────────────────────────────────────────── #}
+<section class="pf-hero">
+  <div class="pf-hero-content">
+    <a href="/" class="pf-card-logo" aria-label="Mortar home">
+      <img src="/static/images/mortar-logo.svg" alt="Mortar" height="32" width="72">
+    </a>
+    <a href="/contact/" class="pf-card-contact">Contact</a>
+
+    {% if logo %}
+      <img class="pf-hero-logo" src="{{ logo }}" alt="{{ title }} logo">
+    {% endif %}
+
+    <h1 class="pf-hero-tagline">{{ tagline if tagline else title }}</h1>
+
+    {% if eyebrow %}<span class="pf-hero-eyebrow">{{ eyebrow }}</span>{% endif %}
+
+    {% if description %}
+      <p class="pf-hero-desc">{{ description }}</p>
+    {% endif %}
+
+    <a href="#pf-overview" class="pf-hero-scroll-cta">
+      <span>Explore</span>
+      <svg class="pf-hero-chevron" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+        <polyline points="6 9 12 15 18 9"></polyline>
+      </svg>
+    </a>
+  </div>
+</section>
+
+{# ── Overview / intro ──────────────────────────────────────────────────────── #}
+<section class="pf-overview" id="pf-overview">
+  <div class="wrapper">
+    <span class="pf-eyebrow">{{ overview_eyebrow if overview_eyebrow else 'Introduction' }}</span>
+    <h2 class="pf-section-heading">{{ overview_heading if overview_heading else 'What is ' + title }}</h2>
+    <div class="pf-overview-body">
+      {{ content | safe }}
+    </div>
+  </div>
+</section>
+
+{# ── Split screen ──────────────────────────────────────────────────────────── #}
+{% if split_heading %}
+<section class="pf-split">
+  <div class="pf-split-visual{% if split_image %} pf-split-visual--image{% endif %}" aria-hidden="true">
+    {% if split_image %}
+      <img src="{{ split_image }}" alt="" class="pf-split-image">
+    {% else %}
+      <div class="pf-split-geo pf-split-geo--a"></div>
+      <div class="pf-split-geo pf-split-geo--b"></div>
+      <div class="pf-split-geo pf-split-geo--c"></div>
+      <div class="pf-split-geo pf-split-geo--d"></div>
+      <div class="pf-split-geo pf-split-geo--e"></div>
+    {% endif %}
+  </div>
+  <div class="pf-split-text">
+    <h2 class="pf-split-heading">{{ split_heading }}</h2>
+    {% if split_body %}
+      <p class="pf-split-body">{{ split_body }}</p>
+    {% endif %}
+  </div>
+</section>
+{% endif %}
+
+{# ── Stats strip ───────────────────────────────────────────────────────────── #}
+{% if stats %}
+<section class="pf-stats">
+  <div class="wrapper">
+    {% for stat in stats %}
+    <div class="pf-stat">
+      <span class="pf-stat-value">{{ stat.value }}</span>
+      <span class="pf-stat-label">{{ stat.label }}</span>
+    </div>
+    {% endfor %}
+  </div>
+</section>
+{% endif %}
+
+{# ── Partner logos ─────────────────────────────────────────────────────────── #}
+{% if partners %}
+<section class="pf-partners">
+  {% for partner in partners %}
+    <div class="pf-partner{% if partner.class %} {{ partner.class }}{% endif %}">
+      <img src="{{ partner.logo }}" alt="{{ partner.name }}">
+    </div>
+  {% endfor %}
+</section>
+{% endif %}
+
+{# ── How it works ──────────────────────────────────────────────────────────── #}
+{% if steps %}
+<section class="pf-how">
+  <div class="wrapper">
+    <div class="pf-section-header">
+      <span class="pf-eyebrow">How it works</span>
+      <h2 class="pf-section-heading">{{ steps_heading if steps_heading else 'From data to intelligence' }}</h2>
+    </div>
+    <div class="pf-steps">
+      {% for step in steps %}
+      <div class="pf-step">
+        <h3>{{ step.title }}</h3>
+        <p>{{ step.body }}</p>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+{% endif %}
+
+{# ── Key features ──────────────────────────────────────────────────────────── #}
+{% if features %}
+<section class="pf-features-section">
+  <div class="wrapper">
+    <div class="pf-section-header">
+      <span class="pf-eyebrow">{{ features_eyebrow if features_eyebrow else 'Key features' }}</span>
+      <h2 class="pf-section-heading">{{ features_heading if features_heading else 'Everything you need' }}</h2>
+      {% if features_subheading %}<p class="pf-section-subheading">{{ features_subheading }}</p>{% endif %}
+    </div>
+    <div class="pf-features">
+      {% for feature in features %}
+      <div class="pf-feature">
+        <h3>{{ feature.title }}</h3>
+        <p>{{ feature.body }}</p>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+{% endif %}
+
+{# ── Closing cards ─────────────────────────────────────────────────────────── #}
+{% if duo_left or duo_right %}
+<section class="pf-closing">
+  <div class="pf-closing-header">
+    <span class="pf-eyebrow">Why it matters</span>
+  </div>
+  {% if duo_left %}
+  <div class="pf-closing-card pf-closing-card--a">
+    {% if duo_left_title %}<h3 class="pf-closing-title">{{ duo_left_title }}</h3>{% endif %}
+    {% if duo_left_stats %}
+    <div class="pf-closing-stats">
+      {% for stat in duo_left_stats %}
+      <div class="pf-closing-stat">
+        <span class="pf-closing-stat-value">{{ stat.value }}</span>
+        <span class="pf-closing-stat-label">{{ stat.label }}</span>
+      </div>
+      {% endfor %}
+    </div>
+    {% endif %}
+    <div class="pf-closing-text">
+      <p>{{ duo_left }}</p>
+    </div>
+  </div>
+  {% endif %}
+  {% if duo_right %}
+  <div class="pf-closing-card pf-closing-card--b">
+    {% if duo_right_title %}<h3 class="pf-closing-title">{{ duo_right_title }}</h3>{% endif %}
+    {% if duo_right_stats %}
+    <div class="pf-closing-stats">
+      {% for stat in duo_right_stats %}
+      <div class="pf-closing-stat">
+        <span class="pf-closing-stat-value">{{ stat.value }}</span>
+        <span class="pf-closing-stat-label">{{ stat.label }}</span>
+      </div>
+      {% endfor %}
+    </div>
+    {% endif %}
+    <div class="pf-closing-text">
+      <p>{{ duo_right }}</p>
+    </div>
+  </div>
+  {% endif %}
+</section>
+{% endif %}
+
+{# ── Product footer ────────────────────────────────────────────────────────── #}
+<footer class="pf-footer">
+  <div class="pf-footer-inner">
+    <a href="/" class="pf-footer-logo">
+      <img src="/static/images/mortar-logo.svg" alt="Mortar" height="28" width="63">
+    </a>
+    <span class="pf-footer-copy">© 2026 Mortar Works</span>
+  </div>
+</footer>
+
+{% endblock %}

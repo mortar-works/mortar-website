@@ -12,34 +12,94 @@ name: homepage
 {% block content %}
   <section id="topline">
     <div class="wrapper">
-      <div class="topline-left">
-        <p class="topline-label">Our vision</p>
-        <h1>Redefining relationships between <a class="headline-link headline-link--1" href="#vision-people">people</a>, <a class="headline-link headline-link--2" href="#vision-places">places</a> and <a class="headline-link headline-link--3" href="#vision-property">property</a></h1>
-      </div>
-      <div class="topline-bottom">
-        <p class="topline-label">What we do</p>
-        <p class="toplinep">
-          Mortar is a technology company committed to building a better world. We develop intelligent systems, powering the next generation of products and solutions.
-        </p>
-        <a class="topline-cta" href="#services">Learn about our work</a>
-      </div>
-
-      <!-- Recent Content List -->
-      <div class="recent-content">
-        <div class="recent-content-list">
-          {% for item in collections.pinned %}
-            <div class="content-item">
-              <a href="{{ item.url }}" class="content-link">
-                <span class="content-title">{{ item.data.title }}</span>
-                <span class="content-category">{{ (item.data.category or 'Insights') | titlecase }}</span>
-              </a>
-              {% if item.data.description or item.data.excerpt %}
-              <div class="content-description">{{ item.data.description or item.data.excerpt }}</div>
-              {% endif %}
-            </div>
-          {% endfor %}
+      <div class="topline-heading-group">
+        <h1>Redefining relationships between <a class="headline-link headline-link--1" href="#vision-people"><span>people</span></a>, <a class="headline-link headline-link--2" href="#vision-places"><span>places</span></a> and <a class="headline-link headline-link--3" href="#vision-property"><span>property</span></a></h1>
+        <div class="topline-body">
+          <p class="topline-label">What we do</p>
+          <p class="toplinep">Mortar is a technology company building intelligent systems. Powering the next generation of solutions, products and services with intelligence and data enhanced systems.</p>
+          <a class="topline-cta" href="#services">Learn about our work</a>
         </div>
       </div>
+    </div>
+  </section>
+
+  <section id="featured-work">
+    <div class="featured-grid">
+
+      <div class="featured-intro">
+        <h2>Current work</h2>
+        <p>We build technology solutions for corporate, place-based, government and health institutions, applying our data and intelligence platforms to deliver lasting impact.</p>
+        <a href="{{ '/content/' | url }}" class="featured-intro-cta">See all our work →</a>
+      </div>
+
+      <a href="{{ '/content/' | url }}?filter=case-study" class="featured-tile featured-tile--large">
+        <span class="featured-tile-arrow" aria-hidden="true"></span>
+        <div class="featured-tile-top">
+          <img src="{{ '/static/images/partners/Dawn%20Logo%20B%26W.png' | url }}" alt="Dawn Supercomputer" class="featured-tile-logo">
+        </div>
+        <div class="featured-tile-footer">
+          <span class="featured-tile-tag">Research</span>
+          <div class="featured-tile-stats">
+            <div class="featured-tile-stat">
+              <p class="featured-tile-metric">Dawn</p>
+              <p class="featured-tile-metric-label">Supercomputer</p>
+            </div>
+            <div class="featured-tile-stat">
+              <p class="featured-tile-metric">Building behavioural models</p>
+              <p class="featured-tile-metric-label">New models for understanding and responding to behaviour</p>
+            </div>
+          </div>
+        </div>
+      </a>
+
+      <a href="{{ '/content/' | url }}?filter=case-study" class="featured-tile">
+        <span class="featured-tile-arrow" aria-hidden="true"></span>
+        <div class="featured-tile-top">
+          <img src="{{ '/static/images/partners/mayoroflondonlogo01.png' | url }}" alt="Mayor of London" class="featured-tile-logo">
+        </div>
+        <div class="featured-tile-footer">
+          <span class="featured-tile-tag">Housing</span>
+          <p class="featured-tile-metric">Greater London Authority, Mayor of London</p>
+          <p class="featured-tile-metric-label">Tenancy sustainment tool</p>
+        </div>
+      </a>
+
+      <a href="{{ '/content/' | url }}?filter=case-study" class="featured-tile">
+        <span class="featured-tile-arrow" aria-hidden="true"></span>
+        <div class="featured-tile-top">
+          <img src="{{ '/static/images/partners/Department_for_Science_Innovation_and_Technology_logo.png' | url }}" alt="Department for Science, Innovation and Technology" class="featured-tile-logo">
+        </div>
+        <div class="featured-tile-footer">
+          <span class="featured-tile-tag">Government</span>
+          <p class="featured-tile-metric">Dept. for Science, Innovation &amp; Technology</p>
+          <p class="featured-tile-metric-label">Enhancing the impact of digital skills</p>
+        </div>
+      </a>
+
+      <a href="{{ '/content/' | url }}?filter=case-study" class="featured-tile">
+        <span class="featured-tile-arrow" aria-hidden="true"></span>
+        <div class="featured-tile-top">
+          <img src="{{ '/static/images/partners/southbankcentre-logo.png' | url }}" alt="Southbank Centre" class="featured-tile-logo">
+        </div>
+        <div class="featured-tile-footer">
+          <span class="featured-tile-tag">Health</span>
+          <p class="featured-tile-metric">Southbank Centre and NHS Integrated Care Board</p>
+          <p class="featured-tile-metric-label">Children's mental health platform</p>
+        </div>
+      </a>
+
+      <a href="{{ '/content/' | url }}?filter=case-study" class="featured-tile">
+        <span class="featured-tile-arrow" aria-hidden="true"></span>
+        <div class="featured-tile-top">
+          <img src="{{ '/static/images/partners/humberandnorth.png' | url }}" alt="Humber and North Yorkshire" class="featured-tile-logo">
+        </div>
+        <div class="featured-tile-footer">
+          <span class="featured-tile-tag">Government</span>
+          <p class="featured-tile-metric">Humber &amp; North Yorkshire</p>
+          <p class="featured-tile-metric-label">Shared directory and triage</p>
+        </div>
+      </a>
+
     </div>
   </section>
 
@@ -55,7 +115,7 @@ name: homepage
         <li><img src="{{ '/static/images/partners/havering-council.png' | url }}" alt="Havering Council logo" /></li>
         <li><img src="{{ '/static/images/partners/Hackney-Logo.png' | url }}" alt="Hackney Council logo" /></li>
         <li><img src="{{ '/static/images/partners/Clarion-Housing-Group-Logo.png' | url }}" alt="Clarion Housing Group logo" /></li>
-        <li><img src="{{ '/static/images/partners/salford02.png' | url }}" alt="Salford City Council logo" /></li>
+        <li><img src="{{ '/static/images/partners/salford04.png' | url }}" alt="Salford City Council logo" /></li>
         <li><img src="{{ '/static/images/partners/eastriding1.png' | url }}" alt="East Riding of Yorkshire logo" /></li>
         <li><img src="{{ '/static/images/partners/humberandnorth.png' | url }}" alt="Humber and North Yorkshire Integrated Care Partnership logo" /></li>
         <li><img src="{{ '/static/images/partners/walthamforest01.png' | url }}" alt="Waltham Forest logo" /></li>
@@ -74,8 +134,8 @@ name: homepage
   <div class="services-wrapper">
 
     <nav class="services-nav">
-      <button class="service-nav-item is-active" data-service="0">Finding new solutions</button>
-      <button class="service-nav-item" data-service="1">Transforming systems</button>
+      <button class="service-nav-item is-active" data-service="0">Design intelligence</button>
+      <button class="service-nav-item" data-service="1">Data adaption</button>
       <button class="service-nav-item" data-service="2">Understanding behaviour</button>
       <button class="service-nav-item" data-service="3">Redefining reporting</button>
     </nav>
@@ -83,7 +143,7 @@ name: homepage
     <div class="services-content">
       <div class="service-panel is-active" data-service="0">
         <div class="service-panel-text">
-          <p>Existing solutions are heavily influenced by bias, incomplete data and assymetry. We use modular, intelligent frameworks to power a new generation of solutions. Easy to integrate. Simple to scale. Dynamic and personalised for enhancing the user experience.</p>
+          <p>Traditional design methods are built on untested assumptions about users, their needs and behaviour. We simulate systems and services,   modelling users to develop decision surfaces that make systems and services observable, measurable and structured for continuous improvement from the outset.</p>
           <a href="/solutions/service-design/" class="service-panel-link">Our design framework</a>
         </div>
         <div class="service-panel-image">
@@ -92,7 +152,7 @@ name: homepage
       </div>
       <div class="service-panel" data-service="1">
         <div class="service-panel-text">
-          <p>Traditional systems were not built for complexity or change. Siloed information and legacy processes make them difficult to navigate and slow to respond. We integrate data to model and test systems. Learning how to deliver more responsive, resilient and connected experiences.</p>
+          <p>Datasets from disparate systems are difficult to analyse. They do not share ontologies or common data models. We build interoperable environments that make data portable, combinable and meaningful in context. Turning fragmented information into the foundation for driving modelling, analysis and insight.</p>
           <a href="/solutions/system-design/" class="service-panel-link">Intelligent systems</a>
         </div>
         <div class="service-panel-image">
@@ -101,7 +161,7 @@ name: homepage
       </div>
       <div class="service-panel" data-service="2">
         <div class="service-panel-text">
-          <p>Our ability to sense, interpret and respond to the world is changing rapidly. At Mortar we pioneer behavioural intelligence, creating new ways to combine and respond to complex data and information. So decisions are more aligned with human understanding.</p>
+          <p>Our ability to sense, interpret and respond to the world is changing rapidly. At Mortar we pioneer behavioural intelligence, creating new ways to combine and respond to complex data and information. So decisions are more aligned with human understanding and experience.</p>
           <a href="/products/hxly/" class="service-panel-link">Our research</a>
         </div>
         <div class="service-panel-image">
@@ -124,18 +184,9 @@ name: homepage
 
 
 <section id="powered-by">
-  <h2 class="powered-by-title">Powered by <span class="logo-tombola">
-    <span class="tombola-slide is-current">
-      <img src="{{ '/static/images/mortar-logo.svg' | url }}" alt="Mortar" class="tombola-logo" />
-    </span>
-    <span class="tombola-slide">
-      <img src="{{ '/static/images/hoopd-alpha.svg' | url }}" alt="Hoop'd" class="tombola-logo tombola-logo--hoopd" />
-    </span>
-    <span class="tombola-slide">
-      <img src="{{ '/static/images/hxly-logo01.svg' | url }}" alt="Hxly" class="tombola-logo tombola-logo--hxly" />
-    </span>
-  </span></h2>
+  <img src="{{ '/static/images/mortar-bricks.svg' | url }}" alt="" aria-hidden="true" class="powered-by-bricks">
   <div class="wrapper">
+    <h2 class="powered-by-title">Powered by Mortar</h2>
     <div class="insights-powered-by">
       <h3 class="powered-by-box-title">Driving the application of new technology.</h3>
       <p class="powered-by-strapline">Organisations use Mortar and our suite of products to power and scale their solutions; improving efficiencies and driving growth.</p>

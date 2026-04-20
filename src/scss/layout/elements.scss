@@ -30,8 +30,9 @@ a {
   text-decoration: none;
   font-weight: bold;
   font-size: 1.2em;
-  transition: background-color 0.3s ease; 
+  transition: background-color 0.3s ease;
   border: 1px black solid;
+  border-radius: 4px;
 
   &:hover {
     background-color: color.adjust($mortar-purple, $lightness: -10%);
@@ -53,6 +54,18 @@ a {
 
 img {
   border: 0;
+}
+
+// ─── Section label utility class ──────────────────────────────────────────────
+// For use directly in templates. Page-specific labels should use the
+// section-label() mixin (defined in common/variables) instead.
+
+.section-label {
+  @include section-label;
+
+  &--on-light {
+    color: rgba($black, 0.55);
+  }
 }
 
 strong {

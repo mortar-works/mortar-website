@@ -1,13 +1,12 @@
 ---
-title: "Hoop'd"
+title: "Henna"
 layout: layouts/product-feature.njk
-theme: hoopd
-date: 2025-03-02
+date: 2025-06-01
 draft: false
 category: product
 author: Mortar
 
-logo: /static/images/hoopd-alpha.svg
+logo: /static/images/henna-logo.svg
 
 tagline: "The integrated services platform"
 
@@ -21,7 +20,6 @@ stats:
   - value: "100k"
     label: "thousands of service users"
 
-split_image: /static/images/partners/hoopd-screen2.png
 split_heading: "Turn fragmented information and siloed organisations into connected, intelligent services."
 split_body: "Most local areas operate without a clear picture of the partnerships, referrals, and relationships that drive their impact. Hoop'd makes those networks visible. Turning information and engagement into actionable intelligence to shape better service decisions."
 
@@ -86,22 +84,26 @@ features:
   - title: "Custom Frameworks"
     body: "Work with us to create the framework you need for your service. We support custom service and systems design processes to enable you to scale and grow your own service solution with your stakeholders and users."
 
+why_heading: "The most valuable asset in any organisation is its network"
+why_matters: |
+  Hoop'd turns fragmented provision into connected, intelligent services; reshaping how local services are designed and delivered. Connecting infrastructure, sharing data and delivering real user insights to drive cost efficiencies and improve outcomes.
+  
+  Hoop'd powers reservice delivery across local government and NHS partnerships, supporting private and public institutions in engaging and improving the lives of their users and helping to build genuinely integrated neighbourhoods.  
+
 keywords:
-  - Hoop'd
-  - integrated services
-  - design system
-  - community engagement
-  - place-based
-  - connectivity
-  - local government
-  - NHS partnerships
+  - Henna
+  - network intelligence
+  - ecosystem mapping
+  - partnership analytics
+  - relationship management
+  - collaboration intelligence
+  - referral tracking
+  - impact attribution
 
 tags:
   - product
-  - design system
-  - community
-  - place
-  - engagement
+  - network
+  - intelligence
+  - partnerships
+  - analytics
 ---
-
-

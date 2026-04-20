@@ -2,22 +2,26 @@
 
 {% block pageTitle %}{{ title }} - {{ super() }}{% endblock %}
 {% block bodyId %}about-mortar{% endblock %}
-{% block mainClass %}content-page{% endblock %}
+{% block mainClass %}about-page{% endblock %}
 
 {% block content %}
+
 <section id="about-hero">
-  <div class="wrapper">
+  <div class="about-hero-inner">
     <div class="about-hero-left">
+      <p class="about-topline-label">About us</p>
       <h1>Building a better world through technology</h1>
-      <p class="about-strapline">We are committed to building intelligent systems. To power the next generation of products and applications. To align a more equitable society with real human needs and understanding.</p>
-      <a href="/contact/" class="about-cta">Work with us</a>
+      <p class="about-strapline">We are committed to building intelligent systems; to power the next generation of intelligent products and applications that are more aligned to human needs, outcomes and experiences.</p>
+      <a href="/contact/" class="about-hero-cta">Work with us</a>
     </div>
     <div class="about-hero-right">
-<div class="about-articles-list">
+      <p class="about-topline-label">Latest news</p>
+      <div class="about-articles-list">
         {% for item in collections.recentCompanyNews %}
           <div class="about-article-item">
             <a href="{{ item.url }}" class="about-article-link">
               <span class="about-article-title">{{ item.data.title }}</span>
+              <svg class="about-article-arrow" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M9 18l6-6-6-6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
             </a>
           </div>
         {% endfor %}
@@ -27,26 +31,26 @@
 </section>
 
 <section id="about-values">
-  <div class="wrapper">
-    <p class="values-label">Our Values</p>
+  <div class="about-values-inner">
+    <p class="about-section-label">Our Values</p>
     <div class="values-grid">
       <div class="value-card">
-        <span class="value-number">1</span>
+        <span class="value-number">01</span>
         <h3>People first</h3>
         <p>Every decision starts with knowing the people who use and deliver our systems, and those they have impact on.</p>
       </div>
       <div class="value-card">
-        <span class="value-number">2</span>
+        <span class="value-number">02</span>
         <h3>Data-led</h3>
         <p>We design and build based on what we know, not what we guess. When we don't know, we say so. And then find out.</p>
       </div>
       <div class="value-card">
-        <span class="value-number">3</span>
+        <span class="value-number">03</span>
         <h3>Long-term thinking</h3>
         <p>We build for sustainability. Our tools are designed to grow and adapt; we are here to evolve, not get replaced.</p>
       </div>
       <div class="value-card">
-        <span class="value-number">4</span>
+        <span class="value-number">04</span>
         <h3>Equity by design</h3>
         <p>Accessibility and inclusion are not afterthoughts. They are embedded in how we research, design, and build.</p>
       </div>
@@ -54,17 +58,26 @@
   </div>
 </section>
 
-<section id="about-content">
-  <div class="wrapper article-layout">
-    <nav class="article-toc" id="article-toc" aria-label="Page contents"></nav>
-    <div class="article-main">
-      <article class="article-content">
-        {{ content | safe }}
-      </article>
-      <p class="solution-get-in-touch">
-        <a class="cta" href="/contact/">Get in touch</a>
-      </p>
+<section id="about-what-we-do">
+  <div class="about-what-inner">
+    <div class="about-what-col">
+      <p class="about-section-label about-section-label--dark">What we do</p>
+      <p class="about-what-body">We work at the intersection of design, research, and technology; building intelligent systems to serve people, places and property. We solve complex problems for society, supporting our clients and partners improve outcomes across Health, Government, Culture, Housing and Assets.</p>
+    </div>
+    <div class="about-what-col">
+      <p class="about-section-label about-section-label--dark">How we work</p>
+      <p class="about-what-body">We start from research and the understanding of data, out of which we build our systems and frameworks iteratively. We help our clients understand their users and customers, building them the solutions that serve their needs most effectively.</p>
     </div>
   </div>
 </section>
+
+<section id="about-story">
+  <div class="about-story-inner">
+    <p class="about-section-label about-section-label--dark">Our story</p>
+    <h2 class="about-story-heading">Founded during a time of monumental crisis and change.</h2>
+    <p class="about-story-body">Mortar was founded during a time of monumental crisis and change. We began building solutions to help connect those most isolated, supporting people in staying safe and secure at home and in employment. Our work continues through our research and development of frameworks, datasets and intelligent systems to further our understanding of people and society.</p>
+    <a href="/contact/" class="about-story-cta">Get in touch</a>
+  </div>
+</section>
+
 {% endblock %}
