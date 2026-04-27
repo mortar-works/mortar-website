@@ -1,5 +1,5 @@
 ---
-title: "Digital skills and help finder"
+title: "Digital Skills Platform"
 description: "Provide every user and partner with dynamic self assessments; to discover the need, availability and progress of skills."
 link: "/digital-skills-and-help-finder"
 label_image: "/static/images/solutions/solution_label01.png"
@@ -17,7 +17,7 @@ keywords:
   - self-assessment
 ---
 
-## Digital Skills and Help Finder  
+## Digital Skills Platform  
 
 Empowering residents with digital skills through tailored self-assessments and support tools
 
