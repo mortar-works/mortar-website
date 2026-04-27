@@ -955,3 +955,205 @@ body.theme-hoopd .pf-footer {
   background: $hd-navy;
   border-top: none;
 }
+
+// ── Hxly theme overrides ──────────────────────────────────────────────────────
+// Scoped to body.theme-hxly so other products are completely unaffected.
+
+$hx-ink:   #090d1a;
+$hx-mid:   #12192b;
+$hx-teal:  #18c9a8;
+$hx-cool:  #a8c5e8;
+$hx-light: #eef3f8;
+
+body.theme-hxly {
+  background: $hx-ink;
+}
+
+body.theme-hxly > header,
+body.theme-hxly > footer {
+  display: none;
+}
+
+.product-feature-page--hxly {
+
+  // ── Hero ───────────────────────────────────────────────────────────────────
+  .pf-hero {
+    background: transparent;
+  }
+
+  .pf-hero-content {
+    background: linear-gradient(135deg, $hx-ink 0%, $hx-mid 100%);
+
+    &::before {
+      background-image: radial-gradient(circle, rgba($hx-teal, 0.1) 1px, transparent 1px);
+    }
+  }
+
+  .pf-hero-tagline { color: $hx-light; }
+  .pf-hero-eyebrow { color: rgba($hx-teal, 0.6); }
+  .pf-hero-desc    { color: rgba($hx-cool, 0.7); }
+
+  .pf-card-contact {
+    color: $hx-light;
+    border-color: rgba($hx-light, 0.3);
+    &:hover {
+      background: $hx-teal;
+      border-color: $hx-teal;
+      color: $hx-ink;
+    }
+  }
+
+  .pf-card-logo img { filter: brightness(0) invert(1); }
+  .pf-hero-logo     { filter: brightness(0) invert(1); }
+
+  .pf-hero-scroll-cta { color: rgba($hx-cool, 0.4); &:hover { color: $hx-teal; } }
+
+  // ── Eyebrow ────────────────────────────────────────────────────────────────
+  .pf-eyebrow {
+    color: $hx-teal;
+    &::before { background: $hx-teal; }
+  }
+
+  // ── Section heading ────────────────────────────────────────────────────────
+  .pf-section-heading { color: $hx-light; }
+  .pf-section-subheading { color: rgba($hx-cool, 0.55); }
+
+  // ── Overview ──────────────────────────────────────────────────────────────
+  .pf-overview { background: $hx-ink; }
+  .pf-overview-body p { color: rgba($hx-cool, 0.5); &:first-child { color: rgba($hx-cool, 0.8); } }
+
+  // ── Stats ──────────────────────────────────────────────────────────────────
+  .pf-stats    { background: $hx-mid; }
+  .pf-stat     { border-right-color: rgba($hx-light, 0.08); }
+  .pf-stat-value { color: $hx-teal; }
+  .pf-stat-label { color: rgba($hx-cool, 0.8); }
+
+  // ── How it works ───────────────────────────────────────────────────────────
+  .pf-how          { background: $hx-ink; }
+  .pf-section-header { background: $hx-ink; }
+  .pf-steps {
+    @include respond-to('medium') {
+      grid-template-columns: repeat(5, 1fr);
+    }
+  }
+  .pf-step     { background: $hx-mid; border-right-color: $hx-ink;
+    @include respond-to('medium') {
+      &:nth-child(2n) { border-right: 1px solid $hx-ink; }
+      &:nth-child(4n) { border-right: 1px solid $hx-ink; }
+      &:nth-child(5n) { border-right: none; }
+    }
+  }
+  .pf-step      { gap: 2.2em; justify-content: flex-start; min-height: 0; padding-bottom: 2.7em; }
+  .pf-step h3  { color: $hx-teal; font-size: 1.7em; text-align: center; }
+  .pf-step p   { color: rgba($hx-cool, 0.65); font-size: 1.1em; text-align: center; width: 100%; }
+
+  // ── Features ───────────────────────────────────────────────────────────────
+  // ── Mid-page CTA ───────────────────────────────────────────────────────────
+  .pf-mid-cta {
+    background: $hx-ink;
+    border-top: 1px solid rgba($hx-teal, 0.15);
+    border-bottom: 1px solid rgba($hx-teal, 0.15);
+  }
+
+  .pf-mid-cta-inner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 2em;
+    padding: 4em 10%;
+  }
+
+  .pf-mid-cta-heading {
+    font-family: 'Manrope', sans-serif;
+    font-size: clamp(1em, 1.5vw, 1.25em);
+    font-weight: 500;
+    line-height: 1.6;
+    color: rgba($hx-cool, 0.8);
+    margin: 0;
+    max-width: 36em;
+  }
+
+  .pf-mid-cta-btn {
+    flex-shrink: 0;
+    display: inline-block;
+    padding: 0.85em 2.2em;
+    border: 1.5px solid $hx-teal;
+    border-radius: 3px;
+    background: transparent;
+    color: $hx-teal;
+    text-decoration: none;
+    font-family: 'Manrope', sans-serif;
+    font-weight: 700;
+    font-size: 0.85em;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    transition: background 0.2s ease, color 0.2s ease;
+
+    &:hover {
+      background: $hx-teal;
+      color: $hx-ink;
+    }
+  }
+
+  .pf-features-section { background: $hx-mid; }
+  .pf-feature {
+    border-color: rgba($hx-teal, 0.2);
+    background: rgba($hx-ink, 0.4);
+    &:hover {
+      border-color: $hx-teal;
+      background: rgba($hx-ink, 0.7);
+    }
+    h3 { color: $hx-light; }
+    p  { color: rgba($hx-cool, 0.65); }
+  }
+
+  // ── Split screen ───────────────────────────────────────────────────────────
+  .pf-split-visual {
+    background: linear-gradient(145deg, $hx-mid 0%, $hx-ink 60%, #0d1f1c 100%);
+    border-right-color: rgba($hx-teal, 0.15);
+  }
+
+  .pf-split-geo--a { background: darken($hx-ink, 3%); }
+  .pf-split-geo--c {
+    background: repeating-linear-gradient(
+      0deg,
+      rgba($hx-teal, 0.4),
+      rgba($hx-teal, 0.4) 1.5px,
+      transparent 1.5px,
+      transparent 6px
+    );
+  }
+  .pf-split-geo--d { background: darken($hx-ink, 3%); }
+  .pf-split-geo--b { background: rgba($hx-cool, 0.5); }
+  .pf-split-geo--e { background: rgba($hx-teal, 0.4); }
+
+  .pf-split-text   { background: $hx-light; }
+  .pf-split-heading { color: $hx-ink; }
+  .pf-split-body   { color: rgba($hx-ink, 0.55); }
+
+  // ── Closing cards ──────────────────────────────────────────────────────────
+  .pf-closing        { background: $hx-ink; }
+  .pf-closing-header .pf-eyebrow { color: $hx-teal; }
+
+  .pf-closing-card {
+    background: $hx-mid;
+    border: none;
+    border-right: 1px solid $hx-ink;
+    &:last-child { border-right: none; }
+    &:hover { background: lighten($hx-mid, 3%); }
+  }
+
+  .pf-closing-title       { color: $hx-light; }
+  .pf-closing-stats       { border-color: rgba($hx-light, 0.08); }
+  .pf-closing-stat-value  { color: $hx-teal; }
+  .pf-closing-stat-label  { color: rgba($hx-cool, 0.7); }
+  .pf-closing-text p      { color: rgba($hx-cool, 0.6); }
+
+}
+
+// Hxly footer background
+body.theme-hxly .pf-footer {
+  background: $hx-ink;
+  border-top: 1px solid rgba($hx-teal, 0.1);
+}

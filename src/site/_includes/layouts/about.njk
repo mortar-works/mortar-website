@@ -14,19 +14,6 @@
       <p class="about-strapline">We are committed to building intelligent systems; to power the next generation of intelligent products and applications that are more aligned to human needs, outcomes and experiences.</p>
       <a href="/contact/" class="about-hero-cta">Work with us</a>
     </div>
-    <div class="about-hero-right">
-      <p class="about-topline-label">Latest news</p>
-      <div class="about-articles-list">
-        {% for item in collections.recentCompanyNews %}
-          <div class="about-article-item">
-            <a href="{{ item.url }}" class="about-article-link">
-              <span class="about-article-title">{{ item.data.title }}</span>
-              <svg class="about-article-arrow" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M9 18l6-6-6-6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
-            </a>
-          </div>
-        {% endfor %}
-      </div>
-    </div>
   </div>
 </section>
 

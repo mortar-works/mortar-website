@@ -320,6 +320,7 @@ window.addEventListener('load', (event) => {
   const filterButtons = document.querySelectorAll('.insight-filter');
   const insightItems = Array.from(document.querySelectorAll('#insight-list li'));
   const paginationContainer = document.getElementById('insights-pagination');
+  const featuredEl = document.getElementById('content-featured');
   const ITEMS_PER_PAGE = 12;
   let currentFilter = 'all';
   let currentPage = 1;
@@ -328,6 +329,13 @@ window.addEventListener('load', (event) => {
     return insightItems.filter(item =>
       currentFilter === 'all' || item.dataset.category.split(' ').includes(currentFilter)
     );
+  }
+
+  function updateFeaturedCard() {
+    if (!featuredEl) return;
+    const matches = currentFilter === 'all' ||
+      featuredEl.dataset.category.split(' ').includes(currentFilter);
+    featuredEl.classList.toggle('is-hidden', !matches);
   }
 
   function renderPage() {
@@ -339,20 +347,19 @@ window.addEventListener('load', (event) => {
     insightItems.forEach(item => { item.style.display = 'none'; });
     filtered.slice(start, end).forEach(item => { item.style.display = ''; });
 
+    updateFeaturedCard();
     renderPagination(totalPages, filtered.length);
   }
 
-  function renderPagination(totalPages, totalItems) {
+  function renderPagination(totalPages) {
     if (!paginationContainer) return;
     if (totalPages <= 1) { paginationContainer.innerHTML = ''; return; }
 
-    let html = `<div class="pagination-info">${totalItems} articles</div><div class="pagination-controls">`;
-    html += `<button class="pagination-btn pagination-prev" data-page="${currentPage - 1}" ${currentPage === 1 ? 'disabled' : ''}>Previous</button>`;
-    for (let i = 1; i <= totalPages; i++) {
-      html += `<button class="pagination-btn ${i === currentPage ? 'is-active' : ''}" data-page="${i}">${i}</button>`;
-    }
-    html += `<button class="pagination-btn pagination-next" data-page="${currentPage + 1}" ${currentPage === totalPages ? 'disabled' : ''}>Next</button>`;
-    html += '</div>';
+    const html = `<div class="pagination-controls">
+      <button class="pagination-btn pagination-prev" data-page="${currentPage - 1}" ${currentPage === 1 ? 'disabled' : ''}>← Previous</button>
+      <span class="pagination-indicator">Page ${currentPage} of ${totalPages}</span>
+      <button class="pagination-btn pagination-next" data-page="${currentPage + 1}" ${currentPage === totalPages ? 'disabled' : ''}>Next →</button>
+    </div>`;
     paginationContainer.innerHTML = html;
 
     paginationContainer.querySelectorAll('.pagination-btn:not([disabled])').forEach(btn => {
@@ -705,6 +712,41 @@ window.addEventListener('load', (event) => {
   ['partners', 'services', 'vision', 'insights'].forEach((id) => {
     const el = document.getElementById(id);
     if (el) scrollFadeObserver.observe(el);
+  });
+
+  // Solutions overview accordion
+  document.querySelectorAll('#solutions-list .solution-section-header').forEach((btn) => {
+    const body = btn.nextElementSibling;
+
+    btn.addEventListener('click', () => {
+      const isOpen = btn.getAttribute('aria-expanded') === 'true';
+
+      const section = btn.closest('.solution-section');
+
+      if (isOpen) {
+        // Collapse: pin height, then animate to 0
+        body.style.height = body.scrollHeight + 'px';
+        body.getBoundingClientRect(); // force reflow
+        body.style.height = '0';
+        btn.setAttribute('aria-expanded', 'false');
+        section.classList.remove('is-open');
+        body.addEventListener('transitionend', () => {
+          body.hidden = true;
+          body.style.height = '';
+        }, { once: true });
+      } else {
+        // Expand: remove hidden, measure, animate
+        body.hidden = false;
+        body.style.height = '0';
+        body.getBoundingClientRect(); // force reflow
+        body.style.height = body.scrollHeight + 'px';
+        btn.setAttribute('aria-expanded', 'true');
+        section.classList.add('is-open');
+        body.addEventListener('transitionend', () => {
+          body.style.height = 'auto';
+        }, { once: true });
+      }
+    });
   });
 
   // Featured work — second row tiles fade in left to right on scroll

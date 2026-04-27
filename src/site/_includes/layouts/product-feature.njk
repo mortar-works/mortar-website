@@ -104,8 +104,8 @@
 <section class="pf-how">
   <div class="wrapper">
     <div class="pf-section-header">
-      <span class="pf-eyebrow">How it works</span>
-      <h2 class="pf-section-heading">{{ steps_heading if steps_heading else 'From data to intelligence' }}</h2>
+      <span class="pf-eyebrow">{{ steps_eyebrow if steps_eyebrow else 'How it works' }}</span>
+      <h2 class="pf-section-heading">{{ steps_heading | safe if steps_heading else 'From data to intelligence' }}</h2>
     </div>
     <div class="pf-steps">
       {% for step in steps %}
@@ -115,6 +115,16 @@
       </div>
       {% endfor %}
     </div>
+  </div>
+</section>
+{% endif %}
+
+{# ── Mid-page CTA ──────────────────────────────────────────────────────────── #}
+{% if mid_cta_heading %}
+<section class="pf-mid-cta">
+  <div class="pf-mid-cta-inner">
+    <p class="pf-mid-cta-heading">{{ mid_cta_heading }}</p>
+    <a href="/contact/" class="pf-mid-cta-btn">{{ mid_cta_label if mid_cta_label else 'Get in touch' }}</a>
   </div>
 </section>
 {% endif %}

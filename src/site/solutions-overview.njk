@@ -1,0 +1,62 @@
+---
+title: Solutions
+name: solutions-overview-page
+---
+
+{% extends 'layouts/base.njk' %}
+
+{% block pageTitle %}{{ title }} - {{ super() }}{% endblock %}
+
+{% block bodyId %}{{ name }}{% endblock %}
+
+{% block content %}
+
+<section id="solutions-topline">
+  <div class="wrapper">
+    <div class="solutions-topline-inner">
+      <p class="solutions-topline-label">What we offer</p>
+      <h1>Intelligent solutions for <em>people</em>, <em>places</em> and <em>property</em></h1>
+      <p class="solutions-toplinep">Mortar builds technology solutions that combine deep domain expertise with scalable platform architecture to deliver quick and tailored implementations.</p>
+    </div>
+  </div>
+</section>
+
+<section id="solutions-list">
+  {% for solution in collections.solutions %}
+    {% if loop.index <= 8 %}
+    <div class="solution-section">
+
+      <button class="solution-section-header" aria-expanded="false">
+        <h3 class="solution-section-title">{{ solution.data.title }}</h3>
+        <span class="solution-section-icon" aria-hidden="true"></span>
+      </button>
+
+      <div class="solution-section-body" hidden>
+        <div class="solution-section-inner">
+          <div class="solution-section-desc">
+            <p>{{ solution.data.description }}</p>
+            <a href="{{ solution.url }}" class="solution-section-link">Read more</a>
+          </div>
+          <div class="solution-section-keywords">
+            {% if solution.data.keywords %}
+            <ul>
+              {% for kw in solution.data.keywords %}
+              <li>{{ kw }}</li>
+              {% endfor %}
+            </ul>
+            {% endif %}
+          </div>
+          <div class="solution-section-image">
+            {% if solution.data.image %}
+            <img src="{{ solution.data.image | url }}" alt="{{ solution.data.title }}">
+            {% endif %}
+          </div>
+        </div>
+      </div>
+
+    </div>
+    {% endif %}
+  {% endfor %}
+</section>
+
+{% endblock %}

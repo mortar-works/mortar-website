@@ -1,0 +1,317 @@
+@use 'sass:color';
+@use "../common/variables" as *;
+@use "../utilities/responsive" as *;
+
+// ─── Page shell: purple header ─────────────────────────────────────────────
+
+#solutions-overview-page {
+  background: $mortar-purple;
+
+  header {
+    background: $mortar-purple !important;
+    backdrop-filter: none !important;
+    -webkit-backdrop-filter: none !important;
+
+    &.sticky {
+      background: $mortar-purple !important;
+      backdrop-filter: none !important;
+      -webkit-backdrop-filter: none !important;
+    }
+
+    #mortar-logo img {
+      filter: brightness(0) invert(1);
+    }
+
+    nav a {
+      color: rgba(white, 0.8) !important;
+      &:hover { color: white !important; }
+    }
+
+    .nav-cta--outline {
+      border-color: rgba(white, 0.5) !important;
+      color: white !important;
+      &:hover {
+        background: rgba(white, 0.1) !important;
+        border-color: white !important;
+      }
+    }
+  }
+}
+
+// ─── Topline ───────────────────────────────────────────────────────────────
+
+#solutions-overview-page #solutions-topline {
+  background: $mortar-purple;
+  color: white;
+  padding: 9em 5% 5em;
+
+  .wrapper {
+    max-width: none;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  .solutions-topline-inner {
+    max-width: 60%;
+
+    @include respond-to('small', 'max') {
+      max-width: 100%;
+    }
+  }
+
+  .solutions-topline-label {
+    display: flex;
+    align-items: center;
+    gap: 0.5em;
+    font-size: 0.72em;
+    font-weight: 600;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: rgba(white, 0.45);
+    margin: 0 0 1.2em;
+
+    &::before {
+      content: '';
+      display: inline-block;
+      width: 7px;
+      height: 7px;
+      background: $mortar-orange;
+      border-radius: 1px;
+      flex-shrink: 0;
+    }
+  }
+
+  h1 {
+    font-family: 'Manrope', sans-serif;
+    font-weight: 800;
+    font-size: 4.8em;
+    line-height: 1.08;
+    color: white;
+    margin: 0 0 0.6em;
+
+    em {
+      font-style: normal;
+      color: $mortar-yellow;
+    }
+
+    @media (min-width: 769px) and (max-width: 1024px) {
+      font-size: 3.2em;
+    }
+
+    @include respond-to('small', 'max') {
+      font-size: 2.4em;
+      line-height: 1.12;
+    }
+  }
+
+  .solutions-toplinep {
+    font-size: 1.15em;
+    line-height: 1.65;
+    color: rgba(white, 0.6);
+    margin: 0;
+    max-width: 36em;
+    padding-top: 1.6em;
+    border-top: 1px solid rgba(white, 0.15);
+  }
+}
+
+// ─── Accordion list ────────────────────────────────────────────────────────
+
+#solutions-overview-page #solutions-list {
+  padding: 0 5% 6em;
+
+  .solution-section {
+    border-top: 1px solid rgba(white, 0.18);
+    padding: 0 2em;
+    margin: 0 -2em;
+    transition: background 0.3s ease;
+
+    &:last-child {
+      border-bottom: 1px solid rgba(white, 0.18);
+    }
+
+    &.is-open {
+      background: rgba(white, 0.06);
+    }
+
+    // ── Header row (the clickable toggle) ───────────────────────────────────
+    &-header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      width: 100%;
+      background: none;
+      border: none;
+      padding: 1.4em 0;
+      cursor: pointer;
+      text-align: left;
+      gap: 1.5em;
+
+      &:hover .solution-section-title,
+      &[aria-expanded="true"] .solution-section-title {
+        color: $mortar-yellow;
+      }
+    }
+
+    // ── Big title ────────────────────────────────────────────────────────────
+    &-title {
+      font-family: 'Manrope', sans-serif;
+      font-weight: 800;
+      font-size: 4.2em;
+      line-height: 1.05;
+      color: white;
+      margin: 0;
+      transition: color 0.2s ease;
+
+      @media (min-width: 769px) and (max-width: 1024px) {
+        font-size: 3em;
+      }
+
+      @include respond-to('small', 'max') {
+        font-size: 2.2em;
+      }
+    }
+
+    // ── +/× icon ─────────────────────────────────────────────────────────────
+    &-icon {
+      flex-shrink: 0;
+      width: 32px;
+      height: 32px;
+      position: relative;
+
+      &::before,
+      &::after {
+        content: '';
+        position: absolute;
+        background: white;
+        border-radius: 2px;
+        transition: transform 0.3s ease, opacity 0.3s ease;
+      }
+
+      // Horizontal bar
+      &::before {
+        width: 100%;
+        height: 2px;
+        top: 50%;
+        left: 0;
+        transform: translateY(-50%);
+      }
+
+      // Vertical bar
+      &::after {
+        width: 2px;
+        height: 100%;
+        left: 50%;
+        top: 0;
+        transform: translateX(-50%);
+      }
+
+      .solution-section-header[aria-expanded="true"] & {
+        &::after {
+          transform: translateX(-50%) rotate(90deg);
+          opacity: 0;
+        }
+      }
+    }
+
+    // ── Collapsible body ─────────────────────────────────────────────────────
+    &-body {
+      overflow: hidden;
+      height: 0;
+      transition: height 0.38s cubic-bezier(0.4, 0, 0.2, 1);
+
+      // When not hidden via JS attr, reset height to auto once open
+      &:not([hidden]) {
+        height: auto;
+      }
+    }
+
+    // ── Three-column inner layout ────────────────────────────────────────────
+    &-inner {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      gap: 4em;
+      align-items: start;
+      padding: 2em 0 3.5em;
+
+      @media (min-width: 769px) and (max-width: 1024px) {
+        grid-template-columns: 1fr 1fr;
+
+        .solution-section-image { display: none; }
+      }
+
+      @include respond-to('small', 'max') {
+        grid-template-columns: 1fr;
+        gap: 1.8em;
+        padding: 1.5em 0 2.5em;
+
+        .solution-section-image { display: none; }
+      }
+    }
+
+    // ── Left: description + link ─────────────────────────────────────────────
+    &-desc {
+      p {
+        font-size: 1.05em;
+        line-height: 1.75;
+        color: rgba(white, 0.65);
+        margin: 0 0 1.4em;
+      }
+    }
+
+    &-link {
+      display: inline-block;
+      font-size: 0.9em;
+      font-weight: 700;
+      color: $mortar-yellow;
+      text-decoration: none;
+      border-bottom: 1px solid rgba($mortar-yellow, 0.4);
+      padding-bottom: 0.1em;
+      transition: border-color 0.2s ease, color 0.2s ease;
+
+      &:hover {
+        color: white;
+        border-color: white;
+      }
+    }
+
+    // ── Middle: keyword list ─────────────────────────────────────────────────
+    &-keywords {
+      ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+        gap: 0.55em;
+      }
+
+      li {
+        font-size: 0.9em;
+        line-height: 1.5;
+        color: rgba(white, 0.55);
+        padding-left: 1.2em;
+        position: relative;
+
+        &::before {
+          content: '–';
+          position: absolute;
+          left: 0;
+          color: $mortar-orange;
+          font-weight: 700;
+        }
+      }
+    }
+
+    // ── Right: image ─────────────────────────────────────────────────────────
+    &-image {
+      img {
+        display: block;
+        width: 100%;
+        height: 200px;
+        object-fit: cover;
+      }
+    }
+  }
+}

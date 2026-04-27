@@ -10,11 +10,11 @@ name: content
 {% block bodyId %}{{ name }}{% endblock %}
 
 {% block content %}
+
 <section id="insights">
 
   <div class="insights-filter-bar">
     <div class="insights-filter-bar-inner">
-      <div class="insights-filter-label">Filters</div>
       <div class="insights-filters">
         <button class="insight-filter is-active" data-filter="all">All</button>
         <button class="insight-filter" data-filter="product">Product</button>
@@ -27,17 +27,46 @@ name: content
         <button class="insight-filter" data-filter="company">Company</button>
       </div>
       <div class="insights-filter-keywords">
-        <input type="search" class="insight-search-input" placeholder="Keywords..." aria-label="Filter by keyword" />
+        <input type="search" class="insight-search-input" placeholder="Search content..." aria-label="Search content" />
       </div>
     </div>
   </div>
 
-  <div class="wrapper">
-    {# Grid — all posts after the featured one #}
+  <div class="content-listing">
+
+    {# Featured card — first item in collection #}
+    {% for post in collections.allContent %}
+    {% if loop.first %}
+    <div id="content-featured" data-category="{{ post.data.categories | join(' ') if post.data.categories else (post.data.category | lower | replace(' ', '-') if post.data.category else 'all') }}">
+      <a class="content-featured-card" href="{{ post.url }}">
+        <div class="content-featured-body">
+          <span class="content-featured-category">{{ post.data.category or 'Insights' }}</span>
+          <h2 class="content-featured-title">{{ post.data.title }}</h2>
+          {% if post.data.description %}
+          <p class="content-featured-description">{{ post.data.description }}</p>
+          {% endif %}
+        </div>
+        <div class="content-featured-meta">
+          <div class="content-featured-meta-inner">
+            <span class="content-featured-date">{{ post.date | date }}</span>
+            <span class="content-featured-author">{{ post.data.author or 'Mortar' }}</span>
+          </div>
+          <div class="content-featured-arrow">
+            <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+              <path d="M9 18l6-6-6-6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </div>
+        </div>
+      </a>
+    </div>
+    {% endif %}
+    {% endfor %}
+
+    {# Grid — all posts #}
     <ul id="insight-list">
       {% for post in collections.allContent %}
       <li data-category="{{ post.data.categories | join(' ') if post.data.categories else (post.data.category | lower | replace(' ', '-') if post.data.category else 'all') }}">
-        <a class="insight-card" href="{{ post.url }}" aria-label="Insight: {{ post.data.title }}">
+        <a class="insight-card" href="{{ post.url }}" aria-label="{{ post.data.title }}">
           <div class="insight-card-body">
             <span class="insight-category insight-category--{{ post.data.category | lower | replace(' ', '-') if post.data.category else 'insights' }}">{{ post.data.category or 'Insights' }}</span>
             <h3 class="insight-title">{{ post.data.title }}</h3>
@@ -45,11 +74,6 @@ name: content
             <p class="insight-description">{{ post.data.description }}</p>
             {% endif %}
           </div>
-          {% if post.data.keywords %}
-          <div class="insight-card-keywords">
-            {% for kw in post.data.keywords %}{% if loop.index <= 7 %}<span class="insight-keyword" data-keyword="{{ kw }}">{{ kw }}</span>{% endif %}{% endfor %}
-          </div>
-          {% endif %}
           <div class="insight-card-footer">
             <div class="insight-footer-date">
               <span class="insight-date">{{ post.date | date }}</span>
@@ -70,9 +94,10 @@ name: content
 
     <div id="insights-pagination"></div>
 
-    <div id="insights-preloader" class="hidden">
-      <div class="spinner"></div>
-    </div>
+  </div>
+
+  <div id="insights-preloader" class="hidden">
+    <div class="spinner"></div>
   </div>
 
 </section>
