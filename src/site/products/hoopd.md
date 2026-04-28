@@ -55,6 +55,16 @@ partners:
     logo: /static/images/partners/g-cloud-14.png
     class: "pf-partner--lg"
 
+solutions_banner:
+  left_title: "View Hoop'd Solutions"
+  left_body: "View our scaling solutions currently built using Hoop'd."
+  left_link: "/solutions-overview/"
+  left_label: "View solutions"
+  right_title: "For custom solutions"
+  right_body: "For custom service design and development using Hoop'd get in touch."
+  right_link: "/contact/"
+  right_label: "Get in touch"
+
 overview_eyebrow: "What is Hoop'd"
 overview_heading: "Hoop'd builds hyperlocal, regional and national services. Customisable for the size and scale of solution you need."
 

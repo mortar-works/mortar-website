@@ -1,0 +1,872 @@
+@use 'sass:color';
+@use '../common/variables' as *;
+@use '../utilities/responsive' as *;
+@use '../common/typography' as *;
+
+// ─── Solution Feature Page ────────────────────────────────────────────────────
+// Light editorial layout for solution detail pages.
+// White/warm-grey backgrounds, yellow accents, dark contrast case study section.
+
+// ── Hide site header/footer ───────────────────────────────────────────────────
+body#solution-feature {
+  background: #ffffff;
+}
+
+body#solution-feature > header,
+body#solution-feature > footer {
+  display: none;
+}
+
+// ── Local colour tokens ───────────────────────────────────────────────────────
+$sf-white:   #ffffff;
+$sf-warm:    #f5f3ee;
+$sf-grey:    #ebe9e2;
+$sf-dark:    #0e0b1a;
+$sf-cream:   #faf8f0;
+$sf-text:    #1a1828;
+$sf-line:    rgba(14, 11, 26, 0.1);
+
+// ── Page wrapper ──────────────────────────────────────────────────────────────
+.solution-feature-page {
+
+  > section {
+    overflow: visible;
+  }
+
+  // 5% inset on all non-hero sections
+  > section:not(.sf-hero):not(.sf-case-study) {
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+
+  > section .wrapper {
+    padding-top: 0;
+    padding-bottom: 0;
+    padding-left: 0;
+    padding-right: 0;
+    max-width: none;
+    margin: 0;
+  }
+
+  // ── Shared eyebrow label ──────────────────────────────────────────────────
+  .sf-eyebrow {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.6em;
+    font-family: 'Manrope', sans-serif;
+    font-size: 0.85em;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.18em;
+    color: rgba($sf-text, 0.45);
+    margin-bottom: 0.8em;
+
+    &::before {
+      content: '';
+      display: inline-block;
+      width: 6px;
+      height: 6px;
+      background: $mortar-yellow;
+      border-radius: 1px;
+      flex-shrink: 0;
+    }
+  }
+
+  .sf-section-heading {
+    font-family: 'Manrope', sans-serif;
+    font-weight: 800;
+    font-size: clamp(1.8em, 3.5vw, 3em);
+    color: $sf-text;
+    line-height: 1.1;
+    margin: 0 0 1em;
+    text-align: center;
+  }
+
+  .sf-section-header {
+    text-align: center;
+    margin-bottom: 3.5em;
+  }
+
+  // ── Hero ──────────────────────────────────────────────────────────────────
+  .sf-hero {
+    background: $sf-white;
+    padding: 0 5% 4%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  // ── Topbar: mirrors the site header exactly ───────────────────────────────
+  .sf-hero-topbar {
+    height: 5em;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .sf-hero-content {
+    background: $sf-cream;
+    position: relative;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    min-height: 70vh;
+
+    @include respond-to(small) {
+      min-height: 75vh;
+    }
+  }
+
+  .sf-card-logo {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    flex-shrink: 0;
+
+    img {
+      height: 47px;
+      width: auto;
+      display: block;
+      transition: opacity 0.2s ease;
+    }
+
+    &:hover img { opacity: 0.7; }
+  }
+
+  // ── Top-right nav button group ───────────────────────────────────────────
+  .sf-hero-nav-buttons {
+    display: flex;
+    align-items: center;
+    gap: 0.4em;
+  }
+
+  // Solutions dropdown trigger + menu
+  .sf-solutions-dropdown {
+    position: relative;
+  }
+
+  .sf-solutions-toggle {
+    font-family: 'Manrope', sans-serif;
+    font-size: 0.95em;
+    font-weight: 600;
+    color: $mortar-purple;
+    background: $mortar-yellow;
+    border: 1.5px solid $mortar-yellow;
+    border-radius: 4px;
+    padding: 0.5em 1.2em;
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.55em;
+    white-space: nowrap;
+    transition: background 0.2s ease, border-color 0.2s ease, color 0.2s ease;
+
+    svg { transition: transform 0.2s ease; pointer-events: none; }
+
+    &:hover {
+      background: color.adjust($mortar-yellow, $lightness: -8%);
+      border-color: color.adjust($mortar-yellow, $lightness: -8%);
+    }
+  }
+
+  .sf-solutions-dropdown.is-open .sf-solutions-toggle svg {
+    transform: rotate(180deg);
+  }
+
+  .sf-solutions-menu {
+    visibility: hidden;
+    opacity: 0;
+    transform: translateY(-4px);
+    pointer-events: none;
+    transition: opacity 0.15s ease, transform 0.15s ease, visibility 0s 0.15s;
+    position: absolute;
+    top: calc(100% + 0.5em);
+    right: 0;
+    z-index: 200;
+    min-width: 240px;
+    background: $sf-white;
+    border: 1px solid $sf-line;
+    border-radius: 0.25em;
+    box-shadow: 0 8px 24px rgba($sf-text, 0.1);
+    list-style: none;
+    padding: 0.4em 0;
+    margin: 0;
+
+    li a {
+      display: block;
+      padding: 0.65em 1.25em;
+      font-family: 'Manrope', sans-serif;
+      font-size: 0.88em;
+      font-weight: 500;
+      color: $sf-text;
+      text-decoration: none;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+
+      &:hover { background: $sf-warm; }
+
+      &[aria-current] {
+        font-weight: 700;
+        color: $mortar-purple;
+      }
+    }
+  }
+
+  .sf-solutions-dropdown.is-open .sf-solutions-menu {
+    visibility: visible;
+    opacity: 1;
+    transform: translateY(0);
+    pointer-events: auto;
+    transition: opacity 0.15s ease, transform 0.15s ease, visibility 0s;
+  }
+
+  // Products dropdown trigger + menu
+  .sf-products-dropdown {
+    position: relative;
+  }
+
+  .sf-products-toggle {
+    font-family: 'Manrope', sans-serif;
+    font-size: 0.95em;
+    font-weight: 500;
+    color: $sf-dark;
+    background: transparent;
+    border: 1.5px solid $sf-dark;
+    border-radius: 4px;
+    padding: 0.5em 1.2em;
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.55em;
+    white-space: nowrap;
+    transition: background 0.2s ease;
+
+    svg { transition: transform 0.2s ease; pointer-events: none; }
+
+    &:hover {
+      background: rgba($sf-dark, 0.08);
+    }
+  }
+
+  .sf-products-dropdown.is-open .sf-products-toggle svg {
+    transform: rotate(180deg);
+  }
+
+  .sf-products-menu {
+    visibility: hidden;
+    opacity: 0;
+    transform: translateY(-4px);
+    pointer-events: none;
+    transition: opacity 0.15s ease, transform 0.15s ease, visibility 0s 0.15s;
+    position: absolute;
+    top: calc(100% + 0.5em);
+    right: 0;
+    z-index: 200;
+    min-width: 180px;
+    background: $sf-white;
+    border: 1px solid $sf-line;
+    border-radius: 0.25em;
+    box-shadow: 0 8px 24px rgba($sf-text, 0.1);
+    list-style: none;
+    padding: 0.4em 0;
+    margin: 0;
+
+    li a {
+      display: block;
+      padding: 0.65em 1.25em;
+      font-family: 'Manrope', sans-serif;
+      font-size: 0.88em;
+      font-weight: 500;
+      color: $sf-text;
+      text-decoration: none;
+      white-space: nowrap;
+
+      &:hover { background: $sf-warm; }
+    }
+  }
+
+  .sf-products-dropdown.is-open .sf-products-menu {
+    visibility: visible;
+    opacity: 1;
+    transform: translateY(0);
+    pointer-events: auto;
+    transition: opacity 0.15s ease, transform 0.15s ease, visibility 0s;
+  }
+
+  .sf-card-contact {
+    font-family: 'Manrope', sans-serif;
+    font-size: 0.95em;
+    font-weight: 500;
+    color: $sf-dark;
+    background: transparent;
+    text-decoration: none;
+    padding: 0.5em 1.2em;
+    border-radius: 4px;
+    border: 1.5px solid $sf-dark;
+    white-space: nowrap;
+    transition: background 0.2s ease, border-color 0.2s ease, color 0.2s ease;
+
+    &:hover {
+      background: rgba($sf-dark, 0.08);
+    }
+  }
+
+  // ── Text pane (left column) ───────────────────────────────────────────────
+  .sf-hero-text-pane {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding: 5em 5em 4em 4em;
+    position: relative;
+  }
+
+  @keyframes sfSlideFade {
+    from { opacity: 0; transform: translateY(0px); }
+    to   { opacity: 1; transform: translateY(0); }
+  }
+
+  .sf-hero-slide {
+    display: none;
+
+    &.is-active {
+      display: block;
+      animation: sfSlideFade 1.15s ease both;
+    }
+  }
+
+  .sf-hero-eyebrow {
+    font-family: 'Manrope', sans-serif;
+    font-size: 0.72em;
+    font-weight: 600;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: rgba($mortar-purple, 0.38);
+    margin: 0 0 0.8em;
+    display: block;
+  }
+
+  .sf-hero-tagline {
+    font-family: 'Manrope', sans-serif;
+    font-weight: 800;
+    font-size: clamp(2em, 3.5vw, 3.8em);
+    line-height: 1.06;
+    letter-spacing: -0.03em;
+    color: $mortar-purple;
+    margin: 0 0 0.4em;
+  }
+
+  .sf-hero-subheading {
+    font-family: 'Manrope', sans-serif;
+    font-weight: 700;
+    font-size: clamp(1.25em, 2.8vw, 3.0em);
+    line-height: 1.3;
+    letter-spacing: -0.01em;
+    color: rgba($mortar-purple, 0.65);
+    margin: 0 0 0.6em;
+  }
+
+  .sf-hero-desc {
+    font-family: 'Manrope', sans-serif;
+    font-size: clamp(0.95em, 1.2vw, 1.08em);
+    line-height: 1.75;
+    color: rgba($mortar-purple, 0.55);
+    margin: 0;
+    font-weight: 400;
+    max-width: 38ch;
+  }
+
+  // ── Get in touch CTA ─────────────────────────────────────────────────────
+  .sf-hero-cta {
+    display: inline-flex;
+    align-items: center;
+    align-self: flex-start;
+    margin-top: 2.5em;
+    font-family: 'Manrope', sans-serif;
+    font-size: 0.78em;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color: $sf-dark;
+    background: $mortar-yellow;
+    text-decoration: none;
+    padding: 0.75em 1.6em;
+    border-radius: 3px;
+    transition: opacity 0.15s;
+
+    &:hover { opacity: 0.82; }
+  }
+
+  // ── Slide nav arrows ─────────────────────────────────────────────────────
+  .sf-hero-arrows {
+    display: flex;
+    gap: 0.6em;
+    margin-top: 1.5em;
+
+    button {
+      width: 2.6em;
+      height: 2.6em;
+      border-radius: 50%;
+      border: 1.5px solid rgba($mortar-purple, 0.2);
+      background: $sf-white;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: $mortar-purple;
+      transition: background 0.15s, border-color 0.15s;
+      padding: 0;
+
+      &:hover {
+        background: $mortar-yellow;
+        border-color: $mortar-yellow;
+      }
+
+      svg { display: block; pointer-events: none; }
+    }
+  }
+
+  // ── Image pane (right column) ─────────────────────────────────────────────
+  .sf-hero-image-pane {
+    position: relative;
+    overflow: hidden;
+    background: rgba($mortar-purple, 0.04);
+
+    .sf-hero-img {
+      position: absolute;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center top;
+      opacity: 0;
+      transition: opacity 1.15s ease;
+
+      &.is-active {
+        opacity: 1;
+      }
+    }
+  }
+
+  // ── Overview / intro ──────────────────────────────────────────────────────
+  .sf-overview {
+    background: $sf-warm;
+    padding: 6em 0;
+    border-bottom: 1px solid $sf-line;
+
+    .wrapper {
+      max-width: 72ch !important;
+      margin: 0 auto !important;
+    }
+
+    .sf-eyebrow {
+      justify-content: flex-start;
+    }
+
+    .sf-section-heading {
+      text-align: left;
+    }
+
+    .sf-overview-body {
+      font-family: 'Manrope', sans-serif;
+      font-size: 1.05em;
+      line-height: 1.78;
+      color: rgba($sf-text, 0.78);
+
+      p {
+        margin-bottom: 1.25em;
+
+        &:last-child {
+          margin-bottom: 0;
+        }
+      }
+
+      strong {
+        color: $sf-text;
+        font-weight: 700;
+      }
+
+      figure {
+        margin: 2em 0;
+
+        img {
+          max-width: 100%;
+          border-radius: 0.4em;
+          box-shadow: 0 8px 24px rgba($sf-text, 0.08);
+        }
+
+        figcaption {
+          font-size: 0.85em;
+          color: rgba($sf-text, 0.45);
+          margin-top: 0.6em;
+        }
+      }
+    }
+  }
+
+  // ── How it works ──────────────────────────────────────────────────────────
+  .sf-how {
+    background: $sf-white;
+    padding: 6em 0;
+    border-bottom: 1px solid $sf-line;
+
+    .sf-steps {
+      display: grid;
+      grid-template-columns: 1fr;
+      counter-reset: sf-step;
+
+      @include respond-to(small) {
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      }
+    }
+
+    .sf-step {
+      padding: 2.5em;
+      border-top: 1px solid $sf-line;
+      counter-increment: sf-step;
+
+      @include respond-to(small) {
+        border-top: none;
+        border-left: 1px solid $sf-line;
+
+        &:first-child {
+          border-left: none;
+        }
+      }
+
+      &::before {
+        content: counter(sf-step, decimal-leading-zero);
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        font-family: 'Manrope', sans-serif;
+        font-size: 0.72em;
+        font-weight: 800;
+        letter-spacing: 0.04em;
+        color: $sf-text;
+        background: $mortar-yellow;
+        width: 2.4em;
+        height: 2.4em;
+        border-radius: 0.3em;
+        margin-bottom: 1.4em;
+      }
+
+      h3 {
+        font-family: 'Manrope', sans-serif;
+        font-size: 1.05em;
+        font-weight: 700;
+        color: $sf-text;
+        margin: 0 0 0.65em;
+      }
+
+      p {
+        font-family: 'Manrope', sans-serif;
+        font-size: 0.9em;
+        line-height: 1.65;
+        color: rgba($sf-text, 0.62);
+        margin: 0;
+      }
+    }
+  }
+
+  // ── Key features ──────────────────────────────────────────────────────────
+  .sf-features-section {
+    background: $sf-grey;
+    padding: 6em 2em;
+    border-bottom: 1px solid $sf-line;
+    margin-bottom: 3em;
+
+    .sf-features {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 1.25em;
+
+      @include respond-to(small) {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      @include respond-to(medium) {
+        grid-template-columns: repeat(3, 1fr);
+      }
+    }
+
+    .sf-feature {
+      background: $sf-white;
+      padding: 2.5em;
+      border: 1px solid $sf-line;
+      border-radius: 0.25em;
+      transition: border-color 0.18s, box-shadow 0.18s;
+
+      &:hover {
+        border-color: $mortar-yellow;
+        box-shadow: 0 4px 20px rgba($sf-text, 0.06);
+      }
+
+      h3 {
+        font-family: 'Manrope', sans-serif;
+        font-size: 1em;
+        font-weight: 700;
+        color: $sf-text;
+        margin: 0 0 0.7em;
+
+        &::before {
+          content: '';
+          display: block;
+          width: 20px;
+          height: 3px;
+          background: $mortar-yellow;
+          border-radius: 2px;
+          margin-bottom: 1em;
+        }
+      }
+
+      p {
+        font-family: 'Manrope', sans-serif;
+        font-size: 0.88em;
+        line-height: 1.65;
+        color: rgba($sf-text, 0.6);
+        margin: 0;
+      }
+    }
+  }
+
+  // ── Benefits ──────────────────────────────────────────────────────────────
+  .sf-benefits {
+    background: $sf-warm;
+    padding: 6em 0;
+    border-bottom: 1px solid $sf-line;
+    margin-bottom: 3em;
+
+    .wrapper {
+      max-width: 860px !important;
+      margin: 0 auto !important;
+      padding-left: 2em !important;
+      padding-right: 2em !important;
+    }
+
+    .sf-benefits-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 2.5em;
+
+      @include respond-to(small) {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+
+    .sf-benefit {
+      padding-left: 1.75em;
+      border-left: 3px solid $mortar-yellow;
+
+      h3 {
+        font-family: 'Manrope', sans-serif;
+        font-size: 1em;
+        font-weight: 700;
+        color: $sf-text;
+        margin: 0 0 0.45em;
+      }
+
+      p {
+        font-family: 'Manrope', sans-serif;
+        font-size: 0.9em;
+        line-height: 1.62;
+        color: rgba($sf-text, 0.62);
+        margin: 0;
+      }
+    }
+  }
+
+  // ── Case study ────────────────────────────────────────────────────────────
+  .sf-case-study {
+    background: $sf-dark;
+    padding: 6em 0;
+
+    .sf-case-study-inner {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 0 5%;
+    }
+
+    .sf-eyebrow {
+      color: rgba($sf-cream, 0.4);
+      justify-content: center;
+
+      &::before {
+        background: $mortar-yellow;
+      }
+    }
+
+    .sf-section-heading {
+      color: $sf-cream;
+    }
+
+    // Viewport breaks out of the constrained inner to span full section width
+    .sf-case-study-viewport {
+      width: 100vw;
+      position: relative;
+      left: 50%;
+      transform: translateX(-50%);
+      overflow: hidden;
+    }
+
+    // Scrolling track — JS drives the transform
+    .sf-case-study-items {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: nowrap;
+      gap: 1.5em;
+      transition: transform 0.42s cubic-bezier(0.4, 0, 0.2, 1);
+      padding: 0.5em 0 1em; // so box-shadow isn't clipped
+    }
+
+    .sf-case-study-item {
+      flex: 0 0 30%;
+      min-width: 0;
+      background: rgba($sf-cream, 0.05);
+      border: 1px solid rgba($sf-cream, 0.1);
+      border-radius: 0.35em;
+      padding: 2.5em 3em;
+      opacity: 0.45;
+      transition: opacity 0.42s ease;
+
+      &.is-active {
+        opacity: 1;
+      }
+
+      p {
+        font-family: 'Manrope', sans-serif;
+        font-size: 1em;
+        line-height: 1.75;
+        color: rgba($sf-cream, 0.72);
+        margin: 0 0 1.5em;
+      }
+
+      a {
+        display: inline-flex;
+        align-items: center;
+        gap: 0.4em;
+        font-family: 'Manrope', sans-serif;
+        font-size: 0.8em;
+        font-weight: 700;
+        text-transform: uppercase;
+        letter-spacing: 0.12em;
+        color: $mortar-yellow;
+        text-decoration: none;
+
+        &:hover {
+          text-decoration: underline;
+        }
+
+        &::after {
+          content: '→';
+        }
+      }
+    }
+
+    .sf-case-study-nav {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 1em;
+      margin-top: 1.5em;
+    }
+
+    .sf-cs-prev,
+    .sf-cs-next {
+      width: 2.6em;
+      height: 2.6em;
+      border-radius: 50%;
+      border: 1.5px solid rgba($sf-cream, 0.2);
+      background: transparent;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: $sf-cream;
+      transition: background 0.15s, border-color 0.15s, color 0.15s;
+      padding: 0;
+
+      &:hover {
+        background: $mortar-yellow;
+        border-color: $mortar-yellow;
+        color: $sf-dark;
+      }
+
+      &:disabled {
+        opacity: 0.2;
+        cursor: default;
+        pointer-events: none;
+      }
+
+      svg { display: block; pointer-events: none; }
+    }
+
+    .sf-cs-dots {
+      display: flex;
+      align-items: center;
+      gap: 0.5em;
+    }
+
+    .sf-cs-dot {
+      width: 7px;
+      height: 7px;
+      border-radius: 50%;
+      background: rgba($sf-cream, 0.22);
+      border: none;
+      padding: 0;
+      cursor: pointer;
+      transition: background 0.15s, transform 0.15s;
+
+      &.is-active {
+        background: $mortar-yellow;
+        transform: scale(1.35);
+      }
+
+      &:hover:not(.is-active) {
+        background: rgba($sf-cream, 0.45);
+      }
+    }
+  }
+
+  // ── Footer ────────────────────────────────────────────────────────────────
+  .sf-footer {
+    background: $sf-dark;
+    padding: 2.5em 5%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-top: 1px solid rgba(255, 255, 255, 0.06);
+
+    .sf-footer-logo img {
+      height: 47px;
+      width: auto;
+      filter: brightness(0) invert(1);
+    }
+
+    .sf-footer-copy {
+      font-family: 'Manrope', sans-serif;
+      font-size: 0.78em;
+      color: rgba($sf-cream, 0.3);
+    }
+
+    .sf-footer-cta {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.4em;
+      font-family: 'Manrope', sans-serif;
+      font-size: 0.82em;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      color: $sf-dark;
+      background: $mortar-yellow;
+      text-decoration: none;
+      padding: 0.7em 1.5em;
+      border-radius: 3em;
+      transition: opacity 0.15s;
+
+      &:hover {
+        opacity: 0.85;
+      }
+    }
+  }
+}

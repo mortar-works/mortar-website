@@ -169,11 +169,92 @@ $pf-line-light: rgba(14, 11, 26, 0.12);
     &:hover img { opacity: 0.7; }
   }
 
-  .pf-card-contact {
+  .pf-card-nav {
     position: absolute;
     top: 1.75em;
     right: 2em;
     z-index: 1;
+    display: flex;
+    align-items: center;
+    gap: 0.5em;
+  }
+
+  .pf-products-dropdown {
+    position: relative;
+  }
+
+  .pf-products-toggle {
+    font-family: 'Manrope', sans-serif;
+    font-size: 0.75em;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: $mortar-purple;
+    background: $mortar-yellow;
+    border: 1.5px solid $mortar-yellow;
+    border-radius: 4px;
+    padding: 0.55em 1.2em;
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.55em;
+    white-space: nowrap;
+    transition: background 0.2s ease, border-color 0.2s ease;
+
+    svg { transition: transform 0.2s ease; pointer-events: none; }
+
+    &:hover {
+      background: color.adjust($mortar-yellow, $lightness: -8%);
+      border-color: color.adjust($mortar-yellow, $lightness: -8%);
+    }
+  }
+
+  .pf-products-dropdown.is-open .pf-products-toggle svg {
+    transform: rotate(180deg);
+  }
+
+  .pf-products-menu {
+    visibility: hidden;
+    opacity: 0;
+    transform: translateY(-4px);
+    pointer-events: none;
+    transition: opacity 0.15s ease, transform 0.15s ease, visibility 0s 0.15s;
+    position: absolute;
+    top: calc(100% + 0.5em);
+    right: 0;
+    z-index: 200;
+    min-width: 160px;
+    background: $white;
+    border: 1px solid rgba($mortar-purple, 0.12);
+    border-radius: 0.25em;
+    box-shadow: 0 8px 24px rgba($mortar-purple, 0.1);
+    list-style: none;
+    padding: 0.4em 0;
+    margin: 0;
+
+    li a {
+      display: block;
+      padding: 0.65em 1.25em;
+      font-family: 'Manrope', sans-serif;
+      font-size: 0.88em;
+      font-weight: 500;
+      color: $mortar-purple;
+      text-decoration: none;
+      white-space: nowrap;
+
+      &:hover { background: rgba($mortar-purple, 0.05); }
+    }
+  }
+
+  .pf-products-dropdown.is-open .pf-products-menu {
+    visibility: visible;
+    opacity: 1;
+    transform: translateY(0);
+    pointer-events: auto;
+    transition: opacity 0.15s ease, transform 0.15s ease, visibility 0s;
+  }
+
+  .pf-card-contact {
     font-family: 'Manrope', sans-serif;
     font-size: 0.75em;
     font-weight: 700;
@@ -269,6 +350,77 @@ $pf-line-light: rgba(14, 11, 26, 0.12);
   @keyframes pf-bounce {
     0%, 100% { transform: translateY(0); }
     50%       { transform: translateY(5px); }
+  }
+
+  // ── Solutions banner ─────────────────────────────────────────────────────
+  // Slim two-panel strip between hero and overview
+  .pf-solutions-banner {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    border-top: 1px solid $pf-line-dark;
+    border-bottom: 1px solid $pf-line-dark;
+    background: $pf-dark;
+
+    @media (max-width: 680px) {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  .pf-solutions-panel {
+    padding: 1.75em 5.5em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 1.25em;
+    border-right: 1px solid $pf-line-dark;
+
+    &:last-child { border-right: none; }
+
+    @media (max-width: 680px) {
+      border-right: none;
+      border-bottom: 1px solid $pf-line-dark;
+      &:last-child { border-bottom: none; }
+    }
+  }
+
+  .pf-solutions-panel-title {
+    font-family: 'Manrope', sans-serif;
+    font-weight: 700;
+    font-size: clamp(1.15em, 1.6vw, 1.5em);
+    line-height: 1.3;
+    color: $white;
+    margin: 0;
+  }
+
+  .pf-solutions-panel-body {
+    font-family: 'Manrope', sans-serif;
+    font-size: clamp(0.88em, 1.1vw, 1em);
+    line-height: 1.7;
+    color: rgba($white, 0.5);
+    margin: 0;
+    flex: 1;
+  }
+
+  .pf-solutions-panel-btn {
+    display: inline-block;
+    font-family: 'Manrope', sans-serif;
+    font-size: 0.75em;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: $mortar-yellow;
+    border: 1.5px solid rgba($mortar-yellow, 0.45);
+    border-radius: 3px;
+    padding: 0.65em 1.5em;
+    transition: background 0.2s ease, border-color 0.2s ease, color 0.2s ease;
+
+    &:hover {
+      background: $mortar-yellow;
+      border-color: $mortar-yellow;
+      color: $pf-dark;
+    }
   }
 
   // ── Overview ──────────────────────────────────────────────────────────────
@@ -538,6 +690,14 @@ $pf-line-light: rgba(14, 11, 26, 0.12);
     object-position: center;
   }
 
+  .pf-split-sphere-canvas {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    display: block;
+  }
+
   .pf-split-visual {
     position: relative;
     overflow: hidden;
@@ -647,7 +807,7 @@ $pf-line-light: rgba(14, 11, 26, 0.12);
   // Two cards side by side, each with a visual panel and text panel stacked
   .pf-closing {
     margin-top: 0;
-    padding: 5em 0;
+    padding: 0em 0;
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 0;
@@ -742,16 +902,10 @@ $pf-line-light: rgba(14, 11, 26, 0.12);
   background: $pf-dark;
   border-top: 1px solid rgba(255, 255, 255, 0.08);
   margin: 0 5%;
-  padding: 0 2%;
-}
-
-.pf-footer-inner {
+  padding: 2.5em 2%;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  flex-wrap: wrap;
-  gap: 1.5em;
-  padding: 2.5em 0 5em;
 }
 
 .pf-footer-logo {
@@ -767,48 +921,30 @@ $pf-line-light: rgba(14, 11, 26, 0.12);
   }
 }
 
-.pf-footer-nav {
-  display: flex;
-  align-items: center;
-  flex-wrap: wrap;
-  gap: 0.4em 1.5em;
-  justify-content: center;
-}
-
-.pf-footer-link {
-  font-family: 'Manrope', sans-serif;
-  font-size: 0.8em;
-  font-weight: 600;
-  color: rgba($white, 0.45);
-  text-decoration: none;
-  transition: color 0.2s ease;
-
-  &:hover { color: $white; }
-}
-
-.pf-footer-tag {
-  font-family: 'Manrope', sans-serif;
-  font-size: 0.72em;
-  font-weight: 500;
-  color: rgba($white, 0.25);
-  text-decoration: none;
-  padding: 0.25em 0.6em;
-  border: 1px solid rgba($white, 0.1);
-  border-radius: 2px;
-  transition: color 0.2s ease, border-color 0.2s ease;
-
-  &:hover {
-    color: rgba($white, 0.6);
-    border-color: rgba($white, 0.25);
-  }
-}
-
 .pf-footer-copy {
   font-family: 'Manrope', sans-serif;
-  font-size: 1em;
+  font-size: 0.78em;
   font-weight: 500;
-  color: $white;
+  color: rgba($white, 0.3);
   white-space: nowrap;
+}
+
+.pf-footer-cta {
+  display: inline-flex;
+  align-items: center;
+  font-family: 'Manrope', sans-serif;
+  font-size: 0.82em;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: $pf-dark;
+  background: $mortar-yellow;
+  text-decoration: none;
+  padding: 0.7em 1.5em;
+  border-radius: 3em;
+  transition: opacity 0.15s;
+
+  &:hover { opacity: 0.85; }
 }
 
 // ── Hoop'd theme overrides ────────────────────────────────────────────────────
@@ -848,6 +984,16 @@ body.theme-hoopd > footer {
   .pf-hero-eyebrow { color: rgba($hd-navy, 0.4); }
   .pf-hero-desc    { color: rgba($hd-navy, 0.55); }
 
+  .pf-products-toggle {
+    color: $hd-navy;
+    background: $hd-gold;
+    border-color: $hd-gold;
+    &:hover {
+      background: color.adjust($hd-gold, $lightness: -8%);
+      border-color: color.adjust($hd-gold, $lightness: -8%);
+    }
+  }
+
   .pf-card-contact {
     color: $hd-navy;
     border-color: rgba($hd-navy, 0.3);
@@ -869,6 +1015,31 @@ body.theme-hoopd > footer {
   // ── Section heading ────────────────────────────────────────────────────────
   .pf-section-heading { color: $white; }
   .pf-section-subheading { color: rgba($white, 0.55); }
+
+  // ── Solutions banner ───────────────────────────────────────────────────────
+  $hd-mid: #2c3d54;
+
+  .pf-solutions-banner {
+    background: transparent;
+    border-color: rgba($white, 0.1);
+  }
+
+  .pf-solutions-panel {
+    background: $hd-mid;
+    border-right-color: rgba($white, 0.1);
+
+    .pf-solutions-panel-title { color: $white; }
+    .pf-solutions-panel-body  { color: rgba($white, 0.55); }
+    .pf-solutions-panel-btn {
+      color: $hd-gold;
+      border-color: rgba($hd-gold, 0.45);
+      &:hover {
+        background: $hd-gold;
+        border-color: $hd-gold;
+        color: $hd-mid;
+      }
+    }
+  }
 
   // ── Overview ──────────────────────────────────────────────────────────────
   .pf-overview { background: $hd-navy; }
@@ -954,19 +1125,35 @@ body.theme-hoopd > footer {
 body.theme-hoopd .pf-footer {
   background: $hd-navy;
   border-top: none;
+
+  .pf-footer-cta {
+    background: $hd-gold;
+    color: $hd-navy;
+  }
 }
 
 // ── Hxly theme overrides ──────────────────────────────────────────────────────
 // Scoped to body.theme-hxly so other products are completely unaffected.
 
-$hx-ink:   #090d1a;
-$hx-mid:   #12192b;
-$hx-teal:  #18c9a8;
-$hx-cool:  #a8c5e8;
-$hx-light: #eef3f8;
+// Hero / brand dark (used only in hero + footer)
+$hx-ink:    #0f1623;
+$hx-mid:    #1a2640;
+
+// Warm amber accent (replaces cold teal)
+$hx-accent: #c8853a;
+
+// Light surfaces (body sections)
+$hx-white:   #ffffff;
+$hx-surface: #f2f6fb;
+$hx-card:    #e8eef7;
+
+// Dark text on light backgrounds
+$hx-text:   #0f1623;
+$hx-muted:  #3d5073;
+$hx-subtle: #617fa8;
 
 body.theme-hxly {
-  background: $hx-ink;
+  background: $hx-white;
 }
 
 body.theme-hxly > header,
@@ -976,83 +1163,141 @@ body.theme-hxly > footer {
 
 .product-feature-page--hxly {
 
-  // ── Hero ───────────────────────────────────────────────────────────────────
+  // ── Hero (stays dark) ──────────────────────────────────────────────────────
   .pf-hero {
     background: transparent;
   }
 
   .pf-hero-content {
-    background: linear-gradient(135deg, $hx-ink 0%, $hx-mid 100%);
+    background:
+      radial-gradient(ellipse 58% 65% at 16% 22%, #102444 0%, transparent 58%),
+      radial-gradient(ellipse 48% 52% at 87% 14%, #180e38 0%, transparent 52%),
+      radial-gradient(ellipse 62% 52% at 52% 68%, #081428 0%, transparent 60%),
+      radial-gradient(ellipse 42% 46% at 6%  80%, #0e2240 0%, transparent 50%),
+      radial-gradient(ellipse 46% 44% at 91% 86%, #121a34 0%, transparent 48%),
+      #080e1c;
 
     &::before {
-      background-image: radial-gradient(circle, rgba($hx-teal, 0.1) 1px, transparent 1px);
+      background-image: linear-gradient(
+        132deg,
+        rgba(255, 255, 255, 0.055) 0%,
+        transparent 36%,
+        transparent 64%,
+        rgba(120, 160, 255, 0.03) 100%
+      );
+      background-size: 100% 100%;
+      mask-image: none;
+      -webkit-mask-image: none;
     }
   }
 
-  .pf-hero-tagline { color: $hx-light; }
-  .pf-hero-eyebrow { color: rgba($hx-teal, 0.6); }
-  .pf-hero-desc    { color: rgba($hx-cool, 0.7); }
+  .pf-hero-tagline { color: $hx-white; }
+  .pf-hero-eyebrow { color: rgba($hx-accent, 0.75); }
+  .pf-hero-desc    { color: rgba($hx-white, 0.75); }
+
+  .pf-products-toggle {
+    color: $hx-white;
+    background: rgba($hx-white, 0.1);
+    border-color: rgba($hx-white, 0.25);
+    &:hover {
+      background: $hx-accent;
+      border-color: $hx-accent;
+    }
+  }
+
+  .pf-products-menu {
+    background: $hx-ink;
+    border-color: rgba($hx-white, 0.12);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.35);
+
+    li a {
+      color: $hx-white;
+      &:hover { background: rgba($hx-white, 0.06); }
+    }
+  }
 
   .pf-card-contact {
-    color: $hx-light;
-    border-color: rgba($hx-light, 0.3);
+    color: $hx-white;
+    border-color: rgba($hx-white, 0.3);
     &:hover {
-      background: $hx-teal;
-      border-color: $hx-teal;
-      color: $hx-ink;
+      background: $hx-accent;
+      border-color: $hx-accent;
+      color: $hx-white;
     }
   }
 
   .pf-card-logo img { filter: brightness(0) invert(1); }
   .pf-hero-logo     { filter: brightness(0) invert(1); }
 
-  .pf-hero-scroll-cta { color: rgba($hx-cool, 0.4); &:hover { color: $hx-teal; } }
+  .pf-hero-scroll-cta { color: rgba($hx-white, 0.4); &:hover { color: $hx-accent; } }
 
   // ── Eyebrow ────────────────────────────────────────────────────────────────
   .pf-eyebrow {
-    color: $hx-teal;
-    &::before { background: $hx-teal; }
+    color: $hx-text;
+    &::before { background: $hx-text; }
   }
 
   // ── Section heading ────────────────────────────────────────────────────────
-  .pf-section-heading { color: $hx-light; }
-  .pf-section-subheading { color: rgba($hx-cool, 0.55); }
+  .pf-section-heading    { color: $hx-text; }
+  .pf-section-subheading { color: $hx-muted; font-size: clamp(0.95em, 1.3vw, 1.12em); max-width: 40%; margin-left: auto; margin-right: auto; }
+
+  // ── Solutions banner ───────────────────────────────────────────────────────
+  .pf-solutions-banner {
+    background: transparent;
+    border-color: rgba($hx-accent, 0.15);
+  }
+
+  .pf-solutions-panel {
+    background: $hx-mid;
+    border-right-color: rgba($hx-accent, 0.15);
+
+    .pf-solutions-panel-title { color: $hx-white; }
+    .pf-solutions-panel-body  { color: rgba($hx-white, 0.55); }
+    .pf-solutions-panel-btn {
+      color: $hx-accent;
+      border-color: rgba($hx-accent, 0.45);
+      &:hover {
+        background: $hx-accent;
+        border-color: $hx-accent;
+        color: $hx-white;
+      }
+    }
+  }
 
   // ── Overview ──────────────────────────────────────────────────────────────
-  .pf-overview { background: $hx-ink; }
-  .pf-overview-body p { color: rgba($hx-cool, 0.5); &:first-child { color: rgba($hx-cool, 0.8); } }
+  .pf-overview { background: $hx-white; }
+  .pf-overview-body p { color: $hx-muted; &:first-child { color: $hx-text; } }
 
   // ── Stats ──────────────────────────────────────────────────────────────────
-  .pf-stats    { background: $hx-mid; }
-  .pf-stat     { border-right-color: rgba($hx-light, 0.08); }
-  .pf-stat-value { color: $hx-teal; }
-  .pf-stat-label { color: rgba($hx-cool, 0.8); }
+  .pf-stats      { background: $hx-surface; }
+  .pf-stat       { border-right-color: $hx-card; }
+  .pf-stat-value { color: $hx-accent; }
+  .pf-stat-label { color: $hx-muted; }
 
   // ── How it works ───────────────────────────────────────────────────────────
-  .pf-how          { background: $hx-ink; }
-  .pf-section-header { background: $hx-ink; }
+  .pf-how            { background: $hx-surface; }
+  .pf-section-header { background: $hx-surface; }
   .pf-steps {
     @include respond-to('medium') {
       grid-template-columns: repeat(5, 1fr);
     }
   }
-  .pf-step     { background: $hx-mid; border-right-color: $hx-ink;
+  .pf-step { background: $hx-white; border-right-color: $hx-card;
     @include respond-to('medium') {
-      &:nth-child(2n) { border-right: 1px solid $hx-ink; }
-      &:nth-child(4n) { border-right: 1px solid $hx-ink; }
+      &:nth-child(2n) { border-right: 1px solid $hx-card; }
+      &:nth-child(4n) { border-right: 1px solid $hx-card; }
       &:nth-child(5n) { border-right: none; }
     }
   }
-  .pf-step      { gap: 2.2em; justify-content: flex-start; min-height: 0; padding-bottom: 2.7em; }
-  .pf-step h3  { color: $hx-teal; font-size: 1.7em; text-align: center; }
-  .pf-step p   { color: rgba($hx-cool, 0.65); font-size: 1.1em; text-align: center; width: 100%; }
+  .pf-step     { padding: 2em 1.75em 2.2em; gap: 1.5em; justify-content: flex-start; min-height: 0; }
+  .pf-step h3  { color: $hx-text; font-size: 1.7em; text-align: center; }
+  .pf-step p   { color: $hx-muted; font-size: 1.1em; text-align: center; width: 100%; }
 
-  // ── Features ───────────────────────────────────────────────────────────────
   // ── Mid-page CTA ───────────────────────────────────────────────────────────
   .pf-mid-cta {
     background: $hx-ink;
-    border-top: 1px solid rgba($hx-teal, 0.15);
-    border-bottom: 1px solid rgba($hx-teal, 0.15);
+    border-top: none;
+    border-bottom: none;
   }
 
   .pf-mid-cta-inner {
@@ -1069,7 +1314,7 @@ body.theme-hxly > footer {
     font-size: clamp(1em, 1.5vw, 1.25em);
     font-weight: 500;
     line-height: 1.6;
-    color: rgba($hx-cool, 0.8);
+    color: rgba($hx-white, 0.85);
     margin: 0;
     max-width: 36em;
   }
@@ -1078,10 +1323,10 @@ body.theme-hxly > footer {
     flex-shrink: 0;
     display: inline-block;
     padding: 0.85em 2.2em;
-    border: 1.5px solid $hx-teal;
+    border: 1.5px solid $hx-accent;
     border-radius: 3px;
     background: transparent;
-    color: $hx-teal;
+    color: $hx-accent;
     text-decoration: none;
     font-family: 'Manrope', sans-serif;
     font-weight: 700;
@@ -1091,69 +1336,106 @@ body.theme-hxly > footer {
     transition: background 0.2s ease, color 0.2s ease;
 
     &:hover {
-      background: $hx-teal;
-      color: $hx-ink;
+      background: $hx-accent;
+      color: $hx-white;
     }
   }
 
-  .pf-features-section { background: $hx-mid; }
+  // ── Features ───────────────────────────────────────────────────────────────
+  .pf-features-section {
+    background:
+      radial-gradient(ellipse 65% 70% at 12% 18%, #cde0f7 0%, transparent 55%),
+      radial-gradient(ellipse 50% 58% at 88% 10%, #eaf3ff 0%, transparent 50%),
+      radial-gradient(ellipse 70% 55% at 48% 60%, #bdd4ef 0%, transparent 58%),
+      radial-gradient(ellipse 48% 52% at  6% 90%, #d8eaf8 0%, transparent 50%),
+      radial-gradient(ellipse 55% 48% at 94% 88%, rgba($hx-accent, 0.12) 0%, transparent 52%),
+      #f0f5fb;
+  }
+  .pf-features-section .pf-section-header {
+    background: transparent;
+  }
+
   .pf-feature {
-    border-color: rgba($hx-teal, 0.2);
-    background: rgba($hx-ink, 0.4);
+    border-color: rgba($hx-text, 0.15);
+    background: rgba(255, 255, 255, 0.52);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    padding: 1.75em 2.75em;
+    gap: 1.25em;
+    min-height: 0;
+    justify-content: flex-start;
     &:hover {
-      border-color: $hx-teal;
-      background: rgba($hx-ink, 0.7);
+      border-color: rgba($hx-text, 0.35);
+      background: rgba(255, 255, 255, 0.72);
     }
-    h3 { color: $hx-light; }
-    p  { color: rgba($hx-cool, 0.65); }
+    h3 { color: $hx-text; font-size: 1.25em; }
+    p  { color: $hx-muted; font-size: clamp(0.95em, 1.3vw, 1.12em); line-height: 1.65; width: 100%; }
   }
 
   // ── Split screen ───────────────────────────────────────────────────────────
   .pf-split-visual {
-    background: linear-gradient(145deg, $hx-mid 0%, $hx-ink 60%, #0d1f1c 100%);
-    border-right-color: rgba($hx-teal, 0.15);
+    background: linear-gradient(145deg, $hx-mid 0%, $hx-ink 60%, #121e30 100%);
+    border-right-color: rgba($hx-accent, 0.15);
   }
 
-  .pf-split-geo--a { background: darken($hx-ink, 3%); }
+  .pf-split-geo--a { background: darken($hx-ink, 2%); }
   .pf-split-geo--c {
     background: repeating-linear-gradient(
       0deg,
-      rgba($hx-teal, 0.4),
-      rgba($hx-teal, 0.4) 1.5px,
+      rgba($hx-accent, 0.35),
+      rgba($hx-accent, 0.35) 1.5px,
       transparent 1.5px,
       transparent 6px
     );
   }
-  .pf-split-geo--d { background: darken($hx-ink, 3%); }
-  .pf-split-geo--b { background: rgba($hx-cool, 0.5); }
-  .pf-split-geo--e { background: rgba($hx-teal, 0.4); }
+  .pf-split-geo--d { background: darken($hx-ink, 2%); }
+  .pf-split-geo--b { background: rgba($hx-accent, 0.3); }
+  .pf-split-geo--e { background: rgba($hx-accent, 0.5); }
 
-  .pf-split-text   { background: $hx-light; }
-  .pf-split-heading { color: $hx-ink; }
-  .pf-split-body   { color: rgba($hx-ink, 0.55); }
+  .pf-split-text {
+    background:
+      radial-gradient(ellipse 60% 65% at 18% 22%, #1e3358 0%, transparent 58%),
+      radial-gradient(ellipse 48% 55% at 88% 12%, #0f1c38 0%, transparent 52%),
+      radial-gradient(ellipse 62% 52% at 55% 75%, #0c1830 0%, transparent 58%),
+      radial-gradient(ellipse 42% 48% at  5% 82%, #162844 0%, transparent 50%),
+      radial-gradient(ellipse 50% 44% at 92% 85%, rgba($hx-accent, 0.12) 0%, transparent 50%),
+      $hx-mid;
+  }
+  .pf-split-heading { color: $hx-white; }
+  .pf-split-body    { color: rgba($hx-white, 0.6); }
 
   // ── Closing cards ──────────────────────────────────────────────────────────
-  .pf-closing        { background: $hx-ink; }
-  .pf-closing-header .pf-eyebrow { color: $hx-teal; }
+  .pf-closing        { background: $hx-mid; margin-top: 0; }
+  .pf-closing-header .pf-eyebrow { color: $hx-white; &::before { background: $hx-white; } }
 
   .pf-closing-card {
-    background: $hx-mid;
+    background:
+      radial-gradient(ellipse 60% 65% at 18% 22%, #1e3358 0%, transparent 58%),
+      radial-gradient(ellipse 48% 55% at 88% 12%, #0f1c38 0%, transparent 52%),
+      radial-gradient(ellipse 62% 52% at 55% 75%, #0c1830 0%, transparent 58%),
+      radial-gradient(ellipse 50% 44% at 92% 85%, rgba($hx-accent, 0.1) 0%, transparent 50%),
+      $hx-mid;
     border: none;
-    border-right: 1px solid $hx-ink;
+    border-right: 1px solid rgba($hx-accent, 0.15);
     &:last-child { border-right: none; }
-    &:hover { background: lighten($hx-mid, 3%); }
+    &:hover { background: lighten($hx-mid, 4%); }
   }
 
-  .pf-closing-title       { color: $hx-light; }
-  .pf-closing-stats       { border-color: rgba($hx-light, 0.08); }
-  .pf-closing-stat-value  { color: $hx-teal; }
-  .pf-closing-stat-label  { color: rgba($hx-cool, 0.7); }
-  .pf-closing-text p      { color: rgba($hx-cool, 0.6); }
+  .pf-closing-title       { color: $hx-white; }
+  .pf-closing-stats       { border-color: rgba($hx-white, 0.1); }
+  .pf-closing-stat-value  { color: $hx-accent; }
+  .pf-closing-stat-label  { color: rgba($hx-white, 0.85); }
+  .pf-closing-text p      { color: rgba($hx-white, 0.6); }
 
 }
 
 // Hxly footer background
 body.theme-hxly .pf-footer {
   background: $hx-ink;
-  border-top: 1px solid rgba($hx-teal, 0.1);
+  border-top: 1px solid rgba($hx-accent, 0.15);
+
+  .pf-footer-cta {
+    background: $hx-accent;
+    color: $hx-white;
+  }
 }

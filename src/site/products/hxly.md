@@ -14,12 +14,12 @@ tagline: "Service intelligence for the age of AI. "
 
 description: "Hxly builds custom models and datasets; supporting organisations in developing and applying intelligence to power solutions that serve humans and society."
 
-split_image: /static/images/use-cases/hxly_prod04.png
+split_sphere: true
 split_heading: "We drive impact where rare but significant outcomes matter the most."
-split_body: "The outcomes that matter most are often the hardest to see. Hxly is focused on these challenges, applying advanced behavioural modelling to real-world data to surface the patterns and predictions and drive meaningful decisions. From individual risk to population-level insights."
+split_body: "The outcomes that matter most are often the hardest to see. Hxly is focused on these challenges, applying advanced behavioural modelling to real-world data; to surcaface patterns and predictions and to drive meaningful decisions. From individual risk to population-level insights."
 
 duo_left_title: "The cost of misalignment"
-duo_left: "When models are built without sufficient understanding of human behaviour, context, and need, they do not simply become less effective — they can become actively harmful. They misread intent, reinforce poor assumptions, escalate risk, and produce responses misaligned with the realities of users, individuals and populations."
+duo_left: "When models are built without sufficient understanding of human behaviour, context, and need, they become less effective and even actively harmful. They misread intent, reinforce poor assumptions, escalate risk, and produce responses misaligned with the realities of users, individuals and populations."
 
 duo_right_title: "Grounded in human behaviour"
 duo_right: "We develop the research, datasets, models, and design methods needed to align intelligence directly to the problems and challenges organisations face. We support the creation of systems that are not only more capable, but more responsible, reliable, and useful in the real world; ensuring systems remain meaningfully connected to human needs."
@@ -39,7 +39,7 @@ partners:
 overview_eyebrow: "What is Hxly"
 overview_heading: "An AI lab developing solutions to help solve complex problems."
 
-steps_heading: "Four processes.<br>From data to application."
+steps_heading: "Five processes.<br>From data to application."
 steps:
   - title: "Establish"
     body: "Secure, governed data environments built for your needs."
@@ -50,7 +50,17 @@ steps:
   - title: "Create"
     body: "Drive simulations and test real-world scenarios at scale."
   - title: "Validate"
-    body: "Full explanations. Every outcome auditable."
+    body: "Full explanations, ensuring every outcome is understood and auditable."
+
+solutions_banner:
+  left_title: "View Hxly Solutions"
+  left_body: "View our growing suite of intelligence solutions built with Hxly."
+  left_link: "/solutions-overview/#hxly"
+  left_label: "View solutions"
+  right_title: "Work with us"
+  right_body: "For bespoke modelling, dataset creation, or intelligence design get in touch."
+  right_link: "/contact/"
+  right_label: "Get in touch"
 
 mid_cta_heading: "To learn more about how we can support the application of intelligence for your organisation please get in touch."
 mid_cta_label: "Get in touch"

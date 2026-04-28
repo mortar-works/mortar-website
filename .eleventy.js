@@ -19,6 +19,9 @@ module.exports = function(eleventyConfig) {
   eleventyConfig.addFilter('titlecase', str =>
     (str || '').replace(/-/g, ' ').replace(/\b\w/g, c => c.toUpperCase())
   );
+  eleventyConfig.addFilter('filterByProduct', (collection, productSlug) =>
+    (collection || []).filter(item => item.data.product === productSlug)
+  );
 
   // Create a collection for blog posts (live posts only, no drafts)
   const livePosts = post => post.date <= new Date() && !post.data.draft;
@@ -59,6 +62,12 @@ module.exports = function(eleventyConfig) {
     return collectionApi.getFilteredByGlob("src/site/solutions/*.md");
   });
 
+  // Services collection
+  eleventyConfig.addCollection("services", function(collectionApi) {
+    return collectionApi.getFilteredByGlob("src/site/services/*.md")
+      .sort((a, b) => (a.data.order || 0) - (b.data.order || 0));
+  });
+
   // Products collection
   eleventyConfig.addCollection("products", function(collectionApi) {
     return collectionApi.getFilteredByGlob("src/site/products/*.md")
@@ -87,14 +96,15 @@ module.exports = function(eleventyConfig) {
       .filter(item => item.data.pinned === true && !item.data.draft);
   });
 
-  // Unified content feed: insights + case studies + news + solutions + products, sorted by date
+  // Unified content feed: insights + case studies + news + solutions + products + industries, sorted by date
   eleventyConfig.addCollection("allContent", function(collectionApi) {
     const insights    = collectionApi.getFilteredByGlob("src/site/insights/*.md");
     const caseStudies = collectionApi.getFilteredByGlob("src/site/case-studies/*.md");
     const news        = collectionApi.getFilteredByGlob("src/site/news/*.md");
     const solutions   = collectionApi.getFilteredByGlob("src/site/solutions/*.md");
     const products    = collectionApi.getFilteredByGlob("src/site/products/*.md");
-    return [...insights, ...caseStudies, ...news, ...solutions, ...products]
+    const industries  = collectionApi.getFilteredByGlob("src/site/industries/*.md");
+    return [...insights, ...caseStudies, ...news, ...solutions, ...products, ...industries]
       .filter(post => post.date <= new Date() && !post.data.draft)
       .sort((a, b) => b.date - a.date);
   });

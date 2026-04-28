@@ -6,57 +6,71 @@ name: solutions-overview-page
 {% extends 'layouts/base.njk' %}
 
 {% block pageTitle %}{{ title }} - {{ super() }}{% endblock %}
-
 {% block bodyId %}{{ name }}{% endblock %}
 
 {% block content %}
 
-<section id="solutions-topline">
-  <div class="wrapper">
-    <div class="solutions-topline-inner">
-      <p class="solutions-topline-label">What we offer</p>
-      <h1>Intelligent solutions for <em>people</em>, <em>places</em> and <em>property</em></h1>
-      <p class="solutions-toplinep">Mortar builds technology solutions that combine deep domain expertise with scalable platform architecture to deliver quick and tailored implementations.</p>
+{# ── Hoop'd solutions ─────────────────────────────────────────────────────── #}
+<section class="so-section so-section--first" id="hoopd">
+  <div class="so-card">
+    <div class="so-card-header">
+      <div class="so-card-text">
+        <h2 class="so-card-headline">Scale your local services</h2>
+        <p class="so-card-desc">Hoop'd is a growing suite of service modules for connecting people and organisations. Below are our currently scaling solutions. Need more tailored support? Learn about our custom design services below. </p>
+      </div>
+      <img class="so-card-logo" src="/static/images/hoopd-alpha.svg" alt="Hoop'd">
+    </div>
+    <div class="so-card-solutions">
+      {% for solution in collections.solutions | filterByProduct("hoopd") %}
+      <a href="{{ solution.url }}" class="so-sol">
+        <span class="so-sol-title">{{ solution.data.title }}</span>
+        <span class="so-sol-strapline">{{ solution.data.strapline }}</span>
+      </a>
+      {% endfor %}
     </div>
   </div>
 </section>
 
-<section id="solutions-list">
-  {% for solution in collections.solutions %}
-    {% if loop.index <= 8 %}
-    <div class="solution-section">
-
-      <button class="solution-section-header" aria-expanded="false">
-        <h3 class="solution-section-title">{{ solution.data.title }}</h3>
-        <span class="solution-section-icon" aria-hidden="true"></span>
-      </button>
-
-      <div class="solution-section-body" hidden>
-        <div class="solution-section-inner">
-          <div class="solution-section-desc">
-            <p>{{ solution.data.description }}</p>
-            <a href="{{ solution.url }}" class="solution-section-link">Read more</a>
-          </div>
-          <div class="solution-section-keywords">
-            {% if solution.data.keywords %}
-            <ul>
-              {% for kw in solution.data.keywords %}
-              <li>{{ kw }}</li>
-              {% endfor %}
-            </ul>
-            {% endif %}
-          </div>
-          <div class="solution-section-image">
-            {% if solution.data.image %}
-            <img src="{{ solution.data.image | url }}" alt="{{ solution.data.title }}">
-            {% endif %}
-          </div>
-        </div>
+{# ── Hxly solutions ───────────────────────────────────────────────────────── #}
+<section class="so-section" id="hxly">
+  <div class="so-card so-card--hxly">
+    <div class="so-card-header">
+      <div class="so-card-text">
+        <h2 class="so-card-headline">Build service intelligence</h2>
+        <p class="so-card-desc">Hxly is Mortar's AI lab working to understand, advance and transform services. Our service intelligence system harnesses data to transform service design and delivery. Looking for support before needing specific solutions? View Mortar's services below.</p>
       </div>
-
+      <img class="so-card-logo" src="/static/images/hxly-logo01.svg" alt="Hxly">
     </div>
-    {% endif %}
-  {% endfor %}
+    <div class="so-card-solutions">
+      {% for solution in collections.solutions | filterByProduct("hxly") %}
+      <a href="{{ solution.url }}" class="so-sol">
+        <span class="so-sol-title">{{ solution.data.title }}</span>
+        <span class="so-sol-strapline">{{ solution.data.strapline }}</span>
+      </a>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+{# ── Mortar services ──────────────────────────────────────────────────────── #}
+<section class="so-section so-section--last" id="mortar">
+  <div class="so-card so-card--mortar">
+    <div class="so-card-header">
+      <div class="so-card-text">
+        <h2 class="so-card-headline">Service and system design</h2>
+        <p class="so-card-desc">Mortar designs and builds bespoke solutions for customers. Applying our existing modules and frameworks, and developing new ones to respond to the unique challenges organisations face.</p>
+      </div>
+      <img class="so-card-logo" src="/static/images/mortar-logo.svg" alt="Mortar">
+    </div>
+    <div class="so-card-solutions">
+      {% for service in collections.services %}
+      <a href="{{ service.url }}" class="so-sol">
+        <span class="so-sol-title">{{ service.data.title }}</span>
+        <span class="so-sol-strapline">{{ service.data.description }}</span>
+      </a>
+      {% endfor %}
+    </div>
+  </div>
 </section>
 
 {% endblock %}
