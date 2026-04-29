@@ -9,6 +9,19 @@ image: "/static/images/solutions/digitalskills01.png"
 date: 2024-01-01
 author: Mortar
 draft: false
+
+hero_slides:
+  - heading: "Deliver local area skills initiatives for everyone"
+    body: "Bring your Digital Inclusion and Skills Network into one manageable environment. Grow as many providers, and engage as many users as your initiative needs, and monitor their progress as skills grow."
+    image: "/static/images/solutions/digitalskills01a.png"
+  - heading: "Monitor impact and identify the skills gaps"
+    body: "Reporting systems for the network and datasets for every member of your network to demonstrate the skills impact of their work."
+    image: "/static/images/solutions/digitalskills02.png"
+  - heading: "Build custom skills pathways and modules"
+    body: "Reflect your own organisational needs and develop your own skills statements, resources, pathways and modules for a custom skills platform."
+    image: "/static/images/solutions/digitalskills03.png"
+
+
 category: solution
 keywords:
   - digital skills

@@ -1,7 +1,7 @@
 ---
 product: hxly
 title: "Forma"
-strapline: "Custom population intelligence, service design, and digital twin capability for your organisation."
+strapline: "Population intelligence, service design, and digital twin capability for your organisation. Behavioural modelling, scenario simulation, and design intelligence to inform your decisions."
 description: "Custom population intelligence, service design, and digital twin capability for your organisation. Behavioural modelling, scenario simulation, and design intelligence — built around your data, your population, your decisions."
 date: 2024-02-03
 author: Mortar

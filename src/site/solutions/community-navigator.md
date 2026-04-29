@@ -13,10 +13,13 @@ draft: false
 hero_slides:
   - heading: "Build and manage your local network"
     body: "Empower your organisation to deliver accurate, real-time information to residents, service users, and partners — all from one central hub."
-    image: "/static/images/solutions/communitynavigator01.png"
+    image: "/static/images/solutions/communitynavigator01a.png"
   - heading: "Connect communities to what they need"
     body: "Streamline the distribution of local opportunities, events, and support services so every resident can find the resources that matter to them."
-    image: "/static/images/solutions/digitalskills01.png"
+    image: "/static/images/solutions/communitynavigator02.png"
+  - heading: "Get feedback and monitor impact"
+    body: "Build custom forms and enable local organisations to capture and monitor the impact of their work."
+    image: "/static/images/solutions/communitynavigator03.png"
 category: solution
 keywords:
   - community navigation

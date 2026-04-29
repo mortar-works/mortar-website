@@ -253,9 +253,9 @@ void main() { gl_FragColor = vec4(u_lcol, v_a*0.28); }`;
     clickTime = (performance.now() - startTime) / 1000;
   });
 
-  var nodeCol     = [0.68, 0.78, 0.96];
-  var lineCol     = [0.28, 0.46, 0.78];
-  var internalCol = [0.38, 0.58, 0.90];
+  var nodeCol     = [1.0, 1.0, 1.0];
+  var lineCol     = [1.0, 1.0, 1.0];
+  var internalCol = [1.0, 1.0, 1.0];
 
   function frame() {
     var t  = (performance.now()-startTime)/1000;
@@ -337,7 +337,7 @@ void main() { gl_FragColor = vec4(u_lcol, v_a*0.28); }`;
     gl.uniform3fv(gl.getUniformLocation(ptProg,'u_rcol'),redCol);
     // Buffer layout: [x, y, z, bright, red] — 5 floats, stride 20
     var pd=new Float32Array((N_SURF+N_INT+1)*5);
-    for(var i=0;i<N_SURF;i++){var n=surf[i],b=i*5;pd[b]=n.x;pd[b+1]=n.y;pd[b+2]=n.z;pd[b+3]=n.bright;pd[b+4]=redBlends[i];}
+    for(var i=0;i<N_SURF;i++){var n=surf[i],b=i*5;pd[b]=n.x;pd[b+1]=n.y;pd[b+2]=n.z;pd[b+3]=n.bright;pd[b+4]=0;}
     for(var i=0;i<N_INT;i++){var n=intern[i],b=(N_SURF+i)*5;pd[b]=n.x;pd[b+1]=n.y;pd[b+2]=n.z;pd[b+3]=n.bright;pd[b+4]=0;}
     var rb=(N_SURF+N_INT)*5;
     pd[rb]=redIntern.x;pd[rb+1]=redIntern.y;pd[rb+2]=redIntern.z;pd[rb+3]=1.0;pd[rb+4]=1.0;

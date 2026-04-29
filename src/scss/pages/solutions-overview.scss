@@ -196,7 +196,8 @@ $so-line: rgba($mortar-purple, 0.12);
 
 // Mortar card – wordmark is dark, mute it slightly
 .so-card--mortar .so-card-logo {
-  opacity: 0.55;
+  opacity: 1;
+  height: 3.2em;
 }
 
 // Placeholder tiles (Hxly – coming soon)

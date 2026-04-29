@@ -8,6 +8,15 @@ image: "/static/images/solutions/communitynavigator01.png"
 date: 2024-01-01
 author: Mortar
 draft: false
+
+hero_slides:
+  - heading: "Promote activities and events with ease"
+    body: "Maintain an up-to-date noticeboard of activities and events for your organisation or consortia."
+    image: "/static/images/solutions/digitalnoticeboard01.png"
+  - heading: "Create public timetables and booking forms"
+    body: "Build custom timetables and receive bookings and feedback to build audiences and communities around your work."
+    image: "/static/images/solutions/digitalnoticeboard02.png"
+
 category: solution
 keywords:
   - digital noticeboard

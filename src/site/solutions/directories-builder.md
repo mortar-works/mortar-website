@@ -8,6 +8,18 @@ image: "/static/images/solutions/communitynavigator01.png"
 date: 2024-01-01
 author: Mortar
 draft: false
+
+hero_slides:
+  - heading: "Build the directories you need to target and serve your communities"
+    body: "We provide custom directories to engage target users and support service providers in the delivery of Information, Advice and Support."
+    image: "/static/images/solutions/directorybuilder01.png"
+  - heading: "Monitor directory use and identify the service gaps"
+    body: "See directory usage more clearly and improve pathways using our recommendation and prioritisation systems."
+    image: "/static/images/solutions/communitynavigator01a.png"
+  - heading: "Create and manage uniform information and advice"
+    body: "Work across large areas and large consortias to deliver clear local messaging and information, improving accessibility and building better engagement results."
+    image: "/static/images/solutions/directorybuilder03.png"
+
 category: solution
 keywords:
   - directories
