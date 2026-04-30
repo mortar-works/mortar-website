@@ -9,7 +9,7 @@ hero_slides:
     webgl: modelbuilder
 strapline: "Data Preparation, Modelling and Dataset Creation. Specialist techniques for complex, imbalanced, and unstructured data; your data cleaned, prepared, and modelled for real-world use."
 description: "Specialist techniques for complex, imbalanced, and unstructured data — cleaned, prepared, and modelled for real-world use. Custom datasets, behavioural models, and predictive outputs built to your specific problem."
-date: 2024-02-02
+date: 2026-04-12
 author: Mortar
 draft: false
 category: solution

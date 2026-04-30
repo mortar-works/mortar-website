@@ -1,0 +1,90 @@
+# Mortar
+
+> Mortar is a technology company building intelligent systems that redefine relationships between people, places, and property. We build data and intelligence platforms for corporate, place-based, government, and health institutions — delivering lasting impact across the public and social sectors.
+
+Mortar is founded and led by George Unsworth, one of the UK's leading systems and service designers. George Unsworth leads the development of Mortar's research lab Hxly, pioneering work in service and behavioural intelligence.
+
+## Services
+
+### Service Design
+We accelerate delivery of custom service solutions by modelling user behaviour, building persona libraries, and developing service models shaped by real users. Capabilities include user research and insight, journey mapping, co-design workshops, prototyping and testing, service blueprints, and implementation support.
+
+### System Design
+We architect scalable, resilient digital systems that integrate seamlessly with existing infrastructure and grow with the organisation. Capabilities include technical discovery and audit, scalable architecture design, API design and integration strategy, data architecture, and security and compliance by design.
+
+### Intelligence Design
+We build the data infrastructure, analytical models, and intelligence systems organisations need to understand complexity, test decisions, and act with confidence. Capabilities include data strategy, data architecture, interoperability and standards, data governance, demand forecasting, and simulation and scenario planning.
+
+## Products
+
+### Hoop'd — The Integrated Services Platform
+Hoop'd builds services that provide data sharing solutions across local area partnerships and networks. It combines 24 service modules and 5 publicly backed frameworks (Health, Skills, Referral, Accreditation, Directories) to turn fragmented information and siloed organisations into connected, intelligent services supporting hundreds of thousands of service users.
+
+### Hxly — Service Intelligence for the Age of AI
+Hxly is an AI lab developing custom models and datasets to solve complex problems where rare but significant outcomes matter most. It applies advanced behavioural modelling to real-world data to surface patterns, predictions, and drive meaningful decisions. Key capabilities include trusted data environments, imbalanced data handling, simulation and scenario testing, explainable outputs, and responsible AI.
+
+## Solutions
+
+### Community Navigator
+Builds and manages local networks to deliver accurate, up-to-date information, opportunities, and events to residents, service users, and partners from one central hub.
+
+### Digital Noticeboard
+A dynamic platform for publishing and distributing community information across digital and print channels from a single source of truth.
+
+### Directories Builder
+Creates and manages intelligent, searchable directories of local services, resources, and opportunities — connecting people to what they need with geospatial mapping and provider self-service.
+
+### Digital Skills and Help Finder
+Provides users with dynamic self-assessments to discover needs, availability, and progress across digital skills — bringing Digital Inclusion and Skills Networks into one manageable environment.
+
+### Triage Tool
+Assesses user needs quickly and accurately, delivering algorithm-driven recommendations at first contact through structured, evidence-based evaluation in both practitioner and self-service modes.
+
+### First Point Case Manager
+Opens and manages cases from first contact with integrated triage, risk monitoring, and referral — capturing structured data from the moment of first contact to enable earlier intervention.
+
+### Tenancy Sustainment Tool
+Delivers local advice and referrals through case management for tenants at risk of losing their homes, enabling housing officers to open cases and begin support from first contact.
+
+### Referral Platform
+Connects people to appropriate services through structured, measurable digital referral pathways — tracking outcomes and generating evidence of impact across sectors.
+
+### Forma
+Custom population intelligence, digital twin capability, and service design intelligence — using behavioural modelling and scenario simulation to inform complex decisions.
+
+### Model Builder
+Specialist data preparation, modelling, and dataset creation for complex, real-world data problems — with predictive outputs, validation, and explainability built in.
+
+### DataSafe
+Trusted Data Environments with governed, secure analytical infrastructure for sensitive, complex, or regulated data — hosted on UK-based infrastructure with data never leaving UK jurisdiction.
+
+### Venue Accreditation Tool
+Empowers venues with training, resources, and accreditation in accessibility and service standards — including dementia-friendly certification and geospatial mapping of accredited venues.
+
+## Industries
+
+### Government
+Mortar builds integrated data platforms, needs analysis tools, policy impact modelling, digital public services, and performance frameworks for local authorities, combined authorities, and government agencies.
+
+### Health
+Mortar builds population health intelligence platforms, early intervention tools, integrated care coordination infrastructure, and community health tools for NHS trusts, integrated care boards, primary care networks, and public health teams.
+
+### Housing
+Mortar builds tenancy intelligence tools, estate management platforms, resident engagement tools, compliance intelligence, and health-housing integration for housing associations and local authority housing departments.
+
+### Cultural Sector
+Mortar builds audience intelligence platforms, community engagement tools, impact measurement frameworks, digital participation platforms, and venue and asset management systems for galleries, museums, theatres, libraries, and arts centres.
+
+### Asset Management
+Mortar builds predictive maintenance models, portfolio intelligence dashboards, capital investment modelling tools, compliance management systems, and social value measurement tools for housing providers, local authorities, and public infrastructure managers.
+
+## Links
+
+- [Homepage](https://mortar.works/)
+- [Services](https://mortar.works/services/)
+- [Products](https://mortar.works/products/)
+- [Solutions](https://mortar.works/solutions/)
+- [Industries](https://mortar.works/industries/)
+- [Case Studies](https://mortar.works/case-studies/)
+- [News](https://mortar.works/news/)
+- [Sitemap](https://mortar.works/sitemap.xml)

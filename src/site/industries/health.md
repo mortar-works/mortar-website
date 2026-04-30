@@ -4,7 +4,7 @@ description: "The future of health is proactive, personalised, and built on data
 link: "/health"
 label_image: "/static/images/solutions/solution_label01.png"
 image: "/static/images/solutions/digitalskills01.png"
-date: 2025-03-09
+date: 2025-01-22
 author: Mortar
 draft: false
 category: industry

@@ -5,7 +5,7 @@ strapline: "Connect people to the right services and opportunities through struc
 description: "Build structured digital referral pathways that connect people to the right services, track outcomes, and generate evidence of impact."
 label_image: "/static/images/solutions/solution_label01.png"
 image: "/static/images/solutions/communitynavigator01.png"
-date: 2024-01-01
+date: 2025-10-05
 author: Mortar
 draft: false
 category: solution

@@ -2,7 +2,7 @@
 title: "Hoop'd"
 layout: layouts/product-feature.njk
 theme: hoopd
-date: 2025-03-02
+date: 2025-06-15
 draft: false
 category: product
 author: Mortar

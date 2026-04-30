@@ -5,7 +5,7 @@ strapline: "Open and manage cases from the moment of first contact — with inte
 description: "Manage cases from the first point of contact with integrated triage, risk assessment, referral pathways, and real-time monitoring."
 label_image: "/static/images/solutions/solution_label01.png"
 image: "/static/images/solutions/tenancy-sustainment-tool01.jpg"
-date: 2024-01-01
+date: 2025-10-25
 author: Mortar
 draft: false
 category: solution

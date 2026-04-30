@@ -4,7 +4,7 @@ description: "Housing is more than a roof. Mortar is helping housing organisatio
 link: "/housing"
 label_image: "/static/images/solutions/solution_label01.png"
 image: "/static/images/solutions/digitalskills01.png"
-date: 2025-03-12
+date: 2025-05-03
 author: Mortar
 draft: false
 category: industry

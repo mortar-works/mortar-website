@@ -4,7 +4,7 @@ description: "Culture is finding new ways to connect with audiences, communities
 link: "/cultural-sector"
 label_image: "/static/images/solutions/solution_label01.png"
 image: "/static/images/solutions/digitalskills01.png"
-date: 2025-03-11
+date: 2025-09-17
 author: Mortar
 draft: false
 category: industry

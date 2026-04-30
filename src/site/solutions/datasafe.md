@@ -5,7 +5,7 @@ overview_heading: "What is DataSafe?"
 hero_webgl: [datasafe, vault, audit]
 strapline: "Trusted Data Environments. Governed, secure analytical infrastructure built for your needs, within existing systems or managed by us."
 description: "Governed, secure analytical infrastructure built to your context — within your existing systems or managed by us. The compliant foundation for everything you want to do with your data."
-date: 2024-02-01
+date: 2026-03-25
 author: Mortar
 draft: false
 

@@ -16,6 +16,9 @@ keywords:
   - venue accreditation
   - Alzheimer's
   - accessibility
+logos:
+  - /static/images/partners/GLA-Logo-2.png
+  - /static/images/partners/alzheimerssociety_logo01.png
 ---
 
 In response to the 'postcode lottery' of support on offer for people with dementia, we worked with the Greater London Authority and the Mayor of London to design and build the digital platform that powers the Dementia Friendly Venues Charter — enabling hundreds of venues across the capital to apply for, achieve, and maintain accreditation as dementia-friendly spaces.

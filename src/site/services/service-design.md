@@ -9,7 +9,7 @@ strapline: "Accelerate the delivery of custom service solutions by modelling use
 description: "We accelerate the delivery of custom service solutions. Our service design toolkit includes modelling user behaviour, building custom persona libraries and developing service models shaped by real users."
 label_image: "/static/images/solutions/solution_label01.png"
 image: "/static/images/solutions/digitalskills01.png"
-date: 2024-06-01
+date: 2025-06-12
 author: Mortar
 draft: false
 category: service

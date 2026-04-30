@@ -5,7 +5,7 @@ strapline: "Deliver accessible, up-to-date community information across digital 
 description: "A dynamic platform for publishing and distributing community information, events, and opportunities in accessible formats across multiple channels."
 label_image: "/static/images/solutions/solution_label01.png"
 image: "/static/images/solutions/communitynavigator01.png"
-date: 2024-01-01
+date: 2024-06-08
 author: Mortar
 draft: false
 

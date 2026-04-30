@@ -6,7 +6,7 @@ description: "Provide every user and partner with dynamic self assessments; to d
 link: "/digital-skills-and-help-finder"
 label_image: "/static/images/solutions/solution_label01.png"
 image: "/static/images/solutions/digitalskills01.png"
-date: 2024-01-01
+date: 2025-06-18
 author: Mortar
 draft: false
 

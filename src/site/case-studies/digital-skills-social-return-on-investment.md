@@ -5,7 +5,7 @@ read_more_link: "/digital-skills-social-return-on-investment"
 image: "/static/images/solutions/digitalskills02.png"
 author: Mortar
 draft: false
-date: 2026-04-30
+date: 2026-04-22
 category: case-study
 keywords:
   - digital skills

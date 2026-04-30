@@ -6,7 +6,7 @@ description: "Build and manage a network that delivers real-time, accurate infor
 link: "/community-navigator"
 label_image: "/static/images/solutions/solution_label01.png"
 image: "/static/images/solutions/communitynavigator01.png"
-date: 2024-01-01
+date: 2024-02-02
 author: Mortar
 draft: false
 

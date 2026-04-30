@@ -1,6 +1,6 @@
 ---
 title: "Working with DAWN at the University of Cambridge"
-date: 2026-01-14
+date: 2026-01-18
 image: "/static/images/news/dawn-cambridge.png"
 author: Mortar
 draft: false

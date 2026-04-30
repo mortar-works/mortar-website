@@ -5,7 +5,7 @@ strapline: "Build and maintain dynamic, searchable directories of local services
 description: "Create and manage intelligent local area directories that connect people to the services, resources, and opportunities they need."
 label_image: "/static/images/solutions/solution_label01.png"
 image: "/static/images/solutions/communitynavigator01.png"
-date: 2024-01-01
+date: 2024-12-15
 author: Mortar
 draft: false
 

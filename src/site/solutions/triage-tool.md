@@ -5,7 +5,7 @@ strapline: "Assess user needs quickly and accurately, and deliver personalised r
 description: "Assess user needs quickly and accurately, and deliver algorithm-driven recommendations and referrals at the point of first contact."
 label_image: "/static/images/solutions/solution_label01.png"
 image: "/static/images/solutions/digitalskills01.png"
-date: 2024-01-01
+date: 2024-05-02
 author: Mortar
 draft: false
 category: solution

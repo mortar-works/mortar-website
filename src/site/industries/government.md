@@ -4,7 +4,7 @@ description: "Government is being reshaped by data, automation, and rising publi
 link: "/government"
 label_image: "/static/images/solutions/solution_label01.png"
 image: "/static/images/solutions/digitalskills01.png"
-date: 2025-03-10
+date: 2024-01-12
 author: Mortar
 draft: false
 category: industry

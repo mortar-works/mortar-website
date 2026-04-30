@@ -5,7 +5,7 @@ read_more_link: "/digital-help-finder-for-essex"
 image: "/static/images/solutions/digitalskills01.png"
 author: Mortar
 draft: false
-date: 2026-04-30
+date: 2025-06-20
 category: case-study
 keywords:
   - digital skills

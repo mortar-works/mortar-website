@@ -2,7 +2,7 @@
 title: Hxly
 layout: layouts/product-feature.njk
 theme: hxly
-date: 2025-03-03
+date: 2026-03-02
 draft: false
 category: product
 author: Mortar

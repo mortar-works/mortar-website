@@ -9,7 +9,7 @@ strapline: "Architect scalable, resilient digital systems that integrate seamles
 description: "Architect scalable, resilient digital systems that integrate seamlessly with your existing infrastructure and grow with your organisation."
 label_image: "/static/images/solutions/solution_label01.png"
 image: "/static/images/solutions/dfvc-dashboard02.png"
-date: 2024-06-01
+date: 2025-07-07
 author: Mortar
 draft: false
 category: service

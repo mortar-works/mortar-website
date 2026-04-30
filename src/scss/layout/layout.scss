@@ -376,6 +376,37 @@ header.nav-active nav a {
   }
 }
 
+/* Mobile-only nav extras (Services + Contact) — hidden on desktop */
+.nav-mobile-extras {
+  display: none;
+}
+
+header.nav-active nav .nav-mobile-extras {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin-top: 0.75em;
+  padding-top: 1em;
+  border-top: 1px solid rgba($black, 0.15);
+}
+
+.nav-mobile-label {
+  font-family: 'Manrope', sans-serif;
+  font-size: 0.72em;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: rgba($black, 0.45);
+  padding: 0.25em 0 0.25em;
+}
+
+header.nav-active nav .nav-mobile-extras .nav-mobile-contact {
+  margin-top: 1em;
+  padding-top: 1em;
+  border-top: 1px solid rgba($black, 0.1);
+  font-weight: 700;
+}
+
 /* Company dropdown nav item */
 .nav-has-dropdown {
   position: relative;

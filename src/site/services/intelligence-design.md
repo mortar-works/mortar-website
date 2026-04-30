@@ -8,7 +8,7 @@ hero_slides:
 strapline: "We build the data infrastructure, analytical models, and intelligence systems your organisation needs to understand complexity, test decisions, and act with confidence."
 description: "We build the data infrastructure, analytical models, and intelligence systems your organisation needs to understand complexity, test decisions, and act with confidence."
 image: "/static/images/solutions/dfvc-dashboard02.png"
-date: 2025-03-01
+date: 2026-02-08
 author: Mortar
 draft: false
 category: service

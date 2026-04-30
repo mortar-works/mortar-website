@@ -4,7 +4,7 @@ description: "The future of asset management is predictive, data-driven, and bui
 link: "/asset-management"
 label_image: "/static/images/solutions/solution_label01.png"
 image: "/static/images/solutions/digitalskills01.png"
-date: 2025-03-13
+date: 2025-07-07
 author: Mortar
 draft: false
 category: industry
