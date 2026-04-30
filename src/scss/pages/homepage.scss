@@ -95,6 +95,12 @@
 
     .hamburger {
       animation: navItemIn 0.7s ease 0.1s both;
+
+      .hamburger-inner,
+      .hamburger-inner:before,
+      .hamburger-inner:after {
+        background-color: white !important;
+      }
     }
   }
 }
@@ -425,6 +431,11 @@
       .featured-intro,
       .featured-tile {
         min-height: 180px;
+      }
+
+      .featured-tile-stats {
+        flex-direction: column;
+        gap: 1em;
       }
     }
 
