@@ -7,7 +7,7 @@ image: "/static/images/solutions/digitalskills01.png"
 date: 2025-03-05
 author: Mortar
 draft: false
-category: use-case
+category: insight
 keywords:
   - team capability
   - workforce tools

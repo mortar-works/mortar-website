@@ -5,7 +5,7 @@ image: collaborate_cocreate01.jpg
 author: George Unsworth
 description: Accelerate digital transformation through real-time data and AI-powered collaboration.
 draft: false
-category: use case
+category: insight
 keywords:
   - digital transformation
   - AI

@@ -4,7 +4,7 @@ date: 2022-01-20
 image: hyperlocal1.png
 author: George Unsworth
 draft: false
-category: use-case
+category: insight
 keywords:
   - directories
   - communities

@@ -5,7 +5,7 @@ image: servicemapping01.jpg
 author: George Unsworth
 description: Using digital platforms to enhance communication and improve access to information for targeted residents.
 draft: false
-category: case-study
+category: insight
 keywords:
   - service mapping
   - local government

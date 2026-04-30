@@ -8,7 +8,7 @@ date: 2025-03-06
 author: Mortar
 draft: false
 pinned: true
-category: use-case
+category: insight
 keywords:
   - impact
   - scale

@@ -4,7 +4,7 @@ date: 2020-09-01
 image: evolvefinancefunction.jpg
 author: George Unsworth
 draft: false
-category: use case
+category: insight
 keywords:
   - proptech
   - finance transformation
