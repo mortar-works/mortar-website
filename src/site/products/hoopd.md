@@ -1,18 +1,111 @@
 ---
 title: "Hoop'd"
-date: 2025-03-02
-image: driving-product_01.png
-logo: /static/images/hoopd-alpha.svg
-description: Hoop'd is an intelligent design system connecting people and places. Build, promote and grow custom services and solutions for your organisation and partnership, demonstrating long-term impact. 
-author: Mortar
+layout: layouts/product-feature.njk
+theme: hoopd
+date: 2025-06-15
 draft: false
 category: product
+author: Mortar
+
+logo: /static/images/hoopd-alpha.svg
+
+tagline: "The integrated services platform"
+
+description: "Hoop'd builds services, providing data sharing solutions across local area partnerships and networks. Combine service modules and apply existing frameworks to drive better outcomes using data and intelligence."
+
+stats:
+  - value: "24"
+    label: "service modules"
+  - value: "5"
+    label: "publicly backed frameworks"
+  - value: "100k"
+    label: "thousands of service users"
+
+split_image: /static/images/partners/hoopd-screen2.png
+split_heading: "Turn fragmented information and siloed organisations into connected, intelligent services."
+split_body: "Most local areas operate without a clear picture of the partnerships, referrals, and relationships that drive their impact. Hoop'd makes those networks visible. Turning information and engagement into actionable intelligence to shape better service decisions."
+
+duo_left_title: "Combatting disconnection"
+duo_left_stats:
+  - value: "41%"
+    label: "of people have unmet needs"
+  - value: "400k"
+    label: "people waiting for assessments"
+  - value: "13%"
+    label: "of NHS beds unnecessarily occupied"
+duo_left: "Hoop'd turns fragmented provision into connected, intelligent services; reshaping how local services are designed and delivered. Connecting infrastructure, sharing data and delivering real user insights to drive cost efficiencies and improve outcomes."
+duo_right_title: "Building capacity"
+duo_right_stats:
+  - value: "21m"
+    label: "people economically inactive"
+  - value: "30%"
+    label: "decrease in training expenditure"
+  - value: "38"
+    label: "small businesses closing every day"
+duo_right: "Hoop'd powers service delivery across local government and NHS partnerships, supporting private and public institutions in engaging and improving the lives of their users and helping to build genuinely integrated neighbourhoods."
+
+partners:
+  - name: "Department for Science, Innovation and Technology"
+    logo: /static/images/partners/Department_for_Science_Innovation_and_Technology_logo.png
+  - name: "Greater London Authority"
+    logo: /static/images/partners/GLA-Logo-2.png
+  - name: "Local Government Association"
+    logo: /static/images/partners/lga_logo2.png
+  - name: "G-Cloud"
+    logo: /static/images/partners/g-cloud-14.png
+    class: "pf-partner--lg"
+
+solutions_banner:
+  left_title: "View Hoop'd Solutions"
+  left_body: "View our scaling solutions currently built using Hoop'd."
+  left_link: "/solutions-overview/"
+  left_label: "View solutions"
+  right_title: "For custom solutions"
+  right_body: "For custom service design and development using Hoop'd get in touch."
+  right_link: "/contact/"
+  right_label: "Get in touch"
+
+overview_eyebrow: "What is Hoop'd"
+overview_heading: "Hoop'd builds hyperlocal, regional and national services. Customisable for the size and scale of solution you need."
+
+steps_heading: "Four steps to service intelligence"
+steps:
+  - title: "Map"
+    body: "Establish your data and information environment. Understand what exists, where it lives, and how it connects across your services and partners."
+  - title: "Design"
+    body: "Define the service architecture you need. Create personas, model frameworks, and map outcomes to build a system designed around your users."
+  - title: "Integrate"
+    body: "Apply data and intelligence to create joined-up, single-source-of-truth systems; connecting tools, teams, and partners into a coherent operation."
+  - title: "Scale"
+    body: "Capacity, data sharing, and security are built into the solution from day one, so your infrastructure scales with your network and service."
+
+features_eyebrow: "Key frameworks"
+features_heading: "Everything you need to deliver locally and scale"
+features_subheading: "Use our existing frameworks backed by government and institutional partners."
+features:
+  - title: "Health Framework"
+    body: "Measure and monitor health and care programmes. Track qualitative and quantitative measures to report on impact, surface trends, demonstrating value for commissioners and stakeholders."
+  - title: "Skills Framework"
+    body: "Build and manage skills delivery across regions and groups. Create structured pathways, curate resources, and track progression to understand where skills gaps exist and how your programmes are closing them."
+  - title: "Referral Framework"
+    body: "Establish referral pathways for your service or network. Support neighbourhood health integration and public health priorities with intelligent triage and communications built around your users."
+  - title: "Accreditation Framework"
+    body: "Manage resources, track progress, and score against your own criteria; integrating with existing compliance requirements while offering a more supportive, personalised experience."
+  - title: "Directories Framework"
+    body: "Enable partners to create, maintain and monitor content with their own data and intelligence. Triage users effectively and build signposting solutions that stay accurate and relevant as your directory grows."
+  - title: "Custom Frameworks"
+    body: "Work with us to create the framework you need for your service. We support custom service and systems design processes to enable you to scale and grow your own service solution with your stakeholders and users."
+
 keywords:
   - Hoop'd
+  - integrated services
   - design system
   - community engagement
   - place-based
   - connectivity
+  - local government
+  - NHS partnerships
+
 tags:
   - product
   - design system
@@ -21,40 +114,4 @@ tags:
   - engagement
 ---
 
-> Hoop'd is our intelligent design system — a framework for building digital services and experiences that genuinely connect people to the places and communities around them.
 
-The gap between people and the services that exist to support them is one of the defining challenges of the digital age. Information is fragmented, navigation is complex, and the burden of finding the right support falls on people with the least resources and capacity. Hoop'd is built to close that gap whilst giving people the ability to work together, share information, and monitor and report on the impact of their work.
-
-## What is Hoop'd
-
-Hoop'd is Mortar's intelligent design system for enhancing place-based services and experiences. It provides the components, patterns, and intelligence needed to build applications that help people understand and navigate the services, spaces, and communities available to them, wherever they are and whatever they need.
-
-Designed for individual organisations, as well as local consortia across all place-based stakeholders (public sector organisations, health and housing providers, local authorities, and community networks) Hoop'd takes the complexity out of building user-centred, accessible digital services. It provides a coherent, accessible foundation that teams can build on, rather than starting from scratch every time, with tried and tested solutions and modules to get going.
-
-## How Hoop'd Works
-
-Hoop'd operates as a layered system. At the foundation are a set of accessible, well-tested UI components, the outputs of many years of delivering service design solutions. Above that sits a layer of intelligent connectivity microservices: search, filtering, mapping, recommendation, and personalisation capabilities that make the difference between a traditional website or directory, and a genuinely useful, dynamic and personalised digital product.
-
-- **Component library:** A comprehensive set of accessible, responsive UI components ready to deploy, reducing build time and ensuring consistency.
-- **Place intelligence:** Map and geolocation capabilities that anchor content and services in the real-world contexts that matter to users.
-- **Smart search and filtering:** Intelligent search, resource prioritisation and recommendations, that surface the most relevant information dynamically. 
-- **Personalisation:** Adaptive experiences that learn from user behaviour to surface the most relevant content and connections.
-- **Integration-ready:** Built to connect to and enhance existing data sources, CRM systems, and service directories. To power deeper impact and reporting. 
-
-## Key Features
-
-- **Service discovery:** Help users find the services they need; filtered by location, availability, eligibility, and need.
-- **Community mapping:** Visualise the assets, services, and opportunities available across a place; giving organisations and communities a shared picture of what exists.
-- **Accessible by design:** Every component is built to WCAG 2.1 AA standards, ensuring your digital product works for everyone.
-- **Rapid deployment:** Pre-built templates and patterns mean you can move from brief to live faster, without sacrificing quality.
-- **Analytics and insight:** Understand how people are using your platform; what they are searching for, where they are dropping off, and how you can improve.
-
-## Why It Matters
-
-Too many place-based digital solutions are built on generic platforms that were not designed with any sustainability or scalability in mind, ultimately failing to gain the trust of the communities intended to be supported. Many of these solutions are hard to navigate, inaccessible to people with lower digital confidence, and disconnected from the real-world complexity of local services and communities.
-
-Hoop'd is different. It has been developed through years of working with people, building local capacity and infrastructure to serve local authorities, housing providers, and community organisations with digital solutions that genuinely meet user needs. The result is a system that understands the specific challenges of place-based digital work — and provides the tools to meet them.
-
-### Get in Touch
-
-If you are building a new digital service or looking to improve an existing one, Hoop'd provides the foundation to do it right. Get in touch to find out how Hoop'd could work for your organisation.

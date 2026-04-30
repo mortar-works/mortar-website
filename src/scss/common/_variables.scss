@@ -9,6 +9,33 @@ $mortar-pink: #fca893;
 $mortar-purple: #2b1c5a;
 
 
+// ─── Section label mixin ──────────────────────────────────────────────────────
+// Use on dark (purple) backgrounds — white text by default.
+// Pass $on-light: true for yellow or white backgrounds — black text.
+
+@mixin section-label($on-light: false) {
+  display: flex;
+  align-items: center;
+  gap: 0.5em;
+  font-family: 'Manrope', sans-serif;
+  font-size: 0.72em;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: if($on-light, rgba($black, 0.55), rgba($white, 0.7));
+  margin: 0 0 1.5em;
+
+  &::before {
+    content: '';
+    display: inline-block;
+    width: 7px;
+    height: 7px;
+    background: $mortar-orange;
+    border-radius: 1px;
+    flex-shrink: 0;
+  }
+}
+
 .mortar-purple {
     color: $mortar-purple; /* Apply Mortar purple color */
   }

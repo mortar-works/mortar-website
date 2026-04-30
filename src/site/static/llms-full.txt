@@ -1,0 +1,280 @@
+# Mortar Works Ltd — Full Reference
+
+> Mortar is a London-based technology company that builds intelligent systems
+> redefining relationships between people, places, and property. It designs
+> and delivers data and intelligence platforms for corporate, place-based,
+> government, and health institutions — delivering lasting impact across the
+> public and social sectors. Mortar is founded and led by George Unsworth,
+> one of the UK's leading systems and service designers.
+
+## About
+
+Mortar Works Ltd (mortar.works) operates at the intersection of service
+design, system architecture, and applied AI. The organisation works with
+local authorities, NHS trusts, housing associations, combined authorities,
+and cultural institutions across the UK.
+
+Mortar's AI lab, Hxly, pioneers work in service and behavioural intelligence,
+applying advanced behavioural modelling to real-world data to surface patterns,
+predictions, and drive meaningful decisions in complex public sector contexts.
+
+## Services
+
+- **Service Design**: User research and insight, journey mapping, co-design
+  workshops, prototyping, service blueprints, and implementation support.
+  Mortar accelerates delivery of custom service solutions by modelling user
+  behaviour and building persona libraries shaped by real users.
+
+- **System Design**: Technical discovery and audit, scalable architecture
+  design, API design and integration strategy, data architecture, and security
+  and compliance by design. Mortar architects resilient digital systems that
+  integrate with existing infrastructure.
+
+- **Intelligence Design**: Data strategy, data architecture, interoperability
+  and standards, data governance, demand forecasting, and simulation and
+  scenario planning. Mortar builds the analytical models and intelligence
+  systems organisations need to understand complexity and act with confidence.
+
+## Products
+
+### Hoop'd — Integrated Services Platform
+Hoop'd delivers data sharing solutions across local area partnerships and
+networks. It combines 24 service modules and 5 publicly backed frameworks
+(Health, Skills, Referral, Accreditation, Directories) to connect fragmented
+organisations into intelligent services supporting hundreds of thousands of
+service users.
+
+### Hxly — Service Intelligence and AI Lab
+Hxly is Mortar's AI research lab developing custom models and datasets for
+complex problems where rare but significant outcomes matter most. Capabilities
+include trusted data environments, imbalanced data handling, simulation and
+scenario testing, explainable outputs, and responsible AI.
+
+## Solutions
+
+### Community Navigator
+Community Navigator builds and manages local networks to deliver accurate,
+up-to-date information, opportunities, and events to residents, service users,
+and partners from one central hub. It empowers organisations — including local
+authorities, housing providers, and community groups — to publish real-time
+updates, promote events, and share targeted resources. Features include network
+management, real-time content updates, event promotion, targeted resource
+sharing, and data and insights dashboards.
+
+### Digital Noticeboard
+Digital Noticeboard is a dynamic platform for publishing and distributing
+community information across digital and print channels from a single source
+of truth. It eliminates inconsistency across channels and ensures residents
+always access the most current information. Features include accessible
+information design, multi-channel publishing, partner and provider network
+management, event management, geospatial mapping, and engagement analytics.
+
+### Directories Builder
+Directories Builder creates and manages intelligent, searchable directories
+of local services, resources, and opportunities — connecting people to what
+they need through structured, verified listings. It supports provider
+self-service, geospatial mapping of services, global API integration for
+data sharing, and analytics and reporting. Suitable for local authorities,
+health organisations, and community networks building service finders or
+resource directories.
+
+### Digital Skills and Help Finder
+Digital Skills and Help Finder provides users with dynamic self-assessments
+to discover their digital skills needs, find available learning resources,
+and track their progress. It brings Digital Inclusion and Skills Networks
+into one manageable environment for commissioners and providers. Features
+include a self-assessment module, resource directory management, a dynamic
+user dashboard, customisable learning pathways, and data insights and reporting.
+
+### Triage Tool
+The Triage Tool assesses user needs quickly and accurately, delivering
+algorithm-driven recommendations at first contact through structured,
+evidence-based evaluation. It supports both practitioner-led and self-service
+modes, enabling consistent assessment across teams. Features include custom
+assessment design, algorithm-driven matching of needs to resources, progress
+tracking across contacts, and data visualisation and reporting. Used in
+health, housing, and social care settings where accurate needs identification
+at first contact is critical.
+
+### First Point Case Manager
+First Point Case Manager opens and manages cases from first contact, with
+integrated triage, risk monitoring, and referral built in from the start.
+It captures structured data from the moment of first contact to reduce
+information gaps and enable earlier intervention. Features include instant
+case creation, integrated triage, risk stratification, referral and resource
+management, data portability, and reporting and oversight. Designed for
+frontline services in health, housing, and social care where early structured
+data capture drives better outcomes.
+
+### Tenancy Sustainment Tool
+The Tenancy Sustainment Tool delivers local advice and referrals through
+case management for tenants at risk of losing their homes. It enables housing
+officers to open cases and begin structured support from first contact, with
+integrated triage, risk monitoring, and access to local directories of support.
+Features include user triage and assessment, case management, risk monitoring,
+HARs API integration, and directory management. Built for housing associations
+and local authority housing teams managing complex tenancy sustainment caseloads.
+
+### Referral Platform
+The Referral Platform connects people to appropriate services through
+structured, measurable digital referral pathways — tracking outcomes and
+generating evidence of impact across sectors. It supports co-designed user
+experiences, cross-sector coordination between referring and receiving
+organisations, and integrated wellbeing measurement at key points in the
+referral journey. Features include flexible referral pathways, co-designed UX,
+cross-sector coordination tools, integrated wellbeing measurement, and impact
+reporting. Used across health, housing, and social care to replace informal or
+paper-based referral processes.
+
+### Forma
+Forma delivers custom population intelligence, digital twin capability, and
+service design intelligence — using behavioural modelling and scenario
+simulation to inform complex planning and investment decisions. It helps
+organisations understand how populations behave, model the impact of service
+changes before implementation, and test scenarios in a controlled environment.
+Features include population intelligence, digital twin capability, scenario
+simulation, behavioural modelling, and service design intelligence. Suited to
+commissioners, planners, and policy teams in health, housing, and local government.
+
+### Model Builder
+Model Builder provides specialist data preparation, modelling, and dataset
+creation for complex, real-world data problems — built for messy, incomplete,
+or imbalanced data rather than ideal conditions. It produces predictive outputs
+with full validation and explainability so organisations can act on results
+with confidence. Features include specialist data preparation, custom dataset
+creation, behavioural modelling, predictive outputs, and validation and
+explainability. Used by organisations needing bespoke analytical models where
+off-the-shelf tools cannot handle the complexity or sensitivity of the data.
+
+### DataSafe
+DataSafe provides Trusted Data Environments (TDEs) with governed, secure
+analytical infrastructure for sensitive, complex, or regulated data. It is
+hosted entirely on UK-based infrastructure, ensuring data never leaves UK
+jurisdiction. Features include flexible deployment options, compliance
+frameworks, data linkage and privacy controls, access management, and audit
+and disclosure controls. Designed for NHS trusts, local authorities, and
+research organisations handling personal or sensitive data who need a secure
+environment for analysis without compromising governance or compliance.
+
+### Venue Accreditation Tool
+The Venue Accreditation Tool empowers venues with training, resources, and
+accreditation in accessibility and service standards — including dementia-
+friendly certification. It supports organisations running accreditation schemes
+at scale, with tools for managing multiple sites, tracking progress, and
+issuing accreditations. Features include custom training modules, progress
+tracking and reporting, scaling for multiple sites, accreditation management,
+and geospatial mapping of accredited venues. Used by local authorities and
+cultural bodies running accessibility or quality standards programmes across
+venue networks.
+
+## Industries Served
+
+- **Government**: Local authorities, combined authorities, and government
+  agencies. Integrated data platforms, needs analysis, policy impact modelling,
+  digital public services.
+
+- **Health**: NHS trusts, integrated care boards, primary care networks.
+  Population health intelligence, early intervention tools, integrated care
+  coordination infrastructure.
+
+- **Housing**: Housing associations and local authority housing departments.
+  Tenancy intelligence, resident engagement, compliance intelligence,
+  health-housing integration.
+
+- **Cultural Sector**: Galleries, museums, theatres, libraries, and arts
+  centres. Audience intelligence, community engagement, impact measurement,
+  digital participation.
+
+- **Asset Management**: Housing providers, local authorities, public
+  infrastructure managers. Predictive maintenance, portfolio intelligence,
+  capital investment modelling, social value measurement.
+
+## Case Studies
+
+### Dementia Friendly Venues Charter — Greater London Authority
+Mortar built the digital platform underpinning the Mayor of London's Dementia
+Friendly Venues Charter, enabling hundreds of venues across London to apply
+for, achieve, and maintain accreditation as dementia-friendly spaces. The
+platform supports over 72,000 Londoners currently living with dementia, a
+number expected to triple in coming decades.
+
+### Digital Help Finder — Essex County Council
+Commissioned by Essex County Council with Local Government Association backing,
+Mortar delivered a county-wide digital skills platform offering free Essential
+Digital Skills assessments, skills pathways, a resource directory, and
+partnership management tools for a network of community providers across Essex.
+
+### Digital Skills Social Return on Investment — DSIT and Five Local Authorities
+Working with the Department for Science, Innovation and Technology and five
+local authorities (Essex, Cornwall, Norfolk, Suffolk, Hertfordshire), Mortar
+expanded the Digital Help Finder across the South of England and developed an
+SROI model for calculating the return on investment in digital skills
+programmes, adding pathways covering NHS applications, Gov.UK platforms, and
+financial and banking services.
+
+### Triage and Signposting — Salford City Council
+Mortar deployed a Digital Inclusion Triage Tool for Salford City Council,
+supporting a place-based digital inclusion approach across a network of 79
+local organisations. Measured outcomes include 26 hours per week in time
+savings for frontline services, £19k per locality in cost savings, a 40%
+reduction in staff stress levels, and a 22% increase in staff confidence in
+signposting and referral.
+
+### Tenancy Sustainment Tool — Mayor of London
+Mortar built a case management platform for the Mayor of London's Challenge
+London team, delivering structured triage, advice, and referral for residents
+at risk of losing their homes. The tool integrates with the national Housing
+Advice and Resources Service (HARS) and supports early intervention to prevent
+evictions and homelessness across London boroughs.
+
+### Community Navigation — Hackney Council
+Mortar built the platform powering Hackney Circle, a free membership service
+connecting isolated older residents in Hackney with over 40 cultural partners.
+Commissioned by Hackney's culture and public health team, the platform targets
+older residents living alone to reduce isolation and increase participation in
+cultural and community life.
+
+### Creative Health Referrals — Southbank Centre and South East London ICB
+Mortar built Ombri, a digital referral platform connecting young people aged
+11–25 with creative health opportunities across South East London, co-designed
+with young people and accessible for neurodivergent and learning disabled
+users. The platform integrates validated wellbeing measurement tools (WEMWBS
+and EQ-5D) to build an evidence base for demonstrating impact.
+
+### Alternative Provision Directory — Gloucestershire County Council
+Working with Gloucestershire County Council and Social Finance as part of the
+Maximising Access to Education programme, Mortar built an intelligent directory
+helping schools and teachers find, coordinate, and manage Alternative Provision
+for young people — with referral tools, local authority oversight, and provider
+self-service to address fragmentation across the county.
+
+### Reducing School Exclusions — Cheshire
+Mortar built a Directory of What Works for schools and local authority teams in
+Cheshire, enabling teachers to assess young people's needs and signpost families
+to appropriate local services, and establishing standardised data-sharing
+practices for referrals — focused on reducing school exclusion through early
+intervention.
+
+### Digital Inclusion Network — East Riding of Yorkshire Council
+Mortar built a custom Digital Inclusion Triage Tool for East Riding of Yorkshire
+Council in partnership with Humber and Yorkshire Integrated Care Board,
+establishing a new Digital Inclusion Network across a predominantly rural area
+where 3 of 26 wards fall in the top 10% most deprived in England.
+
+## Key Facts
+
+- Founded and led by George Unsworth
+- Based in London, United Kingdom
+- Operates across public sector, health, housing, and cultural sectors
+- UK-based data infrastructure; data never leaves UK jurisdiction (DataSafe)
+
+## Pages
+
+- /: Homepage and company overview
+- /services/: Service Design, System Design, Intelligence Design
+- /products/: Hoop'd and Hxly product descriptions
+- /solutions/: Full suite of sector solutions
+- /industries/: Sector-specific capabilities and use cases
+- /case-studies/: Client work and impact evidence
+- /news/: Updates, research, and announcements
+- /sitemap.xml: Full site index

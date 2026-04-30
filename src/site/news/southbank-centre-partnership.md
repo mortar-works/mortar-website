@@ -1,6 +1,6 @@
 ---
 title: "New partnership with the Southbank Centre"
-date: 2024-06-01
+date: 2025-09-14
 description: "Mortar chosen to design new platform for children and young people, improving access into creative health opportunities."
 image: "/static/images/news/southbanklogo02.png" # Optional: Featured image
 tags: ["news"] # Tag to help filter this as a news post

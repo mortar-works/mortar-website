@@ -4,7 +4,7 @@ date: 2020-05-01
 image: creating-connections01.jpg
 author: George Unsworth
 draft: false
-category: solution
+category: insight
 keywords:
   - collections
   - income

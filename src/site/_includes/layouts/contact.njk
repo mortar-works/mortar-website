@@ -5,31 +5,37 @@
 {% block mainClass %}contact-page{% endblock %}
 
 {% block content %}
+
+<section id="contact-topline">
+  <p class="contact-topline-label">Get in touch</p>
+  <h1>Let's build<br>something better.</h1>
+  <p class="contact-topline-strapline">Whether you want to learn more about our work, discuss a project, or just explore what's possible please get in touch using our form or the contact details below.</p>
+</section>
+
 <section id="contact-section">
-  <div class="wrapper">
-    <div id="contact-split">
-      <div class="contact-left">
-        <div class="contact-left-inner">
-          <h1>Let's build something better.</h1>
-          <p class="contact-strapline">Whether you want to learn more about our work, discuss a project, or just explore what's possible — get in touch and we'll get back to you.</p>
-          <a href="mailto:office@mortar.works" class="contact-email-link">office@mortar.works</a>
-          <a href="tel:+442083742322" class="contact-phone-link">+44 (0)208 374 2322</a>
-          <div class="contact-addresses">
-            <div class="contact-address">
-              <p><strong>Registered Office</strong><br>Ground Floor<br>66 High Street<br>Lewes, England<br>BN7 1XG</p>
-            </div>
-            <div class="contact-address">
-              <p><strong>London Office</strong><br>The Jellicoe, FORA<br>5 Beaconsfield St<br>London, England<br>N1C 4EW</p>
-            </div>
+  <div id="contact-split">
+    <div class="contact-left">
+      <div class="contact-left-inner">
+        <p class="contact-info-label">Reach us directly</p>
+        <a href="mailto:office@mortar.works" class="contact-email-link">office@mortar.works</a>
+        <a href="tel:+442083742322" class="contact-phone-link">+44 (0)208 374 2322</a>
+        <div class="contact-addresses">
+          <div class="contact-address">
+            <p><strong>Registered Office</strong><br>Ground Floor<br>66 High Street<br>Lewes, England<br>BN7 1XG</p>
+          </div>
+          <div class="contact-address">
+            <p><strong>London Office</strong><br>The Jellicoe, FORA<br>5 Beaconsfield St<br>London, England<br>N1C 4EW</p>
           </div>
         </div>
       </div>
-      <div class="contact-right">
-        <div class="contact-right-inner">
-          {{ content | safe }}
-        </div>
+    </div>
+    <div class="contact-right">
+      <div class="contact-right-inner">
+        <p class="contact-form-label">Send a message</p>
+        {{ content | safe }}
       </div>
     </div>
   </div>
 </section>
+
 {% endblock %}

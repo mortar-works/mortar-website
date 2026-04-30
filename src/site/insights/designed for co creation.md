@@ -4,7 +4,7 @@ date: 2022-08-04
 image: mortar_web_03.jpg
 author: Hoop'd
 draft: false
-category: use case
+category: insight
 keywords:
   - bespoke implementation
   - customisation

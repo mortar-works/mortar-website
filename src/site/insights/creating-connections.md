@@ -5,7 +5,7 @@ image: creatingconnections_04.jpg
 author: George Unsworth
 description: Transform property relationships with tools that enhance communication, transparency, and engagement in tenant and occupier interactions.
 draft: false
-category: solution
+category: insight
 keywords:
   - housing
   - arrears

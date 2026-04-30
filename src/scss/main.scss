@@ -15,12 +15,15 @@
 // Pages
 @use "pages/homepage";
 @use "pages/content-page";
+@use "pages/product-feature";
+@use "pages/solution-feature";
 @use "pages/insight";
 @use "pages/use-cases";
 @use "pages/news";
 @use "pages/case-study";
 @use "pages/about";
 @use "pages/contact";
+@use "pages/solutions-overview";
 
 // Third-party CSS imports (must come after @use statements)
 @import "../../node_modules/normalize.css/normalize";

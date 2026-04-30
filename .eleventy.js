@@ -19,6 +19,9 @@ module.exports = function(eleventyConfig) {
   eleventyConfig.addFilter('titlecase', str =>
     (str || '').replace(/-/g, ' ').replace(/\b\w/g, c => c.toUpperCase())
   );
+  eleventyConfig.addFilter('filterByProduct', (collection, productSlug) =>
+    (collection || []).filter(item => item.data.product === productSlug)
+  );
 
   // Create a collection for blog posts (live posts only, no drafts)
   const livePosts = post => post.date <= new Date() && !post.data.draft;
@@ -37,14 +40,18 @@ module.exports = function(eleventyConfig) {
       .reverse();
   });
 
-  // Create useCases collection from the usecases.yaml file
+  // Use-cases collection
   eleventyConfig.addCollection("useCases", function(collectionApi) {
-    const useCasesData = collectionApi.getAll()[0].data.usecases;
-    if (Array.isArray(useCasesData)) {
-      return useCasesData;
-    } else {
-      throw new Error("usecases data is not an array");
-    }
+    return collectionApi.getFilteredByGlob("src/site/use-cases/*.md")
+      .filter(post => !post.data.draft)
+      .sort((a, b) => b.date - a.date);
+  });
+
+  // Research collection
+  eleventyConfig.addCollection("research", function(collectionApi) {
+    return collectionApi.getFilteredByGlob("src/site/research/*.md")
+      .filter(post => !post.data.draft)
+      .sort((a, b) => b.date - a.date);
   });
 
   // **New caseStudies collection**: Pull Markdown files from case-studies folder
@@ -56,7 +63,14 @@ module.exports = function(eleventyConfig) {
 
   // Create a collection for solutions from the markdown files
   eleventyConfig.addCollection("solutions", function(collectionApi) {
-    return collectionApi.getFilteredByGlob("src/site/solutions/*.md");
+    return collectionApi.getFilteredByGlob("src/site/solutions/*.md")
+      .filter(post => !post.data.draft);
+  });
+
+  // Services collection
+  eleventyConfig.addCollection("services", function(collectionApi) {
+    return collectionApi.getFilteredByGlob("src/site/services/*.md")
+      .sort((a, b) => (a.data.order || 0) - (b.data.order || 0));
   });
 
   // Products collection
@@ -87,14 +101,17 @@ module.exports = function(eleventyConfig) {
       .filter(item => item.data.pinned === true && !item.data.draft);
   });
 
-  // Unified content feed: insights + case studies + news + solutions + products, sorted by date
+  // Unified content feed — all folders, sorted by date, no drafts
   eleventyConfig.addCollection("allContent", function(collectionApi) {
     const insights    = collectionApi.getFilteredByGlob("src/site/insights/*.md");
+    const useCases    = collectionApi.getFilteredByGlob("src/site/use-cases/*.md");
+    const research    = collectionApi.getFilteredByGlob("src/site/research/*.md");
     const caseStudies = collectionApi.getFilteredByGlob("src/site/case-studies/*.md");
     const news        = collectionApi.getFilteredByGlob("src/site/news/*.md");
     const solutions   = collectionApi.getFilteredByGlob("src/site/solutions/*.md");
     const products    = collectionApi.getFilteredByGlob("src/site/products/*.md");
-    return [...insights, ...caseStudies, ...news, ...solutions, ...products]
+    const industries  = collectionApi.getFilteredByGlob("src/site/industries/*.md");
+    return [...insights, ...useCases, ...research, ...caseStudies, ...news, ...solutions, ...products, ...industries]
       .filter(post => post.date <= new Date() && !post.data.draft)
       .sort((a, b) => b.date - a.date);
   });

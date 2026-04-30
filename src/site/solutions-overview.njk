@@ -1,0 +1,76 @@
+---
+title: Solutions
+name: solutions-overview-page
+---
+
+{% extends 'layouts/base.njk' %}
+
+{% block pageTitle %}{{ title }} - {{ super() }}{% endblock %}
+{% block bodyId %}{{ name }}{% endblock %}
+
+{% block content %}
+
+{# ── Hoop'd solutions ─────────────────────────────────────────────────────── #}
+<section class="so-section so-section--first" id="hoopd">
+  <div class="so-card">
+    <div class="so-card-header">
+      <div class="so-card-text">
+        <h2 class="so-card-headline">Scale your local services</h2>
+        <p class="so-card-desc">Hoop'd is a growing suite of service modules for connecting people and organisations. Below are our currently scaling solutions. Need more tailored support? Learn about our custom design services below. </p>
+      </div>
+      <img class="so-card-logo" src="/static/images/hoopd-alpha.svg" alt="Hoop'd">
+    </div>
+    <div class="so-card-solutions">
+      {% for solution in collections.solutions | filterByProduct("hoopd") %}
+      <a href="{{ solution.url }}" class="so-sol">
+        <span class="so-sol-title">{{ solution.data.title }}</span>
+        <span class="so-sol-strapline">{{ solution.data.strapline }}</span>
+      </a>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+{# ── Hxly solutions ───────────────────────────────────────────────────────── #}
+<section class="so-section" id="hxly">
+  <div class="so-card so-card--hxly">
+    <div class="so-card-header">
+      <div class="so-card-text">
+        <h2 class="so-card-headline">Build service intelligence</h2>
+        <p class="so-card-desc">Hxly is a Service Intelligence System for transforming service design and delivery. Our solutions deliver the security, the datasets and the models organisations need to evolve. Need support before solutions? View Mortar's Intelligent Design Service below.</p>
+      </div>
+      <img class="so-card-logo" src="/static/images/hxly-logo01.svg" alt="Hxly">
+    </div>
+    <div class="so-card-solutions">
+      {% for solution in collections.solutions | filterByProduct("hxly") %}
+      <a href="{{ solution.url }}" class="so-sol">
+        <span class="so-sol-title">{{ solution.data.title }}</span>
+        <span class="so-sol-strapline">{{ solution.data.strapline }}</span>
+      </a>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+{# ── Mortar services ──────────────────────────────────────────────────────── #}
+<section class="so-section so-section--last" id="mortar">
+  <div class="so-card so-card--mortar">
+    <div class="so-card-header">
+      <div class="so-card-text">
+        <h2 class="so-card-headline">Service and system design</h2>
+        <p class="so-card-desc">Mortar designs and builds bespoke solutions for customers. Applying our existing modules and frameworks, and developing new ones to respond to the unique challenges organisations face.</p>
+      </div>
+      <img class="so-card-logo" src="/static/images/mortar-logo.svg" alt="Mortar">
+    </div>
+    <div class="so-card-solutions">
+      {% for service in collections.services %}
+      <a href="{{ service.url }}" class="so-sol">
+        <span class="so-sol-title">{{ service.data.title }}</span>
+        <span class="so-sol-strapline">{{ service.data.description }}</span>
+      </a>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+{% endblock %}

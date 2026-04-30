@@ -5,7 +5,7 @@ image: what-does-impossible-look-like.jpg
 author: George Unsworth
 description: How navigating the future requires transparency, flexibility, and collaboration to build a more resilient and adaptable sector.
 draft: false
-category: use case
+category: insight
 keywords:
   - proptech
   - real estate

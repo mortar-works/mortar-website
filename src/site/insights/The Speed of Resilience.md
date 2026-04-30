@@ -5,7 +5,7 @@ image: speedofres.png
 author: George Unsworth
 description: Focusing on early intervention to foster more constructive relationships between creditors and debtors.
 draft: false
-category: solution
+category: insight
 keywords:
   - collections
   - debt

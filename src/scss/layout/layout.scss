@@ -56,18 +56,20 @@ header {
     transition: color 0.3s ease;
   }
 
-  /* Wrapper drives the height — explicit 7em, no vertical padding */
+  /* Wrapper drives the height — full width, items vertically centred */
   .wrapper {
-    height: 7em;
-    padding: 0 2em 1.2em;
+    max-width: none;
+    margin: 0;
+    height: 5em;
+    padding: 0 5%;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    align-items: flex-end;
+    align-items: center;
 
     @media (max-width: 767px) {
-      height: 5em;
-      padding: 0 1.2em 0.8em;
+      height: 4em;
+      padding: 0 5%;
     }
   }
 
@@ -81,8 +83,8 @@ header {
   .header-right {
     display: flex;
     flex-direction: row;
-    align-items: flex-end;
-    gap: 0.8em;
+    align-items: center;
+    gap: 0.4em;
   }
 
   #mortar-logo {
@@ -234,9 +236,14 @@ header {
         background: $mortar-orange;
       }
 
+      &--henna {
+        background: #1a7f6e;
+      }
+
       &--hoopd,
       &--hxly,
-      &--harla {
+      &--harla,
+      &--henna {
         &::after {
           content: 'H';
           font-family: 'Manrope', sans-serif;
@@ -304,7 +311,7 @@ header {
     flex-direction: column;
     align-items: flex-start;
     position: absolute;
-    top: 7em;
+    top: 5em;
     left: 0;
     right: 0;
     bottom: 0;
@@ -320,48 +327,114 @@ header {
   nav {
     display: none;
     align-items: center;
+    gap: 0.4em;
 
     @include respond-to('small') {
       display: flex;
     }
-  }
 
-  ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-
-    li {
-      a {
-        @include regular-type;
-        font-size: 1.1em;
-        line-height: 1.6em;
-        color: $black;
-      }
-    }
-
-    @include respond-to('small') {
-      display: flex;
-      flex-wrap: wrap;
+    a {
+      display: inline-flex;
       align-items: center;
-      font-size: 1.1em;
+      padding: 0.5em 1.2em;
+      border-radius: 4px;
+      font-family: 'Manrope', sans-serif;
+      font-size: 0.95em;
+      font-weight: 500;
+      text-decoration: none;
+      white-space: nowrap;
+      border: none;
+      color: $black !important;
+      background: transparent;
+      transition: background-color 0.2s ease;
 
-      li {
-        display: flex;
-        align-items: center;
-
-        a {
-          font-size: 1em;
-          line-height: 1em;
-          padding: 0 0.9em;
-        }
-
-        &:last-of-type a {
-          padding: 0 0.6em;
-          padding-right: inherit;
-        }
+      &:hover {
+        background: rgba($black, 0.08);
+        box-shadow: none;
       }
     }
+
+  }
+}
+
+/* Force orange overlay even on pages that pin the header to a different colour */
+#homepage header.nav-active,
+#about-mortar header.nav-active {
+  background: $mortar-orange !important;
+}
+
+/* Logo and link colour corrections for pages with white-on-purple headers */
+#homepage header.nav-active #mortar-logo img,
+#about-mortar header.nav-active #mortar-logo img {
+  filter: brightness(0) !important;
+}
+
+#about-mortar header.nav-active nav a {
+  color: $black !important;
+}
+
+/* Mobile nav overlay — flat links */
+header.nav-active nav a {
+  border: none;
+  border-radius: 0;
+  padding: 0.4em 0;
+  font-size: 1em;
+  line-height: 1.4;
+  min-height: 44px;
+  width: 100%;
+  justify-content: flex-start;
+  color: $black !important;
+  background: transparent;
+
+  &:hover, &:focus, &:active {
+    background: transparent;
+    box-shadow: none;
+  }
+}
+
+/* Mobile-only nav extras (Services + Contact) — hidden on desktop */
+.nav-mobile-extras {
+  display: none;
+}
+
+header.nav-active nav .nav-mobile-extras {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin-top: 0.5em;
+  padding-top: 0.75em;
+  border-top: 1px solid rgba($black, 0.15);
+}
+
+.nav-mobile-label {
+  font-family: 'Manrope', sans-serif;
+  font-size: 0.72em;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: rgba($black, 0.45);
+  padding: 0.3em 0;
+}
+
+header.nav-active nav .nav-mobile-extras .nav-mobile-contact {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 1.25em;
+  padding: 0.75em 2em !important;
+  width: auto !important;
+  min-height: auto !important;
+  line-height: 1.4 !important;
+  background: $mortar-purple;
+  color: white !important;
+  border-radius: 4px;
+  font-weight: 700;
+  font-size: 0.95em;
+  border-top: none;
+  transition: opacity 0.2s ease;
+
+  &:hover {
+    opacity: 0.85;
   }
 }
 
@@ -820,6 +893,16 @@ footer {
   font-family: 'Manrope', sans-serif;
   padding: 4em 0 2.5em;
 
+  @media (max-width: 767px) {
+    padding: 2.5em 0 2em;
+  }
+
+  .wrapper {
+    max-width: none;
+    margin: 0;
+    padding: 0 5%;
+  }
+
   a {
     color: rgba($white, 0.65);
     text-decoration: none;
@@ -856,7 +939,7 @@ footer {
     display: inline-flex;
 
     img {
-      height: 38px;
+      height: 47px;
       width: auto;
       filter: brightness(0) invert(1);
       display: block;
@@ -869,11 +952,14 @@ footer {
   }
 
   .footer-links {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 2.5em 1.5em;
+    // Mobile: multi-column so each column flows independently (no row-height coupling)
+    display: block;
+    columns: 2;
+    column-gap: 1.5em;
 
     @include respond-to('small') {
+      display: grid;
+      columns: unset;
       grid-template-columns: repeat(3, 1fr);
       gap: 3em 2em;
     }
@@ -881,6 +967,34 @@ footer {
     @include respond-to('medium') {
       grid-template-columns: repeat(6, 1fr);
       gap: 2em;
+    }
+  }
+
+  .footer-col {
+    @media (max-width: 767px) {
+      break-inside: avoid;
+      margin-bottom: 2em;
+    }
+  }
+
+  .footer-col:last-child {
+    @media (max-width: 767px) {
+      margin-bottom: 0;
+    }
+  }
+
+  .footer-col:first-child {
+    @media (max-width: 767px) {
+      column-span: all;
+      margin-bottom: 1.5em;
+    }
+  }
+
+  // Force Sectors to start the second column so the split is always:
+  // col1: Products+Services, Solutions — col2: Sectors, Categories, Who we are
+  .footer-col:nth-child(4) {
+    @media (max-width: 767px) {
+      break-before: column;
     }
   }
 
@@ -901,6 +1015,11 @@ footer {
   .footer-disclaimer {
     margin-top: 3.5em;
     padding-top: 1.5em;
+
+    @media (max-width: 767px) {
+      margin-top: 2em;
+      padding-top: 1.2em;
+    }
     display: flex;
     flex-direction: column;
     gap: 0.4em;

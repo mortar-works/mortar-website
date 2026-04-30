@@ -1,0 +1,1441 @@
+@use 'sass:color';
+@use '../common/variables' as *;
+@use '../utilities/responsive' as *;
+@use '../common/typography' as *;
+
+// ─── Product Feature Page ─────────────────────────────────────────────────────
+// Palantir Chain Reaction-inspired editorial layout.
+// Dark sections throughout, 1px grid lines between cells, cream closing section.
+
+// ── Page-level: hide site header, set dark background ────────────────────────
+body#product-feature {
+  background: #0e0b1a;
+}
+
+body#product-feature > header,
+body#product-feature > footer {
+  display: none;
+}
+
+// ── Shared local tokens ───────────────────────────────────────────────────────
+$pf-dark:       #0e0b1a;
+$pf-cream:      #faf8f0;
+$pf-line-dark:  rgba(255, 255, 255, 0.1);
+$pf-line-light: rgba(14, 11, 26, 0.12);
+
+// ── Product feature page wrapper ──────────────────────────────────────────────
+.product-feature-page {
+
+  > section {
+    overflow: visible;
+  }
+
+  // All non-hero sections: same 5% inset as the hero card
+  > section:not(.pf-hero) {
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+
+  // Wrappers: no extra horizontal padding
+  > section .wrapper {
+    padding-top: 0;
+    padding-bottom: 0;
+    padding-left: 0;
+    padding-right: 0;
+    max-width: none;
+    margin: 0;
+  }
+
+  // ── Shared eyebrow label ──────────────────────────────────────────────────
+  // Default: for dark backgrounds (white-toned)
+  .pf-eyebrow {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.6em;
+    font-family: 'Manrope', sans-serif;
+    font-size: 1em;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.18em;
+    color: $white;
+    margin-bottom: 3em;
+
+    &::before {
+      content: '';
+      display: inline-block;
+      width: 6px;
+      height: 6px;
+      background: $mortar-yellow;
+      flex-shrink: 0;
+    }
+
+    // For cream/light sections
+    &--dark {
+      color: rgba($mortar-purple, 0.45);
+
+      &::before {
+        background: $mortar-orange;
+      }
+    }
+  }
+
+  // ── Shared section header (centered eyebrow + heading block) ─────────────
+  .pf-section-header {
+    text-align: center;
+    padding: 5em 10% 4em;
+    border-bottom: 1px solid $pf-line-dark;
+  }
+
+  // ── Shared section subheading ─────────────────────────────────────────────
+  .pf-section-subheading {
+    font-family: 'Manrope', sans-serif;
+    font-size: clamp(2em, 1.8vw, 2.2em);
+    font-weight: 400;
+    line-height: 1.6;
+    color: rgba($white, 0.55);
+    margin: 1em 0 0;
+    text-align: center;
+  }
+
+  // ── Shared section heading ────────────────────────────────────────────────
+  .pf-section-heading {
+    font-family: 'Manrope', sans-serif;
+    font-weight: 800;
+    font-size: clamp(2.2em, 4.5vw, 4em);
+    line-height: 1.06;
+    letter-spacing: -0.035em;
+    color: $white;
+    margin: 0;
+    text-align: center;
+
+    @include reading-optimised;
+  }
+
+  // ── Hero card ─────────────────────────────────────────────────────────────
+  .pf-hero {
+    background: $pf-dark;
+    min-height: 60vh;
+    display: flex;
+    align-items: stretch;
+    padding: 2% 5% 0;
+  }
+
+  .pf-hero-content {
+    flex: 1;
+    background: linear-gradient(135deg, #ede8ff 0%, #fffbea 100%);
+    border-radius: 0;
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 5em 10% 4em;
+    min-height: 0;
+
+    &::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      z-index: 0;
+      pointer-events: none;
+      border-radius: inherit;
+      background-image: radial-gradient(circle, rgba($mortar-purple, 0.1) 1px, transparent 1px);
+      background-size: 44px 44px;
+      mask-image: radial-gradient(ellipse 85% 85% at 50% 40%, black 20%, transparent 80%);
+      -webkit-mask-image: radial-gradient(ellipse 85% 85% at 50% 40%, black 20%, transparent 80%);
+    }
+  }
+
+  .pf-card-logo {
+    position: absolute;
+    top: 2em;
+    left: 2em;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+
+    img {
+      height: 36px;
+      width: auto;
+      display: block;
+      opacity: 1;
+      transition: opacity 0.2s ease;
+    }
+
+    &:hover img { opacity: 0.7; }
+  }
+
+  .pf-card-nav {
+    position: absolute;
+    top: 1.75em;
+    right: 2em;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    gap: 0.5em;
+  }
+
+  .pf-products-dropdown {
+    position: relative;
+  }
+
+  .pf-products-toggle {
+    font-family: 'Manrope', sans-serif;
+    font-size: 0.75em;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: $mortar-purple;
+    background: $mortar-yellow;
+    border: 1.5px solid $mortar-yellow;
+    border-radius: 4px;
+    padding: 0.55em 1.2em;
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.55em;
+    white-space: nowrap;
+    transition: background 0.2s ease, border-color 0.2s ease;
+
+    svg { transition: transform 0.2s ease; pointer-events: none; }
+
+    &:hover {
+      background: color.adjust($mortar-yellow, $lightness: -8%);
+      border-color: color.adjust($mortar-yellow, $lightness: -8%);
+    }
+  }
+
+  .pf-products-dropdown.is-open .pf-products-toggle svg {
+    transform: rotate(180deg);
+  }
+
+  .pf-products-menu {
+    visibility: hidden;
+    opacity: 0;
+    transform: translateY(-4px);
+    pointer-events: none;
+    transition: opacity 0.15s ease, transform 0.15s ease, visibility 0s 0.15s;
+    position: absolute;
+    top: calc(100% + 0.5em);
+    right: 0;
+    z-index: 200;
+    min-width: 160px;
+    background: $white;
+    border: 1px solid rgba($mortar-purple, 0.12);
+    border-radius: 0.25em;
+    box-shadow: 0 8px 24px rgba($mortar-purple, 0.1);
+    list-style: none;
+    padding: 0.4em 0;
+    margin: 0;
+
+    li a {
+      display: block;
+      padding: 0.65em 1.25em;
+      font-family: 'Manrope', sans-serif;
+      font-size: 0.88em;
+      font-weight: 500;
+      color: $mortar-purple;
+      text-decoration: none;
+      white-space: nowrap;
+
+      &:hover { background: rgba($mortar-purple, 0.05); }
+    }
+  }
+
+  .pf-products-dropdown.is-open .pf-products-menu {
+    visibility: visible;
+    opacity: 1;
+    transform: translateY(0);
+    pointer-events: auto;
+    transition: opacity 0.15s ease, transform 0.15s ease, visibility 0s;
+  }
+
+  .pf-card-contact {
+    font-family: 'Manrope', sans-serif;
+    font-size: 0.75em;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.12em;
+    color: $mortar-purple;
+    text-decoration: none;
+    padding: 0.55em 1.3em;
+    border-radius: 3px;
+    border: 1px solid rgba($mortar-purple, 0.3);
+    transition: background 0.2s ease, border-color 0.2s ease, color 0.2s ease;
+
+    &:hover {
+      background: $mortar-yellow;
+      border-color: $mortar-yellow;
+      color: $mortar-purple;
+    }
+  }
+
+  .pf-hero-eyebrow {
+    font-family: 'Manrope', sans-serif;
+    font-size: 0.72em;
+    font-weight: 600;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: rgba($mortar-purple, 0.38);
+    margin: 1em 0 0.6em;
+    display: block;
+  }
+
+  .pf-hero-logo {
+    display: block;
+    height: 3.6em;
+    width: auto;
+    margin-bottom: 3em;
+    filter: none;
+    position: relative;
+    z-index: 1;
+
+    @include respond-to('small') { height: 4.2em; }
+  }
+
+  .pf-hero-tagline {
+    font-family: 'Manrope', sans-serif;
+    font-weight: 800;
+    font-size: clamp(2.4em, 7vw, 7em);
+    line-height: 1.04;
+    letter-spacing: -0.04em;
+    color: $mortar-purple;
+    margin: 0 auto 0.55em;
+    max-width: 14em;
+    position: relative;
+    z-index: 1;
+
+    @include reading-optimised;
+  }
+
+  .pf-hero-desc {
+    font-family: 'Manrope', sans-serif;
+    font-size: clamp(0.95em, 1.3vw, 1.12em);
+    line-height: 1.78;
+    color: rgba($mortar-purple, 0.52);
+    max-width: 34em;
+    margin: 0 auto 3em;
+    font-weight: 400;
+    position: relative;
+    z-index: 1;
+  }
+
+  .pf-hero-scroll-cta {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.45em;
+    text-decoration: none;
+    color: rgba($mortar-purple, 0.35);
+    font-family: 'Manrope', sans-serif;
+    font-size: 0.68em;
+    font-weight: 600;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    transition: color 0.2s ease;
+    position: relative;
+    z-index: 1;
+
+    &:hover { color: $mortar-purple; }
+  }
+
+  .pf-hero-chevron {
+    animation: pf-bounce 2s ease-in-out infinite;
+  }
+
+  @keyframes pf-bounce {
+    0%, 100% { transform: translateY(0); }
+    50%       { transform: translateY(5px); }
+  }
+
+  // ── Solutions banner ─────────────────────────────────────────────────────
+  // Slim two-panel strip between hero and overview
+  .pf-solutions-banner {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    border-top: 1px solid $pf-line-dark;
+    border-bottom: 1px solid $pf-line-dark;
+    background: $pf-dark;
+
+    @media (max-width: 680px) {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  .pf-solutions-panel {
+    padding: 1.75em 5.5em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 1.25em;
+    border-right: 1px solid $pf-line-dark;
+
+    &:last-child { border-right: none; }
+
+    @media (max-width: 680px) {
+      border-right: none;
+      border-bottom: 1px solid $pf-line-dark;
+      &:last-child { border-bottom: none; }
+    }
+  }
+
+  .pf-solutions-panel-title {
+    font-family: 'Manrope', sans-serif;
+    font-weight: 700;
+    font-size: clamp(1.15em, 1.6vw, 1.5em);
+    line-height: 1.3;
+    color: $white;
+    margin: 0;
+  }
+
+  .pf-solutions-panel-body {
+    font-family: 'Manrope', sans-serif;
+    font-size: clamp(0.88em, 1.1vw, 1em);
+    line-height: 1.7;
+    color: rgba($white, 0.5);
+    margin: 0;
+    flex: 1;
+  }
+
+  .pf-solutions-panel-btn {
+    display: inline-block;
+    font-family: 'Manrope', sans-serif;
+    font-size: 0.75em;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: $mortar-yellow;
+    border: 1.5px solid rgba($mortar-yellow, 0.45);
+    border-radius: 3px;
+    padding: 0.65em 1.5em;
+    transition: background 0.2s ease, border-color 0.2s ease, color 0.2s ease;
+
+    &:hover {
+      background: $mortar-yellow;
+      border-color: $mortar-yellow;
+      color: $pf-dark;
+    }
+  }
+
+  // ── Overview ──────────────────────────────────────────────────────────────
+  // Dark background, centered eyebrow, large centered heading, intro body
+  .pf-overview {
+    background: $pf-dark;
+    padding: 0;
+  }
+
+  .pf-overview .wrapper {
+    text-align: center;
+    padding: 5em 10% 5em !important; // !important overrides the wrapper reset
+  }
+
+  .pf-overview-body {
+    max-width: 44em;
+    margin: 0 auto;
+
+    p {
+      font-family: 'Manrope', sans-serif;
+      font-size: clamp(1em, 1.4vw, 1.15em);
+      line-height: 1.82;
+      color: rgba($white, 0.5);
+      margin: 0 0 1em;
+
+      &:first-child {
+        font-size: clamp(1.1em, 1.6vw, 1.3em);
+        color: rgba($white, 0.7);
+      }
+
+      &:last-child { margin-bottom: 0; }
+    }
+  }
+
+
+  // ── Stats strip ───────────────────────────────────────────────────────────
+  // Grid of stat cells divided by 1px lines, no gaps
+  .pf-stats {
+    background: $pf-dark;
+
+    .wrapper {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+    }
+  }
+
+  .pf-stat {
+    padding: 3.5em 2.5em;
+    text-align: center;
+    border-right: 1px solid $pf-line-dark;
+
+    &:last-child { border-right: none; }
+  }
+
+  .pf-stat-value {
+    display: block;
+    font-family: 'Manrope', sans-serif;
+    font-weight: 800;
+    font-size: clamp(3em, 5vw, 5em);
+    line-height: 1;
+    color: $mortar-yellow;
+    letter-spacing: -0.04em;
+
+    @include reading-optimised;
+  }
+
+  .pf-stat-label {
+    display: block;
+    font-family: 'Manrope', sans-serif;
+    font-size: 1em;
+    font-weight: 500;
+    color: $white;
+    margin-top: 0.6em;
+    letter-spacing: 0.04em;
+    line-height: 1.5;
+  }
+
+  // ── Partner logos ─────────────────────────────────────────────────────────
+  &.product-feature-page .pf-partners,
+  .pf-partners {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .pf-partner {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2.5em 2em;
+    border-right: 1px solid $pf-line-dark;
+
+    &:last-child { border-right: none; }
+
+    img {
+      height: 72px;
+      width: auto;
+      max-width: 200px;
+      object-fit: contain;
+      filter: brightness(0) invert(1);
+      opacity: 0.5;
+      transition: opacity 0.2s ease;
+    }
+
+    &:hover img { opacity: 0.85; }
+  }
+
+  .pf-partner--lg img {
+    height: calc(72px * 1.3);
+    max-width: calc(200px * 1.3);
+  }
+
+  // ── How it works ──────────────────────────────────────────────────────────
+  // Dark, centered header, then 4-col grid with 1px line dividers
+  .pf-how {
+    background: $pf-dark;
+    padding: 0;
+
+    .pf-section-header {
+      margin: 0;
+    }
+  }
+
+  .pf-steps {
+    display: grid;
+    grid-template-columns: 1fr;
+
+    @include respond-to('small') {
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    @include respond-to('medium') {
+      grid-template-columns: repeat(4, 1fr);
+    }
+  }
+
+  .pf-step {
+    padding: 3em 2.5em;
+    background: $pf-cream;
+    border-right: 1px solid $pf-line-light;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 2.5em;
+    min-height: 260px;
+
+    @include respond-to('small') {
+      &:nth-child(2n) { border-right: none; }
+    }
+
+    // Reset 2-col rule, apply 4-col rule at medium
+    @include respond-to('medium') {
+      &:nth-child(2n) { border-right: 1px solid $pf-line-light; }
+      &:nth-child(4n) { border-right: none; }
+    }
+
+    &:last-child { border-right: none; }
+  }
+
+  .pf-step h3 {
+    font-family: 'Manrope', sans-serif;
+    font-weight: 700;
+    font-size: 2.1em;
+    color: $white;
+    margin: 0;
+    line-height: 1.3;
+    text-align: left;
+  }
+
+  .pf-step p {
+    font-family: 'Manrope', sans-serif;
+    font-size: clamp(0.9em, 1.1vw, 2em);
+    line-height: 1.8;
+    color: rgba($white, 0.65);
+    margin: 0;
+    text-align: left;
+    width: 95%;
+  }
+
+  // ── Features section ──────────────────────────────────────────────────────
+  // Dark, centered header, 3×2 grid with 1px line dividers
+  .pf-features-section {
+    background: $pf-dark;
+    padding: 0;
+
+    .pf-section-header {
+      margin: 0;
+    }
+  }
+
+  .pf-features {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 0;
+    padding: 0;
+
+    @include respond-to('small') {
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    @include respond-to('medium') {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+
+  .pf-feature {
+    padding: 3em 2.5em;
+    border: 1px solid rgba($mortar-yellow, 0.25);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 3em;
+    min-height: 280px;
+    transition: background 0.25s ease, border-color 0.25s ease;
+    background: rgba($white, 0.02);
+
+    &:hover {
+      background: rgba($white, 0.06);
+      border-color: $mortar-yellow;
+    }
+
+    h3 {
+      font-family: 'Manrope', sans-serif;
+      font-weight: 700;
+      font-size: 2.1em;
+      color: $white;
+      margin: 0;
+      line-height: 1.3;
+      text-align: left;
+    }
+
+    p {
+      font-family: 'Manrope', sans-serif;
+      font-size: clamp(0.9em, 1.1vw, 2em);
+      line-height: 1.8;
+      color: rgba($white, 0.65);
+      margin: 0;
+      text-align: left;
+      width: 95%;
+    }
+  }
+
+  // ── Split screen ─────────────────────────────────────────────────────────
+  // Visual panel left (gradient + geometric art), cream text panel right
+  .pf-split {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    min-height: 65vh;
+
+    @media (max-width: 680px) {
+      grid-template-columns: 1fr;
+      min-height: auto;
+    }
+  }
+
+  .pf-split-image {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+  }
+
+  .pf-split-sphere-canvas {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    display: block;
+  }
+
+  .pf-split-visual {
+    position: relative;
+    overflow: hidden;
+    background: linear-gradient(145deg, #0a5c4e 0%, #0e3d58 45%, #1f1250 100%);
+    border-right: 1px solid rgba(255, 255, 255, 0.12);
+    min-height: 55vw;
+
+    @include respond-to('small') { min-height: 0; }
+  }
+
+  // Geometric shapes — Mondrian-style abstract blocks
+  .pf-split-geo {
+    position: absolute;
+
+    // Dark purple square, upper-center-right
+    &--a {
+      width: 24%;
+      aspect-ratio: 1;
+      background: $pf-dark;
+      top: 26%;
+      right: 18%;
+    }
+
+    // Dot inside block A (circle)
+    &--b {
+      width: 4.5%;
+      aspect-ratio: 1;
+      border-radius: 50%;
+      background: rgba(255, 255, 255, 0.65);
+      top: calc(26% + 9%);
+      right: calc(18% + 9.75%);
+    }
+
+    // Striped cream block, mid-left
+    &--c {
+      width: 20%;
+      aspect-ratio: 1;
+      background: repeating-linear-gradient(
+        0deg,
+        rgba(255, 255, 255, 0.55),
+        rgba(255, 255, 255, 0.55) 1.5px,
+        transparent 1.5px,
+        transparent 6px
+      );
+      top: 38%;
+      left: 22%;
+    }
+
+    // Small dark block, bottom-left corner
+    &--d {
+      width: 14%;
+      aspect-ratio: 1;
+      background: $pf-dark;
+      bottom: 16%;
+      left: 3%;
+    }
+
+    // Small dot, bottom-left
+    &--e {
+      width: 3.5%;
+      aspect-ratio: 1;
+      border-radius: 50%;
+      background: rgba(255, 255, 255, 0.6);
+      bottom: calc(16% + 5.25%);
+      left: calc(3% + 5.25%);
+    }
+  }
+
+  .pf-split-text {
+    background: $pf-cream;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: clamp(2.5em, 5vw, 5em) clamp(2em, 5%, 5em);
+    min-height: 65vh;
+
+    @media (max-width: 680px) {
+      min-height: 0;
+      padding: 3em 2em;
+      gap: 3em;
+    }
+  }
+
+  .pf-split-heading {
+    font-family: 'Manrope', sans-serif;
+    font-weight: 800;
+    font-size: clamp(2em, 3.2vw, 3.6em);
+    line-height: 1.1;
+    letter-spacing: -0.035em;
+    color: $mortar-purple;
+    margin: 0;
+    max-width: 13em;
+
+    @include reading-optimised;
+  }
+
+  .pf-split-body {
+    font-family: 'Manrope', sans-serif;
+    font-size: clamp(1em, 1.4vw, 1.2em);
+    line-height: 1.8;
+    color: rgba($mortar-purple, 0.52);
+    margin: 0;
+    max-width: 38em;
+  }
+
+  // ── Closing cards ─────────────────────────────────────────────────────────
+  // Two cards side by side, each with a visual panel and text panel stacked
+  .pf-closing {
+    margin-top: 0;
+    padding: 0em 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0;
+
+    @media (max-width: 680px) {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  .pf-closing-header {
+    grid-column: 1 / -1;
+    padding: 3em 0 1em;
+  }
+
+  .pf-closing-card {
+    display: flex;
+    flex-direction: column;
+    background: $pf-cream;
+    border: none;
+    border-right: 1px solid $pf-line-light;
+    border-radius: 0;
+    padding: clamp(2em, 4vw, 3.5em);
+
+    &:last-child { border-right: none; }
+
+    @media (max-width: 680px) {
+      min-height: auto;
+    }
+  }
+
+  .pf-closing-title {
+    font-family: 'Manrope', sans-serif;
+    font-weight: 800;
+    font-size: clamp(1.6em, 2.5vw, 2.4em);
+    line-height: 1.1;
+    letter-spacing: -0.03em;
+    color: $mortar-purple;
+    margin: 0 0 1.5em;
+  }
+
+  .pf-closing-stats {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 0.75em 1.25em;
+    align-items: baseline;
+    flex: 1;
+    padding: 2em 0;
+    margin-bottom: 2em;
+  }
+
+  .pf-closing-stat {
+    display: contents;
+  }
+
+  .pf-closing-stat-value {
+    font-family: 'Manrope', sans-serif;
+    font-weight: 800;
+    font-size: clamp(1.28em, 2vw, 1.76em);
+    line-height: 1;
+    letter-spacing: -0.04em;
+    color: $mortar-orange;
+  }
+
+  .pf-closing-stat-label {
+    font-family: 'Manrope', sans-serif;
+    font-size: clamp(1.28em, 2vw, 1.76em);
+    font-weight: 500;
+    color: $mortar-purple;
+    line-height: 1;
+  }
+
+  .pf-closing-text {
+    display: flex;
+    align-items: flex-start;
+
+    p {
+      font-family: 'Manrope', sans-serif;
+      font-weight: 500;
+      font-size: clamp(0.9em, 1.1vw, 2em);
+      line-height: 1.75;
+      color: rgba($mortar-purple, 0.6);
+      margin: 0;
+
+      @include reading-optimised;
+    }
+  }
+
+}
+
+// ── Footer (outside wrapper) ──────────────────────────────────────────────────
+.pf-footer {
+  background: $pf-dark;
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+  margin: 0 5%;
+  padding: 2.5em 2%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.pf-footer-logo {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  flex-shrink: 0;
+
+  img {
+    height: 47px;
+    width: auto;
+    filter: brightness(0) invert(1);
+  }
+}
+
+.pf-footer-copy {
+  font-family: 'Manrope', sans-serif;
+  font-size: 0.78em;
+  font-weight: 500;
+  color: rgba($white, 0.3);
+  white-space: nowrap;
+}
+
+.pf-footer-cta {
+  display: inline-flex;
+  align-items: center;
+  font-family: 'Manrope', sans-serif;
+  font-size: 0.82em;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: $pf-dark;
+  background: $mortar-yellow;
+  text-decoration: none;
+  padding: 0.7em 1.5em;
+  border-radius: 3em;
+  transition: opacity 0.15s;
+
+  &:hover { opacity: 0.85; }
+}
+
+// ── Hoop'd theme overrides ────────────────────────────────────────────────────
+// Scoped to body.theme-hoopd so Henna is completely unaffected.
+
+$hd-navy:   #1b2537;
+$hd-orange: #e8734a;
+$hd-cream:  #f5ede3;
+$hd-gold:   #e8c04a;
+$hd-blue:   #7bb3c7;
+
+body.theme-hoopd {
+  background: $hd-navy;
+}
+
+body.theme-hoopd > header,
+body.theme-hoopd > footer {
+  display: none;
+}
+
+.product-feature-page--hoopd {
+
+  // ── Hero ───────────────────────────────────────────────────────────────────
+  .pf-hero {
+    background: transparent;
+  }
+
+  .pf-hero-content {
+    background: linear-gradient(135deg, $hd-cream 0%, #fdf6ee 100%);
+
+    &::before {
+      background-image: radial-gradient(circle, rgba($hd-orange, 0.12) 1px, transparent 1px);
+    }
+  }
+
+  .pf-hero-tagline { color: $hd-navy; }
+  .pf-hero-eyebrow { color: rgba($hd-navy, 0.4); }
+  .pf-hero-desc    { color: rgba($hd-navy, 0.55); }
+
+  .pf-products-toggle {
+    color: $hd-navy;
+    background: $hd-gold;
+    border-color: $hd-gold;
+    &:hover {
+      background: color.adjust($hd-gold, $lightness: -8%);
+      border-color: color.adjust($hd-gold, $lightness: -8%);
+    }
+  }
+
+  .pf-card-contact {
+    color: $hd-navy;
+    border-color: rgba($hd-navy, 0.3);
+    &:hover {
+      background: $hd-gold;
+      border-color: $hd-gold;
+      color: $hd-navy;
+    }
+  }
+
+  .pf-hero-scroll-cta { color: rgba($hd-navy, 0.35); &:hover { color: $hd-navy; } }
+
+  // ── Eyebrow ────────────────────────────────────────────────────────────────
+  .pf-eyebrow {
+    color: $white;
+    &::before { background: $hd-gold; }
+  }
+
+  // ── Section heading ────────────────────────────────────────────────────────
+  .pf-section-heading { color: $white; }
+  .pf-section-subheading { color: rgba($white, 0.55); }
+
+  // ── Solutions banner ───────────────────────────────────────────────────────
+  $hd-mid: #2c3d54;
+
+  .pf-solutions-banner {
+    background: transparent;
+    border-color: rgba($white, 0.1);
+  }
+
+  .pf-solutions-panel {
+    background: $hd-mid;
+    border-right-color: rgba($white, 0.1);
+
+    .pf-solutions-panel-title { color: $white; }
+    .pf-solutions-panel-body  { color: rgba($white, 0.55); }
+    .pf-solutions-panel-btn {
+      color: $hd-gold;
+      border-color: rgba($hd-gold, 0.45);
+      &:hover {
+        background: $hd-gold;
+        border-color: $hd-gold;
+        color: $hd-mid;
+      }
+    }
+  }
+
+  // ── Overview ──────────────────────────────────────────────────────────────
+  .pf-overview { background: $hd-navy; }
+  .pf-overview-body p { color: rgba($white, 0.5); &:first-child { color: rgba($white, 0.75); } }
+
+  // ── Stats ──────────────────────────────────────────────────────────────────
+  .pf-stats    { background: $hd-navy; }
+  .pf-stat     { border-right-color: rgba($white, 0.1); }
+  .pf-stat-value { color: $hd-gold; }
+  .pf-stat-label { color: $white; }
+
+  // ── Partner logos ──────────────────────────────────────────────────────────
+  .pf-partner  { border-right-color: rgba($white, 0.08); }
+
+  // ── How it works ───────────────────────────────────────────────────────────
+  .pf-how      { background: $hd-navy; }
+  .pf-step     { background: $hd-cream; border-right-color: #1b2537;
+    @include respond-to('medium') {
+      &:nth-child(2n) { border-right: 1px solid #1b2537; }
+    }
+  }
+  .pf-step h3  { color: $hd-navy; }
+  .pf-step p   { color: rgba($hd-navy, 0.6); }
+
+  // ── Features ───────────────────────────────────────────────────────────────
+  .pf-features-section { background: $hd-navy; }
+  .pf-feature {
+    border-color: rgba($hd-gold, 0.25);
+    background: rgba($white, 0.02);
+    &:hover {
+      border-color: $hd-gold;
+      background: rgba($white, 0.05);
+    }
+    h3 { color: $white; }
+    p  { color: rgba($white, 0.65); }
+  }
+
+  // ── Split screen ───────────────────────────────────────────────────────────
+  .pf-split-visual {
+    background: linear-gradient(145deg, #1b3a4a 0%, $hd-navy 60%, #2d1f3d 100%);
+    border-right-color: rgba($white, 0.12);
+  }
+
+  .pf-split-geo--a { background: darken($hd-navy, 5%); }
+  .pf-split-geo--c {
+    background: repeating-linear-gradient(
+      0deg,
+      rgba($hd-gold, 0.5),
+      rgba($hd-gold, 0.5) 1.5px,
+      transparent 1.5px,
+      transparent 6px
+    );
+  }
+  .pf-split-geo--d { background: darken($hd-navy, 5%); }
+  .pf-split-geo--b { background: rgba($hd-blue, 0.7); }
+  .pf-split-geo--e { background: rgba($hd-blue, 0.6); }
+
+  .pf-split-text   { background: $hd-cream; }
+  .pf-split-heading { color: $hd-navy; }
+  .pf-split-body   { color: rgba($hd-navy, 0.55); }
+
+  // ── Closing cards ──────────────────────────────────────────────────────────
+  .pf-closing        { background: $hd-navy; }
+  .pf-closing-header .pf-eyebrow { color: $white; }
+
+  .pf-closing-card {
+    background: $hd-cream;
+    border: none;
+    border-right: 1px solid #1b2537;
+    &:last-child { border-right: none; }
+    &:hover { background: $hd-cream; }
+  }
+
+  .pf-closing-title       { color: $hd-navy; }
+  .pf-closing-stats       { border-color: rgba($hd-navy, 0.12); }
+  .pf-closing-stat-value  { color: $hd-orange; }
+  .pf-closing-stat-label  { color: $hd-navy; }
+  .pf-closing-text p      { color: rgba($hd-navy, 0.6); }
+
+}
+
+// Hoop'd footer background
+body.theme-hoopd .pf-footer {
+  background: $hd-navy;
+  border-top: none;
+
+  .pf-footer-cta {
+    background: $hd-gold;
+    color: $hd-navy;
+  }
+}
+
+// ── Hxly theme overrides ──────────────────────────────────────────────────────
+// Scoped to body.theme-hxly so other products are completely unaffected.
+
+// Hero / brand dark (used only in hero + footer)
+$hx-ink:    #0f1623;
+$hx-mid:    #1a2640;
+
+// Warm amber accent (replaces cold teal)
+$hx-accent: #c8853a;
+
+// Light surfaces (body sections)
+$hx-white:   #ffffff;
+$hx-surface: #f2f6fb;
+$hx-card:    #e8eef7;
+
+// Dark text on light backgrounds
+$hx-text:   #0f1623;
+$hx-muted:  #3d5073;
+$hx-subtle: #617fa8;
+
+body.theme-hxly {
+  background: $hx-white;
+}
+
+body.theme-hxly > header,
+body.theme-hxly > footer {
+  display: none;
+}
+
+.product-feature-page--hxly {
+
+  // ── Hero (stays dark) ──────────────────────────────────────────────────────
+  .pf-hero {
+    background: transparent;
+  }
+
+  .pf-hero-content {
+    background:
+      radial-gradient(ellipse 58% 65% at 16% 22%, #102444 0%, transparent 58%),
+      radial-gradient(ellipse 48% 52% at 87% 14%, #180e38 0%, transparent 52%),
+      radial-gradient(ellipse 62% 52% at 52% 68%, #081428 0%, transparent 60%),
+      radial-gradient(ellipse 42% 46% at 6%  80%, #0e2240 0%, transparent 50%),
+      radial-gradient(ellipse 46% 44% at 91% 86%, #121a34 0%, transparent 48%),
+      #080e1c;
+
+    &::before {
+      background-image: linear-gradient(
+        132deg,
+        rgba(255, 255, 255, 0.055) 0%,
+        transparent 36%,
+        transparent 64%,
+        rgba(120, 160, 255, 0.03) 100%
+      );
+      background-size: 100% 100%;
+      mask-image: none;
+      -webkit-mask-image: none;
+    }
+  }
+
+  .pf-hero-tagline { color: $hx-white; }
+  .pf-hero-eyebrow { color: rgba($hx-accent, 0.75); }
+  .pf-hero-desc    { color: rgba($hx-white, 0.75); }
+
+  .pf-products-toggle {
+    color: $hx-white;
+    background: rgba($hx-white, 0.1);
+    border-color: rgba($hx-white, 0.25);
+    &:hover {
+      background: $hx-accent;
+      border-color: $hx-accent;
+    }
+  }
+
+  .pf-products-menu {
+    background: $hx-ink;
+    border-color: rgba($hx-white, 0.12);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.35);
+
+    li a {
+      color: $hx-white;
+      &:hover { background: rgba($hx-white, 0.06); }
+    }
+  }
+
+  .pf-card-contact {
+    color: $hx-white;
+    border-color: rgba($hx-white, 0.3);
+    &:hover {
+      background: $hx-accent;
+      border-color: $hx-accent;
+      color: $hx-white;
+    }
+  }
+
+  .pf-card-logo img { filter: brightness(0) invert(1); }
+  .pf-hero-logo     { filter: brightness(0) invert(1); }
+
+  .pf-hero-scroll-cta { color: rgba($hx-white, 0.4); &:hover { color: $hx-accent; } }
+
+  // ── Eyebrow ────────────────────────────────────────────────────────────────
+  .pf-eyebrow {
+    color: $hx-text;
+    &::before { background: $hx-text; }
+  }
+
+  // ── Section heading ────────────────────────────────────────────────────────
+  .pf-section-heading    { color: $hx-text; }
+  .pf-section-subheading { color: $hx-muted; font-size: clamp(0.95em, 1.3vw, 1.12em); max-width: 40%; margin-left: auto; margin-right: auto; }
+
+  // ── Solutions banner ───────────────────────────────────────────────────────
+  .pf-solutions-banner {
+    background: transparent;
+    border-color: rgba($hx-accent, 0.15);
+  }
+
+  .pf-solutions-panel {
+    background: $hx-mid;
+    border-right-color: rgba($hx-accent, 0.15);
+
+    .pf-solutions-panel-title { color: $hx-white; }
+    .pf-solutions-panel-body  { color: rgba($hx-white, 0.55); }
+    .pf-solutions-panel-btn {
+      color: $hx-accent;
+      border-color: rgba($hx-accent, 0.45);
+      &:hover {
+        background: $hx-accent;
+        border-color: $hx-accent;
+        color: $hx-white;
+      }
+    }
+  }
+
+  // ── Overview ──────────────────────────────────────────────────────────────
+  .pf-overview { background: $hx-white; }
+  .pf-overview-body p { color: $hx-muted; &:first-child { color: $hx-text; } }
+
+  // ── Stats ──────────────────────────────────────────────────────────────────
+  .pf-stats      { background: $hx-surface; }
+  .pf-stat       { border-right-color: $hx-card; }
+  .pf-stat-value { color: $hx-accent; }
+  .pf-stat-label { color: $hx-muted; }
+
+  // ── How it works ───────────────────────────────────────────────────────────
+  .pf-how            { background: $hx-surface; }
+  .pf-section-header { background: $hx-surface; }
+  .pf-steps {
+    @include respond-to('medium') {
+      grid-template-columns: repeat(5, 1fr);
+    }
+  }
+  .pf-step { background: $hx-white; border-right-color: $hx-card;
+    @include respond-to('medium') {
+      &:nth-child(2n) { border-right: 1px solid $hx-card; }
+      &:nth-child(4n) { border-right: 1px solid $hx-card; }
+      &:nth-child(5n) { border-right: none; }
+    }
+  }
+  .pf-step     { padding: 2em 1.75em 2.2em; gap: 1.5em; justify-content: flex-start; min-height: 0; }
+  .pf-step h3  { color: $hx-text; font-size: 1.7em; text-align: center; }
+  .pf-step p   { color: $hx-muted; font-size: 1.1em; text-align: center; width: 100%; }
+
+  // ── Mid-page CTA ───────────────────────────────────────────────────────────
+  .pf-mid-cta {
+    background: $hx-ink;
+    border-top: none;
+    border-bottom: none;
+  }
+
+  .pf-mid-cta-inner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 2em;
+    padding: 4em 10%;
+  }
+
+  .pf-mid-cta-heading {
+    font-family: 'Manrope', sans-serif;
+    font-size: clamp(1em, 1.5vw, 1.25em);
+    font-weight: 500;
+    line-height: 1.6;
+    color: rgba($hx-white, 0.85);
+    margin: 0;
+    max-width: 36em;
+  }
+
+  .pf-mid-cta-btn {
+    flex-shrink: 0;
+    display: inline-block;
+    padding: 0.85em 2.2em;
+    border: 1.5px solid $hx-accent;
+    border-radius: 3px;
+    background: transparent;
+    color: $hx-accent;
+    text-decoration: none;
+    font-family: 'Manrope', sans-serif;
+    font-weight: 700;
+    font-size: 0.85em;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    transition: background 0.2s ease, color 0.2s ease;
+
+    &:hover {
+      background: $hx-accent;
+      color: $hx-white;
+    }
+  }
+
+  // ── Features ───────────────────────────────────────────────────────────────
+  .pf-features-section {
+    background:
+      radial-gradient(ellipse 65% 70% at 12% 18%, #cde0f7 0%, transparent 55%),
+      radial-gradient(ellipse 50% 58% at 88% 10%, #eaf3ff 0%, transparent 50%),
+      radial-gradient(ellipse 70% 55% at 48% 60%, #bdd4ef 0%, transparent 58%),
+      radial-gradient(ellipse 48% 52% at  6% 90%, #d8eaf8 0%, transparent 50%),
+      radial-gradient(ellipse 55% 48% at 94% 88%, rgba($hx-accent, 0.12) 0%, transparent 52%),
+      #f0f5fb;
+  }
+  .pf-features-section .pf-section-header {
+    background: transparent;
+  }
+
+  .pf-feature {
+    border-color: rgba($hx-text, 0.15);
+    background: rgba(255, 255, 255, 0.52);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    padding: 1.75em 2.75em;
+    gap: 1.25em;
+    min-height: 0;
+    justify-content: flex-start;
+    &:hover {
+      border-color: rgba($hx-text, 0.35);
+      background: rgba(255, 255, 255, 0.72);
+    }
+    h3 { color: $hx-text; font-size: 1.25em; }
+    p  { color: $hx-muted; font-size: clamp(0.95em, 1.3vw, 1.12em); line-height: 1.65; width: 100%; }
+  }
+
+  // ── Split screen ───────────────────────────────────────────────────────────
+  .pf-split-visual {
+    background: linear-gradient(145deg, $hx-mid 0%, $hx-ink 60%, #121e30 100%);
+    border-right-color: rgba($hx-accent, 0.15);
+  }
+
+  .pf-split-geo--a { background: darken($hx-ink, 2%); }
+  .pf-split-geo--c {
+    background: repeating-linear-gradient(
+      0deg,
+      rgba($hx-accent, 0.35),
+      rgba($hx-accent, 0.35) 1.5px,
+      transparent 1.5px,
+      transparent 6px
+    );
+  }
+  .pf-split-geo--d { background: darken($hx-ink, 2%); }
+  .pf-split-geo--b { background: rgba($hx-accent, 0.3); }
+  .pf-split-geo--e { background: rgba($hx-accent, 0.5); }
+
+  .pf-split-text {
+    background:
+      radial-gradient(ellipse 60% 65% at 18% 22%, #1e3358 0%, transparent 58%),
+      radial-gradient(ellipse 48% 55% at 88% 12%, #0f1c38 0%, transparent 52%),
+      radial-gradient(ellipse 62% 52% at 55% 75%, #0c1830 0%, transparent 58%),
+      radial-gradient(ellipse 42% 48% at  5% 82%, #162844 0%, transparent 50%),
+      radial-gradient(ellipse 50% 44% at 92% 85%, rgba($hx-accent, 0.12) 0%, transparent 50%),
+      $hx-mid;
+  }
+  .pf-split-heading { color: $hx-white; }
+  .pf-split-body    { color: rgba($hx-white, 0.6); }
+
+  // ── Closing cards ──────────────────────────────────────────────────────────
+  .pf-closing        { background: $hx-mid; margin-top: 0; }
+  .pf-closing-header .pf-eyebrow { color: $hx-white; &::before { background: $hx-white; } }
+
+  .pf-closing-card {
+    background:
+      radial-gradient(ellipse 60% 65% at 18% 22%, #1e3358 0%, transparent 58%),
+      radial-gradient(ellipse 48% 55% at 88% 12%, #0f1c38 0%, transparent 52%),
+      radial-gradient(ellipse 62% 52% at 55% 75%, #0c1830 0%, transparent 58%),
+      radial-gradient(ellipse 50% 44% at 92% 85%, rgba($hx-accent, 0.1) 0%, transparent 50%),
+      $hx-mid;
+    border: none;
+    border-right: 1px solid rgba($hx-accent, 0.15);
+    &:last-child { border-right: none; }
+    &:hover { background: lighten($hx-mid, 4%); }
+  }
+
+  .pf-closing-title       { color: $hx-white; }
+  .pf-closing-stats       { border-color: rgba($hx-white, 0.1); }
+  .pf-closing-stat-value  { color: $hx-accent; }
+  .pf-closing-stat-label  { color: rgba($hx-white, 0.85); }
+  .pf-closing-text p      { color: rgba($hx-white, 0.6); }
+
+}
+
+// Hxly footer background
+body.theme-hxly .pf-footer {
+  background: $hx-ink;
+  border-top: 1px solid rgba($hx-accent, 0.15);
+
+  .pf-footer-cta {
+    background: $hx-accent;
+    color: $hx-white;
+  }
+}

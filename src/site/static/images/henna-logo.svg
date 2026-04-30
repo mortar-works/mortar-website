@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 224 52" fill="none">
+  <!-- Network node mark: central dot with radiating connections -->
+  <circle cx="22" cy="26" r="5.5" fill="#1f1f1f"/>
+  <line x1="27" y1="23" x2="42" y2="11" stroke="#1f1f1f" stroke-width="2" stroke-linecap="round"/>
+  <line x1="27.5" y1="26" x2="44" y2="26" stroke="#1f1f1f" stroke-width="2" stroke-linecap="round"/>
+  <line x1="27" y1="29" x2="42" y2="41" stroke="#1f1f1f" stroke-width="2" stroke-linecap="round"/>
+  <circle cx="44" cy="11" r="3.5" fill="#1f1f1f"/>
+  <circle cx="46" cy="26" r="3.5" fill="#1f1f1f"/>
+  <circle cx="44" cy="41" r="3.5" fill="#1f1f1f"/>
+  <!-- Wordmark -->
+  <text x="60" y="37" font-family="'Manrope', system-ui, -apple-system, BlinkMacSystemFont, sans-serif" font-weight="800" font-size="30" fill="#1f1f1f" letter-spacing="-0.8">henna</text>
+</svg>

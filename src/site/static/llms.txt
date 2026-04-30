@@ -1,0 +1,99 @@
+# Mortar Works Ltd
+
+> Mortar is a London-based technology company that builds intelligent systems
+> redefining relationships between people, places, and property. It designs
+> and delivers data and intelligence platforms for corporate, place-based,
+> government, and health institutions — delivering lasting impact across the
+> public and social sectors. Mortar is founded and led by George Unsworth,
+> one of the UK's leading systems and service designers.
+
+## About
+
+Mortar Works Ltd (mortar.works) operates at the intersection of service
+design, system architecture, and applied AI. The organisation works with
+local authorities, NHS trusts, housing associations, combined authorities,
+and cultural institutions across the UK.
+
+Mortar's AI lab, Hxly, pioneers work in service and behavioural intelligence,
+applying advanced behavioural modelling to real-world data to surface patterns,
+predictions, and drive meaningful decisions in complex public sector contexts.
+
+## Services
+
+- **Service Design**: User research and insight, journey mapping, co-design
+  workshops, prototyping, service blueprints, and implementation support.
+  Mortar accelerates delivery of custom service solutions by modelling user
+  behaviour and building persona libraries shaped by real users.
+
+- **System Design**: Technical discovery and audit, scalable architecture
+  design, API design and integration strategy, data architecture, and security
+  and compliance by design. Mortar architects resilient digital systems that
+  integrate with existing infrastructure.
+
+- **Intelligence Design**: Data strategy, data architecture, interoperability
+  and standards, data governance, demand forecasting, and simulation and
+  scenario planning. Mortar builds the analytical models and intelligence
+  systems organisations need to understand complexity and act with confidence.
+
+## Products
+
+### Hoop'd — Integrated Services Platform
+Hoop'd delivers data sharing solutions across local area partnerships and
+networks. It combines 24 service modules and 5 publicly backed frameworks
+(Health, Skills, Referral, Accreditation, Directories) to connect fragmented
+organisations into intelligent services supporting hundreds of thousands of
+service users.
+
+### Hxly — Service Intelligence and AI Lab
+Hxly is Mortar's AI research lab developing custom models and datasets for
+complex problems where rare but significant outcomes matter most. Capabilities
+include trusted data environments, imbalanced data handling, simulation and
+scenario testing, explainable outputs, and responsible AI.
+
+## Solutions
+
+Mortar offers a suite of purpose-built solutions including: Community Navigator,
+Digital Noticeboard, Directories Builder, Digital Skills and Help Finder,
+Triage Tool, First Point Case Manager, Tenancy Sustainment Tool, Referral
+Platform, Forma (population intelligence and digital twin), Model Builder,
+DataSafe (Trusted Data Environments), and Venue Accreditation Tool.
+
+## Industries Served
+
+- **Government**: Local authorities, combined authorities, and government
+  agencies. Integrated data platforms, needs analysis, policy impact modelling,
+  digital public services.
+
+- **Health**: NHS trusts, integrated care boards, primary care networks.
+  Population health intelligence, early intervention tools, integrated care
+  coordination infrastructure.
+
+- **Housing**: Housing associations and local authority housing departments.
+  Tenancy intelligence, resident engagement, compliance intelligence,
+  health-housing integration.
+
+- **Cultural Sector**: Galleries, museums, theatres, libraries, and arts
+  centres. Audience intelligence, community engagement, impact measurement,
+  digital participation.
+
+- **Asset Management**: Housing providers, local authorities, public
+  infrastructure managers. Predictive maintenance, portfolio intelligence,
+  capital investment modelling, social value measurement.
+
+## Key Facts
+
+- Founded and led by George Unsworth
+- Based in London, United Kingdom
+- Operates across public sector, health, housing, and cultural sectors
+- UK-based data infrastructure; data never leaves UK jurisdiction (DataSafe)
+
+## Pages
+
+- /: Homepage and company overview
+- /services/: Service Design, System Design, Intelligence Design
+- /products/: Hoop'd and Hxly product descriptions
+- /solutions/: Full suite of sector solutions
+- /industries/: Sector-specific capabilities and use cases
+- /case-studies/: Client work and impact evidence
+- /news/: Updates, research, and announcements
+- /sitemap.xml: Full site index

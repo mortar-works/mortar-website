@@ -9,6 +9,49 @@ name: services-overview
 
 {% block bodyId %}{{ name }}{% endblock %}
 
+{% block extraHead %}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ItemList",
+  "name": "Mortar Works Services",
+  "url": "https://mortar.works/services/",
+  "itemListElement": [
+    {
+      "@type": "Service",
+      "position": 1,
+      "name": "Service Design",
+      "url": "https://mortar.works/services/",
+      "provider": { "@type": "Organization", "name": "Mortar Works Ltd" },
+      "description": "Mortar accelerates delivery of custom service solutions by modelling user behaviour, building persona libraries, and developing service models shaped by real users. Capabilities include user research, journey mapping, co-design workshops, prototyping, service blueprints, and implementation support.",
+      "areaServed": "GB",
+      "serviceType": "Service Design Consultancy"
+    },
+    {
+      "@type": "Service",
+      "position": 2,
+      "name": "System Design",
+      "url": "https://mortar.works/services/",
+      "provider": { "@type": "Organization", "name": "Mortar Works Ltd" },
+      "description": "Mortar architects scalable, resilient digital systems that integrate seamlessly with existing infrastructure. Capabilities include technical discovery and audit, scalable architecture design, API design and integration strategy, data architecture, and security and compliance by design.",
+      "areaServed": "GB",
+      "serviceType": "Digital Systems Architecture"
+    },
+    {
+      "@type": "Service",
+      "position": 3,
+      "name": "Intelligence Design",
+      "url": "https://mortar.works/services/",
+      "provider": { "@type": "Organization", "name": "Mortar Works Ltd" },
+      "description": "Mortar builds the data infrastructure, analytical models, and intelligence systems organisations need to understand complexity, test decisions, and act with confidence. Capabilities include data strategy, data governance, demand forecasting, and simulation and scenario planning.",
+      "areaServed": "GB",
+      "serviceType": "Data Intelligence and Analytics"
+    }
+  ]
+}
+</script>
+{% endblock %}
+
 {% block content %}
 
 <section id="services-topline">

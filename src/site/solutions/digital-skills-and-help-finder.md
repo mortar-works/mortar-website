@@ -1,12 +1,27 @@
 ---
-title: "Digital skills and help finder"
+product: hoopd
+title: "Digital Skills Platform"
+strapline: "Provide every user and partner with dynamic self-assessments to discover the need, availability and progress of skills."
 description: "Provide every user and partner with dynamic self assessments; to discover the need, availability and progress of skills."
 link: "/digital-skills-and-help-finder"
 label_image: "/static/images/solutions/solution_label01.png"
 image: "/static/images/solutions/digitalskills01.png"
-date: 2024-01-01
+date: 2025-06-18
 author: Mortar
 draft: false
+
+hero_slides:
+  - heading: "Deliver local area skills initiatives for everyone"
+    body: "Bring your Digital Inclusion and Skills Network into one manageable environment. Grow as many providers, and engage as many users as your initiative needs, and monitor their progress as skills grow."
+    image: "/static/images/solutions/digitalskills01a.png"
+  - heading: "Monitor impact and identify the skills gaps"
+    body: "Reporting systems for the network and datasets for every member of your network to demonstrate the skills impact of their work."
+    image: "/static/images/solutions/digitalskills02.png"
+  - heading: "Build custom skills pathways and modules"
+    body: "Reflect your own organisational needs and develop your own skills statements, resources, pathways and modules for a custom skills platform."
+    image: "/static/images/solutions/digitalskills03.png"
+
+
 category: solution
 keywords:
   - digital skills
@@ -15,21 +30,47 @@ keywords:
   - directories
   - digital inclusion
   - self-assessment
+
+steps_heading: "From assessment to improved skills"
+steps:
+  - title: "Dynamic self-assessment"
+    body: "Users evaluate their digital skills through a quick, intuitive assessment that identifies gaps and establishes a personalised baseline for their learning journey."
+  - title: "Tailored recommendations"
+    body: "Based on their assessment, users receive personalised recommendations for resources and courses to improve their skills — drawn from your local directory and national sources."
+  - title: "Progress tracking"
+    body: "Users track their development and access tools to continue learning at their own pace. Revisit completed assessments to see improvements over time."
+  - title: "Partnership management"
+    body: "Organisations manage local resources and partner offerings, ensuring up-to-date opportunities are always available for users across the platform."
+
+features_eyebrow: "Key features"
+features_heading: "Combat digital exclusion at scale"
+features:
+  - title: "Self-Assessment Module"
+    body: "Users quickly assess their digital skills, identifying gaps and receiving recommendations for learning resources tailored to their specific needs and confidence level."
+  - title: "Resource Directory Management"
+    body: "Administrators manage a local directory of courses, training sessions, and digital skills resources, making it easy for users to find support in their area."
+  - title: "Dynamic User Dashboard"
+    body: "Users view their progress over time, access recommended resources, and revisit completed assessments to track improvements in their digital skills."
+  - title: "Customisable Pathways"
+    body: "Organisations tailor recommendations to match the needs of their users, ensuring that the resources and opportunities provided are relevant and up to date."
+  - title: "Data Insights and Reporting"
+    body: "Access a real-time dataset of digital skills gaps within your communities, and understand the impact of interventions across your programme."
+
+benefits_eyebrow: "Why it matters"
+benefits_heading: "Closing the digital divide"
+benefits:
+  - title: "Targeted support at scale"
+    body: "Automated assessment and tailored recommendations mean more people can access the right support at the right time — without placing an unsustainable burden on frontline workers."
+  - title: "Evidence of digital exclusion"
+    body: "Every assessment generates structured data on the skills gaps in your community — building the evidence base that commissioners and funders need to understand and address digital exclusion."
+  - title: "Improved learner engagement"
+    body: "Personalised pathways and progress tracking keep users engaged in their learning journey, improving completion rates and long-term confidence."
+  - title: "Stronger local networks"
+    body: "Connecting users to local training providers and partners builds sustainable community infrastructure for digital skills development that outlasts any single programme."
+
 ---
 
-## Digital Skills and Help Finder  
-
-Empowering residents with digital skills through tailored self-assessments and support tools
-
-**Our Digital Skills and Help Finder** is designed to help organisations provide digital skills training and support to their users and partners. This dynamic tool enables users to self-assess their digital abilities, discover available resources, and track progress in learning essential skills. It provides a seamless platform to address digital exclusion, making sure that no one is left behind in the digital age.
-
-### How it Works  
-The Digital Skills and Help Finder empowers users to assess their digital skills quickly and easily. It offers a custom environment for assessing needs and signposting users to relevant resources, courses, and opportunities to improve their digital literacy. By automating the process of assessment and discovery, organisations can more efficiently support their communities and help individuals build essential digital skills.
-
-- **Dynamic self-assessment:** Users can evaluate their digital skills through a quick and intuitive assessment.
-- **Tailored recommendations:** Based on their assessment, users receive personalised recommendations for resources and courses to improve their skills.
-- **Progress tracking:** Users can track their development and access tools to continue learning at their own pace.
-- **Partnership management:** Organisations can manage local resources and partner offerings, ensuring up-to-date opportunities for users.
+Our Digital Skills Platform is designed to help organisations provide digital skills training and support to their users and partners. This dynamic tool enables users to self-assess their digital abilities, discover available resources, and track progress in learning essential skills. It provides a seamless platform to address digital exclusion, making sure that no one is left behind in the digital age.
 
 <figure>
   <img src="/static/images/solutions/digitalskills02.png" alt="Screenshot of the Digital Skills and Help Finder assessment interface" />
@@ -37,30 +78,3 @@ The Digital Skills and Help Finder empowers users to assess their digital skills
     Example of a comms page in the Digital Skills and Help Finder tool.
   </figcaption>
 </figure>
-
-## Key Features  
-The Digital Skills and Help Finder is packed with essential features that make it easy for organisations to promote digital inclusion:
-
-- **Self-Assessment Module**  
-  Users can quickly assess their digital skills, identifying gaps and receiving recommendations for learning resources.
-
-- **Resource Directory Management**  
-  Administrators can manage a local directory of courses, training sessions, and digital skills resources, making it easy for users to find support.
-
-- **Dynamic User Dashboard**  
-  Users can view their progress over time, access recommended resources, and revisit completed assessments to track improvements.
-
-- **Customisable Pathways**  
-  Organisations can tailor the recommendations to match the needs of their users, ensuring that the resources and opportunities provided are relevant and up to date.
-
-- **Data Insights and Reporting**  
-  Organisations can access a real-time dataset, gaining insights into digital skills gaps within their communities and understanding the impact of interventions.
-
-### Why It Matters  
-As the world becomes more digitally dependent, individuals without access to digital skills and resources face significant disadvantages. The **Digital Skills and Help Finder** offers an essential tool for combating digital exclusion, empowering individuals to improve their skills and access vital resources.
-
-By providing tailored recommendations and progress tracking, organisations can engage users more effectively, helping them develop the skills needed to participate fully in society. This tool allows organisations to address digital exclusion head-on, improving digital literacy and reducing inequalities.
-
-### Get in Touch  
-If your organisation is working to improve digital inclusion and provide skills training to your community, the Digital Skills and Help Finder can help you achieve your goals. Contact us today to explore how our tool can be customised to suit your needs.
-

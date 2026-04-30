@@ -1,0 +1,208 @@
+@use 'sass:color';
+@use "../common/variables" as *;
+@use "../utilities/responsive" as *;
+
+// ── Page shell ────────────────────────────────────────────────────────────────
+
+$so-dark: #0e0b1a;
+$so-line: rgba($mortar-purple, 0.12);
+
+#solutions-overview-page {
+  background: $so-dark;
+
+  header {
+    background: rgba($so-dark, 0.85) !important;
+    backdrop-filter: blur(12px) !important;
+    -webkit-backdrop-filter: blur(12px) !important;
+
+    &.sticky {
+      background: rgba($so-dark, 0.92) !important;
+      backdrop-filter: blur(12px) !important;
+      -webkit-backdrop-filter: blur(12px) !important;
+    }
+
+    #mortar-logo img {
+      filter: brightness(0) invert(1);
+    }
+
+    nav a {
+      color: rgba(white, 0.75) !important;
+      &:hover { color: white !important; }
+    }
+
+    .nav-cta--outline {
+      border-color: rgba(white, 0.4) !important;
+      color: white !important;
+      &:hover {
+        background: rgba(white, 0.1) !important;
+        border-color: white !important;
+      }
+    }
+  }
+}
+
+// ── Brand sections ────────────────────────────────────────────────────────────
+
+.so-section {
+  scroll-margin-top: 4em;
+  padding: 2% 5% 0;
+
+  &--first { padding-top: clamp(2em, 8vw, 2em); }
+  &--last  { padding-bottom: 5%; }
+}
+
+// ── Brand card ────────────────────────────────────────────────────────────────
+
+.so-card {
+  background: linear-gradient(135deg, #ede8ff 0%, #fffbea 100%);
+  position: relative;
+  overflow: hidden;
+
+  &::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    z-index: 0;
+    pointer-events: none;
+    background-image: radial-gradient(circle, rgba($mortar-purple, 0.1) 1px, transparent 1px);
+    background-size: 44px 44px;
+    mask-image: radial-gradient(ellipse 70% 80% at 80% 50%, black 20%, transparent 80%);
+    -webkit-mask-image: radial-gradient(ellipse 70% 80% at 80% 50%, black 20%, transparent 80%);
+  }
+}
+
+// ── Card header ───────────────────────────────────────────────────────────────
+
+.so-card-header {
+  padding: 3.5em 5% 3.5em;
+  position: relative;
+  z-index: 1;
+
+  @include respond-to('small', 'max') {
+    padding: 2.5em 2em 2.5em;
+  }
+}
+
+.so-card-logo {
+  position: absolute;
+  top: 2.5em;
+  right: 2.5em;
+  display: block;
+  height: 2.6em;
+  width: auto;
+
+  @include respond-to('small', 'max') {
+    height: 2em;
+    top: 1.8em;
+    right: 1.5em;
+  }
+}
+
+.so-card-text {
+  display: flex;
+  flex-direction: column;
+  gap: 1.1em;
+}
+
+.so-card-headline {
+  font-family: 'Manrope', sans-serif;
+  font-weight: 800;
+  font-size: clamp(1.8em, 3.5vw, 3.2em);
+  line-height: 1.08;
+  letter-spacing: -0.035em;
+  color: $mortar-purple;
+  margin: 0;
+
+  em {
+    font-style: normal;
+    color: $mortar-orange;
+  }
+}
+
+.so-card-desc {
+  font-family: 'Manrope', sans-serif;
+  font-size: clamp(0.9em, 1.2vw, 1.05em);
+  line-height: 1.72;
+  color: rgba($mortar-purple, 0.52);
+  max-width: 42em;
+  margin: 0;
+  font-weight: 400;
+}
+
+// ── Solutions grid ────────────────────────────────────────────────────────────
+
+.so-card-solutions {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  border-top: 1px solid $so-line;
+  position: relative;
+  z-index: 1;
+
+  @include respond-to('medium', 'max') {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  @include respond-to('small', 'max') {
+    grid-template-columns: 1fr;
+  }
+}
+
+// ── Solution tile ─────────────────────────────────────────────────────────────
+
+.so-sol {
+  display: flex;
+  flex-direction: column;
+  gap: 0.55em;
+  padding: 2.5em 2.8em;
+  text-decoration: none;
+  border-right: 1px solid $so-line;
+  border-bottom: 1px solid $so-line;
+  transition: background 0.2s ease;
+
+  &:hover {
+    background: rgba($mortar-purple, 0.05);
+  }
+
+  // 3-col: remove trailing right border
+  &:nth-child(3n) { border-right: none; }
+
+  @include respond-to('medium', 'max') {
+    // 2-col: restore 3n rule, remove 2n border
+    &:nth-child(3n) { border-right: 1px solid $so-line; }
+    &:nth-child(2n) { border-right: none; }
+  }
+
+  @include respond-to('small', 'max') {
+    // 1-col: no right borders
+    &:nth-child(n) { border-right: none; }
+    padding: 1.8em 2em;
+  }
+}
+
+.so-sol-title {
+  font-family: 'Manrope', sans-serif;
+  font-weight: 700;
+  font-size: clamp(1em, 1.3vw, 1.2em);
+  color: $mortar-purple;
+  line-height: 1.3;
+}
+
+.so-sol-strapline {
+  font-family: 'Manrope', sans-serif;
+  font-size: 0.88em;
+  line-height: 1.65;
+  color: rgba($mortar-purple, 0.52);
+}
+
+// Mortar card – wordmark is dark, mute it slightly
+.so-card--mortar .so-card-logo {
+  opacity: 1;
+  height: 3.2em;
+}
+
+// Placeholder tiles (Hxly – coming soon)
+.so-sol--soon {
+  opacity: 0.45;
+  pointer-events: none;
+  cursor: default;
+}
