@@ -447,6 +447,31 @@ $sf-line:    rgba(14, 11, 26, 0.1);
     }
   }
 
+  // ── Mobile hero ──────────────────────────────────────────────────────────
+  @media (max-width: 767px) {
+    .sf-hero-topbar {
+      height: 4em;
+
+      .sf-solutions-dropdown,
+      .sf-products-dropdown {
+        display: none;
+      }
+    }
+
+    .sf-hero-content {
+      grid-template-columns: 1fr;
+      min-height: 0;
+    }
+
+    .sf-hero-text-pane {
+      padding: 2.5em 5%;
+    }
+
+    .sf-hero-image-pane {
+      height: 250px;
+    }
+  }
+
   // ── Overview / intro ──────────────────────────────────────────────────────
   .sf-overview {
     background: $sf-warm;

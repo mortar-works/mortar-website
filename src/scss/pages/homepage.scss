@@ -421,6 +421,11 @@
       .featured-tile--large {
         grid-column: 1;
       }
+
+      .featured-intro,
+      .featured-tile {
+        min-height: 180px;
+      }
     }
 
     @media (min-width: 769px) and (max-width: 1024px) {
@@ -636,6 +641,10 @@
       list-style: none;
       padding: 0;
       margin: 0;
+
+      @media (max-width: 768px) {
+        gap: 2.5em;
+      }
     }
 
     .partners-list li {

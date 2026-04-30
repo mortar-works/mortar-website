@@ -105,6 +105,10 @@
   .about-hero-left {
     width: 60%;
     min-width: 0;
+
+    @include respond-to('small', 'max') {
+      width: 100%;
+    }
   }
 
   .about-hero-right {
@@ -207,7 +211,6 @@
 #about-mortar #about-values {
   position: relative;
   background: $mortar-purple;
-  border-top: 1px solid rgba($white, 0.08);
 
   // Subtle grid overlay
   &::before {
