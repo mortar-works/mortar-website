@@ -18,8 +18,48 @@
 
    {% elseif bodyId == "news" %}
       <link rel="stylesheet" href="/static/css/news.css">
-      
+
   {% endif %}
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "Mortar Works Ltd",
+      "alternateName": "Mortar",
+      "url": "https://mortar.works",
+      "logo": "https://mortar.works/static/images/mortar-favicon.png",
+      "description": "London-based technology company building intelligent systems that redefine relationships between people, places, and property. Mortar designs and delivers data and intelligence platforms for government, health, housing, and cultural institutions across the UK.",
+      "founder": {
+        "@type": "Person",
+        "name": "George Unsworth",
+        "jobTitle": "Founder and Director",
+        "url": "https://mortar.works/about"
+      },
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "London",
+        "addressCountry": "GB"
+      },
+      "areaServed": "GB",
+      "knowsAbout": [
+        "Intelligent Systems",
+        "Service Design",
+        "System Design",
+        "Data Intelligence",
+        "AI Research",
+        "Public Sector Technology",
+        "Health Technology",
+        "Housing Technology",
+        "Behavioural Modelling"
+      ],
+      "sameAs": [
+        "https://www.linkedin.com/company/mortar-works"
+      ]
+    }
+    </script>
+
+    {% block extraHead %}{% endblock %}
   </head>
   <body id="{% block bodyId %}{% endblock %}" class="{% block bodyClass %}{% endblock %}">
     <header>

@@ -357,13 +357,29 @@ header {
   }
 }
 
+/* Force orange overlay even on pages that pin the header to a different colour */
+#homepage header.nav-active,
+#about-mortar header.nav-active {
+  background: $mortar-orange !important;
+}
+
+/* Logo and link colour corrections for pages with white-on-purple headers */
+#homepage header.nav-active #mortar-logo img,
+#about-mortar header.nav-active #mortar-logo img {
+  filter: brightness(0) !important;
+}
+
+#about-mortar header.nav-active nav a {
+  color: $black !important;
+}
+
 /* Mobile nav overlay — flat links */
 header.nav-active nav a {
   border: none;
   border-radius: 0;
-  padding: 0.75em 0;
-  font-size: 1.1em;
-  line-height: 1.6em;
+  padding: 0.4em 0;
+  font-size: 1em;
+  line-height: 1.4;
   min-height: 44px;
   width: 100%;
   justify-content: flex-start;
@@ -385,8 +401,8 @@ header.nav-active nav .nav-mobile-extras {
   display: flex;
   flex-direction: column;
   width: 100%;
-  margin-top: 0.75em;
-  padding-top: 1em;
+  margin-top: 0.5em;
+  padding-top: 0.75em;
   border-top: 1px solid rgba($black, 0.15);
 }
 
@@ -397,14 +413,29 @@ header.nav-active nav .nav-mobile-extras {
   text-transform: uppercase;
   letter-spacing: 0.1em;
   color: rgba($black, 0.45);
-  padding: 0.25em 0 0.25em;
+  padding: 0.3em 0;
 }
 
 header.nav-active nav .nav-mobile-extras .nav-mobile-contact {
-  margin-top: 1em;
-  padding-top: 1em;
-  border-top: 1px solid rgba($black, 0.1);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 1.25em;
+  padding: 0.75em 2em !important;
+  width: auto !important;
+  min-height: auto !important;
+  line-height: 1.4 !important;
+  background: $mortar-purple;
+  color: white !important;
+  border-radius: 4px;
   font-weight: 700;
+  font-size: 0.95em;
+  border-top: none;
+  transition: opacity 0.2s ease;
+
+  &:hover {
+    opacity: 0.85;
+  }
 }
 
 /* Company dropdown nav item */

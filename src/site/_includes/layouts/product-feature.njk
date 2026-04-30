@@ -3,6 +3,41 @@
 {% set section = 'products' %}
 {% block pageTitle %}{{ title }} - Products - {{ super() }}{% endblock %}
 {% block bodyId %}product-feature{% endblock %}
+
+{% block extraHead %}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ItemList",
+  "name": "Mortar Works Products",
+  "url": "https://mortar.works/products/",
+  "itemListElement": [
+    {
+      "@type": "SoftwareApplication",
+      "position": 1,
+      "name": "Hoop'd",
+      "url": "https://mortar.works/products/hoopd/",
+      "applicationCategory": "BusinessApplication",
+      "operatingSystem": "Web",
+      "provider": { "@type": "Organization", "name": "Mortar Works Ltd" },
+      "description": "Hoop'd is an integrated services platform combining 24 service modules and 5 publicly backed frameworks — Health, Skills, Referral, Accreditation, and Directories — turning fragmented information and siloed organisations into connected, intelligent services supporting hundreds of thousands of service users.",
+      "offers": { "@type": "Offer", "areaServed": "GB" }
+    },
+    {
+      "@type": "SoftwareApplication",
+      "position": 2,
+      "name": "Hxly",
+      "url": "https://mortar.works/products/hxly/",
+      "applicationCategory": "BusinessApplication",
+      "operatingSystem": "Web",
+      "provider": { "@type": "Organization", "name": "Mortar Works Ltd" },
+      "description": "Hxly is Mortar's AI research lab developing custom models and datasets to solve complex problems where rare but significant outcomes matter most. It applies advanced behavioural modelling to real-world data, with capabilities including trusted data environments, imbalanced data handling, simulation and scenario testing, explainable outputs, and responsible AI.",
+      "offers": { "@type": "Offer", "areaServed": "GB" }
+    }
+  ]
+}
+</script>
+{% endblock %}
 {% block bodyClass %}{% if theme %}theme-{{ theme }}{% endif %}{% endblock %}
 {% block mainClass %}product-feature-page{% if theme %} product-feature-page--{{ theme }}{% endif %}{% endblock %}
 
