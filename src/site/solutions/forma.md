@@ -1,6 +1,12 @@
 ---
 product: hxly
 title: "Forma"
+overview_heading: "What is Forma?"
+hero_webgl: [forma]
+hero_slides:
+  - heading: "Population Intelligence and Service Design"
+    body: "Behavioural modelling, scenario simulation, and design intelligence to inform your decisions."
+    webgl: forma
 strapline: "Population intelligence, service design, and digital twin capability for your organisation. Behavioural modelling, scenario simulation, and design intelligence to inform your decisions."
 description: "Custom population intelligence, service design, and digital twin capability for your organisation. Behavioural modelling, scenario simulation, and design intelligence — built around your data, your population, your decisions."
 date: 2024-02-03

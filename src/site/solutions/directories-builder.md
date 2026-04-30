@@ -10,7 +10,7 @@ author: Mortar
 draft: false
 
 hero_slides:
-  - heading: "Build the directories you need to target and serve your communities"
+  - heading: "Understand and serve your communities"
     body: "We provide custom directories to engage target users and support service providers in the delivery of Information, Advice and Support."
     image: "/static/images/solutions/directorybuilder01.png"
   - heading: "Monitor directory use and identify the service gaps"

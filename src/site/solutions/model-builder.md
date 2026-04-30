@@ -1,6 +1,12 @@
 ---
 product: hxly
 title: "Model Builder"
+overview_heading: "What is the Model Builder?"
+hero_webgl: [modelbuilder]
+hero_slides:
+  - heading: "Data Preparation, Modelling and Dataset Creation."
+    body: "Specialist techniques for complex, imbalanced, and unstructured data — cleaned, prepared, and modelled for real-world use."
+    webgl: modelbuilder
 strapline: "Data Preparation, Modelling and Dataset Creation. Specialist techniques for complex, imbalanced, and unstructured data; your data cleaned, prepared, and modelled for real-world use."
 description: "Specialist techniques for complex, imbalanced, and unstructured data — cleaned, prepared, and modelled for real-world use. Custom datasets, behavioural models, and predictive outputs built to your specific problem."
 date: 2024-02-02
@@ -45,7 +51,7 @@ benefits_eyebrow: "Why it matters"
 benefits_heading: "Models that work on your data"
 benefits:
   - title: "Real-world data, not ideal data"
-    body: "Most machine learning fails not because of the algorithm but because of the data. Our preparation expertise addresses the real-world problems — imbalance, noise, missingness — that generic approaches ignore."
+    body: "Most machine learning fails not because of the algorithm but because of the data. Our preparation expertise addresses the real-world problems; the imbalance and noise that generic approaches ignore."
   - title: "Built to your problem"
     body: "Off-the-shelf models are built for average problems. We design and build to the specific characteristics of your data and the specific decisions your organisation needs to make."
   - title: "Usable by your team"
@@ -54,4 +60,4 @@ benefits:
     body: "By handling the full data preparation and modelling pipeline, we remove the months of internal effort that typically separates a data problem from a working model."
 ---
 
-Model Builder is our specialist data preparation, modelling, and dataset creation service — built for the problems that standard approaches cannot handle. Real-world data is rarely clean, balanced, or conveniently structured, and most modelling failures originate in preparation, not in the choice of algorithm. We apply deep technical expertise to get the data right before modelling begins, then build and validate models that are genuinely fit for purpose: behavioural models, predictive outputs, risk stratifications, and custom datasets delivered to your specification, ready to use.
+Model Builder is our specialist data preparation, modelling, and dataset creation service; built for the problems that standard approaches cannot handle. Real-world data is rarely clean, balanced, or conveniently structured, and most modelling failures originate in preparation, not in the choice of algorithm. We apply deep technical expertise to get the data right before modelling begins, then build and validate models that are genuinely fit for purpose: behavioural models, predictive outputs, risk stratifications, and custom datasets delivered to your specification, ready to use.

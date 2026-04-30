@@ -1,6 +1,10 @@
 ---
 order: 1
 title: "Service design"
+hero_slides:
+  - heading: "Our design framework"
+    body: "Accelerate the delivery of custom service solutions by modelling user behaviour, building persona libraries, and developing service models shaped by real users."
+    image: /static/images/use-cases/co-creation-workshops.jpg
 strapline: "Accelerate the delivery of custom service solutions by modelling user behaviour, building persona libraries, and developing service models shaped by real users."
 description: "We accelerate the delivery of custom service solutions. Our service design toolkit includes modelling user behaviour, building custom persona libraries and developing service models shaped by real users."
 label_image: "/static/images/solutions/solution_label01.png"

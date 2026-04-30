@@ -1,6 +1,10 @@
 ---
 order: 2
 title: "System design"
+hero_slides:
+  - heading: "Transform your ways of working"
+    body: "Architect scalable, resilient digital systems that integrate seamlessly with your existing infrastructure and grow with your organisation."
+    image: /static/images/case-studies/progressonline02.png
 strapline: "Architect scalable, resilient digital systems that integrate seamlessly with your existing infrastructure and grow with your organisation."
 description: "Architect scalable, resilient digital systems that integrate seamlessly with your existing infrastructure and grow with your organisation."
 label_image: "/static/images/solutions/solution_label01.png"

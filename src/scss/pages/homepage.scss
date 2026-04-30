@@ -76,31 +76,25 @@
       }
     }
 
-    // Entrance animations — logo first, then nav items left to right
+    // Entrance animations — everything fades in together
     #mortar-logo {
       animation: headerLogoIn 0.7s ease 0.1s both;
     }
 
     nav a {
-      animation: navItemIn 0.5s ease both;
-
-      &:nth-child(1) { animation-delay: 0.4s; }
-      &:nth-child(2) { animation-delay: 0.55s; }
-      &:nth-child(3) { animation-delay: 0.7s; }
-      &:nth-child(4) { animation-delay: 0.85s; }
-      &:nth-child(5) { animation-delay: 1.0s; }
+      animation: navItemIn 0.7s ease 0.1s both;
     }
 
     .nav-cta--outline {
-      animation: navItemIn 0.5s ease 1.15s both;
+      animation: navItemIn 0.7s ease 0.1s both;
     }
 
     .header-cta-dropdown {
-      animation: navItemIn 0.5s ease 1.3s both;
+      animation: navItemIn 0.7s ease 0.1s both;
     }
 
     .hamburger {
-      animation: navItemIn 0.5s ease 0.4s both;
+      animation: navItemIn 0.7s ease 0.1s both;
     }
   }
 }
@@ -136,7 +130,7 @@
     }
 
     .topline-body {
-      animation: fadeInUp 0.9s ease 2.5s both;
+      animation: fadeInUp 0.7s ease 0.1s both;
     }
 
     h1 {
@@ -146,7 +140,7 @@
       line-height: 1.05;
       color: white;
       margin: 0 0 0.4em;
-      animation: fadeInUp 0.9s ease 1.5s both;
+      animation: fadeInUp 0.7s ease 0.1s both;
 
       @media (min-width: 769px) and (max-width: 1024px) {
         font-size: 4.2em;
@@ -183,13 +177,13 @@
         background-repeat: no-repeat;
         background-size: 0% 8px;
         background-position: left bottom;
-        animation: drawUnderline 0.5s cubic-bezier(0.4, 0, 0.2, 1) 1.2s both;
+        animation: drawUnderline 0.5s cubic-bezier(0.4, 0, 0.2, 1) 1.0s both;
         -webkit-text-stroke: 26px $mortar-purple;
         paint-order: stroke fill;
       }
 
-      &.headline-link--2 span { animation-delay: 1.55s; }
-      &.headline-link--3 span { animation-delay: 1.9s; }
+      &.headline-link--2 span { animation-delay: 1.3s; }
+      &.headline-link--3 span { animation-delay: 1.6s; }
     }
 
     .topline-body {

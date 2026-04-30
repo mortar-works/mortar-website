@@ -122,16 +122,16 @@ window.addEventListener('load', (event) => {
     }
   });
 
-  // Topline CTA — slow scroll to bottom of partners section
-  const toplineCta = document.querySelector('.topline-cta');
-  if (toplineCta) {
-    toplineCta.addEventListener('click', (e) => {
+  // About hero CTA — slow scroll to "what we do" section with extra breathing room
+  const aboutHeroCta = document.querySelector('.about-hero-cta');
+  if (aboutHeroCta) {
+    aboutHeroCta.addEventListener('click', (e) => {
       e.preventDefault();
-      const partners = document.getElementById('partners');
+      const target = document.getElementById('about-what-we-do');
       const header = document.querySelector('header');
-      if (partners && header) {
-        const targetY = partners.getBoundingClientRect().bottom + window.scrollY - header.offsetHeight;
-        smoothScrollTo(targetY, 1000);
+      if (target) {
+        const offset = (header ? header.offsetHeight : 0) + 80;
+        smoothScrollTo(target.getBoundingClientRect().top + window.scrollY - offset, 1800);
       }
     });
   }
