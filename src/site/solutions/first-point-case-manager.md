@@ -8,6 +8,19 @@ image: "/static/images/solutions/tenancy-sustainment-tool01.jpg"
 date: 2025-10-25
 author: Mortar
 draft: false
+
+hero_slides:
+  - heading: "User facing case creation"
+    body: "Enable users to open and manage cases from first contact, with integrated triage, risk monitoring, and referral built in."
+    image: "/static/images/solutions/casemanager01.png"
+  - heading: "See the full case journey"
+    body: "Monitor cases in real time and prompt the user to encourage case progress and updates. Helping resolve cases, backlog and wait lists quicker with a fully auditable trail of actions and decisions."
+    image: "/static/images/solutions/casemanager02.png"
+  - heading: "Conduct referals and create pathways"
+    body: "Create custom referral pathways between partners and consortia, integrating with other services and supporting the end-to-end case journey."
+    image: "/static/images/solutions/casemanager03.png"
+
+
 category: solution
 keywords:
   - case management

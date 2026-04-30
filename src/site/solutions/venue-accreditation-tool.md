@@ -1,7 +1,7 @@
 ---
 product: hoopd
-title: "Venues Accreditation Tool"
-strapline: "Empower your venue with training, resources, and accreditation to ensure accessibility and service standards."
+title: "Venue Accreditation Platform"
+strapline: "Empower all venues with training, resources, and accreditation to ensure accessibility and boost service standards."
 description: "Provide training and resources for your venue and staff to become accredited in accessibility and service standards."
 read_more_link: "/venue-accreditation"
 label_image: "/static/images/solutions/solution_label01.png"
@@ -9,6 +9,19 @@ image: "/static/images/solutions/dfvc-dashboard02.png"
 date: 2025-06-12
 author: Mortar
 draft: false
+
+hero_slides:
+  - heading: "Build local capacity for change"
+    body: "Give all locations access to venue enhancing frameworks for improving accessibility and promoting the local offer."
+    image: "/static/images/solutions/venueacc01.png"
+  - heading: "Create and manage local campaigns"
+    body: "Encourage network and community engagement through access to national frameworks, or build the accreditation your area needs."
+    image: "/static/images/solutions/venueacc02.png"
+  - heading: "Integrate local neighbourhoods"
+    body: "Build maps of accredited locations and grow the number of frameworks supporting different communities and users."
+    image: "/static/images/solutions/venueacc03.png"
+
+
 category: solution
 keywords:
   - accreditation
@@ -25,7 +38,7 @@ steps:
   - title: "Assessment"
     body: "Staff complete assessments to demonstrate their knowledge and understanding. Automatic progress tracking allows administrators to monitor certification readiness across the whole team."
   - title: "Accreditation"
-    body: "Once all modules and assessments are completed, your venue receives its certification. The tool provides a downloadable accreditation certificate and guidance on maintaining standards going forward."
+    body: "Once all modules and assessments are completed, your venue receives its certification. The platform provides a downloadable accreditation certificate and guidance on maintaining standards going forward."
 
 features_eyebrow: "Key features"
 features_heading: "Everything your venue needs"
@@ -59,6 +72,6 @@ case_studies:
     label: "Read more"
 ---
 
-Our Venue Accreditation Tool enables cultural, commercial, and community venues to become more accessible and inclusive. Our platform supports training and resources for staff, helping you meet specific accessibility and service standards. Whether you're aiming for dementia-friendly certification, accessibility accreditation, or customer service excellence, our tool makes it easier and more efficient to achieve these goals.
+Our Venue Accreditation Platform enables cultural, commercial, and community venues to become more accessible and inclusive. Our platform supports training and resources for staff, helping you meet specific accessibility and service standards. Whether you're aiming for dementia-friendly certification, accessibility accreditation, or customer service excellence, our tools make it easier and more efficient to achieve these goals.
 
 Accredited venues create a welcoming environment for everyone, improve community and team engagement, and meet evolving legal requirements and public expectations.

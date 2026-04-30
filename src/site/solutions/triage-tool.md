@@ -8,6 +8,19 @@ image: "/static/images/solutions/digitalskills01.png"
 date: 2024-05-02
 author: Mortar
 draft: false
+
+hero_slides:
+  - heading: "Support service delivery"
+    body: "Provide engagement support to service staff working with users, helping them navigate information, signpost and conduct referrals more efficiently. With accessible features and the creation of uniform print, text and email resources. "
+    image: "/static/images/solutions/triagetool01.png"
+  - heading: "Power directories and improve navigation"
+    body: "Custom triage questions help users navigate through service needs whilst our prioritisation and recommendation algorithms help power their journey to more successful outcomes."
+    image: "/static/images/solutions/triagetool02.png"
+  - heading: "Understand your users and service"
+    body: "The triage tool builds a more detailed dataset about how services are being identified and utilised accross the region, identifying service gaps and needs. Supporting the transformation of digital services."
+    image: "/static/images/solutions/triagetool03.png"
+
+
 category: solution
 keywords:
   - triage

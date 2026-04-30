@@ -8,7 +8,7 @@ label_image: "/static/images/solutions/solution_label01.png"
 image: "/static/images/solutions/tenancy-sustainment-tool01.jpg"
 date: 2024-05-22
 author: Mortar
-draft: false
+draft: true
 category: solution
 keywords:
   - tenancy

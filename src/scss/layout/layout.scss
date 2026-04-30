@@ -952,11 +952,14 @@ footer {
   }
 
   .footer-links {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 2em 1.5em;
+    // Mobile: multi-column so each column flows independently (no row-height coupling)
+    display: block;
+    columns: 2;
+    column-gap: 1.5em;
 
     @include respond-to('small') {
+      display: grid;
+      columns: unset;
       grid-template-columns: repeat(3, 1fr);
       gap: 3em 2em;
     }
@@ -967,9 +970,31 @@ footer {
     }
   }
 
+  .footer-col {
+    @media (max-width: 767px) {
+      break-inside: avoid;
+      margin-bottom: 2em;
+    }
+  }
+
+  .footer-col:last-child {
+    @media (max-width: 767px) {
+      margin-bottom: 0;
+    }
+  }
+
   .footer-col:first-child {
     @media (max-width: 767px) {
-      grid-column: 1 / -1;
+      column-span: all;
+      margin-bottom: 1.5em;
+    }
+  }
+
+  // Force Sectors to start the second column so the split is always:
+  // col1: Products+Services, Solutions — col2: Sectors, Categories, Who we are
+  .footer-col:nth-child(4) {
+    @media (max-width: 767px) {
+      break-before: column;
     }
   }
 

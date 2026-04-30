@@ -59,7 +59,8 @@ module.exports = function(eleventyConfig) {
 
   // Create a collection for solutions from the markdown files
   eleventyConfig.addCollection("solutions", function(collectionApi) {
-    return collectionApi.getFilteredByGlob("src/site/solutions/*.md");
+    return collectionApi.getFilteredByGlob("src/site/solutions/*.md")
+      .filter(post => !post.data.draft);
   });
 
   // Services collection
