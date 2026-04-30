@@ -831,6 +831,10 @@ footer {
   font-family: 'Manrope', sans-serif;
   padding: 4em 0 2.5em;
 
+  @media (max-width: 767px) {
+    padding: 2.5em 0 2em;
+  }
+
   .wrapper {
     max-width: none;
     margin: 0;
@@ -888,7 +892,7 @@ footer {
   .footer-links {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 2.5em 1.5em;
+    gap: 2em 1.5em;
 
     @include respond-to('small') {
       grid-template-columns: repeat(3, 1fr);
@@ -898,6 +902,12 @@ footer {
     @include respond-to('medium') {
       grid-template-columns: repeat(6, 1fr);
       gap: 2em;
+    }
+  }
+
+  .footer-col:first-child {
+    @media (max-width: 767px) {
+      grid-column: 1 / -1;
     }
   }
 
@@ -918,6 +928,11 @@ footer {
   .footer-disclaimer {
     margin-top: 3.5em;
     padding-top: 1.5em;
+
+    @media (max-width: 767px) {
+      margin-top: 2em;
+      padding-top: 1.2em;
+    }
     display: flex;
     flex-direction: column;
     gap: 0.4em;
