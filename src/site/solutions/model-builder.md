@@ -4,7 +4,7 @@ title: "Model Builder"
 overview_heading: "What is the Model Builder?"
 hero_webgl: [modelbuilder]
 hero_slides:
-  - heading: "Data Preparation, Modelling and Dataset Creation."
+  - heading: "Data Preparation, Modelling and Dataset Creation"
     body: "Specialist techniques for complex, imbalanced, and unstructured data — cleaned, prepared, and modelled for real-world use."
     webgl: modelbuilder
 strapline: "Data Preparation, Modelling and Dataset Creation. Specialist techniques for complex, imbalanced, and unstructured data; your data cleaned, prepared, and modelled for real-world use."

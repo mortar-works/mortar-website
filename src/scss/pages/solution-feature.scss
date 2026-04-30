@@ -17,6 +17,12 @@ body#solution-feature > footer {
   display: none;
 }
 
+@media (max-width: 767px) {
+  body#solution-feature > header {
+    display: block;
+  }
+}
+
 // ── Local colour tokens ───────────────────────────────────────────────────────
 $sf-white:   #ffffff;
 $sf-warm:    #f5f3ee;
@@ -450,12 +456,7 @@ $sf-line:    rgba(14, 11, 26, 0.1);
   // ── Mobile hero ──────────────────────────────────────────────────────────
   @media (max-width: 767px) {
     .sf-hero-topbar {
-      height: 4em;
-
-      .sf-solutions-dropdown,
-      .sf-products-dropdown {
-        display: none;
-      }
+      display: none;
     }
 
     .sf-hero-content {
@@ -470,6 +471,10 @@ $sf-line:    rgba(14, 11, 26, 0.1);
     .sf-hero-image-pane {
       height: 250px;
     }
+
+    .sf-case-study-item {
+      flex: 0 0 85%;
+    }
   }
 
   // ── Overview / intro ──────────────────────────────────────────────────────
@@ -481,6 +486,8 @@ $sf-line:    rgba(14, 11, 26, 0.1);
     .wrapper {
       max-width: 72ch !important;
       margin: 0 auto !important;
+      padding-left: 2em !important;
+      padding-right: 2em !important;
     }
 
     .sf-eyebrow {
