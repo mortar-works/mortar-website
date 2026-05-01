@@ -2612,8 +2612,9 @@
   }
 
   // ── Featured card ─────────────────────────────────────────────
-  #content-featured {
-    margin-bottom: 2em;
+  .content-featured-wrapper {
+    margin-bottom: 3em;
+    position: relative;
 
     &.is-hidden {
       display: none;

@@ -1,5 +1,6 @@
 ---
 title: "Reaching digitally excluded residents in East Riding"
+date: 2026-01-15
 description: "A custom version of our Triage Tool, building regional digital inclusion networks and skills campaigns."
 read_more_link: "/case-study-url"
 image: "/static/images/case-studies/progressonline02.png"

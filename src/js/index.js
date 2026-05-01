@@ -320,7 +320,7 @@ window.addEventListener('load', (event) => {
   const filterButtons = document.querySelectorAll('.insight-filter');
   const insightItems = Array.from(document.querySelectorAll('#insight-list li'));
   const paginationContainer = document.getElementById('insights-pagination');
-  const featuredEl = document.getElementById('content-featured');
+  const featuredCards = Array.from(document.querySelectorAll('.content-featured-wrapper'));
   const ITEMS_PER_PAGE = 12;
   let currentFilter = 'all';
   let currentPage = 1;
@@ -332,10 +332,9 @@ window.addEventListener('load', (event) => {
   }
 
   function updateFeaturedCard() {
-    if (!featuredEl) return;
-    const matches = currentFilter === 'all' ||
-      featuredEl.dataset.category.split(' ').includes(currentFilter);
-    featuredEl.classList.toggle('is-hidden', !matches);
+    featuredCards.forEach(card => {
+      card.classList.toggle('is-hidden', card.dataset.filter !== currentFilter);
+    });
   }
 
   function renderPage() {

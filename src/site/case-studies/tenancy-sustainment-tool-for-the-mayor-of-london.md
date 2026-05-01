@@ -1,5 +1,6 @@
 ---
 title: "Supporting tenants for the Mayor of London"
+date: 2026-03-06
 strapline: "Helping older residents access services."
 description: "Custom case management platform delivering advice, triage and referral for those at risk of losing their home."
 read_more_link: "/case-study-url"

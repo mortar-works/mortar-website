@@ -254,6 +254,33 @@ $pf-line-light: rgba(14, 11, 26, 0.12);
     transition: opacity 0.15s ease, transform 0.15s ease, visibility 0s;
   }
 
+  .pf-products-link {
+    font-family: 'Manrope', sans-serif;
+    font-size: 0.75em;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: $mortar-purple;
+    background: $mortar-yellow;
+    border: 1.5px solid $mortar-yellow;
+    border-radius: 4px;
+    padding: 0.55em 1.2em;
+    text-decoration: none;
+    display: none;
+    white-space: nowrap;
+    transition: background 0.2s ease, border-color 0.2s ease;
+
+    &:hover {
+      background: color.adjust($mortar-yellow, $lightness: -8%);
+      border-color: color.adjust($mortar-yellow, $lightness: -8%);
+    }
+  }
+
+  @media (max-width: 766px) {
+    .pf-products-dropdown { display: none; }
+    .pf-products-link { display: inline-flex; align-items: center; }
+  }
+
   .pf-card-contact {
     font-family: 'Manrope', sans-serif;
     font-size: 0.75em;
@@ -994,6 +1021,16 @@ body.theme-hoopd > footer {
     }
   }
 
+  .pf-products-link {
+    color: $hd-navy;
+    background: $hd-gold;
+    border-color: $hd-gold;
+    &:hover {
+      background: color.adjust($hd-gold, $lightness: -8%);
+      border-color: color.adjust($hd-gold, $lightness: -8%);
+    }
+  }
+
   .pf-card-contact {
     color: $hd-navy;
     border-color: rgba($hd-navy, 0.3);
@@ -1196,6 +1233,16 @@ body.theme-hxly > footer {
   .pf-hero-desc    { color: rgba($hx-white, 0.75); }
 
   .pf-products-toggle {
+    color: $hx-white;
+    background: rgba($hx-white, 0.1);
+    border-color: rgba($hx-white, 0.25);
+    &:hover {
+      background: $hx-accent;
+      border-color: $hx-accent;
+    }
+  }
+
+  .pf-products-link {
     color: $hx-white;
     background: rgba($hx-white, 0.1);
     border-color: rgba($hx-white, 0.25);

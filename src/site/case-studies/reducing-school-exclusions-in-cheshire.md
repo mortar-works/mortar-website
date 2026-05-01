@@ -1,5 +1,6 @@
 ---
 title: "Reducing school exclusions in Cheshire "
+date: 2026-02-06
 description: "Tailored assessments supporting teachers in signposting families and young people to appropriate services."
 read_more_link: "/case-study-url"
 image: "/static/images/case-studies/youngpeople02.jpg"
