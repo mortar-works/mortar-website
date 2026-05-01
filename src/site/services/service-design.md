@@ -64,9 +64,18 @@ benefits:
     body: "By identifying and eliminating inefficiency, duplication, and failure demand early, organisations can reduce operational costs while improving outcomes. Our work consistently demonstrates that investing in design at the front end pays dividends at every stage of delivery."
 
 case_studies:
-  - text: "Mortar worked with Essex County Council to design pathways for users to better understand and enhance their digital skills. By embedding user research and co-design into the process, we helped the council move from a reactive model to a proactive, community-led service that improves employability and generates a social return on investment as digital skills improve."
-    link: "/contact/"
-    label: "Get in touch"
+  - text: "Working with the Greater London Authority, we led the service design process for the Dementia Friendly Venues Charter — mapping the end-to-end venue accreditation journey, designing an accessible application process, and shaping the programme's structure to work at scale across London's diverse cultural sector."
+    link: "/case-studies/dementia-friendly-venues-charter-for-gla/"
+    label: "Read the case study"
+  - text: "We supported East Riding's digital inclusion programme with service design — mapping the landscape of resident need across a large and predominantly rural area, designing the referral and triage process, and developing the service model that underpins Progress Online."
+    link: "/case-studies/progress-online-for-east-riding/"
+    label: "Read the case study"
+  - text: "Working in partnership with Social Finance, we designed the end-to-end service model for Gloucestershire's Alternative Provision directory — mapping the current system, understanding how schools and the local authority interact with provision, and designing a platform that reflects how those decisions are actually made."
+    link: "/case-studies/integrated-services-platform-for-gloucestershire/"
+    label: "Read the case study"
+  - text: "We led co-design and participatory design processes with young people to shape Ombri — a creative health referral platform for Southbank Centre. Young people were active contributors throughout, shaping the language, navigation, and the way the platform handles sensitive topics like mental health and vulnerability."
+    link: "/case-studies/ombri-for-southbank-centre/"
+    label: "Read the case study"
 ---
 
 Service design is often constrained by slow processes, high costs, and bias in who gets to participate. Traditional research methods generate useful insights but are resource-intensive and capture only a partial view of user need at that moment in time. That is why we are developing more intelligent ways of designing services — using technology to model behaviour, expand the evidence base, and help organisations create, test, and deploy solutions continuously shaped by real users at greater speed and scale.
