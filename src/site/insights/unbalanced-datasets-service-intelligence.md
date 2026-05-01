@@ -5,6 +5,7 @@ image: data-analysis-2.jpg
 author: Mortar
 description: "Our research highlights how unbalanced datasets cause services to fail the people who need them most; and what it takes to build services that work."
 draft: false
+pinned: true
 category: insight
 keywords:
   - AI

@@ -1,5 +1,6 @@
 ---
 title: "A Community Navigation Platform for Hackney"
+date: 2025-09-04
 description: "Reducing barriers faced by older residents in accessing cultural, health and wellbeing opportunities."
 image: "/static/images/case-studies/hackneycircle01.jpg"
 read_more_link: "/case-study-url"

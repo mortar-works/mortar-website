@@ -1,5 +1,6 @@
 ---
 title: "Dementia Friendly Venues Charter for the Mayor of London"
+date: 2025-10-09
 description: "Building a venue accreditation platform for the GLA and Mayor of London to run the Dementia Friendly Venues Charter across the capital."
 read_more_link: "/case-study-url"
 image: "/static/images/case-studies/museumoflondon.jpeg"

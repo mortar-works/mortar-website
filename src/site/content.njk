@@ -34,11 +34,13 @@ name: content
 
   <div class="content-listing">
 
-    {# Featured card — first item in collection #}
-    {% for post in collections.allContent %}
-    {% if loop.first %}
-    <div id="content-featured" data-category="{{ post.data.categories | join(' ') if post.data.categories else (post.data.category | lower | replace(' ', '-') if post.data.category else 'all') }}">
-      <a class="content-featured-card" href="{{ post.url }}">
+    {# Featured card — one per filter, pinned item first then most recent #}
+    {% set filterKeys = ['all', 'insight', 'product', 'solution', 'research', 'use-case', 'case-study', 'industry', 'company'] %}
+    {% for filterKey in filterKeys %}
+    {% set post = collections.allContent | featuredForCategory(filterKey) %}
+    {% if post %}
+    <div class="content-featured-wrapper{% if filterKey !== 'all' %} is-hidden{% endif %}" data-filter="{{ filterKey }}">
+<a class="content-featured-card" href="{{ post.url }}">
         <div class="content-featured-body">
           <span class="content-featured-category">{{ post.data.category or 'Insights' }}</span>
           <h2 class="content-featured-title">{{ post.data.title }}</h2>

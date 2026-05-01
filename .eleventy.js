@@ -95,6 +95,17 @@ module.exports = function(eleventyConfig) {
       .slice(0, 4);
   });
 
+  // Pick the best featured post for a given filter category — pinned first, then most recent
+  eleventyConfig.addFilter('featuredForCategory', (collection, category) => {
+    if (category === 'all') return collection[0] || null;
+    return collection.find(p => {
+      const cats = p.data.categories
+        ? p.data.categories.map(c => c.toLowerCase().replace(/ /g, '-'))
+        : [(p.data.category || '').toLowerCase().replace(/ /g, '-')];
+      return cats.includes(category);
+    }) || null;
+  });
+
   // Pinned items for the frontpage topline
   eleventyConfig.addCollection("pinned", function(collectionApi) {
     return collectionApi.getAll()
@@ -113,7 +124,11 @@ module.exports = function(eleventyConfig) {
     const industries  = collectionApi.getFilteredByGlob("src/site/industries/*.md");
     return [...insights, ...useCases, ...research, ...caseStudies, ...news, ...solutions, ...products, ...industries]
       .filter(post => post.date <= new Date() && !post.data.draft)
-      .sort((a, b) => b.date - a.date);
+      .sort((a, b) => {
+        if (a.data.pinned && !b.data.pinned) return -1;
+        if (!a.data.pinned && b.data.pinned) return 1;
+        return b.date - a.date;
+      });
   });
 
   // Watch targets for development (live reload)
