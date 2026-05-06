@@ -16,7 +16,7 @@ description: "Hxly builds custom models and datasets; supporting organisations i
 
 split_sphere: true
 split_heading: "We drive impact where rare but significant outcomes matter the most."
-split_body: "The outcomes that matter most are often the hardest to see. Hxly is focused on these challenges, applying advanced behavioural modelling to real-world data; to surcaface patterns and predictions and to drive meaningful decisions. From individual risk to population-level insights."
+split_body: "The outcomes that matter most are often the hardest to see. Hxly is focused on these challenges, applying advanced behavioural modelling to real-world data; to surface patterns and predictions and to drive meaningful decisions. From individual risk to population-level insights."
 
 duo_left_title: "The cost of misalignment"
 duo_left: "When models are built without sufficient understanding of human behaviour, context, and need, they become less effective and even actively harmful. They misread intent, reinforce poor assumptions, escalate risk, and produce responses misaligned with the realities of users, individuals and populations."

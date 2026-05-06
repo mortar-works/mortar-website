@@ -35,7 +35,7 @@ name: content
   <div class="content-listing">
 
     {# Featured card — one per filter, pinned item first then most recent #}
-    {% set filterKeys = ['all', 'insight', 'product', 'solution', 'research', 'use-case', 'case-study', 'industry', 'company'] %}
+    {% set filterKeys = ['all', 'insight', 'solution', 'research', 'use-case', 'case-study', 'industry', 'company'] %}
     {% for filterKey in filterKeys %}
     {% set post = collections.allContent | featuredForCategory(filterKey) %}
     {% if post %}
