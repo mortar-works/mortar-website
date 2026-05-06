@@ -933,6 +933,17 @@ $pf-line-light: rgba(14, 11, 26, 0.12);
   display: flex;
   align-items: center;
   justify-content: space-between;
+
+  @media (max-width: 680px) {
+    flex-wrap: wrap;
+    row-gap: 1.2em;
+
+    .pf-footer-copy {
+      order: 3;
+      width: 100%;
+      text-align: center;
+    }
+  }
 }
 
 .pf-footer-logo {
@@ -1286,7 +1297,14 @@ body.theme-hxly > footer {
 
   // ── Section heading ────────────────────────────────────────────────────────
   .pf-section-heading    { color: $hx-text; }
-  .pf-section-subheading { color: $hx-muted; font-size: clamp(0.95em, 1.3vw, 1.12em); max-width: 40%; margin-left: auto; margin-right: auto; }
+  .pf-section-subheading {
+    color: $hx-muted;
+    font-size: clamp(0.95em, 1.3vw, 1.12em);
+    max-width: 40%;
+    margin-left: auto;
+    margin-right: auto;
+    @media (max-width: 680px) { max-width: 90%; }
+  }
 
   // ── Solutions banner ───────────────────────────────────────────────────────
   .pf-solutions-banner {
