@@ -28,6 +28,8 @@ tags:
 
 Our research using Dawn, one of the UK's fastest AI supercomputers at the University of Cambridge, has been developing models that classify behavioural and psychometric characteristics. In conducting the work we achieved new insights in how services that implement intelligence will fail; leading us to explore what it would take to build ones that don't.
 
+![Dawn AI supercomputer at the University of Cambridge]({{ '/static/images/insights/dawn_01.jpeg' | url }})
+
 ## The problem with majority data
 
 Most real-world datasets are not balanced. People are not evenly distributed across the characteristics a model is trained to recognise. Some behaviours, presentations and profiles are common. Others are rare. And when you train a model on imbalanced data, it learns the majority pattern well and everything else poorly.
