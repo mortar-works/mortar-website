@@ -38,7 +38,7 @@
 }
 </script>
 {% endblock %}
-{% block bodyClass %}{% if theme %}theme-{{ theme }}{% endif %}{% endblock %}
+{% block bodyClass %}{% if theme %}theme-{{ theme }}{% endif %}{% if page_class %} {{ page_class }}{% endif %}{% endblock %}
 {% block mainClass %}product-feature-page{% if theme %} product-feature-page--{{ theme }}{% endif %}{% endblock %}
 
 {% set previousPost = collections.products | getPreviousCollectionItem(page) %}
@@ -136,7 +136,10 @@
     {% endif %}
   </div>
   <div class="pf-split-text">
-    <h2 class="pf-split-heading">{{ split_heading }}</h2>
+    <div>
+      {% if logo %}<img class="pf-hero-logo" src="{{ logo }}" alt="{{ title }}">{% endif %}
+      <h2 class="pf-split-heading">{{ split_heading }}</h2>
+    </div>
     {% if split_body %}
       <p class="pf-split-body">{{ split_body }}</p>
     {% endif %}

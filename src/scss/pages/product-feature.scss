@@ -328,6 +328,8 @@ $pf-line-light: rgba(14, 11, 26, 0.12);
     font-family: 'Manrope', sans-serif;
     font-weight: 800;
     font-size: clamp(2.4em, 7vw, 7em);
+
+    body.harla & { font-size: clamp(1.8em, 5vw, 5em); }
     line-height: 1.04;
     letter-spacing: -0.04em;
     color: $mortar-purple;
@@ -595,9 +597,9 @@ $pf-line-light: rgba(14, 11, 26, 0.12);
     border-right: 1px solid $pf-line-light;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-    gap: 2.5em;
-    min-height: 260px;
+    justify-content: flex-start;
+    gap: 0.75em;
+    min-height: 0;
 
     @include respond-to('small') {
       &:nth-child(2n) { border-right: none; }
@@ -616,7 +618,7 @@ $pf-line-light: rgba(14, 11, 26, 0.12);
     font-family: 'Manrope', sans-serif;
     font-weight: 700;
     font-size: 2.1em;
-    color: $white;
+    color: $pf-dark;
     margin: 0;
     line-height: 1.3;
     text-align: left;
@@ -626,7 +628,7 @@ $pf-line-light: rgba(14, 11, 26, 0.12);
     font-family: 'Manrope', sans-serif;
     font-size: clamp(0.9em, 1.1vw, 2em);
     line-height: 1.8;
-    color: rgba($white, 0.65);
+    color: rgba($pf-dark, 0.65);
     margin: 0;
     text-align: left;
     width: 95%;

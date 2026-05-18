@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 220 56" width="220" height="56" role="img" aria-label="Harla">
+  <title>Harla</title>
+  <g transform="translate(6,8)">
+    <circle cx="20" cy="20" r="15" fill="none" stroke="#f1ebde" stroke-width="2.2"></circle>
+    <circle cx="30.6" cy="9.4" r="4.2" fill="#c55a3c"></circle>
+  </g>
+  <text x="58" y="38" font-family="Manrope, 'Helvetica Neue', 'Arial Black', Helvetica, Arial, sans-serif" font-weight="700" font-size="34" fill="#f1ebde" style="letter-spacing:-0.045em">Harla</text>
+</svg>
